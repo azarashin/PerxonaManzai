@@ -36,6 +36,20 @@ export class ScenarioController {
     return this.currentIndex >= this.scenario.beats.length;
   }
 
+  get resultDetails() {
+    return this.results.flatMap((result, index) =>
+      result
+        ? [
+            {
+              beatNumber: index + 1,
+              beat: this.scenario.beats[index],
+              result,
+            },
+          ]
+        : [],
+    );
+  }
+
   get summary() {
     const totalScore = this.results.reduce(
       (sum, result) => sum + result.totalScore,
