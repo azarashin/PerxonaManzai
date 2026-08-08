@@ -41,6 +41,12 @@ let phase = "setup";
 let responseWindowStartedAt = 0;
 let isRefreshingToken = false;
 
+const displayLanguages = [
+  { key: "ja", label: "JA", lang: "ja" },
+  { key: "en", label: "EN", lang: "en" },
+  { key: "zh", label: "中文", lang: "zh-Hant" },
+];
+
 const recognizer = new SpeechRecognizer({
   onInterim: (transcript) => {
     transcriptElement.textContent = transcript;
@@ -163,12 +169,40 @@ function renderChoices(beat) {
       number.className = "choice-number";
       number.textContent = String(index + 1);
 
-      const text = document.createElement("strong");
-      text.textContent = choice.text;
+      const text = document.createElement("div");
+      text.className = "choice-text";
+      renderLocalizedText(text, choice.text);
       row.append(number, text);
       return row;
     }),
   );
+}
+
+function renderLocalizedText(element, value) {
+  element.classList.add("localized-text");
+  element.replaceChildren(
+    ...displayLanguages.map(({ key, label, lang }) => {
+      const line = document.createElement("span");
+      line.className = `language-line language-${key}`;
+      line.lang = lang;
+
+      const languageLabel = document.createElement("span");
+      languageLabel.className = "language-label";
+      languageLabel.textContent = label;
+      languageLabel.setAttribute("aria-hidden", "true");
+
+      const languageText = document.createElement("span");
+      languageText.className = "language-text";
+      languageText.textContent = localizedText(value, key);
+      line.append(languageLabel, languageText);
+      return line;
+    }),
+  );
+}
+
+function localizedText(value, language) {
+  if (typeof value === "string") return value;
+  return value?.[language] ?? value?.ja ?? "";
 }
 
 async function playCurrentBeat() {
@@ -196,12 +230,12 @@ async function playCurrentBeat() {
   micIndicator.classList.remove("listening");
   micStatus.textContent = "ボケを再生中";
   phaseLabel.textContent = "ボケを聞いてください";
-  bokeCaption.textContent = beat.boke;
+  renderLocalizedText(bokeCaption, beat.boke);
   bokeCaption.hidden = false;
   setAppMessage("ボケの発話が終わると、マイクが自動的に待ち受けます。");
 
   try {
-    const result = await presenter.present(beat.boke);
+    const result = await presenter.present(localizedText(beat.boke, "ja"));
     if (!result?.success) {
       phase = "ready";
       setAppMessage(
@@ -453,8 +487,8 @@ async function initializeApp() {
     ]);
     config = loadedConfig;
     controller = new ScenarioController(scenario);
-    scenarioTitle.textContent = scenario.title;
-    scenarioDescription.textContent = scenario.description;
+    renderLocalizedText(scenarioTitle, scenario.title);
+    renderLocalizedText(scenarioDescription, scenario.description);
     progressElement.textContent = `0 / ${scenario.beats.length}`;
 
     if (!recognizer.supported) {

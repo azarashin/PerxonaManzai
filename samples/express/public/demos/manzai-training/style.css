@@ -248,6 +248,10 @@ sv-presenter:not([hidden]) {
   gap: 1rem;
 }
 
+.training-heading > div {
+  min-width: 0;
+}
+
 .progress {
   flex: none;
   padding: 0.35rem 0.65rem;
@@ -260,6 +264,73 @@ sv-presenter:not([hidden]) {
 .scenario-description,
 .app-message {
   color: var(--muted);
+}
+
+.localized-text {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.language-line {
+  display: grid;
+  grid-template-columns: 2.6rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.45rem;
+}
+
+.language-label {
+  color: var(--accent);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.language-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.language-en .language-text,
+.language-zh .language-text {
+  color: var(--muted);
+  font-size: 0.88em;
+  font-weight: 500;
+}
+
+#scenario-title {
+  font-size: 1.2rem;
+}
+
+#scenario-title .language-ja .language-text {
+  font-size: 1.15em;
+}
+
+#scenario-description {
+  gap: 0.35rem;
+}
+
+.boke-caption.localized-text {
+  gap: 0.35rem;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+}
+
+.boke-caption .language-line {
+  grid-template-columns: 3rem minmax(0, 1fr);
+  text-align: left;
+}
+
+.boke-caption .language-en,
+.boke-caption .language-zh {
+  font-size: 0.82em;
+}
+
+.choice-text .language-ja .language-text {
+  font-weight: 800;
+}
+
+.choice-text .language-en,
+.choice-text .language-zh {
+  font-size: 0.92rem;
 }
 
 .instructions {
