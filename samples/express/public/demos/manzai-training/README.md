@@ -1,6 +1,6 @@
 # Manzai Training MVP
 
-A Japanese voice-recognition training demo built on the Perxona Presenter. The avatar plays the `boke`; after playback is
+A multilingual voice-recognition training demo built on the Perxona Presenter. The avatar plays the `boke`; after playback is
 fully finished, the learner speaks one of the displayed `tsukkomi` choices. The demo identifies the choice, scores its
 pre-authored content quality, adds a response-timing score, and advances to the next beat.
 
@@ -9,6 +9,8 @@ Chinese. Before initializing the Presenter, the learner can choose English, Trad
 character's spoken boke. The Voice picker is filtered to voices whose catalog metadata supports the selected speech language.
 Browser speech recognition and response scoring use the same selected language: `en-US` for English, `zh-TW` for Traditional
 Chinese, and `ja-JP` for Japanese.
+Static instructions, controls, status messages, scoring labels, errors, and authored feedback switch to that same language.
+The scenario title, boke captions, and comeback choices continue to show all three languages simultaneously.
 
 Each scenario beat also declares a reaction. The demo resolves its preferred motion tags against the selected Avatar's live
 motion catalog and embeds only a verified Motion ID in the text sent to the Presenter. If the Avatar has none of the requested
@@ -35,9 +37,11 @@ store audio recordings itself.
 5. Wait for `ALL_PERFORMANCE_FINISHED`, set the avatar to Listening, and start recognition.
 6. Recognize the learner in the selected language and compare the final transcript with that language's choice text.
 7. Score content out of 80 and response timing out of 20.
-8. Show feedback for two seconds, then automatically advance to the next beat (or the final result).
+8. Show feedback for five seconds, then automatically advance to the next beat.
+9. At completion, show the total and a per-beat breakdown of recognized speech, matched choice, scores, timing, similarity,
+   and authored feedback.
 
-The replay and manual-next buttons remain available during the two-second feedback window. Their handlers clear the pending
+The replay and manual-next buttons remain available during the five-second feedback window. Their handlers clear the pending
 timer before changing state, as do restart, Presenter reconfiguration, and language changes.
 
 Recognition is never active while the avatar is speaking, which prevents the Presenter audio from being treated as the
@@ -91,7 +95,11 @@ Each beat needs a localized `boke` and at least two localized choices. Every loc
         "zh": ["意思相同的中文說法"]
       },
       "contentPoints": 80,
-      "feedback": "採点後に表示する説明"
+      "feedback": {
+        "ja": "採点後に表示する説明",
+        "en": "Feedback shown after scoring",
+        "zh": "評分後顯示的講評"
+      }
     }
   ]
 }
