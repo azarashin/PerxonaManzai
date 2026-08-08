@@ -37,11 +37,11 @@ store audio recordings itself.
 5. Wait for `ALL_PERFORMANCE_FINISHED`, set the avatar to Listening, and start recognition.
 6. Recognize the learner in the selected language and compare the final transcript with that language's choice text.
 7. Score content out of 80 and response timing out of 20.
-8. Show feedback for two seconds, then automatically advance to the next beat.
+8. Show feedback for five seconds, then automatically advance to the next beat.
 9. At completion, show the total and a per-beat breakdown of recognized speech, matched choice, scores, timing, similarity,
    and authored feedback.
 
-The replay and manual-next buttons remain available during the two-second feedback window. Their handlers clear the pending
+The replay and manual-next buttons remain available during the five-second feedback window. Their handlers clear the pending
 timer before changing state, as do restart, Presenter reconfiguration, and language changes.
 
 Recognition is never active while the avatar is speaking, which prevents the Presenter audio from being treated as the

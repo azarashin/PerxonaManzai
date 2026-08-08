@@ -50,6 +50,8 @@ let availableVoices = [];
 let catalogReady = false;
 let autoAdvanceTimer = null;
 
+const AUTO_ADVANCE_DELAY_MS = 5000;
+
 const displayLanguages = [
   { key: "ja", label: "JA", lang: "ja" },
   { key: "en", label: "EN", lang: "en" },
@@ -433,8 +435,14 @@ function handleFinalTranscript(transcript) {
     controller.progress.current === controller.progress.total
       ? t("viewResults")
       : t("nextBoke");
-  nextBtn.textContent = t("autoAdvanceLabel", { action: nextAction });
-  setAppMessage(t("scoreExplanation", { action: nextAction }));
+  const delaySeconds = AUTO_ADVANCE_DELAY_MS / 1000;
+  nextBtn.textContent = t("autoAdvanceLabel", {
+    action: nextAction,
+    seconds: delaySeconds,
+  });
+  setAppMessage(
+    t("scoreExplanation", { action: nextAction, seconds: delaySeconds }),
+  );
   scheduleAutoAdvance();
 }
 
@@ -528,7 +536,7 @@ function scheduleAutoAdvance() {
   autoAdvanceTimer = window.setTimeout(() => {
     autoAdvanceTimer = null;
     if (phase === "feedback") advanceTraining();
-  }, 2000);
+  }, AUTO_ADVANCE_DELAY_MS);
 }
 
 function startTraining() {
