@@ -1,3 +1,5 @@
+import { translate } from "./i18n.js";
+
 const MINIMUM_MATCH_SCORE = 0.48;
 
 export function evaluateResponse(
@@ -24,8 +26,7 @@ export function evaluateResponse(
       matched: false,
       transcript,
       similarity: bestMatch?.similarity ?? 0,
-      feedback:
-        "表示された選択肢のどれかを、もう一度はっきり発声してください。",
+      feedback: translate(language, "retryChoiceFeedback"),
     };
   }
 
@@ -45,7 +46,7 @@ export function evaluateResponse(
     timingScore,
     totalScore: contentScore + timingScore,
     reactionSeconds,
-    feedback: bestMatch.choice.feedback,
+    feedback: localizedText(bestMatch.choice.feedback, language),
   };
 }
 

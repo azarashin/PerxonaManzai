@@ -221,9 +221,9 @@ SETUP → READY → BOKE_SPEAKING
 | 中文（繁體） | `boke.zh` | `zh` | `zh-TW` |
 | 日本語 | `boke.ja` | `ja` | `ja-JP` |
 
-All three translations remain visible at the same time.
+Controls, guidance, errors, and feedback switch to the selected language. Scenario translations remain visible together.
 
-> 選択言語に発話・Voice・音声認識・採点を連動させつつ、翻訳は3言語同時に表示します。
+> 操作説明・エラー・講評は選択言語へ切り替え、シナリオの翻訳は3言語同時に表示します。
 
 ---
 
@@ -241,7 +241,7 @@ All three translations remain visible at the same time.
   "choices": [{
     "text": { "ja": "...", "en": "...", "zh": "..." },
     "contentPoints": 80,
-    "feedback": "..."
+    "feedback": { "ja": "...", "en": "...", "zh": "..." }
   }]
 }
 ```
