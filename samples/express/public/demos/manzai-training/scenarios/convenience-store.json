@@ -1,0 +1,88 @@
+{
+  "id": "convenience-store",
+  "title": "コンビニに行った話",
+  "description": "表示されたツッコミを声に出して、ボケの核心を素早く拾う練習です。",
+  "beats": [
+    {
+      "id": "refrigerator",
+      "boke": "昨日コンビニで、新しい冷蔵庫を買ってきてん。",
+      "choices": [
+        {
+          "id": "refrigerator-excellent",
+          "text": "コンビニに冷蔵庫売ってへんわ！",
+          "aliases": ["コンビニで冷蔵庫売ってないやろ", "それ家電量販店や"],
+          "contentPoints": 80,
+          "feedback": "場所の矛盾をすぐ拾えています。短くて強いツッコミです。"
+        },
+        {
+          "id": "refrigerator-good",
+          "text": "ずいぶん大きい買い物したな！",
+          "aliases": ["大きな買い物やな"],
+          "contentPoints": 52,
+          "feedback": "反応は自然ですが、コンビニというボケの核心を拾うとさらに良くなります。"
+        },
+        {
+          "id": "refrigerator-weak",
+          "text": "冷蔵庫ええなあ！",
+          "aliases": ["いい冷蔵庫やな"],
+          "contentPoints": 20,
+          "feedback": "ボケを肯定しています。おかしい場所や行動を探してみましょう。"
+        }
+      ]
+    },
+    {
+      "id": "breakfast",
+      "boke": "朝ごはんは健康のために、目覚まし時計を二個食べてる。",
+      "choices": [
+        {
+          "id": "breakfast-excellent",
+          "text": "起きるためのもんを食うな！",
+          "aliases": ["目覚まし時計は食べ物ちゃうわ", "時計食べるな"],
+          "contentPoints": 80,
+          "feedback": "道具の用途を使って、分かりやすくボケを否定できています。"
+        },
+        {
+          "id": "breakfast-good",
+          "text": "せめて一個にしとけ！",
+          "aliases": ["一個でええやろ"],
+          "contentPoints": 55,
+          "feedback": "二個という部分は拾えています。食べ物ではない点まで触れると満点です。"
+        },
+        {
+          "id": "breakfast-weak",
+          "text": "健康的やな！",
+          "aliases": ["健康に良さそうやな"],
+          "contentPoints": 15,
+          "feedback": "設定を受け入れてしまっています。常識とのズレを否定してみましょう。"
+        }
+      ]
+    },
+    {
+      "id": "train",
+      "boke": "今日は急いでたから、各駅停車を走って追い越してきた。",
+      "choices": [
+        {
+          "id": "train-excellent",
+          "text": "お前どんだけ足速いねん！",
+          "aliases": ["電車より速いやないか", "電車を走って追い越せるか"],
+          "contentPoints": 80,
+          "feedback": "あり得ない身体能力を直接指摘できていて、勢いも出しやすいツッコミです。"
+        },
+        {
+          "id": "train-good",
+          "text": "急ぐなら快速に乗れ！",
+          "aliases": ["快速乗れや"],
+          "contentPoints": 62,
+          "feedback": "状況に合った別角度のツッコミです。ボケの誇張を拾う案も試してみましょう。"
+        },
+        {
+          "id": "train-weak",
+          "text": "いい運動になったな！",
+          "aliases": ["運動になってよかったな"],
+          "contentPoints": 20,
+          "feedback": "会話としては成立しますが、ボケへの否定が弱くなっています。"
+        }
+      ]
+    }
+  ]
+}
