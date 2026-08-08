@@ -1,10 +1,18 @@
 const MINIMUM_MATCH_SCORE = 0.48;
 
-export function evaluateResponse(beat, transcript, reactionSeconds) {
+export function evaluateResponse(
+  beat,
+  transcript,
+  reactionSeconds,
+  language = "ja",
+) {
   const matches = beat.choices.map((choice) => {
-    const phrases = [localizedText(choice.text, "ja"), ...(choice.aliases ?? [])];
+    const phrases = [
+      localizedText(choice.text, language),
+      ...localizedAliases(choice.aliases, language),
+    ];
     const similarity = Math.max(
-      ...phrases.map((phrase) => phraseSimilarity(transcript, phrase)),
+      ...phrases.map((phrase) => phraseSimilarity(transcript, phrase, language)),
     );
     return { choice, similarity };
   });
@@ -31,7 +39,7 @@ export function evaluateResponse(beat, transcript, reactionSeconds) {
     matched: true,
     transcript,
     choiceId: bestMatch.choice.id,
-    choiceText: localizedText(bestMatch.choice.text, "ja"),
+    choiceText: localizedText(bestMatch.choice.text, language),
     similarity: bestMatch.similarity,
     contentScore,
     timingScore,
@@ -41,24 +49,36 @@ export function evaluateResponse(beat, transcript, reactionSeconds) {
   };
 }
 
+function localizedAliases(aliases, language) {
+  if (Array.isArray(aliases)) return language === "ja" ? aliases : [];
+  return Array.isArray(aliases?.[language]) ? aliases[language] : [];
+}
+
 function localizedText(value, language) {
   if (typeof value === "string") return value;
   return value?.[language] ?? "";
 }
 
-export function normalizeJapanese(value) {
-  return value
+export function normalizeSpeechText(value, language = "ja") {
+  const normalized = value
     .normalize("NFKC")
-    .toLocaleLowerCase("ja-JP")
-    .replace(/[\s\p{P}\p{S}]/gu, "")
-    .replace(/[ァ-ヶ]/g, (character) =>
-      String.fromCharCode(character.charCodeAt(0) - 0x60),
-    );
+    .toLocaleLowerCase({ en: "en-US", zh: "zh-TW", ja: "ja-JP" }[language])
+    .replace(/[\s\p{P}\p{S}]/gu, "");
+
+  return language === "ja"
+    ? normalized.replace(/[ァ-ヶ]/g, (character) =>
+        String.fromCharCode(character.charCodeAt(0) - 0x60),
+      )
+    : normalized;
 }
 
-function phraseSimilarity(left, right) {
-  const normalizedLeft = normalizeJapanese(left);
-  const normalizedRight = normalizeJapanese(right);
+export function normalizeJapanese(value) {
+  return normalizeSpeechText(value, "ja");
+}
+
+function phraseSimilarity(left, right, language) {
+  const normalizedLeft = normalizeSpeechText(left, language);
+  const normalizedRight = normalizeSpeechText(right, language);
   if (!normalizedLeft || !normalizedRight) return 0;
   if (
     normalizedLeft.includes(normalizedRight) ||

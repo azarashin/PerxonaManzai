@@ -1,5 +1,5 @@
 export class SpeechRecognizer {
-  constructor({ onInterim, onFinal, onError, onEnd }) {
+  constructor({ onInterim, onFinal, onError, onEnd, language = "ja-JP" }) {
     const Recognition =
       window.SpeechRecognition ?? window.webkitSpeechRecognition;
     this.supported = Boolean(Recognition);
@@ -10,7 +10,7 @@ export class SpeechRecognizer {
     if (!Recognition) return;
 
     this.recognition = new Recognition();
-    this.recognition.lang = "ja-JP";
+    this.recognition.lang = language;
     this.recognition.continuous = false;
     this.recognition.interimResults = true;
     this.recognition.maxAlternatives = 5;
@@ -44,6 +44,12 @@ export class SpeechRecognizer {
       this.clearTimer();
       onEnd(this.receivedFinalResult);
     };
+  }
+
+  setLanguage(language) {
+    if (!this.supported) return;
+    if (this.active) this.abort();
+    this.recognition.lang = language;
   }
 
   start(timeoutMilliseconds = 9000) {

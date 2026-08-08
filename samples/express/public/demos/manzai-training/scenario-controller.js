@@ -66,7 +66,12 @@ function validateScenario(scenario) {
   }
 
   for (const [index, beat] of scenario.beats.entries()) {
-    if (!beat.id || !isLocalizedText(beat.boke) || !Array.isArray(beat.choices)) {
+    if (
+      !beat.id ||
+      !isLocalizedText(beat.boke) ||
+      !isReaction(beat.reaction) ||
+      !Array.isArray(beat.choices)
+    ) {
       throw new Error(`シナリオ ${index + 1} 件目の形式が正しくありません。`);
     }
     if (beat.choices.length < 2) {
@@ -78,6 +83,23 @@ function validateScenario(scenario) {
       );
     }
   }
+}
+
+function isReaction(value) {
+  return (
+    value &&
+    isLocalizedText(value.description) &&
+    Array.isArray(value.motionTags) &&
+    value.motionTags.length > 0 &&
+    value.motionTags.every((tag) => typeof tag === "string" && tag.trim()) &&
+    (value.motionId === undefined ||
+      (typeof value.motionId === "string" && value.motionId.trim())) &&
+    (value.variant === undefined ||
+      (Number.isInteger(value.variant) && value.variant >= 0)) &&
+    (value.priority === undefined ||
+      (Number.isInteger(value.priority) && value.priority >= 0)) &&
+    (value.cue === undefined || ["start", "end"].includes(value.cue))
+  );
 }
 
 function isLocalizedText(value) {
