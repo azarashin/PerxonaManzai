@@ -1,4 +1,5 @@
 import { evaluateResponse } from "./evaluator.js";
+import { applyTranslations, translate } from "./i18n.js";
 import { buildPresentationContent } from "./reaction-resolver.js";
 import { ScenarioController } from "./scenario-controller.js";
 import { SpeechRecognizer } from "./speech-recognizer.js";
@@ -61,11 +62,16 @@ const recognitionLanguages = {
   ja: "ja-JP",
 };
 
-const speechLanguageNames = {
-  en: "English",
-  zh: "中文",
-  ja: "日本語",
-};
+function t(key, parameters = {}) {
+  return translate(speechLanguageSelect.value, key, parameters);
+}
+
+function applyUiLanguage() {
+  applyTranslations(document, speechLanguageSelect.value);
+  if (!scenarioTitle.classList.contains("localized-text")) {
+    scenarioTitle.textContent = t("scenarioLoading");
+  }
+}
 
 const recognizer = new SpeechRecognizer({
   language: recognitionLanguages[speechLanguageSelect.value],
@@ -100,7 +106,7 @@ async function loadPresenterEngine(url) {
     script.src = url;
     script.onload = resolve;
     script.onerror = () =>
-      reject(new Error(`Presenterを読み込めませんでした: ${url}`));
+      reject(new Error(t("presenterLoadFailed", { url })));
     document.head.append(script);
   });
 }
@@ -177,7 +183,7 @@ async function loadCatalog() {
   updateVoiceOptions(preferredTarget.voiceId);
 
   if (!avatarSelect.value || !sceneSelect.value || !voiceSelect.value) {
-    throw new Error("利用できるAvatar、Scene、Voiceを確認してください。");
+    throw new Error(t("catalogUnavailable"));
   }
   catalogReady = true;
 }
@@ -195,27 +201,27 @@ async function initializePresenter() {
 
   presenterInitializing = true;
   launchBtn.disabled = true;
-  setPresenterStatus("音声を有効にしています…");
+  setPresenterStatus(t("enablingAudio"));
 
   try {
     await presenter.resumeAudioPlayback();
-    setPresenterStatus("リアクション用モーションを取得しています…");
+    setPresenterStatus(t("loadingReactionMotions"));
     try {
       await loadAvatarMotions();
     } catch (error) {
       availableMotions = [];
       motionCatalogAvatarId = "";
-      console.warn("リアクション用モーションを取得できませんでした。", error);
+      console.warn(t("reactionMotionLoadFailed"), error);
     }
-    setPresenterStatus("Connectトークンを取得しています…");
+    setPresenterStatus(t("gettingToken"));
     const { connect_token: connectToken } =
       await requestJson("/api/connect-token");
-    setPresenterStatus("アバターを準備しています…");
+    setPresenterStatus(t("preparingAvatar"));
     await presenter.initialize(connectToken, selectedTarget());
   } catch (error) {
     presenterReady = false;
     launchBtn.disabled = false;
-    setPresenterStatus(`準備に失敗しました: ${error.message}`);
+    setPresenterStatus(t("preparationFailed", { message: error.message }));
   } finally {
     presenterInitializing = false;
   }
@@ -305,11 +311,11 @@ async function playCurrentBeat() {
   micBtn.hidden = true;
   transcriptElement.textContent = "—";
   micIndicator.classList.remove("listening");
-  micStatus.textContent = "ボケを再生中";
-  phaseLabel.textContent = "ボケを聞いてください";
+  micStatus.textContent = t("playingBoke");
+  phaseLabel.textContent = t("listenToBoke");
   renderLocalizedText(bokeCaption, beat.boke);
   bokeCaption.hidden = false;
-  setAppMessage("ボケの発話が終わると、マイクが自動的に待ち受けます。");
+  setAppMessage(t("autoMicAfterBoke"));
 
   try {
     const presentation = buildPresentationContent(
@@ -319,20 +325,28 @@ async function playCurrentBeat() {
     );
     if (beat.reaction && !presentation.motion) {
       console.warn(
-        `リアクション「${localizedText(beat.reaction.description, "ja")}」に対応するモーションがないため、自動モーションで再生します。`,
+        t("motionFallbackWarning", {
+          reaction: localizedText(
+            beat.reaction.description,
+            speechLanguageSelect.value,
+          ),
+        }),
       );
     }
     const result = await presenter.present(presentation.content);
     if (!result?.success) {
       phase = "ready";
       setAppMessage(
-        `ボケを再生できませんでした (${result?.code}): ${result?.message ?? ""}`,
+        t("playFailedWithCode", {
+          code: result?.code,
+          message: result?.message ?? "",
+        }),
       );
       replayBtn.hidden = false;
     }
   } catch (error) {
     phase = "ready";
-    setAppMessage(`ボケを再生できませんでした: ${error.message}`);
+    setAppMessage(t("playFailed", { message: error.message }));
     replayBtn.hidden = false;
   }
 }
@@ -343,11 +357,13 @@ function openResponseWindow() {
   phase = "answering";
   responseWindowStartedAt = performance.now();
   choicesElement.hidden = false;
-  phaseLabel.textContent = `${speechLanguageNames[speechLanguageSelect.value]}で、好きなツッコミを一つ声に出してください`;
-  micStatus.textContent = "マイクを開始します…";
+  phaseLabel.textContent = t("speakOneComeback", {
+    language: t("languageName"),
+  });
+  micStatus.textContent = t("startingMic");
   presenter.setListening?.(true);
   micBtn.hidden = false;
-  setAppMessage("9秒以内を目安に発声してください。");
+  setAppMessage(t("speakWithinNineSeconds"));
 
   window.setTimeout(() => {
     if (phase === "answering") startRecognition();
@@ -358,19 +374,21 @@ function startRecognition() {
   if (phase !== "answering" || recognizer.active) return;
 
   recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
-  transcriptElement.textContent = "聞き取っています…";
+  transcriptElement.textContent = t("listeningTranscript");
   feedbackElement.hidden = true;
   micBtn.hidden = true;
   micIndicator.classList.add("listening");
-  micStatus.textContent = `聞き取り中（${speechLanguageNames[speechLanguageSelect.value]}）`;
+  micStatus.textContent = t("listeningLanguage", {
+    language: t("languageName"),
+  });
 
   try {
     recognizer.start();
   } catch (error) {
     micIndicator.classList.remove("listening");
-    micStatus.textContent = "マイクを開始できません";
+    micStatus.textContent = t("micStartFailed");
     micBtn.hidden = false;
-    setAppMessage(error.message);
+    setAppMessage(t("micStartError", { message: error.message }));
   }
 }
 
@@ -393,10 +411,10 @@ function handleFinalTranscript(transcript) {
     feedbackElement.className = "feedback needs-retry";
     feedbackElement.replaceChildren(createParagraph(result.feedback));
     feedbackElement.hidden = false;
-    micStatus.textContent = "選択肢を特定できませんでした";
+    micStatus.textContent = t("choiceNotFound");
     micIndicator.classList.remove("listening");
     micBtn.hidden = false;
-    setAppMessage("認識結果を確認して、もう一度発声してください。");
+    setAppMessage(t("retrySpeech"));
     return;
   }
 
@@ -404,21 +422,19 @@ function handleFinalTranscript(transcript) {
   presenter.setListening?.(false);
   controller.recordResult(result);
   micIndicator.classList.remove("listening");
-  micStatus.textContent = "判定完了";
+  micStatus.textContent = t("judgingComplete");
   micBtn.hidden = true;
-  phaseLabel.textContent = `今回のスコア: ${result.totalScore}点`;
+  phaseLabel.textContent = t("currentScore", { score: result.totalScore });
   showEvaluation(result);
   highlightChoice(result.choiceId);
   replayBtn.hidden = false;
   nextBtn.hidden = false;
   const nextAction =
     controller.progress.current === controller.progress.total
-      ? "結果を見る"
-      : "次のボケへ";
-  nextBtn.textContent = `${nextAction}（2秒後）`;
-  setAppMessage(
-    `内容80点・反応速度20点の合計です。2秒後に「${nextAction}」へ進みます。`,
-  );
+      ? t("viewResults")
+      : t("nextBoke");
+  nextBtn.textContent = t("autoAdvanceLabel", { action: nextAction });
+  setAppMessage(t("scoreExplanation", { action: nextAction }));
   scheduleAutoAdvance();
 }
 
@@ -426,13 +442,21 @@ function showEvaluation(result) {
   const scoreLine = document.createElement("div");
   scoreLine.className = "score-line";
   scoreLine.append(
-    createScoreChip(`内容 ${result.contentScore} / 80`),
-    createScoreChip(`間 ${result.timingScore} / 20`),
-    createScoreChip(`${result.reactionSeconds.toFixed(1)}秒`),
-    createScoreChip(`認識一致 ${Math.round(result.similarity * 100)}%`),
+    createScoreChip(t("contentScore", { score: result.contentScore })),
+    createScoreChip(t("timingScore", { score: result.timingScore })),
+    createScoreChip(
+      t("seconds", { seconds: result.reactionSeconds.toFixed(1) }),
+    ),
+    createScoreChip(
+      t("recognitionMatch", {
+        percent: Math.round(result.similarity * 100),
+      }),
+    ),
   );
 
-  const matched = createParagraph(`判定: 「${result.choiceText}」`);
+  const matched = createParagraph(
+    t("judgedChoice", { choice: result.choiceText }),
+  );
   const feedback = createParagraph(result.feedback);
   feedbackElement.className = "feedback";
   feedbackElement.replaceChildren(scoreLine, matched, feedback);
@@ -471,23 +495,23 @@ function handleRecognitionError(code) {
   if (phase !== "answering") return;
 
   const messages = {
-    "not-allowed": "マイクの使用が許可されていません。ブラウザーの設定を確認してください。",
-    "audio-capture": "利用できるマイクが見つかりません。",
-    "no-speech": "音声を聞き取れませんでした。もう一度試してください。",
-    network: "音声認識サービスに接続できませんでした。",
-    "language-not-supported": "選択した言語はChromeの音声認識でサポートされていません。",
-    "language-unavailable": "選択した音声認識言語を現在利用できません。",
+    "not-allowed": t("errorNotAllowed"),
+    "audio-capture": t("errorAudioCapture"),
+    "no-speech": t("errorNoSpeech"),
+    network: t("errorNetwork"),
+    "language-not-supported": t("errorLanguageNotSupported"),
+    "language-unavailable": t("errorLanguageUnavailable"),
   };
-  setAppMessage(messages[code] ?? `音声認識エラー: ${code}`);
+  setAppMessage(messages[code] ?? t("recognitionError", { code }));
 }
 
 function handleRecognitionEnd(receivedFinalResult) {
   micIndicator.classList.remove("listening");
   if (phase !== "answering" || receivedFinalResult) return;
 
-  micStatus.textContent = "音声を聞き取れませんでした";
+  micStatus.textContent = t("noSpeechDetected");
   micBtn.hidden = false;
-  if (transcriptElement.textContent === "聞き取っています…") {
+  if (transcriptElement.textContent === t("listeningTranscript")) {
     transcriptElement.textContent = "—";
   }
 }
@@ -543,10 +567,16 @@ function showSummary() {
   progressElement.textContent = `${controller.progress.total} / ${controller.progress.total}`;
 
   const summary = controller.summary;
-  summaryScore.textContent = `${summary.totalScore} / ${summary.maximumScore} 点`;
-  summaryDetail.textContent = `平均反応時間 ${summary.averageReactionSeconds.toFixed(1)}秒・${summary.completedBeats}本完了`;
+  summaryScore.textContent = t("summaryScore", {
+    total: summary.totalScore,
+    maximum: summary.maximumScore,
+  });
+  summaryDetail.textContent = t("summaryDetail", {
+    seconds: summary.averageReactionSeconds.toFixed(1),
+    count: summary.completedBeats,
+  });
   renderSummaryBreakdown();
-  setAppMessage("お疲れさまでした。何度でも最初から挑戦できます。");
+  setAppMessage(t("completionMessage"));
 }
 
 function renderSummaryBreakdown() {
@@ -559,10 +589,10 @@ function renderSummaryBreakdown() {
       header.className = "summary-result-header";
       const title = document.createElement("h4");
       title.className = "summary-result-title";
-      title.textContent = `第${beatNumber}問`;
+      title.textContent = t("questionNumber", { number: beatNumber });
       const total = document.createElement("span");
       total.className = "summary-result-total";
-      total.textContent = `${result.totalScore} / 100 点`;
+      total.textContent = t("questionTotal", { score: result.totalScore });
       header.append(title, total);
 
       const boke = document.createElement("div");
@@ -572,10 +602,16 @@ function renderSummaryBreakdown() {
       const scoreLine = document.createElement("div");
       scoreLine.className = "score-line";
       scoreLine.append(
-        createScoreChip(`内容 ${result.contentScore} / 80`),
-        createScoreChip(`間 ${result.timingScore} / 20`),
-        createScoreChip(`反応 ${result.reactionSeconds.toFixed(1)}秒`),
-        createScoreChip(`一致 ${Math.round(result.similarity * 100)}%`),
+        createScoreChip(t("contentScore", { score: result.contentScore })),
+        createScoreChip(t("timingScore", { score: result.timingScore })),
+        createScoreChip(
+          t("reactionSeconds", {
+            seconds: result.reactionSeconds.toFixed(1),
+          }),
+        ),
+        createScoreChip(
+          t("match", { percent: Math.round(result.similarity * 100) }),
+        ),
       );
 
       const feedback = createParagraph(result.feedback);
@@ -584,8 +620,8 @@ function renderSummaryBreakdown() {
         header,
         boke,
         scoreLine,
-        createLabeledParagraph("認識した発言", result.transcript),
-        createLabeledParagraph("判定したツッコミ", result.choiceText),
+        createLabeledParagraph(t("recognizedSpeechLabel"), result.transcript),
+        createLabeledParagraph(t("judgedComebackLabel"), result.choiceText),
         feedback,
       );
       return card;
@@ -599,12 +635,12 @@ presenter.addEventListener("PRESENTER_STATUS", (event) => {
     presenterReady = true;
     presenter.hidden = false;
     stagePlaceholder.hidden = true;
-    launchBtn.textContent = "準備完了";
+    launchBtn.textContent = t("presenterReadyButton");
     launchBtn.disabled = true;
     startBtn.disabled = !recognizer.supported;
-    setPresenterStatus("アバターの準備ができました。");
+    setPresenterStatus(t("presenterReady"));
   } else if (currentStatus) {
-    setPresenterStatus(currentStatus === "Initializing" ? "初期化中…" : currentStatus);
+    setPresenterStatus(currentStatus === "Initializing" ? t("initializing") : currentStatus);
   }
 });
 
@@ -619,9 +655,9 @@ presenter.addEventListener("CONNECT_TOKEN_EXPIRED", async () => {
     const { connect_token: freshToken } =
       await requestJson("/api/connect-token");
     presenter.refreshConnectToken(freshToken);
-    setPresenterStatus("Connectトークンを更新しました。");
+    setPresenterStatus(t("tokenRefreshed"));
   } catch (error) {
-    setPresenterStatus(`トークン更新に失敗しました: ${error.message}`);
+    setPresenterStatus(t("tokenRefreshFailed", { message: error.message }));
   } finally {
     isRefreshingToken = false;
   }
@@ -643,13 +679,13 @@ function requirePresenterPreparation() {
     presenterReady = false;
     phase = "setup";
     startBtn.disabled = true;
-    launchBtn.textContent = "アバターを再準備";
+    launchBtn.textContent = t("reprepareAvatar");
   }
   launchBtn.disabled = config?.mock || !catalogReady || !voiceSelect.value;
   setPresenterStatus(
     voiceSelect.value
-      ? "選択が変わりました。アバターを再準備してください。"
-      : "選択した言語に対応するVoiceがありません。",
+      ? t("selectionChanged")
+      : t("noCompatibleVoice"),
   );
 }
 
@@ -666,12 +702,14 @@ for (const select of [sceneSelect, voiceSelect]) {
 }
 
 speechLanguageSelect.addEventListener("change", () => {
+  applyUiLanguage();
   recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
   updateVoiceOptions();
   requirePresenterPreparation();
 });
 
 async function initializeApp() {
+  applyUiLanguage();
   try {
     const [loadedConfig, scenario] = await Promise.all([
       requestJson("/api/config"),
@@ -685,25 +723,25 @@ async function initializeApp() {
 
     if (!recognizer.supported) {
       speechSupportWarning.hidden = false;
-      setAppMessage("音声認識対応ブラウザーで開いてください。");
+      setAppMessage(t("speechRecognitionRequired"));
     }
 
     if (config.mock) {
       await loadCatalog();
       launchBtn.disabled = true;
-      setPresenterStatus("Mockモードではアバターを起動できません。");
+      setPresenterStatus(t("mockUnavailable"));
       return;
     }
 
     await loadPresenterEngine(config.presenterUrl);
     await loadCatalog();
     launchBtn.disabled = false;
-    setPresenterStatus("Avatar、Scene、Voiceを確認して準備してください。");
+    setPresenterStatus(t("confirmSelections"));
   } catch (error) {
     launchBtn.disabled = true;
     startBtn.disabled = true;
-    setPresenterStatus(`初期化に失敗しました: ${error.message}`);
-    setAppMessage("サーバーの設定と接続状態を確認してください。");
+    setPresenterStatus(t("initializationFailed", { message: error.message }));
+    setAppMessage(t("checkServer"));
     console.error(error);
   }
 }

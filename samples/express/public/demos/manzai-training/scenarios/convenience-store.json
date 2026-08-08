@@ -43,7 +43,11 @@
           },
           "aliases": ["コンビニで冷蔵庫売ってないやろ", "それ家電量販店や"],
           "contentPoints": 80,
-          "feedback": "場所の矛盾をすぐ拾えています。短くて強いツッコミです。"
+          "feedback": {
+            "ja": "場所の矛盾をすぐ拾えています。短くて強いツッコミです。",
+            "en": "You caught the contradiction in the location immediately. It is a short, strong comeback.",
+            "zh": "你立刻抓到地點上的矛盾，這是一句簡短有力的吐槽。"
+          }
         },
         {
           "id": "refrigerator-good",
@@ -54,7 +58,11 @@
           },
           "aliases": ["大きな買い物やな"],
           "contentPoints": 52,
-          "feedback": "反応は自然ですが、コンビニというボケの核心を拾うとさらに良くなります。"
+          "feedback": {
+            "ja": "反応は自然ですが、コンビニというボケの核心を拾うとさらに良くなります。",
+            "en": "The response feels natural, but it will be stronger if you target the convenience-store premise.",
+            "zh": "反應很自然，但如果抓住「便利商店」這個笑點核心會更好。"
+          }
         },
         {
           "id": "refrigerator-weak",
@@ -65,7 +73,11 @@
           },
           "aliases": ["いい冷蔵庫やな"],
           "contentPoints": 20,
-          "feedback": "ボケを肯定しています。おかしい場所や行動を探してみましょう。"
+          "feedback": {
+            "ja": "ボケを肯定しています。おかしい場所や行動を探してみましょう。",
+            "en": "You agreed with the joke. Look for the strange place or action.",
+            "zh": "你順著笑點認同了。試著找出不合理的地點或行為。"
+          }
         }
       ]
     },
@@ -101,7 +113,11 @@
           },
           "aliases": ["目覚まし時計は食べ物ちゃうわ", "時計食べるな"],
           "contentPoints": 80,
-          "feedback": "道具の用途を使って、分かりやすくボケを否定できています。"
+          "feedback": {
+            "ja": "道具の用途を使って、分かりやすくボケを否定できています。",
+            "en": "You clearly rejected the joke by pointing out what the object is actually for.",
+            "zh": "你利用物品原本的用途，清楚否定了這個笑點。"
+          }
         },
         {
           "id": "breakfast-good",
@@ -112,7 +128,11 @@
           },
           "aliases": ["一個でええやろ"],
           "contentPoints": 55,
-          "feedback": "二個という部分は拾えています。食べ物ではない点まで触れると満点です。"
+          "feedback": {
+            "ja": "二個という部分は拾えています。食べ物ではない点まで触れると満点です。",
+            "en": "You caught the “two” detail. Mentioning that it is not food would earn full points.",
+            "zh": "你抓到了「兩個」這個細節。如果再指出它不是食物，就能拿滿分。"
+          }
         },
         {
           "id": "breakfast-weak",
@@ -123,7 +143,11 @@
           },
           "aliases": ["健康に良さそうやな"],
           "contentPoints": 15,
-          "feedback": "設定を受け入れてしまっています。常識とのズレを否定してみましょう。"
+          "feedback": {
+            "ja": "設定を受け入れてしまっています。常識とのズレを否定してみましょう。",
+            "en": "You accepted the premise. Try rejecting its departure from common sense.",
+            "zh": "你接受了這個設定。試著否定它與常識不符的地方。"
+          }
         }
       ]
     },
@@ -159,7 +183,11 @@
           },
           "aliases": ["電車より速いやないか", "電車を走って追い越せるか"],
           "contentPoints": 80,
-          "feedback": "あり得ない身体能力を直接指摘できていて、勢いも出しやすいツッコミです。"
+          "feedback": {
+            "ja": "あり得ない身体能力を直接指摘できていて、勢いも出しやすいツッコミです。",
+            "en": "You directly called out the impossible athletic ability, making this an energetic comeback.",
+            "zh": "你直接指出不可能的運動能力，很容易做出有氣勢的吐槽。"
+          }
         },
         {
           "id": "train-good",
@@ -170,7 +198,11 @@
           },
           "aliases": ["快速乗れや"],
           "contentPoints": 62,
-          "feedback": "状況に合った別角度のツッコミです。ボケの誇張を拾う案も試してみましょう。"
+          "feedback": {
+            "ja": "状況に合った別角度のツッコミです。ボケの誇張を拾う案も試してみましょう。",
+            "en": "This is a valid comeback from another angle. Also try targeting the joke's exaggeration.",
+            "zh": "這是從另一個角度切入的有效吐槽，也可以試著抓住笑點中的誇張。"
+          }
         },
         {
           "id": "train-weak",
@@ -181,7 +213,11 @@
           },
           "aliases": ["運動になってよかったな"],
           "contentPoints": 20,
-          "feedback": "会話としては成立しますが、ボケへの否定が弱くなっています。"
+          "feedback": {
+            "ja": "会話としては成立しますが、ボケへの否定が弱くなっています。",
+            "en": "The conversation works, but the rejection of the joke is too weak.",
+            "zh": "對話雖然成立，但對笑點的否定太弱。"
+          }
         }
       ]
     }

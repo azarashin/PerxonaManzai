@@ -91,9 +91,14 @@ function validateScenario(scenario) {
     if (beat.choices.length < 2) {
       throw new Error(`シナリオ ${index + 1} 件目には選択肢が2件以上必要です。`);
     }
-    if (beat.choices.some((choice) => !isLocalizedText(choice.text))) {
+    if (
+      beat.choices.some(
+        (choice) =>
+          !isLocalizedText(choice.text) || !isLocalizedText(choice.feedback),
+      )
+    ) {
       throw new Error(
-        `シナリオ ${index + 1} 件目の選択肢に日英中の表示文が必要です。`,
+        `シナリオ ${index + 1} 件目の選択肢に日英中の表示文と講評が必要です。`,
       );
     }
   }
