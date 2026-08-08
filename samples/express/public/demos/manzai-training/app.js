@@ -31,6 +31,7 @@ const progressElement = document.querySelector("#progress");
 const summaryElement = document.querySelector("#summary");
 const summaryScore = document.querySelector("#summary-score");
 const summaryDetail = document.querySelector("#summary-detail");
+const summaryBreakdown = document.querySelector("#summary-breakdown");
 const speechSupportWarning = document.querySelector("#speech-support-warning");
 /** @type {HTMLElement & import('@perxona/presenter-types').IPresentationWidget} */
 const presenter = document.querySelector("sv-presenter");
@@ -451,6 +452,15 @@ function createParagraph(text) {
   return paragraph;
 }
 
+function createLabeledParagraph(label, value) {
+  const paragraph = document.createElement("p");
+  paragraph.className = "summary-result-detail";
+  const heading = document.createElement("strong");
+  heading.textContent = `${label}: `;
+  paragraph.append(heading, document.createTextNode(value));
+  return paragraph;
+}
+
 function highlightChoice(choiceId) {
   for (const choice of choicesElement.querySelectorAll(".choice")) {
     choice.classList.toggle("matched", choice.dataset.choiceId === choiceId);
@@ -535,7 +545,52 @@ function showSummary() {
   const summary = controller.summary;
   summaryScore.textContent = `${summary.totalScore} / ${summary.maximumScore} 点`;
   summaryDetail.textContent = `平均反応時間 ${summary.averageReactionSeconds.toFixed(1)}秒・${summary.completedBeats}本完了`;
+  renderSummaryBreakdown();
   setAppMessage("お疲れさまでした。何度でも最初から挑戦できます。");
+}
+
+function renderSummaryBreakdown() {
+  summaryBreakdown.replaceChildren(
+    ...controller.resultDetails.map(({ beatNumber, beat, result }) => {
+      const card = document.createElement("article");
+      card.className = "summary-result";
+
+      const header = document.createElement("header");
+      header.className = "summary-result-header";
+      const title = document.createElement("h4");
+      title.className = "summary-result-title";
+      title.textContent = `第${beatNumber}問`;
+      const total = document.createElement("span");
+      total.className = "summary-result-total";
+      total.textContent = `${result.totalScore} / 100 点`;
+      header.append(title, total);
+
+      const boke = document.createElement("div");
+      boke.className = "summary-result-boke";
+      renderLocalizedText(boke, beat.boke);
+
+      const scoreLine = document.createElement("div");
+      scoreLine.className = "score-line";
+      scoreLine.append(
+        createScoreChip(`内容 ${result.contentScore} / 80`),
+        createScoreChip(`間 ${result.timingScore} / 20`),
+        createScoreChip(`反応 ${result.reactionSeconds.toFixed(1)}秒`),
+        createScoreChip(`一致 ${Math.round(result.similarity * 100)}%`),
+      );
+
+      const feedback = createParagraph(result.feedback);
+      feedback.className = "summary-result-feedback";
+      card.append(
+        header,
+        boke,
+        scoreLine,
+        createLabeledParagraph("認識した発言", result.transcript),
+        createLabeledParagraph("判定したツッコミ", result.choiceText),
+        feedback,
+      );
+      return card;
+    }),
+  );
 }
 
 presenter.addEventListener("PRESENTER_STATUS", (event) => {

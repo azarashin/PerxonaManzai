@@ -489,6 +489,62 @@ sv-presenter:not([hidden]) {
   font-weight: 900;
 }
 
+.summary-breakdown {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+  text-align: left;
+}
+
+.summary-result {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--surface-raised);
+}
+
+.summary-result-header {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.summary-result-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.summary-result-total {
+  color: var(--accent);
+  font-size: 1.3rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.summary-result-boke {
+  margin-bottom: 0.75rem;
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  background: var(--surface);
+}
+
+.summary-result-detail {
+  margin: 0.35rem 0;
+  overflow-wrap: anywhere;
+}
+
+.summary-result-detail strong {
+  color: var(--muted);
+}
+
+.summary-result-feedback {
+  margin: 0.7rem 0 0;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border);
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
