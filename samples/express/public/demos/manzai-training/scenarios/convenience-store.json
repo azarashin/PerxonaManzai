@@ -1,29 +1,53 @@
 {
   "id": "convenience-store",
-  "title": "コンビニに行った話",
-  "description": "表示されたツッコミを声に出して、ボケの核心を素早く拾う練習です。",
+  "title": {
+    "ja": "コンビニに行った話",
+    "en": "A Trip to the Convenience Store",
+    "zh": "去便利商店的故事"
+  },
+  "description": {
+    "ja": "表示されたツッコミを声に出して、ボケの核心を素早く拾う練習です。",
+    "en": "Practice spotting the heart of each joke and delivering one of the displayed comebacks out loud.",
+    "zh": "練習快速抓住每個笑點的核心，並大聲說出畫面上的吐槽。"
+  },
   "beats": [
     {
       "id": "refrigerator",
-      "boke": "昨日コンビニで、新しい冷蔵庫を買ってきてん。",
+      "boke": {
+        "ja": "昨日コンビニで、新しい冷蔵庫を買ってきてん。",
+        "en": "Yesterday, I bought a new refrigerator at the convenience store.",
+        "zh": "昨天我在便利商店買了一台新冰箱。"
+      },
       "choices": [
         {
           "id": "refrigerator-excellent",
-          "text": "コンビニに冷蔵庫売ってへんわ！",
+          "text": {
+            "ja": "コンビニに冷蔵庫売ってへんわ！",
+            "en": "Convenience stores don't sell refrigerators!",
+            "zh": "便利商店才不會賣冰箱咧！"
+          },
           "aliases": ["コンビニで冷蔵庫売ってないやろ", "それ家電量販店や"],
           "contentPoints": 80,
           "feedback": "場所の矛盾をすぐ拾えています。短くて強いツッコミです。"
         },
         {
           "id": "refrigerator-good",
-          "text": "ずいぶん大きい買い物したな！",
+          "text": {
+            "ja": "ずいぶん大きい買い物したな！",
+            "en": "That's one seriously big purchase!",
+            "zh": "你買的東西還真大啊！"
+          },
           "aliases": ["大きな買い物やな"],
           "contentPoints": 52,
           "feedback": "反応は自然ですが、コンビニというボケの核心を拾うとさらに良くなります。"
         },
         {
           "id": "refrigerator-weak",
-          "text": "冷蔵庫ええなあ！",
+          "text": {
+            "ja": "冷蔵庫ええなあ！",
+            "en": "Nice refrigerator!",
+            "zh": "冰箱不錯嘛！"
+          },
           "aliases": ["いい冷蔵庫やな"],
           "contentPoints": 20,
           "feedback": "ボケを肯定しています。おかしい場所や行動を探してみましょう。"
@@ -32,25 +56,41 @@
     },
     {
       "id": "breakfast",
-      "boke": "朝ごはんは健康のために、目覚まし時計を二個食べてる。",
+      "boke": {
+        "ja": "朝ごはんは健康のために、目覚まし時計を二個食べてる。",
+        "en": "For my health, I eat two alarm clocks for breakfast.",
+        "zh": "為了健康，我早餐都吃兩個鬧鐘。"
+      },
       "choices": [
         {
           "id": "breakfast-excellent",
-          "text": "起きるためのもんを食うな！",
+          "text": {
+            "ja": "起きるためのもんを食うな！",
+            "en": "Don't eat the thing that's supposed to wake you up!",
+            "zh": "別把叫你起床的東西吃掉啦！"
+          },
           "aliases": ["目覚まし時計は食べ物ちゃうわ", "時計食べるな"],
           "contentPoints": 80,
           "feedback": "道具の用途を使って、分かりやすくボケを否定できています。"
         },
         {
           "id": "breakfast-good",
-          "text": "せめて一個にしとけ！",
+          "text": {
+            "ja": "せめて一個にしとけ！",
+            "en": "At least stick to one!",
+            "zh": "至少只吃一個啦！"
+          },
           "aliases": ["一個でええやろ"],
           "contentPoints": 55,
           "feedback": "二個という部分は拾えています。食べ物ではない点まで触れると満点です。"
         },
         {
           "id": "breakfast-weak",
-          "text": "健康的やな！",
+          "text": {
+            "ja": "健康的やな！",
+            "en": "Sounds healthy!",
+            "zh": "聽起來很健康嘛！"
+          },
           "aliases": ["健康に良さそうやな"],
           "contentPoints": 15,
           "feedback": "設定を受け入れてしまっています。常識とのズレを否定してみましょう。"
@@ -59,25 +99,41 @@
     },
     {
       "id": "train",
-      "boke": "今日は急いでたから、各駅停車を走って追い越してきた。",
+      "boke": {
+        "ja": "今日は急いでたから、各駅停車を走って追い越してきた。",
+        "en": "I was in a hurry today, so I ran past a local train.",
+        "zh": "今天因為趕時間，我用跑的超過了每站都停的電車。"
+      },
       "choices": [
         {
           "id": "train-excellent",
-          "text": "お前どんだけ足速いねん！",
+          "text": {
+            "ja": "お前どんだけ足速いねん！",
+            "en": "How fast are you?!",
+            "zh": "你的腳到底有多快啊！"
+          },
           "aliases": ["電車より速いやないか", "電車を走って追い越せるか"],
           "contentPoints": 80,
           "feedback": "あり得ない身体能力を直接指摘できていて、勢いも出しやすいツッコミです。"
         },
         {
           "id": "train-good",
-          "text": "急ぐなら快速に乗れ！",
+          "text": {
+            "ja": "急ぐなら快速に乗れ！",
+            "en": "If you're in a hurry, take the express!",
+            "zh": "趕時間就搭快速列車啦！"
+          },
           "aliases": ["快速乗れや"],
           "contentPoints": 62,
           "feedback": "状況に合った別角度のツッコミです。ボケの誇張を拾う案も試してみましょう。"
         },
         {
           "id": "train-weak",
-          "text": "いい運動になったな！",
+          "text": {
+            "ja": "いい運動になったな！",
+            "en": "At least you got a good workout!",
+            "zh": "至少有運動到嘛！"
+          },
           "aliases": ["運動になってよかったな"],
           "contentPoints": 20,
           "feedback": "会話としては成立しますが、ボケへの否定が弱くなっています。"
