@@ -2,7 +2,7 @@ const MINIMUM_MATCH_SCORE = 0.48;
 
 export function evaluateResponse(beat, transcript, reactionSeconds) {
   const matches = beat.choices.map((choice) => {
-    const phrases = [choice.text, ...(choice.aliases ?? [])];
+    const phrases = [localizedText(choice.text, "ja"), ...(choice.aliases ?? [])];
     const similarity = Math.max(
       ...phrases.map((phrase) => phraseSimilarity(transcript, phrase)),
     );
@@ -31,7 +31,7 @@ export function evaluateResponse(beat, transcript, reactionSeconds) {
     matched: true,
     transcript,
     choiceId: bestMatch.choice.id,
-    choiceText: bestMatch.choice.text,
+    choiceText: localizedText(bestMatch.choice.text, "ja"),
     similarity: bestMatch.similarity,
     contentScore,
     timingScore,
@@ -39,6 +39,11 @@ export function evaluateResponse(beat, transcript, reactionSeconds) {
     reactionSeconds,
     feedback: bestMatch.choice.feedback,
   };
+}
+
+function localizedText(value, language) {
+  if (typeof value === "string") return value;
+  return value?.[language] ?? "";
 }
 
 export function normalizeJapanese(value) {
