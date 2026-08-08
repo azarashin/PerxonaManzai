@@ -5,6 +5,7 @@ import { SpeechRecognizer } from "./speech-recognizer.js";
 const avatarSelect = document.querySelector("#avatar-select");
 const sceneSelect = document.querySelector("#scene-select");
 const voiceSelect = document.querySelector("#voice-select");
+const speechLanguageSelect = document.querySelector("#speech-language-select");
 const launchBtn = document.querySelector("#launch-btn");
 const startBtn = document.querySelector("#start-btn");
 const replayBtn = document.querySelector("#replay-btn");
@@ -40,6 +41,14 @@ let presenterInitializing = false;
 let phase = "setup";
 let responseWindowStartedAt = 0;
 let isRefreshingToken = false;
+let availableVoices = [];
+let catalogReady = false;
+
+const displayLanguages = [
+  { key: "ja", label: "JA", lang: "ja" },
+  { key: "en", label: "EN", lang: "en" },
+  { key: "zh", label: "中文", lang: "zh-Hant" },
+];
 
 const recognizer = new SpeechRecognizer({
   onInterim: (transcript) => {
@@ -90,6 +99,25 @@ function fillSelect(select, items, preferredId) {
   );
 }
 
+function voicesForLanguage(language) {
+  const hasLanguageMetadata = availableVoices.some(
+    (voice) => Array.isArray(voice.languages) && voice.languages.length > 0,
+  );
+  if (!hasLanguageMetadata) return availableVoices;
+
+  return availableVoices.filter(
+    (voice) =>
+      Array.isArray(voice.languages) &&
+      (voice.languages.includes(language) || voice.languages.includes("auto")),
+  );
+}
+
+function updateVoiceOptions(preferredId = voiceSelect.value) {
+  const compatibleVoices = voicesForLanguage(speechLanguageSelect.value);
+  fillSelect(voiceSelect, compatibleVoices, preferredId);
+  return compatibleVoices.length;
+}
+
 async function loadCatalog() {
   const [{ items: avatars }, { items: scenes }, { items: voices }] =
     await Promise.all([
@@ -99,13 +127,15 @@ async function loadCatalog() {
     ]);
 
   const preferredTarget = config.fixedTarget ?? config.defaults ?? {};
+  availableVoices = voices;
   fillSelect(avatarSelect, avatars, preferredTarget.avatarId);
   fillSelect(sceneSelect, scenes, preferredTarget.sceneId);
-  fillSelect(voiceSelect, voices, preferredTarget.voiceId);
+  updateVoiceOptions(preferredTarget.voiceId);
 
   if (!avatarSelect.value || !sceneSelect.value || !voiceSelect.value) {
     throw new Error("利用できるAvatar、Scene、Voiceを確認してください。");
   }
+  catalogReady = true;
 }
 
 function selectedTarget() {
@@ -163,12 +193,40 @@ function renderChoices(beat) {
       number.className = "choice-number";
       number.textContent = String(index + 1);
 
-      const text = document.createElement("strong");
-      text.textContent = choice.text;
+      const text = document.createElement("div");
+      text.className = "choice-text";
+      renderLocalizedText(text, choice.text);
       row.append(number, text);
       return row;
     }),
   );
+}
+
+function renderLocalizedText(element, value) {
+  element.classList.add("localized-text");
+  element.replaceChildren(
+    ...displayLanguages.map(({ key, label, lang }) => {
+      const line = document.createElement("span");
+      line.className = `language-line language-${key}`;
+      line.lang = lang;
+
+      const languageLabel = document.createElement("span");
+      languageLabel.className = "language-label";
+      languageLabel.textContent = label;
+      languageLabel.setAttribute("aria-hidden", "true");
+
+      const languageText = document.createElement("span");
+      languageText.className = "language-text";
+      languageText.textContent = localizedText(value, key);
+      line.append(languageLabel, languageText);
+      return line;
+    }),
+  );
+}
+
+function localizedText(value, language) {
+  if (typeof value === "string") return value;
+  return value?.[language] ?? value?.ja ?? "";
 }
 
 async function playCurrentBeat() {
@@ -196,12 +254,14 @@ async function playCurrentBeat() {
   micIndicator.classList.remove("listening");
   micStatus.textContent = "ボケを再生中";
   phaseLabel.textContent = "ボケを聞いてください";
-  bokeCaption.textContent = beat.boke;
+  renderLocalizedText(bokeCaption, beat.boke);
   bokeCaption.hidden = false;
   setAppMessage("ボケの発話が終わると、マイクが自動的に待ち受けます。");
 
   try {
-    const result = await presenter.present(beat.boke);
+    const result = await presenter.present(
+      localizedText(beat.boke, speechLanguageSelect.value),
+    );
     if (!result?.success) {
       phase = "ready";
       setAppMessage(
@@ -433,17 +493,34 @@ replayBtn.addEventListener("click", () => void playCurrentBeat());
 nextBtn.addEventListener("click", advanceTraining);
 restartBtn.addEventListener("click", startTraining);
 
+function requirePresenterPreparation() {
+  if (presenterReady) {
+    recognizer.abort();
+    presenter.setListening?.(false);
+    presenter.interruptPresentation?.();
+    presenterReady = false;
+    phase = "setup";
+    startBtn.disabled = true;
+    launchBtn.textContent = "アバターを再準備";
+  }
+  launchBtn.disabled = config?.mock || !catalogReady || !voiceSelect.value;
+  setPresenterStatus(
+    voiceSelect.value
+      ? "選択が変わりました。アバターを再準備してください。"
+      : "選択した言語に対応するVoiceがありません。",
+  );
+}
+
 for (const select of [avatarSelect, sceneSelect, voiceSelect]) {
   select.addEventListener("change", () => {
-    if (presenterReady) {
-      presenterReady = false;
-      startBtn.disabled = true;
-      launchBtn.disabled = false;
-      launchBtn.textContent = "アバターを再準備";
-      setPresenterStatus("選択が変わりました。アバターを再準備してください。");
-    }
+    requirePresenterPreparation();
   });
 }
+
+speechLanguageSelect.addEventListener("change", () => {
+  updateVoiceOptions();
+  requirePresenterPreparation();
+});
 
 async function initializeApp() {
   try {
@@ -453,8 +530,8 @@ async function initializeApp() {
     ]);
     config = loadedConfig;
     controller = new ScenarioController(scenario);
-    scenarioTitle.textContent = scenario.title;
-    scenarioDescription.textContent = scenario.description;
+    renderLocalizedText(scenarioTitle, scenario.title);
+    renderLocalizedText(scenarioDescription, scenario.description);
     progressElement.textContent = `0 / ${scenario.beats.length}`;
 
     if (!recognizer.supported) {

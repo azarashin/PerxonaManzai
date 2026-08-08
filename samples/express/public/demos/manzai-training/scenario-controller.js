@@ -58,7 +58,7 @@ export class ScenarioController {
 }
 
 function validateScenario(scenario) {
-  if (!scenario?.title || !Array.isArray(scenario.beats)) {
+  if (!isLocalizedText(scenario?.title) || !Array.isArray(scenario.beats)) {
     throw new Error("シナリオの形式が正しくありません。");
   }
   if (scenario.beats.length === 0) {
@@ -66,11 +66,23 @@ function validateScenario(scenario) {
   }
 
   for (const [index, beat] of scenario.beats.entries()) {
-    if (!beat.id || !beat.boke || !Array.isArray(beat.choices)) {
+    if (!beat.id || !isLocalizedText(beat.boke) || !Array.isArray(beat.choices)) {
       throw new Error(`シナリオ ${index + 1} 件目の形式が正しくありません。`);
     }
     if (beat.choices.length < 2) {
       throw new Error(`シナリオ ${index + 1} 件目には選択肢が2件以上必要です。`);
     }
+    if (beat.choices.some((choice) => !isLocalizedText(choice.text))) {
+      throw new Error(
+        `シナリオ ${index + 1} 件目の選択肢に日英中の表示文が必要です。`,
+      );
+    }
   }
+}
+
+function isLocalizedText(value) {
+  if (typeof value === "string") return value.trim().length > 0;
+  return ["ja", "en", "zh"].every(
+    (language) => typeof value?.[language] === "string" && value[language].trim(),
+  );
 }

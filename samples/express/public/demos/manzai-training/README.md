@@ -4,6 +4,11 @@ A Japanese voice-recognition training demo built on the Perxona Presenter. The a
 fully finished, the learner speaks one of the displayed `tsukkomi` choices. The demo identifies the choice, scores its
 pre-authored content quality, adds a response-timing score, and advances to the next beat.
 
+Scenario titles, boke captions, and tsukkomi choices are displayed simultaneously in Japanese, English, and Traditional
+Chinese. Before initializing the Presenter, the learner can choose English, Traditional Chinese, or Japanese for the
+character's spoken boke. The Voice picker is filtered to voices whose catalog metadata supports the selected speech language.
+Browser speech recognition and response scoring remain Japanese in this MVP.
+
 ## Run
 
 Start the Express sample from `samples/express` and open:
@@ -18,7 +23,7 @@ store audio recordings itself.
 
 ## Flow
 
-1. Load the Connect catalog and choose an avatar, scene, and voice.
+1. Load the Connect catalog and choose a speech language, avatar, scene, and compatible voice.
 2. Initialize `<sv-presenter>` and unlock audio from the launch-button gesture.
 3. Play the current `boke` with `presenter.present()`.
 4. Wait for `ALL_PERFORMANCE_FINISHED`, set the avatar to Listening, and start recognition.
@@ -39,17 +44,25 @@ learner's answer.
 
 ## Authoring scenarios
 
-Each beat needs a `boke` and at least two choices. `contentPoints` is capped at 80. Add likely speech-recognition variants or
-equivalent phrases to `aliases`:
+Each beat needs a localized `boke` and at least two localized choices. Every localized value requires `ja`, `en`, and `zh`.
+`contentPoints` is capped at 80. Add likely Japanese speech-recognition variants or equivalent phrases to `aliases`:
 
 ```json
 {
   "id": "example",
-  "boke": "ボケ役が話す文章",
+  "boke": {
+    "ja": "ボケ役が話す文章",
+    "en": "The line spoken by the boke",
+    "zh": "裝傻角色說的台詞"
+  },
   "choices": [
     {
       "id": "example-best",
-      "text": "画面に表示するツッコミ",
+      "text": {
+        "ja": "画面に表示するツッコミ",
+        "en": "The comeback shown on screen",
+        "zh": "畫面上顯示的吐槽"
+      },
       "aliases": ["認識されそうな言い換え"],
       "contentPoints": 80,
       "feedback": "採点後に表示する説明"
