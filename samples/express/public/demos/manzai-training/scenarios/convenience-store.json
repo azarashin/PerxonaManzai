@@ -18,6 +18,21 @@
         "en": "Yesterday, I bought a new refrigerator at the convenience store.",
         "zh": "昨天我在便利商店買了一台新冰箱。"
       },
+      "reaction": {
+        "description": {
+          "ja": "大きな買い物を得意げに紹介する",
+          "en": "Proudly present a large purchase",
+          "zh": "得意地介紹一件大型商品"
+        },
+        "motionTags": [
+          "pose:showcase_02",
+          "pose:talking_02",
+          "category:talking"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
       "choices": [
         {
           "id": "refrigerator-excellent",
@@ -61,6 +76,21 @@
         "en": "For my health, I eat two alarm clocks for breakfast.",
         "zh": "為了健康，我早餐都吃兩個鬧鐘。"
       },
+      "reaction": {
+        "description": {
+          "ja": "健康的だと自信満々に親指を立てる",
+          "en": "Give a confident thumbs-up about being healthy",
+          "zh": "自信滿滿地豎起拇指表示很健康"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
       "choices": [
         {
           "id": "breakfast-excellent",
@@ -103,6 +133,21 @@
         "ja": "今日は急いでたから、各駅停車を走って追い越してきた。",
         "en": "I was in a hurry today, so I ran past a local train.",
         "zh": "今天因為趕時間，我用跑的超過了每站都停的電車。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "電車を追い越したことを誇らしげにアピールする",
+          "en": "Boast proudly about outrunning the train",
+          "zh": "得意地炫耀自己跑贏了電車"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "pose:talking_05",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
       },
       "choices": [
         {

@@ -1,4 +1,5 @@
 import { evaluateResponse } from "./evaluator.js";
+import { buildPresentationContent } from "./reaction-resolver.js";
 import { ScenarioController } from "./scenario-controller.js";
 import { SpeechRecognizer } from "./speech-recognizer.js";
 
@@ -41,8 +42,11 @@ let presenterInitializing = false;
 let phase = "setup";
 let responseWindowStartedAt = 0;
 let isRefreshingToken = false;
+let availableMotions = [];
+let motionCatalogAvatarId = "";
 let availableVoices = [];
 let catalogReady = false;
+let autoAdvanceTimer = null;
 
 const displayLanguages = [
   { key: "ja", label: "JA", lang: "ja" },
@@ -50,7 +54,20 @@ const displayLanguages = [
   { key: "zh", label: "中文", lang: "zh-Hant" },
 ];
 
+const recognitionLanguages = {
+  en: "en-US",
+  zh: "zh-TW",
+  ja: "ja-JP",
+};
+
+const speechLanguageNames = {
+  en: "English",
+  zh: "中文",
+  ja: "日本語",
+};
+
 const recognizer = new SpeechRecognizer({
+  language: recognitionLanguages[speechLanguageSelect.value],
   onInterim: (transcript) => {
     transcriptElement.textContent = transcript;
   },
@@ -118,6 +135,30 @@ function updateVoiceOptions(preferredId = voiceSelect.value) {
   return compatibleVoices.length;
 }
 
+async function loadAvatarMotions(avatarId = avatarSelect.value) {
+  if (!avatarId) {
+    availableMotions = [];
+    motionCatalogAvatarId = "";
+    return availableMotions;
+  }
+  if (motionCatalogAvatarId === avatarId) return availableMotions;
+
+  const { items = [] } = await requestJson(
+    `/api/avatars/${encodeURIComponent(avatarId)}/motions`,
+  );
+  if (avatarSelect.value !== avatarId) return [];
+
+  availableMotions = items
+    .map((motion) => ({
+      id: motion.id ?? motion.motion_id,
+      name: motion.name ?? motion.id ?? motion.motion_id,
+      tags: Array.isArray(motion.tags) ? motion.tags : [],
+    }))
+    .filter((motion) => typeof motion.id === "string" && motion.id.trim());
+  motionCatalogAvatarId = avatarId;
+  return availableMotions;
+}
+
 async function loadCatalog() {
   const [{ items: avatars }, { items: scenes }, { items: voices }] =
     await Promise.all([
@@ -128,6 +169,8 @@ async function loadCatalog() {
 
   const preferredTarget = config.fixedTarget ?? config.defaults ?? {};
   availableVoices = voices;
+  availableMotions = [];
+  motionCatalogAvatarId = "";
   fillSelect(avatarSelect, avatars, preferredTarget.avatarId);
   fillSelect(sceneSelect, scenes, preferredTarget.sceneId);
   updateVoiceOptions(preferredTarget.voiceId);
@@ -155,6 +198,14 @@ async function initializePresenter() {
 
   try {
     await presenter.resumeAudioPlayback();
+    setPresenterStatus("リアクション用モーションを取得しています…");
+    try {
+      await loadAvatarMotions();
+    } catch (error) {
+      availableMotions = [];
+      motionCatalogAvatarId = "";
+      console.warn("リアクション用モーションを取得できませんでした。", error);
+    }
     setPresenterStatus("Connectトークンを取得しています…");
     const { connect_token: connectToken } =
       await requestJson("/api/connect-token");
@@ -230,6 +281,7 @@ function localizedText(value, language) {
 }
 
 async function playCurrentBeat() {
+  clearAutoAdvance();
   const beat = controller.currentBeat;
   if (!beat) {
     showSummary();
@@ -259,9 +311,17 @@ async function playCurrentBeat() {
   setAppMessage("ボケの発話が終わると、マイクが自動的に待ち受けます。");
 
   try {
-    const result = await presenter.present(
+    const presentation = buildPresentationContent(
       localizedText(beat.boke, speechLanguageSelect.value),
+      beat.reaction,
+      availableMotions,
     );
+    if (beat.reaction && !presentation.motion) {
+      console.warn(
+        `リアクション「${localizedText(beat.reaction.description, "ja")}」に対応するモーションがないため、自動モーションで再生します。`,
+      );
+    }
+    const result = await presenter.present(presentation.content);
     if (!result?.success) {
       phase = "ready";
       setAppMessage(
@@ -282,7 +342,7 @@ function openResponseWindow() {
   phase = "answering";
   responseWindowStartedAt = performance.now();
   choicesElement.hidden = false;
-  phaseLabel.textContent = "好きなツッコミを一つ、声に出してください";
+  phaseLabel.textContent = `${speechLanguageNames[speechLanguageSelect.value]}で、好きなツッコミを一つ声に出してください`;
   micStatus.textContent = "マイクを開始します…";
   presenter.setListening?.(true);
   micBtn.hidden = false;
@@ -296,11 +356,12 @@ function openResponseWindow() {
 function startRecognition() {
   if (phase !== "answering" || recognizer.active) return;
 
+  recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
   transcriptElement.textContent = "聞き取っています…";
   feedbackElement.hidden = true;
   micBtn.hidden = true;
   micIndicator.classList.add("listening");
-  micStatus.textContent = "聞き取り中";
+  micStatus.textContent = `聞き取り中（${speechLanguageNames[speechLanguageSelect.value]}）`;
 
   try {
     recognizer.start();
@@ -324,6 +385,7 @@ function handleFinalTranscript(transcript) {
     controller.currentBeat,
     transcript,
     reactionSeconds,
+    speechLanguageSelect.value,
   );
 
   if (!result.matched) {
@@ -348,11 +410,15 @@ function handleFinalTranscript(transcript) {
   highlightChoice(result.choiceId);
   replayBtn.hidden = false;
   nextBtn.hidden = false;
-  nextBtn.textContent =
+  const nextAction =
     controller.progress.current === controller.progress.total
       ? "結果を見る"
       : "次のボケへ";
-  setAppMessage("内容80点・反応速度20点の合計で採点しています。");
+  nextBtn.textContent = `${nextAction}（2秒後）`;
+  setAppMessage(
+    `内容80点・反応速度20点の合計です。2秒後に「${nextAction}」へ進みます。`,
+  );
+  scheduleAutoAdvance();
 }
 
 function showEvaluation(result) {
@@ -399,6 +465,8 @@ function handleRecognitionError(code) {
     "audio-capture": "利用できるマイクが見つかりません。",
     "no-speech": "音声を聞き取れませんでした。もう一度試してください。",
     network: "音声認識サービスに接続できませんでした。",
+    "language-not-supported": "選択した言語はChromeの音声認識でサポートされていません。",
+    "language-unavailable": "選択した音声認識言語を現在利用できません。",
   };
   setAppMessage(messages[code] ?? `音声認識エラー: ${code}`);
 }
@@ -414,9 +482,25 @@ function handleRecognitionEnd(receivedFinalResult) {
   }
 }
 
+function clearAutoAdvance() {
+  if (autoAdvanceTimer !== null) {
+    window.clearTimeout(autoAdvanceTimer);
+    autoAdvanceTimer = null;
+  }
+}
+
+function scheduleAutoAdvance() {
+  clearAutoAdvance();
+  autoAdvanceTimer = window.setTimeout(() => {
+    autoAdvanceTimer = null;
+    if (phase === "feedback") advanceTraining();
+  }, 2000);
+}
+
 function startTraining() {
   if (!presenterReady || !recognizer.supported) return;
 
+  clearAutoAdvance();
   controller.start();
   startBtn.hidden = true;
   restartBtn.hidden = true;
@@ -424,6 +508,7 @@ function startTraining() {
 }
 
 function advanceTraining() {
+  clearAutoAdvance();
   nextBtn.hidden = true;
   replayBtn.hidden = true;
   controller.advance();
@@ -435,6 +520,7 @@ function advanceTraining() {
 }
 
 function showSummary() {
+  clearAutoAdvance();
   phase = "complete";
   recognizer.abort();
   presenter.setListening?.(false);
@@ -494,6 +580,7 @@ nextBtn.addEventListener("click", advanceTraining);
 restartBtn.addEventListener("click", startTraining);
 
 function requirePresenterPreparation() {
+  clearAutoAdvance();
   if (presenterReady) {
     recognizer.abort();
     presenter.setListening?.(false);
@@ -511,13 +598,20 @@ function requirePresenterPreparation() {
   );
 }
 
-for (const select of [avatarSelect, sceneSelect, voiceSelect]) {
+avatarSelect.addEventListener("change", () => {
+  availableMotions = [];
+  motionCatalogAvatarId = "";
+  requirePresenterPreparation();
+});
+
+for (const select of [sceneSelect, voiceSelect]) {
   select.addEventListener("change", () => {
     requirePresenterPreparation();
   });
 }
 
 speechLanguageSelect.addEventListener("change", () => {
+  recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
   updateVoiceOptions();
   requirePresenterPreparation();
 });
