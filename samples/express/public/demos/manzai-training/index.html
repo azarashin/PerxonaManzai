@@ -5,60 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
+      data-i18n-content="pageDescription"
       content="Perxonaのアバターを相手にツッコミを練習する漫才トレーニングMVP"
     />
-    <title>ツッコミ道場 | Perxona Connect</title>
+    <title data-i18n="pageTitle">ツッコミ道場 | Perxona Connect</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="app-header">
-      <a class="back-link" href="../../">← Demos</a>
+      <a class="back-link" href="../../" data-i18n="backToDemos">← デモ一覧</a>
       <div>
         <p class="eyebrow">MANZAI TRAINING MVP</p>
-        <h1>ツッコミ道場</h1>
+        <h1 data-i18n="appTitle">ツッコミ道場</h1>
       </div>
-      <span class="browser-badge">Chrome / Edge 推奨</span>
+      <span class="browser-badge" data-i18n="browserRecommended">Chrome / Edge 推奨</span>
     </header>
 
     <main class="app-shell">
-      <section class="presenter-column" aria-label="ボケ役アバター">
+      <section
+        class="presenter-column"
+        aria-label="ボケ役アバター"
+        data-i18n-aria-label="presenterColumnLabel"
+      >
         <div class="setup-card">
           <label>
-            Speech Language
-            <select id="speech-language-select" aria-label="キャラクターの発話言語">
+            <span data-i18n="speechLanguage">キャラクターの発話言語</span>
+            <select
+              id="speech-language-select"
+              aria-label="キャラクターの発話言語"
+              data-i18n-aria-label="speechLanguageAria"
+            >
               <option value="en">English</option>
               <option value="zh">中文（繁體）</option>
               <option value="ja" selected>日本語</option>
             </select>
           </label>
           <label>
-            Avatar
-            <select id="avatar-select" aria-label="アバター"></select>
+            <span data-i18n="avatar">アバター</span>
+            <select id="avatar-select" aria-label="アバター" data-i18n-aria-label="avatarAria"></select>
           </label>
           <label>
-            Scene
-            <select id="scene-select" aria-label="シーン"></select>
+            <span data-i18n="scene">シーン</span>
+            <select id="scene-select" aria-label="シーン" data-i18n-aria-label="sceneAria"></select>
           </label>
           <label>
-            Voice
-            <select id="voice-select" aria-label="音声"></select>
+            <span data-i18n="voice">音声</span>
+            <select id="voice-select" aria-label="音声" data-i18n-aria-label="voiceAria"></select>
           </label>
           <button id="launch-btn" class="primary" type="button" disabled>
-            アバターを準備
+            <span data-i18n="prepareAvatar">アバターを準備</span>
           </button>
         </div>
 
         <div class="stage">
           <div id="stage-placeholder" class="stage-placeholder">
             <span class="placeholder-icon" aria-hidden="true">🎙️</span>
-            <p>アバターを準備すると<br />ボケ役がここに登場します</p>
+            <p>
+              <span data-i18n="placeholderFirst">アバターを準備すると</span><br />
+              <span data-i18n="placeholderSecond">ボケ役がここに登場します</span>
+            </p>
           </div>
           <sv-presenter hidden></sv-presenter>
           <div id="boke-caption" class="boke-caption" hidden></div>
         </div>
 
         <p id="presenter-status" class="presenter-status" role="status">
-          カタログを読み込んでいます…
+          <span data-i18n="catalogLoading">カタログを読み込んでいます…</span>
         </p>
       </section>
 
@@ -73,31 +85,30 @@
         <p id="scenario-description" class="scenario-description"></p>
 
         <div id="instructions" class="instructions">
-          <h3>遊び方</h3>
+          <h3 data-i18n="howToPlay">遊び方</h3>
           <ol>
-            <li>アバターを準備し、「トレーニング開始」を押します。</li>
-            <li>ボケを聞いたら、表示されたツッコミを一つ発声します。</li>
-            <li>内容とボケ終了後の反応速度を採点します。</li>
+            <li data-i18n="howStep1">アバターを準備し、「トレーニング開始」を押します。</li>
+            <li data-i18n="howStep2">ボケを聞いたら、表示されたツッコミを一つ発声します。</li>
+            <li data-i18n="howStep3">内容とボケ終了後の反応速度を採点します。</li>
           </ol>
           <p class="privacy-note">
-            音声認識にはブラウザーの認識サービスを使用します。ブラウザーによっては音声が外部サービスへ送信されます。
-            このMVPは録音ファイルをアプリ内に保存しません。
+            <span data-i18n="privacyNote">音声認識にはブラウザーの認識サービスを使用します。ブラウザーによっては音声が外部サービスへ送信されます。このMVPは録音ファイルをアプリ内に保存しません。</span>
           </p>
         </div>
 
         <section id="response-area" class="response-area" hidden>
-          <p id="phase-label" class="phase-label">ボケを聞いてください</p>
-          <div id="choices" class="choices" aria-label="ツッコミの選択肢"></div>
+          <p id="phase-label" class="phase-label" data-i18n="listenToBoke">ボケを聞いてください</p>
+          <div id="choices" class="choices" aria-label="ツッコミの選択肢" data-i18n-aria-label="choicesAria"></div>
 
           <div class="recognition-panel">
             <div class="mic-row">
               <span id="mic-indicator" class="mic-indicator" aria-hidden="true"></span>
-              <strong id="mic-status">待機中</strong>
+              <strong id="mic-status" data-i18n="waiting">待機中</strong>
               <button id="mic-btn" class="secondary compact" type="button" hidden>
-                マイクで回答
+                <span data-i18n="answerByMic">マイクで回答</span>
               </button>
             </div>
-            <p class="transcript-label">認識した発言</p>
+            <p class="transcript-label" data-i18n="recognizedSpeech">認識した発言</p>
             <p id="transcript" class="transcript" aria-live="polite">—</p>
           </div>
 
@@ -106,29 +117,35 @@
 
         <section id="summary" class="summary" hidden aria-live="polite">
           <p class="eyebrow">RESULT</p>
-          <h3>トレーニング完了！</h3>
+          <h3 data-i18n="trainingComplete">トレーニング完了！</h3>
           <p id="summary-score" class="summary-score"></p>
           <p id="summary-detail"></p>
+          <div
+            id="summary-breakdown"
+            class="summary-breakdown"
+            aria-label="問題ごとの採点詳細"
+            data-i18n-aria-label="scoreDetailsAria"
+          ></div>
         </section>
 
         <div class="actions">
           <button id="start-btn" class="primary" type="button" disabled>
-            トレーニング開始
+            <span data-i18n="startTraining">トレーニング開始</span>
           </button>
           <button id="replay-btn" class="secondary" type="button" hidden>
-            このボケをもう一度
+            <span data-i18n="replayBoke">このボケをもう一度</span>
           </button>
           <button id="next-btn" class="primary" type="button" hidden>
-            次のボケへ
+            <span data-i18n="nextBoke">次のボケへ</span>
           </button>
           <button id="restart-btn" class="secondary" type="button" hidden>
-            最初から挑戦
+            <span data-i18n="restartTraining">最初から挑戦</span>
           </button>
         </div>
 
         <p id="app-message" class="app-message" role="status"></p>
         <p id="speech-support-warning" class="support-warning" hidden>
-          このブラウザーは音声認識に対応していません。ChromeまたはEdgeの最新版で開いてください。
+          <span data-i18n="unsupportedBrowser">このブラウザーは音声認識に対応していません。ChromeまたはEdgeの最新版で開いてください。</span>
         </p>
       </section>
     </main>
