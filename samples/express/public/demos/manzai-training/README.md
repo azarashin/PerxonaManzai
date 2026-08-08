@@ -5,7 +5,9 @@ fully finished, the learner speaks one of the displayed `tsukkomi` choices. The 
 pre-authored content quality, adds a response-timing score, and advances to the next beat.
 
 Scenario titles, boke captions, and tsukkomi choices are displayed simultaneously in Japanese, English, and Traditional
-Chinese. Presenter speech and browser speech recognition remain Japanese in this MVP.
+Chinese. Before initializing the Presenter, the learner can choose English, Traditional Chinese, or Japanese for the
+character's spoken boke. The Voice picker is filtered to voices whose catalog metadata supports the selected speech language.
+Browser speech recognition and response scoring remain Japanese in this MVP.
 
 ## Run
 
@@ -21,7 +23,7 @@ store audio recordings itself.
 
 ## Flow
 
-1. Load the Connect catalog and choose an avatar, scene, and voice.
+1. Load the Connect catalog and choose a speech language, avatar, scene, and compatible voice.
 2. Initialize `<sv-presenter>` and unlock audio from the launch-button gesture.
 3. Play the current `boke` with `presenter.present()`.
 4. Wait for `ALL_PERFORMANCE_FINISHED`, set the avatar to Listening, and start recognition.
