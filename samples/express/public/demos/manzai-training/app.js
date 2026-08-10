@@ -30,6 +30,7 @@ const avatarSelect = document.querySelector("#avatar-select");
 const sceneSelect = document.querySelector("#scene-select");
 const voiceSelect = document.querySelector("#voice-select");
 const speechLanguageSelect = document.querySelector("#speech-language-select");
+const playerLanguageSelect = document.querySelector("#player-language-select");
 const categorySelect = document.querySelector("#category-select");
 const scenarioSelect = document.querySelector("#scenario-select");
 const answerModeSelect = document.querySelector("#answer-mode-select");
@@ -131,7 +132,7 @@ const recognitionLanguages = {
 };
 
 function t(key, parameters = {}) {
-  return translate(speechLanguageSelect.value, key, parameters);
+  return translate(playerLanguageSelect.value, key, parameters);
 }
 
 function usesVoiceAnswer() {
@@ -143,7 +144,7 @@ function canStartTraining() {
 }
 
 function applyUiLanguage() {
-  applyTranslations(document, speechLanguageSelect.value);
+  applyTranslations(document, playerLanguageSelect.value);
   renderScenarioPicker();
   renderStoredProgress();
   renderScenarioMetadata();
@@ -170,7 +171,7 @@ function renderStoredProgress() {
       const title = document.createElement("h3");
       title.textContent = localizedText(
         category.title,
-        speechLanguageSelect.value,
+        playerLanguageSelect.value,
       );
       const total = document.createElement("strong");
       total.textContent = t("categoryCompletionCount", {
@@ -188,7 +189,7 @@ function renderStoredProgress() {
         const name = document.createElement("span");
         name.textContent = localizedText(
           scenario.title,
-          speechLanguageSelect.value,
+          playerLanguageSelect.value,
         );
 
         const count = document.createElement("strong");
@@ -227,7 +228,7 @@ function renderScenarioPicker() {
     categorySelect,
     scenarioCatalog.categories.map((category) => ({
       id: category.id,
-      name: localizedText(category.title, speechLanguageSelect.value),
+      name: localizedText(category.title, playerLanguageSelect.value),
     })),
     selectedCategoryId,
   );
@@ -255,7 +256,7 @@ function renderScenarioOptions(preferredId) {
     scenarios.map((scenario) => ({
       id: scenario.id,
       name: t("scenarioOptionLabel", {
-        title: localizedText(scenario.title, speechLanguageSelect.value),
+        title: localizedText(scenario.title, playerLanguageSelect.value),
         count: scenario.beatCount,
       }) +
         ` — ${
@@ -285,7 +286,7 @@ function renderScenarioMetadata() {
     createMetaChip(t("dialogueCount", { count: entry.beatCount })),
   );
   learningObjectives.replaceChildren(
-    ...entry.learningObjectives[speechLanguageSelect.value].map((objective) => {
+    ...entry.learningObjectives[playerLanguageSelect.value].map((objective) => {
       const item = document.createElement("li");
       item.textContent = objective;
       return item;
@@ -364,7 +365,7 @@ function resetTrainingView() {
 }
 
 const recognizer = new SpeechRecognizer({
-  language: recognitionLanguages[speechLanguageSelect.value],
+  language: recognitionLanguages[playerLanguageSelect.value],
   onInterim: (transcript) => {
     transcriptElement.textContent = transcript;
   },
@@ -681,7 +682,7 @@ function openResponseWindow() {
 function startRecognition() {
   if (phase !== "answering" || recognizer.active) return;
 
-  recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
+  recognizer.setLanguage(recognitionLanguages[playerLanguageSelect.value]);
   transcriptElement.textContent = t("listeningTranscript");
   feedbackElement.hidden = true;
   micBtn.hidden = true;
@@ -712,7 +713,7 @@ function handleFinalTranscript(transcript) {
     controller.currentBeat,
     transcript,
     reactionSeconds,
-    speechLanguageSelect.value,
+    playerLanguageSelect.value,
   );
 
   if (!result.matched) {
@@ -732,7 +733,7 @@ function handleFinalTranscript(transcript) {
 function handleChoiceSelection(choice) {
   if (phase !== "answering" || usesVoiceAnswer()) return;
 
-  const answer = localizedText(choice.text, speechLanguageSelect.value);
+  const answer = localizedText(choice.text, playerLanguageSelect.value);
   const reactionSeconds = Math.max(
     0,
     (performance.now() - responseWindowStartedAt) / 1000,
@@ -741,7 +742,7 @@ function handleChoiceSelection(choice) {
     controller.currentBeat,
     answer,
     reactionSeconds,
-    speechLanguageSelect.value,
+    playerLanguageSelect.value,
   );
   result.inputMode = "click";
   completeEvaluation(result);
@@ -1078,7 +1079,7 @@ function renderScenarioPreview() {
         t("previewReaction", {
           description: localizedText(
             beat.reaction.description,
-            speechLanguageSelect.value,
+    playerLanguageSelect.value,
           ),
           tags: beat.reaction.motionTags.join(", "),
         }),
@@ -1257,10 +1258,18 @@ for (const select of [sceneSelect, voiceSelect]) {
 }
 
 speechLanguageSelect.addEventListener("change", () => {
-  applyUiLanguage();
-  recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
   updateVoiceOptions();
   requirePresenterPreparation();
+});
+
+playerLanguageSelect.addEventListener("change", () => {
+  applyUiLanguage();
+  recognizer.setLanguage(recognitionLanguages[playerLanguageSelect.value]);
+  if (selectedScenario) {
+    renderLocalizedText(scenarioTitle, selectedScenario.title);
+    renderLocalizedText(scenarioDescription, selectedScenario.description);
+    resetTrainingView();
+  }
 });
 
 async function initializeApp() {
