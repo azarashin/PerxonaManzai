@@ -1,8 +1,26 @@
 import express from "express";
 
+function normalizePublicBasePath(value = "") {
+  const trimmed = value.trim();
+  if (!trimmed || trimmed === "/") return "";
+
+  const normalized = trimmed.replace(/\/+$/, "");
+  if (
+    !/^\/(?:[A-Za-z0-9._~-]+(?:\/[A-Za-z0-9._~-]+)*)$/.test(normalized)
+  ) {
+    throw new Error(
+      "PUBLIC_BASE_PATH must be empty or an absolute URL path such as /perxona-manzai (without a query or fragment).",
+    );
+  }
+  return normalized;
+}
+
 // ── Config ──────────────────────────────────────────────────
 
 const PORT = process.env.PORT || 8083;
+const PUBLIC_BASE_PATH = normalizePublicBasePath(
+  process.env.PUBLIC_BASE_PATH || "",
+);
 const PERXONA_API_BASE_URL = process.env.PERXONA_API_BASE_URL;
 const USE_MOCK = process.env.USE_MOCK === "true";
 const PRESENTER_URL =
@@ -402,6 +420,9 @@ async function authedCall(fn) {
 
 // ── Express app ────────────────────────────────────────────────────────────
 
+const server = express();
+server.disable("x-powered-by");
+
 const app = express();
 app.disable("x-powered-by");
 
@@ -412,6 +433,18 @@ app.disable("x-powered-by");
 const IS_DEV = process.env.NODE_ENV !== "production";
 
 // ── Middleware ─────────────────────────────────────────────────────────────
+
+app.get("/runtime-config.js", (_req, res) => {
+  const runtimeConfig = JSON.stringify({ publicBasePath: PUBLIC_BASE_PATH });
+  res
+    .set({
+      "Cache-Control": "no-store",
+      "Content-Type": "application/javascript; charset=utf-8",
+    })
+    .send(
+      `globalThis.__PERXONA_RUNTIME_CONFIG__ = Object.freeze(${runtimeConfig});\n`,
+    );
+});
 
 app.use(express.static("public", { etag: !IS_DEV }));
 
@@ -458,6 +491,7 @@ app.get("/api/config", (_req, res) => {
   res.json({
     mock: USE_MOCK,
     chat: Boolean(process.env.LLM_API_KEY),
+    publicBasePath: PUBLIC_BASE_PATH,
     presenterUrl: PRESENTER_URL,
     defaults: DEMO_DEFAULTS,
     fixedTarget: fixedPresenterTarget,
@@ -1076,9 +1110,14 @@ app.post("/api/chat", async (req, res) => {
 
 const CHECK_ICONS = { reachable: "✓", unreachable: "✗", mock: "–" };
 
-app.listen(PORT, () => {
+if (PUBLIC_BASE_PATH) {
+  server.get("/", (_req, res) => res.redirect(`${PUBLIC_BASE_PATH}/`));
+}
+server.use(PUBLIC_BASE_PATH || "/", app);
+
+server.listen(PORT, () => {
   console.log(`\nPerxona Connect Kit`);
-  console.log(`  URL  : http://localhost:${PORT}`);
+  console.log(`  URL  : http://localhost:${PORT}${PUBLIC_BASE_PATH}/`);
   console.log(`  Mode : ${USE_MOCK ? "MOCK (no real API calls)" : "live"}`);
   // Deferred probes so the banner prints immediately and startup never blocks.
   // Labeled API/CDN so each line reads as that resource's reachability.

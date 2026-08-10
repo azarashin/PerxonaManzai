@@ -18,9 +18,14 @@ cp .env.example .env     # then open .env and set the required values:
                          #   PERXONA_API_BASE_URL      → e.g. https://console.perxona.ai/asia
                          #   PERXONA_CONNECT_EMAIL     → your email (Connect Sign Up API)
                          #   PERXONA_CONNECT_PASSWORD  → password set by Connect Confirm Sign Up API
+                         #   PUBLIC_BASE_PATH          → blank at the domain root
 npm install
 npm run dev              # open the URL it prints (default http://localhost:8083)
 ```
+
+Leave `PUBLIC_BASE_PATH` blank when the app is served from the domain root. When the public URL is
+`https://example.com/perxona-manzai/`, set `PUBLIC_BASE_PATH=/perxona-manzai` (no trailing slash). The frontend and all local
+`/api/...` routes will then be served under that same prefix.
 
 Create these credentials with `POST /api/v1/connect/auth/signup` followed by
 `POST /api/v1/connect/auth/confirm-signup`, not the general console sign-up API.
