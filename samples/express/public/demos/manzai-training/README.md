@@ -12,6 +12,11 @@ Chinese, and `ja-JP` for Japanese.
 Static instructions, controls, status messages, scoring labels, errors, and authored feedback switch to that same language.
 The scenario title, boke captions, and comeback choices continue to show all three languages simultaneously.
 
+Completion tracking is optional and local-only. When the learner enables it, the browser stores only each scenario ID and
+its completion count in `localStorage`. The demo server does not receive or store this progress, recognized learner text,
+audio recordings, or learner identity. The Data and privacy dialog explains browser-storage limitations, warns that browser
+speech recognition may send audio to an external service, and provides a button to delete all locally stored progress.
+
 Each scenario beat also declares a reaction. The demo resolves its preferred motion tags against the selected Avatar's live
 motion catalog and embeds only a verified Motion ID in the text sent to the Presenter. If the Avatar has none of the requested
 motions, playback safely falls back to the Presenter's automatic speaking gesture.
@@ -56,6 +61,7 @@ learner's answer.
 - `evaluator.js` — Japanese normalization, fuzzy choice matching, and timing score.
 - `scenario-controller.js` — scenario progress and summary calculation.
 - `scenario-catalog.js` — catalog validation and category filtering.
+- `progress-storage.js` — opt-in, device-local completion counts.
 - `scenarios/index.json` — localized categories and the scenarios assigned to them.
 - `scenarios/convenience-store.json` — editable training script and authored scores.
 - `scenarios/restaurant-service.json` — customer-service training sample.
@@ -141,5 +147,5 @@ emotion.
 
 - Browser speech-recognition support and accuracy vary by browser and operating system.
 - Delivery quality such as volume, pitch, and speaking pace is not scored yet.
-- Progress and results are held in memory and disappear on refresh.
+- Detailed results remain in memory and disappear on refresh; only opted-in scenario completion counts persist locally.
 - Explicit reactions depend on the selected Avatar's motion catalog; unmatched reactions use automatic speaking gestures.

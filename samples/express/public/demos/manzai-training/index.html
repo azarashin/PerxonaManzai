@@ -85,6 +85,14 @@
             <select id="scenario-select" aria-label="シナリオ" data-i18n-aria-label="scenarioAria"></select>
           </label>
         </div>
+        <div class="local-data-actions">
+          <button id="progress-btn" class="secondary compact" type="button" data-i18n="viewProgress">
+            進捗を見る
+          </button>
+          <button id="privacy-btn" class="text-button" type="button" data-i18n="dataAndPrivacy">
+            データとプライバシー
+          </button>
+        </div>
         <div class="training-heading">
           <div>
             <p class="eyebrow">SCENARIO</p>
@@ -159,6 +167,40 @@
         </p>
       </section>
     </main>
+
+    <dialog id="progress-dialog" class="privacy-dialog" aria-labelledby="progress-dialog-title">
+      <div class="dialog-heading">
+        <h2 id="progress-dialog-title" data-i18n="localProgress">この端末の進捗</h2>
+        <button id="progress-close-btn" class="dialog-close" type="button" aria-label="閉じる" data-i18n-aria-label="closeDialog">×</button>
+      </div>
+      <label class="storage-toggle">
+        <input id="progress-storage-toggle" type="checkbox" />
+        <span data-i18n="saveProgressOnDevice">この端末に完了回数を保存する</span>
+      </label>
+      <div id="scenario-progress-list" class="scenario-progress-list"></div>
+      <div class="dialog-actions">
+        <button id="progress-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
+      </div>
+    </dialog>
+
+    <dialog id="privacy-dialog" class="privacy-dialog" aria-labelledby="privacy-dialog-title">
+      <div class="dialog-heading">
+        <h2 id="privacy-dialog-title" data-i18n="privacyDialogTitle">データとプライバシー</h2>
+        <button id="privacy-close-btn" class="dialog-close" type="button" aria-label="閉じる" data-i18n-aria-label="closeDialog">×</button>
+      </div>
+      <p data-i18n="localStorageExplanation">保存を有効にすると、シナリオIDと完了回数だけをこのブラウザーのlocalStorageに保存します。</p>
+      <ul>
+        <li data-i18n="localStorageLimitation">ブラウザーのデータを消すと進捗も消え、別の端末やブラウザーには同期されません。</li>
+        <li data-i18n="sharedDeviceWarning">同じブラウザープロファイルを使う人は、保存された進捗を確認できる場合があります。</li>
+        <li data-i18n="serverPrivacyStatement">本デモのサーバーは、利用者の氏名、メールアドレス、進捗、認識テキスト、録音を収集・保存しません。</li>
+        <li data-i18n="speechServiceWarning">音声認識にはブラウザーのサービスを使用するため、ブラウザーによっては音声が外部サービスへ送信されます。</li>
+      </ul>
+      <div class="dialog-actions">
+        <button id="clear-progress-btn" class="danger-button" type="button" data-i18n="clearDeviceProgress">端末内の進捗を削除</button>
+        <button id="privacy-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
+      </div>
+      <p id="privacy-dialog-status" class="dialog-status" role="status"></p>
+    </dialog>
 
     <script src="../../runtime-config.js"></script>
     <script type="module" src="app.js"></script>
