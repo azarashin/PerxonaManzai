@@ -20,6 +20,7 @@ import {
   resolveScenarioRoute,
   updateScenarioSearch,
 } from "./scenario-routing.js";
+import { scenarioDisplayLanguages } from "./scenario-languages.js";
 import { SpeechRecognizer } from "./speech-recognizer.js";
 import {
   createOrderedScenario,
@@ -560,9 +561,19 @@ function renderChoices(beat) {
 }
 
 function renderLocalizedText(element, value) {
+  const visibleLanguages = scenarioDisplayLanguages(
+    speechLanguageSelect.value,
+    playerLanguageSelect.value,
+  );
   element.classList.add("localized-text");
   element.replaceChildren(
-    ...displayLanguages.map(({ key, label, lang }) => {
+    ...displayLanguages
+      .filter(({ key }) => visibleLanguages.includes(key))
+      .sort(
+        (left, right) =>
+          visibleLanguages.indexOf(left.key) - visibleLanguages.indexOf(right.key),
+      )
+      .map(({ key, label, lang }) => {
       const line = document.createElement("span");
       line.className = `language-line language-${key}`;
       line.lang = lang;
@@ -1102,7 +1113,7 @@ function renderScenarioPreview() {
         card.append(choiceElement);
       }
       return card;
-    }),
+      }),
   );
 }
 
@@ -1260,6 +1271,10 @@ for (const select of [sceneSelect, voiceSelect]) {
 speechLanguageSelect.addEventListener("change", () => {
   updateVoiceOptions();
   requirePresenterPreparation();
+  if (selectedScenario) {
+    renderLocalizedText(scenarioTitle, selectedScenario.title);
+    renderLocalizedText(scenarioDescription, selectedScenario.description);
+  }
 });
 
 playerLanguageSelect.addEventListener("change", () => {
