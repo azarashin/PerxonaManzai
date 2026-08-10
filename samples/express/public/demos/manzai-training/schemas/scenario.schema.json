@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://perxona.example/schemas/scenario.schema.json",
+  "title": "Perxona scenario",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "description", "beats"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "$ref": "#/$defs/id" },
+    "title": { "$ref": "#/$defs/localizedText" },
+    "description": { "$ref": "#/$defs/localizedText" },
+    "beats": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/beat" }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ja", "en", "zh"],
+      "properties": {
+        "ja": { "$ref": "#/$defs/nonEmptyString" },
+        "en": { "$ref": "#/$defs/nonEmptyString" },
+        "zh": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
+    "localizedAliases": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ja", "en", "zh"],
+      "properties": {
+        "ja": { "$ref": "#/$defs/aliasList" },
+        "en": { "$ref": "#/$defs/aliasList" },
+        "zh": { "$ref": "#/$defs/aliasList" }
+      }
+    },
+    "aliasList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/nonEmptyString" }
+    },
+    "reaction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "motionTags"],
+      "properties": {
+        "description": { "$ref": "#/$defs/localizedText" },
+        "motionTags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/nonEmptyString" }
+        },
+        "motionId": { "$ref": "#/$defs/nonEmptyString" },
+        "variant": { "type": "integer", "minimum": 0 },
+        "priority": { "type": "integer", "minimum": 0 },
+        "cue": { "enum": ["start", "end"] }
+      }
+    },
+    "choice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "contentPoints", "feedback"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "$ref": "#/$defs/localizedText" },
+        "aliases": {
+          "oneOf": [
+            { "$ref": "#/$defs/aliasList" },
+            { "$ref": "#/$defs/localizedAliases" }
+          ]
+        },
+        "contentPoints": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 80
+        },
+        "feedback": { "$ref": "#/$defs/localizedText" }
+      }
+    },
+    "beat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "boke", "reaction", "choices"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "boke": { "$ref": "#/$defs/localizedText" },
+        "reaction": { "$ref": "#/$defs/reaction" },
+        "choices": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/$defs/choice" }
+        }
+      }
+    }
+  }
+}
