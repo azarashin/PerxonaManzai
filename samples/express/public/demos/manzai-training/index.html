@@ -93,6 +93,14 @@
           </label>
         </div>
         <div class="local-data-actions">
+          <label class="completion-filter-label">
+            <span data-i18n="completionFilter">進捗で絞り込み</span>
+            <select id="completion-filter-select" aria-label="進捗で絞り込み" data-i18n-aria-label="completionFilterAria">
+              <option value="all" data-i18n="filterAll">すべて</option>
+              <option value="incomplete" data-i18n="filterIncomplete">未完了</option>
+              <option value="completed" data-i18n="filterCompleted">完了済み</option>
+            </select>
+          </label>
           <button id="progress-btn" class="secondary compact" type="button" data-i18n="viewProgress">
             進捗を見る
           </button>

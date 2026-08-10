@@ -3,6 +3,7 @@ import { applyTranslations, translate } from "./i18n.js";
 import { buildPresentationContent } from "./reaction-resolver.js";
 import {
   clearProgress,
+  filterScenariosByCompletion,
   isProgressStorageEnabled,
   loadProgress,
   recordScenarioCompletion,
@@ -22,6 +23,7 @@ const speechLanguageSelect = document.querySelector("#speech-language-select");
 const categorySelect = document.querySelector("#category-select");
 const scenarioSelect = document.querySelector("#scenario-select");
 const answerModeSelect = document.querySelector("#answer-mode-select");
+const completionFilterSelect = document.querySelector("#completion-filter-select");
 const progressStorageToggle = document.querySelector("#progress-storage-toggle");
 const scenarioProgressList = document.querySelector("#scenario-progress-list");
 const progressBtn = document.querySelector("#progress-btn");
@@ -205,7 +207,12 @@ function renderScenarioPicker() {
 }
 
 function renderScenarioOptions(preferredId) {
-  const scenarios = scenariosForCategory(scenarioCatalog, categorySelect.value);
+  const progress = loadProgress();
+  const scenarios = filterScenariosByCompletion(
+    scenariosForCategory(scenarioCatalog, categorySelect.value),
+    progress,
+    completionFilterSelect.value,
+  );
   fillSelect(
     scenarioSelect,
     scenarios.map((scenario) => ({
@@ -213,7 +220,12 @@ function renderScenarioOptions(preferredId) {
       name: t("scenarioOptionLabel", {
         title: localizedText(scenario.title, speechLanguageSelect.value),
         count: scenario.beatCount,
-      }),
+      }) +
+        ` — ${
+          progress.scenarios[scenario.id]
+            ? t("completionCount", { count: progress.scenarios[scenario.id] })
+            : t("notCompleted")
+        }`,
     })),
     preferredId,
   );
@@ -860,6 +872,7 @@ function showSummary() {
     recordScenarioCompletion(selectedScenario.id);
     completionRecorded = true;
     renderStoredProgress();
+    renderScenarioOptions();
   }
   summaryScore.textContent = t("summaryScore", {
     total: summary.totalScore,
@@ -972,6 +985,11 @@ answerModeSelect.addEventListener("change", () => {
   );
 });
 
+completionFilterSelect.addEventListener("change", () => {
+  renderScenarioOptions(scenarioSelect.value);
+  void loadSelectedScenario().catch(console.error);
+});
+
 progressBtn.addEventListener("click", () => {
   renderStoredProgress();
   progressDialog.showModal();
@@ -1017,6 +1035,7 @@ progressStorageToggle.addEventListener("change", () => {
 clearProgressBtn.addEventListener("click", () => {
   if (clearProgress()) {
     renderStoredProgress();
+    renderScenarioOptions(scenarioSelect.value);
     privacyDialogStatus.textContent = t("progressCleared");
   } else {
     privacyDialogStatus.textContent = t("progressStorageUnavailable");

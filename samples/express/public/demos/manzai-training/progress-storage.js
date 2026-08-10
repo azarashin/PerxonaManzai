@@ -51,6 +51,20 @@ export function clearProgress(storage = globalThis.localStorage) {
   }, false);
 }
 
+export function filterScenariosByCompletion(
+  scenarios,
+  progress,
+  filter = "all",
+) {
+  if (filter === "incomplete") {
+    return scenarios.filter((scenario) => !progress.scenarios[scenario.id]);
+  }
+  if (filter === "completed") {
+    return scenarios.filter((scenario) => progress.scenarios[scenario.id] > 0);
+  }
+  return scenarios;
+}
+
 function emptyProgress() {
   return { version: 1, scenarios: {} };
 }

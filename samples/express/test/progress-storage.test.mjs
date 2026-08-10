@@ -3,6 +3,7 @@ import test from "node:test";
 
 import {
   clearProgress,
+  filterScenariosByCompletion,
   isProgressStorageEnabled,
   loadProgress,
   recordScenarioCompletion,
@@ -57,6 +58,20 @@ test("invalid stored data is ignored", () => {
   );
 
   assert.deepEqual(loadProgress(storage), { version: 1, scenarios: {} });
+});
+
+test("scenarios can be filtered by completion", () => {
+  const scenarios = [{ id: "first" }, { id: "second" }];
+  const progress = { version: 1, scenarios: { first: 2 } };
+
+  assert.deepEqual(
+    filterScenariosByCompletion(scenarios, progress, "completed"),
+    [{ id: "first" }],
+  );
+  assert.deepEqual(
+    filterScenariosByCompletion(scenarios, progress, "incomplete"),
+    [{ id: "second" }],
+  );
 });
 
 class MemoryStorage {
