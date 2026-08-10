@@ -118,22 +118,53 @@ function renderStoredProgress() {
   if (!scenarioCatalog) return;
   const progress = loadProgress();
   scenarioProgressList.replaceChildren(
-    ...scenarioCatalog.scenarios.map((scenario) => {
-      const row = document.createElement("div");
-      row.className = "scenario-progress-row";
+    ...scenarioCatalog.categories.map((category) => {
+      const scenarios = scenariosForCategory(scenarioCatalog, category.id);
+      const section = document.createElement("section");
+      section.className = "scenario-progress-category";
 
-      const name = document.createElement("span");
-      name.textContent = localizedText(
-        scenario.title,
+      const header = document.createElement("header");
+      header.className = "scenario-progress-category-header";
+      const title = document.createElement("h3");
+      title.textContent = localizedText(
+        category.title,
         speechLanguageSelect.value,
       );
-
-      const count = document.createElement("strong");
-      count.textContent = t("completionCount", {
-        count: progress.scenarios[scenario.id] ?? 0,
+      const total = document.createElement("strong");
+      total.textContent = t("categoryCompletionCount", {
+        count: scenarios.reduce(
+          (sum, scenario) => sum + (progress.scenarios[scenario.id] ?? 0),
+          0,
+        ),
       });
-      row.append(name, count);
-      return row;
+      header.append(title, total);
+
+      const rows = scenarios.map((scenario) => {
+        const row = document.createElement("div");
+        row.className = "scenario-progress-row";
+
+        const name = document.createElement("span");
+        name.textContent = localizedText(
+          scenario.title,
+          speechLanguageSelect.value,
+        );
+
+        const count = document.createElement("strong");
+        count.textContent = t("completionCount", {
+          count: progress.scenarios[scenario.id] ?? 0,
+        });
+        row.append(name, count);
+        return row;
+      });
+
+      if (rows.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "scenario-progress-empty";
+        empty.textContent = t("noScenarioAvailable");
+        rows.push(empty);
+      }
+      section.append(header, ...rows);
+      return section;
     }),
   );
 }
