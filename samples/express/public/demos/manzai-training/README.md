@@ -70,6 +70,14 @@ learner's answer.
 
 ## Authoring scenarios
 
+For Codex generation prompts, schema selection, required output artifacts, scoring guidance, and a reusable prompt template,
+see [`docs/scenario-generation-guide.md`](docs/scenario-generation-guide.md). In short:
+
+- use `schemas/scenario.schema.json` for each scenario file;
+- use `schemas/scenario-catalog.schema.json` when categories or scenario registration change;
+- a new scenario normally requires both a scenario JSON file and an updated `scenarios/index.json`;
+- ask Codex to write complete files, preserve `$schema`, run validation, and return a short change and test summary.
+
 Scenario files use JSON Schema Draft 2020-12 and declare their schema with `$schema`. Keep that property when generating a
 scenario with Codex so compatible editors can provide completion and diagnostics. The schemas require lowercase kebab-case
 IDs, all three translations (`ja`, `en`, and `zh`), at least one beat, at least two choices per beat, valid reaction metadata,
