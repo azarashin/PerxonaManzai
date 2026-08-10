@@ -5,13 +5,11 @@ conversation partner; after playback is fully finished, the learner answers by s
 response choices. The demo identifies the choice, scores its pre-authored content quality, adds a response-timing score,
 and advances to the next beat.
 
-Scenario titles, partner captions, and response choices are displayed simultaneously in Japanese, English, and Traditional
-Chinese. Before initializing the Presenter, the learner can choose English, Traditional Chinese, or Japanese for the
-character's spoken boke. The Voice picker is filtered to voices whose catalog metadata supports the selected speech language.
-Browser speech recognition and response scoring use the same selected language: `en-US` for English, `zh-TW` for Traditional
-Chinese, and `ja-JP` for Japanese.
-Static instructions, controls, status messages, scoring labels, errors, and authored feedback switch to that same language.
-The scenario title, boke captions, and comeback choices continue to show all three languages simultaneously.
+Before initializing the Presenter, the learner chooses both the character's speech language and the player's native language.
+Scenario titles, partner captions, and response choices show only those two languages, or one line when both selections match.
+The Voice picker follows the character language. Browser speech recognition, response scoring, instructions, controls, status
+messages, scoring labels, errors, and authored feedback follow the player's native language. Supported recognition locales are
+`en-US` for English, `zh-TW` for Traditional Chinese, and `ja-JP` for Japanese.
 
 Completion tracking is optional and local-only. When the learner enables it, the browser stores only each scenario ID and
 its completion count in `localStorage`. The demo server does not receive or store this progress, recognized learner text,
