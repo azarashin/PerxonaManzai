@@ -51,6 +51,29 @@ export function clearProgress(storage = globalThis.localStorage) {
   }, false);
 }
 
+export function exportProgress(storage = globalThis.localStorage) {
+  return JSON.stringify(loadProgress(storage), null, 2);
+}
+
+export function importProgress(text, storage = globalThis.localStorage) {
+  let parsed;
+  try {
+    parsed = JSON.parse(text);
+  } catch {
+    throw new TypeError("Progress file is not valid JSON.");
+  }
+  if (parsed?.version !== 1 || !isScenarioCounts(parsed.scenarios)) {
+    throw new TypeError("Progress file has an unsupported format.");
+  }
+  const normalized = { version: 1, scenarios: { ...parsed.scenarios } };
+  const saved = safely(() => {
+    storage.setItem(PROGRESS_KEY, JSON.stringify(normalized));
+    return true;
+  }, false);
+  if (!saved) throw new Error("Progress could not be saved.");
+  return normalized;
+}
+
 export function filterScenariosByCompletion(
   scenarios,
   progress,

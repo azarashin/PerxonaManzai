@@ -3,8 +3,10 @@ import { applyTranslations, translate } from "./i18n.js";
 import { buildPresentationContent } from "./reaction-resolver.js";
 import {
   clearProgress,
+  exportProgress,
   filterScenariosByCompletion,
   isProgressStorageEnabled,
+  importProgress,
   loadProgress,
   recordScenarioCompletion,
   setProgressStorageEnabled,
@@ -36,6 +38,10 @@ const progressBtn = document.querySelector("#progress-btn");
 const progressDialog = document.querySelector("#progress-dialog");
 const progressCloseBtn = document.querySelector("#progress-close-btn");
 const progressDoneBtn = document.querySelector("#progress-done-btn");
+const exportProgressBtn = document.querySelector("#export-progress-btn");
+const importProgressBtn = document.querySelector("#import-progress-btn");
+const importProgressInput = document.querySelector("#import-progress-input");
+const progressDialogStatus = document.querySelector("#progress-dialog-status");
 const privacyBtn = document.querySelector("#privacy-btn");
 const privacyDialog = document.querySelector("#privacy-dialog");
 const privacyCloseBtn = document.querySelector("#privacy-close-btn");
@@ -1033,6 +1039,7 @@ completionFilterSelect.addEventListener("change", () => {
 
 progressBtn.addEventListener("click", () => {
   renderStoredProgress();
+  progressDialogStatus.textContent = "";
   progressDialog.showModal();
 });
 
@@ -1042,6 +1049,35 @@ for (const button of [progressCloseBtn, progressDoneBtn]) {
 
 progressDialog.addEventListener("click", (event) => {
   if (event.target === progressDialog) progressDialog.close();
+});
+
+exportProgressBtn.addEventListener("click", () => {
+  const blob = new Blob([exportProgress()], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "perxona-training-progress.json";
+  link.click();
+  URL.revokeObjectURL(url);
+  progressDialogStatus.textContent = t("progressExported");
+});
+
+importProgressBtn.addEventListener("click", () => importProgressInput.click());
+
+importProgressInput.addEventListener("change", async () => {
+  const [file] = importProgressInput.files;
+  importProgressInput.value = "";
+  if (!file) return;
+  try {
+    importProgress(await file.text());
+    renderStoredProgress();
+    renderScenarioOptions(scenarioSelect.value);
+    progressDialogStatus.textContent = t("progressImported");
+  } catch (error) {
+    progressDialogStatus.textContent = t("progressImportFailed", {
+      message: error.message,
+    });
+  }
 });
 
 privacyBtn.addEventListener("click", () => {
