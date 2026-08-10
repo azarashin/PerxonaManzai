@@ -16,6 +16,10 @@ import {
   validateScenarioCatalog,
 } from "./scenario-catalog.js";
 import { ScenarioController } from "./scenario-controller.js";
+import {
+  resolveScenarioRoute,
+  updateScenarioSearch,
+} from "./scenario-routing.js";
 import { SpeechRecognizer } from "./speech-recognizer.js";
 import {
   createOrderedScenario,
@@ -224,6 +228,15 @@ function renderScenarioPicker() {
     selectedCategoryId,
   );
   renderScenarioOptions(scenarioSelect.value);
+}
+
+function syncScenarioUrl() {
+  const search = updateScenarioSearch(
+    location.search,
+    categorySelect.value,
+    scenarioSelect.value,
+  );
+  history.replaceState(null, "", `${location.pathname}${search}${location.hash}`);
 }
 
 function renderScenarioOptions(preferredId) {
@@ -1184,10 +1197,12 @@ clearProgressBtn.addEventListener("click", () => {
 
 categorySelect.addEventListener("change", () => {
   renderScenarioOptions();
+  syncScenarioUrl();
   void loadSelectedScenario().catch(console.error);
 });
 
 scenarioSelect.addEventListener("change", () => {
+  syncScenarioUrl();
   void loadSelectedScenario().catch(console.error);
 });
 
@@ -1241,8 +1256,13 @@ async function initializeApp() {
     scenarioCatalog = validateScenarioCatalog(loadedScenarioCatalog);
     progressStorageToggle.checked = isProgressStorageEnabled();
     renderScenarioPicker();
+    const initialRoute = resolveScenarioRoute(scenarioCatalog, location.search);
+    categorySelect.value = initialRoute.categoryId;
+    renderScenarioOptions(initialRoute.scenarioId);
+    syncScenarioUrl();
     renderStoredProgress();
     await loadSelectedScenario();
+    if (initialRoute.usedFallback) setAppMessage(t("invalidScenarioLink"));
 
     if (!recognizer.supported) {
       speechSupportWarning.hidden = false;
