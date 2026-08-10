@@ -2,6 +2,13 @@ import { evaluateResponse } from "./evaluator.js";
 import { applyTranslations, translate } from "./i18n.js";
 import { buildPresentationContent } from "./reaction-resolver.js";
 import {
+  clearProgress,
+  isProgressStorageEnabled,
+  loadProgress,
+  recordScenarioCompletion,
+  setProgressStorageEnabled,
+} from "./progress-storage.js";
+import {
   scenariosForCategory,
   validateScenarioCatalog,
 } from "./scenario-catalog.js";
@@ -14,6 +21,18 @@ const voiceSelect = document.querySelector("#voice-select");
 const speechLanguageSelect = document.querySelector("#speech-language-select");
 const categorySelect = document.querySelector("#category-select");
 const scenarioSelect = document.querySelector("#scenario-select");
+const progressStorageToggle = document.querySelector("#progress-storage-toggle");
+const scenarioProgressList = document.querySelector("#scenario-progress-list");
+const progressBtn = document.querySelector("#progress-btn");
+const progressDialog = document.querySelector("#progress-dialog");
+const progressCloseBtn = document.querySelector("#progress-close-btn");
+const progressDoneBtn = document.querySelector("#progress-done-btn");
+const privacyBtn = document.querySelector("#privacy-btn");
+const privacyDialog = document.querySelector("#privacy-dialog");
+const privacyCloseBtn = document.querySelector("#privacy-close-btn");
+const privacyDoneBtn = document.querySelector("#privacy-done-btn");
+const clearProgressBtn = document.querySelector("#clear-progress-btn");
+const privacyDialogStatus = document.querySelector("#privacy-dialog-status");
 const launchBtn = document.querySelector("#launch-btn");
 const startBtn = document.querySelector("#start-btn");
 const replayBtn = document.querySelector("#replay-btn");
@@ -52,6 +71,7 @@ let controller;
 let scenarioCatalog;
 let selectedScenario;
 let scenarioLoadVersion = 0;
+let completionRecorded = false;
 let presenterReady = false;
 let presenterInitializing = false;
 let phase = "setup";
@@ -84,6 +104,7 @@ function t(key, parameters = {}) {
 function applyUiLanguage() {
   applyTranslations(document, speechLanguageSelect.value);
   renderScenarioPicker();
+  renderStoredProgress();
   if (!scenarioTitle.classList.contains("localized-text")) {
     scenarioTitle.textContent =
       scenarioCatalog && !scenarioSelect.value ? "—" : t("scenarioLoading");
@@ -91,6 +112,30 @@ function applyUiLanguage() {
   if (scenarioCatalog && !scenarioSelect.value) {
     setAppMessage(t("noScenarioAvailable"));
   }
+}
+
+function renderStoredProgress() {
+  if (!scenarioCatalog) return;
+  const progress = loadProgress();
+  scenarioProgressList.replaceChildren(
+    ...scenarioCatalog.scenarios.map((scenario) => {
+      const row = document.createElement("div");
+      row.className = "scenario-progress-row";
+
+      const name = document.createElement("span");
+      name.textContent = localizedText(
+        scenario.title,
+        speechLanguageSelect.value,
+      );
+
+      const count = document.createElement("strong");
+      count.textContent = t("completionCount", {
+        count: progress.scenarios[scenario.id] ?? 0,
+      });
+      row.append(name, count);
+      return row;
+    }),
+  );
 }
 
 function setScenarioPickerDisabled(disabled) {
@@ -658,6 +703,7 @@ function startTraining() {
   if (!presenterReady || !recognizer.supported) return;
 
   clearAutoAdvance();
+  completionRecorded = false;
   setScenarioPickerDisabled(true);
   controller.start();
   startBtn.hidden = true;
@@ -692,6 +738,11 @@ function showSummary() {
   progressElement.textContent = `${controller.progress.total} / ${controller.progress.total}`;
 
   const summary = controller.summary;
+  if (!completionRecorded) {
+    recordScenarioCompletion(selectedScenario.id);
+    completionRecorded = true;
+    renderStoredProgress();
+  }
   summaryScore.textContent = t("summaryScore", {
     total: summary.totalScore,
     maximum: summary.maximumScore,
@@ -795,6 +846,57 @@ replayBtn.addEventListener("click", () => void playCurrentBeat());
 nextBtn.addEventListener("click", advanceTraining);
 restartBtn.addEventListener("click", startTraining);
 
+progressBtn.addEventListener("click", () => {
+  renderStoredProgress();
+  progressDialog.showModal();
+});
+
+for (const button of [progressCloseBtn, progressDoneBtn]) {
+  button.addEventListener("click", () => progressDialog.close());
+}
+
+progressDialog.addEventListener("click", (event) => {
+  if (event.target === progressDialog) progressDialog.close();
+});
+
+privacyBtn.addEventListener("click", () => {
+  privacyDialogStatus.textContent = "";
+  privacyDialog.showModal();
+});
+
+for (const button of [privacyCloseBtn, privacyDoneBtn]) {
+  button.addEventListener("click", () => privacyDialog.close());
+}
+
+privacyDialog.addEventListener("click", (event) => {
+  if (event.target === privacyDialog) privacyDialog.close();
+});
+
+progressStorageToggle.addEventListener("change", () => {
+  const saved = setProgressStorageEnabled(progressStorageToggle.checked);
+  if (!saved) {
+    progressStorageToggle.checked = isProgressStorageEnabled();
+    setAppMessage(t("progressStorageUnavailable"));
+    return;
+  }
+  setAppMessage(
+    t(
+      progressStorageToggle.checked
+        ? "progressStorageEnabled"
+        : "progressStorageDisabled",
+    ),
+  );
+});
+
+clearProgressBtn.addEventListener("click", () => {
+  if (clearProgress()) {
+    renderStoredProgress();
+    privacyDialogStatus.textContent = t("progressCleared");
+  } else {
+    privacyDialogStatus.textContent = t("progressStorageUnavailable");
+  }
+});
+
 categorySelect.addEventListener("change", () => {
   renderScenarioOptions();
   void loadSelectedScenario().catch(console.error);
@@ -852,7 +954,9 @@ async function initializeApp() {
     ]);
     config = loadedConfig;
     scenarioCatalog = validateScenarioCatalog(loadedScenarioCatalog);
+    progressStorageToggle.checked = isProgressStorageEnabled();
     renderScenarioPicker();
+    renderStoredProgress();
     await loadSelectedScenario();
 
     if (!recognizer.supported) {
