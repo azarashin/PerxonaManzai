@@ -104,6 +104,9 @@
           <button id="progress-btn" class="secondary compact" type="button" data-i18n="viewProgress">
             進捗を見る
           </button>
+          <button id="preview-btn" class="secondary compact" type="button" data-i18n="previewScenario">
+            シナリオをプレビュー
+          </button>
           <button id="privacy-btn" class="text-button" type="button" data-i18n="dataAndPrivacy">
             データとプライバシー
           </button>
@@ -205,6 +208,17 @@
         </p>
       </section>
     </main>
+
+    <dialog id="preview-dialog" class="privacy-dialog preview-dialog" aria-labelledby="preview-dialog-title">
+      <div class="dialog-heading">
+        <h2 id="preview-dialog-title" data-i18n="scenarioPreview">シナリオプレビュー</h2>
+        <button id="preview-close-btn" class="dialog-close" type="button" aria-label="閉じる" data-i18n-aria-label="closeDialog">×</button>
+      </div>
+      <div id="preview-content" class="preview-content"></div>
+      <div class="dialog-actions">
+        <button id="preview-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
+      </div>
+    </dialog>
 
     <dialog id="progress-dialog" class="privacy-dialog" aria-labelledby="progress-dialog-title">
       <div class="dialog-heading">

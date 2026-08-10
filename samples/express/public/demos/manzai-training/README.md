@@ -87,11 +87,13 @@ After adding or editing generated content, run:
 
 ```text
 npm run validate:scenarios
+npm run quality:scenarios
 ```
 
 This repository-level validation also checks rules JSON Schema cannot express conveniently: unique beat and choice IDs,
 catalog references, file existence, and matching scenario IDs and titles between the catalog and scenario files. `npm test`
-runs this validation automatically.
+runs this validation and the non-blocking quality warnings automatically. The scenario preview dialog shows all authored lines,
+choices, scores, feedback, and reaction tags before training starts.
 
 First add the category and scenario metadata to `scenarios/index.json`. Category and scenario IDs must be unique, and every
 scenario's `categoryId` must reference a listed category. Each entry also defines `difficulty`, `estimatedMinutes`, and
