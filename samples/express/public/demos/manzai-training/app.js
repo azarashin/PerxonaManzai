@@ -21,6 +21,7 @@ const voiceSelect = document.querySelector("#voice-select");
 const speechLanguageSelect = document.querySelector("#speech-language-select");
 const categorySelect = document.querySelector("#category-select");
 const scenarioSelect = document.querySelector("#scenario-select");
+const answerModeSelect = document.querySelector("#answer-mode-select");
 const progressStorageToggle = document.querySelector("#progress-storage-toggle");
 const scenarioProgressList = document.querySelector("#scenario-progress-list");
 const progressBtn = document.querySelector("#progress-btn");
@@ -51,6 +52,7 @@ const micIndicator = document.querySelector("#mic-indicator");
 const micStatus = document.querySelector("#mic-status");
 const transcriptElement = document.querySelector("#transcript");
 const feedbackElement = document.querySelector("#feedback");
+const recognitionPanel = document.querySelector("#recognition-panel");
 const scenarioTitle = document.querySelector("#scenario-title");
 const scenarioDescription = document.querySelector("#scenario-description");
 const progressElement = document.querySelector("#progress");
@@ -99,6 +101,14 @@ const recognitionLanguages = {
 
 function t(key, parameters = {}) {
   return translate(speechLanguageSelect.value, key, parameters);
+}
+
+function usesVoiceAnswer() {
+  return answerModeSelect.value === "voice";
+}
+
+function canStartTraining() {
+  return presenterReady && (!usesVoiceAnswer() || recognizer.supported);
 }
 
 function applyUiLanguage() {
@@ -172,6 +182,7 @@ function renderStoredProgress() {
 function setScenarioPickerDisabled(disabled) {
   categorySelect.disabled = disabled;
   scenarioSelect.disabled = disabled;
+  answerModeSelect.disabled = disabled;
 }
 
 function renderScenarioPicker() {
@@ -260,7 +271,7 @@ function resetTrainingView() {
   nextBtn.hidden = true;
   restartBtn.hidden = true;
   startBtn.hidden = false;
-  startBtn.disabled = !presenterReady || !recognizer.supported;
+  startBtn.disabled = !canStartTraining();
   progressElement.textContent = `0 / ${selectedScenario.beats.length}`;
 }
 
@@ -439,9 +450,12 @@ function renderProgress() {
 function renderChoices(beat) {
   choicesElement.replaceChildren(
     ...beat.choices.map((choice, index) => {
-      const row = document.createElement("div");
+      const row = document.createElement("button");
+      row.type = "button";
       row.className = "choice";
       row.dataset.choiceId = choice.id;
+      row.disabled = usesVoiceAnswer();
+      row.addEventListener("click", () => handleChoiceSelection(choice));
 
       const number = document.createElement("span");
       number.className = "choice-number";
@@ -553,6 +567,15 @@ function openResponseWindow() {
   phase = "answering";
   responseWindowStartedAt = performance.now();
   choicesElement.hidden = false;
+  recognitionPanel.hidden = !usesVoiceAnswer();
+  if (!usesVoiceAnswer()) {
+    phaseLabel.textContent = t("selectOneResponse");
+    presenter.setListening?.(false);
+    micBtn.hidden = true;
+    setAppMessage(t("selectDisplayedResponse"));
+    return;
+  }
+
   phaseLabel.textContent = t("speakOneComeback", {
     language: t("languageName"),
   });
@@ -613,6 +636,29 @@ function handleFinalTranscript(transcript) {
     setAppMessage(t("retrySpeech"));
     return;
   }
+
+  completeEvaluation(result);
+}
+
+function handleChoiceSelection(choice) {
+  if (phase !== "answering" || usesVoiceAnswer()) return;
+
+  const answer = localizedText(choice.text, speechLanguageSelect.value);
+  const reactionSeconds = Math.max(
+    0,
+    (performance.now() - responseWindowStartedAt) / 1000,
+  );
+  const result = evaluateResponse(
+    controller.currentBeat,
+    answer,
+    reactionSeconds,
+    speechLanguageSelect.value,
+  );
+  result.inputMode = "click";
+  completeEvaluation(result);
+}
+
+function completeEvaluation(result) {
 
   phase = "feedback";
   presenter.setListening?.(false);
@@ -734,7 +780,7 @@ function scheduleAutoAdvance() {
 }
 
 function startTraining() {
-  if (!presenterReady || !recognizer.supported) return;
+  if (!canStartTraining()) return;
 
   clearAutoAdvance();
   completionRecorded = false;
@@ -847,7 +893,7 @@ presenter.addEventListener("PRESENTER_STATUS", (event) => {
     stagePlaceholder.hidden = true;
     launchBtn.textContent = t("presenterReadyButton");
     launchBtn.disabled = true;
-    startBtn.disabled = !recognizer.supported;
+    startBtn.disabled = !canStartTraining();
     setPresenterStatus(t("presenterReady"));
   } else if (currentStatus) {
     setPresenterStatus(currentStatus === "Initializing" ? t("initializing") : currentStatus);
@@ -879,6 +925,14 @@ micBtn.addEventListener("click", startRecognition);
 replayBtn.addEventListener("click", () => void playCurrentBeat());
 nextBtn.addEventListener("click", advanceTraining);
 restartBtn.addEventListener("click", startTraining);
+
+answerModeSelect.addEventListener("change", () => {
+  startBtn.disabled = !canStartTraining();
+  speechSupportWarning.hidden = !usesVoiceAnswer() || recognizer.supported;
+  setAppMessage(
+    usesVoiceAnswer() ? t("voiceAnswerSelected") : t("clickAnswerSelected"),
+  );
+});
 
 progressBtn.addEventListener("click", () => {
   renderStoredProgress();
