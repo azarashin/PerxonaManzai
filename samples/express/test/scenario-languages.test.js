@@ -10,3 +10,7 @@ test("scenario display contains the character and player languages", () => {
 test("scenario display does not duplicate a shared language", () => {
   assert.deepEqual(scenarioDisplayLanguages("zh", "zh"), ["zh"]);
 });
+
+test("scenario display can hide the player language", () => {
+  assert.deepEqual(scenarioDisplayLanguages("en", "ja", false), ["en"]);
+});
