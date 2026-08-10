@@ -94,6 +94,7 @@ filenames. Do not return fragments, JavaScript object literals, comments inside 
 - Use a stable lowercase kebab-case scenario ID and make it equal to the catalog entry ID.
 - Keep catalog and scenario titles identical in all three languages.
 - Give every beat and choice a unique lowercase kebab-case ID within the scenario.
+- Set the catalog entry's `beatCount` to the exact number of items in the scenario's `beats` array.
 - Author translations for meaning and training intent, not word-for-word similarity.
 - Keep spoken choices short and distinct enough for browser speech recognition.
 - Add aliases only for realistic equivalent utterances; do not use aliases to make different answers indistinguishable.

@@ -22,6 +22,7 @@
     {
       "id": "convenience-store",
       "categoryId": "manzai",
+      "beatCount": 3,
       "title": {
         "ja": "コンビニに行った話",
         "en": "A Trip to the Convenience Store",
@@ -32,6 +33,7 @@
     {
       "id": "restaurant-service",
       "categoryId": "customer-service",
+      "beatCount": 2,
       "title": {
         "ja": "レストランでの接客",
         "en": "Restaurant Customer Service",

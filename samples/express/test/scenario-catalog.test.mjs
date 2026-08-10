@@ -65,14 +65,31 @@ test("an empty category returns no scenarios", () => {
   assert.deepEqual(scenariosForCategory(catalog, "empty"), []);
 });
 
+test("scenarios are ordered by beat count within a category", () => {
+  const catalog = validateScenarioCatalog({
+    categories: [category("manzai")],
+    scenarios: [
+      scenario("long", "manzai", 5),
+      scenario("short", "manzai", 2),
+      scenario("medium", "manzai", 3),
+    ],
+  });
+
+  assert.deepEqual(
+    scenariosForCategory(catalog, "manzai").map(({ id }) => id),
+    ["short", "medium", "long"],
+  );
+});
+
 function category(id) {
   return { id, title: localized(id) };
 }
 
-function scenario(id, categoryId) {
+function scenario(id, categoryId, beatCount = 1) {
   return {
     id,
     categoryId,
+    beatCount,
     title: localized(id),
     path: `./scenarios/${id}.json`,
   };

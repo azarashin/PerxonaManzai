@@ -32,11 +32,15 @@ for (const category of catalog.categories) {
 for (const entry of catalog.scenarios) {
   assertOnlyKeys(
     entry,
-    ["id", "categoryId", "title", "path"],
+    ["id", "categoryId", "beatCount", "title", "path"],
     `catalog scenario ${entry.id}`,
   );
   assertId(entry.id, "scenario");
   assertId(entry.categoryId, `${entry.id} category`);
+  assert.ok(
+    Number.isSafeInteger(entry.beatCount) && entry.beatCount > 0,
+    `${entry.id} beatCount must be a positive integer`,
+  );
   assertLocalizedText(entry.title, `${entry.id} catalog title`);
   assert.match(entry.path, /^\.\/scenarios\/[a-z0-9]+(?:-[a-z0-9]+)*\.json$/);
 
@@ -49,6 +53,11 @@ for (const entry of catalog.scenarios) {
     filename,
   );
   assert.equal(scenario.id, entry.id, `${filename}: catalog ID must match scenario ID`);
+  assert.equal(
+    scenario.beats.length,
+    entry.beatCount,
+    `${filename}: catalog beatCount must match beats.length`,
+  );
   assert.deepEqual(
     scenario.title,
     entry.title,

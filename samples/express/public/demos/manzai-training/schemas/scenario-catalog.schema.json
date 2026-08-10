@@ -44,10 +44,11 @@
     "scenarioEntry": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "categoryId", "title", "path"],
+      "required": ["id", "categoryId", "beatCount", "title", "path"],
       "properties": {
         "id": { "$ref": "#/$defs/id" },
         "categoryId": { "$ref": "#/$defs/id" },
+        "beatCount": { "type": "integer", "minimum": 1 },
         "title": { "$ref": "#/$defs/localizedText" },
         "path": {
           "type": "string",
