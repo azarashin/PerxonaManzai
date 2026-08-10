@@ -108,6 +108,19 @@
             データとプライバシー
           </button>
         </div>
+        <div class="training-options">
+          <label>
+            <span data-i18n="dialogueOrder">対話順</span>
+            <select id="dialogue-order-select" aria-label="対話順" data-i18n-aria-label="dialogueOrderAria">
+              <option value="normal" data-i18n="orderNormal">通常</option>
+              <option value="random" data-i18n="orderRandom">ランダム</option>
+            </select>
+          </label>
+          <label class="storage-toggle">
+            <input id="auto-advance-toggle" type="checkbox" checked />
+            <span data-i18n="autoAdvance">講評後に自動で次へ進む</span>
+          </label>
+        </div>
         <div class="training-heading">
           <div>
             <p class="eyebrow">SCENARIO</p>
@@ -180,6 +193,9 @@
           </button>
           <button id="restart-btn" class="secondary" type="button" hidden>
             <span data-i18n="restartTraining">最初から挑戦</span>
+          </button>
+          <button id="review-btn" class="secondary" type="button" hidden>
+            <span data-i18n="reviewWeakBeats">低得点の対話を復習</span>
           </button>
         </div>
 

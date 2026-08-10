@@ -15,6 +15,10 @@ import {
 } from "./scenario-catalog.js";
 import { ScenarioController } from "./scenario-controller.js";
 import { SpeechRecognizer } from "./speech-recognizer.js";
+import {
+  createOrderedScenario,
+  createReviewScenario,
+} from "./training-options.js";
 
 const avatarSelect = document.querySelector("#avatar-select");
 const sceneSelect = document.querySelector("#scene-select");
@@ -24,6 +28,8 @@ const categorySelect = document.querySelector("#category-select");
 const scenarioSelect = document.querySelector("#scenario-select");
 const answerModeSelect = document.querySelector("#answer-mode-select");
 const completionFilterSelect = document.querySelector("#completion-filter-select");
+const dialogueOrderSelect = document.querySelector("#dialogue-order-select");
+const autoAdvanceToggle = document.querySelector("#auto-advance-toggle");
 const progressStorageToggle = document.querySelector("#progress-storage-toggle");
 const scenarioProgressList = document.querySelector("#scenario-progress-list");
 const progressBtn = document.querySelector("#progress-btn");
@@ -41,6 +47,7 @@ const startBtn = document.querySelector("#start-btn");
 const replayBtn = document.querySelector("#replay-btn");
 const nextBtn = document.querySelector("#next-btn");
 const restartBtn = document.querySelector("#restart-btn");
+const reviewBtn = document.querySelector("#review-btn");
 const micBtn = document.querySelector("#mic-btn");
 const presenterStatus = document.querySelector("#presenter-status");
 const appMessage = document.querySelector("#app-message");
@@ -78,6 +85,7 @@ let scenarioCatalog;
 let selectedScenario;
 let scenarioLoadVersion = 0;
 let completionRecorded = false;
+let reviewRun = false;
 let presenterReady = false;
 let presenterInitializing = false;
 let phase = "setup";
@@ -188,6 +196,7 @@ function setScenarioPickerDisabled(disabled) {
   categorySelect.disabled = disabled;
   scenarioSelect.disabled = disabled;
   answerModeSelect.disabled = disabled;
+  dialogueOrderSelect.disabled = disabled;
 }
 
 function renderScenarioPicker() {
@@ -320,6 +329,7 @@ function resetTrainingView() {
   replayBtn.hidden = true;
   nextBtn.hidden = true;
   restartBtn.hidden = true;
+  reviewBtn.hidden = true;
   startBtn.hidden = false;
   startBtn.disabled = !canStartTraining();
   progressElement.textContent = `0 / ${selectedScenario.beats.length}`;
@@ -568,6 +578,7 @@ async function playCurrentBeat() {
   replayBtn.hidden = true;
   nextBtn.hidden = true;
   restartBtn.hidden = true;
+  reviewBtn.hidden = true;
   micBtn.hidden = true;
   transcriptElement.textContent = "—";
   micIndicator.classList.remove("listening");
@@ -730,10 +741,15 @@ function completeEvaluation(result) {
     action: nextAction,
     seconds: delaySeconds,
   });
-  setAppMessage(
-    t("scoreExplanation", { action: nextAction, seconds: delaySeconds }),
-  );
-  scheduleAutoAdvance();
+  if (autoAdvanceToggle.checked) {
+    setAppMessage(
+      t("scoreExplanation", { action: nextAction, seconds: delaySeconds }),
+    );
+    scheduleAutoAdvance();
+  } else {
+    nextBtn.textContent = nextAction;
+    setAppMessage(t("manualAdvanceMessage"));
+  }
 }
 
 function showEvaluation(result) {
@@ -834,7 +850,11 @@ function startTraining() {
 
   clearAutoAdvance();
   completionRecorded = false;
+  reviewRun = false;
   setScenarioPickerDisabled(true);
+  controller = new ScenarioController(
+    createOrderedScenario(selectedScenario, dialogueOrderSelect.value),
+  );
   controller.start();
   startBtn.hidden = true;
   restartBtn.hidden = true;
@@ -864,11 +884,12 @@ function showSummary() {
   nextBtn.hidden = true;
   replayBtn.hidden = true;
   restartBtn.hidden = false;
+  reviewBtn.hidden = reviewRun || controller.resultDetails.length === 0;
   setScenarioPickerDisabled(false);
   progressElement.textContent = `${controller.progress.total} / ${controller.progress.total}`;
 
   const summary = controller.summary;
-  if (!completionRecorded) {
+  if (!completionRecorded && !reviewRun) {
     recordScenarioCompletion(selectedScenario.id);
     completionRecorded = true;
     renderStoredProgress();
@@ -976,6 +997,26 @@ micBtn.addEventListener("click", startRecognition);
 replayBtn.addEventListener("click", () => void playCurrentBeat());
 nextBtn.addEventListener("click", advanceTraining);
 restartBtn.addEventListener("click", startTraining);
+reviewBtn.addEventListener("click", startReviewTraining);
+
+function startReviewTraining() {
+  const reviewScenario = createReviewScenario(
+    selectedScenario,
+    controller.resultDetails,
+  );
+  if (reviewScenario.beats.length === 0 || !canStartTraining()) return;
+
+  clearAutoAdvance();
+  reviewRun = true;
+  completionRecorded = true;
+  setScenarioPickerDisabled(true);
+  controller = new ScenarioController(reviewScenario);
+  controller.start();
+  startBtn.hidden = true;
+  restartBtn.hidden = true;
+  reviewBtn.hidden = true;
+  void playCurrentBeat();
+}
 
 answerModeSelect.addEventListener("change", () => {
   startBtn.disabled = !canStartTraining();
