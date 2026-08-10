@@ -29,6 +29,15 @@ Start the Express sample from `samples/express` and open:
 http://localhost:8083/demos/manzai-training/
 ```
 
+Link directly to a scenario with query parameters:
+
+```text
+http://localhost:8083/demos/manzai-training/?category=customer-service&scenario=restaurant-service
+```
+
+Changing the category or scenario updates the URL without reloading the page. Invalid IDs safely fall back to the default
+scenario.
+
 Chrome or Edge is recommended because the MVP uses the browser `SpeechRecognition` API with `ja-JP`. Microphone permission is
 required. Browser speech recognition may send audio to a browser-vendor recognition service; this demo does not create or
 store audio recordings itself.
