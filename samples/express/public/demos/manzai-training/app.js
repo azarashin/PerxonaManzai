@@ -35,6 +35,11 @@ const autoAdvanceToggle = document.querySelector("#auto-advance-toggle");
 const progressStorageToggle = document.querySelector("#progress-storage-toggle");
 const scenarioProgressList = document.querySelector("#scenario-progress-list");
 const progressBtn = document.querySelector("#progress-btn");
+const previewBtn = document.querySelector("#preview-btn");
+const previewDialog = document.querySelector("#preview-dialog");
+const previewCloseBtn = document.querySelector("#preview-close-btn");
+const previewDoneBtn = document.querySelector("#preview-done-btn");
+const previewContent = document.querySelector("#preview-content");
 const progressDialog = document.querySelector("#progress-dialog");
 const progressCloseBtn = document.querySelector("#progress-close-btn");
 const progressDoneBtn = document.querySelector("#progress-done-btn");
@@ -1022,6 +1027,64 @@ function startReviewTraining() {
   restartBtn.hidden = true;
   reviewBtn.hidden = true;
   void playCurrentBeat();
+}
+
+previewBtn.addEventListener("click", () => {
+  renderScenarioPreview();
+  previewDialog.showModal();
+});
+
+for (const button of [previewCloseBtn, previewDoneBtn]) {
+  button.addEventListener("click", () => previewDialog.close());
+}
+
+previewDialog.addEventListener("click", (event) => {
+  if (event.target === previewDialog) previewDialog.close();
+});
+
+function renderScenarioPreview() {
+  if (!selectedScenario) {
+    previewContent.replaceChildren(createParagraph(t("noScenarioAvailable")));
+    return;
+  }
+
+  previewContent.replaceChildren(
+    ...selectedScenario.beats.map((beat, beatIndex) => {
+      const card = document.createElement("article");
+      card.className = "preview-beat";
+      const heading = document.createElement("h3");
+      heading.textContent = t("questionNumber", { number: beatIndex + 1 });
+      const boke = document.createElement("div");
+      renderLocalizedText(boke, beat.boke);
+      const reaction = createParagraph(
+        t("previewReaction", {
+          description: localizedText(
+            beat.reaction.description,
+            speechLanguageSelect.value,
+          ),
+          tags: beat.reaction.motionTags.join(", "),
+        }),
+      );
+      reaction.className = "preview-reaction";
+      card.append(heading, boke, reaction);
+
+      for (const choice of beat.choices) {
+        const choiceElement = document.createElement("section");
+        choiceElement.className = "preview-choice";
+        const score = document.createElement("strong");
+        score.textContent = t("previewChoiceScore", {
+          score: choice.contentPoints,
+        });
+        const text = document.createElement("div");
+        renderLocalizedText(text, choice.text);
+        const feedback = document.createElement("div");
+        renderLocalizedText(feedback, choice.feedback);
+        choiceElement.append(score, text, feedback);
+        card.append(choiceElement);
+      }
+      return card;
+    }),
+  );
 }
 
 answerModeSelect.addEventListener("change", () => {
