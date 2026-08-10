@@ -1,6 +1,10 @@
 import { evaluateResponse } from "./evaluator.js";
 import { applyTranslations, translate } from "./i18n.js";
 import { buildPresentationContent } from "./reaction-resolver.js";
+import {
+  scenariosForCategory,
+  validateScenarioCatalog,
+} from "./scenario-catalog.js";
 import { ScenarioController } from "./scenario-controller.js";
 import { SpeechRecognizer } from "./speech-recognizer.js";
 
@@ -8,6 +12,8 @@ const avatarSelect = document.querySelector("#avatar-select");
 const sceneSelect = document.querySelector("#scene-select");
 const voiceSelect = document.querySelector("#voice-select");
 const speechLanguageSelect = document.querySelector("#speech-language-select");
+const categorySelect = document.querySelector("#category-select");
+const scenarioSelect = document.querySelector("#scenario-select");
 const launchBtn = document.querySelector("#launch-btn");
 const startBtn = document.querySelector("#start-btn");
 const replayBtn = document.querySelector("#replay-btn");
@@ -43,6 +49,9 @@ const apiBasePath = `${publicBasePath}/api`;
 
 let config;
 let controller;
+let scenarioCatalog;
+let selectedScenario;
+let scenarioLoadVersion = 0;
 let presenterReady = false;
 let presenterInitializing = false;
 let phase = "setup";
@@ -74,9 +83,106 @@ function t(key, parameters = {}) {
 
 function applyUiLanguage() {
   applyTranslations(document, speechLanguageSelect.value);
+  renderScenarioPicker();
   if (!scenarioTitle.classList.contains("localized-text")) {
-    scenarioTitle.textContent = t("scenarioLoading");
+    scenarioTitle.textContent =
+      scenarioCatalog && !scenarioSelect.value ? "—" : t("scenarioLoading");
   }
+  if (scenarioCatalog && !scenarioSelect.value) {
+    setAppMessage(t("noScenarioAvailable"));
+  }
+}
+
+function setScenarioPickerDisabled(disabled) {
+  categorySelect.disabled = disabled;
+  scenarioSelect.disabled = disabled;
+}
+
+function renderScenarioPicker() {
+  if (!scenarioCatalog) return;
+
+  const selectedCategoryId =
+    categorySelect.value || scenarioCatalog.categories[0]?.id;
+  fillSelect(
+    categorySelect,
+    scenarioCatalog.categories.map((category) => ({
+      id: category.id,
+      name: localizedText(category.title, speechLanguageSelect.value),
+    })),
+    selectedCategoryId,
+  );
+  renderScenarioOptions(scenarioSelect.value);
+}
+
+function renderScenarioOptions(preferredId) {
+  const scenarios = scenariosForCategory(scenarioCatalog, categorySelect.value);
+  fillSelect(
+    scenarioSelect,
+    scenarios.map((scenario) => ({
+      id: scenario.id,
+      name: localizedText(scenario.title, speechLanguageSelect.value),
+    })),
+    preferredId,
+  );
+}
+
+async function loadSelectedScenario() {
+  const loadVersion = ++scenarioLoadVersion;
+  const entry = scenarioCatalog.scenarios.find(
+    (scenario) => scenario.id === scenarioSelect.value,
+  );
+  if (!entry) {
+    clearSelectedScenario(t("noScenarioAvailable"));
+    return;
+  }
+
+  setScenarioPickerDisabled(true);
+  scenarioTitle.classList.remove("localized-text");
+  scenarioTitle.textContent = t("scenarioLoading");
+  try {
+    const scenario = await requestJson(entry.path);
+    if (loadVersion !== scenarioLoadVersion) return;
+    controller = new ScenarioController(scenario);
+    selectedScenario = scenario;
+    renderLocalizedText(scenarioTitle, scenario.title);
+    renderLocalizedText(scenarioDescription, scenario.description);
+    resetTrainingView();
+  } catch (error) {
+    if (loadVersion !== scenarioLoadVersion) return;
+    clearSelectedScenario(t("scenarioLoadFailed", { message: error.message }));
+    throw error;
+  } finally {
+    if (loadVersion === scenarioLoadVersion) setScenarioPickerDisabled(false);
+  }
+}
+
+function clearSelectedScenario(message) {
+  controller = undefined;
+  selectedScenario = undefined;
+  scenarioTitle.classList.remove("localized-text");
+  scenarioTitle.textContent = "—";
+  scenarioDescription.replaceChildren();
+  progressElement.textContent = "0 / 0";
+  startBtn.disabled = true;
+  setAppMessage(message);
+}
+
+function resetTrainingView() {
+  clearAutoAdvance();
+  recognizer.abort();
+  presenter.setListening?.(false);
+  presenter.interruptPresentation?.();
+  phase = "setup";
+  responseArea.hidden = true;
+  summaryElement.hidden = true;
+  instructions.hidden = false;
+  bokeCaption.hidden = true;
+  replayBtn.hidden = true;
+  nextBtn.hidden = true;
+  restartBtn.hidden = true;
+  startBtn.hidden = false;
+  startBtn.disabled = !presenterReady || !recognizer.supported;
+  progressElement.textContent = `0 / ${selectedScenario.beats.length}`;
 }
 
 const recognizer = new SpeechRecognizer({
@@ -552,6 +658,7 @@ function startTraining() {
   if (!presenterReady || !recognizer.supported) return;
 
   clearAutoAdvance();
+  setScenarioPickerDisabled(true);
   controller.start();
   startBtn.hidden = true;
   restartBtn.hidden = true;
@@ -581,6 +688,7 @@ function showSummary() {
   nextBtn.hidden = true;
   replayBtn.hidden = true;
   restartBtn.hidden = false;
+  setScenarioPickerDisabled(false);
   progressElement.textContent = `${controller.progress.total} / ${controller.progress.total}`;
 
   const summary = controller.summary;
@@ -687,8 +795,18 @@ replayBtn.addEventListener("click", () => void playCurrentBeat());
 nextBtn.addEventListener("click", advanceTraining);
 restartBtn.addEventListener("click", startTraining);
 
+categorySelect.addEventListener("change", () => {
+  renderScenarioOptions();
+  void loadSelectedScenario().catch(console.error);
+});
+
+scenarioSelect.addEventListener("change", () => {
+  void loadSelectedScenario().catch(console.error);
+});
+
 function requirePresenterPreparation() {
   clearAutoAdvance();
+  setScenarioPickerDisabled(false);
   if (presenterReady) {
     recognizer.abort();
     presenter.setListening?.(false);
@@ -728,15 +846,14 @@ speechLanguageSelect.addEventListener("change", () => {
 async function initializeApp() {
   applyUiLanguage();
   try {
-    const [loadedConfig, scenario] = await Promise.all([
+    const [loadedConfig, loadedScenarioCatalog] = await Promise.all([
       requestApiJson("/config"),
-      requestJson("./scenarios/convenience-store.json"),
+      requestJson("./scenarios/index.json"),
     ]);
     config = loadedConfig;
-    controller = new ScenarioController(scenario);
-    renderLocalizedText(scenarioTitle, scenario.title);
-    renderLocalizedText(scenarioDescription, scenario.description);
-    progressElement.textContent = `0 / ${scenario.beats.length}`;
+    scenarioCatalog = validateScenarioCatalog(loadedScenarioCatalog);
+    renderScenarioPicker();
+    await loadSelectedScenario();
 
     if (!recognizer.supported) {
       speechSupportWarning.hidden = false;
