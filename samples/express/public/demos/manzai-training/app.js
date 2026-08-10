@@ -38,6 +38,7 @@ const answerModeSelect = document.querySelector("#answer-mode-select");
 const completionFilterSelect = document.querySelector("#completion-filter-select");
 const dialogueOrderSelect = document.querySelector("#dialogue-order-select");
 const autoAdvanceToggle = document.querySelector("#auto-advance-toggle");
+const showNativeLanguageToggle = document.querySelector("#show-native-language-toggle");
 const progressStorageToggle = document.querySelector("#progress-storage-toggle");
 const scenarioProgressList = document.querySelector("#scenario-progress-list");
 const progressBtn = document.querySelector("#progress-btn");
@@ -224,6 +225,14 @@ function setScenarioPickerDisabled(disabled) {
   dialogueOrderSelect.disabled = disabled;
 }
 
+function setPresenterControlsDisabled(disabled) {
+  speechLanguageSelect.disabled = disabled;
+  playerLanguageSelect.disabled = disabled;
+  avatarSelect.disabled = disabled;
+  sceneSelect.disabled = disabled;
+  voiceSelect.disabled = disabled;
+}
+
 function renderScenarioPicker() {
   if (!scenarioCatalog) return;
 
@@ -356,6 +365,7 @@ function resetTrainingView() {
   presenter.setListening?.(false);
   presenter.interruptPresentation?.();
   phase = "setup";
+  setPresenterControlsDisabled(false);
   setTrainingFocus(false);
   responseArea.hidden = true;
   summaryElement.hidden = true;
@@ -578,6 +588,7 @@ function renderLocalizedText(element, value) {
   const visibleLanguages = scenarioDisplayLanguages(
     speechLanguageSelect.value,
     playerLanguageSelect.value,
+    showNativeLanguageToggle.checked,
   );
   element.classList.add("localized-text");
   element.replaceChildren(
@@ -907,6 +918,7 @@ function startTraining() {
   completionRecorded = false;
   reviewRun = false;
   setScenarioPickerDisabled(true);
+  setPresenterControlsDisabled(true);
   controller = new ScenarioController(
     createOrderedScenario(selectedScenario, dialogueOrderSelect.value),
   );
@@ -941,6 +953,7 @@ function showSummary() {
   restartBtn.hidden = false;
   reviewBtn.hidden = reviewRun || controller.resultDetails.length === 0;
   setScenarioPickerDisabled(false);
+  setPresenterControlsDisabled(false);
   progressElement.textContent = `${controller.progress.total} / ${controller.progress.total}`;
 
   const summary = controller.summary;
@@ -1065,6 +1078,7 @@ function startReviewTraining() {
   reviewRun = true;
   completionRecorded = true;
   setScenarioPickerDisabled(true);
+  setPresenterControlsDisabled(true);
   controller = new ScenarioController(reviewScenario);
   controller.start();
   startBtn.hidden = true;
@@ -1138,6 +1152,12 @@ answerModeSelect.addEventListener("change", () => {
   setAppMessage(
     usesVoiceAnswer() ? t("voiceAnswerSelected") : t("clickAnswerSelected"),
   );
+});
+
+showNativeLanguageToggle.addEventListener("change", () => {
+  if (!selectedScenario) return;
+  renderLocalizedText(scenarioTitle, selectedScenario.title);
+  renderLocalizedText(scenarioDescription, selectedScenario.description);
 });
 
 completionFilterSelect.addEventListener("change", () => {
