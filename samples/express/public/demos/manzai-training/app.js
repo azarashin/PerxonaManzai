@@ -366,7 +366,7 @@ function resetTrainingView() {
 }
 
 const recognizer = new SpeechRecognizer({
-  language: recognitionLanguages[playerLanguageSelect.value],
+  language: recognitionLanguages[speechLanguageSelect.value],
   onInterim: (transcript) => {
     transcriptElement.textContent = transcript;
   },
@@ -693,7 +693,7 @@ function openResponseWindow() {
 function startRecognition() {
   if (phase !== "answering" || recognizer.active) return;
 
-  recognizer.setLanguage(recognitionLanguages[playerLanguageSelect.value]);
+  recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
   transcriptElement.textContent = t("listeningTranscript");
   feedbackElement.hidden = true;
   micBtn.hidden = true;
@@ -724,7 +724,7 @@ function handleFinalTranscript(transcript) {
     controller.currentBeat,
     transcript,
     reactionSeconds,
-    playerLanguageSelect.value,
+    speechLanguageSelect.value,
   );
 
   if (!result.matched) {
@@ -744,7 +744,7 @@ function handleFinalTranscript(transcript) {
 function handleChoiceSelection(choice) {
   if (phase !== "answering" || usesVoiceAnswer()) return;
 
-  const answer = localizedText(choice.text, playerLanguageSelect.value);
+  const answer = localizedText(choice.text, speechLanguageSelect.value);
   const reactionSeconds = Math.max(
     0,
     (performance.now() - responseWindowStartedAt) / 1000,
@@ -753,7 +753,7 @@ function handleChoiceSelection(choice) {
     controller.currentBeat,
     answer,
     reactionSeconds,
-    playerLanguageSelect.value,
+    speechLanguageSelect.value,
   );
   result.inputMode = "click";
   completeEvaluation(result);
@@ -1269,6 +1269,7 @@ for (const select of [sceneSelect, voiceSelect]) {
 }
 
 speechLanguageSelect.addEventListener("change", () => {
+  recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
   updateVoiceOptions();
   requirePresenterPreparation();
   if (selectedScenario) {
@@ -1279,7 +1280,6 @@ speechLanguageSelect.addEventListener("change", () => {
 
 playerLanguageSelect.addEventListener("change", () => {
   applyUiLanguage();
-  recognizer.setLanguage(recognitionLanguages[playerLanguageSelect.value]);
   if (selectedScenario) {
     renderLocalizedText(scenarioTitle, selectedScenario.title);
     renderLocalizedText(scenarioDescription, selectedScenario.description);

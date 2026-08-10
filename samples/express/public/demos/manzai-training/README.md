@@ -5,11 +5,11 @@ conversation partner; after playback is fully finished, the learner answers by s
 response choices. The demo identifies the choice, scores its pre-authored content quality, adds a response-timing score,
 and advances to the next beat.
 
-Before initializing the Presenter, the learner chooses both the character's speech language and the player's native language.
+Before initializing the Presenter, the learner chooses both the scenario language and the player's native language.
 Scenario titles, partner captions, and response choices show only those two languages, or one line when both selections match.
-The Voice picker follows the character language. Browser speech recognition, response scoring, instructions, controls, status
-messages, scoring labels, errors, and authored feedback follow the player's native language. Supported recognition locales are
-`en-US` for English, `zh-TW` for Traditional Chinese, and `ja-JP` for Japanese.
+The character voice, browser speech recognition, and response matching follow the scenario language. Instructions, controls,
+status messages, and scoring labels follow the player's native language. Supported recognition locales are `en-US` for
+English, `zh-TW` for Traditional Chinese, and `ja-JP` for Japanese.
 
 Completion tracking is optional and local-only. When the learner enables it, the browser stores only each scenario ID and
 its completion count in `localStorage`. The demo server does not receive or store this progress, recognized learner text,
