@@ -85,6 +85,10 @@ const feedbackElement = document.querySelector("#feedback");
 const recognitionPanel = document.querySelector("#recognition-panel");
 const scenarioTitle = document.querySelector("#scenario-title");
 const scenarioDescription = document.querySelector("#scenario-description");
+const scenarioPicker = document.querySelector(".scenario-picker");
+const localDataActions = document.querySelector(".local-data-actions");
+const trainingHeading = document.querySelector(".training-heading");
+const scenarioMetadata = document.querySelector("#scenario-metadata");
 const scenarioMetaChips = document.querySelector("#scenario-meta-chips");
 const learningObjectives = document.querySelector("#learning-objectives");
 const progressElement = document.querySelector("#progress");
@@ -352,6 +356,7 @@ function resetTrainingView() {
   presenter.setListening?.(false);
   presenter.interruptPresentation?.();
   phase = "setup";
+  setTrainingFocus(false);
   responseArea.hidden = true;
   summaryElement.hidden = true;
   instructions.hidden = false;
@@ -363,6 +368,15 @@ function resetTrainingView() {
   startBtn.hidden = false;
   startBtn.disabled = !canStartTraining();
   progressElement.textContent = `0 / ${selectedScenario.beats.length}`;
+}
+
+function setTrainingFocus(active) {
+  scenarioPicker.hidden = active;
+  localDataActions.hidden = active;
+  trainingHeading.hidden = active;
+  scenarioDescription.hidden = active;
+  scenarioMetadata.hidden = active;
+  instructions.hidden = active;
 }
 
 const recognizer = new SpeechRecognizer({
@@ -889,6 +903,7 @@ function startTraining() {
   if (!canStartTraining()) return;
 
   clearAutoAdvance();
+  setTrainingFocus(true);
   completionRecorded = false;
   reviewRun = false;
   setScenarioPickerDisabled(true);
