@@ -37,6 +37,10 @@ const speechSupportWarning = document.querySelector("#speech-support-warning");
 /** @type {HTMLElement & import('@perxona/presenter-types').IPresentationWidget} */
 const presenter = document.querySelector("sv-presenter");
 
+const publicBasePath =
+  globalThis.__PERXONA_RUNTIME_CONFIG__?.publicBasePath ?? "";
+const apiBasePath = `${publicBasePath}/api`;
+
 let config;
 let controller;
 let presenterReady = false;
@@ -101,6 +105,11 @@ function requestJson(path, options = {}) {
   });
 }
 
+function requestApiJson(path, options = {}) {
+  const apiPath = path.startsWith("/") ? path : `/${path}`;
+  return requestJson(`${apiBasePath}${apiPath}`, options);
+}
+
 async function loadPresenterEngine(url) {
   await new Promise((resolve, reject) => {
     const script = document.createElement("script");
@@ -152,8 +161,8 @@ async function loadAvatarMotions(avatarId = avatarSelect.value) {
   }
   if (motionCatalogAvatarId === avatarId) return availableMotions;
 
-  const { items = [] } = await requestJson(
-    `/api/avatars/${encodeURIComponent(avatarId)}/motions`,
+  const { items = [] } = await requestApiJson(
+    `/avatars/${encodeURIComponent(avatarId)}/motions`,
   );
   if (avatarSelect.value !== avatarId) return [];
 
@@ -171,9 +180,9 @@ async function loadAvatarMotions(avatarId = avatarSelect.value) {
 async function loadCatalog() {
   const [{ items: avatars }, { items: scenes }, { items: voices }] =
     await Promise.all([
-      requestJson("/api/avatars"),
-      requestJson("/api/scenes"),
-      requestJson("/api/voices"),
+      requestApiJson("/avatars"),
+      requestApiJson("/scenes"),
+      requestApiJson("/voices"),
     ]);
 
   const preferredTarget = config.fixedTarget ?? config.defaults ?? {};
@@ -217,7 +226,7 @@ async function initializePresenter() {
     }
     setPresenterStatus(t("gettingToken"));
     const { connect_token: connectToken } =
-      await requestJson("/api/connect-token");
+      await requestApiJson("/connect-token");
     setPresenterStatus(t("preparingAvatar"));
     await presenter.initialize(connectToken, selectedTarget());
   } catch (error) {
@@ -661,7 +670,7 @@ presenter.addEventListener("CONNECT_TOKEN_EXPIRED", async () => {
   isRefreshingToken = true;
   try {
     const { connect_token: freshToken } =
-      await requestJson("/api/connect-token");
+      await requestApiJson("/connect-token");
     presenter.refreshConnectToken(freshToken);
     setPresenterStatus(t("tokenRefreshed"));
   } catch (error) {
@@ -720,7 +729,7 @@ async function initializeApp() {
   applyUiLanguage();
   try {
     const [loadedConfig, scenario] = await Promise.all([
-      requestJson("/api/config"),
+      requestApiJson("/config"),
       requestJson("./scenarios/convenience-store.json"),
     ]);
     config = loadedConfig;
