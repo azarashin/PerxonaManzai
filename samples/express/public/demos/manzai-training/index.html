@@ -6,17 +6,17 @@
     <meta
       name="description"
       data-i18n-content="pageDescription"
-      content="Perxonaのアバターを相手にツッコミを練習する漫才トレーニングMVP"
+      content="Perxonaのアバターを相手に会話応答を練習するシナリオトレーニングMVP"
     />
-    <title data-i18n="pageTitle">ツッコミ道場 | Perxona Connect</title>
+    <title data-i18n="pageTitle">対話道場 | Perxona Connect</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="app-header">
       <a class="back-link" href="../../" data-i18n="backToDemos">← デモ一覧</a>
       <div>
-        <p class="eyebrow">MANZAI TRAINING MVP</p>
-        <h1 data-i18n="appTitle">ツッコミ道場</h1>
+        <p class="eyebrow">SCENARIO TRAINING MVP</p>
+        <h1 data-i18n="appTitle">対話道場</h1>
       </div>
       <span class="browser-badge" data-i18n="browserRecommended">Chrome / Edge 推奨</span>
     </header>
@@ -24,17 +24,25 @@
     <main class="app-shell">
       <section
         class="presenter-column"
-        aria-label="ボケ役アバター"
+        aria-label="会話相手アバター"
         data-i18n-aria-label="presenterColumnLabel"
       >
         <div class="setup-card">
           <label>
-            <span data-i18n="speechLanguage">キャラクターの発話言語</span>
+            <span data-i18n="speechLanguage">シナリオの言語</span>
             <select
               id="speech-language-select"
-              aria-label="キャラクターの発話言語"
+              aria-label="シナリオの言語"
               data-i18n-aria-label="speechLanguageAria"
             >
+              <option value="en">English</option>
+              <option value="zh">中文（繁體）</option>
+              <option value="ja" selected>日本語</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="playerLanguage">プレイヤーの母国語</span>
+            <select id="player-language-select" aria-label="プレイヤーの母国語" data-i18n-aria-label="playerLanguageAria">
               <option value="en">English</option>
               <option value="zh">中文（繁體）</option>
               <option value="ja" selected>日本語</option>
@@ -75,6 +83,31 @@
       </section>
 
       <section class="training-card" aria-labelledby="scenario-title">
+        <div class="scenario-picker">
+          <label>
+            <span data-i18n="category">カテゴリ</span>
+            <select id="category-select" aria-label="カテゴリ" data-i18n-aria-label="categoryAria"></select>
+          </label>
+          <label>
+            <span data-i18n="scenario">シナリオ</span>
+            <select id="scenario-select" aria-label="シナリオ" data-i18n-aria-label="scenarioAria"></select>
+          </label>
+          <label>
+            <span data-i18n="answerMode">回答方法</span>
+            <select id="answer-mode-select" aria-label="回答方法" data-i18n-aria-label="answerModeAria">
+              <option value="voice" data-i18n="answerModeVoice">音声で回答</option>
+              <option value="click" data-i18n="answerModeClick">クリックで回答</option>
+            </select>
+          </label>
+        </div>
+        <div class="local-data-actions">
+          <button id="scenario-settings-btn" class="secondary compact" type="button" data-i18n="scenarioSettings">
+            シナリオ設定
+          </button>
+          <button id="privacy-btn" class="text-button" type="button" data-i18n="dataAndPrivacy">
+            データとプライバシー
+          </button>
+        </div>
         <div class="training-heading">
           <div>
             <p class="eyebrow">SCENARIO</p>
@@ -83,13 +116,20 @@
           <span id="progress" class="progress">0 / 0</span>
         </div>
         <p id="scenario-description" class="scenario-description"></p>
+        <div id="scenario-metadata" class="scenario-metadata">
+          <div id="scenario-meta-chips" class="scenario-meta-chips"></div>
+          <div>
+            <strong data-i18n="learningObjectives">学習目標</strong>
+            <ul id="learning-objectives"></ul>
+          </div>
+        </div>
 
         <div id="instructions" class="instructions">
           <h3 data-i18n="howToPlay">遊び方</h3>
           <ol>
             <li data-i18n="howStep1">アバターを準備し、「トレーニング開始」を押します。</li>
-            <li data-i18n="howStep2">ボケを聞いたら、表示されたツッコミを一つ発声します。</li>
-            <li data-i18n="howStep3">内容とボケ終了後の反応速度を採点します。</li>
+            <li data-i18n="howStep2">相手の発言を聞いたら、表示された応答を一つ発声します。</li>
+            <li data-i18n="howStep3">応答内容と発言終了後の反応速度を採点します。</li>
           </ol>
           <p class="privacy-note">
             <span data-i18n="privacyNote">音声認識にはブラウザーの認識サービスを使用します。ブラウザーによっては音声が外部サービスへ送信されます。このMVPは録音ファイルをアプリ内に保存しません。</span>
@@ -97,10 +137,10 @@
         </div>
 
         <section id="response-area" class="response-area" hidden>
-          <p id="phase-label" class="phase-label" data-i18n="listenToBoke">ボケを聞いてください</p>
-          <div id="choices" class="choices" aria-label="ツッコミの選択肢" data-i18n-aria-label="choicesAria"></div>
+          <p id="phase-label" class="phase-label" data-i18n="listenToBoke">相手の発言を聞いてください</p>
+          <div id="choices" class="choices" aria-label="応答の選択肢" data-i18n-aria-label="choicesAria"></div>
 
-          <div class="recognition-panel">
+          <div id="recognition-panel" class="recognition-panel">
             <div class="mic-row">
               <span id="mic-indicator" class="mic-indicator" aria-hidden="true"></span>
               <strong id="mic-status" data-i18n="waiting">待機中</strong>
@@ -133,13 +173,16 @@
             <span data-i18n="startTraining">トレーニング開始</span>
           </button>
           <button id="replay-btn" class="secondary" type="button" hidden>
-            <span data-i18n="replayBoke">このボケをもう一度</span>
+            <span data-i18n="replayBoke">この発言をもう一度</span>
           </button>
           <button id="next-btn" class="primary" type="button" hidden>
-            <span data-i18n="nextBoke">次のボケへ</span>
+            <span data-i18n="nextBoke">次の発言へ</span>
           </button>
           <button id="restart-btn" class="secondary" type="button" hidden>
             <span data-i18n="restartTraining">最初から挑戦</span>
+          </button>
+          <button id="review-btn" class="secondary" type="button" hidden>
+            <span data-i18n="reviewWeakBeats">低得点の対話を復習</span>
           </button>
         </div>
 
@@ -149,6 +192,88 @@
         </p>
       </section>
     </main>
+
+    <dialog id="scenario-settings-dialog" class="privacy-dialog" aria-labelledby="scenario-settings-dialog-title">
+      <div class="dialog-heading">
+        <h2 id="scenario-settings-dialog-title" data-i18n="scenarioSettings">シナリオ設定</h2>
+        <button id="scenario-settings-close-btn" class="dialog-close" type="button" aria-label="閉じる" data-i18n-aria-label="closeDialog">×</button>
+      </div>
+      <div class="dialog-form">
+        <label class="completion-filter-label">
+          <span data-i18n="completionFilter">進捗で絞り込み</span>
+          <select id="completion-filter-select" aria-label="進捗で絞り込み" data-i18n-aria-label="completionFilterAria">
+            <option value="all" data-i18n="filterAll">すべて</option>
+            <option value="incomplete" data-i18n="filterIncomplete">未完了</option>
+            <option value="completed" data-i18n="filterCompleted">完了済み</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="dialogueOrder">対話順</span>
+          <select id="dialogue-order-select" aria-label="対話順" data-i18n-aria-label="dialogueOrderAria">
+            <option value="normal" data-i18n="orderNormal">通常</option>
+            <option value="random" data-i18n="orderRandom">ランダム</option>
+          </select>
+        </label>
+        <label class="storage-toggle">
+          <input id="auto-advance-toggle" type="checkbox" checked />
+          <span data-i18n="autoAdvance">講評後に自動で次へ進む</span>
+        </label>
+      </div>
+      <div class="dialog-actions">
+        <button id="progress-btn" class="secondary" type="button" data-i18n="viewProgress">進捗を見る</button>
+        <button id="preview-btn" class="secondary" type="button" data-i18n="previewScenario">シナリオをプレビュー</button>
+        <button id="scenario-settings-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
+      </div>
+    </dialog>
+
+    <dialog id="preview-dialog" class="privacy-dialog preview-dialog" aria-labelledby="preview-dialog-title">
+      <div class="dialog-heading">
+        <h2 id="preview-dialog-title" data-i18n="scenarioPreview">シナリオプレビュー</h2>
+        <button id="preview-close-btn" class="dialog-close" type="button" aria-label="閉じる" data-i18n-aria-label="closeDialog">×</button>
+      </div>
+      <div id="preview-content" class="preview-content"></div>
+      <div class="dialog-actions">
+        <button id="preview-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
+      </div>
+    </dialog>
+
+    <dialog id="progress-dialog" class="privacy-dialog" aria-labelledby="progress-dialog-title">
+      <div class="dialog-heading">
+        <h2 id="progress-dialog-title" data-i18n="localProgress">この端末の進捗</h2>
+        <button id="progress-close-btn" class="dialog-close" type="button" aria-label="閉じる" data-i18n-aria-label="closeDialog">×</button>
+      </div>
+      <label class="storage-toggle">
+        <input id="progress-storage-toggle" type="checkbox" />
+        <span data-i18n="saveProgressOnDevice">この端末に完了回数を保存する</span>
+      </label>
+      <div id="scenario-progress-list" class="scenario-progress-list"></div>
+      <div class="dialog-actions">
+        <button id="export-progress-btn" class="secondary" type="button" data-i18n="exportProgress">進捗を書き出す</button>
+        <button id="import-progress-btn" class="secondary" type="button" data-i18n="importProgress">進捗を読み込む</button>
+        <input id="import-progress-input" type="file" accept="application/json,.json" hidden />
+        <button id="progress-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
+      </div>
+      <p id="progress-dialog-status" class="dialog-status" role="status"></p>
+    </dialog>
+
+    <dialog id="privacy-dialog" class="privacy-dialog" aria-labelledby="privacy-dialog-title">
+      <div class="dialog-heading">
+        <h2 id="privacy-dialog-title" data-i18n="privacyDialogTitle">データとプライバシー</h2>
+        <button id="privacy-close-btn" class="dialog-close" type="button" aria-label="閉じる" data-i18n-aria-label="closeDialog">×</button>
+      </div>
+      <p data-i18n="localStorageExplanation">保存を有効にすると、シナリオIDと完了回数だけをこのブラウザーのlocalStorageに保存します。</p>
+      <ul>
+        <li data-i18n="localStorageLimitation">ブラウザーのデータを消すと進捗も消え、別の端末やブラウザーには同期されません。</li>
+        <li data-i18n="sharedDeviceWarning">同じブラウザープロファイルを使う人は、保存された進捗を確認できる場合があります。</li>
+        <li data-i18n="serverPrivacyStatement">本デモのサーバーは、利用者の氏名、メールアドレス、進捗、認識テキスト、録音を収集・保存しません。</li>
+        <li data-i18n="speechServiceWarning">音声認識にはブラウザーのサービスを使用するため、ブラウザーによっては音声が外部サービスへ送信されます。</li>
+      </ul>
+      <div class="dialog-actions">
+        <button id="clear-progress-btn" class="danger-button" type="button" data-i18n="clearDeviceProgress">端末内の進捗を削除</button>
+        <button id="privacy-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
+      </div>
+      <p id="privacy-dialog-status" class="dialog-status" role="status"></p>
+    </dialog>
 
     <script src="../../runtime-config.js"></script>
     <script type="module" src="app.js"></script>

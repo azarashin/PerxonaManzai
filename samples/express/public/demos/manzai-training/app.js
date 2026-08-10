@@ -1,18 +1,74 @@
 import { evaluateResponse } from "./evaluator.js";
 import { applyTranslations, translate } from "./i18n.js";
 import { buildPresentationContent } from "./reaction-resolver.js";
+import {
+  clearProgress,
+  exportProgress,
+  filterScenariosByCompletion,
+  isProgressStorageEnabled,
+  importProgress,
+  loadProgress,
+  recordScenarioCompletion,
+  setProgressStorageEnabled,
+} from "./progress-storage.js";
+import {
+  scenariosForCategory,
+  validateScenarioCatalog,
+} from "./scenario-catalog.js";
 import { ScenarioController } from "./scenario-controller.js";
+import {
+  resolveScenarioRoute,
+  updateScenarioSearch,
+} from "./scenario-routing.js";
+import { scenarioDisplayLanguages } from "./scenario-languages.js";
 import { SpeechRecognizer } from "./speech-recognizer.js";
+import {
+  createOrderedScenario,
+  createReviewScenario,
+} from "./training-options.js";
 
 const avatarSelect = document.querySelector("#avatar-select");
 const sceneSelect = document.querySelector("#scene-select");
 const voiceSelect = document.querySelector("#voice-select");
 const speechLanguageSelect = document.querySelector("#speech-language-select");
+const playerLanguageSelect = document.querySelector("#player-language-select");
+const categorySelect = document.querySelector("#category-select");
+const scenarioSelect = document.querySelector("#scenario-select");
+const answerModeSelect = document.querySelector("#answer-mode-select");
+const completionFilterSelect = document.querySelector("#completion-filter-select");
+const dialogueOrderSelect = document.querySelector("#dialogue-order-select");
+const autoAdvanceToggle = document.querySelector("#auto-advance-toggle");
+const progressStorageToggle = document.querySelector("#progress-storage-toggle");
+const scenarioProgressList = document.querySelector("#scenario-progress-list");
+const progressBtn = document.querySelector("#progress-btn");
+const previewBtn = document.querySelector("#preview-btn");
+const scenarioSettingsBtn = document.querySelector("#scenario-settings-btn");
+const scenarioSettingsDialog = document.querySelector("#scenario-settings-dialog");
+const scenarioSettingsCloseBtn = document.querySelector("#scenario-settings-close-btn");
+const scenarioSettingsDoneBtn = document.querySelector("#scenario-settings-done-btn");
+const previewDialog = document.querySelector("#preview-dialog");
+const previewCloseBtn = document.querySelector("#preview-close-btn");
+const previewDoneBtn = document.querySelector("#preview-done-btn");
+const previewContent = document.querySelector("#preview-content");
+const progressDialog = document.querySelector("#progress-dialog");
+const progressCloseBtn = document.querySelector("#progress-close-btn");
+const progressDoneBtn = document.querySelector("#progress-done-btn");
+const exportProgressBtn = document.querySelector("#export-progress-btn");
+const importProgressBtn = document.querySelector("#import-progress-btn");
+const importProgressInput = document.querySelector("#import-progress-input");
+const progressDialogStatus = document.querySelector("#progress-dialog-status");
+const privacyBtn = document.querySelector("#privacy-btn");
+const privacyDialog = document.querySelector("#privacy-dialog");
+const privacyCloseBtn = document.querySelector("#privacy-close-btn");
+const privacyDoneBtn = document.querySelector("#privacy-done-btn");
+const clearProgressBtn = document.querySelector("#clear-progress-btn");
+const privacyDialogStatus = document.querySelector("#privacy-dialog-status");
 const launchBtn = document.querySelector("#launch-btn");
 const startBtn = document.querySelector("#start-btn");
 const replayBtn = document.querySelector("#replay-btn");
 const nextBtn = document.querySelector("#next-btn");
 const restartBtn = document.querySelector("#restart-btn");
+const reviewBtn = document.querySelector("#review-btn");
 const micBtn = document.querySelector("#mic-btn");
 const presenterStatus = document.querySelector("#presenter-status");
 const appMessage = document.querySelector("#app-message");
@@ -26,8 +82,11 @@ const micIndicator = document.querySelector("#mic-indicator");
 const micStatus = document.querySelector("#mic-status");
 const transcriptElement = document.querySelector("#transcript");
 const feedbackElement = document.querySelector("#feedback");
+const recognitionPanel = document.querySelector("#recognition-panel");
 const scenarioTitle = document.querySelector("#scenario-title");
 const scenarioDescription = document.querySelector("#scenario-description");
+const scenarioMetaChips = document.querySelector("#scenario-meta-chips");
+const learningObjectives = document.querySelector("#learning-objectives");
 const progressElement = document.querySelector("#progress");
 const summaryElement = document.querySelector("#summary");
 const summaryScore = document.querySelector("#summary-score");
@@ -43,6 +102,11 @@ const apiBasePath = `${publicBasePath}/api`;
 
 let config;
 let controller;
+let scenarioCatalog;
+let selectedScenario;
+let scenarioLoadVersion = 0;
+let completionRecorded = false;
+let reviewRun = false;
 let presenterReady = false;
 let presenterInitializing = false;
 let phase = "setup";
@@ -69,14 +133,236 @@ const recognitionLanguages = {
 };
 
 function t(key, parameters = {}) {
-  return translate(speechLanguageSelect.value, key, parameters);
+  return translate(playerLanguageSelect.value, key, parameters);
+}
+
+function usesVoiceAnswer() {
+  return answerModeSelect.value === "voice";
+}
+
+function canStartTraining() {
+  return presenterReady && (!usesVoiceAnswer() || recognizer.supported);
 }
 
 function applyUiLanguage() {
-  applyTranslations(document, speechLanguageSelect.value);
+  applyTranslations(document, playerLanguageSelect.value);
+  renderScenarioPicker();
+  renderStoredProgress();
+  renderScenarioMetadata();
   if (!scenarioTitle.classList.contains("localized-text")) {
-    scenarioTitle.textContent = t("scenarioLoading");
+    scenarioTitle.textContent =
+      scenarioCatalog && !scenarioSelect.value ? "—" : t("scenarioLoading");
   }
+  if (scenarioCatalog && !scenarioSelect.value) {
+    setAppMessage(t("noScenarioAvailable"));
+  }
+}
+
+function renderStoredProgress() {
+  if (!scenarioCatalog) return;
+  const progress = loadProgress();
+  scenarioProgressList.replaceChildren(
+    ...scenarioCatalog.categories.map((category) => {
+      const scenarios = scenariosForCategory(scenarioCatalog, category.id);
+      const section = document.createElement("section");
+      section.className = "scenario-progress-category";
+
+      const header = document.createElement("header");
+      header.className = "scenario-progress-category-header";
+      const title = document.createElement("h3");
+      title.textContent = localizedText(
+        category.title,
+        playerLanguageSelect.value,
+      );
+      const total = document.createElement("strong");
+      total.textContent = t("categoryCompletionCount", {
+        count: scenarios.reduce(
+          (sum, scenario) => sum + (progress.scenarios[scenario.id] ?? 0),
+          0,
+        ),
+      });
+      header.append(title, total);
+
+      const rows = scenarios.map((scenario) => {
+        const row = document.createElement("div");
+        row.className = "scenario-progress-row";
+
+        const name = document.createElement("span");
+        name.textContent = localizedText(
+          scenario.title,
+          playerLanguageSelect.value,
+        );
+
+        const count = document.createElement("strong");
+        count.textContent = t("completionCount", {
+          count: progress.scenarios[scenario.id] ?? 0,
+        });
+        row.append(name, count);
+        return row;
+      });
+
+      if (rows.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "scenario-progress-empty";
+        empty.textContent = t("noScenarioAvailable");
+        rows.push(empty);
+      }
+      section.append(header, ...rows);
+      return section;
+    }),
+  );
+}
+
+function setScenarioPickerDisabled(disabled) {
+  categorySelect.disabled = disabled;
+  scenarioSelect.disabled = disabled;
+  answerModeSelect.disabled = disabled;
+  dialogueOrderSelect.disabled = disabled;
+}
+
+function renderScenarioPicker() {
+  if (!scenarioCatalog) return;
+
+  const selectedCategoryId =
+    categorySelect.value || scenarioCatalog.categories[0]?.id;
+  fillSelect(
+    categorySelect,
+    scenarioCatalog.categories.map((category) => ({
+      id: category.id,
+      name: localizedText(category.title, playerLanguageSelect.value),
+    })),
+    selectedCategoryId,
+  );
+  renderScenarioOptions(scenarioSelect.value);
+}
+
+function syncScenarioUrl() {
+  const search = updateScenarioSearch(
+    location.search,
+    categorySelect.value,
+    scenarioSelect.value,
+  );
+  history.replaceState(null, "", `${location.pathname}${search}${location.hash}`);
+}
+
+function renderScenarioOptions(preferredId) {
+  const progress = loadProgress();
+  const scenarios = filterScenariosByCompletion(
+    scenariosForCategory(scenarioCatalog, categorySelect.value),
+    progress,
+    completionFilterSelect.value,
+  );
+  fillSelect(
+    scenarioSelect,
+    scenarios.map((scenario) => ({
+      id: scenario.id,
+      name: t("scenarioOptionLabel", {
+        title: localizedText(scenario.title, playerLanguageSelect.value),
+        count: scenario.beatCount,
+      }) +
+        ` — ${
+          progress.scenarios[scenario.id]
+            ? t("completionCount", { count: progress.scenarios[scenario.id] })
+            : t("notCompleted")
+        }`,
+    })),
+    preferredId,
+  );
+}
+
+function renderScenarioMetadata() {
+  if (!scenarioCatalog) return;
+  const entry = scenarioCatalog.scenarios.find(
+    (scenario) => scenario.id === scenarioSelect.value,
+  );
+  if (!entry) {
+    scenarioMetaChips.replaceChildren();
+    learningObjectives.replaceChildren();
+    return;
+  }
+
+  scenarioMetaChips.replaceChildren(
+    createMetaChip(t(`difficulty_${entry.difficulty}`)),
+    createMetaChip(t("estimatedMinutes", { count: entry.estimatedMinutes })),
+    createMetaChip(t("dialogueCount", { count: entry.beatCount })),
+  );
+  learningObjectives.replaceChildren(
+    ...entry.learningObjectives[playerLanguageSelect.value].map((objective) => {
+      const item = document.createElement("li");
+      item.textContent = objective;
+      return item;
+    }),
+  );
+}
+
+function createMetaChip(text) {
+  const chip = document.createElement("span");
+  chip.className = "scenario-meta-chip";
+  chip.textContent = text;
+  return chip;
+}
+
+async function loadSelectedScenario() {
+  const loadVersion = ++scenarioLoadVersion;
+  const entry = scenarioCatalog.scenarios.find(
+    (scenario) => scenario.id === scenarioSelect.value,
+  );
+  if (!entry) {
+    clearSelectedScenario(t("noScenarioAvailable"));
+    return;
+  }
+
+  setScenarioPickerDisabled(true);
+  scenarioTitle.classList.remove("localized-text");
+  scenarioTitle.textContent = t("scenarioLoading");
+  try {
+    const scenario = await requestJson(entry.path);
+    if (loadVersion !== scenarioLoadVersion) return;
+    controller = new ScenarioController(scenario);
+    selectedScenario = scenario;
+    renderLocalizedText(scenarioTitle, scenario.title);
+    renderLocalizedText(scenarioDescription, scenario.description);
+    renderScenarioMetadata();
+    resetTrainingView();
+  } catch (error) {
+    if (loadVersion !== scenarioLoadVersion) return;
+    clearSelectedScenario(t("scenarioLoadFailed", { message: error.message }));
+    throw error;
+  } finally {
+    if (loadVersion === scenarioLoadVersion) setScenarioPickerDisabled(false);
+  }
+}
+
+function clearSelectedScenario(message) {
+  controller = undefined;
+  selectedScenario = undefined;
+  scenarioTitle.classList.remove("localized-text");
+  scenarioTitle.textContent = "—";
+  scenarioDescription.replaceChildren();
+  scenarioMetaChips.replaceChildren();
+  learningObjectives.replaceChildren();
+  progressElement.textContent = "0 / 0";
+  startBtn.disabled = true;
+  setAppMessage(message);
+}
+
+function resetTrainingView() {
+  clearAutoAdvance();
+  recognizer.abort();
+  presenter.setListening?.(false);
+  presenter.interruptPresentation?.();
+  phase = "setup";
+  responseArea.hidden = true;
+  summaryElement.hidden = true;
+  instructions.hidden = false;
+  bokeCaption.hidden = true;
+  replayBtn.hidden = true;
+  nextBtn.hidden = true;
+  restartBtn.hidden = true;
+  reviewBtn.hidden = true;
+  startBtn.hidden = false;
+  startBtn.disabled = !canStartTraining();
+  progressElement.textContent = `0 / ${selectedScenario.beats.length}`;
 }
 
 const recognizer = new SpeechRecognizer({
@@ -254,9 +540,12 @@ function renderProgress() {
 function renderChoices(beat) {
   choicesElement.replaceChildren(
     ...beat.choices.map((choice, index) => {
-      const row = document.createElement("div");
+      const row = document.createElement("button");
+      row.type = "button";
       row.className = "choice";
       row.dataset.choiceId = choice.id;
+      row.disabled = usesVoiceAnswer();
+      row.addEventListener("click", () => handleChoiceSelection(choice));
 
       const number = document.createElement("span");
       number.className = "choice-number";
@@ -272,9 +561,19 @@ function renderChoices(beat) {
 }
 
 function renderLocalizedText(element, value) {
+  const visibleLanguages = scenarioDisplayLanguages(
+    speechLanguageSelect.value,
+    playerLanguageSelect.value,
+  );
   element.classList.add("localized-text");
   element.replaceChildren(
-    ...displayLanguages.map(({ key, label, lang }) => {
+    ...displayLanguages
+      .filter(({ key }) => visibleLanguages.includes(key))
+      .sort(
+        (left, right) =>
+          visibleLanguages.indexOf(left.key) - visibleLanguages.indexOf(right.key),
+      )
+      .map(({ key, label, lang }) => {
       const line = document.createElement("span");
       line.className = `language-line language-${key}`;
       line.lang = lang;
@@ -319,6 +618,7 @@ async function playCurrentBeat() {
   replayBtn.hidden = true;
   nextBtn.hidden = true;
   restartBtn.hidden = true;
+  reviewBtn.hidden = true;
   micBtn.hidden = true;
   transcriptElement.textContent = "—";
   micIndicator.classList.remove("listening");
@@ -368,6 +668,15 @@ function openResponseWindow() {
   phase = "answering";
   responseWindowStartedAt = performance.now();
   choicesElement.hidden = false;
+  recognitionPanel.hidden = !usesVoiceAnswer();
+  if (!usesVoiceAnswer()) {
+    phaseLabel.textContent = t("selectOneResponse");
+    presenter.setListening?.(false);
+    micBtn.hidden = true;
+    setAppMessage(t("selectDisplayedResponse"));
+    return;
+  }
+
   phaseLabel.textContent = t("speakOneComeback", {
     language: t("languageName"),
   });
@@ -429,6 +738,29 @@ function handleFinalTranscript(transcript) {
     return;
   }
 
+  completeEvaluation(result);
+}
+
+function handleChoiceSelection(choice) {
+  if (phase !== "answering" || usesVoiceAnswer()) return;
+
+  const answer = localizedText(choice.text, speechLanguageSelect.value);
+  const reactionSeconds = Math.max(
+    0,
+    (performance.now() - responseWindowStartedAt) / 1000,
+  );
+  const result = evaluateResponse(
+    controller.currentBeat,
+    answer,
+    reactionSeconds,
+    speechLanguageSelect.value,
+  );
+  result.inputMode = "click";
+  completeEvaluation(result);
+}
+
+function completeEvaluation(result) {
+
   phase = "feedback";
   presenter.setListening?.(false);
   controller.recordResult(result);
@@ -449,10 +781,15 @@ function handleFinalTranscript(transcript) {
     action: nextAction,
     seconds: delaySeconds,
   });
-  setAppMessage(
-    t("scoreExplanation", { action: nextAction, seconds: delaySeconds }),
-  );
-  scheduleAutoAdvance();
+  if (autoAdvanceToggle.checked) {
+    setAppMessage(
+      t("scoreExplanation", { action: nextAction, seconds: delaySeconds }),
+    );
+    scheduleAutoAdvance();
+  } else {
+    nextBtn.textContent = nextAction;
+    setAppMessage(t("manualAdvanceMessage"));
+  }
 }
 
 function showEvaluation(result) {
@@ -549,9 +886,15 @@ function scheduleAutoAdvance() {
 }
 
 function startTraining() {
-  if (!presenterReady || !recognizer.supported) return;
+  if (!canStartTraining()) return;
 
   clearAutoAdvance();
+  completionRecorded = false;
+  reviewRun = false;
+  setScenarioPickerDisabled(true);
+  controller = new ScenarioController(
+    createOrderedScenario(selectedScenario, dialogueOrderSelect.value),
+  );
   controller.start();
   startBtn.hidden = true;
   restartBtn.hidden = true;
@@ -581,9 +924,17 @@ function showSummary() {
   nextBtn.hidden = true;
   replayBtn.hidden = true;
   restartBtn.hidden = false;
+  reviewBtn.hidden = reviewRun || controller.resultDetails.length === 0;
+  setScenarioPickerDisabled(false);
   progressElement.textContent = `${controller.progress.total} / ${controller.progress.total}`;
 
   const summary = controller.summary;
+  if (!completionRecorded && !reviewRun) {
+    recordScenarioCompletion(selectedScenario.id);
+    completionRecorded = true;
+    renderStoredProgress();
+    renderScenarioOptions();
+  }
   summaryScore.textContent = t("summaryScore", {
     total: summary.totalScore,
     maximum: summary.maximumScore,
@@ -654,7 +1005,7 @@ presenter.addEventListener("PRESENTER_STATUS", (event) => {
     stagePlaceholder.hidden = true;
     launchBtn.textContent = t("presenterReadyButton");
     launchBtn.disabled = true;
-    startBtn.disabled = !recognizer.supported;
+    startBtn.disabled = !canStartTraining();
     setPresenterStatus(t("presenterReady"));
   } else if (currentStatus) {
     setPresenterStatus(currentStatus === "Initializing" ? t("initializing") : currentStatus);
@@ -686,9 +1037,208 @@ micBtn.addEventListener("click", startRecognition);
 replayBtn.addEventListener("click", () => void playCurrentBeat());
 nextBtn.addEventListener("click", advanceTraining);
 restartBtn.addEventListener("click", startTraining);
+reviewBtn.addEventListener("click", startReviewTraining);
+
+function startReviewTraining() {
+  const reviewScenario = createReviewScenario(
+    selectedScenario,
+    controller.resultDetails,
+  );
+  if (reviewScenario.beats.length === 0 || !canStartTraining()) return;
+
+  clearAutoAdvance();
+  reviewRun = true;
+  completionRecorded = true;
+  setScenarioPickerDisabled(true);
+  controller = new ScenarioController(reviewScenario);
+  controller.start();
+  startBtn.hidden = true;
+  restartBtn.hidden = true;
+  reviewBtn.hidden = true;
+  void playCurrentBeat();
+}
+
+previewBtn.addEventListener("click", () => {
+  scenarioSettingsDialog.close();
+  renderScenarioPreview();
+  previewDialog.showModal();
+});
+
+for (const button of [previewCloseBtn, previewDoneBtn]) {
+  button.addEventListener("click", () => previewDialog.close());
+}
+
+previewDialog.addEventListener("click", (event) => {
+  if (event.target === previewDialog) previewDialog.close();
+});
+
+function renderScenarioPreview() {
+  if (!selectedScenario) {
+    previewContent.replaceChildren(createParagraph(t("noScenarioAvailable")));
+    return;
+  }
+
+  previewContent.replaceChildren(
+    ...selectedScenario.beats.map((beat, beatIndex) => {
+      const card = document.createElement("article");
+      card.className = "preview-beat";
+      const heading = document.createElement("h3");
+      heading.textContent = t("questionNumber", { number: beatIndex + 1 });
+      const boke = document.createElement("div");
+      renderLocalizedText(boke, beat.boke);
+      const reaction = createParagraph(
+        t("previewReaction", {
+          description: localizedText(
+            beat.reaction.description,
+    playerLanguageSelect.value,
+          ),
+          tags: beat.reaction.motionTags.join(", "),
+        }),
+      );
+      reaction.className = "preview-reaction";
+      card.append(heading, boke, reaction);
+
+      for (const choice of beat.choices) {
+        const choiceElement = document.createElement("section");
+        choiceElement.className = "preview-choice";
+        const score = document.createElement("strong");
+        score.textContent = t("previewChoiceScore", {
+          score: choice.contentPoints,
+        });
+        const text = document.createElement("div");
+        renderLocalizedText(text, choice.text);
+        const feedback = document.createElement("div");
+        renderLocalizedText(feedback, choice.feedback);
+        choiceElement.append(score, text, feedback);
+        card.append(choiceElement);
+      }
+      return card;
+      }),
+  );
+}
+
+answerModeSelect.addEventListener("change", () => {
+  startBtn.disabled = !canStartTraining();
+  speechSupportWarning.hidden = !usesVoiceAnswer() || recognizer.supported;
+  setAppMessage(
+    usesVoiceAnswer() ? t("voiceAnswerSelected") : t("clickAnswerSelected"),
+  );
+});
+
+completionFilterSelect.addEventListener("change", () => {
+  renderScenarioOptions(scenarioSelect.value);
+  void loadSelectedScenario().catch(console.error);
+});
+
+progressBtn.addEventListener("click", () => {
+  scenarioSettingsDialog.close();
+  renderStoredProgress();
+  progressDialogStatus.textContent = "";
+  progressDialog.showModal();
+});
+
+scenarioSettingsBtn.addEventListener("click", () => {
+  scenarioSettingsDialog.showModal();
+});
+
+for (const button of [scenarioSettingsCloseBtn, scenarioSettingsDoneBtn]) {
+  button.addEventListener("click", () => scenarioSettingsDialog.close());
+}
+
+scenarioSettingsDialog.addEventListener("click", (event) => {
+  if (event.target === scenarioSettingsDialog) scenarioSettingsDialog.close();
+});
+
+for (const button of [progressCloseBtn, progressDoneBtn]) {
+  button.addEventListener("click", () => progressDialog.close());
+}
+
+progressDialog.addEventListener("click", (event) => {
+  if (event.target === progressDialog) progressDialog.close();
+});
+
+exportProgressBtn.addEventListener("click", () => {
+  const blob = new Blob([exportProgress()], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "perxona-training-progress.json";
+  link.click();
+  URL.revokeObjectURL(url);
+  progressDialogStatus.textContent = t("progressExported");
+});
+
+importProgressBtn.addEventListener("click", () => importProgressInput.click());
+
+importProgressInput.addEventListener("change", async () => {
+  const [file] = importProgressInput.files;
+  importProgressInput.value = "";
+  if (!file) return;
+  try {
+    importProgress(await file.text());
+    renderStoredProgress();
+    renderScenarioOptions(scenarioSelect.value);
+    progressDialogStatus.textContent = t("progressImported");
+  } catch (error) {
+    progressDialogStatus.textContent = t("progressImportFailed", {
+      message: error.message,
+    });
+  }
+});
+
+privacyBtn.addEventListener("click", () => {
+  privacyDialogStatus.textContent = "";
+  privacyDialog.showModal();
+});
+
+for (const button of [privacyCloseBtn, privacyDoneBtn]) {
+  button.addEventListener("click", () => privacyDialog.close());
+}
+
+privacyDialog.addEventListener("click", (event) => {
+  if (event.target === privacyDialog) privacyDialog.close();
+});
+
+progressStorageToggle.addEventListener("change", () => {
+  const saved = setProgressStorageEnabled(progressStorageToggle.checked);
+  if (!saved) {
+    progressStorageToggle.checked = isProgressStorageEnabled();
+    setAppMessage(t("progressStorageUnavailable"));
+    return;
+  }
+  setAppMessage(
+    t(
+      progressStorageToggle.checked
+        ? "progressStorageEnabled"
+        : "progressStorageDisabled",
+    ),
+  );
+});
+
+clearProgressBtn.addEventListener("click", () => {
+  if (clearProgress()) {
+    renderStoredProgress();
+    renderScenarioOptions(scenarioSelect.value);
+    privacyDialogStatus.textContent = t("progressCleared");
+  } else {
+    privacyDialogStatus.textContent = t("progressStorageUnavailable");
+  }
+});
+
+categorySelect.addEventListener("change", () => {
+  renderScenarioOptions();
+  syncScenarioUrl();
+  void loadSelectedScenario().catch(console.error);
+});
+
+scenarioSelect.addEventListener("change", () => {
+  syncScenarioUrl();
+  void loadSelectedScenario().catch(console.error);
+});
 
 function requirePresenterPreparation() {
   clearAutoAdvance();
+  setScenarioPickerDisabled(false);
   if (presenterReady) {
     recognizer.abort();
     presenter.setListening?.(false);
@@ -719,24 +1269,42 @@ for (const select of [sceneSelect, voiceSelect]) {
 }
 
 speechLanguageSelect.addEventListener("change", () => {
-  applyUiLanguage();
   recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
   updateVoiceOptions();
   requirePresenterPreparation();
+  if (selectedScenario) {
+    renderLocalizedText(scenarioTitle, selectedScenario.title);
+    renderLocalizedText(scenarioDescription, selectedScenario.description);
+  }
+});
+
+playerLanguageSelect.addEventListener("change", () => {
+  applyUiLanguage();
+  if (selectedScenario) {
+    renderLocalizedText(scenarioTitle, selectedScenario.title);
+    renderLocalizedText(scenarioDescription, selectedScenario.description);
+    resetTrainingView();
+  }
 });
 
 async function initializeApp() {
   applyUiLanguage();
   try {
-    const [loadedConfig, scenario] = await Promise.all([
+    const [loadedConfig, loadedScenarioCatalog] = await Promise.all([
       requestApiJson("/config"),
-      requestJson("./scenarios/convenience-store.json"),
+      requestJson("./scenarios/index.json"),
     ]);
     config = loadedConfig;
-    controller = new ScenarioController(scenario);
-    renderLocalizedText(scenarioTitle, scenario.title);
-    renderLocalizedText(scenarioDescription, scenario.description);
-    progressElement.textContent = `0 / ${scenario.beats.length}`;
+    scenarioCatalog = validateScenarioCatalog(loadedScenarioCatalog);
+    progressStorageToggle.checked = isProgressStorageEnabled();
+    renderScenarioPicker();
+    const initialRoute = resolveScenarioRoute(scenarioCatalog, location.search);
+    categorySelect.value = initialRoute.categoryId;
+    renderScenarioOptions(initialRoute.scenarioId);
+    syncScenarioUrl();
+    renderStoredProgress();
+    await loadSelectedScenario();
+    if (initialRoute.usedFallback) setAppMessage(t("invalidScenarioLink"));
 
     if (!recognizer.supported) {
       speechSupportWarning.hidden = false;
