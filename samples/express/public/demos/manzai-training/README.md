@@ -62,11 +62,28 @@ learner's answer.
 - `scenario-controller.js` — scenario progress and summary calculation.
 - `scenario-catalog.js` — catalog validation and category filtering.
 - `progress-storage.js` — opt-in, device-local completion counts.
+- `schemas/scenario.schema.json` — JSON Schema for authored scenario files.
+- `schemas/scenario-catalog.schema.json` — JSON Schema for the category and scenario catalog.
 - `scenarios/index.json` — localized categories and the scenarios assigned to them.
 - `scenarios/convenience-store.json` — editable training script and authored scores.
 - `scenarios/restaurant-service.json` — customer-service training sample.
 
 ## Authoring scenarios
+
+Scenario files use JSON Schema Draft 2020-12 and declare their schema with `$schema`. Keep that property when generating a
+scenario with Codex so compatible editors can provide completion and diagnostics. The schemas require lowercase kebab-case
+IDs, all three translations (`ja`, `en`, and `zh`), at least one beat, at least two choices per beat, valid reaction metadata,
+and integer `contentPoints` from 0 to 80. Unknown properties are rejected.
+
+After adding or editing generated content, run:
+
+```text
+npm run validate:scenarios
+```
+
+This repository-level validation also checks rules JSON Schema cannot express conveniently: unique beat and choice IDs,
+catalog references, file existence, and matching scenario IDs and titles between the catalog and scenario files. `npm test`
+runs this validation automatically.
 
 First add the category and scenario metadata to `scenarios/index.json`. Category and scenario IDs must be unique, and every
 scenario's `categoryId` must reference a listed category. Titles require `ja`, `en`, and `zh`. The scenario `path` is resolved

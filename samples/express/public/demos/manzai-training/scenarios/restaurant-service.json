@@ -1,4 +1,5 @@
 {
+  "$schema": "../schemas/scenario.schema.json",
   "id": "restaurant-service",
   "title": {
     "ja": "レストランでの接客",
