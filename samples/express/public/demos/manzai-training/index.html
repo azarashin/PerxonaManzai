@@ -217,8 +217,12 @@
       </label>
       <div id="scenario-progress-list" class="scenario-progress-list"></div>
       <div class="dialog-actions">
+        <button id="export-progress-btn" class="secondary" type="button" data-i18n="exportProgress">進捗を書き出す</button>
+        <button id="import-progress-btn" class="secondary" type="button" data-i18n="importProgress">進捗を読み込む</button>
+        <input id="import-progress-input" type="file" accept="application/json,.json" hidden />
         <button id="progress-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
       </div>
+      <p id="progress-dialog-status" class="dialog-status" role="status"></p>
     </dialog>
 
     <dialog id="privacy-dialog" class="privacy-dialog" aria-labelledby="privacy-dialog-title">

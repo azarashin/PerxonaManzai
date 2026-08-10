@@ -3,8 +3,10 @@ import test from "node:test";
 
 import {
   clearProgress,
+  exportProgress,
   filterScenariosByCompletion,
   isProgressStorageEnabled,
+  importProgress,
   loadProgress,
   recordScenarioCompletion,
   setProgressStorageEnabled,
@@ -72,6 +74,26 @@ test("scenarios can be filtered by completion", () => {
     filterScenariosByCompletion(scenarios, progress, "incomplete"),
     [{ id: "second" }],
   );
+});
+
+test("progress can be exported and imported", () => {
+  const source = new MemoryStorage();
+  setProgressStorageEnabled(true, source);
+  recordScenarioCompletion("first", source);
+  recordScenarioCompletion("first", source);
+
+  const target = new MemoryStorage();
+  importProgress(exportProgress(source), target);
+  assert.deepEqual(loadProgress(target).scenarios, { first: 2 });
+});
+
+test("invalid imports do not replace progress", () => {
+  const storage = new MemoryStorage();
+  setProgressStorageEnabled(true, storage);
+  recordScenarioCompletion("first", storage);
+
+  assert.throws(() => importProgress('{"version":2}', storage), /unsupported/);
+  assert.deepEqual(loadProgress(storage).scenarios, { first: 1 });
 });
 
 class MemoryStorage {
