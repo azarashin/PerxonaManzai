@@ -196,7 +196,10 @@ function renderScenarioOptions(preferredId) {
     scenarioSelect,
     scenarios.map((scenario) => ({
       id: scenario.id,
-      name: localizedText(scenario.title, speechLanguageSelect.value),
+      name: t("scenarioOptionLabel", {
+        title: localizedText(scenario.title, speechLanguageSelect.value),
+        count: scenario.beatCount,
+      }),
     })),
     preferredId,
   );

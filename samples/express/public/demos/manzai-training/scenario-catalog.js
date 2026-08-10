@@ -21,6 +21,9 @@ export function validateScenarioCatalog(catalog) {
     if (typeof scenario.path !== "string" || !scenario.path.trim()) {
       throw new Error(`Scenario ${scenario.id} requires a path.`);
     }
+    if (!Number.isSafeInteger(scenario.beatCount) || scenario.beatCount < 1) {
+      throw new Error(`Scenario ${scenario.id} requires a positive beatCount.`);
+    }
     if (!isLocalizedText(scenario.title)) {
       throw new Error(`Scenario ${scenario.id} requires ja, en, and zh titles.`);
     }
@@ -30,9 +33,9 @@ export function validateScenarioCatalog(catalog) {
 }
 
 export function scenariosForCategory(catalog, categoryId) {
-  return catalog.scenarios.filter(
-    (scenario) => scenario.categoryId === categoryId,
-  );
+  return catalog.scenarios
+    .filter((scenario) => scenario.categoryId === categoryId)
+    .sort((left, right) => left.beatCount - right.beatCount);
 }
 
 function collectUniqueIds(items, itemType) {
