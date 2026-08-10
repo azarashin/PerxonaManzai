@@ -39,6 +39,7 @@ const completionFilterSelect = document.querySelector("#completion-filter-select
 const dialogueOrderSelect = document.querySelector("#dialogue-order-select");
 const autoAdvanceToggle = document.querySelector("#auto-advance-toggle");
 const showNativeLanguageToggle = document.querySelector("#show-native-language-toggle");
+const nativeLanguageToggleLabel = document.querySelector("#native-language-toggle-label");
 const progressStorageToggle = document.querySelector("#progress-storage-toggle");
 const scenarioProgressList = document.querySelector("#scenario-progress-list");
 const progressBtn = document.querySelector("#progress-btn");
@@ -151,6 +152,7 @@ function canStartTraining() {
 
 function applyUiLanguage() {
   applyTranslations(document, playerLanguageSelect.value);
+  updateNativeLanguageToggleVisibility();
   renderScenarioPicker();
   renderStoredProgress();
   renderScenarioMetadata();
@@ -161,6 +163,11 @@ function applyUiLanguage() {
   if (scenarioCatalog && !scenarioSelect.value) {
     setAppMessage(t("noScenarioAvailable"));
   }
+}
+
+function updateNativeLanguageToggleVisibility() {
+  nativeLanguageToggleLabel.hidden =
+    speechLanguageSelect.value === playerLanguageSelect.value;
 }
 
 function renderStoredProgress() {
@@ -1304,6 +1311,7 @@ for (const select of [sceneSelect, voiceSelect]) {
 }
 
 speechLanguageSelect.addEventListener("change", () => {
+  updateNativeLanguageToggleVisibility();
   recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
   updateVoiceOptions();
   requirePresenterPreparation();
