@@ -32,7 +32,7 @@ for (const category of catalog.categories) {
 for (const entry of catalog.scenarios) {
   assertOnlyKeys(
     entry,
-    ["id", "categoryId", "beatCount", "title", "path"],
+    ["id", "categoryId", "beatCount", "difficulty", "estimatedMinutes", "learningObjectives", "title", "path"],
     `catalog scenario ${entry.id}`,
   );
   assertId(entry.id, "scenario");
@@ -40,6 +40,18 @@ for (const entry of catalog.scenarios) {
   assert.ok(
     Number.isSafeInteger(entry.beatCount) && entry.beatCount > 0,
     `${entry.id} beatCount must be a positive integer`,
+  );
+  assert.ok(
+    ["beginner", "intermediate", "advanced"].includes(entry.difficulty),
+    `${entry.id} difficulty is invalid`,
+  );
+  assert.ok(
+    Number.isSafeInteger(entry.estimatedMinutes) && entry.estimatedMinutes > 0,
+    `${entry.id} estimatedMinutes must be a positive integer`,
+  );
+  assertLocalizedStringLists(
+    entry.learningObjectives,
+    `${entry.id} learningObjectives`,
   );
   assertLocalizedText(entry.title, `${entry.id} catalog title`);
   assert.match(entry.path, /^\.\/scenarios\/[a-z0-9]+(?:-[a-z0-9]+)*\.json$/);
@@ -150,6 +162,13 @@ function assertStringList(value, label) {
   for (const item of value) {
     assert.equal(typeof item, "string", `${label} items must be strings`);
     assert.ok(item.trim(), `${label} items must not be empty`);
+  }
+}
+
+function assertLocalizedStringLists(value, label) {
+  assertOnlyKeys(value, ["ja", "en", "zh"], label);
+  for (const language of ["ja", "en", "zh"]) {
+    assertStringList(value[language], `${label}.${language}`);
   }
 }
 

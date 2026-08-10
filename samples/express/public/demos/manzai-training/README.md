@@ -94,8 +94,9 @@ catalog references, file existence, and matching scenario IDs and titles between
 runs this validation automatically.
 
 First add the category and scenario metadata to `scenarios/index.json`. Category and scenario IDs must be unique, and every
-scenario's `categoryId` must reference a listed category. `beatCount` must match the scenario's `beats.length`; it is shown in
-the scenario picker, which orders scenarios from fewest to most dialogues. Titles require `ja`, `en`, and `zh`. The scenario
+scenario's `categoryId` must reference a listed category. Each entry also defines `difficulty`, `estimatedMinutes`, and
+localized `learningObjectives`. `beatCount` must match the scenario's `beats.length`; it is shown in the scenario picker,
+which orders scenarios from fewest to most dialogues. Titles require `ja`, `en`, and `zh`. The scenario
 `path` is resolved relative to the demo page. A category may be empty; selecting it shows no scenario and prevents training
 from starting.
 
@@ -109,6 +110,13 @@ from starting.
       "id": "restaurant-service",
       "categoryId": "customer-service",
       "beatCount": 2,
+      "difficulty": "beginner",
+      "estimatedMinutes": 4,
+      "learningObjectives": {
+        "ja": ["丁寧に謝罪する"],
+        "en": ["Apologize politely"],
+        "zh": ["禮貌致歉"]
+      },
       "title": { "ja": "レストランでの接客", "en": "Restaurant Customer Service", "zh": "餐廳顧客服務" },
       "path": "./scenarios/restaurant-service.json"
     }

@@ -44,17 +44,34 @@
     "scenarioEntry": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "categoryId", "beatCount", "title", "path"],
+      "required": ["id", "categoryId", "beatCount", "difficulty", "estimatedMinutes", "learningObjectives", "title", "path"],
       "properties": {
         "id": { "$ref": "#/$defs/id" },
         "categoryId": { "$ref": "#/$defs/id" },
         "beatCount": { "type": "integer", "minimum": 1 },
+        "difficulty": { "enum": ["beginner", "intermediate", "advanced"] },
+        "estimatedMinutes": { "type": "integer", "minimum": 1 },
+        "learningObjectives": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["ja", "en", "zh"],
+          "properties": {
+            "ja": { "$ref": "#/$defs/nonEmptyStringList" },
+            "en": { "$ref": "#/$defs/nonEmptyStringList" },
+            "zh": { "$ref": "#/$defs/nonEmptyStringList" }
+          }
+        },
         "title": { "$ref": "#/$defs/localizedText" },
         "path": {
           "type": "string",
           "pattern": "^\\./scenarios/[a-z0-9]+(?:-[a-z0-9]+)*\\.json$"
         }
       }
+    },
+    "nonEmptyStringList": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1, "pattern": "\\S" }
     }
   }
 }
