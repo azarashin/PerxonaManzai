@@ -55,6 +55,8 @@ const feedbackElement = document.querySelector("#feedback");
 const recognitionPanel = document.querySelector("#recognition-panel");
 const scenarioTitle = document.querySelector("#scenario-title");
 const scenarioDescription = document.querySelector("#scenario-description");
+const scenarioMetaChips = document.querySelector("#scenario-meta-chips");
+const learningObjectives = document.querySelector("#learning-objectives");
 const progressElement = document.querySelector("#progress");
 const summaryElement = document.querySelector("#summary");
 const summaryScore = document.querySelector("#summary-score");
@@ -115,6 +117,7 @@ function applyUiLanguage() {
   applyTranslations(document, speechLanguageSelect.value);
   renderScenarioPicker();
   renderStoredProgress();
+  renderScenarioMetadata();
   if (!scenarioTitle.classList.contains("localized-text")) {
     scenarioTitle.textContent =
       scenarioCatalog && !scenarioSelect.value ? "—" : t("scenarioLoading");
@@ -216,6 +219,38 @@ function renderScenarioOptions(preferredId) {
   );
 }
 
+function renderScenarioMetadata() {
+  if (!scenarioCatalog) return;
+  const entry = scenarioCatalog.scenarios.find(
+    (scenario) => scenario.id === scenarioSelect.value,
+  );
+  if (!entry) {
+    scenarioMetaChips.replaceChildren();
+    learningObjectives.replaceChildren();
+    return;
+  }
+
+  scenarioMetaChips.replaceChildren(
+    createMetaChip(t(`difficulty_${entry.difficulty}`)),
+    createMetaChip(t("estimatedMinutes", { count: entry.estimatedMinutes })),
+    createMetaChip(t("dialogueCount", { count: entry.beatCount })),
+  );
+  learningObjectives.replaceChildren(
+    ...entry.learningObjectives[speechLanguageSelect.value].map((objective) => {
+      const item = document.createElement("li");
+      item.textContent = objective;
+      return item;
+    }),
+  );
+}
+
+function createMetaChip(text) {
+  const chip = document.createElement("span");
+  chip.className = "scenario-meta-chip";
+  chip.textContent = text;
+  return chip;
+}
+
 async function loadSelectedScenario() {
   const loadVersion = ++scenarioLoadVersion;
   const entry = scenarioCatalog.scenarios.find(
@@ -236,6 +271,7 @@ async function loadSelectedScenario() {
     selectedScenario = scenario;
     renderLocalizedText(scenarioTitle, scenario.title);
     renderLocalizedText(scenarioDescription, scenario.description);
+    renderScenarioMetadata();
     resetTrainingView();
   } catch (error) {
     if (loadVersion !== scenarioLoadVersion) return;
@@ -252,6 +288,8 @@ function clearSelectedScenario(message) {
   scenarioTitle.classList.remove("localized-text");
   scenarioTitle.textContent = "—";
   scenarioDescription.replaceChildren();
+  scenarioMetaChips.replaceChildren();
+  learningObjectives.replaceChildren();
   progressElement.textContent = "0 / 0";
   startBtn.disabled = true;
   setAppMessage(message);

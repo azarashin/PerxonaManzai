@@ -24,6 +24,18 @@ export function validateScenarioCatalog(catalog) {
     if (!Number.isSafeInteger(scenario.beatCount) || scenario.beatCount < 1) {
       throw new Error(`Scenario ${scenario.id} requires a positive beatCount.`);
     }
+    if (!["beginner", "intermediate", "advanced"].includes(scenario.difficulty)) {
+      throw new Error(`Scenario ${scenario.id} has an invalid difficulty.`);
+    }
+    if (
+      !Number.isSafeInteger(scenario.estimatedMinutes) ||
+      scenario.estimatedMinutes < 1
+    ) {
+      throw new Error(`Scenario ${scenario.id} requires positive estimatedMinutes.`);
+    }
+    if (!isLocalizedStringList(scenario.learningObjectives)) {
+      throw new Error(`Scenario ${scenario.id} requires localized learningObjectives.`);
+    }
     if (!isLocalizedText(scenario.title)) {
       throw new Error(`Scenario ${scenario.id} requires ja, en, and zh titles.`);
     }
@@ -55,5 +67,16 @@ function collectUniqueIds(items, itemType) {
 function isLocalizedText(value) {
   return ["ja", "en", "zh"].every(
     (language) => typeof value?.[language] === "string" && value[language].trim(),
+  );
+}
+
+function isLocalizedStringList(value) {
+  return ["ja", "en", "zh"].every(
+    (language) =>
+      Array.isArray(value?.[language]) &&
+      value[language].length > 0 &&
+      value[language].every(
+        (item) => typeof item === "string" && item.trim(),
+      ),
   );
 }

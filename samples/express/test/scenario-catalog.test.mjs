@@ -90,6 +90,13 @@ function scenario(id, categoryId, beatCount = 1) {
     id,
     categoryId,
     beatCount,
+    difficulty: "beginner",
+    estimatedMinutes: 3,
+    learningObjectives: {
+      ja: ["目標"],
+      en: ["Objective"],
+      zh: ["目標"],
+    },
     title: localized(id),
     path: `./scenarios/${id}.json`,
   };

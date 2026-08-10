@@ -23,6 +23,13 @@
       "id": "convenience-store",
       "categoryId": "manzai",
       "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": ["会話の矛盾や誇張を素早く見つける", "短く明確なツッコミを返す"],
+        "en": ["Quickly identify contradictions and exaggerations", "Deliver a short and clear comeback"],
+        "zh": ["快速找出對話中的矛盾與誇張", "做出簡短清楚的吐槽"]
+      },
       "title": {
         "ja": "コンビニに行った話",
         "en": "A Trip to the Convenience Store",
@@ -34,6 +41,13 @@
       "id": "restaurant-service",
       "categoryId": "customer-service",
       "beatCount": 2,
+      "difficulty": "beginner",
+      "estimatedMinutes": 4,
+      "learningObjectives": {
+        "ja": ["お待たせしたことを丁寧に謝罪する", "安全を優先して確認行動を伝える"],
+        "en": ["Apologize politely for a wait", "Prioritize safety and explain the verification step"],
+        "zh": ["為久候禮貌致歉", "以安全為優先並說明確認步驟"]
+      },
       "title": {
         "ja": "レストランでの接客",
         "en": "Restaurant Customer Service",
