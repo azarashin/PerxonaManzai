@@ -93,32 +93,14 @@
           </label>
         </div>
         <div class="local-data-actions">
-          <label class="completion-filter-label">
-            <span data-i18n="completionFilter">進捗で絞り込み</span>
-            <select id="completion-filter-select" aria-label="進捗で絞り込み" data-i18n-aria-label="completionFilterAria">
-              <option value="all" data-i18n="filterAll">すべて</option>
-              <option value="incomplete" data-i18n="filterIncomplete">未完了</option>
-              <option value="completed" data-i18n="filterCompleted">完了済み</option>
-            </select>
-          </label>
-          <button id="progress-btn" class="secondary compact" type="button" data-i18n="viewProgress">
-            進捗を見る
-          </button>
-          <button id="preview-btn" class="secondary compact" type="button" data-i18n="previewScenario">
-            シナリオをプレビュー
+          <button id="scenario-settings-btn" class="secondary compact" type="button" data-i18n="scenarioSettings">
+            シナリオ設定
           </button>
           <button id="privacy-btn" class="text-button" type="button" data-i18n="dataAndPrivacy">
             データとプライバシー
           </button>
         </div>
         <div class="training-options">
-          <label>
-            <span data-i18n="dialogueOrder">対話順</span>
-            <select id="dialogue-order-select" aria-label="対話順" data-i18n-aria-label="dialogueOrderAria">
-              <option value="normal" data-i18n="orderNormal">通常</option>
-              <option value="random" data-i18n="orderRandom">ランダム</option>
-            </select>
-          </label>
           <label class="storage-toggle">
             <input id="auto-advance-toggle" type="checkbox" checked />
             <span data-i18n="autoAdvance">講評後に自動で次へ進む</span>
@@ -208,6 +190,35 @@
         </p>
       </section>
     </main>
+
+    <dialog id="scenario-settings-dialog" class="privacy-dialog" aria-labelledby="scenario-settings-dialog-title">
+      <div class="dialog-heading">
+        <h2 id="scenario-settings-dialog-title" data-i18n="scenarioSettings">シナリオ設定</h2>
+        <button id="scenario-settings-close-btn" class="dialog-close" type="button" aria-label="閉じる" data-i18n-aria-label="closeDialog">×</button>
+      </div>
+      <div class="dialog-form">
+        <label class="completion-filter-label">
+          <span data-i18n="completionFilter">進捗で絞り込み</span>
+          <select id="completion-filter-select" aria-label="進捗で絞り込み" data-i18n-aria-label="completionFilterAria">
+            <option value="all" data-i18n="filterAll">すべて</option>
+            <option value="incomplete" data-i18n="filterIncomplete">未完了</option>
+            <option value="completed" data-i18n="filterCompleted">完了済み</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="dialogueOrder">対話順</span>
+          <select id="dialogue-order-select" aria-label="対話順" data-i18n-aria-label="dialogueOrderAria">
+            <option value="normal" data-i18n="orderNormal">通常</option>
+            <option value="random" data-i18n="orderRandom">ランダム</option>
+          </select>
+        </label>
+      </div>
+      <div class="dialog-actions">
+        <button id="progress-btn" class="secondary" type="button" data-i18n="viewProgress">進捗を見る</button>
+        <button id="preview-btn" class="secondary" type="button" data-i18n="previewScenario">シナリオをプレビュー</button>
+        <button id="scenario-settings-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
+      </div>
+    </dialog>
 
     <dialog id="preview-dialog" class="privacy-dialog preview-dialog" aria-labelledby="preview-dialog-title">
       <div class="dialog-heading">
