@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "id": "manzai",
+      "title": {
+        "ja": "漫才",
+        "en": "Manzai",
+        "zh": "漫才"
+      }
+    },
+    {
+      "id": "customer-service",
+      "title": {
+        "ja": "接客",
+        "en": "Customer Service",
+        "zh": "顧客服務"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "convenience-store",
+      "categoryId": "manzai",
+      "title": {
+        "ja": "コンビニに行った話",
+        "en": "A Trip to the Convenience Store",
+        "zh": "去便利商店的故事"
+      },
+      "path": "./scenarios/convenience-store.json"
+    },
+    {
+      "id": "restaurant-service",
+      "categoryId": "customer-service",
+      "title": {
+        "ja": "レストランでの接客",
+        "en": "Restaurant Customer Service",
+        "zh": "餐廳顧客服務"
+      },
+      "path": "./scenarios/restaurant-service.json"
+    }
+  ]
+}

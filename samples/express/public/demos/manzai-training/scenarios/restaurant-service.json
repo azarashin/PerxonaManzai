@@ -1,0 +1,123 @@
+{
+  "id": "restaurant-service",
+  "title": {
+    "ja": "レストランでの接客",
+    "en": "Restaurant Customer Service",
+    "zh": "餐廳顧客服務"
+  },
+  "description": {
+    "ja": "レストランのスタッフとして、お客様に丁寧で分かりやすく応対する練習です。",
+    "en": "Practice giving polite and clear responses to restaurant customers.",
+    "zh": "練習以餐廳服務人員的身分，禮貌且清楚地回應顧客。"
+  },
+  "beats": [
+    {
+      "id": "waiting-time",
+      "boke": {
+        "ja": "すみません、注文した料理はあとどれくらいでできますか？",
+        "en": "Excuse me, how much longer will my order take?",
+        "zh": "不好意思，我點的餐還要多久才會好？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "料理を待ちながらスタッフに尋ねる",
+          "en": "Ask a staff member while waiting for the meal",
+          "zh": "等待餐點時詢問服務人員"
+        },
+        "motionTags": ["pose:talking_02", "category:talking"],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "waiting-time-excellent",
+          "text": {
+            "ja": "お待たせして申し訳ございません。確認してまいります。",
+            "en": "I apologize for the wait. Let me check on your order.",
+            "zh": "很抱歉讓您久等了，我馬上為您確認。"
+          },
+          "aliases": {
+            "ja": ["申し訳ございません、すぐ確認します"],
+            "en": ["Sorry for the wait, I will check right away"],
+            "zh": ["抱歉久等了，我立刻確認"]
+          },
+          "contentPoints": 80,
+          "feedback": {
+            "ja": "お詫びと確認する行動の両方を伝えられています。",
+            "en": "You included both an apology and a clear next action.",
+            "zh": "回答同時包含道歉與明確的後續行動。"
+          }
+        },
+        {
+          "id": "waiting-time-good",
+          "text": {
+            "ja": "ただいま確認いたします。",
+            "en": "I will check right away.",
+            "zh": "我馬上為您確認。"
+          },
+          "contentPoints": 60,
+          "feedback": {
+            "ja": "行動は明確です。お待たせしたことへのお詫びも添えると、より丁寧です。",
+            "en": "The action is clear. Adding an apology for the wait would be more courteous.",
+            "zh": "行動很明確；若再為久候致歉，會更加周到。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "allergy",
+      "boke": {
+        "ja": "この料理には卵が入っていますか？ アレルギーがあるんです。",
+        "en": "Does this dish contain eggs? I have an allergy.",
+        "zh": "這道菜有加蛋嗎？我對蛋過敏。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "アレルギーについて慎重に確認する",
+          "en": "Carefully ask about an allergy",
+          "zh": "謹慎詢問過敏原資訊"
+        },
+        "motionTags": ["pose:talking_03", "category:talking"],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "allergy-excellent",
+          "text": {
+            "ja": "安全のため厨房に確認いたします。少々お待ちください。",
+            "en": "For your safety, I will confirm with the kitchen. Please wait a moment.",
+            "zh": "為了您的安全，我會向廚房確認，請稍候。"
+          },
+          "aliases": {
+            "ja": ["厨房に確認しますので少々お待ちください"],
+            "en": ["I will check with the kitchen, please wait"],
+            "zh": ["我會向廚房確認，請稍等"]
+          },
+          "contentPoints": 80,
+          "feedback": {
+            "ja": "断定せず、安全を優先して確認する適切な応対です。",
+            "en": "You avoided guessing and appropriately prioritized the customer's safety.",
+            "zh": "沒有逕自判斷，並妥善地將顧客安全放在第一位。"
+          }
+        },
+        {
+          "id": "allergy-weak",
+          "text": {
+            "ja": "たぶん入っていないと思います。",
+            "en": "I don't think it contains eggs.",
+            "zh": "我想應該沒有加蛋。"
+          },
+          "contentPoints": 15,
+          "feedback": {
+            "ja": "アレルギー対応では推測を避け、必ず厨房や原材料表示を確認しましょう。",
+            "en": "Do not guess about allergens; always check with the kitchen or ingredient information.",
+            "zh": "處理過敏原問題時不可猜測，務必向廚房或依成分標示確認。"
+          }
+        }
+      ]
+    }
+  ]
+}

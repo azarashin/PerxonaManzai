@@ -142,6 +142,23 @@ button:disabled {
   font-weight: 700;
 }
 
+.scenario-picker {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.scenario-picker label {
+  display: grid;
+  gap: 0.3rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
 select {
   width: 100%;
   min-width: 0;
@@ -593,6 +610,10 @@ sv-presenter:not([hidden]) {
   }
 
   .setup-card {
+    grid-template-columns: 1fr;
+  }
+
+  .scenario-picker {
     grid-template-columns: 1fr;
   }
 

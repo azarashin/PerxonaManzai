@@ -6,17 +6,17 @@
     <meta
       name="description"
       data-i18n-content="pageDescription"
-      content="Perxonaのアバターを相手にツッコミを練習する漫才トレーニングMVP"
+      content="Perxonaのアバターを相手に会話応答を練習するシナリオトレーニングMVP"
     />
-    <title data-i18n="pageTitle">ツッコミ道場 | Perxona Connect</title>
+    <title data-i18n="pageTitle">対話道場 | Perxona Connect</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="app-header">
       <a class="back-link" href="../../" data-i18n="backToDemos">← デモ一覧</a>
       <div>
-        <p class="eyebrow">MANZAI TRAINING MVP</p>
-        <h1 data-i18n="appTitle">ツッコミ道場</h1>
+        <p class="eyebrow">SCENARIO TRAINING MVP</p>
+        <h1 data-i18n="appTitle">対話道場</h1>
       </div>
       <span class="browser-badge" data-i18n="browserRecommended">Chrome / Edge 推奨</span>
     </header>
@@ -24,7 +24,7 @@
     <main class="app-shell">
       <section
         class="presenter-column"
-        aria-label="ボケ役アバター"
+        aria-label="会話相手アバター"
         data-i18n-aria-label="presenterColumnLabel"
       >
         <div class="setup-card">
@@ -75,6 +75,16 @@
       </section>
 
       <section class="training-card" aria-labelledby="scenario-title">
+        <div class="scenario-picker">
+          <label>
+            <span data-i18n="category">カテゴリ</span>
+            <select id="category-select" aria-label="カテゴリ" data-i18n-aria-label="categoryAria"></select>
+          </label>
+          <label>
+            <span data-i18n="scenario">シナリオ</span>
+            <select id="scenario-select" aria-label="シナリオ" data-i18n-aria-label="scenarioAria"></select>
+          </label>
+        </div>
         <div class="training-heading">
           <div>
             <p class="eyebrow">SCENARIO</p>
@@ -88,8 +98,8 @@
           <h3 data-i18n="howToPlay">遊び方</h3>
           <ol>
             <li data-i18n="howStep1">アバターを準備し、「トレーニング開始」を押します。</li>
-            <li data-i18n="howStep2">ボケを聞いたら、表示されたツッコミを一つ発声します。</li>
-            <li data-i18n="howStep3">内容とボケ終了後の反応速度を採点します。</li>
+            <li data-i18n="howStep2">相手の発言を聞いたら、表示された応答を一つ発声します。</li>
+            <li data-i18n="howStep3">応答内容と発言終了後の反応速度を採点します。</li>
           </ol>
           <p class="privacy-note">
             <span data-i18n="privacyNote">音声認識にはブラウザーの認識サービスを使用します。ブラウザーによっては音声が外部サービスへ送信されます。このMVPは録音ファイルをアプリ内に保存しません。</span>
@@ -97,8 +107,8 @@
         </div>
 
         <section id="response-area" class="response-area" hidden>
-          <p id="phase-label" class="phase-label" data-i18n="listenToBoke">ボケを聞いてください</p>
-          <div id="choices" class="choices" aria-label="ツッコミの選択肢" data-i18n-aria-label="choicesAria"></div>
+          <p id="phase-label" class="phase-label" data-i18n="listenToBoke">相手の発言を聞いてください</p>
+          <div id="choices" class="choices" aria-label="応答の選択肢" data-i18n-aria-label="choicesAria"></div>
 
           <div class="recognition-panel">
             <div class="mic-row">
@@ -133,10 +143,10 @@
             <span data-i18n="startTraining">トレーニング開始</span>
           </button>
           <button id="replay-btn" class="secondary" type="button" hidden>
-            <span data-i18n="replayBoke">このボケをもう一度</span>
+            <span data-i18n="replayBoke">この発言をもう一度</span>
           </button>
           <button id="next-btn" class="primary" type="button" hidden>
-            <span data-i18n="nextBoke">次のボケへ</span>
+            <span data-i18n="nextBoke">次の発言へ</span>
           </button>
           <button id="restart-btn" class="secondary" type="button" hidden>
             <span data-i18n="restartTraining">最初から挑戦</span>

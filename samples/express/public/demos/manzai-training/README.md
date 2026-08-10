@@ -1,10 +1,10 @@
-# Manzai Training MVP
+# Scenario Training MVP
 
-A multilingual voice-recognition training demo built on the Perxona Presenter. The avatar plays the `boke`; after playback is
-fully finished, the learner speaks one of the displayed `tsukkomi` choices. The demo identifies the choice, scores its
-pre-authored content quality, adds a response-timing score, and advances to the next beat.
+A multilingual, category-based voice-recognition training demo built on the Perxona Presenter. The avatar plays the
+conversation partner; after playback is fully finished, the learner speaks one of the displayed response choices. The demo
+identifies the choice, scores its pre-authored content quality, adds a response-timing score, and advances to the next beat.
 
-Scenario titles, boke captions, and tsukkomi choices are displayed simultaneously in Japanese, English, and Traditional
+Scenario titles, partner captions, and response choices are displayed simultaneously in Japanese, English, and Traditional
 Chinese. Before initializing the Presenter, the learner can choose English, Traditional Chinese, or Japanese for the
 character's spoken boke. The Voice picker is filtered to voices whose catalog metadata supports the selected speech language.
 Browser speech recognition and response scoring use the same selected language: `en-US` for English, `zh-TW` for Traditional
@@ -30,15 +30,16 @@ store audio recordings itself.
 
 ## Flow
 
-1. Load the Connect catalog and choose a speech language, avatar, scene, and compatible voice.
-2. Initialize `<sv-presenter>` and unlock audio from the launch-button gesture.
-3. Resolve the beat's reaction tags against the selected Avatar's motion catalog.
-4. Play the localized `boke` and verified Motion Markup with `presenter.present()`.
-5. Wait for `ALL_PERFORMANCE_FINISHED`, set the avatar to Listening, and start recognition.
-6. Recognize the learner in the selected language and compare the final transcript with that language's choice text.
-7. Score content out of 80 and response timing out of 20.
-8. Show feedback for five seconds, then automatically advance to the next beat.
-9. At completion, show the total and a per-beat breakdown of recognized speech, matched choice, scores, timing, similarity,
+1. Choose a category and one of its scenarios.
+2. Load the Connect catalog and choose a speech language, avatar, scene, and compatible voice.
+3. Initialize `<sv-presenter>` and unlock audio from the launch-button gesture.
+4. Resolve the beat's reaction tags against the selected Avatar's motion catalog.
+5. Play the localized `boke` and verified Motion Markup with `presenter.present()`.
+6. Wait for `ALL_PERFORMANCE_FINISHED`, set the avatar to Listening, and start recognition.
+7. Recognize the learner in the selected language and compare the final transcript with that language's choice text.
+8. Score content out of 80 and response timing out of 20.
+9. Show feedback for five seconds, then automatically advance to the next beat.
+10. At completion, show the total and a per-beat breakdown of recognized speech, matched choice, scores, timing, similarity,
    and authored feedback.
 
 The replay and manual-next buttons remain available during the five-second feedback window. Their handlers clear the pending
@@ -54,9 +55,32 @@ learner's answer.
 - `reaction-resolver.js` — safe reaction-tag to Avatar-motion resolution and Motion Markup generation.
 - `evaluator.js` — Japanese normalization, fuzzy choice matching, and timing score.
 - `scenario-controller.js` — scenario progress and summary calculation.
+- `scenario-catalog.js` — catalog validation and category filtering.
+- `scenarios/index.json` — localized categories and the scenarios assigned to them.
 - `scenarios/convenience-store.json` — editable training script and authored scores.
+- `scenarios/restaurant-service.json` — customer-service training sample.
 
 ## Authoring scenarios
+
+First add the category and scenario metadata to `scenarios/index.json`. Category and scenario IDs must be unique, and every
+scenario's `categoryId` must reference a listed category. Titles require `ja`, `en`, and `zh`. The scenario `path` is resolved
+relative to the demo page. A category may be empty; selecting it shows no scenario and prevents training from starting.
+
+```json
+{
+  "categories": [
+    { "id": "customer-service", "title": { "ja": "接客", "en": "Customer Service", "zh": "顧客服務" } }
+  ],
+  "scenarios": [
+    {
+      "id": "restaurant-service",
+      "categoryId": "customer-service",
+      "title": { "ja": "レストランでの接客", "en": "Restaurant Customer Service", "zh": "餐廳顧客服務" },
+      "path": "./scenarios/restaurant-service.json"
+    }
+  ]
+}
+```
 
 Each beat needs a localized `boke` and at least two localized choices. Every localized value requires `ja`, `en`, and `zh`.
 `contentPoints` is capped at 80. A simple `aliases` array is treated as Japanese. For multilingual aliases, use an object with
@@ -118,5 +142,4 @@ emotion.
 - Browser speech-recognition support and accuracy vary by browser and operating system.
 - Delivery quality such as volume, pitch, and speaking pace is not scored yet.
 - Progress and results are held in memory and disappear on refresh.
-- There is one bundled scenario and no scenario-selection UI yet.
 - Explicit reactions depend on the selected Avatar's motion catalog; unmatched reactions use automatic speaking gestures.
