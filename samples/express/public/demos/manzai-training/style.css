@@ -380,6 +380,17 @@ button:disabled {
   margin-bottom: 0;
 }
 
+.dialog-form {
+  display: grid;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.dialog-form label {
+  display: grid;
+  gap: 0.45rem;
+}
+
 select {
   width: 100%;
   min-width: 0;

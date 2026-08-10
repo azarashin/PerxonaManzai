@@ -40,6 +40,10 @@ const progressStorageToggle = document.querySelector("#progress-storage-toggle")
 const scenarioProgressList = document.querySelector("#scenario-progress-list");
 const progressBtn = document.querySelector("#progress-btn");
 const previewBtn = document.querySelector("#preview-btn");
+const scenarioSettingsBtn = document.querySelector("#scenario-settings-btn");
+const scenarioSettingsDialog = document.querySelector("#scenario-settings-dialog");
+const scenarioSettingsCloseBtn = document.querySelector("#scenario-settings-close-btn");
+const scenarioSettingsDoneBtn = document.querySelector("#scenario-settings-done-btn");
 const previewDialog = document.querySelector("#preview-dialog");
 const previewCloseBtn = document.querySelector("#preview-close-btn");
 const previewDoneBtn = document.querySelector("#preview-done-btn");
@@ -1043,6 +1047,7 @@ function startReviewTraining() {
 }
 
 previewBtn.addEventListener("click", () => {
+  scenarioSettingsDialog.close();
   renderScenarioPreview();
   previewDialog.showModal();
 });
@@ -1114,9 +1119,22 @@ completionFilterSelect.addEventListener("change", () => {
 });
 
 progressBtn.addEventListener("click", () => {
+  scenarioSettingsDialog.close();
   renderStoredProgress();
   progressDialogStatus.textContent = "";
   progressDialog.showModal();
+});
+
+scenarioSettingsBtn.addEventListener("click", () => {
+  scenarioSettingsDialog.showModal();
+});
+
+for (const button of [scenarioSettingsCloseBtn, scenarioSettingsDoneBtn]) {
+  button.addEventListener("click", () => scenarioSettingsDialog.close());
+}
+
+scenarioSettingsDialog.addEventListener("click", (event) => {
+  if (event.target === scenarioSettingsDialog) scenarioSettingsDialog.close();
 });
 
 for (const button of [progressCloseBtn, progressDoneBtn]) {
