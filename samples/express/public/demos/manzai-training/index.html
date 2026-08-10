@@ -84,6 +84,13 @@
             <span data-i18n="scenario">シナリオ</span>
             <select id="scenario-select" aria-label="シナリオ" data-i18n-aria-label="scenarioAria"></select>
           </label>
+          <label>
+            <span data-i18n="answerMode">回答方法</span>
+            <select id="answer-mode-select" aria-label="回答方法" data-i18n-aria-label="answerModeAria">
+              <option value="voice" data-i18n="answerModeVoice">音声で回答</option>
+              <option value="click" data-i18n="answerModeClick">クリックで回答</option>
+            </select>
+          </label>
         </div>
         <div class="local-data-actions">
           <button id="progress-btn" class="secondary compact" type="button" data-i18n="viewProgress">
@@ -118,7 +125,7 @@
           <p id="phase-label" class="phase-label" data-i18n="listenToBoke">相手の発言を聞いてください</p>
           <div id="choices" class="choices" aria-label="応答の選択肢" data-i18n-aria-label="choicesAria"></div>
 
-          <div class="recognition-panel">
+          <div id="recognition-panel" class="recognition-panel">
             <div class="mic-row">
               <span id="mic-indicator" class="mic-indicator" aria-hidden="true"></span>
               <strong id="mic-status" data-i18n="waiting">待機中</strong>
