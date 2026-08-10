@@ -1,8 +1,9 @@
 # Scenario Training MVP
 
-A multilingual, category-based voice-recognition training demo built on the Perxona Presenter. The avatar plays the
-conversation partner; after playback is fully finished, the learner speaks one of the displayed response choices. The demo
-identifies the choice, scores its pre-authored content quality, adds a response-timing score, and advances to the next beat.
+A multilingual, category-based conversation training demo built on the Perxona Presenter. The avatar plays the
+conversation partner; after playback is fully finished, the learner answers by speaking or clicking one of the displayed
+response choices. The demo identifies the choice, scores its pre-authored content quality, adds a response-timing score,
+and advances to the next beat.
 
 Scenario titles, partner captions, and response choices are displayed simultaneously in Japanese, English, and Traditional
 Chinese. Before initializing the Presenter, the learner can choose English, Traditional Chinese, or Japanese for the
@@ -15,7 +16,8 @@ The scenario title, boke captions, and comeback choices continue to show all thr
 Completion tracking is optional and local-only. When the learner enables it, the browser stores only each scenario ID and
 its completion count in `localStorage`. The demo server does not receive or store this progress, recognized learner text,
 audio recordings, or learner identity. The Data and privacy dialog explains browser-storage limitations, warns that browser
-speech recognition may send audio to an external service, and provides a button to delete all locally stored progress.
+speech recognition may send audio to an external service, and provides controls to import, export, or delete locally stored
+progress. The progress dialog groups completion counts by category and scenario.
 
 Each scenario beat also declares a reaction. The demo resolves its preferred motion tags against the selected Avatar's live
 motion catalog and embeds only a verified Motion ID in the text sent to the Presenter. If the Avatar has none of the requested
@@ -38,23 +40,26 @@ http://localhost:8083/demos/manzai-training/?category=customer-service&scenario=
 Changing the category or scenario updates the URL without reloading the page. Invalid IDs safely fall back to the default
 scenario.
 
-Chrome or Edge is recommended because the MVP uses the browser `SpeechRecognition` API with `ja-JP`. Microphone permission is
-required. Browser speech recognition may send audio to a browser-vendor recognition service; this demo does not create or
-store audio recordings itself.
+Chrome or Edge is recommended for voice answers because the MVP uses the browser `SpeechRecognition` API. Microphone
+permission is required only in voice mode. Click mode works without speech recognition or microphone access. Browser speech
+recognition may send audio to a browser-vendor recognition service; this demo does not create or store audio recordings
+itself.
 
 ## Flow
 
-1. Choose a category and one of its scenarios.
+1. Choose a category and one of its scenarios. Use the completion filter, dialogue count, difficulty, estimated duration,
+   and learning objectives to find suitable training; preview the full authored content when needed.
 2. Load the Connect catalog and choose a speech language, avatar, scene, and compatible voice.
-3. Initialize `<sv-presenter>` and unlock audio from the launch-button gesture.
-4. Resolve the beat's reaction tags against the selected Avatar's motion catalog.
-5. Play the localized `boke` and verified Motion Markup with `presenter.present()`.
-6. Wait for `ALL_PERFORMANCE_FINISHED`, set the avatar to Listening, and start recognition.
-7. Recognize the learner in the selected language and compare the final transcript with that language's choice text.
+3. Choose voice or click answers, normal or randomized beat order, and optional automatic advancement.
+4. Initialize `<sv-presenter>` and unlock audio from the launch-button gesture.
+5. Resolve the beat's reaction tags against the selected Avatar's motion catalog.
+6. Play the localized `boke` and verified Motion Markup with `presenter.present()`.
+7. Wait for `ALL_PERFORMANCE_FINISHED`, then accept a spoken or clicked answer.
 8. Score content out of 80 and response timing out of 20.
-9. Show feedback for five seconds, then automatically advance to the next beat.
+9. Show feedback and advance automatically when that option is enabled; otherwise use the manual-next button.
 10. At completion, show the total and a per-beat breakdown of recognized speech, matched choice, scores, timing, similarity,
    and authored feedback.
+11. Optionally review only the low-scoring beats; review runs do not increment the scenario completion count.
 
 The replay and manual-next buttons remain available during the five-second feedback window. Their handlers clear the pending
 timer before changing state, as do restart, Presenter reconfiguration, and language changes.
