@@ -1,246 +1,228 @@
-# シナリオカテゴリ拡張方針
+# Scenario Category Expansion Strategy
 
-## 1. 目的
+English | [日本語](category-expansion-strategy.ja.md)
 
-本資料は、シナリオトレーニングへ新しい会話カテゴリを継続的に追加するための判断基準と実装順序を定める。
-候補カテゴリを単に増やすのではなく、現在の採点方式との相性、必要なデータモデル、安全性、コンテンツ品質を
-事前に評価し、段階的に拡張することを目的とする。
+## 1. Purpose
 
-シナリオJSONの具体的な生成手順については
-[`scenario-generation-guide.md`](scenario-generation-guide.md)を参照する。本資料はカテゴリ構成とプロダクト方針を
-扱い、個々のJSON生成手順とは分離する。
+This document defines the criteria and implementation order for adding conversation categories to scenario training. Categories should not be added solely to increase content volume. Each candidate must first be evaluated for compatibility with the scoring model, data-model requirements, safety, and content quality.
 
-## 2. 現行アプリの特性
+See the [scenario generation guide](scenario-generation-guide.md) for the JSON authoring workflow. This document covers category structure and product policy rather than individual file creation.
 
-現在のトレーニングは、次の直線的なモデルを採用している。
+## 2. Application characteristics
 
-1. アバターが事前定義された発話を再生する。
-2. プレイヤーが音声またはクリックで回答する。
-3. 回答を事前定義された選択肢と照合する。
-4. 選択肢固有の内容点と回答速度を合算する。
-5. 固定された次の対話へ進む。
+The original training flow used a linear model:
 
-この方式は、短時間で「その場に適した返答」を選ぶ訓練と相性がよい。一方、次の要素はまだモデル化されていない。
+1. The Avatar delivers a predefined line.
+2. The player responds by voice or click.
+3. The response is matched against authored choices.
+4. Authored content points and response timing are combined.
+5. Training advances to the next fixed dialogue.
 
-- 選択によって次の発話が変わる会話分岐
-- 信頼度、緊張度、協力度、利益などの状態値
-- 過去の発言、約束、記念日、発見済みの矛盾の記憶
-- 複数の評価軸を使った詳細な採点
-- 自由回答の意味や感情を動的に評価する仕組み
+This works well for practicing a short, context-appropriate reply. The application now also supports multiple evaluation axes, persistent scenario state, state effects, and conditional routes. Categories should therefore be designed at the simplest level that preserves their learning value: linear, multi-axis, or stateful and branching.
 
-したがって、カテゴリは「現行モデルで成立するもの」「評価軸の追加が必要なもの」「状態・分岐が必要なもの」に
-分けて導入する。
+## 3. Compatibility criteria
 
-## 3. 相性の評価基準
-
-| 評価 | 判断基準 |
+| Rating | Criteria |
 | --- | --- |
-| 非常に高い | 短い発話、固定選択肢、固定配点、回答速度、アバターモーションだけで主要な学習価値を表現できる |
-| 高い | 初級シナリオは現行モデルで成立するが、中級以上では複数評価軸や簡単な状態管理が望ましい |
-| 中程度 | 固定選択肢でも入門編は作れるが、カテゴリ本来のゲーム性には会話分岐や継続状態が必要 |
-| 慎重に導入 | 技術的な相性とは別に、安全性、専門性、倫理面のレビューが必須 |
+| Very high | Short lines, authored choices, authored scoring, response timing, and Avatar motion express the main learning value |
+| High | Beginner scenarios work linearly, while intermediate or advanced scenarios benefit from multiple axes or light state |
+| Moderate | An introduction can use authored choices, but the category's core game mechanics require branching or persistent state |
+| Introduce cautiously | Safety, professional accuracy, or ethical review is mandatory regardless of technical fit |
 
-評価では以下の観点を考慮する。
+Evaluate each category against these questions:
 
-- 音声認識による短い回答が自然か
-- 回答速度に意味があるか
-- 選択肢間に明確で教育的な差を作れるか
-- アバターの表情やモーションが学習体験を高めるか
-- 固定された最適解が不自然にならないか
-- 会話履歴や隠れた状態がなくても成立するか
-- 誤った内容が現実の損害につながる可能性がないか
+- Does a short speech-recognition response feel natural?
+- Is response timing meaningful?
+- Can choices have clear, educational differences?
+- Do Avatar expressions and motion improve the exercise?
+- Would one fixed “best” answer feel artificial?
+- Can the exercise work without conversation history or hidden state?
+- Could incorrect content cause real-world harm?
 
-## 4. 既存カテゴリの扱い
+## 4. Existing categories
 
-### 4.1 接客・クレーム対応
+### 4.1 Customer service and complaint handling
 
-既存の`customer-service`カテゴリを維持し、表示上および内容上の対象を「接客・クレーム対応」へ拡張する。
-カテゴリIDは既存URL、端末内進捗、直接リンクとの互換性を守るため変更しない。
+Keep the `customer-service` ID for compatibility with URLs, local progress, and direct links, while expanding its displayed and authored scope to customer service and complaint handling.
 
-既存のレストラン接客シナリオを残し、次の原則を新規シナリオへ取り入れる。
+New scenarios should follow these principles:
 
-- 客の主張を即座に事実として受け入れない。
-- 正論だけで押し返さず、まず感情と不便を受け止める。
-- 必要以上に過失や補償義務を認めない。
-- 「共感」「事実確認」「代替案」を状況に応じて組み合わせる。
-- 返金、安全、アレルギー、決済などは権限確認や上位者への引き継ぎを選択肢に含める。
+- Do not immediately accept every customer claim as fact.
+- Acknowledge emotion and inconvenience before correcting facts.
+- Do not admit fault or compensation obligations beyond known authority.
+- Balance empathy, fact checking, and alternatives.
+- Include escalation or authorization checks for refunds, safety, allergies, and payments.
 
-代表的な題材は「料理が遅い」「返金を要求された」「店員の態度が悪い」である。
+Representative topics include delayed food, refund demands, and complaints about staff attitude.
 
-### 4.2 漫才・ツッコミ
+### 4.2 Manzai and comebacks
 
-既存の`manzai`カテゴリを維持し、カテゴリの説明と評価方針を「漫才・ツッコミ」として補強する。
+Keep the `manzai` ID and reinforce its evaluation policy:
 
-- 発言の矛盾、誇張、前提のずれを拾えているかを内容点へ反映する。
-- 意味的に正しいだけでなく、短さ、言葉選び、返答速度を重視する。
-- 音声認識とモーションを積極的に利用する。
-- 将来は勢い、簡潔さ、語感を独立した評価軸にできるようにする。
+- Score whether the response catches a contradiction, exaggeration, or broken premise.
+- Consider brevity, word choice, and timing as well as semantic correctness.
+- Make active use of speech recognition and motion.
+- Keep premise recognition, clarity, and word choice as explainable evaluation axes.
 
-## 5. カテゴリ別の適合性評価
+## 5. Category compatibility assessment
 
-| カテゴリ案 | 推奨ID | 相性 | 現行モデルで可能な範囲 | 主な拡張・注意点 |
+| Candidate category | Recommended ID | Fit | Scope supported by the current model | Main extension or caution |
 | --- | --- | --- | --- | --- |
-| 接客・クレーム対応 | `customer-service` | 非常に高い | 共感、確認、説明、代替案の選択 | 既存カテゴリへ統合。過剰な責任承認を避ける |
-| 恋愛・夫婦・パートナー会話 | `partner-communication` | 高い | 共感か解決策かを選ぶ短編 | 過去発言や記念日には会話記憶が必要 |
-| 上司・部下との会話 | `workplace-communication` | 非常に高い | 改善指導、報告、角の立たない反論 | 役職、権限、心理的安全性を前提に明示する |
-| 交渉・値切り・営業 | `negotiation-sales` | 高い | 質問、条件提示、譲歩の基礎 | 利益、信頼、残り譲歩幅の状態値が望ましい |
-| 謝罪・火消し | `apology-response` | 非常に高い | 説明、謝罪、再発防止、補償の順序 | 未確認の責任や補償を断定しない |
-| 漫才・ツッコミ | `manzai` | 非常に高い | 既存機能で対応済み | 既存カテゴリを拡張する |
-| 面接・採用 | `interview-hiring` | 高い | 志望動機、弱み、逆質問 | 暗記型の模範回答にしない。差別的評価を避ける |
-| 尋問・取り調べ | `investigative-interview` | 中程度 | 質問の順序、矛盾への穏当な指摘 | 強圧的手法を推奨しない。矛盾記録と信頼度が必要 |
-| 医者・患者の会話 | `clinical-communication` | 高い・慎重 | 傾聴、確認、平易な説明、受診勧奨 | 診断や治療指示を目的にしない。専門レビューが必要 |
-| 教師・生徒 | `teacher-student` | 高い | 注意、励まし、相談の受け止め | 生徒の性格や背景を明示し、決めつけを避ける |
-| 友人同士の相談 | `friend-advice` | 非常に高い | 共感、質問、助言のタイミング | 短編に向く。重大問題は専門窓口への相談も扱う |
-| 親子会話 | `parent-child` | 高い | 反抗、ゲーム時間、進路の短編 | 長期的な信頼や過去の約束には状態管理が必要 |
-| 外交・政治交渉 | `diplomatic-negotiation` | 中程度 | 面子を保つ表現、条件付き合意 | 複数利害、曖昧な合意、継続関係には分岐が必要 |
-| 詐欺師・セールスマンを見抜く | `scam-awareness` | 高い | 質問、保留、個人情報を渡さない、断る | 実在組織を根拠なく詐欺と断定しない |
-| 人質・危機交渉 | `crisis-negotiation` | 中程度・慎重 | 感情を刺激しない初動の選択 | 緊張度と分岐、専門レビュー、明確な注意表示が必要 |
+| Customer service and complaints | `customer-service` | Very high | Empathy, verification, explanation, alternatives | Integrate with the existing category; avoid excessive admission of liability |
+| Romantic, marital, and partner conversations | `partner-communication` | High | Short exercises choosing empathy or problem solving | Past statements and anniversaries require memory |
+| Manager and employee conversations | `workplace-communication` | Very high | Coaching, reporting, tactful disagreement | State roles, authority, and psychological safety |
+| Negotiation, bargaining, and sales | `negotiation-sales` | High | Questions, offers, and basic concessions | Track value, trust, and remaining concessions |
+| Apology and incident response | `apology-response` | Very high | Ordering explanation, apology, prevention, and compensation | Do not assert unverified responsibility or compensation |
+| Manzai and comebacks | `manzai` | Very high | Already supported | Extend the existing category |
+| Interviews and hiring | `interview-hiring` | High | Motivation, weaknesses, candidate questions | Avoid rote model answers and discriminatory evaluation |
+| Investigative interviewing | `investigative-interview` | Moderate | Question order and calm contradiction checks | Do not reward coercion; track contradictions and trust |
+| Clinical communication | `clinical-communication` | High, cautious | Listening, checking, plain explanations, referral | Do not train diagnosis or treatment; require expert review |
+| Teacher and student conversations | `teacher-student` | High | Correction, encouragement, and receiving concerns | State relevant personality and context; avoid assumptions |
+| Advice between friends | `friend-advice` | Very high | Empathy, questions, timing of advice | Good for short scenarios; serious issues may require referral |
+| Parent and child conversations | `parent-child` | High | Defiance, game time, and education choices | Long-term trust and promises require state |
+| Diplomatic and political negotiation | `diplomatic-negotiation` | Moderate | Face-saving language and conditional agreement | Multiple interests and ongoing relationships require branching |
+| Scam awareness | `scam-awareness` | High | Questions, delay, refusal, and protecting personal data | Do not label real organizations fraudulent without evidence |
+| Hostage and crisis negotiation | `crisis-negotiation` | Moderate, cautious | Non-escalating initial responses | Requires tension state, branching, expert review, and warnings |
 
-## 6. 推奨導入ロードマップ
+## 6. Recommended rollout
 
-### フェーズ1：現行モデルで基準シナリオを追加
+### Phase 1: Add baseline scenarios using the linear model
 
-固定選択肢と固定配点だけでもカテゴリの学習価値を表現しやすいものから追加する。
+Start with categories whose learning value can be expressed through authored choices and scoring:
 
-1. 接客・クレーム対応
-2. 友人同士の相談
-3. 上司・部下との会話
-4. 謝罪・火消し
-5. 面接・採用
-6. 教師・生徒
-7. 詐欺師・セールスマンを見抜く
-8. 恋愛・夫婦・パートナー会話
+1. Customer service and complaints
+2. Advice between friends
+3. Manager and employee conversations
+4. Apology and incident response
+5. Interviews and hiring
+6. Teacher and student conversations
+7. Scam awareness
+8. Partner communication
 
-各カテゴリに最初から多数のシナリオを投入せず、3〜4対話の基準シナリオを1本ずつ追加する。基準シナリオで
-カテゴリ名、学習目標、選択肢の差、採点根拠、翻訳品質を確認してから2本目以降を追加する。
+Add one three-to-four-dialogue baseline scenario per category before adding volume. Verify the category name, objectives, meaningful choice differences, scoring rationale, and translation quality first.
 
-### フェーズ2：複数評価軸を導入
+### Phase 2: Use multiple evaluation axes
 
-単一の`contentPoints`だけでは、複雑な会話の長所と弱点を十分に説明できない。後方互換性を保ちながら、
-次のような評価軸を選択肢へ追加することを検討する。
+A single aggregate content score cannot explain the strengths and weaknesses of complex responses. Use scenario-specific axes whose maximums total 80.
 
-| 評価軸案 | 用途 |
+| Suggested axis | Purpose |
 | --- | --- |
-| `empathy` | 感情や不便を適切に受け止めたか |
-| `factChecking` | 未確認事項を断定せず、必要な確認を行ったか |
-| `clarity` | 短く理解しやすい表現か |
-| `solutionQuality` | 実行可能な代替案や次の行動を示したか |
-| `boundaryKeeping` | 権限外の約束や過剰な責任承認を避けたか |
-| `relationshipImpact` | 信頼や継続関係を損なわない応答か |
+| `empathy` | Acknowledges emotion or inconvenience appropriately |
+| `fact-checking` | Avoids unsupported claims and performs necessary checks |
+| `clarity` | Uses concise and understandable language |
+| `solution-quality` | Offers an actionable alternative or next step |
+| `boundary-keeping` | Avoids promises beyond authority or excessive responsibility |
+| `relationship-impact` | Protects trust and the continuing relationship |
 
-最初の対象は、接客・クレーム対応、交渉・営業、親子会話、パートナー会話とする。
+Priority categories are customer service, negotiation and sales, parent-child conversations, and partner communication.
 
-### フェーズ3：状態と分岐を導入
+### Phase 3: Use state and branching
 
-次の状態をシナリオ内で保持し、選択によって更新できるモデルを設計する。
+Maintain state across dialogues and update it through choices. Useful state includes:
 
-- `trust`: 信頼度
-- `tension`: 緊張度
-- `cooperation`: 協力度
-- `concessionBudget`: 残り譲歩幅
-- `knownFacts`: 確認済みの事実
-- `contradictions`: 発見済みの矛盾
-- `commitments`: 過去に提示した条件や約束
+- `trust`: relationship trust
+- `tension`: emotional tension
+- `cooperation`: willingness to collaborate
+- `concession-budget`: remaining room to concede
+- `known-facts`: verified facts
+- `contradictions`: contradictions already identified
+- `commitments`: previously offered terms or promises
 
-各選択肢は状態への効果と次の対話IDを持ち、状態条件によって利用可能な選択肢や結末を変えられるようにする。
-この段階で、尋問・取り調べ、外交・政治交渉、人質・危機交渉、高度な営業交渉、長期的な親子・パートナー会話を
-追加する。
+Each choice may update state and route to another beat after evaluating state conditions. This phase enables investigative interviews, diplomacy, crisis negotiation, advanced sales negotiation, and longer parent-child or partner conversations.
 
-### フェーズ4：高リスクカテゴリを限定導入
+### Phase 4: Introduce high-risk categories under restrictions
 
-医療、尋問、危機交渉は、一般的な会話スキルの訓練に範囲を限定し、公開前に専門性と安全性を確認する。
-実在の緊急事態でアプリの回答をそのまま利用することを促してはならない。
+Limit medicine, investigative interviewing, and crisis negotiation to general communication skills. Confirm professional accuracy and safety before publication. Never encourage users to apply application output directly in a real emergency.
 
-## 7. 最初に作成する基準シナリオ
+## 7. Initial baseline scenarios
 
-| 優先 | カテゴリ | シナリオID案 | 学習目的 |
+| Priority | Category | Candidate scenario ID | Learning objective |
 | ---: | --- | --- | --- |
-| 1 | 接客・クレーム対応 | `delayed-order-complaint` | 共感した上で状況を確認し、現実的な代替案を示す |
-| 2 | 友人同士の相談 | `considering-resignation` | 助言を急がず、相手が共感と解決策のどちらを求めているか確認する |
-| 3 | 上司・部下との会話 | `unrealistic-deadline` | 無理という報告を否定せず、根拠、優先順位、調整案を引き出す |
-| 4 | 謝罪・火消し | `service-outage-apology` | 事実、影響への謝罪、現在の対応、次の報告予定を整理する |
-| 5 | 詐欺対策 | `suspicious-investment-call` | 個人情報を渡さず、確認質問と保留を使って安全に会話を終える |
+| 1 | Customer service and complaints | `delayed-order-complaint` | Acknowledge inconvenience, verify status, and offer a realistic alternative |
+| 2 | Advice between friends | `considering-resignation` | Ask whether the person wants empathy or solutions before advising |
+| 3 | Manager and employee conversations | `unrealistic-deadline` | Explore evidence, priorities, and adjustment options without dismissing the concern |
+| 4 | Apology and incident response | `service-outage-apology` | Organize facts, acknowledge impact, explain current action, and schedule the next update |
+| 5 | Scam awareness | `suspicious-investment-call` | Protect personal data, verify claims, pause, and end the conversation safely |
 
-## 8. シナリオ作成の共通原則
+## 8. Shared authoring principles
 
-- 1対話につき、明確に異なる2〜4個の選択肢を用意する。
-- 「最良」「部分的に有効」「危険または逆効果」の差を講評で説明する。
-- 単なる敬語の有無ではなく、発話の目的と相手への影響を採点する。
-- 最良の回答だけを常に謝罪、同意、強い反論のいずれかに固定しない。
-- シナリオ説明に、プレイヤーの役割、相手の役割、既知の事実、権限範囲を明示する。
-- 音声認識しやすいよう、回答は短く、選択肢同士の語句を十分に区別する。
-- 翻訳は逐語訳ではなく、各言語で同じ会話上の効果を持つ表現にする。
-- 採点理由は学習者が次の会話で再利用できる具体的な説明にする。
-- 現実の規則、法律、医療判断、返金条件などを未確認のまま一般化しない。
+- Provide two to four clearly distinct choices per dialogue.
+- Explain the difference between best, partly effective, and dangerous or counterproductive responses.
+- Score the purpose and effect of a line, not only politeness.
+- Do not make apology, agreement, or forceful rebuttal universally optimal.
+- State player role, counterpart role, known facts, and authority limits.
+- Keep responses short and lexically distinct enough for speech recognition.
+- Translate for equivalent conversational effect rather than word-for-word similarity.
+- Make feedback reusable in the learner's next conversation.
+- Do not generalize laws, medical judgments, refund rules, or other unstable facts without verification.
 
-## 9. 安全性とレビュー基準
+## 9. Safety and review
 
-### 共通
+### Shared rules
 
-- 差別、威圧、欺瞞、過剰な個人情報取得を高得点の回答にしない。
-- 相手の感情を推測として扱い、事実として断定しない。
-- 犯罪、虐待、自傷、急病など緊急性のある状況では、会話テクニックだけで解決させない。
-- 実在する企業、人物、製品を根拠なく非難する内容を作らない。
+- Never reward discrimination, intimidation, deception, or excessive collection of personal information.
+- Treat interpretations of emotion as hypotheses, not facts.
+- Do not resolve crime, abuse, self-harm, or medical emergencies using conversation technique alone.
+- Do not make unsupported accusations against real people, companies, or products.
 
-### 医療
+### Clinical communication
 
-- 診断や個別治療の正解を教えるカテゴリにしない。
-- 傾聴、情報確認、平易な説明、適切な受診や専門職への引き継ぎを扱う。
-- 症状を軽視する回答と、不必要に不安を煽る回答の両方を避ける。
+- Do not teach diagnosis or individualized treatment as the correct answer.
+- Focus on listening, information checks, plain explanations, appropriate care, and professional handoff.
+- Avoid both dismissing symptoms and unnecessarily increasing fear.
 
-### 尋問・取り調べ
+### Investigative interviewing
 
-- 自白の強要、威圧、睡眠妨害、虚偽証拠の提示などを推奨しない。
-- 「尋問」よりも事実確認を目的とする`investigative-interview`として設計する。
-- 矛盾を指摘する場合も、確認可能な発言内容に限定する。
+- Do not recommend forced confessions, threats, sleep deprivation, or fabricated evidence.
+- Frame the category as fact-finding `investigative-interview`, not coercive interrogation.
+- Limit contradiction checks to statements that can actually be verified.
 
-### 人質・危機交渉
+### Crisis negotiation
 
-- 娯楽的な成功手順として一般化しない。
-- 感情の安定、傾聴、時間確保、専門機関への連携などの原則に限定する。
-- 公開範囲と対象年齢を別途検討する。
+- Do not present the content as a guaranteed real-world procedure.
+- Limit it to emotional stabilization, listening, gaining time, and involving professionals.
+- Review audience and age restrictions separately.
 
-## 10. 実装判断のゲート
+## 10. Implementation gate
 
-新しいカテゴリまたはシナリオは、次を満たした場合に追加する。
+Add a category or scenario only when all applicable conditions are met:
 
-- カテゴリIDが既存カテゴリと重複せず、既存カテゴリへ統合すべき内容でない。
-- 学習目的と対象利用者を1〜3文で説明できる。
-- 各選択肢の点数差を一貫した基準で説明できる。
-- 固定進行で成立しない場合、無理に現行スキーマへ押し込まない。
-- 日本語、英語、繁体字中国語で会話上の意図が一致している。
-- シナリオプレビューで不自然な選択肢、配点、リアクションがない。
-- `npm run validate:scenarios`と`npm test`が成功する。
-- 高リスクカテゴリでは、必要な安全レビューが完了している。
+- Its ID is unique and the content should not be merged into an existing category.
+- Its learning objective and audience can be explained in one to three sentences.
+- Score differences between choices have a consistent rationale.
+- A scenario that requires branching is not forced into a linear structure.
+- Japanese, English, and Traditional Chinese preserve the same conversational intent.
+- Preview reveals no unnatural choices, scores, or reactions.
+- `npm run validate:scenarios` and `npm test` succeed.
+- Required safety review is complete for high-risk content.
 
-## 11. 成功指標
+## 11. Success measures
 
-カテゴリ拡張の成否はシナリオ数だけで判断しない。以下を継続的に確認する。
+Do not evaluate expansion only by scenario count. Monitor:
 
-- シナリオごとの開始数と完了数
-- 再挑戦率と復習利用率
-- 選択肢ごとの選択分布
-- すべての利用者が同じ選択肢を選ぶなど、難易度が機能していない問題
-- 音声認識で選択肢を区別できない割合
-- カテゴリごとの平均回答時間
-- 翻訳によって配点の意味が変わっていないか
-- 安全性や不適切な模範回答に関する報告
+- Starts and completions per scenario
+- Retry and review usage
+- Choice distribution
+- Choices that are universally selected, suggesting ineffective difficulty
+- Speech-recognition confusion between choices
+- Average response time per category
+- Scoring meaning across translations
+- Reports of unsafe or inappropriate model answers
 
-現行のローカル進捗方針では、サーバーへ利用履歴を送信しない。分析機能を導入する場合は、既存のプライバシー
-方針と分離して設計し、収集項目、目的、保存期間、同意方法を先に定義する。
+The current privacy policy keeps progress on the user's device and does not send usage history to the server. Any future analytics must be designed separately, with collection fields, purpose, retention, and consent defined in advance.
 
-## 12. 当面の決定事項
+## 12. Current decisions
 
-1. `customer-service`と`manzai`のIDは変更しない。
-2. 新カテゴリはフェーズ1の基準シナリオから段階的に追加する。
-3. カテゴリごとに個別スキーマを作らず、データモデルが変わる場合だけ共通スキーマを拡張する。
-4. 複数評価軸は基準シナリオの検証後に設計する。
-5. 状態・分岐が本質的なカテゴリは、フェーズ3より前に大量追加しない。
-6. 医療、尋問、危機交渉は安全基準とレビュー手順の整備後に追加する。
+1. Do not change the `customer-service` or `manzai` IDs.
+2. Introduce categories incrementally through baseline scenarios.
+3. Do not create one schema per category; extend the shared model only when the data model changes.
+4. Use multiple evaluation axes where one score cannot explain performance.
+5. Use state and branching before adding large amounts of content whose learning value depends on consequences.
+6. Add medicine, investigative interviewing, and crisis negotiation only after safety and review procedures are ready.
 
-## 13. `index.json`の分岐ガイダンス
+## 13. Branching guidance in `index.json`
 
-各カテゴリは、シナリオ生成時の判断材料として`branching`を必須で持つ。
+Every category must include authoring guidance:
 
 ```json
 {
@@ -255,13 +237,10 @@
 }
 ```
 
-`requirement`の意味は次のとおりとする。
-
-| 値 | 生成時の扱い |
+| Value | Authoring behavior |
 | --- | --- |
-| `not-required` | 現在の直線型スキーマでカテゴリの主要な学習価値を表現できる |
-| `recommended` | 初級編は直線型でもよいが、反応や確認結果が変わる中級以上では分岐を優先する |
-| `required` | 分岐なしではカテゴリ本来の学習価値を表現できない。分岐対応スキーマの実装前は生成を保留する |
+| `not-required` | A linear scenario can express the category's main learning value |
+| `recommended` | Beginner content may be linear; prefer branching at higher levels when reactions or verification results matter |
+| `required` | The category's core learning value requires branching; do not generate a linear substitute |
 
-`rationale`にはカテゴリ一般の理由を記載し、個別シナリオの筋書きは書かない。Codexはシナリオ生成前にこの値を
-読み、`recommended`を直線型で作る場合は、その判断理由を作業結果に記載する。
+The rationale describes the category in general, not one scenario plot. Read this value before authoring. If a `recommended` category is implemented linearly, document the reason in the work result.

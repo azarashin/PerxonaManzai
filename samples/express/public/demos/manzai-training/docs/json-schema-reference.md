@@ -1,22 +1,23 @@
-# シナリオJSONスキーマ解説
+# Scenario JSON Schema Reference
 
-## 1. 目的
+English | [日本語](json-schema-reference.ja.md)
 
-対話道場では、カテゴリとシナリオ一覧を管理するカタログ、および各シナリオの内容をJSONで管理する。
-JSON Schemaと追加検証によって、シナリオを追加する前に構造、翻訳、配点、参照先を検査できる。
+## 1. Purpose
 
-| 対象 | スキーマ | データ |
+Conversation Dojo stores its category and scenario index in a catalog JSON file and each scenario in a separate JSON file. JSON Schema and custom validation catch structural, translation, scoring, and reference errors before a scenario is added.
+
+| Subject | Schema | Data |
 | --- | --- | --- |
-| カテゴリとシナリオ一覧 | [`scenario-catalog.schema.json`](../schemas/scenario-catalog.schema.json) | [`index.json`](../scenarios/index.json) |
-| シナリオ本体 | [`scenario.schema.json`](../schemas/scenario.schema.json) | `scenarios/*.json` |
+| Categories and scenario index | [`scenario-catalog.schema.json`](../schemas/scenario-catalog.schema.json) | [`index.json`](../scenarios/index.json) |
+| Scenario content | [`scenario.schema.json`](../schemas/scenario.schema.json) | `scenarios/*.json` |
 
-どちらもJSON Schema Draft 2020-12を使用し、未定義のプロパティを許可しない。
+Both schemas use JSON Schema Draft 2020-12 and reject undefined properties.
 
-## 2. 共通ルール
+## 2. Shared rules
 
-### ID
+### IDs
 
-カテゴリ、シナリオ、評価軸、状態変数、対話、選択肢には、小文字のケバブケースを使用する。
+Use lowercase kebab-case for category, scenario, evaluation-axis, state-variable, beat, and choice IDs.
 
 ```text
 partner-communication
@@ -24,11 +25,11 @@ relationship-impact
 confirm-next-steps
 ```
 
-IDは表示名ではなく永続的な参照キーである。公開後は、進捗データや分岐参照との互換性を保つため、表示名だけを変更しIDは変更しない。
+An ID is a persistent reference key, not display text. After publication, change the localized label rather than the ID so URLs, local progress, and branch references remain compatible.
 
-### 多言語テキスト
+### Localized text
 
-`localizedText`は日本語、英語、繁体字中国語をすべて必須とする。
+Every `localizedText` object requires Japanese, English, and Traditional Chinese values.
 
 ```json
 {
@@ -38,68 +39,67 @@ IDは表示名ではなく永続的な参照キーである。公開後は、進
 }
 ```
 
-空文字や空白だけの値は使用できない。
+Values may not be empty or contain only whitespace.
 
-## 3. シナリオカタログ
+## 3. Scenario catalog
 
-カタログのトップレベルは`categories`と`scenarios`で構成する。
+The catalog contains top-level `categories` and `scenarios` arrays.
 
-### categories
+### `categories`
 
-| フィールド | 必須 | 説明 |
+| Field | Required | Description |
 | --- | --- | --- |
-| `id` | 必須 | カテゴリID |
-| `title` | 必須 | 多言語のカテゴリ名 |
-| `branching.requirement` | 必須 | `not-required`、`recommended`、`required`のいずれか |
-| `branching.rationale` | 必須 | 分岐要否の多言語説明 |
+| `id` | Yes | Category ID |
+| `title` | Yes | Localized category name |
+| `branching.requirement` | Yes | `not-required`, `recommended`, or `required` |
+| `branching.rationale` | Yes | Localized explanation of the branching requirement |
 
-`branching`はシナリオ生成時の設計指針である。`required`のカテゴリでは状態・分岐モデルを使い、
-`recommended`では難易度や会話の因果関係に応じて採用する。
+`branching` guides scenario generation. Use the state and branching model for a `required` category. For `recommended`, decide based on difficulty and whether earlier events affect later dialogue.
 
-### scenarios
+### `scenarios`
 
-| フィールド | 必須 | 説明 |
+| Field | Required | Description |
 | --- | --- | --- |
-| `id` | 必須 | シナリオ本体の`id`と一致させる |
-| `categoryId` | 必須 | 登録済みカテゴリのID |
-| `beatCount` | 必須 | シナリオ本体の`beats.length`と一致する正整数 |
-| `difficulty` | 必須 | `beginner`、`intermediate`、`advanced`のいずれか |
-| `estimatedMinutes` | 必須 | 想定所要時間（分）の正整数 |
-| `learningObjectives` | 必須 | 各言語で1件以上の学習目標 |
-| `title` | 必須 | シナリオ本体の`title`と一致させる |
-| `path` | 必須 | `./scenarios/<scenario-id>.json`形式のパス |
+| `id` | Yes | Must equal the scenario document's `id` |
+| `categoryId` | Yes | ID of a declared category |
+| `beatCount` | Yes | Positive integer equal to the scenario's `beats.length` |
+| `difficulty` | Yes | `beginner`, `intermediate`, or `advanced` |
+| `estimatedMinutes` | Yes | Positive integer duration estimate |
+| `learningObjectives` | Yes | At least one objective in every supported language |
+| `title` | Yes | Must equal the scenario document's `title` |
+| `path` | Yes | Path in the form `./scenarios/<scenario-id>.json` |
 
-カテゴリ内のシナリオは、画面上で`beatCount`の少ない順に並ぶ。
+The UI orders scenarios within a category by ascending `beatCount`.
 
-## 4. シナリオ本体
+## 4. Scenario document
 
-### トップレベル
+### Top-level fields
 
-| フィールド | 必須 | 説明 |
+| Field | Required | Description |
 | --- | --- | --- |
-| `$schema` | 任意 | 通常は`../schemas/scenario.schema.json` |
-| `id` | 必須 | シナリオID |
-| `title` | 必須 | 多言語タイトル |
-| `description` | 必須 | 多言語の概要 |
-| `evaluationAxes` | 必須 | 内容評価の軸。上限点の合計を80にする |
-| `beats` | 必須 | 1件以上の対話ノード |
-| `startBeatId` | 任意 | 最初の対話ID。省略時は`beats`の先頭 |
-| `stateVariables` | 任意 | 分岐に使う状態変数 |
+| `$schema` | No | Normally `../schemas/scenario.schema.json` |
+| `id` | Yes | Scenario ID |
+| `title` | Yes | Localized title |
+| `description` | Yes | Localized summary |
+| `evaluationAxes` | Yes | Content-scoring axes whose maximums total 80 |
+| `beats` | Yes | One or more dialogue nodes |
+| `startBeatId` | No | Entry beat; defaults to the first element in `beats` |
+| `stateVariables` | No | State declarations used by branching |
 
-`startBeatId`、`stateVariables`、選択肢の`stateEffects`と`routes`を省略すると、`beats`の記述順に進む線形シナリオになる。
+Omitting `startBeatId`, `stateVariables`, and choice-level `stateEffects` and `routes` produces a linear scenario that follows array order.
 
-## 5. 評価軸
+## 5. Evaluation axes
 
-内容評価は80点、応答速度は20点であり、各対話は合計100点となる。トレーニング完了スコアは、完了した対話の平均として100点満点で表示する。
+Content contributes 80 points and response timing contributes 20, for a maximum of 100 per dialogue. The final training score is the rounded average of completed dialogue scores and is therefore always out of 100.
 
-`evaluationAxes`の各要素は次のフィールドを持つ。
+Each item in `evaluationAxes` has these fields:
 
-| フィールド | 説明 |
+| Field | Description |
 | --- | --- |
-| `id` | 選択肢の`axisScores`から参照するID |
-| `label` | 画面に表示する多言語名 |
-| `description` | 評価対象の多言語説明 |
-| `maxPoints` | 軸の上限点。全軸の合計を80にする |
+| `id` | Referenced by choice-level `axisScores` |
+| `label` | Localized UI label |
+| `description` | Localized explanation of what the axis measures |
+| `maxPoints` | Axis maximum; all axis maximums must total 80 |
 
 ```json
 "evaluationAxes": [
@@ -126,50 +126,50 @@ IDは表示名ではなく永続的な参照キーである。公開後は、進
 ]
 ```
 
-各選択肢の`axisScores`には、宣言したすべての評価軸を過不足なく指定する。点数は0以上、その軸の`maxPoints`以下の整数とする。
+Every choice must provide exactly one `axisScores` entry for every declared axis. Each score must be an integer from zero through that axis's `maxPoints`.
 
-## 6. 対話ノードと選択肢
+## 6. Beats and choices
 
-### beat
+### `beat`
 
-| フィールド | 説明 |
+| Field | Description |
 | --- | --- |
-| `id` | 対話ID。シナリオ内で一意 |
-| `boke` | キャラクターが発話する多言語テキスト |
-| `reaction` | 発話時の演技指定 |
-| `choices` | プレイヤーの選択肢。2件以上 |
+| `id` | Beat ID, unique within the scenario |
+| `boke` | Localized line spoken by the character |
+| `reaction` | Performance instructions for the line |
+| `choices` | Two or more player responses |
 
-`reaction`には多言語の`description`と1件以上の`motionTags`が必要である。必要に応じて`motionId`、`variant`、`priority`、`cue`を指定できる。
+`reaction` requires a localized `description` and at least one `motionTags` entry. It may also specify `motionId`, `variant`, `priority`, and `cue`.
 
-### choice
+### `choice`
 
-| フィールド | 必須 | 説明 |
+| Field | Required | Description |
 | --- | --- | --- |
-| `id` | 必須 | 選択肢ID |
-| `text` | 必須 | 多言語の回答文 |
-| `aliases` | 任意 | 音声認識で同じ回答として扱う言い換え |
-| `axisScores` | 必須 | 評価軸ごとの内容点 |
-| `feedback` | 必須 | 採点後に表示する多言語講評 |
-| `stateEffects` | 任意 | 選択時に適用する状態更新 |
-| `routes` | 任意 | 状態更新後に評価する分岐先 |
+| `id` | Yes | Choice ID |
+| `text` | Yes | Localized response |
+| `aliases` | No | Alternative phrases matched as this response |
+| `axisScores` | Yes | Content score for every evaluation axis |
+| `feedback` | Yes | Localized feedback displayed after scoring |
+| `stateEffects` | No | State updates applied when selected |
+| `routes` | No | Ordered destinations evaluated after state updates |
 
-`aliases`を配列で書いた場合は日本語だけの言い換えとして扱う。多言語対応する場合は`ja`、`en`、`zh`ごとの配列を指定する。
+An `aliases` array is treated as Japanese-only. Use an object with `ja`, `en`, and `zh` arrays for multilingual aliases.
 
-## 7. 状態変数
+## 7. State variables
 
-`stateVariables`は、対話をまたいで保持する値を宣言する。
+`stateVariables` declares values retained across beats.
 
-| フィールド | 説明 |
+| Field | Description |
 | --- | --- |
-| `id` | 状態ID |
-| `label` | 画面表示用の多言語名 |
-| `description` | 状態の意味を示す多言語説明 |
-| `type` | `number`、`boolean`、`string`のいずれか |
-| `initialValue` | `type`と一致する初期値 |
-| `minimum` | 数値状態だけに指定できる下限 |
-| `maximum` | 数値状態だけに指定できる上限 |
+| `id` | State ID |
+| `label` | Localized display label |
+| `description` | Localized semantic definition |
+| `type` | `number`, `boolean`, or `string` |
+| `initialValue` | Initial value matching `type` |
+| `minimum` | Optional lower bound for number state only |
+| `maximum` | Optional upper bound for number state only |
 
-数値状態の更新結果は`minimum`と`maximum`の範囲に収められる。
+The engine clamps updated number state to its declared `minimum` and `maximum`.
 
 ```json
 {
@@ -187,14 +187,14 @@ IDは表示名ではなく永続的な参照キーである。公開後は、進
 }
 ```
 
-## 8. 状態更新
+## 8. State effects
 
-`stateEffects`は選択肢が確定した直後に配列順で適用される。同じ選択肢で同一状態を複数回更新することはできない。
+The engine applies a choice's `stateEffects` in array order immediately after the response is scored. One choice may update a given state variable only once.
 
-| operation | 対応型 | 動作 |
+| `operation` | Supported type | Behavior |
 | --- | --- | --- |
-| `set` | すべて | 指定値で置き換える |
-| `add` | `number`だけ | 現在値に指定値を加える |
+| `set` | All | Replace the current value |
+| `add` | `number` only | Add to the current value |
 
 ```json
 "stateEffects": [
@@ -203,20 +203,20 @@ IDは表示名ではなく永続的な参照キーである。公開後は、進
 ]
 ```
 
-## 9. 条件分岐
+## 9. Conditional routes
 
-`routes`は状態更新後に先頭から評価し、最初に一致した分岐へ進む。一つの`conditions`に複数条件がある場合は、すべてを満たす必要がある。
+The engine evaluates `routes` from first to last after applying state effects and takes the first matching route. Multiple conditions in one route use AND semantics.
 
-| operator | 説明 |
+| Operator | Meaning |
 | --- | --- |
-| `equals` | 等しい |
-| `not-equals` | 等しくない |
-| `greater-than` | より大きい。数値専用 |
-| `greater-than-or-equal` | 以上。数値専用 |
-| `less-than` | より小さい。数値専用 |
-| `less-than-or-equal` | 以下。数値専用 |
+| `equals` | Equal |
+| `not-equals` | Not equal |
+| `greater-than` | Greater than; numbers only |
+| `greater-than-or-equal` | Greater than or equal; numbers only |
+| `less-than` | Less than; numbers only |
+| `less-than-or-equal` | Less than or equal; numbers only |
 
-最後のrouteは`conditions`を持たないフォールバックにする。`nextBeatId`には存在する対話ID、またはトレーニングを終了する`null`を指定する。
+The final route must be an unconditional fallback without `conditions`. Set `nextBeatId` to an existing beat ID, or to `null` to finish training.
 
 ```json
 "routes": [
@@ -231,11 +231,11 @@ IDは表示名ではなく永続的な参照キーである。公開後は、進
 ]
 ```
 
-分岐シナリオでは対話順のランダム化を行わない。復習時は、実際に通過した対話から対象を選び、状態更新と分岐を外した線形シナリオとして実行する。
+Branching scenarios are not randomized. Review mode selects beats from the completed path and removes state effects and routes so that the review runs linearly without dangling references.
 
-## 10. 検証
+## 10. Validation
 
-Expressサンプルのディレクトリで次を実行する。
+Run these commands from the Express sample directory:
 
 ```bash
 npm run validate:scenarios
@@ -243,17 +243,17 @@ npm run quality:scenarios
 npm test
 ```
 
-`validate:scenarios`はJSON Schemaの構造に加え、次のようなファイル間・項目間の制約を検査する。
+In addition to JSON Schema structure, `validate:scenarios` checks cross-file and cross-field constraints that JSON Schema alone does not express conveniently:
 
-- カテゴリID、シナリオID、対話ID、選択肢IDの一意性
-- カタログとシナリオ本体のID、タイトル、対話数の一致
-- 評価軸の上限合計が80点であること
-- 各選択肢がすべての評価軸を採点していること
-- 状態の初期値、更新値、比較値が宣言型と一致すること
-- 状態更新と条件が宣言済み状態を参照すること
-- `startBeatId`と`nextBeatId`が存在する対話を参照すること
-- 条件なしのフォールバックが`routes`の最後にあること
+- Unique category, scenario, beat, choice, evaluation-axis, and state-variable IDs
+- Matching IDs, titles, and beat counts between catalog entries and scenario documents
+- Evaluation-axis maximums totaling 80
+- Every choice scoring every declared evaluation axis
+- State initial values, effect values, and condition values matching their declared type
+- Effects and conditions referencing declared state variables
+- `startBeatId` and `nextBeatId` referencing existing beats
+- A final unconditional fallback in every non-empty `routes` array
 
-`quality:scenarios`は、重複する回答、選択肢間で差のない配点、長すぎる回答、同じモーションの過度な反復など、形式上は有効でも学習品質を下げる可能性がある内容を警告する。
+`quality:scenarios` reports content that is structurally valid but may reduce training quality, including shared response phrases, indistinguishable choice scores, overly long responses, and excessive repetition of the same motion.
 
-具体的な生成手順とプロンプト要件は[シナリオ生成ガイド](scenario-generation-guide.md)を参照する。
+See the [scenario generation guide](scenario-generation-guide.md) for the complete authoring workflow and prompt requirements.
