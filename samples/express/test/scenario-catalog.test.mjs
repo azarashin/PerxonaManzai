@@ -62,6 +62,21 @@ test("bundled catalog contains valid categories and loadable scenarios", async (
   }
 });
 
+test("convenience store pilot provides pronunciation guides for every spoken line", async () => {
+  const scenario = await readJson("convenience-store.json");
+  const utterances = scenario.beats.flatMap((beat) => [beat, ...beat.choices]);
+
+  for (const utterance of utterances) {
+    assert.deepEqual(Object.keys(utterance.pronunciationGuide).sort(), ["en", "ja", "zh"]);
+    assert.doesNotMatch(utterance.pronunciationGuide.ja, /[\p{Script=Han}\p{Script=Katakana}]/u);
+    assert.match(utterance.pronunciationGuide.en, /^\/.+\/$/u);
+    assert.doesNotMatch(utterance.pronunciationGuide.zh, /\p{Script=Han}/u);
+    for (const guide of Object.values(utterance.pronunciationGuide)) {
+      assert.equal(guide, guide.normalize("NFC"));
+    }
+  }
+});
+
 test("special fraud scenarios prioritize expressive avatar motions", async () => {
   const catalog = validateScenarioCatalog(await readJson("index.json"));
   const entries = scenariosForCategory(catalog, "special-fraud-prevention");
