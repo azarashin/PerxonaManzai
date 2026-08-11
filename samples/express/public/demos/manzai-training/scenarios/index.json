@@ -96,6 +96,22 @@
         "en": "Apology and Incident Response",
         "zh": "道歉與事件應對"
       }
+    },
+    {
+      "id": "interview-hiring",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "基本質問は直線型で成立しますが、回答に応じた掘り下げや逆質問には分岐が有効です。",
+          "en": "Basic questions can be linear, while branching helps with follow-ups and candidate questions.",
+          "zh": "基本題可採線性，而追問與反向提問適合使用分支。"
+        }
+      },
+      "title": {
+        "ja": "面接・採用",
+        "en": "Interview and Hiring",
+        "zh": "面試與招募"
+      }
     }
   ],
   "scenarios": [
@@ -692,6 +708,33 @@
         "zh": "調查前的補償要求"
       },
       "path": "./scenarios/compensation-before-investigation.json"
+    },
+    {
+      "id": "explaining-career-gap",
+      "categoryId": "interview-hiring",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合面試與招募的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "経歴の空白期間",
+        "en": "Explaining a Career Gap",
+        "zh": "說明職涯空窗"
+      },
+      "path": "./scenarios/explaining-career-gap.json"
     }
   ]
 }
