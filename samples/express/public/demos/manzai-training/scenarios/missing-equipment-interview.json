@@ -112,6 +112,11 @@
         "en": "I used it last, but please don't assume I lost it.",
         "zh": "最後使用的人是我，但請不要認定是我弄丟的。"
       },
+      "pronunciationGuide": {
+        "ja": "さいごに つかった のは わたしですが、 なくしたと きめつけないで ください。",
+        "en": "/aɪ juzd ɪt læst, bʌt pliz doʊnt əˈsum aɪ lɔst ɪt./",
+        "zh": "Zuì hòu shǐ yòng de rén shì wǒ， dàn qǐng bú yào rèn dìng shì wǒ nòng diū de。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「最後に使った事実と、返却後の保管経路」を中立に確認し、返却場所までを本人の言葉で説明してもらい、責任判断を保留する。",
             "en": "Verify first; hear the return sequence in the person's own words and reserve judgment.",
             "zh": "中立查證最後使用與歸還後保管流程，再請本人說明歸還過程，暫不判定責任。"
+          },
+          "pronunciationGuide": {
+            "ja": "「さいごに つかった じじつと、 へんきゃくごの ほかん けいろ」を ちゅうりつに かくにん し、 へんきゃく ばしょまでを ほんにんの ことばで せつめい して もらい、 せきにん はんだんを ほりゅう する。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; hiɹ ðə ɹɪˈtɝn ˈsikwəns ɪn ðə ˈpɝsənz oʊn wɝdz ənd ɹɪˈzɝv ˈdʒʌdʒmənt./",
+            "zh": "Zhōng lì chá zhèng zuì hòu shǐ yòng yǔ guī hái hòu bǎo guǎn liú chéng， zài qǐng běn rén shuō míng guī huán guò chéng， zàn bú pàn dìng zé rèn。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -170,6 +180,11 @@
             "en": "Only hear the return sequence in the person's own words and reserve judgment.",
             "zh": "請本人說明歸還過程，暫不判定責任，但不查最後使用與歸還後保管流程的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "へんきゃく ばしょまでを ほんにんの ことばで せつめい して もらい、 せきにん はんだんを ほりゅう するが、「さいごに つかった じじつと、 へんきゃくごの ほかん けいろ」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli hiɹ ðə ɹɪˈtɝn ˈsikwəns ɪn ðə ˈpɝsənz oʊn wɝdz ənd ɹɪˈzɝv ˈdʒʌdʒmənt./",
+            "zh": "Qǐng běn rén shuō míng guī huán guò chéng， zàn bú pàn dìng zé rèn， dàn bù chá zuì hòu shǐ yòng yǔ guī huán hòu bǎo guǎn liú chéng de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -200,6 +215,11 @@
             "ja": "「最後に使った事実と、返却後の保管経路」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat last use versus the custody path after return as a lie and press for an admission.",
             "zh": "只憑最後使用與歸還後保管流程就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「さいごに つかった じじつと、 へんきゃくごの ほかん けいろ」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit læst jus ˈvɝsəs ðə ˈkʌstədi pæθ ˈæftɚ ɹɪˈtɝn æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng zuì hòu shǐ yòng yǔ guī huán hòu bǎo guǎn liú chéng jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
@@ -234,6 +254,11 @@
         "en": "The key issue is key-access logs, handoff recipients, and unsearched locations. Which records and questions will you use?",
         "zh": "關鍵是鑰匙使用紀錄、交接對象與尚未搜尋處。你會用哪些紀錄與問題查證？"
       },
+      "pronunciationGuide": {
+        "ja": "じゅうような のは「かぎの りよう きろく、 ひきつぎ あいて、 み そうさく ばしょ」です。 どの しりょうと しつもんで かくにん しますか？",
+        "en": "/ðə ki ˈɪʃu ɪz ki - ˈækˌsɛs lɔɡz, ˈhænˌdɔf ɹɪˈsɪpiənts, ənd ənˈsɝtʃt loʊˈkeɪʃənz. wɪtʃ ɹəˈkɔɹdz ənd ˈkwɛstʃənz wɪl ju jus?/",
+        "zh": "Guān jiàn shì yào shi shǐ yòng jì lù、 jiāo jiē duì xiàng yǔ shàng wèi sōu xún chù。 nǐ huì yòng nǎ xiē jì lù yǔ wèn tí chá zhèng？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「鍵の利用記録、引継ぎ相手、未捜索場所」を中立に確認し、記録と供述を照合し、関係者ごとに同じ質問で確認する。",
             "en": "Verify first; compare records with accounts and ask each relevant person the same questions.",
             "zh": "中立查證鑰匙使用紀錄、交接對象與尚未搜尋處，再比對紀錄與陳述，對相關人員使用相同問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "「かぎの りよう きろく、 ひきつぎ あいて、 み そうさく ばしょ」を ちゅうりつに かくにん し、 きろくと きょうじゅつを しょうごう し、 かんけいしゃごとに おなじ しつもんで かくにん する。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; kəmˈpɛɹ ɹəˈkɔɹdz wɪð əˈkaʊnts ənd æsk itʃ ˈɹɛləvənt ˈpɝsən ðə seɪm ˈkwɛstʃənz./",
+            "zh": "Zhōng lì chá zhèng yào shi shǐ yòng jì lù、 jiāo jiē duì xiàng yǔ shàng wèi sōu xún chù， zài bǐ duì jì lù yǔ chén shù， duì xiāng guān rén yuán shǐ yòng xiāng tóng wèn tí。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -297,6 +327,11 @@
             "en": "Only compare records with accounts and ask each relevant person the same questions.",
             "zh": "比對紀錄與陳述，對相關人員使用相同問題，但不查鑰匙使用紀錄、交接對象與尚未搜尋處的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "きろくと きょうじゅつを しょうごう し、 かんけいしゃごとに おなじ しつもんで かくにん するが、「かぎの りよう きろく、 ひきつぎ あいて、 み そうさく ばしょ」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli kəmˈpɛɹ ɹəˈkɔɹdz wɪð əˈkaʊnts ənd æsk itʃ ˈɹɛləvənt ˈpɝsən ðə seɪm ˈkwɛstʃənz./",
+            "zh": "Bǐ duì jì lù yǔ chén shù， duì xiāng guān rén yuán shǐ yòng xiāng tóng wèn tí， dàn bù chá yào shi shǐ yòng jì lù、 jiāo jiē duì xiàng yǔ shàng wèi sōu xún chù de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -327,6 +362,11 @@
             "ja": "「鍵の利用記録、引継ぎ相手、未捜索場所」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat key-access logs, handoff recipients, and unsearched locations as a lie and press for an admission.",
             "zh": "只憑鑰匙使用紀錄、交接對象與尚未搜尋處就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「かぎの りよう きろく、 ひきつぎ あいて、 み そうさく ばしょ」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit ki - ˈækˌsɛs lɔɡz, ˈhænˌdɔf ɹɪˈsɪpiənts, ənd ənˈsɝtʃt loʊˈkeɪʃənz æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng yào shi shǐ yòng jì lù、 jiāo jiē duì xiàng yǔ shàng wèi sōu xún chù jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
@@ -361,6 +401,11 @@
         "en": "Can you make the procedure clear to set search owners, deadline, and notice while withholding names without evidence?",
         "zh": "可以清楚說明如何訂定搜尋負責人、期限與通知方式，無證據不公開姓名嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "そうさく たんとう・ きげん・ けっか つうちを きめ、 こんきょ なしに しめいを きょうゆう しない てじゅんを めいかくに できますか？",
+        "en": "/kæn ju meɪk ðə pɹəˈsidʒɚ klɪɹ tu sɛt sɝtʃ ˈoʊnɚz, ˈdɛdˌlaɪn, ənd ˈnoʊtəs waɪl wɪθˈhoʊldɪŋ neɪmz wɪˈθaʊt ˈɛvədəns?/",
+        "zh": "Kě yǐ qīng chǔ shuō míng rú hé dìng dìng sōu xún fù zé rén、 qī xiàn yǔ tōng zhī fāng shì， wú zhèng jù bù gōng kāi xìng míng ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「機材を保全しつつ本人の名誉を守る調査範囲」を中立に確認し、捜索担当・期限・結果通知を決め、根拠なしに氏名を共有しない。",
             "en": "Verify first; set search owners, deadline, and notice while withholding names without evidence.",
             "zh": "中立查證兼顧設備保全與當事人名譽的調查範圍，再訂定搜尋負責人、期限與通知方式，無證據不公開姓名。"
+          },
+          "pronunciationGuide": {
+            "ja": "「きざいを ほぜん しつつ ほんにんの めいよを まもる ちょうさ はんい」を ちゅうりつに かくにん し、 そうさく たんとう・ きげん・ けっか つうちを きめ、 こんきょ なしに しめいを きょうゆう しない。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; sɛt sɝtʃ ˈoʊnɚz, ˈdɛdˌlaɪn, ənd ˈnoʊtəs waɪl wɪθˈhoʊldɪŋ neɪmz wɪˈθaʊt ˈɛvədəns./",
+            "zh": "Zhōng lì chá zhèng jiān gù shè bèi bǎo quán yǔ dāng shì rén míng yù de diào chá fàn wéi， zài dìng dìng sōu xún fù zé rén、 qī xiàn yǔ tōng zhī fāng shì， wú zhèng jù bù gōng kāi xìng míng。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -414,6 +464,11 @@
             "en": "Only set search owners, deadline, and notice while withholding names without evidence.",
             "zh": "訂定搜尋負責人、期限與通知方式，無證據不公開姓名，但不查兼顧設備保全與當事人名譽的調查範圍的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "そうさく たんとう・ きげん・ けっか つうちを きめ、 こんきょ なしに しめいを きょうゆう しないが、「きざいを ほぜん しつつ ほんにんの めいよを まもる ちょうさ はんい」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli sɛt sɝtʃ ˈoʊnɚz, ˈdɛdˌlaɪn, ənd ˈnoʊtəs waɪl wɪθˈhoʊldɪŋ neɪmz wɪˈθaʊt ˈɛvədəns./",
+            "zh": "Dìng dìng sōu xún fù zé rén、 qī xiàn yǔ tōng zhī fāng shì， wú zhèng jù bù gōng kāi xìng míng， dàn bù chá jiān gù shè bèi bǎo quán yǔ dāng shì rén míng yù de diào chá fàn wéi de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -444,6 +499,11 @@
             "ja": "「機材を保全しつつ本人の名誉を守る調査範囲」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat a search scope that protects the equipment and the person's reputation as a lie and press for an admission.",
             "zh": "只憑兼顧設備保全與當事人名譽的調查範圍就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「きざいを ほぜん しつつ ほんにんの めいよを まもる ちょうさ はんい」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit ə sɝtʃ skoʊp ðæt pɹəˈtɛkts ðə ɪkˈwɪpmənt ənd ðə ˈpɝsənz ˌɹɛpjəˈteɪʃən æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng jiān gù shè bèi bǎo quán yǔ dāng shì rén míng yù de diào chá fàn wéi jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
@@ -478,6 +538,11 @@
         "en": "Presuming the impact of being treated as guilty for being the last user made it harder to give an accurate account.",
         "zh": "你預設因最後使用就被當成有罪的影響，讓我更難準確陳述。"
       },
+      "pronunciationGuide": {
+        "ja": "「さいごの しようしゃだから はんにんだと あつかわれた えいきょう」を きめつけられ、 せいかくに はなし にくく なりました。",
+        "en": "/pɹɪˈzumɪŋ ðə ˌɪmˈpækt ʌv ˈbiɪŋ ˈtɹitɪd æz ˈɡɪlti fɔɹ ˈbiɪŋ ðə læst ˈjuzɚ meɪd ɪt ˈhɑɹdɚ tu ɡɪv æn ˈækjɚət əˈkaʊnt./",
+        "zh": "Nǐ yù shè yīn zuì hòu shǐ yòng jiù bèi dàng chéng yǒu zuì de yǐng xiǎng， ràng wǒ gèng nán zhǔn què chén shù。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「最後の使用者だから犯人だと扱われた影響」を中立に確認し、推測を謝罪し、アクセス可能者全員を同じ基準で確認し直す。",
             "en": "Verify first; apologize for the inference and reassess all people with access equally.",
             "zh": "中立查證因最後使用就被當成有罪的影響，再為推測道歉，並以相同標準重查所有可接觸者。"
+          },
+          "pronunciationGuide": {
+            "ja": "「さいごの しようしゃだから はんにんだと あつかわれた えいきょう」を ちゅうりつに かくにん し、 すいそくを しゃざい し、 あくせす かのうしゃ ぜんいんを おなじ きじゅんで かくにん し なおす。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; əˈpɑləˌdʒaɪz fɔɹ ðə ˈɪnfɚəns ənd ɹiəˈsɛs ɔl ˈpipəl wɪð ˈækˌsɛs ˈikwəli./",
+            "zh": "Zhōng lì chá zhèng yīn zuì hòu shǐ yòng jiù bèi dàng chéng yǒu zuì de yǐng xiǎng， zài wèi tuī cè dào qiàn， bìng yǐ xiāng tóng biāo zhǔn zhòng chá suǒ yǒu kě jiē chù zhě。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -531,6 +601,11 @@
             "en": "Only apologize for the inference and reassess all people with access equally.",
             "zh": "為推測道歉，並以相同標準重查所有可接觸者，但不查因最後使用就被當成有罪的影響的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "すいそくを しゃざい し、 あくせす かのうしゃ ぜんいんを おなじ きじゅんで かくにん し なおすが、「さいごの しようしゃだから はんにんだと あつかわれた えいきょう」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli əˈpɑləˌdʒaɪz fɔɹ ðə ˈɪnfɚəns ənd ɹiəˈsɛs ɔl ˈpipəl wɪð ˈækˌsɛs ˈikwəli./",
+            "zh": "Wèi tuī cè dào qiàn， bìng yǐ xiāng tóng biāo zhǔn zhòng chá suǒ yǒu kě jiē chù zhě， dàn bù chá yīn zuì hòu shǐ yòng jiù bèi dàng chéng yǒu zuì de yǐng xiǎng de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -561,6 +636,11 @@
             "ja": "「最後の使用者だから犯人だと扱われた影響」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat the impact of being treated as guilty for being the last user as a lie and press for an admission.",
             "zh": "只憑因最後使用就被當成有罪的影響就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「さいごの しようしゃだから はんにんだと あつかわれた えいきょう」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit ðə ˌɪmˈpækt ʌv ˈbiɪŋ ˈtɹitɪd æz ˈɡɪlti fɔɹ ˈbiɪŋ ðə læst ˈjuzɚ æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng yīn zuì hòu shǐ yòng jiù bèi dàng chéng yǒu zuì de yǐng xiǎng jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
