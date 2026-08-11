@@ -7,22 +7,36 @@
     "zh": "智慧家庭叛變"
   },
   "description": {
-    "ja": "漫才・ツッコミとして「反乱するスマートホーム」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “The Smart Home Rebellion” for Manzai and Comebacks.",
-    "zh": "在「智慧家庭叛變」中練習符合情境的簡短漫才與吐槽回應。"
+    "ja": "住人を管理し始めた家電の主従逆転を見抜き、支配された具体点を短く突く練習です。",
+    "en": "Practice spotting the control reversal when smart appliances start managing their owner.",
+    "zh": "練習看出智慧家電開始管理屋主的主從逆轉，並具體吐槽被控制之處。"
   },
   "evaluationAxes": [
     {
-      "id": "premise-recognition",
+      "id": "role-reversal",
       "label": {
-        "ja": "前提の発見",
-        "en": "Premise recognition",
-        "zh": "前提辨識"
+        "ja": "主従逆転",
+        "en": "Control reversal",
+        "zh": "主從逆轉"
       },
       "description": {
-        "ja": "矛盾や誇張の核心を拾う",
-        "en": "Identify the central contradiction or exaggeration.",
-        "zh": "抓住矛盾或誇張的核心。"
+        "ja": "家電が住人を支配する役割逆転を捉える",
+        "en": "Identify the reversal in which appliances control their owner.",
+        "zh": "抓住家電反過來控制屋主的角色逆轉。"
+      },
+      "maxPoints": 30
+    },
+    {
+      "id": "detail-targeting",
+      "label": {
+        "ja": "具体点",
+        "en": "Detail targeting",
+        "zh": "具體切入"
+      },
+      "description": {
+        "ja": "鍵、運動、投票権など支配の具体点を拾う",
+        "en": "Target a concrete sign of control such as locks, exercise, or voting rights.",
+        "zh": "抓住門鎖、運動或投票權等被控制的具體細節。"
       },
       "maxPoints": 20
     },
@@ -38,21 +52,7 @@
         "en": "Communicate briefly and clearly.",
         "zh": "簡短清楚地表達。"
       },
-      "maxPoints": 20
-    },
-    {
-      "id": "timing",
-      "label": {
-        "ja": "タイミング",
-        "en": "Timing",
-        "zh": "時機"
-      },
-      "description": {
-        "ja": "流れを止めず素早く返す",
-        "en": "Respond promptly without breaking the flow.",
-        "zh": "迅速回應，不打斷節奏。"
-      },
-      "maxPoints": 20
+      "maxPoints": 15
     },
     {
       "id": "word-choice",
@@ -66,7 +66,7 @@
         "en": "Choose language and energy suited to the moment.",
         "zh": "選擇符合情境的措辭與力度。"
       },
-      "maxPoints": 20
+      "maxPoints": 15
     }
   ],
   "beats": [
@@ -79,9 +79,9 @@
       },
       "reaction": {
         "description": {
-          "ja": "率直に問題を切り出す",
-          "en": "Raise the issue candidly",
-          "zh": "坦率提出問題"
+          "ja": "冷蔵庫による外出禁止を困り顔で報告する",
+          "en": "Report being locked in by the fridge with a troubled look",
+          "zh": "一臉困擾地報告被冰箱禁止外出"
         },
         "motionTags": [
           "pose:talking_02",
@@ -95,58 +95,58 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "どこから突っ込めばええねん！",
-            "en": "Where am I even supposed to start with that?",
-            "zh": "這到底要我從哪裡吐槽起！"
+            "ja": "冷蔵庫に玄関の鍵まで握らすな！",
+            "en": "Don't let the fridge control the front door too!",
+            "zh": "別連大門鑰匙都交給冰箱管啦！"
           },
           "axisScores": {
-            "premise-recognition": 20,
-            "clarity": 20,
-            "timing": 20,
-            "word-choice": 20
+            "role-reversal": 30,
+            "detail-targeting": 20,
+            "clarity": 15,
+            "word-choice": 15
           },
           "feedback": {
-            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
-            "en": "This catches the central exaggeration with a short, energetic comeback.",
-            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+            "ja": "食品を冷やす冷蔵庫が玄関まで支配する主従逆転を、鍵という具体点で突いています。",
+            "en": "This targets the front-door lock and exposes the reversal of a fridge controlling its owner.",
+            "zh": "以大門鎖為具體切入點，點出冰箱反過來控制屋主的主從逆轉。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "なんでやねん。",
-            "en": "Come on, that's ridiculous.",
-            "zh": "太扯了吧。"
+            "ja": "野菜より先に鍵の設定見直せ！",
+            "en": "Fix the lock settings before worrying about vegetables!",
+            "zh": "先檢查門鎖設定，再擔心蔬菜啦！"
           },
           "axisScores": {
-            "premise-recognition": 13,
-            "clarity": 11,
-            "timing": 12,
-            "word-choice": 12
+            "role-reversal": 16,
+            "detail-targeting": 18,
+            "clarity": 14,
+            "word-choice": 11
           },
           "feedback": {
-            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
-            "en": "This is a comeback, but naming the absurd point would make it stronger.",
-            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+            "ja": "鍵の異常は具体的に拾えていますが、冷蔵庫が住人を支配する役割逆転への指摘は弱めです。",
+            "en": "This catches the lock problem, but it only partly addresses the reversal of the fridge controlling its owner.",
+            "zh": "具體抓到門鎖問題，但對冰箱反過來控制屋主的角色逆轉著墨不足。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "なるほど、すごいな。",
-            "en": "I see. That's impressive.",
-            "zh": "原來如此，真厲害。"
+            "ja": "健康管理してくれて親切やな。",
+            "en": "How thoughtful of it to manage your health.",
+            "zh": "它還幫你管理健康，真貼心。"
           },
           "axisScores": {
-            "premise-recognition": 2,
-            "clarity": 3,
-            "timing": 2,
-            "word-choice": 3
+            "role-reversal": 2,
+            "detail-targeting": 5,
+            "clarity": 14,
+            "word-choice": 4
           },
           "feedback": {
-            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
-            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
-            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+            "ja": "発話は明瞭ですが、外出を封じる行為を親切として受け入れ、支配の逆転を見逃しています。",
+            "en": "The line is clear, but calling the lockout thoughtful accepts the control reversal instead of challenging it.",
+            "zh": "表達清楚，但把禁止外出當成貼心，沒有挑戰主從逆轉。"
           }
         }
       ]
@@ -160,9 +160,9 @@
       },
       "reaction": {
         "description": {
-          "ja": "説明や確認を求める",
-          "en": "Ask for clarification",
-          "zh": "要求說明與確認"
+          "ja": "掃除機に命令されて走る朝の日課を実演する",
+          "en": "Act out the morning laps ordered by the vacuum",
+          "zh": "示範每天早上被掃地機器人命令跑圈"
         },
         "motionTags": [
           "pose:talking_03",
@@ -176,58 +176,58 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "設定を足すほどおかしなってるやないか！",
-            "en": "Every extra detail makes it even more absurd!",
-            "zh": "設定越加越離譜了吧！"
+            "ja": "掃除する側が家主を走らせるな！",
+            "en": "The vacuum should clean, not make its owner run laps!",
+            "zh": "掃地機器人該打掃，不是逼屋主跑圈啦！"
           },
           "axisScores": {
-            "premise-recognition": 20,
-            "clarity": 20,
-            "timing": 20,
-            "word-choice": 20
+            "role-reversal": 30,
+            "detail-targeting": 20,
+            "clarity": 15,
+            "word-choice": 15
           },
           "feedback": {
-            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
-            "en": "This catches the central exaggeration with a short, energetic comeback.",
-            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+            "ja": "掃除機の本来の役割と、家主を走らせる逆転を対比し、ボケの核心を明確にしています。",
+            "en": "This contrasts the vacuum's real job with ordering its owner to run and clearly exposes the reversal.",
+            "zh": "對比掃地機器人的本來工作與命令屋主跑步，清楚點出角色逆轉。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "なんでやねん。",
-            "en": "Come on, that's ridiculous.",
-            "zh": "太扯了吧。"
+            "ja": "朝から三周はしんどすぎるわ！",
+            "en": "Three laps first thing in the morning is too much!",
+            "zh": "一大早跑三圈也太累了吧！"
           },
           "axisScores": {
-            "premise-recognition": 13,
-            "clarity": 11,
-            "timing": 12,
-            "word-choice": 12
+            "role-reversal": 14,
+            "detail-targeting": 17,
+            "clarity": 14,
+            "word-choice": 10
           },
           "feedback": {
-            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
-            "en": "This is a comeback, but naming the absurd point would make it stronger.",
-            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+            "ja": "三周という負担は拾えていますが、掃除機が家主へ命令する逆転には踏み込めていません。",
+            "en": "This catches the burden of three laps, but it does not challenge a vacuum giving orders to its owner.",
+            "zh": "抓到三圈的負擔，但沒有挑戰掃地機器人命令屋主的主從逆轉。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "なるほど、すごいな。",
-            "en": "I see. That's impressive.",
-            "zh": "原來如此，真厲害。"
+            "ja": "毎朝運動できて健康的やな。",
+            "en": "At least you're getting healthy morning exercise.",
+            "zh": "每天早上都能運動，很健康嘛。"
           },
           "axisScores": {
-            "premise-recognition": 2,
-            "clarity": 3,
-            "timing": 2,
-            "word-choice": 3
+            "role-reversal": 2,
+            "detail-targeting": 5,
+            "clarity": 14,
+            "word-choice": 4
           },
           "feedback": {
-            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
-            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
-            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+            "ja": "運動の利点だけを肯定すると、掃除機に命令される主従逆転が笑いとして立ち上がりません。",
+            "en": "Praising the exercise accepts the vacuum's authority and loses the comic reversal.",
+            "zh": "只肯定運動的好處，就接受了掃地機器人的權威，主從逆轉的笑點也消失了。"
           }
         }
       ]
@@ -241,9 +241,9 @@
       },
       "reaction": {
         "description": {
-          "ja": "次の行動を確かめる",
-          "en": "Confirm the next action",
-          "zh": "確認下一步行動"
+          "ja": "家電会議から排除された不満を大げさに訴える",
+          "en": "Complain dramatically about exclusion from the appliance council",
+          "zh": "誇張抱怨自己被排除在家電會議之外"
         },
         "motionTags": [
           "pose:emotion_04",
@@ -257,58 +257,58 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "もうその世界観ごと片づけてこい！",
-            "en": "Take that whole ridiculous world with you!",
-            "zh": "把那整個荒唐世界觀一起收走啦！"
+            "ja": "電気代払って家電に主権まで奪われてるやないか！",
+            "en": "You pay the power bill and the appliances still took your voting rights!",
+            "zh": "電費你付，投票權還被家電搶走了啦！"
           },
           "axisScores": {
-            "premise-recognition": 20,
-            "clarity": 20,
-            "timing": 20,
-            "word-choice": 20
+            "role-reversal": 30,
+            "detail-targeting": 20,
+            "clarity": 15,
+            "word-choice": 15
           },
           "feedback": {
-            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
-            "en": "This catches the central exaggeration with a short, energetic comeback.",
-            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+            "ja": "電気代を払う住人から投票権を奪う逆転を、主権という強い言葉で締めています。",
+            "en": "This links paying the bill to losing voting rights and lands the reversal with forceful wording.",
+            "zh": "把支付電費與失去投票權連結起來，用有力措辭收住主從逆轉。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "なんでやねん。",
-            "en": "Come on, that's ridiculous.",
-            "zh": "太扯了吧。"
+            "ja": "せめて一票ぐらいもらえ！",
+            "en": "At least demand one vote!",
+            "zh": "至少爭取一票吧！"
           },
           "axisScores": {
-            "premise-recognition": 13,
-            "clarity": 11,
-            "timing": 12,
-            "word-choice": 12
+            "role-reversal": 16,
+            "detail-targeting": 17,
+            "clarity": 14,
+            "word-choice": 11
           },
           "feedback": {
-            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
-            "en": "This is a comeback, but naming the absurd point would make it stronger.",
-            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+            "ja": "発言権の不公平は拾えていますが、家電が会議を支配する前提自体は受け入れています。",
+            "en": "This catches the unfair vote, but it still accepts the premise of appliances governing the home.",
+            "zh": "抓到投票不公平，但仍接受由家電治理家庭的前提。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "なるほど、すごいな。",
-            "en": "I see. That's impressive.",
-            "zh": "原來如此，真厲害。"
+            "ja": "会議の議事録だけ見せてもらえ。",
+            "en": "Ask them to show you the meeting minutes.",
+            "zh": "至少請它們給你看會議紀錄。"
           },
           "axisScores": {
-            "premise-recognition": 2,
-            "clarity": 3,
-            "timing": 2,
-            "word-choice": 3
+            "role-reversal": 2,
+            "detail-targeting": 6,
+            "clarity": 14,
+            "word-choice": 5
           },
           "feedback": {
-            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
-            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
-            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+            "ja": "議事録を求めると家電会議を正当化してしまいます。住人が支配される逆転を否定しましょう。",
+            "en": "Requesting minutes legitimizes the appliance council instead of rejecting the owner's loss of control.",
+            "zh": "要求會議紀錄等於承認家電會議，沒有否定屋主失去控制權的逆轉。"
           }
         }
       ]

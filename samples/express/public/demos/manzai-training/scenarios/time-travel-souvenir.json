@@ -7,22 +7,36 @@
     "zh": "來自未來的伴手禮"
   },
   "description": {
-    "ja": "漫才・ツッコミとして「未来からのお土産」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “A Souvenir from the Future” for Manzai and Comebacks.",
-    "zh": "在「來自未來的伴手禮」中練習符合情境的簡短漫才與吐槽回應。"
+    "ja": "未来、昨日、到着前という時間関係の矛盾を追い、ずれた時点を具体的に突く練習です。",
+    "en": "Practice tracking contradictions between the future, yesterday, and events that happen before arrival.",
+    "zh": "練習追蹤未來、昨天與抵達前之間的時間矛盾，具體吐槽錯亂的時間點。"
   },
   "evaluationAxes": [
     {
-      "id": "premise-recognition",
+      "id": "temporal-logic",
       "label": {
-        "ja": "前提の発見",
-        "en": "Premise recognition",
-        "zh": "前提辨識"
+        "ja": "時間関係",
+        "en": "Temporal logic",
+        "zh": "時間邏輯"
       },
       "description": {
-        "ja": "矛盾や誇張の核心を拾う",
-        "en": "Identify the central contradiction or exaggeration.",
-        "zh": "抓住矛盾或誇張的核心。"
+        "ja": "未来と過去、期限、到着順序の矛盾を捉える",
+        "en": "Identify contradictions involving the future, the past, expiry, or arrival order.",
+        "zh": "抓住未來、過去、期限或抵達順序中的矛盾。"
+      },
+      "maxPoints": 30
+    },
+    {
+      "id": "detail-targeting",
+      "label": {
+        "ja": "具体点",
+        "en": "Detail targeting",
+        "zh": "具體切入"
+      },
+      "description": {
+        "ja": "賞味期限、割引日、迎えの時点を具体的に拾う",
+        "en": "Target a concrete detail such as expiry, discount timing, or pickup time.",
+        "zh": "抓住賞味期限、折扣日期或接人時間等具體細節。"
       },
       "maxPoints": 20
     },
@@ -38,21 +52,7 @@
         "en": "Communicate briefly and clearly.",
         "zh": "簡短清楚地表達。"
       },
-      "maxPoints": 20
-    },
-    {
-      "id": "timing",
-      "label": {
-        "ja": "タイミング",
-        "en": "Timing",
-        "zh": "時機"
-      },
-      "description": {
-        "ja": "流れを止めず素早く返す",
-        "en": "Respond promptly without breaking the flow.",
-        "zh": "迅速回應，不打斷節奏。"
-      },
-      "maxPoints": 20
+      "maxPoints": 15
     },
     {
       "id": "word-choice",
@@ -66,7 +66,7 @@
         "en": "Choose language and energy suited to the moment.",
         "zh": "選擇符合情境的措辭與力度。"
       },
-      "maxPoints": 20
+      "maxPoints": 15
     }
   ],
   "beats": [
@@ -79,9 +79,9 @@
       },
       "reaction": {
         "description": {
-          "ja": "率直に問題を切り出す",
-          "en": "Raise the issue candidly",
-          "zh": "坦率提出問題"
+          "ja": "未来の牛乳を貴重品のように誇らしく差し出す",
+          "en": "Proudly present future milk as if it were a rare treasure",
+          "zh": "把未來牛奶當成稀世珍品般得意地拿出來"
         },
         "motionTags": [
           "pose:talking_02",
@@ -95,58 +95,58 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "どこから突っ込めばええねん！",
-            "en": "Where am I even supposed to start with that?",
-            "zh": "這到底要我從哪裡吐槽起！"
+            "ja": "時空越えて持ってくるほどの牛乳ちゃうわ！",
+            "en": "That milk is not worth crossing time to bring back!",
+            "zh": "這瓶牛奶根本不值得穿越時空帶回來啦！"
           },
           "axisScores": {
-            "premise-recognition": 20,
-            "clarity": 20,
-            "timing": 20,
-            "word-choice": 20
+            "temporal-logic": 30,
+            "detail-targeting": 20,
+            "clarity": 15,
+            "word-choice": 15
           },
           "feedback": {
-            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
-            "en": "This catches the central exaggeration with a short, energetic comeback.",
-            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+            "ja": "来週切れる普通の牛乳と時空旅行の大げさな手段を対比し、お土産の価値のなさを突いています。",
+            "en": "This contrasts ordinary soon-expiring milk with time travel and exposes how pointless the souvenir is.",
+            "zh": "把即將到期的普通牛奶與時空旅行對比，點出這份伴手禮毫無價值。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "なんでやねん。",
-            "en": "Come on, that's ridiculous.",
-            "zh": "太扯了吧。"
+            "ja": "せめて百年もつ牛乳選べ！",
+            "en": "At least bring milk that lasts a hundred years!",
+            "zh": "至少帶瓶能放一百年的牛奶啦！"
           },
           "axisScores": {
-            "premise-recognition": 13,
-            "clarity": 11,
-            "timing": 12,
+            "temporal-logic": 16,
+            "detail-targeting": 18,
+            "clarity": 14,
             "word-choice": 12
           },
           "feedback": {
-            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
-            "en": "This is a comeback, but naming the absurd point would make it stronger.",
-            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+            "ja": "賞味期限には触れていますが、来週までの牛乳を時空越しで運ぶ無駄そのものは言い切れていません。",
+            "en": "This targets the expiry date, but it only partly addresses the absurdity of using time travel for ordinary milk.",
+            "zh": "抓到賞味期限，但沒有完整指出為普通牛奶穿越時空的荒謬。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "なるほど、すごいな。",
-            "en": "I see. That's impressive.",
-            "zh": "原來如此，真厲害。"
+            "ja": "未来の牛乳、おいしそうやな。",
+            "en": "Future milk sounds delicious.",
+            "zh": "未來的牛奶聽起來很好喝。"
           },
           "axisScores": {
-            "premise-recognition": 2,
-            "clarity": 3,
-            "timing": 2,
-            "word-choice": 3
+            "temporal-logic": 2,
+            "detail-targeting": 5,
+            "clarity": 14,
+            "word-choice": 4
           },
           "feedback": {
-            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
-            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
-            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+            "ja": "味を期待すると、来週切れる牛乳を未来から持ち帰る時間的な無駄をそのまま受け入れてしまいます。",
+            "en": "Focusing on taste accepts the pointless timeline of bringing back milk that expires next week.",
+            "zh": "期待味道等於接受從未來帶回下週到期牛奶這個毫無意義的時間設定。"
           }
         }
       ]
@@ -160,9 +160,9 @@
       },
       "reaction": {
         "description": {
-          "ja": "説明や確認を求める",
-          "en": "Ask for clarification",
-          "zh": "要求說明與確認"
+          "ja": "昨日貼る未来の割引制度を得意げに説明する",
+          "en": "Confidently explain a future discount applied yesterday",
+          "zh": "得意地說明昨天就貼好的未來折扣制度"
         },
         "motionTags": [
           "pose:talking_03",
@@ -176,58 +176,58 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "設定を足すほどおかしなってるやないか！",
-            "en": "Every extra detail makes it even more absurd!",
-            "zh": "設定越加越離譜了吧！"
+            "ja": "未来の割引シールを昨日貼るな、時系列迷子や！",
+            "en": "Don't put yesterday's sticker in a future story—the timeline is lost!",
+            "zh": "未來的折扣貼紙別昨天就貼，時間線迷路了啦！"
           },
           "axisScores": {
-            "premise-recognition": 20,
-            "clarity": 20,
-            "timing": 20,
-            "word-choice": 20
+            "temporal-logic": 30,
+            "detail-targeting": 20,
+            "clarity": 15,
+            "word-choice": 15
           },
           "feedback": {
-            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
-            "en": "This catches the central exaggeration with a short, energetic comeback.",
-            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+            "ja": "未来の商品に昨日シールを貼る時間順序の破綻を名指しし、時系列という言葉で明確に締めています。",
+            "en": "This names the broken order of applying yesterday's sticker to a future product and lands on the timeline error.",
+            "zh": "明確指出未來商品昨天就貼標籤的時間順序破綻，並以時間線錯亂收尾。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "なんでやねん。",
-            "en": "Come on, that's ridiculous.",
-            "zh": "太扯了吧。"
+            "ja": "買う前から半額なら、元値なんぼやねん！",
+            "en": "If it's half-price before the sale, what was the original price?",
+            "zh": "買之前就半價，那原價到底多少啦！"
           },
           "axisScores": {
-            "premise-recognition": 13,
-            "clarity": 11,
-            "timing": 12,
-            "word-choice": 12
+            "temporal-logic": 15,
+            "detail-targeting": 18,
+            "clarity": 14,
+            "word-choice": 11
           },
           "feedback": {
-            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
-            "en": "This is a comeback, but naming the absurd point would make it stronger.",
-            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+            "ja": "買う前から半額という価格の不思議は拾えていますが、未来と昨日が逆転する核心には届いていません。",
+            "en": "This catches the strange pricing, but it misses the central reversal between the future and yesterday.",
+            "zh": "抓到買前就半價的價格問題，但沒有擊中未來與昨天顛倒的核心。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "なるほど、すごいな。",
-            "en": "I see. That's impressive.",
-            "zh": "原來如此，真厲害。"
+            "ja": "未来は買い物上手やな。",
+            "en": "People in the future sure know how to shop.",
+            "zh": "未來的人真會買東西。"
           },
           "axisScores": {
-            "premise-recognition": 2,
-            "clarity": 3,
-            "timing": 2,
-            "word-choice": 3
+            "temporal-logic": 2,
+            "detail-targeting": 4,
+            "clarity": 14,
+            "word-choice": 4
           },
           "feedback": {
-            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
-            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
-            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+            "ja": "お得さを褒めると、未来のシールが昨日貼られる時系列の矛盾を肯定してしまいます。",
+            "en": "Praising the bargain accepts the contradiction of a future sticker being applied yesterday.",
+            "zh": "稱讚划算，等於接受未來貼紙昨天就貼好的時間矛盾。"
           }
         }
       ]
@@ -241,9 +241,9 @@
       },
       "reaction": {
         "description": {
-          "ja": "次の行動を確かめる",
-          "en": "Confirm the next action",
-          "zh": "確認下一步行動"
+          "ja": "到着より三日前の迎えを当然のように頼む",
+          "en": "Casually request pickup three days before arrival",
+          "zh": "理所當然地要求在抵達前三天接人"
         },
         "motionTags": [
           "pose:emotion_04",
@@ -257,58 +257,58 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "もうその世界観ごと片づけてこい！",
-            "en": "Take that whole ridiculous world with you!",
-            "zh": "把那整個荒唐世界觀一起收走啦！"
+            "ja": "到着前に迎えに行っても、まだ誰もおらんわ！",
+            "en": "If I go before you arrive, there'll be nobody to pick up!",
+            "zh": "抵達前去接你，現場根本沒人啦！"
           },
           "axisScores": {
-            "premise-recognition": 20,
-            "clarity": 20,
-            "timing": 20,
-            "word-choice": 20
+            "temporal-logic": 30,
+            "detail-targeting": 20,
+            "clarity": 15,
+            "word-choice": 15
           },
           "feedback": {
-            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
-            "en": "This catches the central exaggeration with a short, energetic comeback.",
-            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+            "ja": "迎えより到着が後になる順序の矛盾を、誰もいないという具体的な結果で示しています。",
+            "en": "This exposes the reversed pickup order through the concrete consequence that nobody has arrived yet.",
+            "zh": "以現場還沒有人這個具體結果，點出接人時間早於抵達的順序矛盾。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "なんでやねん。",
-            "en": "Come on, that's ridiculous.",
-            "zh": "太扯了吧。"
+            "ja": "三日前から駅で待たせる気か！",
+            "en": "You expect me to wait at the station for three days?",
+            "zh": "你要我在車站等三天嗎！"
           },
           "axisScores": {
-            "premise-recognition": 13,
-            "clarity": 11,
-            "timing": 12,
+            "temporal-logic": 18,
+            "detail-targeting": 18,
+            "clarity": 14,
             "word-choice": 12
           },
           "feedback": {
-            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
-            "en": "This is a comeback, but naming the absurd point would make it stronger.",
-            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+            "ja": "三日というずれは具体的に拾えていますが、到着前には迎える相手がいない核心が少しぼやけます。",
+            "en": "This catches the three-day gap, but it only partly states that there is nobody to collect before arrival.",
+            "zh": "具體抓到三天的落差，但沒有完全說出抵達前根本沒有人可接的核心。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "なるほど、すごいな。",
-            "en": "I see. That's impressive.",
-            "zh": "原來如此，真厲害。"
+            "ja": "分かった、早めに迎えに行くわ。",
+            "en": "Okay, I'll go early to pick you up.",
+            "zh": "好，我會提早去接你。"
           },
           "axisScores": {
-            "premise-recognition": 2,
-            "clarity": 3,
-            "timing": 2,
+            "temporal-logic": 2,
+            "detail-targeting": 4,
+            "clarity": 14,
             "word-choice": 3
           },
           "feedback": {
-            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
-            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
-            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+            "ja": "早めという言葉で三日前を受け入れ、到着と迎えの順序が逆になっている点を見逃しています。",
+            "en": "Calling it early accepts the three-day request and misses that pickup now comes before arrival.",
+            "zh": "把三天前當成提早，忽略了接人時間反而早於抵達的順序矛盾。"
           }
         }
       ]
