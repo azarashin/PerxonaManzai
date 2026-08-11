@@ -1247,6 +1247,33 @@
         "zh": "遺失設備訪談"
       },
       "path": "./scenarios/missing-equipment-interview.json"
+    },
+    {
+      "id": "uncertain-witness-memory",
+      "categoryId": "investigative-interview",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Investigative Interview.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合調查訪談的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "曖昧な目撃記憶",
+        "en": "Uncertain Witness Memory",
+        "zh": "模糊的目擊記憶"
+      },
+      "path": "./scenarios/uncertain-witness-memory.json"
     }
   ]
 }
