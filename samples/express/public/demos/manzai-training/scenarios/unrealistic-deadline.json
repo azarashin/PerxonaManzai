@@ -179,7 +179,7 @@
         "zh": "測試需要三天，但只剩兩天且只有兩人；省略會漏掉重大缺陷。"
       },
       "pronunciationGuide": {
-        "ja": "てすとに さんにち ひつようですが、 のこり ににちで たんとうは ににんだけです。 はぶけば じゅうだいな ふぐあいを みのがします。",
+        "ja": "てすとに みっかひつようですが、 のこり ふつかで たんとうは ふたりだけです。 はぶけば じゅうだいな ふぐあいを みのがします。",
         "en": "/ˈtɛstɪŋ nidz θɹi deɪz, bʌt tu ˈpipəl hæv ˈoʊnli tu deɪz lɛft. ˈskɪpɪŋ ɪt ɹɪsks ə ˈsɪɹiəs ˈdifɛkt./",
         "zh": "Cè shì xū yào sān tiān， dàn zhī shèng liǎng tiān qiě zhǐ yǒu liǎng rén； shěng lüè huì lòu diào zhòng dà quē xiàn。"
       },
@@ -206,7 +206,7 @@
             "zh": "兩人兩天不足以完成工時。我們把測試範圍與重大缺陷影響量化，作為決策依據。"
           },
           "pronunciationGuide": {
-            "ja": "ににん ににちでは ひつよう こうすうを みたせませんね。 てすと はんいと じゅうだい ふぐあいの えいきょうを すうちに して、 はんだん ざいりょうに します。",
+            "ja": "ふたりふつかでは ひつよう こうすうを みたせませんね。 てすと はんいと じゅうだい ふぐあいの えいきょうを すうちに して、 はんだん ざいりょうに します。",
             "en": "/tu ˈpipəl ˈoʊvɚ tu deɪz ˈkænɑt ˈkʌvɚ ðə ˈɛfɚt. lɛts ˈkwɑntɪˌfaɪ tɛst skoʊp ənd ˈsɪɹiəs - ˈdifɛkt ˌɪmˈpækt fɔɹ ðə dɪˈsɪʒən./",
             "zh": "Liǎng rén liǎng tiān bù zú yǐ wán chéng gōng shí。 wǒ men bǎ cè shì fàn wéi yǔ zhòng dà quē xiàn yǐng xiǎng liáng huà， zuò wéi jué cè yī jù。"
           },
