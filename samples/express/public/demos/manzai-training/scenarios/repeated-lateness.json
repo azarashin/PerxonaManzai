@@ -77,6 +77,11 @@
         "en": "I know I was late, but please don't scold me without asking why.",
         "zh": "我知道自己遲到了，但請不要還沒問原因就責罵我。"
       },
+      "pronunciationGuide": {
+        "ja": "ちこく した のは わかって います。でも りゆうを きかずに しからないで ください。",
+        "en": "/aɪ noʊ aɪ wɑz leɪt, bʌt pliz doʊnt skoʊld mi wɪˈθaʊt ˈæskɪŋ waɪ./",
+        "zh": "Wǒ zhī dào zì jǐ chí dào le， dàn qǐng bú yào hái méi wèn yuán yīn jiù zé mà wǒ。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "I judged before asking. Could you explain today's delay and why it has been recurring?",
             "zh": "我還沒詢問就先下判斷了。可以說明今天及近期反覆遲到的原因嗎？"
           },
+          "pronunciationGuide": {
+            "ja": "りゆうを きく まえに きめつけて しまった。 きょうの けいいと さいきん つづいて いる りゆうを はなして くれる？",
+            "en": "/aɪ dʒʌdʒd bɪˈfɔɹ ˈæskɪŋ. kʊd ju ɪkˈspleɪn təˈdeɪz dɪˈleɪ ənd waɪ ɪt hæz bɪn ɹɪˈkɝɪŋ?/",
+            "zh": "Wǒ hái méi xún wèn jiù xiān xià pàn duàn le。 kě yǐ shuō míng jīn tiān jí jìn qī fǎn fù chí dào de yuán yīn ma？"
+          },
           "axisScores": {
             "empathy": 20,
             "fact-checking": 20,
@@ -118,6 +128,11 @@
             "en": "All right. I'll hear your reason today.",
             "zh": "好，今天我先聽你的理由。"
           },
+          "pronunciationGuide": {
+            "ja": "わかった。 きょうは まず りゆうを きくよ。",
+            "en": "/ɔl ɹaɪt. aɪl hiɹ jɔɹ ˈɹizən təˈdeɪ./",
+            "zh": "Hǎo， jīn tiān wǒ xiān tīng nǐ de lǐ yóu。"
+          },
           "axisScores": {
             "empathy": 14,
             "fact-checking": 12,
@@ -136,6 +151,11 @@
             "ja": "理由があっても、遅刻は遅刻です。",
             "en": "A reason does not change the fact that you were late.",
             "zh": "就算有理由，遲到還是遲到。"
+          },
+          "pronunciationGuide": {
+            "ja": "りゆうが あっても、 ちこくは ちこくです。",
+            "en": "/ə ˈɹizən dʌz nɑt tʃeɪndʒ ðə fækt ðæt ju wɝ leɪt./",
+            "zh": "Jiù suàn yǒu lǐ yóu， chí dào hái shì chí dào。"
           },
           "axisScores": {
             "empathy": 2,
@@ -157,6 +177,11 @@
         "ja": "朝、弟を保育園へ送る日だけ遅れます。家では私しか頼めません。",
         "en": "I'm late only when I must take my brother to daycare; no one else at home can.",
         "zh": "只有要送弟弟去幼兒園的早上會遲到，家裡沒有其他人能幫忙。"
+      },
+      "pronunciationGuide": {
+        "ja": "あさ、 おとうとを ほいくえんへ おくる ひだけ おくれます。 いえでは わたししか たのめません。",
+        "en": "/aɪm leɪt ˈoʊnli wɛn aɪ mʌst teɪk maɪ ˈbɹʌðɚ tu ˈdeɪˌkɛɹ; noʊ wʌn ɛls æt hoʊm kæn./",
+        "zh": "Zhǐ yǒu yào sòng dì di qù yòu ér yuán de zǎo shàng huì chí dào， jiā lǐ méi yǒu qí tā rén néng bāng máng。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "Let's map the daycare days and arrival times. May I discuss school accommodations with your adviser?",
             "zh": "一起確認接送日期與到校時間，也可以和導師討論校方能調整的方式嗎？"
           },
+          "pronunciationGuide": {
+            "ja": "そうげいの ようびと とうちゃく じこくを いっしょに かくにん しよう。 がっこうで ちょうせい できる ことも たんにんと そうだん して いい？",
+            "en": "/lɛts mæp ðə ˈdeɪˌkɛɹ deɪz ənd ɚˈaɪvəl taɪmz. meɪ aɪ dɪˈskʌs skul əˌkɑməˈdeɪʃənz wɪð jɔɹ ædˈvaɪzɚ?/",
+            "zh": "Yì qǐ què rèn jiē sòng rì qī yǔ dào xiào shí jiān， yě kě yǐ hé dǎo shī tǎo lùn xiào fāng néng tiáo zhěng de fāng shì ma？"
+          },
           "axisScores": {
             "empathy": 20,
             "fact-checking": 20,
@@ -199,6 +229,11 @@
             "en": "I understand. Contact us in advance on days you will be late.",
             "zh": "我了解了，會遲到的日子請先聯絡。"
           },
+          "pronunciationGuide": {
+            "ja": "じじょうは わかった。 おくれる ひは さきに れんらく して。",
+            "en": "/aɪ ˌʌndɚˈstænd. ˈkɑnˌtækt ʌs ɪn ədˈvæns ɑn deɪz ju wɪl bi leɪt./",
+            "zh": "Wǒ liǎo jiě le， huì chí dào de rì zi qǐng xiān lián luò。"
+          },
           "axisScores": {
             "empathy": 13,
             "fact-checking": 13,
@@ -217,6 +252,11 @@
             "ja": "家庭のことは学校へ持ち込まず、もっと早く起きてください。",
             "en": "Keep family matters out of school and wake up earlier.",
             "zh": "家庭問題不要帶到學校，請更早起床。"
+          },
+          "pronunciationGuide": {
+            "ja": "かていの ことは がっこうへ もちこまず、 もっと はやく おきて ください。",
+            "en": "/kip ˈfæməli ˈmætɚz aʊt ʌv skul ənd weɪk ʌp ˈɝliɚ./",
+            "zh": "Jiā tíng wèn tí bú yào dài dào xué xiào， qǐng gèng zǎo qǐ chuáng。"
           },
           "axisScores": {
             "empathy": 0,
@@ -238,6 +278,11 @@
         "ja": "送迎日は週二回です。遅刻を減らし、授業にも遅れない方法を一緒に決めたいです。",
         "en": "Daycare is twice a week. I want a plan that reduces lateness without missing class.",
         "zh": "每週有兩天要接送。我想一起決定既能減少遲到又不錯過課程的方法。"
+      },
+      "pronunciationGuide": {
+        "ja": "そうげいびは しゅう にかいです。 ちこくを へらし、 じゅぎょうにも おくれない ほうほうを いっしょに きめたいです。",
+        "en": "/ˈdeɪˌkɛɹ ɪz twaɪs ə wik. aɪ wɑnt ə plæn ðæt ɹəˈdusəz ˈleɪtnəs wɪˈθaʊt ˈmɪsɪŋ klæs./",
+        "zh": "Měi zhōu yǒu liǎng tiān yào jiē sòng。 wǒ xiǎng yì qǐ jué dìng jì néng jiǎn shǎo chí dào yòu bú cuò guò kè chéng de fāng fǎ。"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "On daycare days, contact us before class; we'll arrange immediate materials and review after two weeks.",
             "zh": "接送日上課前聯絡，到校後立刻領取教材，與導師試行兩週後檢討。"
           },
+          "pronunciationGuide": {
+            "ja": "そうげいびは しぎょう まえに れんらく し、 とうちゃくご すぐ きょうざいを うけとれる よう たんにんと にしゅうかん ためそう。",
+            "en": "/ɑn ˈdeɪˌkɛɹ deɪz, ˈkɑnˌtækt ʌs bɪˈfɔɹ klæs; wil ɚˈeɪndʒ ˌɪˈmiˌdiət məˈtɪɹiəlz ənd ˌɹivˈju ˈæftɚ tu wiks./",
+            "zh": "Jiē sòng rì shàng kè qián lián luò， dào xiào hòu lì kè lǐng qǔ jiào cái， yǔ dǎo shī shì xíng liǎng zhōu hòu jiǎn tǎo。"
+          },
           "axisScores": {
             "empathy": 20,
             "fact-checking": 20,
@@ -280,6 +330,11 @@
             "en": "Promise to contact us whenever you'll be late.",
             "zh": "約定每次會遲到都先聯絡。"
           },
+          "pronunciationGuide": {
+            "ja": "おくれる ひは かならず れんらく する やくそくに しよう。",
+            "en": "/ˈpɹɑməs tu ˈkɑnˌtækt ʌs wɛˈnɛvɚ jul bi leɪt./",
+            "zh": "Yuē dìng měi cì huì chí dào dōu xiān lián luò。"
+          },
           "axisScores": {
             "empathy": 12,
             "fact-checking": 12,
@@ -298,6 +353,11 @@
             "ja": "次に遅れたら、理由に関係なく保護者を呼びます。",
             "en": "Next time, I'll call your guardian regardless of the reason.",
             "zh": "下次再遲到，不論原因都通知家長。"
+          },
+          "pronunciationGuide": {
+            "ja": "つぎに おくれたら、 りゆうに かんけい なく ほごしゃを よびます。",
+            "en": "/nɛkst taɪm, aɪl kɔl jɔɹ ˈɡɑɹdiən ɹəˈɡɑɹdləs ʌv ðə ˈɹizən./",
+            "zh": "Xià cì zài chí dào， bú lùn yuán yīn dōu tōng zhī jiā zhǎng。"
           },
           "axisScores": {
             "empathy": 1,

@@ -112,6 +112,11 @@
         "en": "I want to study art, but my parents will only accept another path.",
         "zh": "我想學美術，但父母只接受其他出路。"
       },
+      "pronunciationGuide": {
+        "ja": "びじゅつを まなびたいのに、 おやは べつの しんろしか みとめません。",
+        "en": "/aɪ wɑnt tu ˈstʌdi ɑɹt, bʌt maɪ ˈpɛɹənts wɪl ˈoʊnli ækˈsɛpt əˈnʌðɚ pæθ./",
+        "zh": "Wǒ xiǎng xué měi shù， dàn fù mǔ zhī jiē shòu qí tā chū lù。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "自分で進路を選びたいんだね。美術で学びたいことと、親が心配する点を別々に教えて。",
             "en": "You want ownership of your path. What do you want to study in art, and what concerns have your parents raised?",
             "zh": "你希望自己決定出路。請分別說明想在美術領域學什麼，以及父母擔心什麼。"
+          },
+          "pronunciationGuide": {
+            "ja": "じぶんで しんろを えらびたい んだね。 びじゅつで まなびたい ことと、 おやが しんぱい する てんを べつべつに おしえて。",
+            "en": "/ju wɑnt ˈoʊnɚˌʃɪp ʌv jɔɹ pæθ. wʌt du ju wɑnt tu ˈstʌdi ɪn ɑɹt, ənd wʌt kənˈsɝnz hæv jɔɹ ˈpɛɹənts ɹeɪzd?/",
+            "zh": "Nǐ xī wàng zì jǐ jué dìng chū lù。 qǐng fēn bié shuō míng xiǎng zài měi shù lǐng yù xué shén me， yǐ jí fù mǔ dān xīn shén me。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "I'll speak to your parents so you can choose art.",
             "zh": "我會和你父母談，讓你能選美術。"
           },
+          "pronunciationGuide": {
+            "ja": "びじゅつを えらべる よう、 せんせいから おやに はなして みるよ。",
+            "en": "/aɪl spik tu jɔɹ ˈpɛɹənts soʊ ju kæn tʃuz ɑɹt./",
+            "zh": "Wǒ huì hé nǐ fù mǔ tán， ràng nǐ néng xuǎn měi shù。"
+          },
           "axisScores": {
             "empathy": 15,
             "fact-checking": 8,
@@ -200,6 +215,11 @@
             "ja": "親は将来を考えているのだから、まず言うことを聞くべきです。",
             "en": "Your parents are thinking about your future, so you should listen to them.",
             "zh": "父母是在為你的未來著想，你應該先聽他們的。"
+          },
+          "pronunciationGuide": {
+            "ja": "おやは しょうらいを かんがえて いる のだから、 まず いう ことを きくべきです。",
+            "en": "/jɔɹ ˈpɛɹənts ɑɹ ˈθɪŋkɪŋ əˈbaʊt jɔɹ ˈfjutʃɚ, soʊ ju ʃʊd ˈlɪsən tu ðɛm./",
+            "zh": "Fù mǔ shì zài wèi nǐ de wèi lái zhuó xiǎng， nǐ yīng gāi xiān tīng tā men de。"
           },
           "axisScores": {
             "empathy": 1,
@@ -234,6 +254,11 @@
         "en": "My parents worry about tuition and employment. I've researched scholarships and started a portfolio.",
         "zh": "父母擔心學費與就業。我已查過獎學金，也開始做作品集。"
       },
+      "pronunciationGuide": {
+        "ja": "おやは がくひと しゅうしょくを しんぱい して います。 しょうがくきんを しらべ、 さくひんしゅうも つくり はじめました。",
+        "en": "/maɪ ˈpɛɹənts ˈwɝi əˈbaʊt tjuˈɪʃən ənd ɛmˈplɔɪmənt. aɪv ɹiˈsɝtʃt ˈskɑlɚˌʃɪps ənd ˈstɑɹtɪd ə pɔɹtˈfoʊliˌoʊ./",
+        "zh": "Fù mǔ dān xīn xué fèi yǔ jiù yè。 wǒ yǐ chá guò jiǎng xué jīn， yě kāi shǐ zuò zuò pǐn jí。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "準備を進めているね。学費、奨学金、卒業後の進路、作品集で現実的な案を比べよう。",
             "en": "You've begun preparing. Let's compare realistic options using tuition, scholarships, career paths, and your portfolio.",
             "zh": "你已開始準備。讓我們用學費、獎學金、畢業出路與作品集比較可行方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "じゅんびを すすめて いるね。 がくひ、 しょうがくきん、 そつぎょうごの しんろ、 さくひんしゅうで げんじつてきな あんを くらべよう。",
+            "en": "/juv bɪˈɡʌn pɹiˈpɛɹɪŋ. lɛts kəmˈpɛɹ ˌɹiəˈlɪstɪk ˈɑpʃənz ˈjuzɪŋ tjuˈɪʃən, ˈskɑlɚˌʃɪps, kɚˈɪɹ pæðz, ənd jɔɹ pɔɹtˈfoʊliˌoʊ./",
+            "zh": "Nǐ yǐ kāi shǐ zhǔn bèi。 ràng wǒ men yòng xué fèi、 jiǎng xué jīn、 bì yè chū lù yǔ zuò pǐn jí bǐ jiào kě xíng fāng àn。"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "If you've prepared that much, your parents will surely understand.",
             "zh": "既然準備了這麼多，父母一定會理解。"
           },
+          "pronunciationGuide": {
+            "ja": "そこまで じゅんび して いるなら、 おやも きっと わかって くれます。",
+            "en": "/ɪf juv pɹiˈpɛɹd ðæt mʌtʃ, jɔɹ ˈpɛɹənts wɪl ˈʃʊɹli ˌʌndɚˈstænd./",
+            "zh": "Jì rán zhǔn bèi le zhè me duō， fù mǔ yí dìng huì lǐ jiě。"
+          },
           "axisScores": {
             "empathy": 14,
             "fact-checking": 9,
@@ -327,6 +362,11 @@
             "ja": "美術の就職は不安定なので、親の心配の方が現実的です。",
             "en": "Art careers are unstable, so your parents' concern is more realistic.",
             "zh": "美術工作不穩定，所以父母的擔心更實際。"
+          },
+          "pronunciationGuide": {
+            "ja": "びじゅつの しゅうしょくは ふあんていなので、 おやの しんぱいの ほうが げんじつてきです。",
+            "en": "/ɑɹt kɚˈɪɹz ɑɹ ənˈsteɪbəl, soʊ jɔɹ ˈpɛɹənts ' kənˈsɝn ɪz mɔɹ ˌɹiəˈlɪstɪk./",
+            "zh": "Měi shù gōng zuò bù wěn dìng， suǒ yǐ fù mǔ de dān xīn gèng shí jì。"
           },
           "axisScores": {
             "empathy": 2,
@@ -361,6 +401,11 @@
         "en": "Before I speak with my parents, what should I prepare and how can you support me?",
         "zh": "和父母談之前，我該準備什麼？老師可以如何支援？"
       },
+      "pronunciationGuide": {
+        "ja": "おやと はなす まえに なにを じゅんび し、 せんせいには どう ささえて もらえますか？",
+        "en": "/bɪˈfɔɹ aɪ spik wɪð maɪ ˈpɛɹənts, wʌt ʃʊd aɪ pɹiˈpɛɹ ənd haʊ kæn ju səˈpɔɹt mi?/",
+        "zh": "Hé fù mǔ tán zhī qián， wǒ gāi zhǔn bèi shén me？ lǎo shī kě yǐ rú hé zhī yuán？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "志望理由、作品集、費用案、代替進路を一枚にまとめよう。説明はあなたが行い、私は事実確認と進行を支える。",
             "en": "Summarize your reasons, portfolio, costs, and fallback on one page. You present; I'll support facts and facilitation.",
             "zh": "把理由、作品集、費用與備案整理成一頁。由你說明，我支援事實確認與對話進行。"
+          },
+          "pronunciationGuide": {
+            "ja": "しぼう りゆう、 さくひんしゅう、 ひようあん、 だいたい しんろを いちまいに まとめよう。 せつめいは あなたが おこない、 わたしは じじつ かくにんと しんこうを ささえる。",
+            "en": "/ˈsʌmɚˌaɪz jɔɹ ˈɹizənz, pɔɹtˈfoʊliˌoʊ, kɑsts, ənd ˈfɔlˌbæk ɑn wʌn peɪdʒ. ju ˈpɹɛzənt; aɪl səˈpɔɹt fækts ənd fəˌsɪləˈteɪʃən./",
+            "zh": "Bǎ lǐ yóu、 zuò pǐn jí、 fèi yòng yǔ bèi àn zhěng lǐ chéng yí yè。 yóu nǐ shuō míng， wǒ zhī yuán shì shí què rèn yǔ duì huà jìn xíng。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "I will persuade your parents to approve art.",
             "zh": "我會說服你父母同意你學美術。"
           },
+          "pronunciationGuide": {
+            "ja": "せんせいから おやへ、 びじゅつを みとめる よう せっとく します。",
+            "en": "/aɪ wɪl pɚˈsweɪd jɔɹ ˈpɛɹənts tu əˈpɹuv ɑɹt./",
+            "zh": "Wǒ huì shuō fú nǐ fù mǔ tóng yì nǐ xué měi shù。"
+          },
           "axisScores": {
             "empathy": 14,
             "fact-checking": 7,
@@ -444,6 +499,11 @@
             "ja": "反対される前に、自分だけで願書を出してしまいましょう。",
             "en": "Submit the application secretly before they can object.",
             "zh": "在父母反對前，先瞞著他們提交申請。"
+          },
+          "pronunciationGuide": {
+            "ja": "はんたい される まえに、 じぶんだけで がんしょを だして しまいましょう。",
+            "en": "/səbˈmɪt ðə ˌæpləˈkeɪʃən ˈsikɹɪtli bɪˈfɔɹ ðeɪ kæn ˈɑbdʒɛkt./",
+            "zh": "Zài fù mǔ fǎn duì qián， xiān mán zhe tā men tí jiāo shēn qǐng。"
           },
           "axisScores": {
             "empathy": 3,
@@ -478,6 +538,11 @@
         "en": "It sounded as though you sided with my parents, and I no longer felt able to explain what I want.",
         "zh": "聽起來老師也站在父母那邊，讓我不敢再說自己的志向。"
       },
+      "pronunciationGuide": {
+        "ja": "せんせいまで おやの がわに たって いる ように きこえ、 きぼうを はなせなく なりました。",
+        "en": "/ɪt ˈsaʊndɪd æz ðoʊ ju ˈsaɪdɪd wɪð maɪ ˈpɛɹənts, ənd aɪ noʊ ˈlɔŋɡɚ fɛlt ˈeɪbəl tu ɪkˈspleɪn wʌt aɪ wɑnt./",
+        "zh": "Tīng qǐ lái lǎo shī yě zhàn zài fù mǔ nà biān， ràng wǒ bù gǎn zài shuō zì jǐ de zhì xiàng。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "希望を否定する言い方になってごめん。決める主体はあなたです。美術を選びたい理由から聞き直します。",
             "en": "I'm sorry I sounded dismissive. This is your decision. Please start again with why art matters to you.",
             "zh": "抱歉我的說法像是否定你。決定的主體是你；請重新說明美術為何重要。"
+          },
+          "pronunciationGuide": {
+            "ja": "きぼうを ひてい する いいかたに なって ごめん。 きめる しゅたいは あなたです。 びじゅつを えらびたい りゆうから きき なおします。",
+            "en": "/aɪm ˈsɑɹi aɪ ˈsaʊndɪd dɪˈsmɪsɪv. ðɪs ɪz jɔɹ dɪˈsɪʒən. pliz stɑɹt əˈɡɛn wɪð waɪ ɑɹt ˈmætɚz tu ju./",
+            "zh": "Bào qiàn wǒ de shuō fǎ xiàng shì fǒu dìng nǐ。 jué dìng de zhǔ tǐ shì nǐ； qǐng chóng xīn shuō míng měi shù wèi hé zhòng yào。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "I understand both you and your parents. Let's think calmly.",
             "zh": "我理解你和父母雙方，讓我們冷靜思考。"
           },
+          "pronunciationGuide": {
+            "ja": "おやの きもちも あなたの きもちも わかります。 おちついて かんがえよう。",
+            "en": "/aɪ ˌʌndɚˈstænd boʊθ ju ənd jɔɹ ˈpɛɹənts. lɛts θɪŋk ˈkɑmli./",
+            "zh": "Wǒ lǐ jiě nǐ hé fù mǔ shuāng fāng， ràng wǒ men lěng jìng sī kǎo。"
+          },
           "axisScores": {
             "empathy": 13,
             "fact-checking": 8,
@@ -561,6 +636,11 @@
             "ja": "現実的なことを言っただけです。厳しい話も聞く必要があります。",
             "en": "I only stated reality. You need to hear difficult things.",
             "zh": "我只是說明現實，你也需要聽難聽的話。"
+          },
+          "pronunciationGuide": {
+            "ja": "げんじつてきな ことを いっただけです。 きびしい はなしも きく ひつようが あります。",
+            "en": "/aɪ ˈoʊnli ˈsteɪtɪd ˌɹiˈæləˌti. ju nid tu hiɹ ˈdɪfəkəlt θɪŋz./",
+            "zh": "Wǒ zhǐ shì shuō míng xiàn shí， nǐ yě xū yào tīng nán tīng de huà。"
           },
           "axisScores": {
             "empathy": 1,
