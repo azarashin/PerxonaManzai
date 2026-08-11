@@ -541,6 +541,33 @@
         "zh": "不切實際的期限"
       },
       "path": "./scenarios/unrealistic-deadline.json"
+    },
+    {
+      "id": "feedback-after-mistake",
+      "categoryId": "workplace-communication",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Workplace Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "ミス後の改善指導",
+        "en": "Feedback After a Mistake",
+        "zh": "失誤後的回饋"
+      },
+      "path": "./scenarios/feedback-after-mistake.json"
     }
   ]
 }
