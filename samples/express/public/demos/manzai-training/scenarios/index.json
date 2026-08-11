@@ -845,16 +845,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "空白期間へ直接答え、必要な境界を保ちながら行動と学びを示す",
+          "得た経験を応募職務の期待と現在の準備へ結び付ける"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
-          "Compare how different responses affect the other person and the next action."
+          "Address the gap directly while preserving privacy and describing actions and learning.",
+          "Connect the period to role expectations and current readiness."
         ],
         "zh": [
-          "掌握情境重點，選擇符合面試與招募的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "直接回應空窗期，在保有隱私界線下說明行動與學習。",
+          "把期間經驗連結職務期待與目前就業準備。"
         ]
       },
       "title": {
@@ -872,16 +872,16 @@
       "estimatedMinutes": 6,
       "learningObjectives": {
         "ja": [
-          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "業務に関係する弱みを、具体例と誇張のない自己認識で説明する",
+          "改善行動と結果を示し、応募職務での管理方法を確認する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
-          "Compare how different responses affect the other person and the next action."
+          "Describe a job-relevant weakness with a concrete example and credible self-awareness.",
+          "Show corrective action and results, then explain safeguards for the target role."
         ],
         "zh": [
-          "掌握情境重點，選擇符合面試與招募的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "以具體案例與可信自我認知說明和工作相關的弱點。",
+          "呈現改善行動與結果，並說明在目標職務中的管理方式。"
         ]
       },
       "title": {
@@ -899,16 +899,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "面接で得た情報に基づき、役割の成果と協働方法を質問する",
+          "公開情報の繰り返しを避け、応募者自身の適合判断に使える情報を得る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
-          "Compare how different responses affect the other person and the next action."
+          "Ask about role outcomes and collaboration using information learned in the interview.",
+          "Avoid repeating public facts and gather evidence for the candidate's fit decision."
         ],
         "zh": [
-          "掌握情境重點，選擇符合面試與招募的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "依面試中取得的資訊，詢問職務成果與協作方式。",
+          "避免重問公開資訊，取得可供應徵者判斷適合度的內容。"
         ]
       },
       "title": {

@@ -7,9 +7,9 @@
     "zh": "向面試官反向提問"
   },
   "description": {
-    "ja": "面接・採用として「企業を理解する逆質問」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Questions for the Interviewer” for Interview and Hiring.",
-    "zh": "在「向面試官反向提問」中練習符合情境的簡短面試與招募回應。"
+    "ja": "逆質問を、福利厚生の確認だけでなく、役割の成果・協働・課題を検証する相互選考として使う練習です。",
+    "en": "Practice using interviewer questions to assess outcomes, collaboration, and challenges as part of mutual selection.",
+    "zh": "練習把反問用於了解成果、協作與挑戰，作為雙向選擇，而不只詢問福利。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "質問に直接答え、具体的な経験と学びを簡潔に示します。",
-            "en": "I will answer directly with a concise example and what I learned.",
-            "zh": "我會直接回答，簡潔說明具體經驗與學習。"
+            "ja": "最初の九十日で期待される成果と、その達成に最も連携するチームを教えてください。",
+            "en": "What outcomes are expected in the first ninety days, and which team is the closest partner in delivering them?",
+            "zh": "請問前九十天期待的成果，以及達成時最需要合作的團隊。"
           },
           "axisScores": {
             "relevance": 20,
@@ -141,9 +141,9 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "役割の成果と協働関係を具体的に確認し、相互適合の判断材料を得ています。",
+            "en": "It gathers concrete evidence about outcomes and collaboration for mutual fit.",
+            "zh": "具體確認職務成果與合作關係，取得雙向適合度的判斷材料。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "御社の社風について教えてください。",
+            "en": "Could you tell me about the company culture?",
+            "zh": "可以介紹公司的企業文化嗎？"
           },
           "axisScores": {
             "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
-            "reciprocal-fit": 12
+            "credibility": 10,
+            "clarity": 14,
+            "reciprocal-fit": 13
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "関連する質問ですが広く、回答を比較できる具体的な行動や場面がありません。",
+            "en": "It is relevant but too broad to yield comparable behavioral evidence.",
+            "zh": "問題相關但過於廣泛，難以取得可比較的行為證據。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "特にありません。ホームページは読みました。",
+            "en": "No questions. I read the website.",
+            "zh": "沒有問題，我已看過官網。"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
-            "reciprocal-fit": 3
+            "relevance": 4,
+            "credibility": 5,
+            "clarity": 9,
+            "reciprocal-fit": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "準備は示しますが、職務と自分の適合を確かめる機会を放棄しています。",
+            "en": "It signals preparation but gives up the chance to test fit.",
+            "zh": "有顯示準備，卻放棄確認職務與自身適合度的機會。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "この役割は迅速なリリースと部門横断の調整が重要です。何を詳しく知りたいですか。",
+        "en": "Fast releases and cross-functional coordination matter here. What would you like to explore?",
+        "zh": "這個職務重視快速發布與跨部門協調。你想深入了解什麼？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "誇張せず、自分の行動と結果を分けて説明します。",
-            "en": "I will avoid exaggeration and distinguish my actions from the result.",
-            "zh": "我不誇大，並分開說明自己的行動與結果。"
+            "ja": "速度と品質が衝突した時、誰が優先順位を決め、どの指標でリリース可否を判断しますか。",
+            "en": "When speed and quality conflict, who sets priority and which metrics decide release readiness?",
+            "zh": "速度與品質衝突時，由誰決定優先順序，並用哪些指標判斷能否發布？"
           },
           "axisScores": {
             "relevance": 20,
@@ -263,9 +263,9 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "面接官の説明を受け、意思決定者と判断基準という実務上の適合を確認しています。",
+            "en": "It builds on the interview and tests decision ownership and criteria.",
+            "zh": "承接面試資訊，確認決策責任與判斷標準等實務適合度。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "普段はどのプロジェクト管理ツールを使いますか。",
+            "en": "Which project-management tool do you usually use?",
+            "zh": "平常使用哪種專案管理工具？"
           },
           "axisScores": {
-            "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
-            "reciprocal-fit": 12
+            "relevance": 12,
+            "credibility": 13,
+            "clarity": 14,
+            "reciprocal-fit": 9
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "具体的ですが、重視される調整方法や判断責任より道具に焦点が狭まっています。",
+            "en": "It is concrete but narrows the issue from coordination and judgment to tooling.",
+            "zh": "問題具體，但把協作與判斷責任縮小為工具選擇。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "どれくらい早く昇進できますか。",
+            "en": "How quickly can I be promoted?",
+            "zh": "最快多久可以升遷？"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
-            "reciprocal-fit": 3
+            "relevance": 5,
+            "credibility": 4,
+            "clarity": 11,
+            "reciprocal-fit": 5
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "関心自体は理解できますが、提示された役割要件への適合確認になっていません。",
+            "en": "The concern is legitimate but does not test fit with the stated role demands.",
+            "zh": "關注本身可理解，但未檢視是否符合剛說明的職務要求。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "最後に一つ、この職務を選ぶ判断に役立つ質問はありますか。",
+        "en": "One last question: what would help you decide whether to choose this role?",
+        "zh": "最後一題：什麼資訊能幫助你判斷是否選擇這個職務？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "役割の期待と自分の経験が合う点、確認したい点を示します。",
-            "en": "I will connect my experience to the role and identify what I still need to learn.",
-            "zh": "我會連結自身經驗與職務，也提出仍需了解之處。"
+            "ja": "今チームが直面する最大の課題と、この役割が半年で変えられる部分を教えてください。",
+            "en": "What is the team's biggest current challenge, and what could this role change within six months?",
+            "zh": "團隊目前最大的挑戰是什麼？這個職務半年內能改變哪些部分？"
           },
           "axisScores": {
             "relevance": 20,
@@ -390,9 +390,9 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "現実の課題と期待される影響を結び、入社後の適合を判断できます。",
+            "en": "It links real challenges to expected impact and supports an informed fit decision.",
+            "zh": "把實際挑戰與預期影響連結，可供判斷入職後的適合度。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "在宅勤務は週に何日できますか。",
+            "en": "How many days per week can I work remotely?",
+            "zh": "每週可以遠端工作幾天？"
           },
           "axisScores": {
-            "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
+            "relevance": 9,
+            "credibility": 12,
+            "clarity": 15,
             "reciprocal-fit": 12
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "重要な条件確認ですが、役割の内容や貢献可能性を測る情報は得られません。",
+            "en": "It checks an important condition but not role content or potential contribution.",
+            "zh": "是重要條件確認，但無法了解職務內容或可貢獻之處。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "求人票に書いてある給与で間違いないですか。",
+            "en": "Is the salary exactly what the job posting states?",
+            "zh": "薪資確定和職缺公告寫的一樣嗎？"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
-            "reciprocal-fit": 3
+            "relevance": 7,
+            "credibility": 10,
+            "clarity": 13,
+            "reciprocal-fit": 8
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "確認は明確でも、既に公開された情報の反復で、相互適合を深めません。",
+            "en": "It is clear but repeats public information and does not deepen mutual fit.",
+            "zh": "確認雖明確，卻重問公開資訊，未深化雙向適合度。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "その質問は求人ページで分かります。面接で聞いた内容を踏まえた質問はありますか。",
+        "en": "That is on the careers page. Do you have a question based on this interview?",
+        "zh": "那在職缺頁面就能找到。你有根據這次面試內容的問題嗎？"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "質問の意図を確認し、関係する事実に絞って答え直します。",
-            "en": "I will confirm the intent and answer again using only relevant facts.",
-            "zh": "我會確認問題意圖，並只用相關事實重新回答。"
+            "ja": "調べ方が足りませんでした。先ほどの部門横断調整で、入社者が最初につまずきやすい点を教えてください。",
+            "en": "I should have researched that. In the cross-team work you mentioned, where do new hires struggle first?",
+            "zh": "是我查得不夠。關於剛提到的跨部門協作，新進人員最常先卡在哪裡？"
           },
           "axisScores": {
             "relevance": 20,
@@ -507,9 +507,9 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "準備不足を認め、面接内の具体情報から役割適合を測る質問へ立て直しています。",
+            "en": "It owns the miss and rebuilds from a specific interview detail to test fit.",
+            "zh": "承認準備不足，並從面試具體資訊重建可檢視適合度的問題。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "では、会社の雰囲気についてもう少し教えてください。",
+            "en": "Then could you tell me more about the company atmosphere?",
+            "zh": "那可以再多說一些公司氣氛嗎？"
           },
           "axisScores": {
-            "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
-            "reciprocal-fit": 12
+            "relevance": 11,
+            "credibility": 8,
+            "clarity": 13,
+            "reciprocal-fit": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "質問は続けますが、依然として面接内容に結び付かず広すぎます。",
+            "en": "It keeps engagement but remains broad and unanchored to the interview.",
+            "zh": "有繼續提問，但仍過於廣泛，也未連結面試內容。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "必要な情報は求人ページだけでは足りないと思います。",
+            "en": "I don't think the careers page provides enough information.",
+            "zh": "我覺得職缺頁面的資訊並不足夠。"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
+            "relevance": 5,
+            "credibility": 6,
+            "clarity": 10,
             "reciprocal-fit": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "情報源への反論だけで、知りたい内容を具体的な質問に変えていません。",
+            "en": "It argues about the source instead of forming a useful question.",
+            "zh": "只反駁資訊來源，未把需求轉成有用的具體問題。"
           },
           "stateEffects": [
             {
