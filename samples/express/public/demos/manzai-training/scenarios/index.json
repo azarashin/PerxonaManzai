@@ -144,6 +144,22 @@
         "en": "Advice Between Friends",
         "zh": "朋友間的商量"
       }
+    },
+    {
+      "id": "scam-awareness",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "初動は直線型で練習できますが、相手の圧力や要求の変化に対応する中級以上では分岐を推奨します。",
+          "en": "Initial responses may be linear; branching is recommended as pressure and requests change.",
+          "zh": "初步應對可採線性；當壓力與要求改變時，建議使用分支。"
+        }
+      },
+      "title": {
+        "ja": "詐欺・悪質勧誘への対処",
+        "en": "Scam and Manipulative Sales Awareness",
+        "zh": "詐騙與惡質推銷防範"
+      }
     }
   ],
   "scenarios": [
@@ -983,6 +999,33 @@
         "zh": "朋友借錢請求"
       },
       "path": "./scenarios/request-to-borrow-money.json"
+    },
+    {
+      "id": "suspicious-investment-call",
+      "categoryId": "scam-awareness",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "不審な投資勧誘",
+        "en": "A Suspicious Investment Call",
+        "zh": "可疑投資電話"
+      },
+      "path": "./scenarios/suspicious-investment-call.json"
     }
   ]
 }
