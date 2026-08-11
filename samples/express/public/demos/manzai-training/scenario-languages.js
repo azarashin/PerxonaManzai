@@ -12,3 +12,24 @@ export function scenarioDisplayLanguages(
     supportedLanguages.includes(language),
   );
 }
+
+export function defaultPronunciationGuideVisibility(
+  scenarioLanguage,
+  playerLanguage,
+) {
+  return (
+    supportedLanguages.includes(scenarioLanguage) &&
+    supportedLanguages.includes(playerLanguage) &&
+    scenarioLanguage !== playerLanguage
+  );
+}
+
+export function pronunciationGuideText(
+  pronunciationGuide,
+  scenarioLanguage,
+  visible,
+) {
+  if (!visible || !supportedLanguages.includes(scenarioLanguage)) return "";
+  const guide = pronunciationGuide?.[scenarioLanguage];
+  return typeof guide === "string" ? guide : "";
+}
