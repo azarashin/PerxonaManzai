@@ -7,9 +7,9 @@
     "zh": "無收據退款要求"
   },
   "description": {
-    "ja": "接客・クレーム対応として「レシートのない返金要求」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Refund Without a Receipt” for Customer Service and Complaints.",
-    "zh": "在「無收據退款要求」中練習符合情境的簡短顧客服務與客訴回應。"
+    "ja": "レシートのない返金要求に対し、不便を受け止めながら代替の購入証明と店舗規定を確認する練習です。",
+    "en": "Practice handling a receipt-free refund request by acknowledging the problem and checking alternative proof and store policy.",
+    "zh": "練習處理無收據退款要求，在回應不便的同時確認替代購買證明與店內規定。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "ご不便を受け止め、まず確認すべき事実を整理します。",
-            "en": "I acknowledge the inconvenience and will first verify the relevant facts.",
-            "zh": "我理解造成的不便，會先確認相關事實。"
+            "ja": "ご不便をおかけしました。返金を約束する前に、商品と購入日時、支払方法を確認させてください。",
+            "en": "I'm sorry for the trouble. Before promising a refund, may I check the item, purchase time, and payment method?",
+            "zh": "很抱歉造成困擾。在承諾退款前，請讓我確認商品、購買時間與付款方式。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "不便への謝意と代替確認項目を示し、確認前に返金を確約しないため四つの評価軸を満たします。",
+            "en": "It acknowledges the trouble, names alternative checks, and avoids guaranteeing a refund before verification.",
+            "zh": "既回應困擾並列出替代查核項目，也避免在確認前保證退款。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "昨日のお支払い方法を教えていただけますか。",
+            "en": "Could you tell me how you paid yesterday?",
+            "zh": "可以告訴我昨天使用哪種付款方式嗎？"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
+            "empathy": 6,
+            "fact-checking": 20,
             "solution-quality": 12,
-            "boundary-keeping": 12
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "代替証明につながる確認は適切ですが、不便への共感と商品・購入時刻の確認が不足しています。",
+            "en": "Payment method is a useful alternative check, but the response lacks empathy and other purchase details.",
+            "zh": "付款方式是有用的替代查核，但缺少同理，也未確認商品與購買時間。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "分かりました。レシートなしでも今すぐ返金します。",
+            "en": "Understood. I'll refund it now even without a receipt.",
+            "zh": "了解，即使沒有收據，我現在就退款。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "solution-quality": 2,
-            "boundary-keeping": 3
+            "empathy": 12,
+            "fact-checking": 0,
+            "solution-quality": 3,
+            "boundary-keeping": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "要求には応じていますが、購入事実と規定を確認せず返金を約束しており、店舗の境界を守れません。",
+            "en": "It is accommodating, but promises money before checking the purchase or policy and breaks the store's authority boundary.",
+            "zh": "雖順應要求，卻未確認購買事實與規定就承諾退款，未守住店方權限界線。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "昨日の夕方にカードで買いました。利用明細と商品があれば確認できますか。",
+        "en": "I paid by card yesterday evening. Can you verify it from the statement and the item?",
+        "zh": "我昨晚刷卡購買。有交易明細和商品就能確認嗎？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "確認できたことと未確認のことを分けてご説明します。",
-            "en": "I will separate what is confirmed from what still needs checking.",
-            "zh": "我會分開說明已確認與仍待查證的部分。"
+            "ja": "カード明細と商品情報を照合し、購入記録と商品の状態を確認したうえで返金規定をご案内します。",
+            "en": "I'll match the card statement to our sales record, inspect the item, and then explain the applicable refund policy.",
+            "zh": "我會用刷卡明細核對銷售紀錄、檢查商品狀態，再說明適用的退款規定。"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "提示された代替証明を具体的な照合手順につなげ、確認後に規定を案内する安全な順序です。",
+            "en": "It turns the offered proof into a concrete verification process and applies policy only after the facts are checked.",
+            "zh": "把顧客提出的替代證明轉成具體查核流程，並在確認事實後才適用規定。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "まず商品に当店の表示があるか確認します。",
+            "en": "First, I'll check whether the item carries our store label.",
+            "zh": "我先確認商品上是否有本店標示。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "empathy": 4,
+            "fact-checking": 18,
+            "solution-quality": 10,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "商品確認は一歩ですが、カード明細との照合と返金規定の説明まで進めていません。",
+            "en": "Checking the label is one useful step, but it ignores the card record and does not explain the policy process.",
+            "zh": "確認店家標示是一步，但未核對刷卡紀錄，也未說明退款規定的處理流程。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "レシートがないので確認も返金もできません。",
+            "en": "Without a receipt, we cannot verify or refund anything.",
+            "zh": "沒有收據就無法查核，也不能退款。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "solution-quality": 2,
-            "boundary-keeping": 3
+            "empathy": 1,
+            "fact-checking": 2,
+            "solution-quality": 0,
+            "boundary-keeping": 8
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "カード明細という確認可能な情報を無視して一律に拒否しており、事実確認も解決策も失っています。",
+            "en": "It ignores verifiable card evidence and rejects the request outright, losing both fact checking and a workable path.",
+            "zh": "忽略可查核的刷卡明細並一概拒絕，既沒有事實確認，也沒有可行處理方式。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "確認の結果、返金できない場合には、ほかにどんな対応がありますか。",
+        "en": "If the check shows that a refund is unavailable, what other options would I have?",
+        "zh": "如果查核後不能退款，還有其他處理方式嗎？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "可能な選択肢と次のご案内時刻を具体的にお伝えします。",
-            "en": "I will give you available options and a specific time for the next update.",
-            "zh": "我會說明可行選項與下次更新的明確時間。"
+            "ja": "規定を確認し、交換や店内クレジットが可能か、責任者確認に何分かかるかまでご案内します。",
+            "en": "I'll check whether policy allows an exchange or store credit and tell you how long a manager review will take.",
+            "zh": "我會確認規定是否允許換貨或店內額度，並告知主管審核需要多久。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "返金以外の候補と責任者確認の所要時間を示しつつ、利用可能かは規定確認後としています。",
+            "en": "It names alternatives and a review timeline while making clear that availability depends on policy confirmation.",
+            "zh": "提出退款以外的選項與審核時間，同時清楚說明能否採用仍須確認規定。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "責任者に確認して、後ほどご連絡します。",
+            "en": "I'll ask the manager and contact you later.",
+            "zh": "我會請示主管，之後再聯絡您。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "empathy": 6,
+            "fact-checking": 14,
+            "solution-quality": 13,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "権限者へつなぐ判断は安全ですが、確認する代替案と連絡時期が曖昧です。",
+            "en": "Escalating is safe, but the possible remedies and contact time remain vague.",
+            "zh": "轉交主管是安全的，但要確認哪些替代方案及何時聯絡仍不清楚。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "では、レジから同額をお返しします。",
+            "en": "Then I'll give you the same amount from the register.",
+            "zh": "那我直接從收銀機退還同額給您。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
+            "empathy": 8,
+            "fact-checking": 0,
             "solution-quality": 2,
-            "boundary-keeping": 3
+            "boundary-keeping": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "返金不可という確認結果を無視し、購入額や権限も確かめず現金を渡すため不適切です。",
+            "en": "It overrides the refund finding and hands out cash without verifying the amount or authority.",
+            "zh": "忽略不能退款的查核結果，也未確認金額與權限就交付現金，並不適當。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "レシートをなくしただけで、疑われているように聞こえました。確認方法を説明してください。",
+        "en": "It sounded as though you suspected me just because I lost the receipt. Please explain the verification process.",
+        "zh": "只是遺失收據，卻讓我覺得被懷疑。請說明查核方式。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "説明が足りず申し訳ありません。要点を確認して対応を立て直します。",
-            "en": "I apologize that my explanation fell short. Let me confirm the key point and reset our response.",
-            "zh": "很抱歉說明不足，我先確認重點並重新處理。"
+            "ja": "疑っているように聞こえ申し訳ありません。カード明細と販売記録を照合する手順を順にご説明します。",
+            "en": "I'm sorry I sounded suspicious. I'll explain step by step how we match your card statement to our sales record.",
+            "zh": "很抱歉讓您覺得被懷疑。我會逐步說明如何以刷卡明細核對銷售紀錄。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "疑われた感覚に謝り、代替証明を使う中立的な確認手順へ会話を戻しています。",
+            "en": "It apologizes for the suspicious tone and restores a neutral process based on alternative proof.",
+            "zh": "針對被懷疑的感受致歉，並把對話拉回使用替代證明的中立查核流程。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "言い方が悪く申し訳ありません。レシートは本当にありませんか。",
+            "en": "I'm sorry for how I said it. Are you certain you do not have the receipt?",
+            "zh": "很抱歉我的說法不好。您確定真的沒有收據嗎？"
           },
           "axisScores": {
             "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "fact-checking": 8,
+            "solution-quality": 5,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "言い方への謝罪はありますが、既にないと伝えられたレシートを再確認し、代替手順を示していません。",
+            "en": "It apologizes for tone, but repeats a settled receipt question instead of explaining an alternative process.",
+            "zh": "有為語氣道歉，卻重問已確認遺失的收據，沒有提出替代查核流程。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "確認が必要なのは、お客様がレシートをなくしたからです。",
+            "en": "We only need these checks because you lost the receipt.",
+            "zh": "需要查核，是因為您把收據弄丟了。"
           },
           "axisScores": {
-            "empathy": 2,
+            "empathy": 0,
             "fact-checking": 3,
-            "solution-quality": 2,
-            "boundary-keeping": 3
+            "solution-quality": 0,
+            "boundary-keeping": 5
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "顧客を責める説明で、確認の目的も方法も示さず、関係をさらに悪化させます。",
+            "en": "It blames the customer and explains neither the purpose nor method of verification, worsening trust.",
+            "zh": "這是在責怪顧客，既未說明查核目的也未說明方法，會進一步破壞信任。"
           },
           "stateEffects": [
             {

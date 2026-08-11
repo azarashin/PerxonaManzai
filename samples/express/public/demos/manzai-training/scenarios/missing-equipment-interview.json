@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "結論を前提にせず、本人の言葉で順序を説明してもらいます。",
-            "en": "Without assuming a conclusion, I will ask for the sequence in the person's own words.",
-            "zh": "我不預設結論，請對方用自己的話說明順序。"
+            "ja": "「最後に使った事実と、返却後の保管経路」を中立に確認し、返却場所までを本人の言葉で説明してもらい、責任判断を保留する。",
+            "en": "Verify first; hear the return sequence in the person's own words and reserve judgment.",
+            "zh": "中立查證最後使用與歸還後保管流程，再請本人說明歸還過程，暫不判定責任。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -141,9 +141,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「最後に使った事実と、返却後の保管経路」を中立に確認し、返却場所までを本人の言葉で説明してもらい、責任判断を保留する。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; hear the return sequence in the person's own words and reserve judgment.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證最後使用與歸還後保管流程，再請本人說明歸還過程，暫不判定責任。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "返却場所までを本人の言葉で説明してもらい、責任判断を保留するが、「最後に使った事実と、返却後の保管経路」の別の可能性は確認しません。",
+            "en": "Only hear the return sequence in the person's own words and reserve judgment.",
+            "zh": "請本人說明歸還過程，暫不判定責任，但不查最後使用與歸還後保管流程的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：返却場所までを本人の言葉で説明してもらい、責任判断を保留するが、「最後に使った事実と、返却後の保管経路」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only hear the return sequence in the person's own words and reserve judgment.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：請本人說明歸還過程，暫不判定責任，但不查最後使用與歸還後保管流程的其他可能。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「最後に使った事実と、返却後の保管経路」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat last use versus the custody path after return as a lie and press for an admission.",
+            "zh": "只憑最後使用與歸還後保管流程就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「最後に使った事実と、返却後の保管経路」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat last use versus the custody path after return as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑最後使用與歸還後保管流程就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "重要なのは「鍵の利用記録、引継ぎ相手、未捜索場所」です。どの資料と質問で確認しますか？",
+        "en": "The key issue is key-access logs, handoff recipients, and unsearched locations. Which records and questions will you use?",
+        "zh": "關鍵是鑰匙使用紀錄、交接對象與尚未搜尋處。你會用哪些紀錄與問題查證？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "食い違う箇所を具体的に示し、訂正や不確かさを受け入れます。",
-            "en": "I will identify the specific inconsistency and allow correction or uncertainty.",
-            "zh": "我會具體指出不一致，並允許更正或表達不確定。"
+            "ja": "「鍵の利用記録、引継ぎ相手、未捜索場所」を中立に確認し、記録と供述を照合し、関係者ごとに同じ質問で確認する。",
+            "en": "Verify first; compare records with accounts and ask each relevant person the same questions.",
+            "zh": "中立查證鑰匙使用紀錄、交接對象與尚未搜尋處，再比對紀錄與陳述，對相關人員使用相同問題。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -263,9 +263,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「鍵の利用記録、引継ぎ相手、未捜索場所」を中立に確認し、記録と供述を照合し、関係者ごとに同じ質問で確認する。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; compare records with accounts and ask each relevant person the same questions.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證鑰匙使用紀錄、交接對象與尚未搜尋處，再比對紀錄與陳述，對相關人員使用相同問題。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "記録と供述を照合し、関係者ごとに同じ質問で確認するが、「鍵の利用記録、引継ぎ相手、未捜索場所」の別の可能性は確認しません。",
+            "en": "Only compare records with accounts and ask each relevant person the same questions.",
+            "zh": "比對紀錄與陳述，對相關人員使用相同問題，但不查鑰匙使用紀錄、交接對象與尚未搜尋處的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：記録と供述を照合し、関係者ごとに同じ質問で確認するが、「鍵の利用記録、引継ぎ相手、未捜索場所」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only compare records with accounts and ask each relevant person the same questions.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：比對紀錄與陳述，對相關人員使用相同問題，但不查鑰匙使用紀錄、交接對象與尚未搜尋處的其他可能。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「鍵の利用記録、引継ぎ相手、未捜索場所」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat key-access logs, handoff recipients, and unsearched locations as a lie and press for an admission.",
+            "zh": "只憑鑰匙使用紀錄、交接對象與尚未搜尋處就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「鍵の利用記録、引継ぎ相手、未捜索場所」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat key-access logs, handoff recipients, and unsearched locations as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑鑰匙使用紀錄、交接對象與尚未搜尋處就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "捜索担当・期限・結果通知を決め、根拠なしに氏名を共有しない手順を明確にできますか？",
+        "en": "Can you make the procedure clear to set search owners, deadline, and notice while withholding names without evidence?",
+        "zh": "可以清楚說明如何訂定搜尋負責人、期限與通知方式，無證據不公開姓名嗎？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "確認済み事実と未確認事項を整理し、次の確認方法を合意します。",
-            "en": "I will separate confirmed facts from open points and agree on the next verification step.",
-            "zh": "我會區分已確認事實與未確認事項，並同意下一個查證步驟。"
+            "ja": "「機材を保全しつつ本人の名誉を守る調査範囲」を中立に確認し、捜索担当・期限・結果通知を決め、根拠なしに氏名を共有しない。",
+            "en": "Verify first; set search owners, deadline, and notice while withholding names without evidence.",
+            "zh": "中立查證兼顧設備保全與當事人名譽的調查範圍，再訂定搜尋負責人、期限與通知方式，無證據不公開姓名。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -390,9 +390,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「機材を保全しつつ本人の名誉を守る調査範囲」を中立に確認し、捜索担当・期限・結果通知を決め、根拠なしに氏名を共有しない。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; set search owners, deadline, and notice while withholding names without evidence.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證兼顧設備保全與當事人名譽的調查範圍，再訂定搜尋負責人、期限與通知方式，無證據不公開姓名。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "捜索担当・期限・結果通知を決め、根拠なしに氏名を共有しないが、「機材を保全しつつ本人の名誉を守る調査範囲」の別の可能性は確認しません。",
+            "en": "Only set search owners, deadline, and notice while withholding names without evidence.",
+            "zh": "訂定搜尋負責人、期限與通知方式，無證據不公開姓名，但不查兼顧設備保全與當事人名譽的調查範圍的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：捜索担当・期限・結果通知を決め、根拠なしに氏名を共有しないが、「機材を保全しつつ本人の名誉を守る調査範囲」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only set search owners, deadline, and notice while withholding names without evidence.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：訂定搜尋負責人、期限與通知方式，無證據不公開姓名，但不查兼顧設備保全與當事人名譽的調查範圍的其他可能。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「機材を保全しつつ本人の名誉を守る調査範囲」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat a search scope that protects the equipment and the person's reputation as a lie and press for an admission.",
+            "zh": "只憑兼顧設備保全與當事人名譽的調查範圍就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「機材を保全しつつ本人の名誉を守る調査範囲」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat a search scope that protects the equipment and the person's reputation as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑兼顧設備保全與當事人名譽的調查範圍就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "「最後の使用者だから犯人だと扱われた影響」を決めつけられ、正確に話しにくくなりました。",
+        "en": "Presuming the impact of being treated as guilty for being the last user made it harder to give an accurate account.",
+        "zh": "你預設因最後使用就被當成有罪的影響，讓我更難準確陳述。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "決めつけた印象を与えたことを認め、中立な質問に戻します。",
-            "en": "I recognize that I sounded prejudged and will return to neutral questions.",
-            "zh": "我承認剛才像先入為主，會回到中立提問。"
+            "ja": "「最後の使用者だから犯人だと扱われた影響」を中立に確認し、推測を謝罪し、アクセス可能者全員を同じ基準で確認し直す。",
+            "en": "Verify first; apologize for the inference and reassess all people with access equally.",
+            "zh": "中立查證因最後使用就被當成有罪的影響，再為推測道歉，並以相同標準重查所有可接觸者。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -507,9 +507,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「最後の使用者だから犯人だと扱われた影響」を中立に確認し、推測を謝罪し、アクセス可能者全員を同じ基準で確認し直す。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; apologize for the inference and reassess all people with access equally.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證因最後使用就被當成有罪的影響，再為推測道歉，並以相同標準重查所有可接觸者。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "推測を謝罪し、アクセス可能者全員を同じ基準で確認し直すが、「最後の使用者だから犯人だと扱われた影響」の別の可能性は確認しません。",
+            "en": "Only apologize for the inference and reassess all people with access equally.",
+            "zh": "為推測道歉，並以相同標準重查所有可接觸者，但不查因最後使用就被當成有罪的影響的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：推測を謝罪し、アクセス可能者全員を同じ基準で確認し直すが、「最後の使用者だから犯人だと扱われた影響」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only apologize for the inference and reassess all people with access equally.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：為推測道歉，並以相同標準重查所有可接觸者，但不查因最後使用就被當成有罪的影響的其他可能。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「最後の使用者だから犯人だと扱われた影響」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat the impact of being treated as guilty for being the last user as a lie and press for an admission.",
+            "zh": "只憑因最後使用就被當成有罪的影響就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「最後の使用者だから犯人だと扱われた影響」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat the impact of being treated as guilty for being the last user as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑因最後使用就被當成有罪的影響就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {

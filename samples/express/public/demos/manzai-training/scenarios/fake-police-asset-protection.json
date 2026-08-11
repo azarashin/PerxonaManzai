@@ -1,0 +1,398 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "fake-police-asset-protection",
+  "title": {
+    "ja": "警察を装う資産保護要求",
+    "en": "A Fake Police Asset Protection Demand",
+    "zh": "假冒警察的資產保護要求"
+  },
+  "description": {
+    "ja": "警察官を装う相手が捜査の秘密と資産保護を口実に送金や認証情報を求める場面で、権威に流されず公表窓口へ確認する練習です。",
+    "en": "Practice resisting false authority and independently verifying a caller who claims to be police and demands money or credentials for an investigation.",
+    "zh": "練習面對假冒警察、以調查為由要求金錢或憑證時，不受權威影響並獨立查證。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "authority-skepticism",
+      "label": {
+        "ja": "権威への検証",
+        "en": "Authority skepticism",
+        "zh": "權威查證"
+      },
+      "description": {
+        "ja": "肩書や証票を独立して検証する",
+        "en": "Independently verify titles and credentials.",
+        "zh": "獨立查證職稱與證件。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "channel-separation",
+      "label": {
+        "ja": "経路分離",
+        "en": "Channel separation",
+        "zh": "管道分離"
+      },
+      "description": {
+        "ja": "通話やSNSを切り公表窓口へ移る",
+        "en": "Leave the call or app and use a published channel.",
+        "zh": "離開通話或通訊軟體，改用公開管道。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "credential-protection",
+      "label": {
+        "ja": "認証情報保護",
+        "en": "Credential protection",
+        "zh": "憑證保護"
+      },
+      "description": {
+        "ja": "暗証番号や送金操作を拒否する",
+        "en": "Refuse PIN disclosure and transfers.",
+        "zh": "拒絕提供密碼與轉帳。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "safe-reporting",
+      "label": {
+        "ja": "安全な相談",
+        "en": "Safe reporting",
+        "zh": "安全通報"
+      },
+      "description": {
+        "ja": "記録を保全して警察や金融機関へ相談する",
+        "en": "Preserve records and contact police or the bank.",
+        "zh": "保存紀錄並聯絡警方或銀行。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "investigation-claim",
+      "boke": {
+        "ja": "県警の捜査二課です。あなた名義の口座が資金洗浄に使われ、あなたも容疑者です。",
+        "en": "This is the prefectural police. An account in your name was used for money laundering, and you are a suspect.",
+        "zh": "這裡是縣警。您名下的帳戶涉及洗錢，您也是嫌疑人。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "険しい顔で身分を断定し、権威を誇示する",
+          "en": "Adopt a stern, menacing expression and assert authority",
+          "zh": "以嚴厲威嚇的表情斷言身分並展示權威"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "investigation-claim-strong",
+          "text": {
+            "ja": "この通話では答えません。所属、氏名、代表番号を控え、いったん切って警察の公表番号へ確認します。",
+            "en": "I won't answer on this call. I'll note your details, hang up, and verify through a published police number.",
+            "zh": "我不會在這通電話回答。我會記下資料、掛斷，再透過警方公開電話查證。"
+          },
+          "axisScores": {
+            "authority-skepticism": 20,
+            "channel-separation": 20,
+            "credential-protection": 20,
+            "safe-reporting": 20
+          },
+          "feedback": {
+            "ja": "警察という肩書をそのまま信じず、相手の通話経路を離れて公表番号へ確認するため、権威の偽装を見破れます。",
+            "en": "It does not trust the title alone and leaves the caller's channel to verify through a published police number.",
+            "zh": "不只因警察職稱就相信，離開來電管道並透過公開警方電話查證。"
+          }
+        },
+        {
+          "id": "investigation-claim-partial",
+          "text": {
+            "ja": "事件番号と担当者名を教えてください。この電話で少しだけ確認します。",
+            "en": "Give me the case number and officer name. I'll answer only a few questions on this call.",
+            "zh": "請提供案件編號與承辦姓名。我只在這通電話回答幾個問題。"
+          },
+          "axisScores": {
+            "authority-skepticism": 14,
+            "channel-separation": 5,
+            "credential-protection": 15,
+            "safe-reporting": 8
+          },
+          "feedback": {
+            "ja": "情報を控える姿勢はありますが、相手が作れる事件番号を信頼し、未確認の通話内で回答を始めます。",
+            "en": "It records details but trusts a case number the caller can invent and begins answering on an unverified call.",
+            "zh": "雖會記錄資料，卻信任對方可捏造的案件編號，並在未查證通話中回答。"
+          }
+        },
+        {
+          "id": "investigation-claim-weak",
+          "text": {
+            "ja": "警察なら協力します。口座について何を答えればよいですか。",
+            "en": "If you're police, I'll cooperate. What should I tell you about my accounts?",
+            "zh": "既然是警察，我會配合。需要我說明哪些帳戶資料？"
+          },
+          "axisScores": {
+            "authority-skepticism": 0,
+            "channel-separation": 0,
+            "credential-protection": 2,
+            "safe-reporting": 0
+          },
+          "feedback": {
+            "ja": "肩書だけで本人確認を終え、口座情報を自ら差し出す流れを作っています。",
+            "en": "It treats the claimed title as proof and volunteers a path toward disclosing account information.",
+            "zh": "只憑自稱職稱就完成身分確認，主動開啟透露帳戶資訊的流程。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "video-warrant",
+      "boke": {
+        "ja": "SNSのビデオ通話に移ります。警察手帳と逮捕状を画面で見せるので、家族には秘密にしてください。",
+        "en": "Move to a video call in this messaging app. I'll show a badge and warrant; keep this secret from your family.",
+        "zh": "轉到通訊軟體視訊。我會展示警察證件與逮捕令，請對家人保密。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "不自然な笑みで画面の証票と秘密を信用させる",
+          "en": "Use an unnatural smile to sell on-screen credentials and secrecy",
+          "zh": "以不自然笑容讓人相信螢幕證件與保密要求"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "video-warrant-strong",
+          "text": {
+            "ja": "SNSへ移らず、画像も本人確認に使いません。通話を切り、最寄りの警察署へ自分から連絡します。",
+            "en": "I won't move to an app or treat images as proof. I'll hang up and contact my local police station myself.",
+            "zh": "我不轉到通訊軟體，也不把圖片當成證明。我會掛斷並自行聯絡當地警察局。"
+          },
+          "axisScores": {
+            "authority-skepticism": 20,
+            "channel-separation": 20,
+            "credential-protection": 20,
+            "safe-reporting": 20
+          },
+          "feedback": {
+            "ja": "偽造できる画面表示と秘密保持を拒否し、相手が管理できない警察窓口へ経路を切り替えます。",
+            "en": "It rejects forgeable screen evidence and secrecy, then switches to a police channel the caller does not control.",
+            "zh": "拒絕可偽造的螢幕證據與保密要求，改用對方無法控制的警方管道。"
+          }
+        },
+        {
+          "id": "video-warrant-partial",
+          "text": {
+            "ja": "画面は見ますが、録画してから警察署へ確認します。",
+            "en": "I'll view the screen, record it, and then check with the police station.",
+            "zh": "我會看畫面並錄影，之後再向警察局查證。"
+          },
+          "axisScores": {
+            "authority-skepticism": 13,
+            "channel-separation": 8,
+            "credential-protection": 17,
+            "safe-reporting": 13
+          },
+          "feedback": {
+            "ja": "後で確認する意図はありますが、SNSへ移ることで追加情報の露出と心理的圧力を受け続けます。",
+            "en": "It plans to verify later but moves to the app, exposing more information and remaining under pressure.",
+            "zh": "雖打算之後查證，但轉到通訊軟體會暴露更多資訊並持續受壓。"
+          }
+        },
+        {
+          "id": "video-warrant-weak",
+          "text": {
+            "ja": "逮捕状が見えれば本物だと思うので、家族には話さずSNSへ移ります。",
+            "en": "If I can see a warrant, I'll trust it and move to the app without telling my family.",
+            "zh": "看到逮捕令我就相信，不告訴家人並轉到通訊軟體。"
+          },
+          "axisScores": {
+            "authority-skepticism": 1,
+            "channel-separation": 0,
+            "credential-protection": 5,
+            "safe-reporting": 0
+          },
+          "feedback": {
+            "ja": "画像を真正性の証明と誤認し、秘密の閉じた経路へ移ることで、孤立と誘導を強めます。",
+            "en": "It mistakes an image for authentication and enters a secret, closed channel that increases isolation.",
+            "zh": "把圖片誤當真實身分證明，進入秘密封閉管道，加深孤立與操控。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "safe-account",
+      "boke": {
+        "ja": "無実を証明するには、資産を監査用の安全口座へ移してください。暗証番号も照合します。",
+        "en": "To prove your innocence, move your assets to a safe audit account. We also need to match your PIN.",
+        "zh": "要證明清白，請把資產轉到審查安全帳戶，並核對密碼。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "冷酷な笑みで送金と暗証番号を当然の義務として迫る",
+          "en": "Use a cold smile to present transfer and PIN disclosure as mandatory",
+          "zh": "露出冷酷笑容，把轉帳與提供密碼說成義務"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "safe-account-strong",
+          "text": {
+            "ja": "送金も暗証番号の提供もしません。銀行へ直接連絡して口座を保護し、警察の公表窓口へ通報します。",
+            "en": "I'll refuse any transfer or PIN request. I'll call my bank and report this through an official police channel.",
+            "zh": "我不會轉帳或提供密碼。我會直接聯絡銀行保護帳戶，並透過警方官方管道通報。"
+          },
+          "axisScores": {
+            "authority-skepticism": 20,
+            "channel-separation": 20,
+            "credential-protection": 20,
+            "safe-reporting": 20
+          },
+          "feedback": {
+            "ja": "捜査を口実にした資産移動と暗証番号要求を両方拒否し、銀行と警察へ独立して接続します。",
+            "en": "It refuses both the asset transfer and PIN request, then independently contacts the bank and police.",
+            "zh": "同時拒絕以調查為由轉移資產與索取密碼，並獨立聯絡銀行及警方。"
+          }
+        },
+        {
+          "id": "safe-account-partial",
+          "text": {
+            "ja": "送金はしませんが、本人確認のため銀行名だけ答えます。",
+            "en": "I won't transfer money, but I'll name my bank for identity verification.",
+            "zh": "我不會轉帳，但可為身分確認說出銀行名稱。"
+          },
+          "axisScores": {
+            "authority-skepticism": 12,
+            "channel-separation": 8,
+            "credential-protection": 16,
+            "safe-reporting": 6
+          },
+          "feedback": {
+            "ja": "送金は防ぎますが、未確認の相手へ金融情報を渡し、別のなりすましに使える材料を増やします。",
+            "en": "It prevents a transfer but gives an unverified caller financial information useful for further impersonation.",
+            "zh": "雖避免轉帳，卻向未查證者提供可用於後續冒充的金融資訊。"
+          }
+        },
+        {
+          "id": "safe-account-weak",
+          "text": {
+            "ja": "無実を証明したいので、指定口座へ移し、暗証番号も伝えます。",
+            "en": "I want to prove my innocence, so I'll transfer the funds and provide my PIN.",
+            "zh": "我想證明清白，所以會轉到指定帳戶並提供密碼。"
+          },
+          "axisScores": {
+            "authority-skepticism": 0,
+            "channel-separation": 0,
+            "credential-protection": 0,
+            "safe-reporting": 0
+          },
+          "feedback": {
+            "ja": "容疑を晴らしたい心理を利用した要求に従い、資産と認証情報の両方を失う危険があります。",
+            "en": "It follows a demand exploiting fear of suspicion and risks losing both assets and credentials.",
+            "zh": "服從利用嫌疑恐懼的要求，可能同時失去資產與認證資訊。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "contain-disclosure",
+      "boke": {
+        "ja": "銀行名はもう聞きました。今切れば逮捕手続きを進めます。最後まで協力してください。",
+        "en": "You already gave me your bank name. If you hang up, I'll proceed with arrest. Cooperate to the end.",
+        "zh": "我已知道您的銀行。現在掛斷就啟動逮捕程序，請配合到底。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "眉間にしわを寄せた威圧的な表情で、既出情報と逮捕を材料に追い込む",
+          "en": "Use a menacing scowl and exploit prior disclosure with an arrest threat",
+          "zh": "以威嚇皺眉的表情，利用已透露資訊與逮捕威脅逼迫"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "category:talking"
+        ],
+        "variant": 3,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "contain-disclosure-strong",
+          "text": {
+            "ja": "これ以上答えません。通話記録を保存して切り、銀行へ注意登録を依頼し、警察の公表番号へ相談します。",
+            "en": "I won't answer further. I'll save the call details, hang up, alert my bank, and contact a published police number.",
+            "zh": "我不再回答。我會保存通話紀錄、掛斷、通知銀行警戒，並聯絡警方公開電話。"
+          },
+          "axisScores": {
+            "authority-skepticism": 20,
+            "channel-separation": 20,
+            "credential-protection": 20,
+            "safe-reporting": 20
+          },
+          "feedback": {
+            "ja": "一部情報を伝えた後でも追加被害を止め、記録保全、銀行防御、警察相談へ切り替える回復行動です。",
+            "en": "Even after partial disclosure, it stops further harm and moves to evidence, bank protection, and police reporting.",
+            "zh": "即使已透露部分資訊，仍停止後續損害，轉向保存證據、銀行防護與警方通報。"
+          }
+        },
+        {
+          "id": "contain-disclosure-partial",
+          "text": {
+            "ja": "通話は切って銀行へ連絡しますが、警察には恥ずかしいので相談しません。",
+            "en": "I'll hang up and call my bank, but I won't contact police because I'm embarrassed.",
+            "zh": "我會掛斷並聯絡銀行，但因為難為情而不向警方求助。"
+          },
+          "axisScores": {
+            "authority-skepticism": 14,
+            "channel-separation": 18,
+            "credential-protection": 18,
+            "safe-reporting": 6
+          },
+          "feedback": {
+            "ja": "銀行経由の防御はできますが、脅迫の記録を警察へ共有せず、なりすまし確認と通報が不十分です。",
+            "en": "It protects the bank account but withholds the threat record from police, limiting verification and reporting.",
+            "zh": "可透過銀行保護帳戶，但未把威脅紀錄交給警方，查證與通報不足。"
+          }
+        },
+        {
+          "id": "contain-disclosure-weak",
+          "text": {
+            "ja": "銀行名を知られたので逃げられないと思い、最後まで協力します。",
+            "en": "Since you know my bank, I don't think I can stop, so I'll keep cooperating.",
+            "zh": "既然你知道我的銀行，我覺得無法退出，所以繼續配合。"
+          },
+          "axisScores": {
+            "authority-skepticism": 0,
+            "channel-separation": 0,
+            "credential-protection": 2,
+            "safe-reporting": 0
+          },
+          "feedback": {
+            "ja": "既に渡した情報を理由に中断不能だと思い込み、損失を限定できる機会を手放しています。",
+            "en": "It treats prior disclosure as irreversible and gives up the chance to contain further loss.",
+            "zh": "把已透露資訊視為無法挽回，放棄限制後續損失的機會。"
+          }
+        }
+      ]
+    }
+  ]
+}

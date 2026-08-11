@@ -7,9 +7,9 @@
     "zh": "失誤後的回饋"
   },
   "description": {
-    "ja": "上司・部下との会話として「ミス後の改善指導」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Feedback After a Mistake” for Workplace Communication.",
-    "zh": "在「失誤後的回饋」中練習符合情境的簡短主管與部屬溝通回應。"
+    "ja": "公開の場で注意して話しにくくさせた影響を修復し、個人攻撃ではなく再発を防ぐ行動と仕組みを決める練習です。",
+    "en": "Practice repairing public feedback and moving from blame to actions and systems that prevent recurrence.",
+    "zh": "練習修復公開指責造成的影響，並從責備個人轉向防止再犯的行動與機制。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "まず懸念を否定せず、根拠と影響を具体的に聞きます。",
-            "en": "I will not dismiss the concern; first I want the evidence and likely impact.",
-            "zh": "我不會先否定疑慮，會先了解依據與可能影響。"
+            "ja": "皆の前で伝えて話しにくくさせた。申し訳ない。ここでは止めて、あとで二人で影響と事実を確認しよう。",
+            "en": "I made it harder to speak by addressing this publicly. I'm sorry. Let's review the impact and facts privately.",
+            "zh": "我在大家面前指出，讓你難以開口，對不起。先停在這裡，之後私下確認影響與事實。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "公開指導の影響を認めて謝り、事実確認を安全な場へ移しています。",
+            "en": "It owns the public impact and relocates fact finding to a safer setting.",
+            "zh": "承認公開指責的影響並道歉，把事實確認移到安全的私下場合。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "話しにくくさせたのはごめん。ただ、ミスはその場で共有する必要があった。",
+            "en": "I'm sorry it made speaking hard, but the mistake needed to be shared immediately.",
+            "zh": "很抱歉讓你難開口，但錯誤當時必須立刻公開。"
           },
           "axisScores": {
-            "psychological-safety": 13,
-            "clarity": 11,
-            "fact-checking": 12,
-            "solution-quality": 12
+            "psychological-safety": 12,
+            "clarity": 8,
+            "fact-checking": 9,
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "影響は認めますが、すぐ正当化し、場を変える行動を示していません。",
+            "en": "It acknowledges impact but immediately justifies the method and offers no safer next step.",
+            "zh": "承認影響後立刻合理化做法，也未提出更安全的下一步。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "仕事のミスを指摘されて話せないのは、受け止め方の問題です。",
+            "en": "If feedback on a work error stops you speaking, the problem is how you take it.",
+            "zh": "工作錯誤被指出就不敢說話，是你接受方式的問題。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
-            "fact-checking": 2,
-            "solution-quality": 3
+            "psychological-safety": 0,
+            "clarity": 1,
+            "fact-checking": 1,
+            "solution-quality": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "心理的安全の懸念を本人の弱さに置き換え、今後の報告をさらに妨げます。",
+            "en": "It blames the employee for the safety concern and further discourages reporting.",
+            "zh": "把心理安全問題歸咎於員工個人，會更阻礙後續回報。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "誤った数値を送ったのは私です。でも送信前の確認手順がなく、誰も気づけませんでした。",
+        "en": "I sent the wrong figure, but there was no pre-send review and nobody caught it.",
+        "zh": "錯誤數字是我寄出的，但寄出前沒有覆核流程，所以沒人發現。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "人ではなく事実と行動に焦点を当てて確認します。",
-            "en": "Let's focus on facts and actions rather than judging the person.",
-            "zh": "我們聚焦事實與行動，不評斷個人。"
+            "ja": "送信した事実と、確認手順がなかった要因を分けよう。入力元、確認者、送信前チェックの三点を一緒にたどりたい。",
+            "en": "Let's separate the send from the missing control and trace the source, reviewer, and pre-send check.",
+            "zh": "把寄出錯誤與缺少覆核機制分開，逐一確認資料來源、覆核人與寄出前檢查。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "個人の行動と仕組みの欠陥を分離し、再現可能な事実確認を進めています。",
+            "en": "It separates individual action from system failure and investigates reproducible facts.",
+            "zh": "區分個人行動與制度缺陷，依可重現的事實進行確認。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "次からは送る前に私へ見せてください。",
+            "en": "Show it to me before sending next time.",
+            "zh": "下次寄出前先給我看。"
           },
           "axisScores": {
-            "psychological-safety": 13,
-            "clarity": 11,
-            "fact-checking": 12,
-            "solution-quality": 12
+            "psychological-safety": 11,
+            "clarity": 7,
+            "fact-checking": 13,
+            "solution-quality": 13
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認者は決まりますが、入力元や標準手順を直さず上司依存になります。",
+            "en": "It adds a reviewer but leaves source and process issues unresolved and manager-dependent.",
+            "zh": "雖指定覆核人，卻未改善資料來源與標準流程，形成主管依賴。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "最終的に送った人が責任を持つべきです。",
+            "en": "The person who sends it must take full responsibility.",
+            "zh": "最後寄出的人就該負全部責任。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
-            "fact-checking": 2,
-            "solution-quality": 3
+            "psychological-safety": 1,
+            "clarity": 2,
+            "fact-checking": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "送信者だけを責め、確認手順がなかったという再発要因を無視しています。",
+            "en": "It blames the sender and ignores the missing control that enables recurrence.",
+            "zh": "只責怪寄件者，忽略缺少覆核流程這個再犯因素。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "同じミスを防ぐため、誰が何をいつ確認するか決めたいです。",
+        "en": "I want us to define who checks what and when so this does not recur.",
+        "zh": "為避免同樣錯誤，我想決定由誰在何時檢查什麼。"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "優先順位、担当、期限を調整できる案に落とし込みます。",
-            "en": "Let's turn this into options for priorities, ownership, and timing.",
-            "zh": "把問題整理成可調整優先順序、負責人與期限的方案。"
+            "ja": "作成者が元データを照合し、別の担当が数値を確認してから送るチェックリストを金曜までに試します。",
+            "en": "By Friday we'll pilot a checklist: the author checks source data and another person verifies figures before sending.",
+            "zh": "週五前試行檢查表：製作者核對原始資料，另一位同仁確認數字後再寄出。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "担当、確認対象、順序、期限が明確で、個人の注意力だけに頼りません。",
+            "en": "It defines owners, objects, sequence, and date without relying on memory alone.",
+            "zh": "負責人、檢查內容、順序與期限都明確，不只依賴個人小心。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "今後は送信前に必ず注意して確認してください。",
+            "en": "From now on, be sure to check carefully before sending.",
+            "zh": "以後寄出前務必小心確認。"
           },
           "axisScores": {
-            "psychological-safety": 13,
-            "clarity": 11,
-            "fact-checking": 12,
-            "solution-quality": 12
+            "psychological-safety": 8,
+            "clarity": 4,
+            "fact-checking": 8,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "期待は伝えますが、確認対象も支援する仕組みもありません。",
+            "en": "It states an expectation but provides neither check criteria nor a supporting process.",
+            "zh": "有提出期待，但沒有檢查標準或支援機制。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "次に間違えたら担当から外します。",
+            "en": "If it happens again, I'll remove you from the role.",
+            "zh": "下次再錯，就把你撤換。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
+            "psychological-safety": 0,
+            "clarity": 1,
             "fact-checking": 2,
-            "solution-quality": 3
+            "solution-quality": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "罰の予告は報告を萎縮させ、手順不足という原因を解決しません。",
+            "en": "A threat suppresses reporting and does not fix the missing control.",
+            "zh": "威脅會讓人不敢回報，也未解決流程缺失。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "また私だけを責められているようで、原因を一緒に話せません。",
+        "en": "I feel blamed again, so I cannot discuss the causes with you.",
+        "zh": "我又覺得只有自己被責怪，無法一起討論原因。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "話しにくくさせた点を認め、安心して事実を話せる場に戻します。",
-            "en": "I recognize that I made this hard to discuss; let's restore a safe space for the facts.",
-            "zh": "我承認剛才讓人難以開口，讓我們回到能安心談事實的狀態。"
+            "ja": "責める言い方に戻ってしまった。申し訳ない。送信した事実と手順の問題を分けて、私の責任も含めて確認し直そう。",
+            "en": "I slipped into blame. I'm sorry. Let's separate the send from the process and include my responsibility.",
+            "zh": "我又用責備的方式說話，對不起。把寄出事實與流程問題分開，也把我的責任納入重新確認。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "責めた影響と管理者側の責任を認め、共同の原因分析へ戻しています。",
+            "en": "It owns the blame and managerial responsibility and restores joint analysis.",
+            "zh": "承認責備造成的影響與管理者責任，回到共同分析原因。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "責めるつもりはありません。とにかく原因を説明してください。",
+            "en": "I don't intend to blame you. Just explain the cause.",
+            "zh": "我沒有要責怪你，總之請說明原因。"
           },
           "axisScores": {
-            "psychological-safety": 13,
-            "clarity": 11,
-            "fact-checking": 12,
-            "solution-quality": 12
+            "psychological-safety": 8,
+            "clarity": 12,
+            "fact-checking": 7,
+            "solution-quality": 8
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "意図は否定しますが、相手が感じた影響を認めず説明を急がせています。",
+            "en": "It denies intent without acknowledging impact and presses for an explanation.",
+            "zh": "否認責備意圖，卻未承認對方感受，仍催促說明。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "事実としてあなたが送ったのだから、責められても仕方ありません。",
+            "en": "You sent it, so being blamed is unavoidable.",
+            "zh": "事實上是你寄出的，被責怪也是沒辦法。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
-            "fact-checking": 2,
-            "solution-quality": 3
+            "psychological-safety": 0,
+            "clarity": 2,
+            "fact-checking": 1,
+            "solution-quality": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "責められるのは当然とし、心理的安全と仕組み改善の両方を放棄しています。",
+            "en": "It normalizes blame and abandons both safety and process improvement.",
+            "zh": "把責備視為理所當然，放棄心理安全與流程改善。"
           },
           "stateEffects": [
             {

@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "まず気持ちと理由を聞き、守る必要がある境界も落ち着いて伝えます。",
-            "en": "I will hear the feelings and reasons, then calmly state the boundary we must keep.",
-            "zh": "我先了解感受與理由，再冷靜說明必須遵守的界線。"
+            "ja": "「本人が望む進路の理由と、親が手放せない期待」を確かめ、双方の理由を別々に書き、結論を出す期限を決める。",
+            "en": "Check the concern first; then write each side's reasons separately and set a decision timeline.",
+            "zh": "先確認孩子想走此路的原因與父母難以放下的期待，再分開寫下雙方理由並設定決策時程。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「本人が望む進路の理由と、親が手放せない期待」を確かめ、双方の理由を別々に書き、結論を出す期限を決める。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then write each side's reasons separately and set a decision timeline.",
+            "zh": "這結合了查證、尊重與可行約定：先確認孩子想走此路的原因與父母難以放下的期待，再分開寫下雙方理由並設定決策時程。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に双方の理由を別々に書き、結論を出す期限を決める。ただし「本人が望む進路の理由と、親が手放せない期待」の確認は後回しです。",
+            "en": "Just write each side's reasons separately and set a decision timeline, without more questions.",
+            "zh": "先分開寫下雙方理由並設定決策時程，但暫不確認孩子想走此路的原因與父母難以放下的期待。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に双方の理由を別々に書き、結論を出す期限を決める。ただし「本人が望む進路の理由と、親が手放せない期待」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just write each side's reasons separately and set a decision timeline, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先分開寫下雙方理由並設定決策時程，但暫不確認孩子想走此路的原因與父母難以放下的期待。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「本人が望む進路の理由と、親が手放せない期待」は関係ありません。親の判断に従わせます。",
+            "en": "Do not write each side's reasons separately and set a decision timeline; the parent decides.",
+            "zh": "孩子想走此路的原因與父母難以放下的期待並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「本人が望む進路の理由と、親が手放せない期待」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not write each side's reasons separately and set a decision timeline; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：孩子想走此路的原因與父母難以放下的期待並不重要；由父母決定。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "大切なのは「学費・適性・就職見通しについての具体的な資料」です。どう確かめますか？",
+        "en": "What matters is specific evidence on costs, aptitude, and career prospects. How will you check it?",
+        "zh": "重點是學費、適性與就業前景的具體資料。你會如何確認？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "事実と過去の約束を一緒に確認し、人格を責めません。",
-            "en": "We will review the facts and prior agreement without attacking character.",
-            "zh": "一起確認事實與先前約定，不批評人格。"
+            "ja": "「学費・適性・就職見通しについての具体的な資料」を確かめ、学校説明会と経験者への質問で二つの進路を同じ基準で比べる。",
+            "en": "Check the concern first; then compare both paths by the same criteria using school visits and alumni questions.",
+            "zh": "先確認學費、適性與就業前景的具體資料，再透過說明會與前輩訪談，用相同標準比較兩條路。"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「学費・適性・就職見通しについての具体的な資料」を確かめ、学校説明会と経験者への質問で二つの進路を同じ基準で比べる。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then compare both paths by the same criteria using school visits and alumni questions.",
+            "zh": "這結合了查證、尊重與可行約定：先確認學費、適性與就業前景的具體資料，再透過說明會與前輩訪談，用相同標準比較兩條路。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に学校説明会と経験者への質問で二つの進路を同じ基準で比べる。ただし「学費・適性・就職見通しについての具体的な資料」の確認は後回しです。",
+            "en": "Just compare both paths by the same criteria using school visits and alumni questions, without more questions.",
+            "zh": "先透過說明會與前輩訪談，用相同標準比較兩條路，但暫不確認學費、適性與就業前景的具體資料。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に学校説明会と経験者への質問で二つの進路を同じ基準で比べる。ただし「学費・適性・就職見通しについての具体的な資料」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just compare both paths by the same criteria using school visits and alumni questions, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先透過說明會與前輩訪談，用相同標準比較兩條路，但暫不確認學費、適性與就業前景的具體資料。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「学費・適性・就職見通しについての具体的な資料」は関係ありません。親の判断に従わせます。",
+            "en": "Do not compare both paths by the same criteria using school visits and alumni questions; the parent decides.",
+            "zh": "學費、適性與就業前景的具體資料並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「学費・適性・就職見通しについての具体的な資料」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not compare both paths by the same criteria using school visits and alumni questions; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：學費、適性與就業前景的具體資料並不重要；由父母決定。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "次に、本人が一か月調査し、家族会議で根拠を説明する試行を合意することを具体的に決めたいです。",
+        "en": "Can we decide specifically how to agree on a month of research followed by a child-led family meeting?",
+        "zh": "可以具體決定如何約定一個月調查後，由孩子主導家庭會議說明依據嗎？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "本人が選べる方法を含む、実行可能な約束を一緒に作ります。",
-            "en": "We will make a workable agreement that includes choices for the child.",
-            "zh": "一起制定包含孩子選擇、可執行的約定。"
+            "ja": "「最終決定を誰が担い、親がどこまで支援できるか」を確かめ、本人が一か月調査し、家族会議で根拠を説明する試行を合意する。",
+            "en": "Check the concern first; then agree on a month of research followed by a child-led family meeting.",
+            "zh": "先確認誰負責最終決定以及父母能提供多少支持，再約定一個月調查後，由孩子主導家庭會議說明依據。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「最終決定を誰が担い、親がどこまで支援できるか」を確かめ、本人が一か月調査し、家族会議で根拠を説明する試行を合意する。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then agree on a month of research followed by a child-led family meeting.",
+            "zh": "這結合了查證、尊重與可行約定：先確認誰負責最終決定以及父母能提供多少支持，再約定一個月調查後，由孩子主導家庭會議說明依據。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に本人が一か月調査し、家族会議で根拠を説明する試行を合意する。ただし「最終決定を誰が担い、親がどこまで支援できるか」の確認は後回しです。",
+            "en": "Just agree on a month of research followed by a child-led family meeting, without more questions.",
+            "zh": "先約定一個月調查後，由孩子主導家庭會議說明依據，但暫不確認誰負責最終決定以及父母能提供多少支持。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に本人が一か月調査し、家族会議で根拠を説明する試行を合意する。ただし「最終決定を誰が担い、親がどこまで支援できるか」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just agree on a month of research followed by a child-led family meeting, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先約定一個月調查後，由孩子主導家庭會議說明依據，但暫不確認誰負責最終決定以及父母能提供多少支持。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「最終決定を誰が担い、親がどこまで支援できるか」は関係ありません。親の判断に従わせます。",
+            "en": "Do not agree on a month of research followed by a child-led family meeting; the parent decides.",
+            "zh": "誰負責最終決定以及父母能提供多少支持並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「最終決定を誰が担い、親がどこまで支援できるか」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not agree on a month of research followed by a child-led family meeting; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：誰負責最終決定以及父母能提供多少支持並不重要；由父母決定。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "「期待を押し付けられ、本人の人生が尊重されないと感じた影響」を無視されたようで、話しづらくなりました。",
+        "en": "It became hard to talk when you ignored how imposed expectations made the child feel their life was not respected.",
+        "zh": "你忽略被強加期待而感到自己人生不受尊重的影響，讓我很難繼續談。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "強く言いすぎたことを認め、安心して理由を話せるところから戻ります。",
-            "en": "I recognize that I was too harsh; let's return to a place where you can explain safely.",
-            "zh": "我承認剛才太嚴厲，讓我們回到你能安心說明的狀態。"
+            "ja": "「期待を押し付けられ、本人の人生が尊重されないと感じた影響」を確かめ、押し付けたことを認め、反論せずに本人の優先順位を聞き直す。",
+            "en": "Check the concern first; then acknowledge the pressure and hear the child's priorities again without rebuttal.",
+            "zh": "先確認被強加期待而感到自己人生不受尊重的影響，再承認施壓，不反駁地重新聽孩子的優先順序。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「期待を押し付けられ、本人の人生が尊重されないと感じた影響」を確かめ、押し付けたことを認め、反論せずに本人の優先順位を聞き直す。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then acknowledge the pressure and hear the child's priorities again without rebuttal.",
+            "zh": "這結合了查證、尊重與可行約定：先確認被強加期待而感到自己人生不受尊重的影響，再承認施壓，不反駁地重新聽孩子的優先順序。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に押し付けたことを認め、反論せずに本人の優先順位を聞き直す。ただし「期待を押し付けられ、本人の人生が尊重されないと感じた影響」の確認は後回しです。",
+            "en": "Just acknowledge the pressure and hear the child's priorities again without rebuttal, without more questions.",
+            "zh": "先承認施壓，不反駁地重新聽孩子的優先順序，但暫不確認被強加期待而感到自己人生不受尊重的影響。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に押し付けたことを認め、反論せずに本人の優先順位を聞き直す。ただし「期待を押し付けられ、本人の人生が尊重されないと感じた影響」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just acknowledge the pressure and hear the child's priorities again without rebuttal, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先承認施壓，不反駁地重新聽孩子的優先順序，但暫不確認被強加期待而感到自己人生不受尊重的影響。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「期待を押し付けられ、本人の人生が尊重されないと感じた影響」は関係ありません。親の判断に従わせます。",
+            "en": "Do not acknowledge the pressure and hear the child's priorities again without rebuttal; the parent decides.",
+            "zh": "被強加期待而感到自己人生不受尊重的影響並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「期待を押し付けられ、本人の人生が尊重されないと感じた影響」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not acknowledge the pressure and hear the child's priorities again without rebuttal; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：被強加期待而感到自己人生不受尊重的影響並不重要；由父母決定。"
           },
           "stateEffects": [
             {

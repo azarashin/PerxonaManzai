@@ -7,9 +7,9 @@
     "zh": "不切實際的期限"
   },
   "description": {
-    "ja": "上司・部下との会話として「実現困難な納期」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “An Unrealistic Deadline” for Workplace Communication.",
-    "zh": "在「不切實際的期限」中練習符合情境的簡短主管與部屬溝通回應。"
+    "ja": "品質を守れないという部下の懸念を、作業量と体制で確認し、納期・範囲・要員の選択肢へ変える練習です。",
+    "en": "Practice turning a quality concern into evidence-based choices among deadline, scope, and staffing.",
+    "zh": "練習把無法維持品質的疑慮，以工作量與人力查核後轉成期限、範圍與增員選項。"
   },
   "evaluationAxes": [
     {
@@ -95,9 +95,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "まず懸念を否定せず、根拠と影響を具体的に聞きます。",
-            "en": "I will not dismiss the concern; first I want the evidence and likely impact.",
-            "zh": "我不會先否定疑慮，會先了解依據與可能影響。"
+            "ja": "懸念を知らせてくれてありがとう。残作業、今の人数、予定通りなら省かれる確認を順に見せてください。",
+            "en": "Thanks for raising it. Show me the remaining work, current capacity, and which checks the date would force us to skip.",
+            "zh": "謝謝你提出疑慮。請依序說明剩餘工作、現有人力及照原期限會被省略的檢查。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -106,47 +106,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "発言しやすさを守り、納期判断に必要な作業量と品質影響を具体化しています。",
+            "en": "It protects speaking up and gathers the workload and quality impact needed for a decision.",
+            "zh": "維持提出疑慮的安全感，並具體取得決策所需的工作量與品質影響。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "品質が落ちるなら、納期を延ばせるか上に相談します。",
+            "en": "If quality will fall, I'll ask leadership whether the date can move.",
+            "zh": "若品質會下降，我會向上級詢問能否延後。"
           },
           "axisScores": {
-            "psychological-safety": 13,
-            "clarity": 11,
+            "psychological-safety": 14,
+            "clarity": 8,
             "fact-checking": 12,
-            "solution-quality": 12
+            "solution-quality": 14
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "懸念を受け止めて相談しますが、根拠とほかの選択肢をまだ整理していません。",
+            "en": "It takes the concern upward but lacks evidence and alternative levers.",
+            "zh": "有接受疑慮並向上反映，但尚未整理依據與其他選項。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "納期は決定済みです。品質は工夫して守ってください。",
+            "en": "The date is fixed. Find a way to preserve quality.",
+            "zh": "期限已定，請自行想辦法維持品質。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
-            "fact-checking": 2,
-            "solution-quality": 3
+            "psychological-safety": 0,
+            "clarity": 1,
+            "fact-checking": 1,
+            "solution-quality": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "制約を部下へ押し戻し、リスクを隠す動機を作って心理的安全を損ないます。",
+            "en": "It pushes the conflict onto the employee and encourages hidden risk.",
+            "zh": "把衝突推回部下，促使風險被隱瞞並損害心理安全。"
           }
         }
       ]
@@ -154,9 +154,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "テストに三日必要ですが、残り二日で担当は二人だけです。省けば重大な不具合を見逃します。",
+        "en": "Testing needs three days, but two people have only two days left. Skipping it risks a serious defect.",
+        "zh": "測試需要三天，但只剩兩天且只有兩人；省略會漏掉重大缺陷。"
       },
       "reaction": {
         "description": {
@@ -176,9 +176,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "人ではなく事実と行動に焦点を当てて確認します。",
-            "en": "Let's focus on facts and actions rather than judging the person.",
-            "zh": "我們聚焦事實與行動，不評斷個人。"
+            "ja": "二人二日では必要工数を満たせませんね。テスト範囲と重大不具合の影響を数値にして、判断材料にします。",
+            "en": "Two people over two days cannot cover the effort. Let's quantify test scope and serious-defect impact for the decision.",
+            "zh": "兩人兩天不足以完成工時。我們把測試範圍與重大缺陷影響量化，作為決策依據。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -187,47 +187,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "容量不足と品質リスクを人の能力ではなく数値で扱い、上位判断へつなげています。",
+            "en": "It frames capacity and risk as evidence rather than personal failure.",
+            "zh": "以數據而非個人能力呈現容量不足與品質風險，便於上級決策。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "残業できる人がいるか確認しましょう。",
+            "en": "Let's see whether anyone can work overtime.",
+            "zh": "先確認有沒有人能加班。"
           },
           "axisScores": {
-            "psychological-safety": 13,
-            "clarity": 11,
+            "psychological-safety": 9,
+            "clarity": 8,
             "fact-checking": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "要員面の一案ですが、テスト範囲と残業による品質低下を検討していません。",
+            "en": "It explores staffing but not test scope or fatigue risk.",
+            "zh": "有探索人力選項，但未檢視測試範圍或疲勞風險。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "見つからない程度の不具合なら、今回は許容しましょう。",
+            "en": "If a defect is hard to find, let's accept it this time.",
+            "zh": "若缺陷不容易被發現，這次就接受吧。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
-            "fact-checking": 2,
-            "solution-quality": 3
+            "psychological-safety": 1,
+            "clarity": 2,
+            "fact-checking": 0,
+            "solution-quality": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "重大不具合という情報を無視して品質リスクを隠し、説明責任を果たしません。",
+            "en": "It ignores the stated severity and conceals risk instead of escalating it.",
+            "zh": "忽略重大缺陷資訊並掩蓋風險，未盡說明責任。"
           }
         }
       ]
@@ -235,9 +235,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "予定日、機能範囲、追加要員のどれを動かすか、責任者に選んでもらえますか。",
+        "en": "Can the sponsor choose whether to move the date, reduce scope, or add staff?",
+        "zh": "可以請負責人決定要調整日期、縮小範圍或增加人力嗎？"
       },
       "reaction": {
         "description": {
@@ -257,9 +257,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "優先順位、担当、期限を調整できる案に落とし込みます。",
-            "en": "Let's turn this into options for priorities, ownership, and timing.",
-            "zh": "把問題整理成可調整優先順序、負責人與期限的方案。"
+            "ja": "三案ごとの費用、完了日、残る品質リスクを今日中に整理し、責任者へ選択を求めます。",
+            "en": "Today I'll summarize cost, finish date, and residual risk for all three options and ask the sponsor to choose.",
+            "zh": "今天內整理三個方案的成本、完成日與剩餘風險，請負責人選擇。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -268,47 +268,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "選択肢と結果を可視化し、現場だけに無理な判断を負わせません。",
+            "en": "It makes tradeoffs visible and puts the decision with the accountable sponsor.",
+            "zh": "把取捨結果透明化，不讓現場獨自承擔不合理決策。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "納期延長案を中心に責任者へ相談します。",
+            "en": "I'll mainly ask the sponsor about extending the deadline.",
+            "zh": "我會以延後期限方案為主向負責人請示。"
           },
           "axisScores": {
-            "psychological-safety": 13,
+            "psychological-safety": 12,
             "clarity": 11,
-            "fact-checking": 12,
+            "fact-checking": 13,
             "solution-quality": 12
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "上位判断にはつなぎますが、範囲縮小と増員を比較できません。",
+            "en": "It escalates appropriately but does not preserve the other two options.",
+            "zh": "有正確上報，但未保留縮小範圍與增員兩個選項。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "責任者には問題ないと報告し、現場で何とかします。",
+            "en": "I'll report no issue and have the team make it work.",
+            "zh": "我會向負責人回報沒有問題，現場自行設法完成。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
-            "fact-checking": 2,
-            "solution-quality": 3
+            "psychological-safety": 0,
+            "clarity": 0,
+            "fact-checking": 1,
+            "solution-quality": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "既知の品質リスクを隠し、部下と意思決定者の双方から選択機会を奪います。",
+            "en": "It hides known risk and denies both the team and sponsor an informed choice.",
+            "zh": "隱瞞已知品質風險，剝奪團隊與決策者知情選擇的機會。"
           }
         }
       ]

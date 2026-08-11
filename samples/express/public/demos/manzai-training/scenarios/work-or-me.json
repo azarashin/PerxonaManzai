@@ -7,9 +7,9 @@
     "zh": "工作還是我"
   },
   "description": {
-    "ja": "恋愛・夫婦・パートナー会話として「仕事と関係の優先順位」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Work or Me” for Partner Communication.",
-    "zh": "在「工作還是我」中練習符合情境的簡短伴侶溝通回應。"
+    "ja": "仕事と関係を二者択一にせず、置き去りにされた感覚を確認して守れる時間の約束を作る練習です。",
+    "en": "Practice moving beyond a work-versus-relationship ultimatum by addressing neglect and creating reliable shared time.",
+    "zh": "練習不把工作與關係當成二選一，而是理解被忽略的感受並建立可靠的相處約定。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "大切にされていないと感じたんだね。まず気持ちを聞かせてほしい。",
-            "en": "It sounds like you felt unimportant. I want to hear what hurt most.",
-            "zh": "聽起來你覺得自己不被重視。我想先了解最受傷的是什麼。"
+            "ja": "仕事とあなたを比べたいわけじゃない。後回しにされたと感じた場面を聞いて、変えられることを一緒に考えたい。",
+            "en": "I don't want to rank work against you. Tell me when you felt pushed aside so we can decide what to change.",
+            "zh": "我不想拿工作和你比較。請告訴我何時感到被擺在後面，我們一起找能改變的地方。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "二者択一を拒みつつ感情を否定せず、具体的な出来事と改善へ対話を開いています。",
+            "en": "It rejects the false choice without rejecting the feeling and invites concrete examples and change.",
+            "zh": "拒絕錯誤的二選一，卻不否定感受，並邀請提出具體事件與改善。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "もちろん大切だよ。ただ今月は仕事が忙しいんだ。",
+            "en": "Of course you matter. Work is simply busy this month.",
+            "zh": "你當然重要，只是這個月工作很忙。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "empathy": 12,
+            "needs-reading": 5,
+            "relationship-impact": 10,
+            "solution-quality": 8
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "大切だと伝えますが、後回しにされた経験を聞かず、仕事の説明を優先しています。",
+            "en": "It offers reassurance but prioritizes explaining work over learning about the neglect.",
+            "zh": "有表達重視，卻沒有理解被忽略的經歷，仍先解釋工作。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "仕事があるから生活できるんだ。比べる話じゃない。",
+            "en": "Work pays for our life. This comparison makes no sense.",
+            "zh": "有工作才能生活，根本不能這樣比較。"
           },
           "axisScores": {
-            "empathy": 2,
-            "needs-reading": 3,
+            "empathy": 1,
+            "needs-reading": 0,
             "relationship-impact": 2,
-            "solution-quality": 3
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "生活費の正論で感情を退け、関係への影響と改善の余地を閉じています。",
+            "en": "It uses financial logic to dismiss the feeling and closes off relational repair.",
+            "zh": "以生活費的道理否定感受，關閉修復關係的可能。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "週末の予定が三回続けて仕事でなくなった。私だけが待っている感じがする。",
+        "en": "Work cancelled our plans three weekends in a row. It feels as though I'm the only one waiting.",
+        "zh": "我們連續三個週末的安排都被工作取消，感覺只有我一直在等。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "言い訳を急がず、私のどの行動がつらかったか確認したい。",
-            "en": "Before explaining myself, I want to understand which of my actions hurt you.",
-            "zh": "我先不急著解釋，想確認我的哪個行為讓你難受。"
+            "ja": "三回続けて予定を崩し、待つ役を任せてしまったんだね。変更されにくい時間を一緒に選んでもいい？",
+            "en": "I cancelled three times and left you waiting. Can we choose time together that is less likely to be displaced?",
+            "zh": "我連續取消三次，讓你一直等。可以一起選一個不容易被工作取代的時間嗎？"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "回数と待たせた影響を具体的に認め、相手と守りやすい時間を探しています。",
+            "en": "It acknowledges the repeated impact and collaborates on more reliable time.",
+            "zh": "具體承認三次取消與等待的影響，並共同尋找較可靠的時間。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "次に暇ができた週末は、必ず一緒に過ごすよ。",
+            "en": "The next free weekend I get, we'll definitely spend it together.",
+            "zh": "下次有空的週末，我一定陪你。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "empathy": 9,
+            "needs-reading": 5,
+            "relationship-impact": 13,
+            "solution-quality": 13
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一緒に過ごす意思はありますが、時期が仕事任せで、相手が待つ構造を変えていません。",
+            "en": "It shows intent, but leaves timing controlled by work and preserves the waiting pattern.",
+            "zh": "有相處意願，但時間仍由工作決定，沒有改變對方等待的模式。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "急な仕事なんだから、理解してくれてもいいだろう。",
+            "en": "It was urgent work; you should be more understanding.",
+            "zh": "那是緊急工作，你應該體諒我。"
           },
           "axisScores": {
-            "empathy": 2,
-            "needs-reading": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "empathy": 0,
+            "needs-reading": 0,
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理解を一方的に要求し、三回の取消しが関係へ与えた影響を扱いません。",
+            "en": "It demands understanding and ignores the impact of three cancellations.",
+            "zh": "單方面要求體諒，沒有處理三次取消對關係的影響。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "毎週一度は二人の時間を確保して、変わるなら待つ前に知らせてほしい。",
+        "en": "I want one protected time each week and notice before I'm left waiting if it changes.",
+        "zh": "我希望每週固定一次相處時間，若有變動要在我等待前通知。"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "二人が続けられる具体的な約束を一緒に決めよう。",
-            "en": "Let's agree on a specific change that both of us can maintain.",
-            "zh": "我們一起決定一個雙方都能持續的具體改變。"
+            "ja": "水曜の夜を二人の時間にする。変更が必要なら当日十八時までに連絡し、同じ週の代替日も相談しよう。",
+            "en": "Let's protect Wednesday evenings. If it must change, I'll tell you by 6 p.m. and propose another day that week.",
+            "zh": "把週三晚上固定為相處時間。若需變更，我會在當天六點前通知，並商量同週替代日期。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "頻度、曜日、連絡期限、代替日の四点が具体的で、双方が検証できる合意です。",
+            "en": "It makes frequency, day, notice deadline, and replacement time concrete and testable.",
+            "zh": "頻率、日期、通知期限與替代日都很具體，是雙方可檢視的約定。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "これからは、できるだけ二人の時間を増やすよ。",
+            "en": "From now on, I'll try to make more time for us.",
+            "zh": "以後我會盡量增加我們相處的時間。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
+            "empathy": 12,
+            "needs-reading": 7,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 15
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "関係を優先する意図はありますが、頻度も変更時の連絡も約束していません。",
+            "en": "It expresses commitment but specifies neither frequency nor notice when plans change.",
+            "zh": "有重視關係的意圖，但未約定頻率或變動時的通知方式。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "毎週は約束できない。空いている時に声をかけるよ。",
+            "en": "I can't promise weekly time. I'll let you know when I'm free.",
+            "zh": "我不能答應每週，有空時再告訴你。"
           },
           "axisScores": {
             "empathy": 2,
-            "needs-reading": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "needs-reading": 1,
+            "relationship-impact": 4,
+            "solution-quality": 4
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "相手を引き続き待つ側に置き、求められた予測可能性を拒んでいます。",
+            "en": "It keeps the partner waiting and rejects the requested predictability.",
+            "zh": "仍把對方留在等待的位置，拒絕對方需要的可預期性。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "また仕事の説明ばかりで、私がどう感じたかは聞いていないよね。",
+        "en": "You're explaining work again without asking how this has felt for me.",
+        "zh": "你又只在解釋工作，還是沒有問我的感受。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "さっきは守りに入ってしまった。否定せずにもう一度聞かせてほしい。",
-            "en": "I became defensive. Please tell me again, and I will listen without dismissing it.",
-            "zh": "剛才我太防衛了，請再說一次，我會不否定地聽。"
+            "ja": "説明で正当化しようとしていた。ごめん。後回しにされたと感じた時のことを、まず聞かせて。",
+            "en": "I was using explanations to justify myself. I'm sorry. First, tell me about feeling pushed aside.",
+            "zh": "我一直用解釋替自己辯護，對不起。請先告訴我感到被擺在後面的時候。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "防御的な説明を認め、相手の感情を聞くという未完了の段階へ戻っています。",
+            "en": "It owns the defensive explanation and returns to the unfinished task of listening.",
+            "zh": "承認防禦性解釋，回到尚未完成的傾聽感受。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "つらかったのは分かった。でも締切も動かせなかったんだ。",
+            "en": "I understand it was hard, but the deadline could not move either.",
+            "zh": "我知道你很難受，但截止日也不能改。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "empathy": 12,
+            "needs-reading": 6,
+            "relationship-impact": 8,
+            "solution-quality": 8
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "感情には触れますが、すぐ締切の正当化へ戻り、理解を深めていません。",
+            "en": "It mentions the feeling but immediately returns to defending the deadline.",
+            "zh": "有觸及感受，卻立刻回到為截止日辯護，沒有加深理解。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "仕事の状況が変わらない以上、話しても仕方ないよ。",
+            "en": "The work situation will not change, so talking about it is pointless.",
+            "zh": "工作狀況不會變，再談也沒有用。"
           },
           "axisScores": {
-            "empathy": 2,
-            "needs-reading": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "empathy": 0,
+            "needs-reading": 0,
+            "relationship-impact": 1,
+            "solution-quality": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "仕事を不変の前提にして、連絡や時間設計など変えられる行動まで拒否しています。",
+            "en": "It treats work as fixed and rejects changeable actions such as notice and scheduling.",
+            "zh": "把工作視為不可改變，連通知與時間安排等可改變行動也一併拒絕。"
           },
           "stateEffects": [
             {

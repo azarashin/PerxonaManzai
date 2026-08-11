@@ -38,10 +38,11 @@ test("bundled catalog contains valid categories and loadable scenarios", async (
     "diplomatic-negotiation": 3,
     "clinical-communication": 3,
     "crisis-negotiation": 3,
+    "special-fraud-prevention": 3,
   };
 
-  assert.equal(catalog.categories.length, 15);
-  assert.equal(catalog.scenarios.length, 49);
+  assert.equal(catalog.categories.length, 16);
+  assert.equal(catalog.scenarios.length, 52);
   for (const [categoryId, expectedCount] of Object.entries(
     expectedScenarioCounts,
   )) {
@@ -58,6 +59,23 @@ test("bundled catalog contains valid categories and loadable scenarios", async (
     assert.equal(scenario.id, entry.id);
     assert.deepEqual(scenario.title, entry.title);
     assert.doesNotThrow(() => new ScenarioController(scenario));
+  }
+});
+
+test("special fraud scenarios prioritize expressive avatar motions", async () => {
+  const catalog = validateScenarioCatalog(await readJson("index.json"));
+  const entries = scenariosForCategory(catalog, "special-fraud-prevention");
+
+  assert.equal(entries.length, 3);
+  for (const entry of entries) {
+    const scenario = await readJson(entry.path.replace("./scenarios/", ""));
+    for (const beat of scenario.beats) {
+      assert.match(
+        beat.reaction.motionTags[0],
+        /^pose:emotion_/,
+        `${scenario.id}/${beat.id}`,
+      );
+    }
   }
 });
 

@@ -7,9 +7,9 @@
     "zh": "有依據地說明弱點"
   },
   "description": {
-    "ja": "面接・採用として「弱みと改善行動」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “A Weakness with Evidence” for Interview and Hiring.",
-    "zh": "在「有依據地說明弱點」中練習符合情境的簡短面試與招募回應。"
+    "ja": "実在する弱みを業務例、改善行動、測定結果で説明し、応募職務での管理方法を示す練習です。",
+    "en": "Practice explaining a genuine weakness with a work example, corrective action, measured result, and role safeguards.",
+    "zh": "練習以工作案例、改善行動、量化結果與職務防護措施說明真實弱點。"
   },
   "evaluationAxes": [
     {
@@ -95,9 +95,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "質問に直接答え、具体的な経験と学びを簡潔に示します。",
-            "en": "I will answer directly with a concise example and what I learned.",
-            "zh": "我會直接回答，簡潔說明具體經驗與學習。"
+            "ja": "優先順位を抱え込み、着手が遅れることがあります。今は朝に上位三件を共有し、期限遅れを減らしています。",
+            "en": "I can overthink priorities and start late. I now share my top three each morning, which has reduced missed deadlines.",
+            "zh": "我有時過度糾結優先順序而延遲開始。現在每天早上分享前三項，已減少逾期。"
           },
           "axisScores": {
             "relevance": 20,
@@ -106,47 +106,47 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "実在する弱み、対策、結果を簡潔に示し、信頼できる回答です。",
+            "en": "It credibly states a real weakness, mitigation, and result.",
+            "zh": "簡潔呈現真實弱點、改善措施與結果，具有可信度。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "弱みは完璧を求めすぎるところです。",
+            "en": "My weakness is that I care too much about perfection.",
+            "zh": "我的弱點是過度追求完美。"
           },
           "axisScores": {
-            "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
-            "reciprocal-fit": 12
+            "relevance": 12,
+            "credibility": 7,
+            "clarity": 14,
+            "reciprocal-fit": 8
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "よくある表現で、実際の悪影響、改善行動、証拠がありません。",
+            "en": "It is a familiar label without impact, action, or evidence.",
+            "zh": "是常見說法，缺少實際負面影響、改善行動與證據。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "特に弱みはありません。必要なことは全部できます。",
+            "en": "I do not have a notable weakness; I can do everything required.",
+            "zh": "我沒有特別的弱點，所需工作都能完成。"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
+            "relevance": 5,
+            "credibility": 1,
+            "clarity": 9,
             "reciprocal-fit": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "自己認識の根拠がなく、質問を避けるため信頼性を損ないます。",
+            "en": "It avoids the question and undermines credibility through implausible self-assessment.",
+            "zh": "逃避問題且自我評估不可信，損害可信度。"
           }
         }
       ]
@@ -154,9 +154,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "その弱みが実際に問題になった例と、改善した結果を教えてください。",
+        "en": "Give an example where it caused a problem and the result of your improvement.",
+        "zh": "請舉例這個弱點何時造成問題，以及改善後的結果。"
       },
       "reaction": {
         "description": {
@@ -176,9 +176,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "誇張せず、自分の行動と結果を分けて説明します。",
-            "en": "I will avoid exaggeration and distinguish my actions from the result.",
-            "zh": "我不誇大，並分開說明自己的行動與結果。"
+            "ja": "前職で分析開始が二日遅れました。翌週から朝会で優先順位を確認し、三か月は期限内に完了しています。",
+            "en": "An analysis started two days late. After adding morning priority checks, I met every deadline for three months.",
+            "zh": "前職有次分析延遲兩天開始。加入晨會確認優先順序後，三個月都準時完成。"
           },
           "axisScores": {
             "relevance": 20,
@@ -187,47 +187,47 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "状況、行動、期間を伴う結果があり、改善の因果を検証できます。",
+            "en": "It gives situation, action, and timed results that support the claimed improvement.",
+            "zh": "有情境、行動與帶期間的結果，可驗證改善因果。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "時間管理の本を読み、意識するようになりました。",
+            "en": "I read a time-management book and became more mindful.",
+            "zh": "我讀了時間管理的書，也更注意了。"
           },
           "axisScores": {
-            "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
-            "reciprocal-fit": 12
+            "relevance": 10,
+            "credibility": 12,
+            "clarity": 13,
+            "reciprocal-fit": 7
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "改善行動はありますが、業務例と結果の証拠がありません。",
+            "en": "It shows action but no work example or outcome evidence.",
+            "zh": "有改善行動，但沒有工作案例或結果證據。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "前のチームは依頼が曖昧だったので、遅れても仕方ありませんでした。",
+            "en": "My prior team gave vague requests, so the delays were unavoidable.",
+            "zh": "前團隊的需求很模糊，所以延遲也是沒辦法。"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
-            "reciprocal-fit": 3
+            "relevance": 3,
+            "credibility": 4,
+            "clarity": 8,
+            "reciprocal-fit": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "原因を周囲だけに置き、自分が変えた行動を示せません。",
+            "en": "It externalizes the cause and shows no personal change.",
+            "zh": "把原因全歸於他人，沒有呈現自身改變。"
           }
         }
       ]
@@ -235,9 +235,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "複数案件を並行するこの職務で、同じ弱みをどう管理しますか。",
+        "en": "How will you manage this weakness in a role with concurrent projects?",
+        "zh": "在需要並行多個專案的職務中，你會如何管理這個弱點？"
       },
       "reaction": {
         "description": {
@@ -257,9 +257,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "役割の期待と自分の経験が合う点、確認したい点を示します。",
-            "en": "I will connect my experience to the role and identify what I still need to learn.",
-            "zh": "我會連結自身經驗與職務，也提出仍需了解之處。"
+            "ja": "毎朝、期限と影響で上位三件を担当者と確認し、迷った案件は当日中に優先順位を相談します。",
+            "en": "Each morning I'll confirm the top three by deadline and impact, and escalate unclear priorities that day.",
+            "zh": "每天早上依期限與影響和負責人確認前三項，優先順序不明時當天就詢問。"
           },
           "axisScores": {
             "relevance": 20,
@@ -268,47 +268,47 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "職務の並行性に合う具体的な習慣とエスカレーション基準があります。",
+            "en": "It provides a role-specific routine and escalation trigger.",
+            "zh": "提出符合並行工作需求的具體習慣與升級判斷。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "タスク管理を徹底し、遅れないよう努力します。",
+            "en": "I'll manage tasks carefully and work hard not to fall behind.",
+            "zh": "我會徹底管理任務，努力不落後。"
           },
           "axisScores": {
-            "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
-            "reciprocal-fit": 12
+            "relevance": 12,
+            "credibility": 8,
+            "clarity": 14,
+            "reciprocal-fit": 9
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "意図はありますが、優先順位の決め方と他者への相談条件がありません。",
+            "en": "It shows intent but lacks a prioritization method or escalation rule.",
+            "zh": "有改善意圖，但缺少排序方法與求助條件。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "入社後は指示された順にやるので問題ありません。",
+            "en": "At this company I'll follow the given order, so it will not be a problem.",
+            "zh": "入職後照指示順序做，就不會有問題。"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
-            "reciprocal-fit": 3
+            "relevance": 4,
+            "credibility": 4,
+            "clarity": 8,
+            "reciprocal-fit": 4
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "複数案件で指示が競合する可能性を無視し、自律的な管理策を示していません。",
+            "en": "It ignores conflicting demands and offers no self-management safeguard.",
+            "zh": "忽略多項任務可能衝突，也未提出自主管理措施。"
           }
         }
       ]

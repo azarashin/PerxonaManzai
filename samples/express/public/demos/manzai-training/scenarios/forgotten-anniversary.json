@@ -7,9 +7,9 @@
     "zh": "被忘記的紀念日"
   },
   "description": {
-    "ja": "恋愛・夫婦・パートナー会話として「忘れられた記念日」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “The Forgotten Anniversary” for Partner Communication.",
-    "zh": "在「被忘記的紀念日」中練習符合情境的簡短伴侶溝通回應。"
+    "ja": "記念日を忘れて傷つけたパートナーに、言い訳より先に感情と意味を確認し、関係修復の合意を作る練習です。",
+    "en": "Practice repairing a forgotten anniversary by exploring its emotional meaning before excuses or gestures.",
+    "zh": "練習面對忘記紀念日造成的傷害，先理解情感意義，再共同擬定修復方式。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "大切にされていないと感じたんだね。まず気持ちを聞かせてほしい。",
-            "en": "It sounds like you felt unimportant. I want to hear what hurt most.",
-            "zh": "聽起來你覺得自己不被重視。我想先了解最受傷的是什麼。"
+            "ja": "忘れて傷つけたことは本当にごめん。言い訳せず、今日はどんな思いで待っていたか聞かせて。",
+            "en": "I'm truly sorry I forgot and hurt you. Before I explain, please tell me what today and the wait felt like.",
+            "zh": "我忘記了還傷害你，真的很抱歉。我先不辯解，請告訴我今天等待時的感受。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "忘れた事実と感情への影響を認め、相手が求める理解から修復を始めています。",
+            "en": "It owns both the mistake and its impact, then starts repair by listening for the partner's need.",
+            "zh": "承認忘記的事實與情感影響，並從理解對方需求開始修復。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "ごめん。明日、豪華な店を予約して埋め合わせるよ。",
+            "en": "I'm sorry. I'll book an expensive restaurant tomorrow to make up for it.",
+            "zh": "對不起，我明天訂一家高級餐廳補償你。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "empathy": 14,
+            "needs-reading": 5,
+            "relationship-impact": 13,
+            "solution-quality": 16
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "謝罪と行動はありますが、相手にとって記念日が何を意味したかを聞かず、解決策を先に決めています。",
+            "en": "It apologizes and acts, but chooses a remedy before learning what the anniversary meant to the partner.",
+            "zh": "有道歉也有行動，但未了解紀念日的意義就先替對方決定補償方式。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "毎年全部の記念日を覚えるなんて無理だよ。",
+            "en": "No one can remember every anniversary every year.",
+            "zh": "不可能每年把所有紀念日都記住。"
           },
           "axisScores": {
-            "empathy": 2,
-            "needs-reading": 3,
+            "empathy": 0,
+            "needs-reading": 1,
             "relationship-impact": 2,
             "solution-quality": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "忘れられた痛みを一般論で退け、関係への影響も修復方法も扱っていません。",
+            "en": "It dismisses the hurt with a generalization and offers neither understanding nor repair.",
+            "zh": "以一般論否定被忘記的傷痛，也沒有理解或修復關係。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "高い物が欲しいわけじゃない。二人にとって大切な日を覚えていてほしかった。",
+        "en": "I don't want an expensive gift. I wanted you to remember a day that matters to us.",
+        "zh": "我不是想要昂貴禮物，只希望你記得這個對我們很重要的日子。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "言い訳を急がず、私のどの行動がつらかったか確認したい。",
-            "en": "Before explaining myself, I want to understand which of my actions hurt you.",
-            "zh": "我先不急著解釋，想確認我的哪個行為讓你難受。"
+            "ja": "物ではなく、二人の歴史を大切にしていると感じたかったんだね。特に何を一緒に振り返りたかった？",
+            "en": "You wanted to feel that our shared history matters, not receive a gift. What did you most want us to remember together?",
+            "zh": "你想感受到我重視我們的共同回憶，而不是收到禮物。你最希望我們一起回顧什麼？"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "贈り物から関係の意味へ焦点を戻し、相手が求めていた体験を具体的に確認しています。",
+            "en": "It shifts from gifts to relational meaning and asks what shared experience the partner wanted.",
+            "zh": "把焦點從禮物拉回關係意義，並具體詢問對方期待的共同體驗。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "分かった。来年からカレンダーに通知を入れるよ。",
+            "en": "I understand. I'll add a calendar reminder for next year.",
+            "zh": "我懂了，明年開始會在行事曆設定提醒。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "empathy": 8,
+            "needs-reading": 7,
+            "relationship-impact": 13,
+            "solution-quality": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "再発防止策はありますが、今感じている寂しさと記念日の意味には応答していません。",
+            "en": "The reminder may prevent recurrence, but it does not address the present hurt or meaning.",
+            "zh": "提醒能防止再次忘記，但沒有回應此刻的寂寞與紀念日的意義。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "大事なら前日に言ってくれればよかったのに。",
+            "en": "If it mattered that much, you should have reminded me yesterday.",
+            "zh": "既然那麼重要，你昨天就該提醒我。"
           },
           "axisScores": {
-            "empathy": 2,
-            "needs-reading": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "empathy": 0,
+            "needs-reading": 0,
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "覚える責任を相手へ移し、重視されたいという核心的なニーズを否定しています。",
+            "en": "It shifts responsibility to the partner and rejects the core need to feel remembered.",
+            "zh": "把記得的責任推回對方，也否定了希望被重視的核心需求。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "今からできることと、来年また同じ思いをしない方法を一緒に決めたい。",
+        "en": "I want us to decide what we can do now and how to avoid this same hurt next year.",
+        "zh": "我想一起決定現在能做什麼，以及明年如何避免同樣的傷害。"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "二人が続けられる具体的な約束を一緒に決めよう。",
-            "en": "Let's agree on a specific change that both of us can maintain.",
-            "zh": "我們一起決定一個雙方都能持續的具體改變。"
+            "ja": "今夜はあなたの気持ちを聞く時間にしたい。お祝いは二人で日を選び、来年の予定も一緒に登録しよう。",
+            "en": "Tonight I want to listen. We can choose a celebration date together and add next year's plan to both calendars.",
+            "zh": "今晚我想先聽你的感受。我們一起選慶祝日期，也共同登記明年的安排。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "現在の感情、埋め合わせの選択権、再発防止を一つの合意にまとめています。",
+            "en": "It combines present listening, shared choice of repair, and recurrence prevention in one agreement.",
+            "zh": "把當下傾聽、共同選擇補償方式與防止再犯整合成一項協議。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "明日の夜は空けるから、食事に行こう。",
+            "en": "I'll keep tomorrow evening free, so let's go out for dinner.",
+            "zh": "我把明晚空下來，我們去吃飯吧。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "empathy": 10,
+            "needs-reading": 7,
+            "relationship-impact": 14,
+            "solution-quality": 17
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "時間を確保する具体性はありますが、相手の希望確認と来年への備えが抜けています。",
+            "en": "It makes concrete time, but omits the partner's preference and any prevention plan.",
+            "zh": "有具體安排時間，但未確認對方意願，也沒有預防明年再發生。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "来年は絶対に忘れないから、もうこの話は終わりにしよう。",
+            "en": "I definitely won't forget next year, so let's end this conversation.",
+            "zh": "明年我絕對不會忘記，這件事就到此為止吧。"
           },
           "axisScores": {
             "empathy": 2,
-            "needs-reading": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "needs-reading": 1,
+            "relationship-impact": 3,
+            "solution-quality": 4
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "根拠のない約束で現在の感情を打ち切り、共同で修復する機会を失います。",
+            "en": "It uses an unsupported promise to shut down present feelings and avoids shared repair.",
+            "zh": "以沒有依據的承諾結束當下感受，錯過共同修復的機會。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "埋め合わせの予定ばかりで、私が傷ついたことはまだ聞いてもらえていない。",
+        "en": "You keep planning how to make up for it, but you still haven't heard how I was hurt.",
+        "zh": "你一直安排補償，卻還沒有聽我說受到什麼傷害。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "さっきは守りに入ってしまった。否定せずにもう一度聞かせてほしい。",
-            "en": "I became defensive. Please tell me again, and I will listen without dismissing it.",
-            "zh": "剛才我太防衛了，請再說一次，我會不否定地聽。"
+            "ja": "解決を急いで気持ちを置き去りにした。ごめん。予定の話を止めて、傷ついたことを聞かせて。",
+            "en": "I rushed to fix this and left your feelings behind. I'm sorry. Let's pause the plans so I can listen.",
+            "zh": "我急著解決，反而忽略你的感受，對不起。先停下安排，請讓我聽你受傷的部分。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "先走った解決策の問題を認め、相手の感情を聞く段階へ明確に戻しています。",
+            "en": "It names the premature problem-solving and explicitly returns to listening.",
+            "zh": "承認過早提出解法的問題，明確回到傾聽感受的階段。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "傷つけたのは分かった。でも今週は本当に忙しかったんだ。",
+            "en": "I understand that I hurt you, but this week was genuinely busy.",
+            "zh": "我知道傷害了你，但這週真的很忙。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "empathy": 11,
+            "needs-reading": 7,
+            "relationship-impact": 7,
+            "solution-quality": 8
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "影響は認めますが、すぐ事情説明へ移るため、相手の感情を十分に聞けません。",
+            "en": "It recognizes the impact but quickly returns to self-explanation instead of listening.",
+            "zh": "雖承認影響，卻立刻回到自我辯解，沒有充分傾聽。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "そんなに大事なら、覚えているか試すような聞き方をしないで。",
+            "en": "If it mattered so much, don't test whether I remember.",
+            "zh": "既然那麼重要，就別用問題測試我記不記得。"
           },
           "axisScores": {
-            "empathy": 2,
-            "needs-reading": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "empathy": 0,
+            "needs-reading": 0,
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "問い方を責めて傷ついた経験を無効にし、対話の再開を難しくします。",
+            "en": "It attacks how the concern was raised and invalidates the hurt, making repair harder.",
+            "zh": "責怪對方提問方式並否定受傷經驗，使修復更困難。"
           },
           "stateEffects": [
             {

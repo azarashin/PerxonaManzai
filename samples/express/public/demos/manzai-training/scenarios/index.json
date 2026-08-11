@@ -240,6 +240,22 @@
         "en": "Crisis Communication",
         "zh": "危機情境溝通"
       }
+    },
+    {
+      "id": "special-fraud-prevention",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "基本の遮断と独立確認は直線型で練習でき、相手の圧力や情報開示状況に応じた高度な展開では分岐を推奨します。",
+          "en": "Core disengagement and independent verification can be linear; branching is recommended for advanced changes in pressure or disclosure.",
+          "zh": "基本中斷與獨立查證可用線性流程；進階情境可依施壓或資訊揭露狀態採用分支。"
+        }
+      },
+      "title": {
+        "ja": "特殊詐欺対策",
+        "en": "Special Fraud Prevention",
+        "zh": "特殊詐騙防範"
+      }
     }
   ],
   "scenarios": [
@@ -359,16 +375,16 @@
       "estimatedMinutes": 4,
       "learningObjectives": {
         "ja": [
-          "漫才・ツッコミで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "国家級の経歴とバイト業務の落差を見抜く",
+          "履歴書、推薦人、業務内容の具体点を使ってツッコむ"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Manzai and Comebacks.",
-          "Compare how different responses affect the other person and the next action."
+          "Identify the mismatch between nation-scale credentials and part-time work.",
+          "Target concrete details in the resume, references, and job duties."
         ],
         "zh": [
-          "掌握情境重點，選擇符合漫才與吐槽的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "看出國家級資歷與打工職務之間的落差。",
+          "運用履歷、推薦人與工作內容的具體細節吐槽。"
         ]
       },
       "title": {
@@ -386,16 +402,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "漫才・ツッコミで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "家電が住人を支配する主従逆転を見抜く",
+          "鍵、運動、投票権など支配の具体点を短く突く"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Manzai and Comebacks.",
-          "Compare how different responses affect the other person and the next action."
+          "Identify the control reversal when appliances manage their owner.",
+          "Target concrete signs of control such as locks, exercise, and voting rights."
         ],
         "zh": [
-          "掌握情境重點，選擇符合漫才與吐槽的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "看出家電反過來管理屋主的主從逆轉。",
+          "具體吐槽門鎖、運動與投票權等控制手段。"
         ]
       },
       "title": {
@@ -413,16 +429,16 @@
       "estimatedMinutes": 6,
       "learningObjectives": {
         "ja": [
-          "漫才・ツッコミで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "未来、昨日、到着前の時間関係の矛盾を追う",
+          "賞味期限、割引日、迎えの時点を具体的に突く"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Manzai and Comebacks.",
-          "Compare how different responses affect the other person and the next action."
+          "Track contradictions between the future, yesterday, and pre-arrival events.",
+          "Target expiry dates, discount timing, and pickup order."
         ],
         "zh": [
-          "掌握情境重點，選擇符合漫才與吐槽的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "追蹤未來、昨天與抵達前事件的時間矛盾。",
+          "具體吐槽賞味期限、折扣時間與接人順序。"
         ]
       },
       "title": {
@@ -440,16 +456,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "料理の遅延に謝意を示し、注文状況と提供見込みを推測せず確認する",
+          "案内期限と、変更・取消しを含む確認可能な選択肢を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
-          "Compare how different responses affect the other person and the next action."
+          "Acknowledge a delayed meal and verify the order and serving estimate without guessing.",
+          "Give an update deadline and check available options such as changing or cancelling the order."
         ],
         "zh": [
-          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "回應餐點延誤，並在不猜測的情況下確認訂單與預計出餐時間。",
+          "提出回覆期限，並確認更換或取消餐點等可行選項。"
         ]
       },
       "title": {
@@ -467,16 +483,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "レシート以外の購入証明を中立に確認する",
+          "返金を確約せず、店舗規定内の代替案と確認期限を案内する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
-          "Compare how different responses affect the other person and the next action."
+          "Verify alternative proof of purchase without treating the guest as suspicious.",
+          "Explain policy-based alternatives and review timing without guaranteeing a refund."
         ],
         "zh": [
-          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "不把顧客當成可疑對象，改以替代購買證明中立查核。",
+          "不保證退款，說明規定內的替代方案與審核時間。"
         ]
       },
       "title": {
@@ -494,16 +510,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "顧客の体験を尊重しつつ、問題となった言動を中立に確認する",
+          "調査結果と改善策の報告期限を示し、人事情報の境界を守る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
-          "Compare how different responses affect the other person and the next action."
+          "Respect the guest's experience while investigating the reported conduct neutrally.",
+          "Set a deadline for findings and service improvements while protecting personnel privacy."
         ],
         "zh": [
-          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "尊重顧客經歷，同時中立查核被投訴的具體言行。",
+          "設定查核與改善回報期限，並守住人事資訊的隱私界線。"
         ]
       },
       "title": {
@@ -521,16 +537,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "恋愛・夫婦・パートナー会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "記念日を忘れられた痛みと、その日が持つ意味を言い訳より先に確認する",
+          "一方的な埋め合わせではなく、二人が納得する修復行動を決める"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Partner Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Explore the hurt and meaning of the forgotten anniversary before explaining yourself.",
+          "Agree on a repair that works for both partners instead of imposing a grand gesture."
         ],
         "zh": [
-          "掌握情境重點，選擇符合伴侶溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "在辯解前先理解紀念日被忘記的傷痛與意義。",
+          "不單方面補償，而是共同決定雙方都能接受的修復行動。"
         ]
       },
       "title": {
@@ -548,16 +564,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "恋愛・夫婦・パートナー会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "仕事か関係かという問いの背後にある、後回しにされた感覚を確認する",
+          "守れる共有時間と、変更時の連絡方法を具体的に合意する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Partner Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Identify the feeling of being deprioritized behind a work-or-relationship question.",
+          "Agree on protected time and a clear notice process when plans change."
         ],
         "zh": [
-          "掌握情境重點，選擇符合伴侶溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "理解工作或關係的質問背後，是感到被擺在後面的需求。",
+          "具體約定固定相處時間，以及行程變動時的通知方式。"
         ]
       },
       "title": {
@@ -575,16 +591,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "恋愛・夫婦・パートナー会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "家事量だけでなく、気づく・計画する・補充する負担も確認する",
+          "手伝いではなく担当全体を引き受け、見直し時期を合意する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Partner Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Identify both visible chores and the work of noticing, planning, and restocking.",
+          "Assign full ownership rather than help and agree when to review the arrangement."
         ],
         "zh": [
-          "掌握情境重點，選擇符合伴侶溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "確認可見家事，以及留意、規劃與補充用品等隱性負擔。",
+          "不是偶爾幫忙，而是承擔完整責任並約定檢討時間。"
         ]
       },
       "title": {
@@ -602,16 +618,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "競合価格が同一条件かを確認し、価格以外の決裁基準を発見する",
+          "値引きを契約期間や範囲などの交換条件と結び付ける"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
-          "Compare how different responses affect the other person and the next action."
+          "Test whether the competitor comparison is equivalent and discover non-price decision criteria.",
+          "Link any discount to an exchange such as term, scope, or commitment."
         ],
         "zh": [
-          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "確認競品是否真為相同條件，並找出價格以外的決策標準。",
+          "把折扣與合約期間、範圍或承諾等交換條件連結。"
         ]
       },
       "title": {
@@ -629,16 +645,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "予算削減下でも守る成果と変更可能な範囲を確認する",
+          "範囲・時期・支援を組み替え、成果を検証できる段階案を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate required outcomes from flexible scope after a budget reduction.",
+          "Repackage scope, timing, and support into a phased, testable proposal."
         ],
         "zh": [
-          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "在預算縮減後區分必須成果與可調整範圍。",
+          "重組範圍、時程與支援，提出可驗證成果的分階段方案。"
         ]
       },
       "title": {
@@ -656,16 +672,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "契約直前の値引き要求の理由、決裁権、未合意条件を確認する",
+          "期限に流されず、譲歩を契約期間や支払条件と交換する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
-          "Compare how different responses affect the other person and the next action."
+          "Check the reason, authority, and unresolved terms behind a last-minute discount request.",
+          "Resist deadline pressure and exchange concessions for term or payment commitments."
         ],
         "zh": [
-          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "確認簽約前追加折扣背後的理由、決策權與未決條件。",
+          "不受期限壓力影響，以合約期間或付款承諾交換讓步。"
         ]
       },
       "title": {
@@ -683,16 +699,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "納期への懸念を否定せず、残作業・要員・品質リスクを具体化する",
+          "納期、範囲、要員のトレードオフを意思決定者へ示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Workplace Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Quantify remaining work, capacity, and quality risk without dismissing the concern.",
+          "Present decision makers with tradeoffs among date, scope, and staffing."
         ],
         "zh": [
-          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "不否定期限疑慮，具體確認剩餘工作、人力與品質風險。",
+          "向決策者呈現期限、範圍與人力之間的取捨。"
         ]
       },
       "title": {
@@ -710,16 +726,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "公開指導が発言しやすさへ与えた影響を認め、私的な対話へ戻す",
+          "ミスの事実と仕組み上の要因を分け、再発防止を具体化する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Workplace Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Acknowledge how public correction reduced psychological safety and move to a private conversation.",
+          "Separate the error from system causes and define concrete prevention."
         ],
         "zh": [
-          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "承認公開指責對心理安全的影響，回到私下對話。",
+          "區分錯誤事實與制度因素，具體制定防止再犯措施。"
         ]
       },
       "title": {
@@ -737,16 +753,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "感想ではなく前提、データ、影響を短く整理して反論する",
+          "全面否定ではなく検証可能な試行案と判断基準を提示する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Workplace Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Challenge a decision with assumptions, data, and impact rather than opinion.",
+          "Offer a testable pilot and decision criteria instead of a blanket rejection."
         ],
         "zh": [
-          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "不用感想，而以假設、數據與影響簡潔提出異議。",
+          "不全面否定，提出可驗證試行方案與判斷標準。"
         ]
       },
       "title": {
@@ -764,16 +780,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "障害の影響に謝罪し、確認済み事実と推測を分ける",
+          "復旧を断定せず、次回報告時刻と確認済みの暫定対応を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
-          "Compare how different responses affect the other person and the next action."
+          "Apologize for outage impact and separate confirmed facts from speculation.",
+          "Avoid predicting recovery; give an update time and verified interim action."
         ],
         "zh": [
-          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "針對中斷影響致歉，區分已確認事實與推測。",
+          "不武斷預測復原，提出下次回報時間與已確認的暫時措施。"
         ]
       },
       "title": {
@@ -791,16 +807,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "誤案内そのものと予定変更への影響を認め、確認済みの正しい情報を示す",
+          "公開訂正、対象者への連絡、再発防止の順序を具体化する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
-          "Compare how different responses affect the other person and the next action."
+          "Own both the incorrect notice and its impact, then provide verified corrected information.",
+          "Specify public correction, outreach to affected people, and prevention."
         ],
         "zh": [
-          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "承認公告錯誤及其造成的行程影響，提供已確認的正確資訊。",
+          "具體安排公開更正、通知受影響者及防止再犯。"
         ]
       },
       "title": {
@@ -818,16 +834,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "影響への謝罪と、未確定の原因・責任認定を明確に分ける",
+          "補償判断に必要な資料、期限、決裁者と暫定支援を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate apology for impact from unconfirmed cause and liability.",
+          "Explain evidence, deadline, approver, and interim support for compensation review."
         ],
         "zh": [
-          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "清楚區分對影響致歉與尚未確認的原因及責任。",
+          "說明補償審核所需資料、期限、決策者與暫時支援。"
         ]
       },
       "title": {
@@ -845,16 +861,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "空白期間へ直接答え、必要な境界を保ちながら行動と学びを示す",
+          "得た経験を応募職務の期待と現在の準備へ結び付ける"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
-          "Compare how different responses affect the other person and the next action."
+          "Address the gap directly while preserving privacy and describing actions and learning.",
+          "Connect the period to role expectations and current readiness."
         ],
         "zh": [
-          "掌握情境重點，選擇符合面試與招募的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "直接回應空窗期，在保有隱私界線下說明行動與學習。",
+          "把期間經驗連結職務期待與目前就業準備。"
         ]
       },
       "title": {
@@ -872,16 +888,16 @@
       "estimatedMinutes": 6,
       "learningObjectives": {
         "ja": [
-          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "業務に関係する弱みを、具体例と誇張のない自己認識で説明する",
+          "改善行動と結果を示し、応募職務での管理方法を確認する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
-          "Compare how different responses affect the other person and the next action."
+          "Describe a job-relevant weakness with a concrete example and credible self-awareness.",
+          "Show corrective action and results, then explain safeguards for the target role."
         ],
         "zh": [
-          "掌握情境重點，選擇符合面試與招募的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "以具體案例與可信自我認知說明和工作相關的弱點。",
+          "呈現改善行動與結果，並說明在目標職務中的管理方式。"
         ]
       },
       "title": {
@@ -899,16 +915,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "面接で得た情報に基づき、役割の成果と協働方法を質問する",
+          "公開情報の繰り返しを避け、応募者自身の適合判断に使える情報を得る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
-          "Compare how different responses affect the other person and the next action."
+          "Ask about role outcomes and collaboration using information learned in the interview.",
+          "Avoid repeating public facts and gather evidence for the candidate's fit decision."
         ],
         "zh": [
-          "掌握情境重點，選擇符合面試與招募的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "依面試中取得的資訊，詢問職務成果與協作方式。",
+          "避免重問公開資訊，取得可供應徵者判斷適合度的內容。"
         ]
       },
       "title": {
@@ -926,16 +942,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "遅刻の事実と背景事情を分け、決めつけずに確認する",
+          "連絡方法・授業参加・見直し時期を含む支援策を本人と決める"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Teacher and Student.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate lateness from its circumstances and investigate without assumptions.",
+          "Agree on communication, class access, and a review date with the student."
         ],
         "zh": [
-          "掌握情境重點，選擇符合教師與學生的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分遲到事實與背景處境，不預設地查明原因。",
+          "和學生約定聯絡方式、課程支援與檢討日期。"
         ]
       },
       "title": {
@@ -953,16 +969,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "類似答案を不正の結論とせず、観察事実と本人の説明を分ける",
+          "学校手順に従い、説明機会・期限・異議申立てを公平に示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Teacher and Student.",
-          "Compare how different responses affect the other person and the next action."
+          "Treat similar answers as evidence to examine, not proof of cheating.",
+          "Use a fair process with explanation, timing, and appeal options."
         ],
         "zh": [
-          "掌握情境重點，選擇符合教師與學生的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "把相似答案視為待查證的事實，而非作弊結論。",
+          "依公平程序提供說明機會、期限與申訴方式。"
         ]
       },
       "title": {
@@ -980,16 +996,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "本人の希望と保護者の懸念を分け、進路選択の主体を守る",
+          "費用・進路実績・作品を整理し、本人主導の家族対話を支える"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Teacher and Student.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate the student's goal from parental concerns while protecting agency.",
+          "Prepare evidence on costs, pathways, and work for a student-led family discussion."
         ],
         "zh": [
-          "掌握情境重點，選擇符合教師與學生的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分學生志向與父母顧慮，保障學生的選擇主體性。",
+          "整理費用、出路與作品，支援由學生主導的家庭對話。"
         ]
       },
       "title": {
@@ -1007,16 +1023,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "退職の結論を急がず、友人が求める共感と整理のどちらかを確認する",
+          "負担・選択肢・期限を整理し、本人が決める小さな次の行動を作る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
-          "Compare how different responses affect the other person and the next action."
+          "Ask whether the friend needs listening or decision support before advising resignation.",
+          "Map pressures, options, and timing while keeping the decision with the friend."
         ],
         "zh": [
-          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "先確認朋友需要傾聽還是決策協助，再談離職。",
+          "整理壓力、選項與時程，並把決定權留給朋友。"
         ]
       },
       "title": {
@@ -1034,16 +1050,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "別れの正しさを論じる前に、喪失感と今求めている支援を確認する",
+          "本人のペースを尊重し、今日を乗り切る具体的な支えを合意する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
-          "Compare how different responses affect the other person and the next action."
+          "Acknowledge grief and ask what support is wanted before judging the breakup.",
+          "Respect the friend's pace and agree on concrete support for the present day."
         ],
         "zh": [
-          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "評斷分手前，先接住失落並確認朋友需要的支持。",
+          "尊重朋友的步調，約定今天可接受的具體陪伴。"
         ]
       },
       "title": {
@@ -1061,16 +1077,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "友情と貸付判断を分け、用途・返済可能性・緊急性を確認する",
+          "断る場合も関係を傷つけず、貸付以外の支援を本人と選ぶ"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate care for the friend from the lending decision and check purpose, urgency, and repayment.",
+          "Set a clear boundary while exploring non-loan support the friend can choose."
         ],
         "zh": [
-          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分友情與借貸決定，確認用途、急迫性與償還能力。",
+          "清楚設下界線，同時提供朋友可選擇的非借款支援。"
         ]
       },
       "title": {
@@ -1088,16 +1104,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "元本保証・即決要求・本人確認情報の要求を危険信号として切り分ける",
+          "連絡先を自分で調べ、登録・商品・担当者を公式窓口で確認してから判断する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
-          "Compare how different responses affect the other person and the next action."
+          "Identify guarantees, urgency, and identity requests as separate warning signs.",
+          "Verify the firm, product, and caller through independently found official channels."
         ],
         "zh": [
-          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "分辨保本、高報酬、催促與索取身分資料等警訊。",
+          "自行尋找官方管道，查核公司、商品與來電者。"
         ]
       },
       "title": {
@@ -1115,16 +1131,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "返金を口実にした画面共有・銀行情報要求を拒否する",
+          "購入履歴と公式窓口を自分で開き、認証情報を変えて被害を抑える"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
-          "Compare how different responses affect the other person and the next action."
+          "Refuse screen sharing and banking requests made under the pretext of a refund.",
+          "Use independently opened purchase records and official support, then secure credentials."
         ],
         "zh": [
-          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "拒絕以退款為由要求螢幕共享與銀行資料。",
+          "自行開啟購買紀錄與官方客服，並保護帳戶憑證。"
         ]
       },
       "title": {
@@ -1142,16 +1158,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "ワンタイムコードを誰にも伝えず、期限による圧力から離れる",
+          "公式アプリで状態を確認し、漏えい時はセッションと認証情報を失効させる"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
-          "Compare how different responses affect the other person and the next action."
+          "Never disclose one-time codes and disengage from deadline pressure.",
+          "Check status in the official app and revoke sessions and credentials after exposure."
         ],
         "zh": [
-          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "絕不透露一次性驗證碼，並退出限時施壓。",
+          "從官方應用程式查狀態；若已外洩，撤銷工作階段與憑證。"
         ]
       },
       "title": {
@@ -1169,16 +1185,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "宿題量とゲームを続けたい理由を確認する",
+          "終了合図・宿題開始・見直しを含む共同ルールを試す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Check the homework load and why more gaming matters.",
+          "Test a joint rule covering stop cues, homework start, and review."
         ],
         "zh": [
-          "掌握情境重點，選擇符合親子溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "確認作業量與想繼續遊戲的理由。",
+          "試行包含停止提示、開始作業與檢討的共同規則。"
         ]
       },
       "title": {
@@ -1196,16 +1212,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "嘘の背景にある恐れと未完了部分を、怒りと分けて確認する",
+          "正直な報告、学習支援、相応の結果を組み合わせて信頼を修復する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate anger from checking the fear and unfinished work behind the lie.",
+          "Repair trust through honest reporting, learning support, and proportionate consequences."
         ],
         "zh": [
-          "掌握情境重點，選擇符合親子溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "把怒氣與查明說謊背後的害怕及未完成內容分開。",
+          "結合誠實回報、學習支援與相稱後果來修復信任。"
         ]
       },
       "title": {
@@ -1223,16 +1239,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "子どもの志望理由と親の期待・不安を別々に言語化する",
+          "比較情報と試行期間を用い、子ども主体の進路判断を支える"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "State the child's reasons separately from parental hopes and fears.",
+          "Use comparative evidence and a trial period to support a child-led decision."
         ],
         "zh": [
-          "掌握情境重點，選擇符合親子溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "分別說明孩子的志向理由與父母的期待和不安。",
+          "運用比較資料與試行期，支持孩子主導的生涯決定。"
         ]
       },
       "title": {
@@ -1250,16 +1266,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "時刻の食い違いを虚偽と断定せず、記憶の基準点と確信度を確認する",
+          "端末・交通・第三者記録と照合し、不確実性を含めて記録する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Investigative Interview.",
-          "Compare how different responses affect the other person and the next action."
+          "Explore memory anchors and confidence before treating a time discrepancy as deception.",
+          "Compare device, travel, and witness records while documenting uncertainty."
         ],
         "zh": [
-          "掌握情境重點，選擇符合調查訪談的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "先查記憶基準點與確信度，不把時間矛盾直接視為說謊。",
+          "比對裝置、交通與第三方紀錄，並記下不確定性。"
         ]
       },
       "title": {
@@ -1277,16 +1293,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "最後の使用者と紛失責任を切り分け、保管経路を時系列で確認する",
+          "アクセス記録・引継ぎ・捜索範囲を照合し、公平な次の手順を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Investigative Interview.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate being the last user from responsibility and reconstruct custody.",
+          "Cross-check access, handoffs, and search locations with a fair next procedure."
         ],
         "zh": [
-          "掌握情境重點，選擇符合調查訪談的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分最後使用者與遺失責任，重建保管流程。",
+          "交叉查核進出、交接與搜尋範圍，提出公平後續程序。"
         ]
       },
       "title": {
@@ -1304,16 +1320,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "目撃者の自由な記憶と質問後の推測を分け、確信度を保存する",
+          "誘導語を避け、初回陳述と独立証拠を用いて不確実性を保つ"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Investigative Interview.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate free recall from later guesses and preserve confidence levels.",
+          "Avoid leading language and retain uncertainty alongside the first account and independent evidence."
         ],
         "zh": [
-          "掌握情境重點，選擇符合調查訪談的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分自由回憶與後續猜測，保存各細節確信度。",
+          "避免誘導語，保留首次陳述、不確定性與獨立證據。"
         ]
       },
       "title": {
@@ -1331,16 +1347,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "双方の国内向けレッドラインと、共同声明の実務目的を分けて確認する",
+          "主語・順序・相互性を調整し、どちらも説明可能な文言を作る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate each side's domestic red lines from the statement's operational purpose.",
+          "Adjust agency, sequence, and reciprocity so both sides can defend the wording."
         ],
         "zh": [
-          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分雙方國內紅線與聯合聲明的實際目的。",
+          "調整主詞、順序與互惠，使雙方都能對內說明。"
         ]
       },
       "title": {
@@ -1358,16 +1374,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "主張する必要量を共通指標と検証可能なデータに置き換える",
+          "最低保障・比例配分・再評価条件を組み合わせる"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
-          "Compare how different responses affect the other person and the next action."
+          "Translate asserted need into shared metrics and verifiable data.",
+          "Combine minimum guarantees, proportional allocation, and review triggers."
         ],
         "zh": [
-          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "把聲稱的需求轉成共同指標與可驗證資料。",
+          "結合最低保障、比例分配與重新評估條件。"
         ]
       },
       "title": {
@@ -1385,16 +1401,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "恒久合意と現場の緊張緩和を分け、事故リスクを共有する",
+          "期限付き措置、検証、違反時連絡を組み合わせて段階的に進める"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate permanent settlement from immediate risk reduction.",
+          "Combine time-limited measures, verification, and incident communication."
         ],
         "zh": [
-          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分永久協議與眼前降溫，共享事故風險。",
+          "結合限期措施、查證與違規聯絡機制，分階段推進。"
         ]
       },
       "title": {
@@ -1412,16 +1428,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "検査待ちの不安を受け止め、既知・未知と緊急症状を分ける",
+          "結果時期、連絡方法、悪化時の受診条件をティーチバックで確認する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Clinical Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Validate anxiety while separating known facts, uncertainty, and urgent symptoms.",
+          "Use teach-back for result timing, contact routes, and escalation signs."
         ],
         "zh": [
-          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "接住等待檢查結果的焦慮，區分已知、未知與緊急症狀。",
+          "以回述確認結果時程、聯絡方式與惡化就醫條件。"
         ]
       },
       "title": {
@@ -1439,16 +1455,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "抗菌薬希望の背景と症状・期間・重症化リスクを評価する",
+          "不要な理由だけでなく、症状緩和と再評価条件を具体的に示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Clinical Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Assess symptoms, duration, risk, and the reason antibiotics are expected.",
+          "Pair the reason antibiotics are not indicated with relief and reassessment plans."
         ],
         "zh": [
-          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "評估症狀、病程、重症風險與期待抗菌藥的原因。",
+          "說明不適用原因，同時提出症狀緩解與再評估條件。"
         ]
       },
       "title": {
@@ -1466,16 +1482,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "正常検査と症状の実在を両立させ、生活への影響を具体的に聞く",
+          "検査の限界、考えられる原因、追跡と安全確認を共同で決める"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Clinical Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Hold normal tests and real symptoms together, including functional impact.",
+          "Explain test limits and agree on differential, follow-up, and safety-netting."
         ],
         "zh": [
-          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "同時承認檢查正常與症狀真實，具體了解生活影響。",
+          "說明檢查限制，共同決定可能原因、追蹤與安全網。"
         ]
       },
       "title": {
@@ -1493,16 +1509,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "落ち着いて安全・居場所・差し迫った危険を確認し、話を急かさず聞く",
+          "本人が選ぶ小さな行動と、地域の危機支援・信頼できる人への接続を作る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Crisis Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Calmly check safety, location, and immediate danger without rushing the caller.",
+          "Support one chosen step and connect local crisis help or a trusted person."
         ],
         "zh": [
-          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "冷靜確認安全、位置與立即危險，不催促來電者。",
+          "支持一個自選的小步驟，連結當地危機服務或可信任的人。"
         ]
       },
       "title": {
@@ -1520,16 +1536,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "避難拒否を頑固さと決めず、失いたくない物・移動障壁・情報源を確認する",
+          "平易な危険情報と選べる移動支援を示し、段階的な避難を合意する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Crisis Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Explore valued items, access barriers, and information sources rather than labeling refusal.",
+          "Use plain risk information and selectable assistance to agree on staged evacuation."
         ],
         "zh": [
-          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "不把拒絕視為固執，了解重要物品、移動障礙與資訊來源。",
+          "用白話風險資訊與可選支援，約定分階段撤離。"
         ]
       },
       "title": {
@@ -1547,16 +1563,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "距離と落ち着いた連絡を保ち、差し迫った危険と当事者の必要を確認する",
+          "急な動きを避け、専門対応者と本人が確認できる一つの安全な次の行動を作る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Crisis Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Maintain distance and calm contact while assessing immediate danger and needs.",
+          "Avoid sudden movement and establish one safe next action with trained responders."
         ],
         "zh": [
-          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "保持距離與冷靜聯絡，確認立即危險與當事人需求。",
+          "避免突然動作，與專業人員和本人確認一個安全下一步。"
         ]
       },
       "title": {
@@ -1565,6 +1581,87 @@
         "zh": "高度緊張的對峙"
       },
       "path": "./scenarios/high-tension-standoff.json"
+    },
+    {
+      "id": "family-emergency-impersonation",
+      "categoryId": "special-fraud-prevention",
+      "beatCount": 4,
+      "difficulty": "beginner",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "緊急性と秘密の要求に気付き、通話相手へ家族情報を追加で渡さない",
+          "いったん通話を切り、登録済み番号と別の家族を使って本人確認する"
+        ],
+        "en": [
+          "Recognize urgency and secrecy without revealing more family information.",
+          "End the call and verify through a saved number and another family member."
+        ],
+        "zh": [
+          "辨識催促與保密要求，不再透露家人資訊。",
+          "先掛斷，再用已儲存號碼與另一位家人獨立查證。"
+        ]
+      },
+      "title": {
+        "ja": "家族の緊急事態を装う電話",
+        "en": "A Fake Family Emergency Call",
+        "zh": "假冒家人緊急來電"
+      },
+      "path": "./scenarios/family-emergency-impersonation.json"
+    },
+    {
+      "id": "municipal-refund-atm",
+      "categoryId": "special-fraud-prevention",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "還付金受取とATM操作を結び付ける説明を危険信号として認識する",
+          "ATMから離れ、自治体の代表番号と書面通知で独立確認して相談する"
+        ],
+        "en": [
+          "Recognize a refund tied to ATM operation as a warning sign.",
+          "Leave the ATM and verify through an official municipal number and written notice."
+        ],
+        "zh": [
+          "辨識把退款與ATM操作連結的說法是警訊。",
+          "離開ATM，透過政府官方電話與書面通知獨立查證並求助。"
+        ]
+      },
+      "title": {
+        "ja": "自治体を装う還付金ATM誘導",
+        "en": "A Fake Municipal Refund at an ATM",
+        "zh": "假冒政府退款的ATM誘導"
+      },
+      "path": "./scenarios/municipal-refund-atm.json"
+    },
+    {
+      "id": "fake-police-asset-protection",
+      "categoryId": "special-fraud-prevention",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "警察を名乗ることや画面上の証票を本人確認の根拠にしない",
+          "資産移動・暗証番号・秘密保持を拒否し、通話外の公表窓口へ相談する"
+        ],
+        "en": [
+          "Do not treat a police claim or on-screen badge as proof of identity.",
+          "Reject asset transfers, credentials, and secrecy; verify through a published channel."
+        ],
+        "zh": [
+          "不把自稱警察或螢幕上的證件視為身分證明。",
+          "拒絕轉移資產、提供憑證與保密，透過公開管道查證。"
+        ]
+      },
+      "title": {
+        "ja": "警察を装う資産保護要求",
+        "en": "A Fake Police Asset Protection Demand",
+        "zh": "假冒警察的資產保護要求"
+      },
+      "path": "./scenarios/fake-police-asset-protection.json"
     }
   ]
 }

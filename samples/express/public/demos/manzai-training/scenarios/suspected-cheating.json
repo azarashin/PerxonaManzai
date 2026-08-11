@@ -108,7 +108,7 @@
     {
       "id": "opening",
       "boke": {
-        "ja": "答えが似ているだけで、カンニングしたと決めつけるんですか。",
+        "ja": "答えが似ているだけで、私がカンニングしたと決めるんですか？",
         "en": "Are you deciding I cheated just because our answers look alike?",
         "zh": "只因答案相似，就認定我作弊嗎？"
       },
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "決めつけずに本人の事情と受け止めを聞きます。",
-            "en": "I will ask about the student's circumstances without assuming.",
-            "zh": "我不預設立場，先了解學生的情況與感受。"
+            "ja": "まだ不正とは決めていない。似ている箇所を示し、二人から別々に解き方を聞きます。",
+            "en": "I have not concluded that you cheated. I'll identify the similarities and ask each of you to explain separately.",
+            "zh": "我還沒有認定作弊。我會指出相似處，再分別請你們說明解題過程。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：まだ不正とは決めていない。似ている箇所を示し、二人から別々に解き方を聞きます。",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: I have not concluded that you cheated. I'll identify the similarities and ask each of you to explain separately.",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：我還沒有認定作弊。我會指出相似處，再分別請你們說明解題過程。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "答えが似ているので、まずあなたの説明を聞きます。",
+            "en": "The answers are similar, so I will hear your explanation first.",
+            "zh": "答案很相似，所以先聽你的說明。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
+            "empathy": 12,
+            "fact-checking": 16,
             "psychological-safety": 12,
-            "solution-quality": 12
+            "solution-quality": 8
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：答えが似ているので、まずあなたの説明を聞きます。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: The answers are similar, so I will hear your explanation first.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：答案很相似，所以先聽你的說明。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "ここまで同じなら、カンニング以外は考えられません。",
+            "en": "With answers this similar, cheating is the only explanation.",
+            "zh": "答案如此相同，只可能是作弊。"
           },
           "axisScores": {
-            "empathy": 2,
+            "empathy": 0,
             "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "psychological-safety": 0,
+            "solution-quality": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：ここまで同じなら、カンニング以外は考えられません。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: With answers this similar, cheating is the only explanation.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：答案如此相同，只可能是作弊。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "二人とも同じ珍しい計算ミスです。それでも偶然の可能性を調べますか？",
+        "en": "Both papers contain the same unusual calculation error. Will you still consider coincidence?",
+        "zh": "兩份答案有相同的罕見計算錯誤，你仍會查證是否為巧合嗎？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "観察した事実と心配している理由を分けて伝えます。",
-            "en": "I will separate observed facts from why I am concerned.",
-            "zh": "我會分開說明觀察到的事實與擔心原因。"
+            "ja": "重要な一致です。各自に再現してもらい、座席と監督記録も別々に確認します。",
+            "en": "The shared error matters. Each student will reconstruct the work while we separately check seating and proctor notes.",
+            "zh": "這項共同錯誤很重要。我會請兩人各自重做，並另查座位與監考紀錄。"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：重要な一致です。各自に再現してもらい、座席と監督記録も別々に確認します。",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: The shared error matters. Each student will reconstruct the work while we separately check seating and proctor notes.",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：這項共同錯誤很重要。我會請兩人各自重做，並另查座位與監考紀錄。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "二人のノートを比べれば分かると思います。",
+            "en": "Comparing both notebooks should tell us more.",
+            "zh": "比較兩人的筆記應該能提供更多線索。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "psychological-safety": 12,
-            "solution-quality": 12
+            "empathy": 8,
+            "fact-checking": 17,
+            "psychological-safety": 10,
+            "solution-quality": 9
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：二人のノートを比べれば分かると思います。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: Comparing both notebooks should tell us more.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：比較兩人的筆記應該能提供更多線索。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "偶然ではありません。認めれば処分を軽くします。",
+            "en": "It was not a coincidence. Admit it and the penalty may be lighter.",
+            "zh": "這不是巧合。承認的話可以減輕處分。"
           },
           "axisScores": {
-            "empathy": 2,
+            "empathy": 1,
             "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "psychological-safety": 0,
+            "solution-quality": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：偶然ではありません。認めれば処分を軽くします。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: It was not a coincidence. Admit it and the penalty may be lighter.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：這不是巧合。承認的話可以減輕處分。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "確認中の成績はどうなり、いつ結果と理由を説明してもらえますか？",
+        "en": "What happens to our grades during review, and when will you explain the result and reasons?",
+        "zh": "調查期間成績如何處理？何時會說明結果與理由？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "本人が選べる小さな次の行動と支援を一緒に決めます。",
-            "en": "We will choose a small next step and support the student can accept.",
-            "zh": "一起決定學生能接受的小步驟與支援。"
+            "ja": "成績は保留し、学校手順で個別確認します。三日以内に根拠と異議申立て方法を伝えます。",
+            "en": "Grades will be held while we interview you separately. Within three days, we'll explain the basis and appeal options.",
+            "zh": "成績先暫緩，依校規分別查證；三天內說明依據與申訴方式。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：成績は保留し、学校手順で個別確認します。三日以内に根拠と異議申立て方法を伝えます。",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: Grades will be held while we interview you separately. Within three days, we'll explain the basis and appeal options.",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：成績先暫緩，依校規分別查證；三天內說明依據與申訴方式。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "疑いをなくすため、二人とも別の問題を解き直してください。",
+            "en": "To clear the concern, both of you should solve a different problem again.",
+            "zh": "為排除疑慮，請兩人重新解另一道題。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "psychological-safety": 12,
-            "solution-quality": 12
+            "empathy": 10,
+            "fact-checking": 14,
+            "psychological-safety": 11,
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：疑いをなくすため、二人とも別の問題を解き直してください。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: To clear the concern, both of you should solve a different problem again.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：為排除疑慮，請兩人重新解另一道題。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "疑われた時点で、今回は二人とも零点です。",
+            "en": "Because suspicion exists, both of you receive zero this time.",
+            "zh": "既然有嫌疑，這次兩人都記零分。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "empathy": 0,
+            "fact-checking": 1,
+            "psychological-safety": 0,
+            "solution-quality": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：疑われた時点で、今回は二人とも零点です。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: Because suspicion exists, both of you receive zero this time.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：既然有嫌疑，這次兩人都記零分。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "認めるまで帰れないと言われ、何を話しても信じてもらえない気がします。",
+        "en": "I was told I could not leave until I admitted it. It feels like nothing I say will be believed.",
+        "zh": "我被告知承認前不能離開，感覺說什麼都不會被相信。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "責める言い方になった点を認め、事情を聞くところからやり直します。",
-            "en": "I recognize that I sounded accusatory; let's restart by hearing what happened.",
-            "zh": "我承認剛才像在責備，讓我們從了解情況重新開始。"
+            "ja": "自白を迫る言い方になり申し訳ない。退出を妨げず、観察事実と中立な質問からやり直します。",
+            "en": "I'm sorry I pressured a confession. You may leave; we'll restart with observed facts and neutral questions.",
+            "zh": "抱歉我以言語逼你承認。你可以離開；我們從觀察事實與中立提問重新開始。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：自白を迫る言い方になり申し訳ない。退出を妨げず、観察事実と中立な質問からやり直します。",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: I'm sorry I pressured a confession. You may leave; we'll restart with observed facts and neutral questions.",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：抱歉我以言語逼你承認。你可以離開；我們從觀察事實與中立提問重新開始。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "疑っているわけではありません。もう一度だけ説明してください。",
+            "en": "I'm not accusing you. Please explain one more time.",
+            "zh": "我不是在指控你，請再說明一次。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "psychological-safety": 12,
-            "solution-quality": 12
+            "empathy": 10,
+            "fact-checking": 12,
+            "psychological-safety": 10,
+            "solution-quality": 8
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：疑っているわけではありません。もう一度だけ説明してください。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: I'm not accusing you. Please explain one more time.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：我不是在指控你，請再說明一次。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "何もしていないなら、質問されても困らないはずです。",
+            "en": "If you did nothing, the questions should not bother you.",
+            "zh": "如果沒做錯，應該不會怕被問。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "empathy": 0,
+            "fact-checking": 2,
+            "psychological-safety": 0,
+            "solution-quality": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：何もしていないなら、質問されても困らないはずです。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: If you did nothing, the questions should not bother you.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：如果沒做錯，應該不會怕被問。"
           },
           "stateEffects": [
             {

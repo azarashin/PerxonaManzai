@@ -7,9 +7,9 @@
     "zh": "家事分工不均"
   },
   "description": {
-    "ja": "恋愛・夫婦・パートナー会話として「偏った家事負担」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Unequal Housework” for Partner Communication.",
-    "zh": "在「家事分工不均」中練習符合情境的簡短伴侶溝通回應。"
+    "ja": "目に見える家事だけでなく計画・在庫管理などの負担も確認し、担当全体を持つ分担へ変える練習です。",
+    "en": "Practice recognizing visible and planning labor, then assigning full ownership rather than occasional help.",
+    "zh": "練習看見可見家事與規劃管理等負擔，並以完整責任分工取代偶爾幫忙。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "大切にされていないと感じたんだね。まず気持ちを聞かせてほしい。",
-            "en": "It sounds like you felt unimportant. I want to hear what hurt most.",
-            "zh": "聽起來你覺得自己不被重視。我想先了解最受傷的是什麼。"
+            "ja": "気づけていなかった。負担を押しつけてごめん。作業だけでなく、予定や在庫管理も含めて一度全部出そう。",
+            "en": "I failed to notice and left the load to you. I'm sorry. Let's list the chores plus planning and supply tracking.",
+            "zh": "我沒有注意到，把負擔都留給你，對不起。我們把家事、安排與用品管理全部列出來。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "負担を認めて謝り、見えにくい管理作業まで事実確認するため、分担設計の土台を作れます。",
+            "en": "It owns the imbalance and includes hidden management work in the fact finding.",
+            "zh": "承認分工不均並道歉，也把隱性管理工作納入確認，建立重新分工的基礎。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "分かった。これから皿洗いはもっと手伝うよ。",
+            "en": "I understand. I'll help with dishes more often.",
+            "zh": "我知道了，以後會多幫忙洗碗。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
+            "empathy": 11,
+            "needs-reading": 5,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 15
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一つの作業を増やす提案はありますが、全体の偏りと管理負担を確認していません。",
+            "en": "It offers one chore but does not examine the overall imbalance or management load.",
+            "zh": "有提出多做一項家事，但未確認整體失衡與管理負擔。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "やってほしいことがあるなら、その都度言ってくれればいい。",
+            "en": "Just tell me whenever you want something done.",
+            "zh": "有需要我做的事，每次告訴我就好。"
           },
           "axisScores": {
-            "empathy": 2,
-            "needs-reading": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "empathy": 1,
+            "needs-reading": 1,
+            "relationship-impact": 3,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "指示を出す管理負担まで相手に残し、偏りを解消する責任を引き受けていません。",
+            "en": "It leaves the partner responsible for directing the work and does not take ownership.",
+            "zh": "仍把指派工作的管理負擔留給對方，沒有承擔改善分工的責任。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "掃除だけじゃない。献立を考え、日用品の残りを見て、家族の予定を覚えるのも私だよ。",
+        "en": "It isn't just cleaning. I plan meals, track supplies, and remember the family's schedule too.",
+        "zh": "不只是打掃，想菜單、留意用品存量、記住家人行程也都是我。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "言い訳を急がず、私のどの行動がつらかったか確認したい。",
-            "en": "Before explaining myself, I want to understand which of my actions hurt you.",
-            "zh": "我先不急著解釋，想確認我的哪個行為讓你難受。"
+            "ja": "見えない段取りまで一人に任せていたんだね。一週間分を記録して、作業と管理をセットで分け直そう。",
+            "en": "I left all the invisible planning to you. Let's track a week and reassign each chore together with its management.",
+            "zh": "原來我把隱性安排全留給你。我們記錄一週，把家事與其管理責任一起重新分配。"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "隠れた負担を明示し、観察した一週間の事実を基に作業と管理を分ける提案です。",
+            "en": "It recognizes hidden labor and proposes evidence-based reassignment of work and management.",
+            "zh": "明確認出隱性負擔，並提議依一週紀錄重新分配工作與管理。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "掃除と洗濯の回数を表にして比べよう。",
+            "en": "Let's chart how often each of us cleans and does laundry.",
+            "zh": "把打掃和洗衣次數做成表格比較吧。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "empathy": 8,
+            "needs-reading": 14,
+            "relationship-impact": 10,
+            "solution-quality": 14
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "可視化は有効ですが、献立、在庫、予定という申告された管理作業を対象外にしています。",
+            "en": "Tracking is useful, but it excludes the meal, supply, and schedule work just identified.",
+            "zh": "量化有幫助，但忽略剛提出的菜單、用品與行程管理。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "献立や買い物は、得意な人がやる方が早いよ。",
+            "en": "Meal planning and shopping are faster when the person good at them does them.",
+            "zh": "菜單和採買交給擅長的人做比較快。"
           },
           "axisScores": {
-            "empathy": 2,
-            "needs-reading": 3,
+            "empathy": 1,
+            "needs-reading": 2,
             "relationship-impact": 2,
-            "solution-quality": 3
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "効率を理由に負担の固定化を正当化し、相手が感じる不公平を悪化させます。",
+            "en": "It uses efficiency to justify a fixed imbalance and worsens the unfairness.",
+            "zh": "以效率合理化固定的不均分工，加深對方感受到的不公平。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "言われた時だけ手伝うのではなく、自分の担当として最後まで持ってほしい。",
+        "en": "I don't want help only when I ask. I need you to own responsibilities through completion.",
+        "zh": "我不要每次開口才得到幫忙，希望你把自己的責任從頭做到尾。"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "二人が続けられる具体的な約束を一緒に決めよう。",
-            "en": "Let's agree on a specific change that both of us can maintain.",
-            "zh": "我們一起決定一個雙方都能持續的具體改變。"
+            "ja": "夕食の献立、買い物、後片付けは私が週三日まとめて担当する。二週間後に負担を一緒に見直そう。",
+            "en": "I'll own planning, shopping, and cleanup for dinner three days a week. Let's review the load in two weeks.",
+            "zh": "每週三天的晚餐規劃、採買與收拾由我完整負責，兩週後一起檢討負擔。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "作業一式、頻度、担当、見直し時期が明確で、指示待ちではない責任分担です。",
+            "en": "It defines the full task, frequency, owner, and review date rather than waiting for directions.",
+            "zh": "完整工作、頻率、負責人與檢討日期都明確，不再等待指示。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "これからは気づいた方が家事をすることにしよう。",
+            "en": "From now on, whoever notices a chore should do it.",
+            "zh": "以後誰注意到家事就由誰做。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "empathy": 8,
+            "needs-reading": 5,
+            "relationship-impact": 10,
+            "solution-quality": 15
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一見公平ですが、気づく役割が既に偏っているという核心を変えません。",
+            "en": "It sounds fair but preserves the unequal burden of noticing tasks.",
+            "zh": "看似公平，卻沒有改變目前由一方負責注意家事的核心問題。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "家事アプリを入れるから、あなたが担当を登録して。",
+            "en": "I'll install a chore app, and you can enter everyone's assignments.",
+            "zh": "我安裝家事App，你來登記每個人的分工。"
           },
           "axisScores": {
             "empathy": 2,
             "needs-reading": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 5,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "道具を導入しても、登録と管理を相手に任せるため隠れた負担を増やします。",
+            "en": "The tool adds work because the partner still owns setup and management.",
+            "zh": "即使導入工具，仍把登記與管理交給對方，反而增加隱性負擔。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "『手伝う』と言われると、家事は私の仕事だと思われているようでつらい。",
+        "en": "When you say 'help,' it sounds as if the household is fundamentally my job.",
+        "zh": "你說『幫忙』時，聽起來家事本來就是我的責任，讓我很難受。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "さっきは守りに入ってしまった。否定せずにもう一度聞かせてほしい。",
-            "en": "I became defensive. Please tell me again, and I will listen without dismissing it.",
-            "zh": "剛才我太防衛了，請再說一次，我會不否定地聽。"
+            "ja": "家事をあなたの仕事として考えていた言い方だった。ごめん。共同責任として、私が持つ担当を決め直したい。",
+            "en": "Calling it help treated the household as your job. I'm sorry. I want to define what I own as a shared responsibility.",
+            "zh": "說成幫忙，等於把家事當成你的工作，對不起。我想以共同責任重新決定我完整負責的項目。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "言葉の背景にある責任認識を修正し、謝罪を具体的な担当引受けへつなげています。",
+            "en": "It corrects the ownership assumption and links the apology to taking concrete responsibility.",
+            "zh": "修正用詞背後的責任認知，並把道歉連結到具體承擔。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "言葉が悪かった。手伝うじゃなくて、家事をするよ。",
+            "en": "That was poor wording. I won't call it helping; I'll do chores.",
+            "zh": "是我用詞不好，不說幫忙，我會做家事。"
           },
           "axisScores": {
             "empathy": 13,
-            "needs-reading": 11,
-            "relationship-impact": 12,
-            "solution-quality": 12
+            "needs-reading": 8,
+            "relationship-impact": 11,
+            "solution-quality": 14
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "表現は修正しますが、どの管理責任を引き受けるかがまだ決まっていません。",
+            "en": "It fixes the wording but still does not define which responsibilities will be owned.",
+            "zh": "有修正說法，但仍未決定要完整承擔哪些管理責任。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "言葉の問題でしょ。実際にやっているなら気にしなくていい。",
+            "en": "That's just wording. If I do some chores, it shouldn't matter.",
+            "zh": "那只是用詞問題，有做家事就不用在意。"
           },
           "axisScores": {
-            "empathy": 2,
-            "needs-reading": 3,
+            "empathy": 0,
+            "needs-reading": 1,
             "relationship-impact": 2,
-            "solution-quality": 3
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "『手伝う』が示す責任の偏りを表面的な言葉の問題として退けています。",
+            "en": "It dismisses the unequal ownership signaled by 'help' as mere wording.",
+            "zh": "把『幫忙』反映的責任失衡，當成表面用詞問題而否定。"
           },
           "stateEffects": [
             {

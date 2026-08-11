@@ -7,9 +7,9 @@
     "zh": "餐點延遲客訴"
   },
   "description": {
-    "ja": "接客・クレーム対応として「料理の提供遅延」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Delayed Order Complaint” for Customer Service and Complaints.",
-    "zh": "在「餐點延遲客訴」中練習符合情境的簡短顧客服務與客訴回應。"
+    "ja": "料理を三十分待つお客様に、謝意、提供状況の確認、待つ以外の選択肢を順序立てて案内する練習です。",
+    "en": "Practice acknowledging a thirty-minute delay, checking the order, and offering informed alternatives.",
+    "zh": "練習面對已等候三十分鐘的顧客，依序致歉、確認出餐狀況並提出替代選項。"
   },
   "evaluationAxes": [
     {
@@ -79,9 +79,9 @@
       },
       "reaction": {
         "description": {
-          "ja": "率直に問題を切り出す",
-          "en": "Raise the issue candidly",
-          "zh": "坦率提出問題"
+          "ja": "三十分待った負担と説明不足を訴える",
+          "en": "Raise the burden of a thirty-minute wait and the lack of an update",
+          "zh": "指出等待三十分鐘的負擔與缺乏說明"
         },
         "motionTags": [
           "pose:talking_02",
@@ -95,9 +95,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "ご不便を受け止め、まず確認すべき事実を整理します。",
-            "en": "I acknowledge the inconvenience and will first verify the relevant facts.",
-            "zh": "我理解造成的不便，會先確認相關事實。"
+            "ja": "三十分もお待たせし申し訳ありません。厨房で注文状況と提供見込みを確認し、すぐ戻ります。",
+            "en": "I'm sorry you've waited thirty minutes. I'll check the order and serving estimate with the kitchen and return promptly.",
+            "zh": "很抱歉讓您等了三十分鐘。我會向廚房確認訂單與預計出餐時間，馬上回來說明。"
           },
           "axisScores": {
             "empathy": 20,
@@ -106,47 +106,47 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "待ち時間への謝意、厨房で確認する事実、戻って説明する行動を示し、未確認の時刻は約束していません。",
+            "en": "It acknowledges the wait, names what the kitchen will verify, and promises an update without inventing a serving time.",
+            "zh": "回應了等待負擔，說明要向廚房確認的事項，也承諾回報而未臆測出餐時間。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "三十分お待ちですね。厨房に確認します。",
+            "en": "You've been waiting thirty minutes. I'll check with the kitchen.",
+            "zh": "您已經等了三十分鐘，我去向廚房確認。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "empathy": 17,
+            "fact-checking": 18,
+            "solution-quality": 13,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "待ち時間を受け止めて確認へ進めますが、提供見込みを調べることと戻る時期が明確ではありません。",
+            "en": "It acknowledges the wait and starts verification, but does not specify checking the serving estimate or when an update will follow.",
+            "zh": "有接住等待時間並開始確認，但未說明會查預計出餐時間，也未交代何時回報。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "混雑していますので、もうしばらくお待ちください。",
+            "en": "We're busy, so please wait a little longer.",
+            "zh": "現在很忙，請您再等一下。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "solution-quality": 2,
-            "boundary-keeping": 3
+            "empathy": 3,
+            "fact-checking": 2,
+            "solution-quality": 4,
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "混雑を理由に待つことだけを求め、注文が通っているかも提供時刻も確認していないため、不信を強めます。",
+            "en": "It asks for more waiting without checking the order or timing, so the explanation is likely to deepen frustration.",
+            "zh": "只以忙碌為由要求繼續等待，未確認訂單或時間，容易加深顧客的不滿。"
           }
         }
       ]
@@ -154,15 +154,15 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "注文が通っているか、あと何分か、待てない場合の方法も知りたいです。",
+        "en": "I need to know whether the order went through, how long it will take, and what I can do if I cannot wait.",
+        "zh": "我想知道訂單是否送出、還要多久，以及無法再等時有哪些辦法。"
       },
       "reaction": {
         "description": {
-          "ja": "説明や確認を求める",
-          "en": "Ask for clarification",
-          "zh": "要求說明與確認"
+          "ja": "確認事項と待つ以外の選択肢を具体化する",
+          "en": "Specify the facts and alternatives needed to decide",
+          "zh": "具體說明作決定所需的事實與替代方案"
         },
         "motionTags": [
           "pose:talking_03",
@@ -176,9 +176,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "確認できたことと未確認のことを分けてご説明します。",
-            "en": "I will separate what is confirmed from what still needs checking.",
-            "zh": "我會分開說明已確認與仍待查證的部分。"
+            "ja": "お待たせしている状況を踏まえ、注文状況、提供見込み、すぐ出せる代替料理を厨房で確認します。",
+            "en": "Given the delay, I'll ask the kitchen about the order, the serving estimate, and dishes available sooner.",
+            "zh": "考量已延誤，我會向廚房確認訂單、預計出餐時間及能更快提供的替代餐點。"
           },
           "axisScores": {
             "empathy": 20,
@@ -187,47 +187,47 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "お客様が判断するために必要な三項目を厨房へ確認すると明示し、推測や権限外の約束を避けています。",
+            "en": "It identifies all three facts the guest needs and avoids guessing or promising an unverified remedy.",
+            "zh": "清楚列出顧客作決定所需的三項資訊，且避免猜測或承諾未確認的處理。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "まず注文が厨房に通っているか確認します。",
+            "en": "First, I'll check whether the kitchen received the order.",
+            "zh": "我先確認廚房是否收到訂單。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "empathy": 5,
+            "fact-checking": 20,
+            "solution-quality": 11,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "注文状況の確認は適切ですが、待ち時間への配慮、提供見込み、代替料理という残りの要望に応えていません。",
+            "en": "Checking receipt of the order is useful, but it misses the wait, serving estimate, and alternative-dish request.",
+            "zh": "確認訂單是否送達是有效的，但未回應等待負擔、出餐時間與替代餐點。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "だいたいあと十分だと思います。",
+            "en": "I think it will probably be about ten more minutes.",
+            "zh": "我想大概再十分鐘。"
           },
           "axisScores": {
             "empathy": 2,
-            "fact-checking": 3,
-            "solution-quality": 2,
-            "boundary-keeping": 3
+            "fact-checking": 0,
+            "solution-quality": 3,
+            "boundary-keeping": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "厨房へ確認せず時刻を推測しており、さらに遅れた場合の信頼と選択肢を失います。",
+            "en": "It invents a time without checking the kitchen and leaves the guest with no reliable option if the delay continues.",
+            "zh": "未向廚房確認就猜測時間，若繼續延誤會失去信任，也沒有可行選項。"
           }
         }
       ]
@@ -235,15 +235,15 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "料理を待つか変更するか判断できるように、いつ知らせてもらえますか。",
+        "en": "When will you update me so I can decide whether to wait or change my order?",
+        "zh": "請問何時會回覆，讓我能決定繼續等或更換餐點？"
       },
       "reaction": {
         "description": {
-          "ja": "次の行動を確かめる",
-          "en": "Confirm the next action",
-          "zh": "確認下一步行動"
+          "ja": "判断できる期限と選択肢を求める",
+          "en": "Request a decision deadline and available choices",
+          "zh": "要求可作決定的回覆期限與選項"
         },
         "motionTags": [
           "pose:emotion_04",
@@ -257,9 +257,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "可能な選択肢と次のご案内時刻を具体的にお伝えします。",
-            "en": "I will give you available options and a specific time for the next update.",
-            "zh": "我會說明可行選項與下次更新的明確時間。"
+            "ja": "お待たせしたため、五分以内に提供見込みと、変更や取消しが可能かを確認してお伝えします。",
+            "en": "Within five minutes, I'll report the serving estimate and whether a change or cancellation is available.",
+            "zh": "因已延誤，我會在五分鐘內回報預計出餐時間，以及能否更換或取消。"
           },
           "axisScores": {
             "empathy": 20,
@@ -268,47 +268,47 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "五分という案内期限と、確認後に選べる可能性のある対応を示し、取消しを確約しない境界も守っています。",
+            "en": "It gives a five-minute update deadline, names possible options, and preserves authority boundaries by verifying cancellation first.",
+            "zh": "提出五分鐘的回覆期限與可能選項，並先確認能否取消，沒有越權承諾。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "確認できたら、またお声がけします。",
+            "en": "I'll come back once I have checked.",
+            "zh": "確認後我會再來告知。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "empathy": 7,
+            "fact-checking": 13,
+            "solution-quality": 14,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認後の報告は約束していますが、いつ戻るか、何を確認し、どの選択肢を示すかが曖昧です。",
+            "en": "It promises a follow-up, but leaves the timing, facts to verify, and available choices unspecified.",
+            "zh": "有承諾確認後回覆，但何時回來、確認什麼及有哪些選項都不明確。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "もうすぐ出るはずなので、そのままお待ちください。",
+            "en": "It should be out soon, so please keep waiting.",
+            "zh": "應該快好了，請繼續等候。"
           },
           "axisScores": {
             "empathy": 2,
-            "fact-checking": 3,
-            "solution-quality": 2,
-            "boundary-keeping": 3
+            "fact-checking": 0,
+            "solution-quality": 3,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "未確認の見込みで待つことを強い、判断期限も代替案も示さないため、遅延対応として不十分です。",
+            "en": "It pressures the guest to wait on an unverified estimate and provides neither an update deadline nor an alternative.",
+            "zh": "以未確認的預估要求顧客繼續等，既無回覆期限也無替代方案。"
           }
         }
       ]

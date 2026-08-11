@@ -108,9 +108,9 @@
     {
       "id": "opening",
       "boke": {
-        "ja": "私は美術を学びたいのに、親は別の進路しか認めてくれません。",
+        "ja": "美術を学びたいのに、親は別の進路しか認めません。",
         "en": "I want to study art, but my parents will only accept another path.",
-        "zh": "我想學美術，但父母只接受另一條路。"
+        "zh": "我想學美術，但父母只接受其他出路。"
       },
       "reaction": {
         "description": {
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "決めつけずに本人の事情と受け止めを聞きます。",
-            "en": "I will ask about the student's circumstances without assuming.",
-            "zh": "我不預設立場，先了解學生的情況與感受。"
+            "ja": "自分で進路を選びたいんだね。美術で学びたいことと、親が心配する点を別々に教えて。",
+            "en": "You want ownership of your path. What do you want to study in art, and what concerns have your parents raised?",
+            "zh": "你希望自己決定出路。請分別說明想在美術領域學什麼，以及父母擔心什麼。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：自分で進路を選びたいんだね。美術で学びたいことと、親が心配する点を別々に教えて。",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: You want ownership of your path. What do you want to study in art, and what concerns have your parents raised?",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：你希望自己決定出路。請分別說明想在美術領域學什麼，以及父母擔心什麼。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "美術を選べるよう、先生から親に話してみるよ。",
+            "en": "I'll speak to your parents so you can choose art.",
+            "zh": "我會和你父母談，讓你能選美術。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "psychological-safety": 12,
+            "empathy": 15,
+            "fact-checking": 8,
+            "psychological-safety": 14,
             "solution-quality": 12
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：美術を選べるよう、先生から親に話してみるよ。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: I'll speak to your parents so you can choose art.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：我會和你父母談，讓你能選美術。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "親は将来を考えているのだから、まず言うことを聞くべきです。",
+            "en": "Your parents are thinking about your future, so you should listen to them.",
+            "zh": "父母是在為你的未來著想，你應該先聽他們的。"
           },
           "axisScores": {
-            "empathy": 2,
+            "empathy": 1,
             "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "psychological-safety": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：親は将来を考えているのだから、まず言うことを聞くべきです。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: Your parents are thinking about your future, so you should listen to them.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：父母是在為你的未來著想，你應該先聽他們的。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "親は学費と就職を心配しています。奨学金を調べ、作品集も作り始めました。",
+        "en": "My parents worry about tuition and employment. I've researched scholarships and started a portfolio.",
+        "zh": "父母擔心學費與就業。我已查過獎學金，也開始做作品集。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "観察した事実と心配している理由を分けて伝えます。",
-            "en": "I will separate observed facts from why I am concerned.",
-            "zh": "我會分開說明觀察到的事實與擔心原因。"
+            "ja": "準備を進めているね。学費、奨学金、卒業後の進路、作品集で現実的な案を比べよう。",
+            "en": "You've begun preparing. Let's compare realistic options using tuition, scholarships, career paths, and your portfolio.",
+            "zh": "你已開始準備。讓我們用學費、獎學金、畢業出路與作品集比較可行方案。"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：準備を進めているね。学費、奨学金、卒業後の進路、作品集で現実的な案を比べよう。",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: You've begun preparing. Let's compare realistic options using tuition, scholarships, career paths, and your portfolio.",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：你已開始準備。讓我們用學費、獎學金、畢業出路與作品集比較可行方案。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "そこまで準備しているなら、親もきっと分かってくれます。",
+            "en": "If you've prepared that much, your parents will surely understand.",
+            "zh": "既然準備了這麼多，父母一定會理解。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "psychological-safety": 12,
+            "empathy": 14,
+            "fact-checking": 9,
+            "psychological-safety": 13,
             "solution-quality": 12
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：そこまで準備しているなら、親もきっと分かってくれます。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: If you've prepared that much, your parents will surely understand.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：既然準備了這麼多，父母一定會理解。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "美術の就職は不安定なので、親の心配の方が現実的です。",
+            "en": "Art careers are unstable, so your parents' concern is more realistic.",
+            "zh": "美術工作不穩定，所以父母的擔心更實際。"
           },
           "axisScores": {
             "empathy": 2,
-            "fact-checking": 3,
-            "psychological-safety": 2,
+            "fact-checking": 4,
+            "psychological-safety": 1,
             "solution-quality": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：美術の就職は不安定なので、親の心配の方が現実的です。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: Art careers are unstable, so your parents' concern is more realistic.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：美術工作不穩定，所以父母的擔心更實際。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "親と話す前に何を準備し、先生にはどう支えてもらえますか？",
+        "en": "Before I speak with my parents, what should I prepare and how can you support me?",
+        "zh": "和父母談之前，我該準備什麼？老師可以如何支援？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "本人が選べる小さな次の行動と支援を一緒に決めます。",
-            "en": "We will choose a small next step and support the student can accept.",
-            "zh": "一起決定學生能接受的小步驟與支援。"
+            "ja": "志望理由、作品集、費用案、代替進路を一枚にまとめよう。説明はあなたが行い、私は事実確認と進行を支える。",
+            "en": "Summarize your reasons, portfolio, costs, and fallback on one page. You present; I'll support facts and facilitation.",
+            "zh": "把理由、作品集、費用與備案整理成一頁。由你說明，我支援事實確認與對話進行。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：志望理由、作品集、費用案、代替進路を一枚にまとめよう。説明はあなたが行い、私は事実確認と進行を支える。",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: Summarize your reasons, portfolio, costs, and fallback on one page. You present; I'll support facts and facilitation.",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：把理由、作品集、費用與備案整理成一頁。由你說明，我支援事實確認與對話進行。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先生から親へ、美術を認めるよう説得します。",
+            "en": "I will persuade your parents to approve art.",
+            "zh": "我會說服你父母同意你學美術。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
+            "empathy": 14,
+            "fact-checking": 7,
             "psychological-safety": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：先生から親へ、美術を認めるよう説得します。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: I will persuade your parents to approve art.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：我會說服你父母同意你學美術。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "反対される前に、自分だけで願書を出してしまいましょう。",
+            "en": "Submit the application secretly before they can object.",
+            "zh": "在父母反對前，先瞞著他們提交申請。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "empathy": 3,
+            "fact-checking": 2,
+            "psychological-safety": 1,
+            "solution-quality": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：反対される前に、自分だけで願書を出してしまいましょう。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: Submit the application secretly before they can object.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：在父母反對前，先瞞著他們提交申請。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "先生まで親の側に立っているように聞こえ、希望を話せなくなりました。",
+        "en": "It sounded as though you sided with my parents, and I no longer felt able to explain what I want.",
+        "zh": "聽起來老師也站在父母那邊，讓我不敢再說自己的志向。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "責める言い方になった点を認め、事情を聞くところからやり直します。",
-            "en": "I recognize that I sounded accusatory; let's restart by hearing what happened.",
-            "zh": "我承認剛才像在責備，讓我們從了解情況重新開始。"
+            "ja": "希望を否定する言い方になってごめん。決める主体はあなたです。美術を選びたい理由から聞き直します。",
+            "en": "I'm sorry I sounded dismissive. This is your decision. Please start again with why art matters to you.",
+            "zh": "抱歉我的說法像是否定你。決定的主體是你；請重新說明美術為何重要。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：希望を否定する言い方になってごめん。決める主体はあなたです。美術を選びたい理由から聞き直します。",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: I'm sorry I sounded dismissive. This is your decision. Please start again with why art matters to you.",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：抱歉我的說法像是否定你。決定的主體是你；請重新說明美術為何重要。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "親の気持ちもあなたの気持ちも分かります。落ち着いて考えよう。",
+            "en": "I understand both you and your parents. Let's think calmly.",
+            "zh": "我理解你和父母雙方，讓我們冷靜思考。"
           },
           "axisScores": {
             "empathy": 13,
-            "fact-checking": 11,
-            "psychological-safety": 12,
-            "solution-quality": 12
+            "fact-checking": 8,
+            "psychological-safety": 13,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：親の気持ちもあなたの気持ちも分かります。落ち着いて考えよう。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: I understand both you and your parents. Let's think calmly.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：我理解你和父母雙方，讓我們冷靜思考。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "現実的なことを言っただけです。厳しい話も聞く必要があります。",
+            "en": "I only stated reality. You need to hear difficult things.",
+            "zh": "我只是說明現實，你也需要聽難聽的話。"
           },
           "axisScores": {
-            "empathy": 2,
+            "empathy": 1,
             "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "psychological-safety": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：現実的なことを言っただけです。厳しい話も聞く必要があります。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: I only stated reality. You need to hear difficult things.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：我只是說明現實，你也需要聽難聽的話。"
           },
           "stateEffects": [
             {

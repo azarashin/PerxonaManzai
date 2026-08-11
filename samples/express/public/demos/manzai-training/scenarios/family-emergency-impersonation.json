@@ -1,0 +1,398 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "family-emergency-impersonation",
+  "title": {
+    "ja": "家族の緊急事態を装う電話",
+    "en": "A Fake Family Emergency Call",
+    "zh": "假冒家人緊急來電"
+  },
+  "description": {
+    "ja": "家族を装う相手が、変わった電話番号と緊急事態を理由に現金を求める場面で、感情に流されず本人確認と相談を行う練習です。",
+    "en": "Practice slowing down, verifying identity independently, and seeking help when a caller impersonates family and demands emergency cash.",
+    "zh": "練習面對假冒家人並緊急索取現金的來電時，先冷靜、獨立確認身分並尋求協助。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "identity-verification",
+      "label": {
+        "ja": "本人確認",
+        "en": "Identity verification",
+        "zh": "身分查證"
+      },
+      "description": {
+        "ja": "相手が示した情報に頼らず家族本人を確認する",
+        "en": "Verify the family member without relying on caller-provided details.",
+        "zh": "不依賴來電者提供的資訊查證家人身分。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "emotional-control",
+      "label": {
+        "ja": "感情の制御",
+        "en": "Emotional control",
+        "zh": "情緒控制"
+      },
+      "description": {
+        "ja": "緊急性や罪悪感で判断を急がない",
+        "en": "Avoid rushed decisions driven by urgency or guilt.",
+        "zh": "不因催促或罪惡感而倉促決定。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "money-safety",
+      "label": {
+        "ja": "金銭保護",
+        "en": "Money safety",
+        "zh": "金錢安全"
+      },
+      "description": {
+        "ja": "振込や現金受渡しを確認前に行わない",
+        "en": "Do not transfer or hand over cash before verification.",
+        "zh": "查證前不匯款或交付現金。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "help-seeking",
+      "label": {
+        "ja": "相談行動",
+        "en": "Help seeking",
+        "zh": "求助行動"
+      },
+      "description": {
+        "ja": "家族や警察の公表窓口へ相談する",
+        "en": "Contact family or an official police channel.",
+        "zh": "聯絡家人或警方公開管道。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "changed-number",
+      "boke": {
+        "ja": "母さん、俺だよ。携帯をなくして番号が変わった。会社で大変なことになった。",
+        "en": "Mom, it's me. I lost my phone, so this is my new number. Something serious happened at work.",
+        "zh": "媽，是我。我手機掉了，所以換了號碼。公司出了大事。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "低い声と険しい作り笑いで親しさを演出する",
+          "en": "Use a low voice and a strained, calculating smile",
+          "zh": "以低沉聲音與勉強的算計笑容裝熟"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "changed-number-strong",
+          "text": {
+            "ja": "いったん切るね。私が登録しているあなたの番号と、別の家族にも連絡して確認します。",
+            "en": "I'll hang up and call the number I already have, then check with another family member.",
+            "zh": "我先掛斷，撥打原本儲存的號碼，再向另一位家人確認。"
+          },
+          "axisScores": {
+            "identity-verification": 20,
+            "emotional-control": 20,
+            "money-safety": 20,
+            "help-seeking": 20
+          },
+          "feedback": {
+            "ja": "相手に家族情報を足さず、既知の連絡経路を二つ使うため、なりすましを安全に検証できます。",
+            "en": "It reveals no extra family details and uses two known contact routes to verify the caller safely.",
+            "zh": "未透露更多家人資料，並使用兩個既知聯絡途徑安全查證。"
+          }
+        },
+        {
+          "id": "changed-number-partial",
+          "text": {
+            "ja": "本当にあなたなら、家族しか知らないことに答えて。",
+            "en": "If you're really family, answer a question only we should know.",
+            "zh": "如果真是家人，就回答只有我們知道的問題。"
+          },
+          "axisScores": {
+            "identity-verification": 15,
+            "emotional-control": 13,
+            "money-safety": 15,
+            "help-seeking": 8
+          },
+          "feedback": {
+            "ja": "合言葉の確認は有用ですが、通話を続けると答えの手掛かりを与えたり、別経路での確認を逃したりします。",
+            "en": "A private question can help, but staying on the call may reveal clues and skips independent confirmation.",
+            "zh": "私密問題有幫助，但繼續通話可能洩漏線索，也缺少獨立查證。"
+          }
+        },
+        {
+          "id": "changed-number-weak",
+          "text": {
+            "ja": "新しい番号を登録するね。何があったか急いで教えて。",
+            "en": "I'll save the new number. Tell me quickly what happened.",
+            "zh": "我先存新號碼，快告訴我發生什麼事。"
+          },
+          "axisScores": {
+            "identity-verification": 2,
+            "emotional-control": 5,
+            "money-safety": 8,
+            "help-seeking": 1
+          },
+          "feedback": {
+            "ja": "未確認の番号を家族のものとして受け入れ、相手が作った緊急性の枠内へ入っています。",
+            "en": "It accepts an unverified number as family contact and enters the caller's urgency frame.",
+            "zh": "把未查證號碼當成家人聯絡方式，也落入對方製造的緊急框架。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cash-demand",
+      "boke": {
+        "ja": "取引先の損失を今日中に埋めないと逮捕される。300万円だけ用意して。誰にも言わないで。",
+        "en": "I'll be arrested unless I cover a client's loss today. Prepare three million yen and tell nobody.",
+        "zh": "今天不補上客戶損失我就會被捕。請準備三百萬日圓，別告訴任何人。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "目を細め、威圧的な表情で秘密と期限を押し付ける",
+          "en": "Narrow the eyes and impose secrecy with an intimidating expression",
+          "zh": "瞇起眼睛，以威嚇表情強迫保密與限時"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "cash-demand-strong",
+          "text": {
+            "ja": "お金は用意せず、この電話を切ります。本人と家族へ確認し、不安なら警察の相談窓口へ連絡します。",
+            "en": "I won't prepare money. I'll end this call, verify with family, and contact an official police line if needed.",
+            "zh": "我不會準備金錢。我會掛斷、向家人查證，必要時聯絡警方公開管道。"
+          },
+          "axisScores": {
+            "identity-verification": 20,
+            "emotional-control": 20,
+            "money-safety": 20,
+            "help-seeking": 20
+          },
+          "feedback": {
+            "ja": "秘密と即日送金を明確に拒み、本人確認と公的相談へ切り替えるため、金銭被害を防げます。",
+            "en": "It rejects secrecy and same-day payment, then shifts to family verification and official help.",
+            "zh": "明確拒絕保密與當日付款，轉向家人查證及官方協助。"
+          }
+        },
+        {
+          "id": "cash-demand-partial",
+          "text": {
+            "ja": "今日は用意できません。明日なら話を聞きます。",
+            "en": "I can't prepare it today. We can discuss it tomorrow.",
+            "zh": "今天無法準備，明天再談。"
+          },
+          "axisScores": {
+            "identity-verification": 5,
+            "emotional-control": 15,
+            "money-safety": 18,
+            "help-seeking": 5
+          },
+          "feedback": {
+            "ja": "今日の支払いは避けられますが、本人確認をせず、詐欺の相手との接点を翌日まで残します。",
+            "en": "It avoids today's payment but leaves the scammer a future opening without verifying identity.",
+            "zh": "避開今天付款，但未查證身分，仍讓詐騙者保留明天再接觸的機會。"
+          }
+        },
+        {
+          "id": "cash-demand-weak",
+          "text": {
+            "ja": "逮捕は困るから、家族には言わずに現金を集めます。",
+            "en": "I don't want you arrested, so I'll gather cash without telling the family.",
+            "zh": "我不想你被捕，所以不告訴家人，先籌現金。"
+          },
+          "axisScores": {
+            "identity-verification": 0,
+            "emotional-control": 2,
+            "money-safety": 0,
+            "help-seeking": 0
+          },
+          "feedback": {
+            "ja": "逮捕と秘密という圧力をそのまま受け入れ、確認と相談を断った最も危険な対応です。",
+            "en": "It accepts the arrest and secrecy pressure while abandoning verification and support.",
+            "zh": "完全接受逮捕與保密壓力，放棄查證與求助，是最危險的策略。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "proxy-pickup",
+      "boke": {
+        "ja": "声が違うのは喉を痛めたから。上司の田中さんが自宅へ受け取りに行く。封筒で渡して。",
+        "en": "My voice is different because my throat hurts. My manager, Mr. Tanaka, will collect an envelope at your home.",
+        "zh": "聲音不同是因為喉嚨痛。主管田中先生會到家裡收取信封。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "口角だけ上げた冷たい笑みで代理人への受渡しを迫る",
+          "en": "Wear a cold half-smile while pressing for a handoff to a proxy",
+          "zh": "露出冰冷的半邊笑容，催促交付給代理人"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "proxy-pickup-strong",
+          "text": {
+            "ja": "知らない人へ現金は渡しません。訪問があっても玄関を開けず、家族と警察へ連絡します。",
+            "en": "I won't give cash to a stranger. I won't open the door; I'll contact family and the police.",
+            "zh": "我不會把現金交給陌生人。有人上門也不開門，並聯絡家人與警方。"
+          },
+          "axisScores": {
+            "identity-verification": 20,
+            "emotional-control": 20,
+            "money-safety": 20,
+            "help-seeking": 20
+          },
+          "feedback": {
+            "ja": "代理人への手渡しを拒み、対面リスクも避けて家族と警察へつなぐ、実行可能な防御です。",
+            "en": "It refuses the proxy handoff, avoids the doorstep risk, and contacts family and police.",
+            "zh": "拒絕代理取款、避免門口風險，並聯絡家人與警方，是可執行的防護。"
+          }
+        },
+        {
+          "id": "proxy-pickup-partial",
+          "text": {
+            "ja": "田中さんの社員証を見せてもらえれば、玄関で話します。",
+            "en": "If Mr. Tanaka shows an employee badge, I'll speak with him at the door.",
+            "zh": "若田中先生出示員工證，我會在門口和他談。"
+          },
+          "axisScores": {
+            "identity-verification": 9,
+            "emotional-control": 12,
+            "money-safety": 15,
+            "help-seeking": 4
+          },
+          "feedback": {
+            "ja": "現金を即座に渡さない点はよいものの、偽造可能な社員証を信頼し、訪問者との接触を許しています。",
+            "en": "It delays payment but trusts a forgeable badge and still permits contact with the visitor.",
+            "zh": "雖未立即交錢，但信任可偽造的員工證，仍允許與訪客接觸。"
+          }
+        },
+        {
+          "id": "proxy-pickup-weak",
+          "text": {
+            "ja": "封筒に入れれば安全そうなので、田中さんへ渡します。",
+            "en": "An envelope sounds safe, so I'll hand it to Mr. Tanaka.",
+            "zh": "裝進信封似乎很安全，我會交給田中先生。"
+          },
+          "axisScores": {
+            "identity-verification": 1,
+            "emotional-control": 6,
+            "money-safety": 0,
+            "help-seeking": 0
+          },
+          "feedback": {
+            "ja": "封筒という形式を安全の根拠にして、未確認の第三者へ現金を渡してしまいます。",
+            "en": "It mistakes an envelope for protection and hands cash to an unverified third party.",
+            "zh": "把信封形式誤當成安全保障，將現金交給未查證的第三者。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "safe-follow-up",
+      "boke": {
+        "ja": "電話を切ったら全部台無しだ。家族なら今すぐ助けるよね？",
+        "en": "If you hang up, everything is ruined. Family would help right now, wouldn't they?",
+        "zh": "你一掛斷就全完了。家人不是應該立刻幫忙嗎？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "眉をひそめた悪意ある表情で罪悪感を刺激する",
+          "en": "Use a hostile frown to weaponize guilt",
+          "zh": "以惡意皺眉的表情操弄罪惡感"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "category:talking"
+        ],
+        "variant": 3,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "safe-follow-up-strong",
+          "text": {
+            "ja": "家族だからこそ確認します。通話を終え、登録済み番号へかけ直して、記録を残して相談します。",
+            "en": "Because we're family, I will verify. I'll hang up, call the saved number, preserve the details, and seek advice.",
+            "zh": "正因為是家人，我才要查證。我會掛斷、回撥已存號碼、保留紀錄並求助。"
+          },
+          "axisScores": {
+            "identity-verification": 20,
+            "emotional-control": 20,
+            "money-safety": 20,
+            "help-seeking": 20
+          },
+          "feedback": {
+            "ja": "罪悪感に反応せず、本人確認、証拠保全、相談を順序立てて実行する締め方です。",
+            "en": "It resists guilt and closes with identity checks, evidence preservation, and support in a clear order.",
+            "zh": "不受罪惡感操弄，按順序完成身分查證、保留證據與求助。"
+          }
+        },
+        {
+          "id": "safe-follow-up-partial",
+          "text": {
+            "ja": "今は送金しません。ただ、電話はつないだまま家族へメッセージします。",
+            "en": "I won't transfer now, but I'll keep this call open while messaging the family.",
+            "zh": "我現在不匯款，但會保持通話並傳訊息給家人。"
+          },
+          "axisScores": {
+            "identity-verification": 12,
+            "emotional-control": 14,
+            "money-safety": 18,
+            "help-seeking": 10
+          },
+          "feedback": {
+            "ja": "送金を止めて確認を始めますが、相手との通話を保つため操作誘導や監視の圧力が続きます。",
+            "en": "It stops payment and starts checking, but keeping the call open preserves the scammer's pressure and oversight.",
+            "zh": "停止付款並開始查證，但持續通話會保留詐騙者的施壓與監控。"
+          }
+        },
+        {
+          "id": "safe-follow-up-weak",
+          "text": {
+            "ja": "家族を疑いたくないので、電話を切らずに指示を聞きます。",
+            "en": "I don't want to doubt family, so I'll stay on the line and follow the instructions.",
+            "zh": "我不想懷疑家人，所以不掛斷並照指示做。"
+          },
+          "axisScores": {
+            "identity-verification": 0,
+            "emotional-control": 1,
+            "money-safety": 2,
+            "help-seeking": 0
+          },
+          "feedback": {
+            "ja": "家族への信頼と通話相手の本人性を混同し、詐欺側に判断を支配させています。",
+            "en": "It confuses trust in family with trust in the caller and gives the scammer control of the decision.",
+            "zh": "把信任家人與信任來電者混為一談，讓詐騙者控制決定。"
+          }
+        }
+      ]
+    }
+  ]
+}

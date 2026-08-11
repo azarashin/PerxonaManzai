@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "まず気持ちと理由を聞き、守る必要がある境界も落ち着いて伝えます。",
-            "en": "I will hear the feelings and reasons, then calmly state the boundary we must keep.",
-            "zh": "我先了解感受與理由，再冷靜說明必須遵守的界線。"
+            "ja": "「怒られる恐れと、実際に終わっていない宿題」を確かめ、まず事実を一緒に確認し、正直に話したことは受け止める。",
+            "en": "Check the concern first; then check the facts together and acknowledge the honest admission.",
+            "zh": "先確認害怕被罵與實際未完成的作業，再一起查明事實並肯定現在願意坦白。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「怒られる恐れと、実際に終わっていない宿題」を確かめ、まず事実を一緒に確認し、正直に話したことは受け止める。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then check the facts together and acknowledge the honest admission.",
+            "zh": "這結合了查證、尊重與可行約定：先確認害怕被罵與實際未完成的作業，再一起查明事實並肯定現在願意坦白。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先にまず事実を一緒に確認し、正直に話したことは受け止める。ただし「怒られる恐れと、実際に終わっていない宿題」の確認は後回しです。",
+            "en": "Just check the facts together and acknowledge the honest admission, without more questions.",
+            "zh": "先一起查明事實並肯定現在願意坦白，但暫不確認害怕被罵與實際未完成的作業。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先にまず事実を一緒に確認し、正直に話したことは受け止める。ただし「怒られる恐れと、実際に終わっていない宿題」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just check the facts together and acknowledge the honest admission, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先一起查明事實並肯定現在願意坦白，但暫不確認害怕被罵與實際未完成的作業。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「怒られる恐れと、実際に終わっていない宿題」は関係ありません。親の判断に従わせます。",
+            "en": "Do not check the facts together and acknowledge the honest admission; the parent decides.",
+            "zh": "害怕被罵與實際未完成的作業並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「怒られる恐れと、実際に終わっていない宿題」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not check the facts together and acknowledge the honest admission; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：害怕被罵與實際未完成的作業並不重要；由父母決定。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "大切なのは「分からなくなった問題と、助けを求められなかった理由」です。どう確かめますか？",
+        "en": "What matters is where the work became confusing and why help felt unavailable. How will you check it?",
+        "zh": "重點是卡住的題目與不敢求助的原因。你會如何確認？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "事実と過去の約束を一緒に確認し、人格を責めません。",
-            "en": "We will review the facts and prior agreement without attacking character.",
-            "zh": "一起確認事實與先前約定，不批評人格。"
+            "ja": "「分からなくなった問題と、助けを求められなかった理由」を確かめ、最初の一問を一緒に解き、その後は自分で進めて確認時刻を決める。",
+            "en": "Check the concern first; then solve the first item together, then set a check-in after independent work.",
+            "zh": "先確認卡住的題目與不敢求助的原因，再一起解第一題，再約定自行完成後的確認時間。"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「分からなくなった問題と、助けを求められなかった理由」を確かめ、最初の一問を一緒に解き、その後は自分で進めて確認時刻を決める。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then solve the first item together, then set a check-in after independent work.",
+            "zh": "這結合了查證、尊重與可行約定：先確認卡住的題目與不敢求助的原因，再一起解第一題，再約定自行完成後的確認時間。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に最初の一問を一緒に解き、その後は自分で進めて確認時刻を決める。ただし「分からなくなった問題と、助けを求められなかった理由」の確認は後回しです。",
+            "en": "Just solve the first item together, then set a check-in after independent work, without more questions.",
+            "zh": "先一起解第一題，再約定自行完成後的確認時間，但暫不確認卡住的題目與不敢求助的原因。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に最初の一問を一緒に解き、その後は自分で進めて確認時刻を決める。ただし「分からなくなった問題と、助けを求められなかった理由」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just solve the first item together, then set a check-in after independent work, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先一起解第一題，再約定自行完成後的確認時間，但暫不確認卡住的題目與不敢求助的原因。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「分からなくなった問題と、助けを求められなかった理由」は関係ありません。親の判断に従わせます。",
+            "en": "Do not solve the first item together, then set a check-in after independent work; the parent decides.",
+            "zh": "卡住的題目與不敢求助的原因並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「分からなくなった問題と、助けを求められなかった理由」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not solve the first item together, then set a check-in after independent work; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：卡住的題目與不敢求助的原因並不重要；由父母決定。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "次に、報告用の合図とゲーム時間の短縮を一週間試し、信頼の回復を見直すことを具体的に決めたいです。",
+        "en": "Can we decide specifically how to test a reporting cue and reduced gaming for one week, then review trust?",
+        "zh": "可以具體決定如何試行一週回報暗號與縮短遊戲時間，再檢討信任嗎？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "本人が選べる方法を含む、実行可能な約束を一緒に作ります。",
-            "en": "We will make a workable agreement that includes choices for the child.",
-            "zh": "一起制定包含孩子選擇、可執行的約定。"
+            "ja": "「次に未完了を伝える方法と、今回の相応の結果」を確かめ、報告用の合図とゲーム時間の短縮を一週間試し、信頼の回復を見直す。",
+            "en": "Check the concern first; then test a reporting cue and reduced gaming for one week, then review trust.",
+            "zh": "先確認下次回報未完成作業的方法與這次相稱的後果，再試行一週回報暗號與縮短遊戲時間，再檢討信任。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「次に未完了を伝える方法と、今回の相応の結果」を確かめ、報告用の合図とゲーム時間の短縮を一週間試し、信頼の回復を見直す。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then test a reporting cue and reduced gaming for one week, then review trust.",
+            "zh": "這結合了查證、尊重與可行約定：先確認下次回報未完成作業的方法與這次相稱的後果，再試行一週回報暗號與縮短遊戲時間，再檢討信任。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に報告用の合図とゲーム時間の短縮を一週間試し、信頼の回復を見直す。ただし「次に未完了を伝える方法と、今回の相応の結果」の確認は後回しです。",
+            "en": "Just test a reporting cue and reduced gaming for one week, then review trust, without more questions.",
+            "zh": "先試行一週回報暗號與縮短遊戲時間，再檢討信任，但暫不確認下次回報未完成作業的方法與這次相稱的後果。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に報告用の合図とゲーム時間の短縮を一週間試し、信頼の回復を見直す。ただし「次に未完了を伝える方法と、今回の相応の結果」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just test a reporting cue and reduced gaming for one week, then review trust, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先試行一週回報暗號與縮短遊戲時間，再檢討信任，但暫不確認下次回報未完成作業的方法與這次相稱的後果。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「次に未完了を伝える方法と、今回の相応の結果」は関係ありません。親の判断に従わせます。",
+            "en": "Do not test a reporting cue and reduced gaming for one week, then review trust; the parent decides.",
+            "zh": "下次回報未完成作業的方法與這次相稱的後果並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「次に未完了を伝える方法と、今回の相応の結果」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not test a reporting cue and reduced gaming for one week, then review trust; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：下次回報未完成作業的方法與這次相稱的後果並不重要；由父母決定。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "「以前怒鳴ったことが、正直に話す怖さにつながった影響」を無視されたようで、話しづらくなりました。",
+        "en": "It became hard to talk when you ignored how earlier shouting made honesty feel unsafe.",
+        "zh": "你忽略先前吼叫如何讓坦白變得可怕，讓我很難繼續談。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "強く言いすぎたことを認め、安心して理由を話せるところから戻ります。",
-            "en": "I recognize that I was too harsh; let's return to a place where you can explain safely.",
-            "zh": "我承認剛才太嚴厲，讓我們回到你能安心說明的狀態。"
+            "ja": "「以前怒鳴ったことが、正直に話す怖さにつながった影響」を確かめ、怒鳴ったことを謝り、声を落として未完了部分から話し直す。",
+            "en": "Check the concern first; then apologize for shouting and restart calmly with the unfinished work.",
+            "zh": "先確認先前吼叫如何讓坦白變得可怕，再為吼叫道歉，放低聲音從未完成內容重新談起。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「以前怒鳴ったことが、正直に話す怖さにつながった影響」を確かめ、怒鳴ったことを謝り、声を落として未完了部分から話し直す。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then apologize for shouting and restart calmly with the unfinished work.",
+            "zh": "這結合了查證、尊重與可行約定：先確認先前吼叫如何讓坦白變得可怕，再為吼叫道歉，放低聲音從未完成內容重新談起。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に怒鳴ったことを謝り、声を落として未完了部分から話し直す。ただし「以前怒鳴ったことが、正直に話す怖さにつながった影響」の確認は後回しです。",
+            "en": "Just apologize for shouting and restart calmly with the unfinished work, without more questions.",
+            "zh": "先為吼叫道歉，放低聲音從未完成內容重新談起，但暫不確認先前吼叫如何讓坦白變得可怕。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に怒鳴ったことを謝り、声を落として未完了部分から話し直す。ただし「以前怒鳴ったことが、正直に話す怖さにつながった影響」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just apologize for shouting and restart calmly with the unfinished work, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先為吼叫道歉，放低聲音從未完成內容重新談起，但暫不確認先前吼叫如何讓坦白變得可怕。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「以前怒鳴ったことが、正直に話す怖さにつながった影響」は関係ありません。親の判断に従わせます。",
+            "en": "Do not apologize for shouting and restart calmly with the unfinished work; the parent decides.",
+            "zh": "先前吼叫如何讓坦白變得可怕並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「以前怒鳴ったことが、正直に話す怖さにつながった影響」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not apologize for shouting and restart calmly with the unfinished work; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：先前吼叫如何讓坦白變得可怕並不重要；由父母決定。"
           },
           "stateEffects": [
             {

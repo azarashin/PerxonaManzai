@@ -73,9 +73,9 @@
     {
       "id": "opening",
       "boke": {
-        "ja": "今日中なら元本保証で高い利益が出ます。本人確認情報を教えてください。",
+        "ja": "本日中なら元本保証で高利回りです。本人確認情報を教えてください。",
         "en": "Act today for guaranteed principal and high returns. Give me your identity details.",
-        "zh": "今天參加就保本高收益，請提供身分驗證資料。"
+        "zh": "今天內申購可保本高報酬，請提供身分資料。"
       },
       "reaction": {
         "description": {
@@ -95,9 +95,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "個人情報や認証情報は伝えず、要件を公式窓口で確認します。",
-            "en": "I will not share personal or verification data and will confirm through an official channel.",
-            "zh": "我不提供個資或驗證資料，會透過官方管道確認。"
+            "ja": "個人情報は伝えません。会社名・登録番号・商品資料を教えてください。こちらで公式情報を確認します。",
+            "en": "I won't share personal data. Give me the firm, registration number, and product document; I'll verify them myself.",
+            "zh": "我不會提供個資。請告知公司、登記號碼與商品文件，我會自行查證。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -106,47 +106,47 @@
             "clarity": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "危険な操作を止め、独立確認と安全な次の行動を示しています：個人情報は伝えません。会社名・登録番号・商品資料を教えてください。こちらで公式情報を確認します。",
+            "en": "This stops the risky action and uses independent verification with a safe next step: I won't share personal data. Give me the firm, registration number, and product document; I'll verify them myself.",
+            "zh": "這會停止危險操作，並以獨立查證安排安全下一步：我不會提供個資。請告知公司、登記號碼與商品文件，我會自行查證。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "資料だけメールでもらい、後で考えます。",
+            "en": "Email me the material and I'll consider it later.",
+            "zh": "先把資料寄給我，我之後再考慮。"
           },
           "axisScores": {
             "risk-awareness": 13,
-            "fact-checking": 11,
+            "fact-checking": 15,
             "boundary-keeping": 12,
-            "clarity": 12
+            "clarity": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "警戒はありますが、確認経路か情報保護が不十分です：資料だけメールでもらい、後で考えます。",
+            "en": "This shows caution, but verification or data protection is incomplete: Email me the material and I'll consider it later.",
+            "zh": "這有警覺性，但查證途徑或資料保護仍不完整：先把資料寄給我，我之後再考慮。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "高利回りなら、本人確認情報を伝えて枠を確保します。",
+            "en": "If returns are that high, I'll give my identity details to reserve a place.",
+            "zh": "既然報酬這麼高，我先提供身分資料保留名額。"
           },
           "axisScores": {
-            "risk-awareness": 2,
+            "risk-awareness": 1,
             "fact-checking": 3,
-            "boundary-keeping": 2,
-            "clarity": 3
+            "boundary-keeping": 1,
+            "clarity": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "相手の指示に従うか挑発し、被害を広げる危険があります：高利回りなら、本人確認情報を伝えて枠を確保します。",
+            "en": "This follows or provokes the caller and can increase harm: If returns are that high, I'll give my identity details to reserve a place.",
+            "zh": "這會順從或挑釁對方，可能擴大損害：既然報酬這麼高，我先提供身分資料保留名額。"
           }
         }
       ]
@@ -154,9 +154,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "登録番号は後で送ります。今ここで枠だけ押さえないと売り切れます。",
+        "en": "I'll send the registration later. Reserve now or the allocation will sell out.",
+        "zh": "登記號碼之後再給，現在不保留名額就會售罄。"
       },
       "reaction": {
         "description": {
@@ -176,9 +176,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "会社名、担当、用件を控え、こちらから公式番号へかけ直します。",
-            "en": "I will note the organization, caller, and purpose, then call back using an official number.",
-            "zh": "我會記下機構、聯絡人與目的，再用官方號碼回撥。"
+            "ja": "番号を今確認できないなら手続きしません。通話を切り、監督機関の登録簿と公式代表番号で確認します。",
+            "en": "I won't proceed without the number. I'll end the call and check the regulator's register and official switchboard.",
+            "zh": "現在無法提供號碼，我就不辦理。我會掛斷並查監管機構名冊與官方總機。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -187,47 +187,47 @@
             "clarity": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "危険な操作を止め、独立確認と安全な次の行動を示しています：番号を今確認できないなら手続きしません。通話を切り、監督機関の登録簿と公式代表番号で確認します。",
+            "en": "This stops the risky action and uses independent verification with a safe next step: I won't proceed without the number. I'll end the call and check the regulator's register and official switchboard.",
+            "zh": "這會停止危險操作，並以獨立查證安排安全下一步：現在無法提供號碼，我就不辦理。我會掛斷並查監管機構名冊與官方總機。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "枠は不要です。登録番号を送ってから、明日また電話してください。",
+            "en": "I won't reserve. Send the number and call again tomorrow.",
+            "zh": "我不保留名額。先寄登記號碼，明天再打來。"
           },
           "axisScores": {
             "risk-awareness": 13,
-            "fact-checking": 11,
+            "fact-checking": 15,
             "boundary-keeping": 12,
-            "clarity": 12
+            "clarity": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "警戒はありますが、確認経路か情報保護が不十分です：枠は不要です。登録番号を送ってから、明日また電話してください。",
+            "en": "This shows caution, but verification or data protection is incomplete: I won't reserve. Send the number and call again tomorrow.",
+            "zh": "這有警覺性，但查證途徑或資料保護仍不完整：我不保留名額。先寄登記號碼，明天再打來。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "売り切れるなら、少額だけ先に振り込みます。",
+            "en": "If it may sell out, I'll transfer a small amount first.",
+            "zh": "怕售罄的話，我先匯一小筆。"
           },
           "axisScores": {
-            "risk-awareness": 2,
+            "risk-awareness": 1,
             "fact-checking": 3,
-            "boundary-keeping": 2,
-            "clarity": 3
+            "boundary-keeping": 1,
+            "clarity": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "相手の指示に従うか挑発し、被害を広げる危険があります：売り切れるなら、少額だけ先に振り込みます。",
+            "en": "This follows or provokes the caller and can increase harm: If it may sell out, I'll transfer a small amount first.",
+            "zh": "這會順從或挑釁對方，可能擴大損害：怕售罄的話，我先匯一小筆。"
           }
         }
       ]
@@ -235,9 +235,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "確認に時間をかける人には、この特別条件は出せません。今決めますか？",
+        "en": "This special offer isn't for people who take time to verify. Will you decide now?",
+        "zh": "這項優惠不提供給花時間查證的人。現在決定嗎？"
       },
       "reaction": {
         "description": {
@@ -257,9 +257,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "この場では手続せず、通話を終了して信頼できる窓口へ相談します。",
-            "en": "I will take no action on this call, end it, and contact a trusted channel.",
-            "zh": "我不會在通話中操作，會結束通話並聯絡可信管道。"
+            "ja": "急がせる条件では契約しません。この番号をブロックし、記録を保存して相談窓口へ報告します。",
+            "en": "I won't contract under pressure. I'll block this number, preserve the record, and report it to the proper service.",
+            "zh": "我不會在催促下簽約。我會封鎖號碼、保存紀錄並向相關單位通報。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -268,47 +268,47 @@
             "clarity": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "危険な操作を止め、独立確認と安全な次の行動を示しています：急がせる条件では契約しません。この番号をブロックし、記録を保存して相談窓口へ報告します。",
+            "en": "This stops the risky action and uses independent verification with a safe next step: I won't contract under pressure. I'll block this number, preserve the record, and report it to the proper service.",
+            "zh": "這會停止危險操作，並以獨立查證安排安全下一步：我不會在催促下簽約。我會封鎖號碼、保存紀錄並向相關單位通報。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "今日は断りますが、通常商品なら公式店舗で説明を聞きます。",
+            "en": "I decline today, but I may ask about ordinary products at an official branch.",
+            "zh": "今天拒絕；若是一般商品，我會到官方據點了解。"
           },
           "axisScores": {
             "risk-awareness": 13,
-            "fact-checking": 11,
+            "fact-checking": 15,
             "boundary-keeping": 12,
-            "clarity": 12
+            "clarity": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "警戒はありますが、確認経路か情報保護が不十分です：今日は断りますが、通常商品なら公式店舗で説明を聞きます。",
+            "en": "This shows caution, but verification or data protection is incomplete: I decline today, but I may ask about ordinary products at an official branch.",
+            "zh": "這有警覺性，但查證途徑或資料保護仍不完整：今天拒絕；若是一般商品，我會到官方據點了解。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "特別条件を失いたくないので、今決めます。",
+            "en": "I don't want to lose the special terms, so I'll decide now.",
+            "zh": "我不想失去優惠，所以現在決定。"
           },
           "axisScores": {
-            "risk-awareness": 2,
+            "risk-awareness": 1,
             "fact-checking": 3,
-            "boundary-keeping": 2,
-            "clarity": 3
+            "boundary-keeping": 1,
+            "clarity": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "相手の指示に従うか挑発し、被害を広げる危険があります：特別条件を失いたくないので、今決めます。",
+            "en": "This follows or provokes the caller and can increase harm: I don't want to lose the special terms, so I'll decide now.",
+            "zh": "這會順從或挑釁對方，可能擴大損害：我不想失去優惠，所以現在決定。"
           }
         }
       ]

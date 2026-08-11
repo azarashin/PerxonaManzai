@@ -7,22 +7,36 @@
     "zh": "超規格的打工應徵者"
   },
   "description": {
-    "ja": "漫才・ツッコミとして「バイト面接の超人的経歴」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “An Overqualified Part-Time Applicant” for Manzai and Comebacks.",
-    "zh": "在「超規格的打工應徵者」中練習符合情境的簡短漫才與吐槽回應。"
+    "ja": "国家級の経歴を持つ人物がバイト面接に現れる誇張から、職務との落差を具体的に拾う練習です。",
+    "en": "Practice targeting the mismatch between nation-scale credentials and an ordinary part-time job.",
+    "zh": "練習具體抓出國家級資歷與一般打工職務之間的落差。"
   },
   "evaluationAxes": [
     {
-      "id": "premise-recognition",
+      "id": "status-mismatch",
       "label": {
-        "ja": "前提の発見",
-        "en": "Premise recognition",
-        "zh": "前提辨識"
+        "ja": "立場の落差",
+        "en": "Role mismatch",
+        "zh": "身分落差"
       },
       "description": {
-        "ja": "矛盾や誇張の核心を拾う",
-        "en": "Identify the central contradiction or exaggeration.",
-        "zh": "抓住矛盾或誇張的核心。"
+        "ja": "国家級の経歴とバイト業務の落差を捉える",
+        "en": "Identify the gap between nation-scale credentials and part-time work.",
+        "zh": "抓住國家級資歷與打工職務之間的落差。"
+      },
+      "maxPoints": 30
+    },
+    {
+      "id": "detail-targeting",
+      "label": {
+        "ja": "具体点",
+        "en": "Detail targeting",
+        "zh": "具體切入"
+      },
+      "description": {
+        "ja": "履歴書、推薦人、業務など場面の具体点を拾う",
+        "en": "Target a concrete detail such as the résumé, references, or duties.",
+        "zh": "抓住履歷、推薦人或工作內容等具體細節。"
       },
       "maxPoints": 20
     },
@@ -38,21 +52,7 @@
         "en": "Communicate briefly and clearly.",
         "zh": "簡短清楚地表達。"
       },
-      "maxPoints": 20
-    },
-    {
-      "id": "timing",
-      "label": {
-        "ja": "タイミング",
-        "en": "Timing",
-        "zh": "時機"
-      },
-      "description": {
-        "ja": "流れを止めず素早く返す",
-        "en": "Respond promptly without breaking the flow.",
-        "zh": "迅速回應，不打斷節奏。"
-      },
-      "maxPoints": 20
+      "maxPoints": 15
     },
     {
       "id": "word-choice",
@@ -66,22 +66,22 @@
         "en": "Choose language and energy suited to the moment.",
         "zh": "選擇符合情境的措辭與力度。"
       },
-      "maxPoints": 20
+      "maxPoints": 15
     }
   ],
   "beats": [
     {
       "id": "opening",
       "boke": {
-        "ja": "店長に応募したら、前職は三つの国をまとめる仕事やってん。",
+        "ja": "バイトに応募したんやけど、前職は三つの国をまとめる仕事やってん。",
         "en": "I applied to be a store clerk; my last job was uniting three countries.",
         "zh": "我來應徵店員，上一份工作是統一三個國家。"
       },
       "reaction": {
         "description": {
-          "ja": "率直に問題を切り出す",
-          "en": "Raise the issue candidly",
-          "zh": "坦率提出問題"
+          "ja": "国家級の経歴を面接で誇らしげに語る",
+          "en": "Boast about nation-scale credentials in a part-time interview",
+          "zh": "在打工面試中得意地談論國家級資歷"
         },
         "motionTags": [
           "pose:talking_02",
@@ -95,58 +95,58 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "どこから突っ込めばええねん！",
-            "en": "Where am I even supposed to start with that?",
-            "zh": "這到底要我從哪裡吐槽起！"
+            "ja": "三か国まとめた人が、なんでバイトの面接来てんねん！",
+            "en": "You united three countries—why are you interviewing for a part-time job?",
+            "zh": "都統一三個國家了，怎麼會來面試打工啦！"
           },
           "axisScores": {
-            "premise-recognition": 20,
-            "clarity": 20,
-            "timing": 20,
-            "word-choice": 20
+            "status-mismatch": 30,
+            "detail-targeting": 20,
+            "clarity": 15,
+            "word-choice": 15
           },
           "feedback": {
-            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
-            "en": "This catches the central exaggeration with a short, energetic comeback.",
-            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+            "ja": "国家級の実績とバイト面接の落差を直接結び付け、誇張の核心を明確に示しています。",
+            "en": "This directly connects the nation-scale achievement to the part-time interview and exposes the central mismatch.",
+            "zh": "直接連結國家級成就與打工面試，清楚點出核心落差。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "なんでやねん。",
-            "en": "Come on, that's ridiculous.",
-            "zh": "太扯了吧。"
+            "ja": "前職の規模が履歴書に収まらへんわ！",
+            "en": "That last job won't even fit on a résumé!",
+            "zh": "你上一份工作的規模，履歷根本寫不下啦！"
           },
           "axisScores": {
-            "premise-recognition": 13,
-            "clarity": 11,
-            "timing": 12,
+            "status-mismatch": 18,
+            "detail-targeting": 16,
+            "clarity": 14,
             "word-choice": 12
           },
           "feedback": {
-            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
-            "en": "This is a comeback, but naming the absurd point would make it stronger.",
-            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+            "ja": "経歴の大きさは具体的に拾えていますが、バイトとの立場の落差までは示していません。",
+            "en": "This targets the scale of the résumé, but it does not fully expose the mismatch with the part-time role.",
+            "zh": "具體抓到履歷規模過大，但還沒有完整指出它與打工職務的落差。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "なるほど、すごいな。",
-            "en": "I see. That's impressive.",
-            "zh": "原來如此，真厲害。"
+            "ja": "国際経験が豊富ですね。",
+            "en": "You certainly have a lot of international experience.",
+            "zh": "你的國際經驗很豐富呢。"
           },
           "axisScores": {
-            "premise-recognition": 2,
-            "clarity": 3,
-            "timing": 2,
-            "word-choice": 3
+            "status-mismatch": 2,
+            "detail-targeting": 4,
+            "clarity": 14,
+            "word-choice": 4
           },
           "feedback": {
-            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
-            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
-            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+            "ja": "言葉は明瞭ですが、国家級の経歴を普通の職歴として受け入れ、バイトとの落差を逃しています。",
+            "en": "The wording is clear, but it treats the nation-scale claim as ordinary experience and misses the job mismatch.",
+            "zh": "表達清楚，但把國家級經歷當成一般資歷，錯過了與打工職務的落差。"
           }
         }
       ]
@@ -160,9 +160,9 @@
       },
       "reaction": {
         "description": {
-          "ja": "説明や確認を求める",
-          "en": "Ask for clarification",
-          "zh": "要求說明與確認"
+          "ja": "国連決議と大統領推薦を履歴書代わりに差し出す",
+          "en": "Offer a UN resolution and presidential references as a résumé",
+          "zh": "拿聯合國決議與總統推薦人代替履歷"
         },
         "motionTags": [
           "pose:talking_03",
@@ -176,58 +176,58 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "設定を足すほどおかしなってるやないか！",
-            "en": "Every extra detail makes it even more absurd!",
-            "zh": "設定越加越離譜了吧！"
+            "ja": "履歴書の代わりに国連決議出す人おらんわ！",
+            "en": "No one submits a UN resolution instead of a résumé!",
+            "zh": "哪有人拿聯合國決議代替履歷啦！"
           },
           "axisScores": {
-            "premise-recognition": 20,
-            "clarity": 20,
-            "timing": 20,
-            "word-choice": 20
+            "status-mismatch": 30,
+            "detail-targeting": 20,
+            "clarity": 15,
+            "word-choice": 15
           },
           "feedback": {
-            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
-            "en": "This catches the central exaggeration with a short, energetic comeback.",
-            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+            "ja": "国連決議と履歴書の用途の違いを名指しし、面接との落差を一言で示しています。",
+            "en": "This names the mismatch between a UN resolution and a résumé, keeping the interview premise in focus.",
+            "zh": "點明聯合國決議與履歷用途不同，一句話就抓住面試情境的落差。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "なんでやねん。",
-            "en": "Come on, that's ridiculous.",
-            "zh": "太扯了吧。"
+            "ja": "推薦人が大物すぎて電話確認できへんわ！",
+            "en": "Those references are too important for a routine phone check!",
+            "zh": "推薦人太大咖，電話查核都做不了啦！"
           },
           "axisScores": {
-            "premise-recognition": 13,
-            "clarity": 11,
-            "timing": 12,
+            "status-mismatch": 17,
+            "detail-targeting": 18,
+            "clarity": 14,
             "word-choice": 12
           },
           "feedback": {
-            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
-            "en": "This is a comeback, but naming the absurd point would make it stronger.",
-            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+            "ja": "大統領という具体点を拾えていますが、国連決議を履歴書にする核心には届いていません。",
+            "en": "This uses the presidential references, but it misses the central résumé-versus-resolution contradiction.",
+            "zh": "抓到總統推薦人的細節，但沒有擊中用聯合國決議代替履歷的核心矛盾。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "なるほど、すごいな。",
-            "en": "I see. That's impressive.",
-            "zh": "原來如此，真厲害。"
+            "ja": "推薦人まで豪華ですね。",
+            "en": "Those are some impressive references.",
+            "zh": "連推薦人都很豪華呢。"
           },
           "axisScores": {
-            "premise-recognition": 2,
-            "clarity": 3,
-            "timing": 2,
+            "status-mismatch": 2,
+            "detail-targeting": 4,
+            "clarity": 14,
             "word-choice": 3
           },
           "feedback": {
-            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
-            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
-            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+            "ja": "推薦人を褒めるだけでは、履歴書の代わりが国連決議という異常さを肯定してしまいます。",
+            "en": "Praising the references accepts the absurd substitution of a UN resolution for a résumé.",
+            "zh": "只稱讚推薦人，等於接受用聯合國決議代替履歷的荒謬設定。"
           }
         }
       ]
@@ -241,9 +241,9 @@
       },
       "reaction": {
         "description": {
-          "ja": "次の行動を確かめる",
-          "en": "Confirm the next action",
-          "zh": "確認下一步行動"
+          "ja": "品出しと世界平和を同じ優先順位で比べる",
+          "en": "Compare stocking shelves with achieving world peace",
+          "zh": "把補貨與世界和平放在同一個優先順序比較"
         },
         "motionTags": [
           "pose:emotion_04",
@@ -257,58 +257,58 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "もうその世界観ごと片づけてこい！",
-            "en": "Take that whole ridiculous world with you!",
-            "zh": "把那整個荒唐世界觀一起收走啦！"
+            "ja": "品出しと世界平和を同じ研修表に並べるな！",
+            "en": "Don't put stocking shelves and world peace on the same training plan!",
+            "zh": "別把補貨和世界和平排在同一張訓練表上啦！"
           },
           "axisScores": {
-            "premise-recognition": 20,
-            "clarity": 20,
-            "timing": 20,
-            "word-choice": 20
+            "status-mismatch": 30,
+            "detail-targeting": 20,
+            "clarity": 15,
+            "word-choice": 15
           },
           "feedback": {
-            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
-            "en": "This catches the central exaggeration with a short, energetic comeback.",
-            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+            "ja": "品出しと世界平和を同列にした落差を具体的に示し、締めの誇張を明確に回収しています。",
+            "en": "This explicitly contrasts stocking shelves with world peace and cleanly resolves the final exaggeration.",
+            "zh": "具體對比補貨與世界和平，清楚收回最後的誇張笑點。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "なんでやねん。",
-            "en": "Come on, that's ridiculous.",
-            "zh": "太扯了吧。"
+            "ja": "まずレジ打ちから覚えよか！",
+            "en": "Let's start with the register, at least!",
+            "zh": "至少先從收銀機學起吧！"
           },
           "axisScores": {
-            "premise-recognition": 13,
-            "clarity": 11,
-            "timing": 12,
-            "word-choice": 12
+            "status-mismatch": 12,
+            "detail-targeting": 13,
+            "clarity": 15,
+            "word-choice": 8
           },
           "feedback": {
-            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
-            "en": "This is a comeback, but naming the absurd point would make it stronger.",
-            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+            "ja": "現実的な業務へ戻せていますが、世界平和との途方もない落差を言葉にしていません。",
+            "en": "This redirects to a realistic duty, but it does not name the enormous contrast with world peace.",
+            "zh": "把話題拉回實際工作，但沒有說出它與世界和平之間的巨大落差。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "なるほど、すごいな。",
-            "en": "I see. That's impressive.",
-            "zh": "原來如此，真厲害。"
+            "ja": "世界平和のあとに品出し頼むわ。",
+            "en": "Handle world peace first, then stock the shelves.",
+            "zh": "先處理世界和平，再來補貨吧。"
           },
           "axisScores": {
-            "premise-recognition": 2,
-            "clarity": 3,
-            "timing": 2,
-            "word-choice": 3
+            "status-mismatch": 4,
+            "detail-targeting": 6,
+            "clarity": 14,
+            "word-choice": 6
           },
           "feedback": {
-            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
-            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
-            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+            "ja": "順番を付けるだけでは二つを同列に扱う前提を受け入れています。落差そのものを否定しましょう。",
+            "en": "Putting the tasks in order accepts that they belong on the same list. Reject the mismatch itself.",
+            "zh": "只安排順序仍接受兩件事能並列的前提，應直接否定這個落差。"
           }
         }
       ]

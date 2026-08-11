@@ -7,9 +7,9 @@
     "zh": "說明職涯空窗"
   },
   "description": {
-    "ja": "面接・採用として「経歴の空白期間」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Explaining a Career Gap” for Interview and Hiring.",
-    "zh": "在「說明職涯空窗」中練習符合情境的簡短面試與招募回應。"
+    "ja": "一年半の空白期間を、私生活を過度に開示せず、行動・学び・現在の就業準備へつなげる練習です。",
+    "en": "Practice explaining an eighteen-month gap through relevant action, learning, and present readiness without oversharing.",
+    "zh": "練習說明一年半空窗，以相關行動、學習與目前準備度作答，不過度揭露私事。"
   },
   "evaluationAxes": [
     {
@@ -95,9 +95,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "質問に直接答え、具体的な経験と学びを簡潔に示します。",
-            "en": "I will answer directly with a concise example and what I learned.",
-            "zh": "我會直接回答，簡潔說明具體經驗與學習。"
+            "ja": "家族の支援で離職し、その間に週二回の業務講座を修了しました。状況は整い、現在は継続して勤務できます。",
+            "en": "I left to support family and completed a professional course. The situation is settled and I can work consistently.",
+            "zh": "我因支援家人離職，期間完成每週兩次的職能課程。目前狀況已穩定，可持續工作。"
           },
           "axisScores": {
             "relevance": 20,
@@ -106,47 +106,47 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "空白の理由、期間中の行動、現在の準備を簡潔かつ一貫して説明しています。",
+            "en": "It directly covers reason, useful activity, and current readiness without unnecessary private detail.",
+            "zh": "直接且一致地說明原因、期間行動與目前準備，也避免不必要的私事。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "家庭の事情で休んでいましたが、今は問題ありません。",
+            "en": "I took time off for family reasons, but it is no longer an issue.",
+            "zh": "我因家庭因素休息了一段時間，現在已沒有問題。"
           },
           "axisScores": {
-            "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
-            "reciprocal-fit": 12
+            "relevance": 14,
+            "credibility": 13,
+            "clarity": 13,
+            "reciprocal-fit": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "直接答えて境界は守りますが、期間中の行動と職務への準備が見えません。",
+            "en": "It answers and preserves privacy but shows no activity or job readiness.",
+            "zh": "有直接回答並守住隱私，但看不出期間行動與工作準備。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "その期間はフリーランスのコンサルタントをしていました。",
+            "en": "I worked as a freelance consultant during that period.",
+            "zh": "那段期間我擔任自由顧問。"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
-            "reciprocal-fit": 3
+            "relevance": 8,
+            "credibility": 0,
+            "clarity": 12,
+            "reciprocal-fit": 4
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "事実でない経歴を作ると、確認時に信頼を失う重大なリスクがあります。",
+            "en": "Inventing work history creates a serious credibility risk when checked.",
+            "zh": "虛構工作經歷在查核時會造成嚴重的可信度風險。"
           }
         }
       ]
@@ -154,9 +154,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "その期間に得たことと、今この仕事を続けられる根拠を教えてください。",
+        "en": "What did you gain during the period, and what supports your readiness for this role now?",
+        "zh": "那段期間獲得了什麼？現在能持續從事這份工作的根據是什麼？"
       },
       "reaction": {
         "description": {
@@ -176,9 +176,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "誇張せず、自分の行動と結果を分けて説明します。",
-            "en": "I will avoid exaggeration and distinguish my actions from the result.",
-            "zh": "我不誇大，並分開說明自己的行動與結果。"
+            "ja": "講座で顧客データ分析を学び、架空案件で改善案を作りました。支援体制も整い、週五日の勤務が可能です。",
+            "en": "I learned customer analytics and built a case project. My arrangements are stable, so I can work five days a week.",
+            "zh": "我學習顧客數據分析並完成案例改善案；支援安排已穩定，可每週工作五天。"
           },
           "axisScores": {
             "relevance": 20,
@@ -187,47 +187,47 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "学びを具体的な成果で示し、私生活の詳細ではなく勤務可能性を明確にしています。",
+            "en": "It demonstrates learning with output and states availability without exposing private details.",
+            "zh": "以具體成果證明學習，並用工作可行性取代私生活細節。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "家族の病状と治療経過を詳しく説明します。",
+            "en": "Let me explain my family member's condition and treatment in detail.",
+            "zh": "我來詳細說明家人的病情與治療經過。"
           },
           "axisScores": {
-            "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
-            "reciprocal-fit": 12
+            "relevance": 7,
+            "credibility": 12,
+            "clarity": 8,
+            "reciprocal-fit": 4
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "誠実でも、職務との関連が低い個人情報を過剰に開示し、学びを示せません。",
+            "en": "Though candid, it overshares sensitive detail and does not show job-relevant learning.",
+            "zh": "雖誠實，卻過度揭露與職務關聯低的敏感資訊，也未呈現學習。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "空白期間で評価されるのは納得できません。今の能力だけ見てください。",
+            "en": "It is unfair to judge a gap. Evaluate only my current ability.",
+            "zh": "用空窗期評價我並不合理，請只看現在能力。"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
+            "relevance": 5,
+            "credibility": 8,
+            "clarity": 9,
             "reciprocal-fit": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "境界は主張しますが、質問へ答えず現在の準備を裏付ける機会を失います。",
+            "en": "It asserts a boundary but avoids the question and loses a chance to prove readiness.",
+            "zh": "有主張界線，卻未回答問題，也失去證明準備度的機會。"
           }
         }
       ]
@@ -235,9 +235,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "この経験を、募集している顧客分析の役割でどう生かせますか。",
+        "en": "How would this experience help in our customer analytics role?",
+        "zh": "這段經驗如何運用在我們招募的顧客分析職位？"
       },
       "reaction": {
         "description": {
@@ -257,9 +257,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "役割の期待と自分の経験が合う点、確認したい点を示します。",
-            "en": "I will connect my experience to the role and identify what I still need to learn.",
-            "zh": "我會連結自身經驗與職務，也提出仍需了解之處。"
+            "ja": "講座で行った離脱分析を、御社の継続率改善に応用できます。最初の三か月で期待される成果も伺えますか。",
+            "en": "I can apply my churn-analysis project to retention work here. What outcomes are expected in the first three months?",
+            "zh": "我能把課程中的流失分析運用於貴公司留存改善。也想請問前三個月期待的成果。"
           },
           "axisScores": {
             "relevance": 20,
@@ -268,47 +268,47 @@
             "reciprocal-fit": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "具体的な経験を職務成果へ結び、相手側の期待も確認して相互適合を見ています。",
+            "en": "It links evidence to role outcomes and checks mutual fit through expectations.",
+            "zh": "把具體經驗連結職務成果，也確認對方期待以檢視相互適合。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "学ぶ力があるので、どんな仕事にも対応できます。",
+            "en": "I learn quickly, so I can handle any work.",
+            "zh": "我學習能力強，任何工作都能應付。"
           },
           "axisScores": {
-            "relevance": 13,
-            "credibility": 11,
-            "clarity": 12,
-            "reciprocal-fit": 12
+            "relevance": 12,
+            "credibility": 8,
+            "clarity": 14,
+            "reciprocal-fit": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "前向きですが、顧客分析との具体的な接点と企業側への確認がありません。",
+            "en": "It is positive but lacks a specific analytics link or employer-side question.",
+            "zh": "態度正向，但沒有具體連結顧客分析，也未向企業確認期待。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "まず給与と休暇の日数を確認したいです。",
+            "en": "First, I want to confirm salary and vacation days.",
+            "zh": "我想先確認薪資與休假天數。"
           },
           "axisScores": {
-            "relevance": 2,
-            "credibility": 3,
-            "clarity": 2,
-            "reciprocal-fit": 3
+            "relevance": 3,
+            "credibility": 5,
+            "clarity": 10,
+            "reciprocal-fit": 9
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "条件確認自体は必要でも、問われた経験の活用へ答えず相互適合の順序を逃します。",
+            "en": "Terms matter, but this does not answer how the experience fits the role.",
+            "zh": "條件確認雖必要，卻未回答經驗如何適用職務，順序不合。"
           }
         }
       ]

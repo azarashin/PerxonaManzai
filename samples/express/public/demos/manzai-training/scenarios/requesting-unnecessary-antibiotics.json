@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "不安やつらさを受け止め、今分かっていることを平易に説明します。",
-            "en": "I will acknowledge the anxiety and explain what is currently known in plain language.",
-            "zh": "我會接住焦慮與不適，用淺白語言說明目前已知事項。"
+            "ja": "「症状、経過、アレルギー、前回薬が効いたと感じた理由」を確認し、診察所見に基づき細菌性かウイルス性かを説明する。",
+            "en": "Check first; explain the likely cause using the examination findings.",
+            "zh": "先確認症狀、病程、過敏史與上次藥物看似有效的原因，再依診察結果說明較可能是細菌或病毒感染。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "患者の経験を受け止め、確認・説明・安全確認を一つの計画にしています：「症状、経過、アレルギー、前回薬が効いたと感じた理由」を確認し、診察所見に基づき細菌性かウイルス性かを説明する。",
+            "en": "This validates the patient and combines assessment, explanation, and safety-netting: Check first; explain the likely cause using the examination findings.",
+            "zh": "這接住患者經驗，並整合評估、說明與安全網：先確認症狀、病程、過敏史與上次藥物看似有效的原因，再依診察結果說明較可能是細菌或病毒感染。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "診察所見に基づき細菌性かウイルス性かを説明するが、「症状、経過、アレルギー、前回薬が効いたと感じた理由」の確認は省きます。",
+            "en": "Only explain the likely cause using the examination findings.",
+            "zh": "只依診察結果說明較可能是細菌或病毒感染，但省略症狀、病程、過敏史與上次藥物看似有效的原因的查證。"
           },
           "axisScores": {
-            "empathy": 13,
-            "plain-language": 11,
+            "empathy": 14,
+            "plain-language": 14,
             "fact-checking": 12,
-            "boundary-keeping": 12
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部の対応はありますが、評価か理解確認が不足します：診察所見に基づき細菌性かウイルス性かを説明するが、「症状、経過、アレルギー、前回薬が効いたと感じた理由」の確認は省きます。",
+            "en": "This provides part of the response but misses assessment or understanding: Only explain the likely cause using the examination findings.",
+            "zh": "這提供部分處理，但缺少評估或理解確認：只依診察結果說明較可能是細菌或病毒感染，但省略症狀、病程、過敏史與上次藥物看似有效的原因的查證。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "診察所見に基づき細菌性かウイルス性かを説明することはせず、問題ないと断定します。",
+            "en": "Do not explain the likely cause using the examination findings; say there is no problem.",
+            "zh": "不依診察結果說明較可能是細菌或病毒感染，直接斷言沒有問題。"
           },
           "axisScores": {
             "empathy": 2,
-            "plain-language": 3,
-            "fact-checking": 2,
-            "boundary-keeping": 3
+            "plain-language": 4,
+            "fact-checking": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "評価せず断定するため、不安と見逃しの危険を高めます：診察所見に基づき細菌性かウイルス性かを説明することはせず、問題ないと断定します。",
+            "en": "This gives reassurance without assessment, increasing anxiety and missed-risk potential: Do not explain the likely cause using the examination findings; say there is no problem.",
+            "zh": "未評估就保證沒問題，會增加焦慮與漏診風險：不依診察結果說明較可能是細菌或病毒感染，直接斷言沒有問題。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "特に「抗菌薬の利益が見込める所見と、副作用・耐性の不利益」をもう少し確認してもらえますか？",
+        "en": "Could you check findings that support benefit versus side effects and resistance more closely?",
+        "zh": "可以更仔細確認可能受益的診察所見與副作用、抗藥性風險嗎？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "診断を急がず、理解と疑問を確認して必要な専門判断につなぎます。",
-            "en": "I will not rush to a diagnosis; I will check understanding and connect to appropriate clinical judgment.",
-            "zh": "我不急著診斷，會確認理解與疑問並交由適當專業判斷。"
+            "ja": "「抗菌薬の利益が見込める所見と、副作用・耐性の不利益」を確認し、今回は不要な根拠を平易に伝え、症状を和らげる方法を選ぶ。",
+            "en": "Check first; explain plainly why it is not needed and choose symptom relief.",
+            "zh": "先確認可能受益的診察所見與副作用、抗藥性風險，再用白話說明這次不需要，並選擇緩解症狀的方法。"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "患者の経験を受け止め、確認・説明・安全確認を一つの計画にしています：「抗菌薬の利益が見込める所見と、副作用・耐性の不利益」を確認し、今回は不要な根拠を平易に伝え、症状を和らげる方法を選ぶ。",
+            "en": "This validates the patient and combines assessment, explanation, and safety-netting: Check first; explain plainly why it is not needed and choose symptom relief.",
+            "zh": "這接住患者經驗，並整合評估、說明與安全網：先確認可能受益的診察所見與副作用、抗藥性風險，再用白話說明這次不需要，並選擇緩解症狀的方法。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "今回は不要な根拠を平易に伝え、症状を和らげる方法を選ぶが、「抗菌薬の利益が見込める所見と、副作用・耐性の不利益」の確認は省きます。",
+            "en": "Only explain plainly why it is not needed and choose symptom relief.",
+            "zh": "只用白話說明這次不需要，並選擇緩解症狀的方法，但省略可能受益的診察所見與副作用、抗藥性風險的查證。"
           },
           "axisScores": {
-            "empathy": 13,
-            "plain-language": 11,
+            "empathy": 14,
+            "plain-language": 14,
             "fact-checking": 12,
-            "boundary-keeping": 12
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部の対応はありますが、評価か理解確認が不足します：今回は不要な根拠を平易に伝え、症状を和らげる方法を選ぶが、「抗菌薬の利益が見込める所見と、副作用・耐性の不利益」の確認は省きます。",
+            "en": "This provides part of the response but misses assessment or understanding: Only explain plainly why it is not needed and choose symptom relief.",
+            "zh": "這提供部分處理，但缺少評估或理解確認：只用白話說明這次不需要，並選擇緩解症狀的方法，但省略可能受益的診察所見與副作用、抗藥性風險的查證。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "今回は不要な根拠を平易に伝え、症状を和らげる方法を選ぶことはせず、問題ないと断定します。",
+            "en": "Do not explain plainly why it is not needed and choose symptom relief; say there is no problem.",
+            "zh": "不用白話說明這次不需要，並選擇緩解症狀的方法，直接斷言沒有問題。"
           },
           "axisScores": {
             "empathy": 2,
-            "plain-language": 3,
-            "fact-checking": 2,
-            "boundary-keeping": 3
+            "plain-language": 4,
+            "fact-checking": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "評価せず断定するため、不安と見逃しの危険を高めます：今回は不要な根拠を平易に伝え、症状を和らげる方法を選ぶことはせず、問題ないと断定します。",
+            "en": "This gives reassurance without assessment, increasing anxiety and missed-risk potential: Do not explain plainly why it is not needed and choose symptom relief; say there is no problem.",
+            "zh": "未評估就保證沒問題，會增加焦慮與漏診風險：不用白話說明這次不需要，並選擇緩解症狀的方法，直接斷言沒有問題。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "私が理解できるよう、自宅ケア、再診期限、緊急時連絡を患者に復唱してもらうことを具体的に決められますか？",
+        "en": "Can we decide clearly how to use teach-back for home care, review timing, and urgent contact, so I can explain it back?",
+        "zh": "可以清楚決定如何請患者回述居家照護、回診期限與緊急聯絡，再讓我用自己的話重述嗎？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "一般的な情報と個別判断を区別し、次の確認方法を示します。",
-            "en": "I will distinguish general information from individual advice and explain the next check.",
-            "zh": "我會區分一般資訊與個別判斷，並說明下一步確認方式。"
+            "ja": "「発熱継続、呼吸困難、悪化など再診すべき条件」を確認し、自宅ケア、再診期限、緊急時連絡を患者に復唱してもらう。",
+            "en": "Check first; use teach-back for home care, review timing, and urgent contact.",
+            "zh": "先確認持續發燒、呼吸困難或惡化等回診條件，再請患者回述居家照護、回診期限與緊急聯絡。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "患者の経験を受け止め、確認・説明・安全確認を一つの計画にしています：「発熱継続、呼吸困難、悪化など再診すべき条件」を確認し、自宅ケア、再診期限、緊急時連絡を患者に復唱してもらう。",
+            "en": "This validates the patient and combines assessment, explanation, and safety-netting: Check first; use teach-back for home care, review timing, and urgent contact.",
+            "zh": "這接住患者經驗，並整合評估、說明與安全網：先確認持續發燒、呼吸困難或惡化等回診條件，再請患者回述居家照護、回診期限與緊急聯絡。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "自宅ケア、再診期限、緊急時連絡を患者に復唱してもらうが、「発熱継続、呼吸困難、悪化など再診すべき条件」の確認は省きます。",
+            "en": "Only use teach-back for home care, review timing, and urgent contact.",
+            "zh": "只請患者回述居家照護、回診期限與緊急聯絡，但省略持續發燒、呼吸困難或惡化等回診條件的查證。"
           },
           "axisScores": {
-            "empathy": 13,
-            "plain-language": 11,
+            "empathy": 14,
+            "plain-language": 14,
             "fact-checking": 12,
-            "boundary-keeping": 12
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部の対応はありますが、評価か理解確認が不足します：自宅ケア、再診期限、緊急時連絡を患者に復唱してもらうが、「発熱継続、呼吸困難、悪化など再診すべき条件」の確認は省きます。",
+            "en": "This provides part of the response but misses assessment or understanding: Only use teach-back for home care, review timing, and urgent contact.",
+            "zh": "這提供部分處理，但缺少評估或理解確認：只請患者回述居家照護、回診期限與緊急聯絡，但省略持續發燒、呼吸困難或惡化等回診條件的查證。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "自宅ケア、再診期限、緊急時連絡を患者に復唱してもらうことはせず、問題ないと断定します。",
+            "en": "Do not use teach-back for home care, review timing, and urgent contact; say there is no problem.",
+            "zh": "不請患者回述居家照護、回診期限與緊急聯絡，直接斷言沒有問題。"
           },
           "axisScores": {
             "empathy": 2,
-            "plain-language": 3,
-            "fact-checking": 2,
-            "boundary-keeping": 3
+            "plain-language": 4,
+            "fact-checking": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "評価せず断定するため、不安と見逃しの危険を高めます：自宅ケア、再診期限、緊急時連絡を患者に復唱してもらうことはせず、問題ないと断定します。",
+            "en": "This gives reassurance without assessment, increasing anxiety and missed-risk potential: Do not use teach-back for home care, review timing, and urgent contact; say there is no problem.",
+            "zh": "未評估就保證沒問題，會增加焦慮與漏診風險：不請患者回述居家照護、回診期限與緊急聯絡，直接斷言沒有問題。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "「薬を求める患者だと決めつけられ、症状を聞かれなかった影響」を軽く扱われたようで不安です。",
+        "en": "I feel unsafe because you minimized the impact of being labeled as drug-seeking before symptoms were heard.",
+        "zh": "你淡化在症狀未被聽取前就被貼上求藥標籤的影響，讓我感到不安。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "軽く扱ったように聞こえた点を認め、症状と心配をもう一度聞きます。",
-            "en": "I recognize that I sounded dismissive and will ask again about the symptoms and concerns.",
-            "zh": "我承認剛才聽起來像輕忽，會再次了解症狀與擔心。"
+            "ja": "「薬を求める患者だと決めつけられ、症状を聞かれなかった影響」を確認し、決めつけを謝罪し、症状と期待を最初から評価し直す。",
+            "en": "Check first; apologize for the label and reassess symptoms and expectations.",
+            "zh": "先確認在症狀未被聽取前就被貼上求藥標籤的影響，再為貼標籤道歉，重新評估症狀與期待。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "患者の経験を受け止め、確認・説明・安全確認を一つの計画にしています：「薬を求める患者だと決めつけられ、症状を聞かれなかった影響」を確認し、決めつけを謝罪し、症状と期待を最初から評価し直す。",
+            "en": "This validates the patient and combines assessment, explanation, and safety-netting: Check first; apologize for the label and reassess symptoms and expectations.",
+            "zh": "這接住患者經驗，並整合評估、說明與安全網：先確認在症狀未被聽取前就被貼上求藥標籤的影響，再為貼標籤道歉，重新評估症狀與期待。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "決めつけを謝罪し、症状と期待を最初から評価し直すが、「薬を求める患者だと決めつけられ、症状を聞かれなかった影響」の確認は省きます。",
+            "en": "Only apologize for the label and reassess symptoms and expectations.",
+            "zh": "只為貼標籤道歉，重新評估症狀與期待，但省略在症狀未被聽取前就被貼上求藥標籤的影響的查證。"
           },
           "axisScores": {
-            "empathy": 13,
-            "plain-language": 11,
+            "empathy": 14,
+            "plain-language": 14,
             "fact-checking": 12,
-            "boundary-keeping": 12
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部の対応はありますが、評価か理解確認が不足します：決めつけを謝罪し、症状と期待を最初から評価し直すが、「薬を求める患者だと決めつけられ、症状を聞かれなかった影響」の確認は省きます。",
+            "en": "This provides part of the response but misses assessment or understanding: Only apologize for the label and reassess symptoms and expectations.",
+            "zh": "這提供部分處理，但缺少評估或理解確認：只為貼標籤道歉，重新評估症狀與期待，但省略在症狀未被聽取前就被貼上求藥標籤的影響的查證。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "決めつけを謝罪し、症状と期待を最初から評価し直すことはせず、問題ないと断定します。",
+            "en": "Do not apologize for the label and reassess symptoms and expectations; say there is no problem.",
+            "zh": "不為貼標籤道歉，重新評估症狀與期待，直接斷言沒有問題。"
           },
           "axisScores": {
             "empathy": 2,
-            "plain-language": 3,
-            "fact-checking": 2,
-            "boundary-keeping": 3
+            "plain-language": 4,
+            "fact-checking": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "評価せず断定するため、不安と見逃しの危険を高めます：決めつけを謝罪し、症状と期待を最初から評価し直すことはせず、問題ないと断定します。",
+            "en": "This gives reassurance without assessment, increasing anxiety and missed-risk potential: Do not apologize for the label and reassess symptoms and expectations; say there is no problem.",
+            "zh": "未評估就保證沒問題，會增加焦慮與漏診風險：不為貼標籤道歉，重新評估症狀與期待，直接斷言沒有問題。"
           },
           "stateEffects": [
             {

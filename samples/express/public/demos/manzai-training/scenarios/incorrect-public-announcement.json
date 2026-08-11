@@ -7,9 +7,9 @@
     "zh": "更正錯誤公告"
   },
   "description": {
-    "ja": "謝罪・火消しとして「誤った公開案内の訂正」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Correcting a Public Announcement” for Apology and Incident Response.",
-    "zh": "在「更正錯誤公告」中練習符合情境的簡短道歉與事件應對回應。"
+    "ja": "誤った公開案内で予定を変えた人に謝罪し、正しい情報、訂正経路、再発防止を順序立てて伝える練習です。",
+    "en": "Practice correcting a harmful public announcement through apology, verified information, correction channels, and prevention.",
+    "zh": "練習修正造成行程變更的錯誤公告，依序致歉、提供正確資訊、修正管道與防止再犯。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "影響へのお詫びと、現時点で確認済みの事実を分けて伝えます。",
-            "en": "I will apologize for the impact and distinguish confirmed facts from unknowns.",
-            "zh": "我會對影響致歉，並區分已確認事實與未知部分。"
+            "ja": "誤った案内で予定を変えさせてしまい、申し訳ありません。正しい開催日は確認後、同じ掲載先ですぐ訂正します。",
+            "en": "I'm sorry our wrong notice made you change plans. Once verified, we'll correct the date on every original channel.",
+            "zh": "很抱歉錯誤公告讓您更改行程。確認正確日期後，我們會立刻在原發布管道更正。"
           },
           "axisScores": {
             "accountability": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "誤りと具体的な影響を認め、未確認の日時を言わず訂正行動を示しています。",
+            "en": "It owns the error and impact and commits to correction without inventing a date.",
+            "zh": "承認錯誤與具體影響，不臆測日期並提出更正行動。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "案内が分かりにくく申し訳ありません。正しい情報を確認します。",
+            "en": "I'm sorry the notice was unclear. I'll check the correct information.",
+            "zh": "很抱歉公告不夠清楚，我會確認正確資訊。"
           },
           "axisScores": {
-            "accountability": 13,
-            "fact-checking": 11,
-            "clarity": 12,
-            "solution-quality": 12
+            "accountability": 12,
+            "fact-checking": 12,
+            "clarity": 9,
+            "solution-quality": 15
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認へ進みますが、案内が誤っていた責任と予定変更の影響を弱めています。",
+            "en": "It checks facts but softens both the error and its impact.",
+            "zh": "會查核事實，但淡化公告確實錯誤及行程受影響。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "古い資料が残っていたようです。担当者の更新ミスです。",
+            "en": "An old file remained online. The staff member failed to update it.",
+            "zh": "似乎留下舊資料，是負責人員更新失誤。"
           },
           "axisScores": {
             "accountability": 2,
-            "fact-checking": 3,
+            "fact-checking": 4,
             "clarity": 2,
             "solution-quality": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "調査前に個人へ原因を帰し、組織としての謝罪と訂正を避けています。",
+            "en": "It blames an individual before investigation and avoids organizational ownership.",
+            "zh": "調查前就歸咎個人，逃避組織的道歉與更正責任。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "正しい日程はどれで、なぜ誤りに気づかなかったのか、確認済みの範囲を教えてください。",
+        "en": "What date is correct, and what is confirmed about why the error was missed?",
+        "zh": "正確日期是哪天？為何未發現錯誤，目前確認到什麼程度？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "推測で原因を断定せず、調査状況と次の報告時刻を示します。",
-            "en": "I will not guess the cause; I will state the investigation status and next update time.",
-            "zh": "我不推測原因，會說明調查狀態與下次更新時間。"
+            "ja": "主催者の原本で来週土曜と確認しました。公開前の照合記録がない点まで確認し、原因は引き続き調査します。",
+            "en": "The organizer's source confirms next Saturday. We found no pre-publication check record; the cause remains under review.",
+            "zh": "已依主辦方原始資料確認為下週六，也確認發布前沒有核對紀錄；原因仍在調查。"
           },
           "axisScores": {
             "accountability": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "正しい情報の根拠、確認できた手順不備、未確定の原因を分けています。",
+            "en": "It separates sourced correction, confirmed process gap, and unresolved cause.",
+            "zh": "區分正確資訊依據、已確認的流程缺失與未定原因。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "正しい日程は来週土曜です。原因はあとで調べます。",
+            "en": "The correct date is next Saturday. We'll look into the cause later.",
+            "zh": "正確日期是下週六，原因之後再查。"
           },
           "axisScores": {
-            "accountability": 13,
-            "fact-checking": 11,
-            "clarity": 12,
-            "solution-quality": 12
+            "accountability": 8,
+            "fact-checking": 16,
+            "clarity": 9,
+            "solution-quality": 15
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "正しい日程は示しますが、根拠と現在分かる手順上の問題がありません。",
+            "en": "It gives the date but not its source or any current process finding.",
+            "zh": "提供日期，但未說明依據或目前已知的流程問題。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "おそらく単純な入力ミスです。誰にでもあります。",
+            "en": "It was probably a simple typo. Anyone can make one.",
+            "zh": "大概只是輸入錯誤，任何人都可能犯。"
           },
           "axisScores": {
             "accountability": 2,
-            "fact-checking": 3,
-            "clarity": 2,
+            "fact-checking": 1,
+            "clarity": 1,
             "solution-quality": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "未確認の原因を軽微と決めつけ、影響と仕組み上の問題を矮小化しています。",
+            "en": "It assumes a minor cause and minimizes both impact and process risk.",
+            "zh": "把未確認原因斷定為小錯，淡化影響與流程風險。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "訂正を見落とす人が出ないよう、どこで知らせ、何を変えるのですか。",
+        "en": "How will you reach people who may miss the correction, and what will change?",
+        "zh": "要在哪些地方通知，並做哪些改善，避免有人漏看更正？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "再発防止や補償は確認と権限の範囲で具体化します。",
-            "en": "I will make prevention and remedy specific within confirmed facts and authority.",
-            "zh": "我會在已確認事實與權限範圍內具體說明預防與補救。"
+            "ja": "元の全掲載先を訂正し、申込者へ直接連絡します。今後は公開前に原本との二者照合を記録します。",
+            "en": "We'll correct each original channel, contact registrants, and record a two-person source check before publishing.",
+            "zh": "我們會更正所有原發布管道、直接通知報名者，今後發布前記錄雙人核對原始資料。"
           },
           "axisScores": {
             "accountability": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "到達経路と再発防止の担当行動が具体的で、訂正だけで終わりません。",
+            "en": "It covers correction reach and a concrete preventive control.",
+            "zh": "具體涵蓋更正觸達與防止再犯機制，不只刪改公告。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "公式サイトとSNSで訂正を出します。",
+            "en": "We'll post a correction on the website and social media.",
+            "zh": "我們會在官網與社群發布更正。"
           },
           "axisScores": {
-            "accountability": 13,
-            "fact-checking": 11,
-            "clarity": 12,
-            "solution-quality": 12
+            "accountability": 10,
+            "fact-checking": 12,
+            "clarity": 13,
+            "solution-quality": 13
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "公開訂正はできますが、既に行動した対象者への直接連絡と再発防止がありません。",
+            "en": "It corrects publicly but omits direct outreach and prevention.",
+            "zh": "能公開更正，但缺少直接通知受影響者與防止再犯。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "間違った投稿を削除すれば、混乱は止まります。",
+            "en": "Deleting the wrong post will stop the confusion.",
+            "zh": "刪除錯誤貼文就能停止混亂。"
           },
           "axisScores": {
             "accountability": 2,
-            "fact-checking": 3,
-            "clarity": 2,
+            "fact-checking": 2,
+            "clarity": 3,
             "solution-quality": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "削除だけでは正しい情報も変更理由も届かず、既に見た人を救済できません。",
+            "en": "Deletion provides no corrected information and cannot reach people who already acted.",
+            "zh": "只刪除無法傳達正確資訊，也無法補救已依錯誤公告行動的人。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "説明が責任逃れに聞こえます。私が予定を変えた影響を理解していますか。",
+        "en": "This sounds evasive. Do you understand the impact of changing my plans?",
+        "zh": "說明聽起來像在卸責。你理解我更改行程受到的影響嗎？"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "説明不足を認め、影響、事実、次の行動の順で伝え直します。",
-            "en": "I acknowledge the poor explanation and will restate the impact, facts, and next action in order.",
-            "zh": "我承認說明不足，會依影響、事實與下一步重新說明。"
+            "ja": "責任を薄める説明になり申し訳ありません。予定変更の影響を認め、正しい情報、訂正、再発防止の順で説明し直します。",
+            "en": "I'm sorry I sounded evasive. I own the disruption and will restate the facts, correction, and prevention.",
+            "zh": "很抱歉說得像在卸責。我承認行程受影響，會依正確資訊、更正、防止再犯的順序重述。"
           },
           "axisScores": {
             "accountability": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "影響と説明上の失敗を認め、必要な情報を責任ある順序で提示し直しています。",
+            "en": "It owns both impact and communication failure and restores a responsible sequence.",
+            "zh": "承認影響與說明失誤，依負責任的順序重新提供資訊。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "混乱させた点は謝ります。訂正文を準備しています。",
+            "en": "I'm sorry for the confusion. We're preparing a correction.",
+            "zh": "很抱歉造成混亂，我們正在準備更正。"
           },
           "axisScores": {
-            "accountability": 13,
-            "fact-checking": 11,
-            "clarity": 12,
-            "solution-quality": 12
+            "accountability": 14,
+            "fact-checking": 8,
+            "clarity": 10,
+            "solution-quality": 14
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "謝罪と行動はありますが、誤りへの責任と予定変更の影響を具体的に認めません。",
+            "en": "It apologizes and acts but does not fully own the error or changed plans.",
+            "zh": "有道歉與行動，但未具體承認錯誤責任與行程變更影響。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "法的な責任については、今ここでは回答できません。",
+            "en": "I cannot address legal responsibility here.",
+            "zh": "法律責任現在無法回答。"
           },
           "axisScores": {
-            "accountability": 2,
+            "accountability": 1,
             "fact-checking": 3,
-            "clarity": 2,
-            "solution-quality": 3
+            "clarity": 1,
+            "solution-quality": 6
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "尋ねられた体験上の影響を法的責任へすり替え、訂正対話を止めています。",
+            "en": "It substitutes legal liability for the lived impact and stops the corrective conversation.",
+            "zh": "把對方詢問的實際影響轉成法律責任，阻斷更正對話。"
           },
           "stateEffects": [
             {

@@ -93,6 +93,29 @@ test("a scenario without routes advances in array order", () => {
   assert.equal(controller.advance().id, "second");
 });
 
+test("refusing the municipal refund ATM request ends the scenario", async () => {
+  const url = new URL(
+    "../public/demos/manzai-training/scenarios/municipal-refund-atm.json",
+    import.meta.url,
+  );
+  const scenario = JSON.parse(await readFile(url, "utf8"));
+
+  for (const refusalChoiceId of ["atm-direction-strong", "atm-direction-partial"]) {
+    const controller = new ScenarioController(scenario);
+    controller.start();
+    play(controller, "refund-notice-weak");
+    assert.equal(controller.currentBeat.id, "atm-direction");
+    play(controller, refusalChoiceId);
+    assert.equal(controller.isComplete, true);
+  }
+
+  const compliant = new ScenarioController(scenario);
+  compliant.start();
+  play(compliant, "refund-notice-weak");
+  play(compliant, "atm-direction-weak");
+  assert.equal(compliant.currentBeat.id, "screen-guidance");
+});
+
 test("the enterprise renewal scenario reaches outcomes from accumulated state", async () => {
   const url = new URL(
     "../public/demos/manzai-training/scenarios/enterprise-renewal-negotiation.json",
