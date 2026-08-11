@@ -1,4 +1,5 @@
 import { evaluateResponse, localizedChoiceFeedback } from "./evaluator.js";
+import { completionAnswerDetails } from "./completion-details.js";
 import { applyTranslations, translate } from "./i18n.js";
 import {
   assetDisplayName,
@@ -847,6 +848,7 @@ function handleFinalTranscript(transcript) {
     return;
   }
 
+  result.inputMode = "voice";
   completeEvaluation(result);
 }
 
@@ -1272,12 +1274,14 @@ function renderSummaryBreakdown() {
         ),
       );
       feedback.className = "summary-result-feedback";
+      const answerDetails = completionAnswerDetails(result).map(
+        ({ labelKey, value }) => createLabeledParagraph(t(labelKey), value),
+      );
       card.append(
         header,
         boke,
         scoreLine,
-        createLabeledParagraph(t("recognizedSpeechLabel"), result.transcript),
-        createLabeledParagraph(t("judgedComebackLabel"), result.choiceText),
+        ...answerDetails,
         feedback,
       );
       return card;
