@@ -1511,6 +1511,33 @@
         "zh": "情緒激動的來電者"
       },
       "path": "./scenarios/distressed-caller.json"
+    },
+    {
+      "id": "refusing-safe-evacuation",
+      "categoryId": "crisis-negotiation",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Crisis Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "避難を拒む人との対話",
+        "en": "Refusing Safe Evacuation",
+        "zh": "拒絕安全疏散"
+      },
+      "path": "./scenarios/refusing-safe-evacuation.json"
     }
   ]
 }
