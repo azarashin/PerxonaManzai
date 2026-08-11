@@ -112,6 +112,22 @@
         "en": "Interview and Hiring",
         "zh": "面試與招募"
       }
+    },
+    {
+      "id": "teacher-student",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "生徒の背景や反応により、注意、励まし、見守りの適切な選択が変わるため分岐を推奨します。",
+          "en": "Branching is recommended because the student's context and reaction change the appropriate balance of guidance and support.",
+          "zh": "學生的背景與反應會改變提醒、鼓勵與支持的平衡，因此建議分支。"
+        }
+      },
+      "title": {
+        "ja": "教師・生徒",
+        "en": "Teacher and Student",
+        "zh": "教師與學生"
+      }
     }
   ],
   "scenarios": [
@@ -789,6 +805,33 @@
         "zh": "向面試官反向提問"
       },
       "path": "./scenarios/questions-for-the-interviewer.json"
+    },
+    {
+      "id": "repeated-lateness",
+      "categoryId": "teacher-student",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Teacher and Student.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合教師與學生的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "繰り返す遅刻",
+        "en": "Repeated Lateness",
+        "zh": "反覆遲到"
+      },
+      "path": "./scenarios/repeated-lateness.json"
     }
   ]
 }
