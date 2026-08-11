@@ -27,7 +27,10 @@ import {
   updateScenarioSearch,
 } from "./scenario-routing.js";
 import { scenarioDisplayLanguages } from "./scenario-languages.js";
-import { SpeechRecognizer } from "./speech-recognizer.js";
+import {
+  SPEECH_RECOGNITION_TIMEOUT_MS,
+  SpeechRecognizer,
+} from "./speech-recognizer.js";
 import {
   createOrderedScenario,
   createReviewScenario,
@@ -752,7 +755,11 @@ function openResponseWindow() {
   micStatus.textContent = t("startingMic");
   presenter.setListening?.(true);
   micBtn.hidden = false;
-  setAppMessage(t("speakWithinNineSeconds"));
+  setAppMessage(
+    t("speakWithinSeconds", {
+      seconds: SPEECH_RECOGNITION_TIMEOUT_MS / 1000,
+    }),
+  );
 
   window.setTimeout(() => {
     if (phase === "answering") startRecognition();

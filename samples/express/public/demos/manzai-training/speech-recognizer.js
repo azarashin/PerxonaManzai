@@ -1,3 +1,5 @@
+export const SPEECH_RECOGNITION_TIMEOUT_MS = 18000;
+
 export class SpeechRecognizer {
   constructor({ onInterim, onFinal, onError, onEnd, language = "ja-JP" }) {
     const Recognition =
@@ -52,7 +54,7 @@ export class SpeechRecognizer {
     this.recognition.lang = language;
   }
 
-  start(timeoutMilliseconds = 9000) {
+  start(timeoutMilliseconds = SPEECH_RECOGNITION_TIMEOUT_MS) {
     if (!this.supported) {
       throw new Error("このブラウザーは音声認識に対応していません。");
     }
