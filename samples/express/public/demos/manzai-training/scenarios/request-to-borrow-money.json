@@ -112,6 +112,11 @@
         "en": "Could you lend me money just this month without asking why?",
         "zh": "這個月可以不要問原因就借我錢嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "こんげつだけ、 りゆうを きかずに おかねを かして くれない？",
+        "en": "/kʊd ju lɛnd mi ˈmʌni dʒʌst ðɪs mʌnθ wɪˈθaʊt ˈæskɪŋ waɪ?/",
+        "zh": "Zhè ge yuè kě yǐ bú yào wèn yuán yīn jiù jiè wǒ qián ma？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "困っていることは心配している。でも貸す判断には、金額・用途・期限を確認させて。",
             "en": "I care that you're in trouble, but before lending I need to know the amount, purpose, and timing.",
             "zh": "我很擔心你的處境，但借錢前需要確認金額、用途與期限。"
+          },
+          "pronunciationGuide": {
+            "ja": "こまって いる ことは しんぱい して いる。でも かす はんだんには、 きんがく・ ようと・ きげんを かくにん させて。",
+            "en": "/aɪ kɛɹ ðæt jʊɹ ɪn ˈtɹʌbəl, bʌt bɪˈfɔɹ ˈlɛndɪŋ aɪ nid tu noʊ ðə əˈmaʊnt, ˈpɝpəs, ənd ˈtaɪmɪŋ./",
+            "zh": "Wǒ hěn dān xīn nǐ de chǔ jìng， dàn jiè qián qián xū yào què rèn jīn é、 yòng tú yǔ qī xiàn。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "If it's a small amount, I can lend it without asking why.",
             "zh": "若金額不大，我可以不問原因借你。"
           },
+          "pronunciationGuide": {
+            "ja": "しょうがくなら りゆうを きかずに かしても いいよ。",
+            "en": "/ɪf ɪts ə smɔl əˈmaʊnt, aɪ kæn lɛnd ɪt wɪˈθaʊt ˈæskɪŋ waɪ./",
+            "zh": "Ruò jīn é bú dà， wǒ kě yǐ bú wèn yuán yīn jiè nǐ。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -200,6 +215,11 @@
             "ja": "理由を言えないなら、何か怪しいことに使うんでしょう。",
             "en": "If you can't say why, you must be using it for something suspicious.",
             "zh": "不肯說原因，一定是要拿去做可疑的事。"
+          },
+          "pronunciationGuide": {
+            "ja": "りゆうを いえないなら、 なにか あやしい ことに つかう んでしょう。",
+            "en": "/ɪf ju kænt seɪ waɪ, ju mʌst bi ˈjuzɪŋ ɪt fɔɹ ˈsʌmθɪŋ səˈspɪʃəs./",
+            "zh": "Bù kěn shuō yuán yīn， yí dìng shì yào ná qù zuò kě yí de shì。"
           },
           "axisScores": {
             "empathy": 2,
@@ -234,6 +254,11 @@
         "en": "I'm short on rent. I think I can repay next month, but I can't promise.",
         "zh": "房租不夠。我想下月能還，但不能保證。"
       },
+      "pronunciationGuide": {
+        "ja": "やちんが たりない。 らいげつ かえせると おもうけど、 かくじつとは いえない。",
+        "en": "/aɪm ʃɔɹt ɑn ɹɛnt. aɪ θɪŋk aɪ kæn ɹiˈpeɪ nɛkst mʌnθ, bʌt aɪ kænt ˈpɹɑməs./",
+        "zh": "Fáng zū bú gòu。 wǒ xiǎng xià yuè néng hái， dàn bù néng bǎo zhèng。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "必要額と支払期限、来月の収支を一緒に確認しよう。貸す以外の相談先も調べたい。",
             "en": "Let's check the amount, due date, and next month's budget, and also look at non-loan assistance.",
             "zh": "一起確認缺額、期限與下月收支，也找找不靠借款的協助。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひつようがくと しはらい きげん、 らいげつの しゅうしを いっしょに かくにん しよう。 かす いがいの そうだんさきも しらべたい。",
+            "en": "/lɛts tʃɛk ðə əˈmaʊnt, du deɪt, ənd nɛkst mʌnθs ˈbʌdʒɪt, ənd ˈɔlsoʊ lʊk æt nɑn - loʊn əˈsɪstəns./",
+            "zh": "Yì qǐ què rèn quē é、 qī xiàn yǔ xià yuè shōu zhī， yě zhǎo zhǎo bú kào jiè kuǎn de xié zhù。"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "If repayment next month seems likely, I'll lend it once we set a date.",
             "zh": "若下月可能還，就定個日期後借你。"
           },
+          "pronunciationGuide": {
+            "ja": "らいげつ かえせそうなら、 へんさいびだけ きめて かすよ。",
+            "en": "/ɪf ɹiˈpeɪmənt nɛkst mʌnθ simz ˈlaɪkli, aɪl lɛnd ɪt wʌns wi sɛt ə deɪt./",
+            "zh": "Ruò xià yuè kě néng hái， jiù dìng gè rì qī hòu jiè nǐ。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -327,6 +362,11 @@
             "ja": "返せる保証がないなら、友達でも助けられない。",
             "en": "If repayment isn't guaranteed, I can't help you even as a friend.",
             "zh": "若不能保證還款，就算朋友我也不幫。"
+          },
+          "pronunciationGuide": {
+            "ja": "かえせる ほしょうが ないなら、 ともだちでも たすけられない。",
+            "en": "/ɪf ɹiˈpeɪmənt ˈɪzənt ˌɡɛɹənˈtid, aɪ kænt hɛlp ju ˈivɪn æz ə fɹɛnd./",
+            "zh": "Ruò bù néng bǎo zhèng hái kuǎn， jiù suàn péng yǒu wǒ yě bù bāng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -361,6 +401,11 @@
         "en": "Even if you can't lend, please help me find something I can do today.",
         "zh": "即使不能借，也希望你陪我找今天能做的事。"
       },
+      "pronunciationGuide": {
+        "ja": "かせない ばあいでも、 きょうちゅうに できる ことを いっしょに かんがえて ほしい。",
+        "en": "/ˈivɪn ɪf ju kænt lɛnd, pliz hɛlp mi faɪnd ˈsʌmθɪŋ aɪ kæn du təˈdeɪ./",
+        "zh": "Jí shǐ bù néng jiè， yě xī wàng nǐ péi wǒ zhǎo jīn tiān néng zuò de shì。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "現金は貸さない。でも管理会社への相談、支援窓口、支払計画の三つから一緒に選べる。",
             "en": "I won't lend cash, but we can choose among contacting the landlord, an aid service, or making a payment plan.",
             "zh": "我不借現金，但可陪你從聯絡房東、求助機構或付款計畫中選擇。"
+          },
+          "pronunciationGuide": {
+            "ja": "げんきんは かさない。でも かんり かいしゃへの そうだん、 しえん まどぐち、 しはらい けいかくの みっつから いっしょに えらべる。",
+            "en": "/aɪ woʊnt lɛnd kæʃ, bʌt wi kæn tʃuz əˈmʌŋ ˈkɑnˌtæktɪŋ ðə ˈlændˌlɔɹd, æn eɪd ˈsɝvəs, ɔɹ ˈmeɪkɪŋ ə ˈpeɪmənt plæn./",
+            "zh": "Wǒ bú jiè xiàn jīn， dàn kě péi nǐ cóng lián luò fáng dōng、 qiú zhù jī gòu huò fù kuǎn jì huà zhōng xuǎn zé。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "This time I can help if I pay the rent directly.",
             "zh": "這次若由我直接付房租，可以幫忙。"
           },
+          "pronunciationGuide": {
+            "ja": "こんかいは やちんを ちょくせつ はらうなら たすけられる。",
+            "en": "/ðɪs taɪm aɪ kæn hɛlp ɪf aɪ peɪ ðə ɹɛnt dɚˈɛktli./",
+            "zh": "Zhè cì ruò yóu wǒ zhí jiē fù fáng zū， kě yǐ bāng máng。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -444,6 +499,11 @@
             "ja": "お金の話をするなら、しばらく連絡しないで。",
             "en": "If this is about money, don't contact me for a while.",
             "zh": "如果是錢的事，暫時別聯絡我。"
+          },
+          "pronunciationGuide": {
+            "ja": "おかねの はなしを するなら、 しばらく れんらく しないで。",
+            "en": "/ɪf ðɪs ɪz əˈbaʊt ˈmʌni, doʊnt ˈkɑnˌtækt mi fɔɹ ə waɪl./",
+            "zh": "Rú guǒ shì qián de shì， zàn shí bié lián luò wǒ。"
           },
           "axisScores": {
             "empathy": 2,
@@ -478,6 +538,11 @@
         "en": "I understand a refusal, but feeling suspected made me shut down.",
         "zh": "我能接受被拒絕，但被懷疑讓我不敢再說。"
       },
+      "pronunciationGuide": {
+        "ja": "ことわられる のは わかるけど、 うたがわれた ようで はなせなく なった。",
+        "en": "/aɪ ˌʌndɚˈstænd ə ɹəfˈjuzəl, bʌt ˈfilɪŋ səˈspɛktɪd meɪd mi ʃʌt daʊn./",
+        "zh": "Wǒ néng jiē shòu bèi jù jué， dàn bèi huái yí ràng wǒ bù gǎn zài shuō。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "疑う言い方になってごめん。貸すかどうかと、あなたの困り事を尊重して聞くことは分けて話し直したい。",
             "en": "I'm sorry I sounded suspicious. I want to separate whether I lend from respectfully hearing what you need.",
             "zh": "抱歉我說得像在懷疑你。我想把是否借錢與尊重地了解困難分開重談。"
+          },
+          "pronunciationGuide": {
+            "ja": "うたがう いいかたに なって ごめん。 かすか どうかと、 あなたの こまりごとを そんちょう して きく ことは わけて はなし なおしたい。",
+            "en": "/aɪm ˈsɑɹi aɪ ˈsaʊndɪd səˈspɪʃəs. aɪ wɑnt tu ˈsɛpɚˌeɪt ˈwɛðɚ aɪ lɛnd fɹʌm ɹɪˈspɛktfəli ˈhiɹɪŋ wʌt ju nid./",
+            "zh": "Bào qiàn wǒ shuō dé xiàng zài huái yí nǐ。 wǒ xiǎng bǎ shì fǒu jiè qián yǔ zūn zhòng dì liǎo jiě kùn nán fēn kāi zhòng tán。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "I don't suspect you; I'm just careful with money.",
             "zh": "我不是懷疑你，只是對錢很謹慎。"
           },
+          "pronunciationGuide": {
+            "ja": "うたがっては いないよ。ただ、 おかねには しんちょうな んだ。",
+            "en": "/aɪ doʊnt səˈspɛkt ju; aɪm dʒʌst ˈkɛɹfəl wɪð ˈmʌni./",
+            "zh": "Wǒ bú shì huái yí nǐ， zhǐ shì duì qián hěn jǐn shèn。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -561,6 +636,11 @@
             "ja": "隠すから疑われるんだよ。",
             "en": "You get suspected because you hide things.",
             "zh": "是你隱瞞才會被懷疑。"
+          },
+          "pronunciationGuide": {
+            "ja": "かくすから うたがわれる んだよ。",
+            "en": "/ju ɡɛt səˈspɛktɪd bɪˈkɔz ju haɪd θɪŋz./",
+            "zh": "Shì nǐ yǐn mán cái huì bèi huái yí。"
           },
           "axisScores": {
             "empathy": 2,

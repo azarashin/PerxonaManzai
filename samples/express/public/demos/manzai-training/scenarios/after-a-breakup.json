@@ -77,6 +77,11 @@
         "en": "People say the breakup was for the best, but I can't feel that way now.",
         "zh": "大家說分手是好事，但我現在無法這樣想。"
       },
+      "pronunciationGuide": {
+        "ja": "わかれて せいかいだったと いわれるけど、 いまは そう おもえない。",
+        "en": "/ˈpipəl seɪ ðə ˈbɹeɪˌkʌp wɑz fɔɹ ðə bɛst, bʌt aɪ kænt fil ðæt weɪ naʊ./",
+        "zh": "Dà jiā shuō fēn shǒu shì hǎo shì， dàn wǒ xiàn zài wú fǎ zhè yàng xiǎng。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "You don't have to decide whether it was for the best. Do you want to talk, or just have company?",
             "zh": "不必現在判斷是不是好事。你想說一說，還是只想有人陪？"
           },
+          "pronunciationGuide": {
+            "ja": "せいかいか どうかを きめなくて いいよ。 いまは はなしを きいて ほしい？ そばに いて ほしい？",
+            "en": "/ju doʊnt hæv tu ˌdɪˈsaɪd ˈwɛðɚ ɪt wɑz fɔɹ ðə bɛst. du ju wɑnt tu tɔk, ɔɹ dʒʌst hæv ˈkʌmpəˌni?/",
+            "zh": "Bú bì xiàn zài pàn duàn shì bu shì hǎo shì。 nǐ xiǎng shuō yi shuō， hái shì zhī xiǎng yǒu rén péi？"
+          },
           "axisScores": {
             "empathy": 20,
             "needs-reading": 20,
@@ -118,6 +128,11 @@
             "en": "With time, you'll probably see that it was for the best.",
             "zh": "時間久了，你大概會覺得分手是對的。"
           },
+          "pronunciationGuide": {
+            "ja": "じかんが たてば、 きっと せいかいだったと おもえるよ。",
+            "en": "/wɪð taɪm, jul ˈpɹɑbəˌbli si ðæt ɪt wɑz fɔɹ ðə bɛst./",
+            "zh": "Shí jiān jiǔ le， nǐ dà gài huì jué de fēn shǒu shì duì de。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -136,6 +151,11 @@
             "ja": "次の人を探せば、すぐ忘れられるよ。",
             "en": "Find someone new and you'll forget quickly.",
             "zh": "趕快找下一個人就會忘了。"
+          },
+          "pronunciationGuide": {
+            "ja": "つぎの ひとを さがせば、 すぐ わすれられるよ。",
+            "en": "/faɪnd ˈsʌmˌwʌn nu ənd jul fɚˈɡɛt ˈkwɪkli./",
+            "zh": "Gǎn kuài zhǎo xià yí gè rén jiù huì wàng le。"
           },
           "axisScores": {
             "empathy": 2,
@@ -157,6 +177,11 @@
         "ja": "助言より、思い出すたび苦しくなる気持ちを否定しないでほしい。",
         "en": "More than advice, I need you not to dismiss how much it hurts when memories return.",
         "zh": "比起建議，我希望你不要否定回憶湧現時的痛苦。"
+      },
+      "pronunciationGuide": {
+        "ja": "じょげんより、 おもいだす たび くるしく なる きもちを ひてい しないで ほしい。",
+        "en": "/mɔɹ ðæn ædˈvaɪs, aɪ nid ju nɑt tu dɪˈsmɪs haʊ mʌtʃ ɪt hɝts wɛn ˈmɛmɚiz ɹɪˈtɝn./",
+        "zh": "Bǐ qǐ jiàn yì， wǒ xī wàng nǐ bú yào fǒu dìng huí yì yǒng xiàn shí de tòng kǔ。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "It isn't strange for the pain to return. When is it hardest, if you feel able to say?",
             "zh": "痛苦反覆出現並不奇怪。若你願意，什麼時候最難受？"
           },
+          "pronunciationGuide": {
+            "ja": "くるしさが もどる のは おかしくないよ。 とくに どんな ときに つらく なるか、 はなせる はんいで きかせて。",
+            "en": "/ɪt ˈɪzənt stɹeɪndʒ fɔɹ ðə peɪn tu ɹɪˈtɝn. wɛn ɪz ɪt ˈhɑɹdəst, ɪf ju fil ˈeɪbəl tu seɪ?/",
+            "zh": "Tòng kǔ fǎn fù chū xiàn bìng bù qí guài。 ruò nǐ yuàn yì， shén me shí hòu zuì nán shòu？"
+          },
           "axisScores": {
             "empathy": 20,
             "needs-reading": 20,
@@ -199,6 +229,11 @@
             "en": "Understood. I won't give advice today; I'll listen.",
             "zh": "明白了，今天我不給建議，只聽你說。"
           },
+          "pronunciationGuide": {
+            "ja": "わかった。 きょうは なにも じょげん せずに きくよ。",
+            "en": "/ˌʌndɚˈstʊd. aɪ woʊnt ɡɪv ædˈvaɪs təˈdeɪ; aɪl ˈlɪsən./",
+            "zh": "Míng bái le， jīn tiān wǒ bù gěi jiàn yì， zhī tīng nǐ shuō。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -217,6 +252,11 @@
             "ja": "でも相手にも事情があったはずだよ。",
             "en": "But your former partner probably had reasons too.",
             "zh": "但對方應該也有自己的理由。"
+          },
+          "pronunciationGuide": {
+            "ja": "でも あいてにも じじょうが あった はずだよ。",
+            "en": "/bʌt jɔɹ ˈfɔɹmɚ ˈpɑɹtnɚ ˈpɹɑbəˌbli hæd ˈɹizənz tu./",
+            "zh": "Dàn duì fāng yīng gāi yě yǒu zì jǐ de lǐ yóu。"
           },
           "axisScores": {
             "empathy": 2,
@@ -238,6 +278,11 @@
         "ja": "今夜一人になるのがつらい。でも大勢には会いたくない。",
         "en": "Being alone tonight feels hard, but I don't want to see a crowd.",
         "zh": "今晚一個人很難熬，但我也不想見很多人。"
+      },
+      "pronunciationGuide": {
+        "ja": "こんや いちにんに なる のが つらい。でも たいせいには あいたくない。",
+        "en": "/ˈbiɪŋ əˈloʊn təˈnaɪt filz hɑɹd, bʌt aɪ doʊnt wɑnt tu si ə kɹaʊd./",
+        "zh": "Jīn wǎn yí gè rén hěn nán áo， dàn wǒ yě bù xiǎng jiàn hěn duō rén。"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "Would a quiet meal together help? I can check in by text later, and you can say no.",
             "zh": "要不要兩人安靜吃飯？回家後我再傳短訊確認；不想也可以拒絕。"
           },
+          "pronunciationGuide": {
+            "ja": "ににんで しずかに しょくじ する？ きたくごは みじかい めっせーじで かくにん する。 いやなら ことわって だいじょうぶ。",
+            "en": "/wʊd ə ˈkwaɪət mil təˈɡɛðɚ hɛlp? aɪ kæn tʃɛk ɪn baɪ tɛkst ˈleɪtɚ, ənd ju kæn seɪ noʊ./",
+            "zh": "Yào bu yào liǎng rén ān jìng chī fàn？ huí jiā hòu wǒ zài chuán duǎn xùn què rèn； bù xiǎng yě kě yǐ jù jué。"
+          },
           "axisScores": {
             "empathy": 20,
             "needs-reading": 20,
@@ -280,6 +330,11 @@
             "en": "Then you can stay at my place tonight.",
             "zh": "那今晚住我家吧。"
           },
+          "pronunciationGuide": {
+            "ja": "じゃあ こんやは わたしの いえに とまれば いいよ。",
+            "en": "/ðɛn ju kæn steɪ æt maɪ pleɪs təˈnaɪt./",
+            "zh": "Nà jīn wǎn zhù wǒ jiā ba。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -298,6 +353,11 @@
             "ja": "一人が嫌なら、飲み会に来るしかないよ。",
             "en": "If you don't want to be alone, you have to join the party.",
             "zh": "不想獨處就只能來聚會。"
+          },
+          "pronunciationGuide": {
+            "ja": "いちにんが いやなら、 のみかいに くるしか ないよ。",
+            "en": "/ɪf ju doʊnt wɑnt tu bi əˈloʊn, ju hæv tu dʒɔɪn ðə ˈpɑɹti./",
+            "zh": "Bù xiǎng dú chǔ jiù zhǐ néng lái jù huì。"
           },
           "axisScores": {
             "empathy": 2,

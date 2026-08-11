@@ -77,6 +77,11 @@
         "en": "I want to quit my job, but I don't know if I should decide right now.",
         "zh": "我想辭職，但不知道是否該現在決定。"
       },
+      "pronunciationGuide": {
+        "ja": "しごとを やめたい。でも いま すぐ きめて よいか わからない。",
+        "en": "/aɪ wɑnt tu kwɪt maɪ dʒɑb, bʌt aɪ doʊnt noʊ ɪf aɪ ʃʊd ˌdɪˈsaɪd ɹaɪt naʊ./",
+        "zh": "Wǒ xiǎng cí zhí， dàn bù zhī dào shì fǒu gāi xiàn zài jué dìng。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "Do you want me to listen first, or help you sort out whether to leave?",
             "zh": "你現在想先被傾聽，還是一起整理是否離職？"
           },
+          "pronunciationGuide": {
+            "ja": "いまは きもちを きいて ほしい？ それとも やめるか いっしょに せいり したい？",
+            "en": "/du ju wɑnt mi tu ˈlɪsən fɝst, ɔɹ hɛlp ju sɔɹt aʊt ˈwɛðɚ tu liv?/",
+            "zh": "Nǐ xiàn zài xiǎng xiān bèi qīng tīng， hái shì yì qǐ zhěng lǐ shì fǒu lí zhí？"
+          },
           "axisScores": {
             "empathy": 20,
             "needs-reading": 20,
@@ -118,6 +128,11 @@
             "en": "If it's this hard, take some time off before deciding.",
             "zh": "這麼辛苦的話，先休息再決定吧。"
           },
+          "pronunciationGuide": {
+            "ja": "つらいなら、 すこし やすんでから かんがえた ほうが いいよ。",
+            "en": "/ɪf ɪts ðɪs hɑɹd, teɪk sʌm taɪm ɔf bɪˈfɔɹ ˌdɪˈsaɪdɪŋ./",
+            "zh": "Zhè me xīn kǔ de huà， xiān xiū xi zài jué dìng ba。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -136,6 +151,11 @@
             "ja": "そんな会社は今日辞めた方がいい。",
             "en": "You should quit that company today.",
             "zh": "那種公司今天就該辭掉。"
+          },
+          "pronunciationGuide": {
+            "ja": "そんな かいしゃは きょう やめた ほうが いい。",
+            "en": "/ju ʃʊd kwɪt ðæt ˈkʌmpəˌni təˈdeɪ./",
+            "zh": "Nà zhǒng gōng sī jīn tiān jiù gāi cí diào。"
           },
           "axisScores": {
             "empathy": 2,
@@ -157,6 +177,11 @@
         "ja": "上司との関係は厳しいけど、収入が途切れるのも怖い。",
         "en": "My manager is difficult, but I'm also afraid of losing my income.",
         "zh": "主管很難相處，但我也怕收入中斷。"
+      },
+      "pronunciationGuide": {
+        "ja": "じょうしとの かんけいは きびしいけど、 しゅうにゅうが とぎれる のも こわい。",
+        "en": "/maɪ ˈmænədʒɚ ɪz ˈdɪfəkəlt, bʌt aɪm ˈɔlsoʊ əˈfɹeɪd ʌv ˈluzɪŋ maɪ ˈɪnˌkʌm./",
+        "zh": "Zhǔ guǎn hěn nán xiāng chǔ， dàn wǒ yě pà shōu rù zhōng duàn。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "What feels intolerable with your manager, and what runway do you have for transfer or job hunting?",
             "zh": "主管的哪些情況已到極限？你的存款、轉調或求職能支撐多久？"
           },
+          "pronunciationGuide": {
+            "ja": "じょうしとの なにが げんかいで、 ちょちくや いどう・ てんしょく かつどうには どれくらい よゆうが ある？",
+            "en": "/wʌt filz ˌɪnˈtɑlɚəbəl wɪð jɔɹ ˈmænədʒɚ, ənd wʌt ˈɹʌnˌweɪ du ju hæv fɔɹ tɹænsˈfɝ ɔɹ dʒɑb ˈhʌntɪŋ?/",
+            "zh": "Zhǔ guǎn de nǎ xiē qíng kuàng yǐ dào jí xiàn？ nǐ de cún kuǎn、 zhuǎn diào huò qiú zhí néng zhī chēng duō jiǔ？"
+          },
           "axisScores": {
             "empathy": 20,
             "needs-reading": 20,
@@ -199,6 +229,11 @@
             "en": "If income is the concern, you may need to stay until another job is secured.",
             "zh": "若擔心收入，可能只能撐到找到下一份工作。"
           },
+          "pronunciationGuide": {
+            "ja": "しゅうにゅうが しんぱいなら、 つぎが きまるまでは たえるしか ないかも。",
+            "en": "/ɪf ˈɪnˌkʌm ɪz ðə kənˈsɝn, ju meɪ nid tu steɪ ənˈtɪl əˈnʌðɚ dʒɑb ɪz sɪkˈjʊɹd./",
+            "zh": "Ruò dān xīn shōu rù， kě néng zhǐ néng chēng dào zhǎo dào xià yí fèn gōng zuò。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -217,6 +252,11 @@
             "ja": "お金より心が大事。収入のことは後で考えればいい。",
             "en": "Your feelings matter more than money; deal with income later.",
             "zh": "心情比錢重要，收入之後再想。"
+          },
+          "pronunciationGuide": {
+            "ja": "おかねより こころが だいじ。 しゅうにゅうの ことは あとで かんがえれば いい。",
+            "en": "/jɔɹ ˈfilɪŋz ˈmætɚ mɔɹ ðæn ˈmʌni; dil wɪð ˈɪnˌkʌm ˈleɪtɚ./",
+            "zh": "Xīn qíng bǐ qián zhòng yào， shōu rù zhī hòu zài xiǎng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -238,6 +278,11 @@
         "ja": "今日は結論より、何を確認すれば決められるか整理したい。",
         "en": "Today I want to identify what I need to know, rather than make the final decision.",
         "zh": "今天不想急著下結論，而想整理需要確認什麼。"
+      },
+      "pronunciationGuide": {
+        "ja": "きょうは けつろんより、 なにを かくにん すれば きめられるか せいり したい。",
+        "en": "/təˈdeɪ aɪ wɑnt tu aɪˈdɛntəˌfaɪ wʌt aɪ nid tu noʊ, ˈɹæðɚ ðæn meɪk ðə ˈfaɪnəl dɪˈsɪʒən./",
+        "zh": "Jīn tiān bù xiǎng jí zhe xià jié lùn， ér xiǎng zhěng lǐ xū yào què rèn shén me。"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "This week, check leave, transfer options, and living costs. We can talk next week; the choice stays yours.",
             "zh": "這週先查休假、轉調與生活費；下週再談，最後由你決定。"
           },
+          "pronunciationGuide": {
+            "ja": "こんしゅうは きゅうか・ いどう せいど・ せいかつひを かくにん しよう。 らいしゅうまた はなして、 きめる のは あなたに しよう。",
+            "en": "/ðɪs wik, tʃɛk liv, tɹænsˈfɝ ˈɑpʃənz, ənd ˈlɪvɪŋ kɑsts. wi kæn tɔk nɛkst wik; ðə tʃɔɪs steɪz jʊɹz./",
+            "zh": "Zhè zhōu xiān chá xiū jià、 zhuǎn diào yǔ shēng huó fèi； xià zhōu zài tán， zuì hòu yóu nǐ jué dìng。"
+          },
           "axisScores": {
             "empathy": 20,
             "needs-reading": 20,
@@ -280,6 +330,11 @@
             "en": "Looking at job listings may make the decision easier.",
             "zh": "看看職缺，也許更容易決定。"
           },
+          "pronunciationGuide": {
+            "ja": "きゅうじん さいとを みれば、 きもちも きまり やすく なるよ。",
+            "en": "/ˈlʊkɪŋ æt dʒɑb ˈlɪstɪŋz meɪ meɪk ðə dɪˈsɪʒən ˈiziɚ./",
+            "zh": "Kàn kàn zhí quē， yě xǔ gèng róng yì jué dìng。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 12,
@@ -298,6 +353,11 @@
             "ja": "迷うなら、私が辞める日を決めてあげる。",
             "en": "If you're unsure, I'll choose your resignation date for you.",
             "zh": "既然你猶豫，我替你決定辭職日期。"
+          },
+          "pronunciationGuide": {
+            "ja": "まようなら、 わたしが やめる ひを きめて あげる。",
+            "en": "/ɪf jʊɹ ənˈʃʊɹ, aɪl tʃuz jɔɹ ˌɹɛzəɡˈneɪʃən deɪt fɔɹ ju./",
+            "zh": "Jì rán nǐ yóu yù， wǒ tì nǐ jué dìng cí zhí rì qī。"
           },
           "axisScores": {
             "empathy": 2,
