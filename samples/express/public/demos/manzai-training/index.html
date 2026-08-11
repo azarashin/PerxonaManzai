@@ -48,14 +48,30 @@
               <option value="ja" selected>日本語</option>
             </select>
           </label>
-          <label>
+          <div class="asset-field">
             <span data-i18n="avatar">アバター</span>
-            <select id="avatar-select" aria-label="アバター" data-i18n-aria-label="avatarAria"></select>
-          </label>
-          <label>
+            <button id="avatar-picker-btn" class="asset-selection" type="button" aria-haspopup="dialog">
+              <span class="asset-selection-media">
+                <img id="avatar-thumbnail" alt="" hidden />
+                <span id="avatar-thumbnail-fallback" class="asset-thumbnail-fallback" aria-hidden="true">A</span>
+              </span>
+              <span id="avatar-selection-name" class="asset-selection-name">—</span>
+              <span class="asset-selection-action" data-i18n="changeSelection">変更</span>
+            </button>
+            <select id="avatar-select" hidden aria-hidden="true" tabindex="-1"></select>
+          </div>
+          <div class="asset-field">
             <span data-i18n="scene">シーン</span>
-            <select id="scene-select" aria-label="シーン" data-i18n-aria-label="sceneAria"></select>
-          </label>
+            <button id="scene-picker-btn" class="asset-selection scene-selection" type="button" aria-haspopup="dialog">
+              <span class="asset-selection-media">
+                <img id="scene-thumbnail" alt="" hidden />
+                <span id="scene-thumbnail-fallback" class="asset-thumbnail-fallback" aria-hidden="true">S</span>
+              </span>
+              <span id="scene-selection-name" class="asset-selection-name">—</span>
+              <span class="asset-selection-action" data-i18n="changeSelection">変更</span>
+            </button>
+            <select id="scene-select" hidden aria-hidden="true" tabindex="-1"></select>
+          </div>
           <label>
             <span data-i18n="voice">音声</span>
             <select id="voice-select" aria-label="音声" data-i18n-aria-label="voiceAria"></select>
@@ -283,6 +299,23 @@
         <button id="privacy-done-btn" class="primary" type="button" data-i18n="close">閉じる</button>
       </div>
       <p id="privacy-dialog-status" class="dialog-status" role="status"></p>
+    </dialog>
+
+    <dialog id="asset-picker-dialog" class="privacy-dialog asset-picker-dialog" aria-labelledby="asset-picker-dialog-title">
+      <div class="dialog-heading">
+        <h2 id="asset-picker-dialog-title"></h2>
+        <button id="asset-picker-close-btn" class="dialog-close" type="button" aria-label="閉じる" data-i18n-aria-label="closeDialog">×</button>
+      </div>
+      <label class="asset-search-label">
+        <span data-i18n="searchAssets">名前またはIDで検索</span>
+        <input id="asset-search-input" type="search" autocomplete="off" data-i18n-placeholder="searchAssetsPlaceholder" />
+      </label>
+      <div id="asset-picker-grid" class="asset-picker-grid" role="radiogroup"></div>
+      <p id="asset-picker-empty" class="asset-picker-empty" data-i18n="noMatchingAssets" hidden>一致する項目がありません。</p>
+      <div class="dialog-actions">
+        <button id="asset-picker-cancel-btn" class="secondary" type="button" data-i18n="cancel">キャンセル</button>
+        <button id="asset-picker-apply-btn" class="primary" type="button" data-i18n="applySelection">選択を適用</button>
+      </div>
     </dialog>
 
     <script src="../../runtime-config.js"></script>

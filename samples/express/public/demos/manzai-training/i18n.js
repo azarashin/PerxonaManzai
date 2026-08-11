@@ -14,6 +14,15 @@ export const dictionaries = {
     avatarAria: "Avatar",
     scene: "Scene",
     sceneAria: "Scene",
+    changeSelection: "Change",
+    changeSelectedAsset: "Change {asset}: currently {name}",
+    chooseAvatar: "Choose an avatar",
+    chooseScene: "Choose a scene",
+    searchAssets: "Search by name or ID",
+    searchAssetsPlaceholder: "Enter a name or ID",
+    noMatchingAssets: "No matching items.",
+    cancel: "Cancel",
+    applySelection: "Apply selection",
     voice: "Voice",
     voiceAria: "Voice",
     prepareAvatar: "Prepare avatar",
@@ -186,6 +195,15 @@ export const dictionaries = {
     avatarAria: "虛擬角色",
     scene: "場景",
     sceneAria: "場景",
+    changeSelection: "變更",
+    changeSelectedAsset: "變更{asset}：目前為{name}",
+    chooseAvatar: "選擇虛擬角色",
+    chooseScene: "選擇場景",
+    searchAssets: "依名稱或ID搜尋",
+    searchAssetsPlaceholder: "輸入名稱或ID",
+    noMatchingAssets: "找不到符合的項目。",
+    cancel: "取消",
+    applySelection: "套用選擇",
     voice: "語音",
     voiceAria: "語音",
     prepareAvatar: "準備虛擬角色",
@@ -358,6 +376,15 @@ export const dictionaries = {
     avatarAria: "アバター",
     scene: "シーン",
     sceneAria: "シーン",
+    changeSelection: "変更",
+    changeSelectedAsset: "{asset}を変更: 現在は{name}",
+    chooseAvatar: "アバターを選択",
+    chooseScene: "シーンを選択",
+    searchAssets: "名前またはIDで検索",
+    searchAssetsPlaceholder: "名前またはIDを入力",
+    noMatchingAssets: "一致する項目がありません。",
+    cancel: "キャンセル",
+    applySelection: "選択を適用",
     voice: "音声",
     voiceAria: "音声",
     prepareAvatar: "アバターを準備",
@@ -537,6 +564,12 @@ export function applyTranslations(root, language) {
     element.setAttribute(
       "aria-label",
       translate(language, element.dataset.i18nAriaLabel),
+    );
+  }
+  for (const element of root.querySelectorAll("[data-i18n-placeholder]")) {
+    element.setAttribute(
+      "placeholder",
+      translate(language, element.dataset.i18nPlaceholder),
     );
   }
   for (const element of root.querySelectorAll("[data-i18n-content]")) {
