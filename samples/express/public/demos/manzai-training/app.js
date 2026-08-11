@@ -1,4 +1,4 @@
-import { evaluateResponse } from "./evaluator.js";
+import { evaluateResponse, localizedChoiceFeedback } from "./evaluator.js";
 import { applyTranslations, translate } from "./i18n.js";
 import {
   assetDisplayName,
@@ -1220,7 +1220,14 @@ function renderSummaryBreakdown() {
         ),
       );
 
-      const feedback = createParagraph(result.feedback);
+      const feedback = createParagraph(
+        localizedChoiceFeedback(
+          beat,
+          result.choiceId,
+          playerLanguageSelect.value,
+          result.feedback,
+        ),
+      );
       feedback.className = "summary-result-feedback";
       card.append(
         header,

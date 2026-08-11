@@ -55,6 +55,16 @@ export function evaluateResponse(
   };
 }
 
+export function localizedChoiceFeedback(
+  beat,
+  choiceId,
+  language = "ja",
+  fallback = "",
+) {
+  const choice = beat?.choices?.find(({ id }) => id === choiceId);
+  return localizedText(choice?.feedback, language) || fallback;
+}
+
 function clampScore(value, maximum) {
   return Math.max(0, Math.min(maximum, Number(value) || 0));
 }
