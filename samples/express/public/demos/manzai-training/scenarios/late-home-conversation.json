@@ -14,26 +14,58 @@
   "evaluationAxes": [
     {
       "id": "empathy",
-      "label": { "ja": "共感", "en": "Empathy", "zh": "同理心" },
-      "description": { "ja": "相手の寂しさや不安を受け止める", "en": "Acknowledge the partner's loneliness or concern.", "zh": "理解伴侶的寂寞或不安。" },
+      "label": {
+        "ja": "共感",
+        "en": "Empathy",
+        "zh": "同理心"
+      },
+      "description": {
+        "ja": "相手の寂しさや不安を受け止める",
+        "en": "Acknowledge the partner's loneliness or concern.",
+        "zh": "理解伴侶的寂寞或不安。"
+      },
       "maxPoints": 25
     },
     {
       "id": "intent-reading",
-      "label": { "ja": "意図理解", "en": "Intent reading", "zh": "理解意圖" },
-      "description": { "ja": "言葉の背後にある要望を確認する", "en": "Recognize and clarify the need behind the words.", "zh": "辨識並確認話語背後的需求。" },
+      "label": {
+        "ja": "意図理解",
+        "en": "Intent reading",
+        "zh": "理解意圖"
+      },
+      "description": {
+        "ja": "言葉の背後にある要望を確認する",
+        "en": "Recognize and clarify the need behind the words.",
+        "zh": "辨識並確認話語背後的需求。"
+      },
       "maxPoints": 20
     },
     {
       "id": "clarity",
-      "label": { "ja": "明確さ", "en": "Clarity", "zh": "清晰度" },
-      "description": { "ja": "事情と自分の考えを分かりやすく伝える", "en": "Explain the situation and your view clearly.", "zh": "清楚說明情況與自己的想法。" },
+      "label": {
+        "ja": "明確さ",
+        "en": "Clarity",
+        "zh": "清晰度"
+      },
+      "description": {
+        "ja": "事情と自分の考えを分かりやすく伝える",
+        "en": "Explain the situation and your view clearly.",
+        "zh": "清楚說明情況與自己的想法。"
+      },
       "maxPoints": 15
     },
     {
       "id": "relationship-impact",
-      "label": { "ja": "関係への配慮", "en": "Relationship impact", "zh": "關係影響" },
-      "description": { "ja": "二人が続けられる合意につなげる", "en": "Move toward an agreement both partners can sustain.", "zh": "促成雙方都能持續遵守的共識。" },
+      "label": {
+        "ja": "関係への配慮",
+        "en": "Relationship impact",
+        "zh": "關係影響"
+      },
+      "description": {
+        "ja": "二人が続けられる合意につなげる",
+        "en": "Move toward an agreement both partners can sustain.",
+        "zh": "促成雙方都能持續遵守的共識。"
+      },
       "maxPoints": 20
     }
   ],
@@ -45,9 +77,21 @@
         "en": "You've been coming home late a lot. Is spending time with me not important anymore?",
         "zh": "你最近常常很晚回家。和我相處的時間已經不重要了嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "さいきん、 かえりが おそい ひが おおいよね。 わたしと すごす じかんは もう だいじじゃないの？",
+        "en": "/juv bɪn ˈkʌmɪŋ hoʊm leɪt ə lɑt. ɪz ˈspɛndɪŋ taɪm wɪð mi nɑt ˌɪmˈpɔɹtənt ˌɛniˈmɔɹ?/",
+        "zh": "Nǐ zuì jìn cháng cháng hěn wǎn huí jiā。 hé wǒ xiāng chǔ de shí jiān yǐ jīng bú zhòng yào le ma？"
+      },
       "reaction": {
-        "description": { "ja": "寂しさを隠しながら問いかける", "en": "Ask while trying to hide a sense of loneliness", "zh": "試著掩飾寂寞並提出疑問" },
-        "motionTags": ["pose:talking_03", "category:talking"],
+        "description": {
+          "ja": "寂しさを隠しながら問いかける",
+          "en": "Ask while trying to hide a sense of loneliness",
+          "zh": "試著掩飾寂寞並提出疑問"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
         "variant": 0,
         "priority": 1,
         "cue": "start"
@@ -55,36 +99,108 @@
       "choices": [
         {
           "id": "acknowledge-and-invite",
-          "text": { "ja": "寂しい思いをさせてごめん。大事じゃないわけじゃないよ。まず、どう感じていたか聞かせて。", "en": "I'm sorry I left you feeling lonely. You are important to me. Could you tell me how this has felt for you?", "zh": "對不起，讓你感到寂寞了。你對我很重要。可以先告訴我這段時間你的感受嗎？" },
-          "aliases": {
-            "ja": ["寂しい思いをさせてごめん。どう感じていたか聞かせて"],
-            "en": ["I'm sorry you felt lonely, please tell me how you have been feeling"],
-            "zh": ["對不起讓你感到寂寞，請告訴我你的感受"]
+          "text": {
+            "ja": "寂しい思いをさせてごめん。大事じゃないわけじゃないよ。まず、どう感じていたか聞かせて。",
+            "en": "I'm sorry I left you feeling lonely. You are important to me. Could you tell me how this has felt for you?",
+            "zh": "對不起，讓你感到寂寞了。你對我很重要。可以先告訴我這段時間你的感受嗎？"
           },
-          "axisScores": { "empathy": 25, "intent-reading": 20, "clarity": 14, "relationship-impact": 20 },
-          "feedback": { "ja": "感情を否定せず、関係の大切さを伝えてから相手の意図を確認できています。", "en": "You validate the feeling, affirm the relationship, and invite the partner to explain the underlying need.", "zh": "你沒有否定感受，先肯定關係的重要性，再邀請伴侶說明真正需求。" }
+          "pronunciationGuide": {
+            "ja": "さびしい おもいを させて ごめん。 だいじじゃない わけじゃないよ。 まず、 どう かんじて いたか きかせて。",
+            "en": "/aɪm ˈsɑɹi aɪ lɛft ju ˈfilɪŋ ˈloʊnli. ju ɑɹ ˌɪmˈpɔɹtənt tu mi. kʊd ju tɛl mi haʊ ðɪs hæz fɛlt fɔɹ ju?/",
+            "zh": "Duì bù qǐ， ràng nǐ gǎn dào jì mò le。 nǐ duì wǒ hěn zhòng yào。 kě yǐ xiān gào sù wǒ zhè duàn shí jiān nǐ de gǎn shòu ma？"
+          },
+          "aliases": {
+            "ja": [
+              "寂しい思いをさせてごめん。どう感じていたか聞かせて"
+            ],
+            "en": [
+              "I'm sorry you felt lonely, please tell me how you have been feeling"
+            ],
+            "zh": [
+              "對不起讓你感到寂寞，請告訴我你的感受"
+            ]
+          },
+          "axisScores": {
+            "empathy": 25,
+            "intent-reading": 20,
+            "clarity": 14,
+            "relationship-impact": 20
+          },
+          "feedback": {
+            "ja": "感情を否定せず、関係の大切さを伝えてから相手の意図を確認できています。",
+            "en": "You validate the feeling, affirm the relationship, and invite the partner to explain the underlying need.",
+            "zh": "你沒有否定感受，先肯定關係的重要性，再邀請伴侶說明真正需求。"
+          }
         },
         {
           "id": "explain-work-first",
-          "text": { "ja": "今は仕事が忙しい時期なんだ。大事に思っていないわけじゃないよ。", "en": "Work is just busy right now. It doesn't mean I don't care about you.", "zh": "只是最近工作很忙，不代表我不在乎你。" },
-          "aliases": {
-            "ja": ["仕事が忙しいだけで、大事に思っていないわけじゃない"],
-            "en": ["Work is busy but I still care about you"],
-            "zh": ["工作很忙，但我仍然在乎你"]
+          "text": {
+            "ja": "今は仕事が忙しい時期なんだ。大事に思っていないわけじゃないよ。",
+            "en": "Work is just busy right now. It doesn't mean I don't care about you.",
+            "zh": "只是最近工作很忙，不代表我不在乎你。"
           },
-          "axisScores": { "empathy": 8, "intent-reading": 6, "clarity": 15, "relationship-impact": 10 },
-          "feedback": { "ja": "事情は明確ですが、説明を先にすると気持ちを退けられたように聞こえます。まず不安を受け止めましょう。", "en": "The explanation is clear, but leading with it can sound dismissive. Acknowledge the concern first.", "zh": "說明很清楚，但先解釋容易讓人覺得感受被駁回；應先接住對方的不安。" }
+          "pronunciationGuide": {
+            "ja": "いまは しごとが いそがしい じきな んだ。 だいじに おもって いない わけじゃないよ。",
+            "en": "/wɝk ɪz dʒʌst ˈbɪzi ɹaɪt naʊ. ɪt ˈdʌzənt min aɪ doʊnt kɛɹ əˈbaʊt ju./",
+            "zh": "Zhǐ shì zuì jìn gōng zuò hěn máng， bú dài biǎo wǒ bú zài hu nǐ。"
+          },
+          "aliases": {
+            "ja": [
+              "仕事が忙しいだけで、大事に思っていないわけじゃない"
+            ],
+            "en": [
+              "Work is busy but I still care about you"
+            ],
+            "zh": [
+              "工作很忙，但我仍然在乎你"
+            ]
+          },
+          "axisScores": {
+            "empathy": 8,
+            "intent-reading": 6,
+            "clarity": 15,
+            "relationship-impact": 10
+          },
+          "feedback": {
+            "ja": "事情は明確ですが、説明を先にすると気持ちを退けられたように聞こえます。まず不安を受け止めましょう。",
+            "en": "The explanation is clear, but leading with it can sound dismissive. Acknowledge the concern first.",
+            "zh": "說明很清楚，但先解釋容易讓人覺得感受被駁回；應先接住對方的不安。"
+          }
         },
         {
           "id": "dismiss-the-question",
-          "text": { "ja": "そんな極端な言い方をしないでよ。仕事なんだから仕方ないでしょ。", "en": "Don't be so dramatic. It's work, so what do you expect me to do?", "zh": "別說得那麼誇張。這是工作，我也沒辦法啊。" },
-          "aliases": {
-            "ja": ["仕事なんだから仕方ないでしょ"],
-            "en": ["It is work, there is nothing I can do"],
-            "zh": ["這是工作，我也沒有辦法"]
+          "text": {
+            "ja": "そんな極端な言い方をしないでよ。仕事なんだから仕方ないでしょ。",
+            "en": "Don't be so dramatic. It's work, so what do you expect me to do?",
+            "zh": "別說得那麼誇張。這是工作，我也沒辦法啊。"
           },
-          "axisScores": { "empathy": 0, "intent-reading": 0, "clarity": 10, "relationship-impact": 0 },
-          "feedback": { "ja": "相手の表現だけを責めると、本題の寂しさや今後の相談から遠ざかります。", "en": "Criticizing the wording ignores the loneliness underneath and moves the conversation away from a solution.", "zh": "只責怪對方的說法，會忽略背後的寂寞，也讓對話遠離解決方向。" }
+          "pronunciationGuide": {
+            "ja": "そんな きょくたんな いいかたを しないでよ。 しごとな んだから しかたないでしょ。",
+            "en": "/doʊnt bi soʊ dɹəˈmætɪk. ɪts wɝk, soʊ wʌt du ju ɪkˈspɛkt mi tu du?/",
+            "zh": "Bié shuō dé nà me kuā zhāng。 zhè shì gōng zuò， wǒ yě méi bàn fǎ a。"
+          },
+          "aliases": {
+            "ja": [
+              "仕事なんだから仕方ないでしょ"
+            ],
+            "en": [
+              "It is work, there is nothing I can do"
+            ],
+            "zh": [
+              "這是工作，我也沒有辦法"
+            ]
+          },
+          "axisScores": {
+            "empathy": 0,
+            "intent-reading": 0,
+            "clarity": 10,
+            "relationship-impact": 0
+          },
+          "feedback": {
+            "ja": "相手の表現だけを責めると、本題の寂しさや今後の相談から遠ざかります。",
+            "en": "Criticizing the wording ignores the loneliness underneath and moves the conversation away from a solution.",
+            "zh": "只責怪對方的說法，會忽略背後的寂寞，也讓對話遠離解決方向。"
+          }
         }
       ]
     },
@@ -95,9 +211,21 @@
         "en": "I don't need you home early every day. It's hard waiting without knowing when you'll be back.",
         "zh": "我不是要求你每天早回家，只是不知道你幾點回來、一直等著很難受。"
       },
+      "pronunciationGuide": {
+        "ja": "まいにち はやく かえって ほしい わけじゃないの。ただ、 なんじに なるか わからない まま まつ のが つらい。",
+        "en": "/aɪ doʊnt nid ju hoʊm ˈɝli ˈɛvɚi deɪ. ɪts hɑɹd ˈweɪtɪŋ wɪˈθaʊt ˈnoʊɪŋ wɛn jul bi bæk./",
+        "zh": "Wǒ bú shì yāo qiú nǐ měi tiān zǎo huí jiā， zhǐ shì bù zhī dào nǐ jǐ diǎn huí lái、 yì zhí děng zhe hěn nán shòu。"
+      },
       "reaction": {
-        "description": { "ja": "本当に困っている点を静かに説明する", "en": "Calmly explain the real source of distress", "zh": "平靜說明真正困擾的地方" },
-        "motionTags": ["pose:talking_02", "category:talking"],
+        "description": {
+          "ja": "本当に困っている点を静かに説明する",
+          "en": "Calmly explain the real source of distress",
+          "zh": "平靜說明真正困擾的地方"
+        },
+        "motionTags": [
+          "pose:talking_02",
+          "category:talking"
+        ],
         "variant": 1,
         "priority": 1,
         "cue": "start"
@@ -105,26 +233,86 @@
       "choices": [
         {
           "id": "reflect-and-check",
-          "text": { "ja": "早く帰ることより、見通しが分からないのがつらかったんだね。遅くなると分かった時点で連絡するのが一番助かる？", "en": "So the uncertainty hurts more than the late hour itself. Would it help most if I message as soon as I know I'll be late?", "zh": "所以比起晚回家，不知道時間更讓你難受。只要我確定會晚，就立刻傳訊息，這樣最有幫助嗎？" },
-          "aliases": {
-            "ja": ["見通しが分からないのがつらいんだね。遅くなると分かったら連絡するよ"],
-            "en": ["The uncertainty is the hard part, I can message as soon as I know"],
-            "zh": ["最難受的是不知道時間，我一知道會晚就傳訊息"]
+          "text": {
+            "ja": "早く帰ることより、見通しが分からないのがつらかったんだね。遅くなると分かった時点で連絡するのが一番助かる？",
+            "en": "So the uncertainty hurts more than the late hour itself. Would it help most if I message as soon as I know I'll be late?",
+            "zh": "所以比起晚回家，不知道時間更讓你難受。只要我確定會晚，就立刻傳訊息，這樣最有幫助嗎？"
           },
-          "axisScores": { "empathy": 25, "intent-reading": 20, "clarity": 15, "relationship-impact": 19 },
-          "feedback": { "ja": "相手の要望を言い換えて確認し、具体策が合っているか尋ねています。", "en": "You reflect the actual need and check whether a concrete response would address it.", "zh": "你重新確認真正需求，並詢問具體做法是否合適。" }
+          "pronunciationGuide": {
+            "ja": "はやく かえる ことより、 みとおしが わからない のが つらかった んだね。 おそく なると わかった じてんで れんらく する のが いちばん たすかる？",
+            "en": "/soʊ ðə ənˈsɝtənti hɝts mɔɹ ðæn ðə leɪt ˈaʊɚ ˌɪtˈsɛlf. wʊd ɪt hɛlp moʊst ɪf aɪ ˈmɛsədʒ æz sun æz aɪ noʊ aɪl bi leɪt?/",
+            "zh": "Suǒ yǐ bǐ qǐ wǎn huí jiā， bù zhī dào shí jiān gèng ràng nǐ nán shòu。 zhǐ yào wǒ què dìng huì wǎn， jiù lì kè chuán xùn xī， zhè yàng zuì yǒu bāng zhù ma？"
+          },
+          "aliases": {
+            "ja": [
+              "見通しが分からないのがつらいんだね。遅くなると分かったら連絡するよ"
+            ],
+            "en": [
+              "The uncertainty is the hard part, I can message as soon as I know"
+            ],
+            "zh": [
+              "最難受的是不知道時間，我一知道會晚就傳訊息"
+            ]
+          },
+          "axisScores": {
+            "empathy": 25,
+            "intent-reading": 20,
+            "clarity": 15,
+            "relationship-impact": 19
+          },
+          "feedback": {
+            "ja": "相手の要望を言い換えて確認し、具体策が合っているか尋ねています。",
+            "en": "You reflect the actual need and check whether a concrete response would address it.",
+            "zh": "你重新確認真正需求，並詢問具體做法是否合適。"
+          }
         },
         {
           "id": "promise-early-return",
-          "text": { "ja": "分かった。これからはなるべく毎日早く帰るよ。", "en": "I understand. I'll try to come home early every day from now on.", "zh": "我懂了。以後我會盡量每天早點回家。" },
-          "axisScores": { "empathy": 15, "intent-reading": 5, "clarity": 12, "relationship-impact": 8 },
-          "feedback": { "ja": "歩み寄りはありますが、相手が求めたのは早い帰宅ではなく見通しの共有です。守れない約束にも注意しましょう。", "en": "This shows willingness, but the request was for predictability, not necessarily an early return. Avoid a promise you may not sustain.", "zh": "雖有讓步，但對方要的是可預期，而不一定是早回家；也要避免難以持續的承諾。" }
+          "text": {
+            "ja": "分かった。これからはなるべく毎日早く帰るよ。",
+            "en": "I understand. I'll try to come home early every day from now on.",
+            "zh": "我懂了。以後我會盡量每天早點回家。"
+          },
+          "pronunciationGuide": {
+            "ja": "わかった。 これからは なるべく まいにち はやく かえるよ。",
+            "en": "/aɪ ˌʌndɚˈstænd. aɪl tɹaɪ tu kʌm hoʊm ˈɝli ˈɛvɚi deɪ fɹʌm naʊ ɑn./",
+            "zh": "Wǒ dǒng le。 yǐ hòu wǒ huì jǐn liàng měi tiān zǎo diǎn huí jiā。"
+          },
+          "axisScores": {
+            "empathy": 15,
+            "intent-reading": 5,
+            "clarity": 12,
+            "relationship-impact": 8
+          },
+          "feedback": {
+            "ja": "歩み寄りはありますが、相手が求めたのは早い帰宅ではなく見通しの共有です。守れない約束にも注意しましょう。",
+            "en": "This shows willingness, but the request was for predictability, not necessarily an early return. Avoid a promise you may not sustain.",
+            "zh": "雖有讓步，但對方要的是可預期，而不一定是早回家；也要避免難以持續的承諾。"
+          }
         },
         {
           "id": "shift-responsibility",
-          "text": { "ja": "待たずに先に寝てくれればいいんじゃない？", "en": "Why don't you just go to bed instead of waiting?", "zh": "你不要等，先睡不就好了嗎？" },
-          "axisScores": { "empathy": 2, "intent-reading": 3, "clarity": 12, "relationship-impact": 2 },
-          "feedback": { "ja": "待つ行動だけを変えさせても、不安の原因である情報不足は解消されません。", "en": "Changing only the partner's behavior does not address the lack of information causing the concern.", "zh": "只要求伴侶改變等待方式，並沒有解決造成不安的資訊不足。" }
+          "text": {
+            "ja": "待たずに先に寝てくれればいいんじゃない？",
+            "en": "Why don't you just go to bed instead of waiting?",
+            "zh": "你不要等，先睡不就好了嗎？"
+          },
+          "pronunciationGuide": {
+            "ja": "またずに さきに ねて くれれば いい んじゃない？",
+            "en": "/waɪ doʊnt ju dʒʌst ɡoʊ tu bɛd ˌɪnˈstɛd ʌv ˈweɪtɪŋ?/",
+            "zh": "Nǐ bú yào děng， xiān shuì bú jiù hǎo le ma？"
+          },
+          "axisScores": {
+            "empathy": 2,
+            "intent-reading": 3,
+            "clarity": 12,
+            "relationship-impact": 2
+          },
+          "feedback": {
+            "ja": "待つ行動だけを変えさせても、不安の原因である情報不足は解消されません。",
+            "en": "Changing only the partner's behavior does not address the lack of information causing the concern.",
+            "zh": "只要求伴侶改變等待方式，並沒有解決造成不安的資訊不足。"
+          }
         }
       ]
     },
@@ -135,9 +323,21 @@
         "en": "Yes. Being late isn't the main problem; one message would reassure me. I want something manageable for both of us.",
         "zh": "對。晚回來本身不是最大問題，只要有一則訊息我就安心。我希望方法對我們都不勉強。"
       },
+      "pronunciationGuide": {
+        "ja": "うん。 おそく なる こと じたいより、 ひとこと もらえると あんしん する。 おたがい むりの ない ほうほうに したい。",
+        "en": "/jɛs. ˈbiɪŋ leɪt ˈɪzənt ðə meɪn ˈpɹɑbləm; wʌn ˈmɛsədʒ wʊd ˌɹiəˈʃʊɹ mi. aɪ wɑnt ˈsʌmθɪŋ ˈmænɪdʒəbəl fɔɹ boʊθ ʌv ʌs./",
+        "zh": "Duì。 wǎn huí lái běn shēn bú shì zuì dà wèn tí， zhǐ yào yǒu yì zé xùn xī wǒ jiù ān xīn。 wǒ xī wàng fāng fǎ duì wǒ men dōu bù miǎn qiǎng。"
+      },
       "reaction": {
-        "description": { "ja": "落ち着いて一緒に決めようとする", "en": "Calmly invite a shared agreement", "zh": "平靜地邀請一起達成共識" },
-        "motionTags": ["pose:talking_05", "category:talking"],
+        "description": {
+          "ja": "落ち着いて一緒に決めようとする",
+          "en": "Calmly invite a shared agreement",
+          "zh": "平靜地邀請一起達成共識"
+        },
+        "motionTags": [
+          "pose:talking_05",
+          "category:talking"
+        ],
         "variant": 0,
         "priority": 1,
         "cue": "start"
@@ -145,26 +345,86 @@
       "choices": [
         {
           "id": "make-specific-agreement",
-          "text": { "ja": "じゃあ、20時を過ぎそうだと分かった時点でメッセージする。予定が読めない日はそう書くよ。これで一週間試して、また話そう。", "en": "I'll message if I'll be later than eight, even if the time is uncertain. Let's review after a week.", "zh": "那我一知道會超過八點，就傳訊息；時間還不確定時也會說明。我們先試一週，再一起調整。" },
-          "aliases": {
-            "ja": ["20時を過ぎそうなら連絡して、一週間試してまた話そう"],
-            "en": ["I will message if it looks later than eight and we can review after a week"],
-            "zh": ["如果會超過八點我就傳訊息，一週後再一起檢討"]
+          "text": {
+            "ja": "じゃあ、20時を過ぎそうだと分かった時点でメッセージする。予定が読めない日はそう書くよ。これで一週間試して、また話そう。",
+            "en": "I'll message if I'll be later than eight, even if the time is uncertain. Let's review after a week.",
+            "zh": "那我一知道會超過八點，就傳訊息；時間還不確定時也會說明。我們先試一週，再一起調整。"
           },
-          "axisScores": { "empathy": 23, "intent-reading": 20, "clarity": 15, "relationship-impact": 20 },
-          "feedback": { "ja": "連絡の条件、情報、見直す時期が具体的で、双方が調整できる合意になっています。", "en": "The trigger, message content, and review point are specific, creating an agreement both partners can adjust.", "zh": "聯絡條件、訊息內容與檢討時間都很具體，形成雙方可共同調整的共識。" }
+          "pronunciationGuide": {
+            "ja": "じゃあ、に じゅうじを すぎそうだと わかった じてんで めっせーじ する。 よていが よめない ひは そう かくよ。 これで いちしゅうかん ためして、また はなそう。",
+            "en": "/aɪl ˈmɛsədʒ ɪf aɪl bi ˈleɪtɚ ðæn eɪt, ˈivɪn ɪf ðə taɪm ɪz ənˈsɝtən. lɛts ˌɹivˈju ˈæftɚ ə wik./",
+            "zh": "Nà wǒ yì zhī dào huì chāo guò bā diǎn， jiù chuán xùn xī； shí jiān hái bú què dìng shí yě huì shuō míng。 wǒ men xiān shì yì zhōu， zài yì qǐ tiáo zhěng。"
+          },
+          "aliases": {
+            "ja": [
+              "20時を過ぎそうなら連絡して、一週間試してまた話そう"
+            ],
+            "en": [
+              "I will message if it looks later than eight and we can review after a week"
+            ],
+            "zh": [
+              "如果會超過八點我就傳訊息，一週後再一起檢討"
+            ]
+          },
+          "axisScores": {
+            "empathy": 23,
+            "intent-reading": 20,
+            "clarity": 15,
+            "relationship-impact": 20
+          },
+          "feedback": {
+            "ja": "連絡の条件、情報、見直す時期が具体的で、双方が調整できる合意になっています。",
+            "en": "The trigger, message content, and review point are specific, creating an agreement both partners can adjust.",
+            "zh": "聯絡條件、訊息內容與檢討時間都很具體，形成雙方可共同調整的共識。"
+          }
         },
         {
           "id": "vague-agreement",
-          "text": { "ja": "分かった。これからはちゃんと連絡するようにするよ。", "en": "Okay. I'll make sure to keep you updated from now on.", "zh": "好，以後我會記得聯絡你。" },
-          "axisScores": { "empathy": 16, "intent-reading": 15, "clarity": 7, "relationship-impact": 11 },
-          "feedback": { "ja": "方向性は合っていますが、『いつ』『何を』連絡するかを決めると実行しやすくなります。", "en": "The direction is right, but agreeing when and what to communicate would make it actionable.", "zh": "方向正確，但若約定何時、傳達哪些資訊，會更容易執行。" }
+          "text": {
+            "ja": "分かった。これからはちゃんと連絡するようにするよ。",
+            "en": "Okay. I'll make sure to keep you updated from now on.",
+            "zh": "好，以後我會記得聯絡你。"
+          },
+          "pronunciationGuide": {
+            "ja": "わかった。 これからは ちゃんと れんらく する ように するよ。",
+            "en": "/ˌoʊˈkeɪ. aɪl meɪk ʃʊɹ tu kip ju əpˈdeɪtɪd fɹʌm naʊ ɑn./",
+            "zh": "Hǎo， yǐ hòu wǒ huì jì de lián luò nǐ。"
+          },
+          "axisScores": {
+            "empathy": 16,
+            "intent-reading": 15,
+            "clarity": 7,
+            "relationship-impact": 11
+          },
+          "feedback": {
+            "ja": "方向性は合っていますが、『いつ』『何を』連絡するかを決めると実行しやすくなります。",
+            "en": "The direction is right, but agreeing when and what to communicate would make it actionable.",
+            "zh": "方向正確，但若約定何時、傳達哪些資訊，會更容易執行。"
+          }
         },
         {
           "id": "demand-trust",
-          "text": { "ja": "連絡できない日もあるんだから、そこは信じて待っていてよ。", "en": "Some days I can't message, so you just need to trust me and wait.", "zh": "有些日子我沒辦法傳訊息，你就相信我、等我吧。" },
-          "axisScores": { "empathy": 2, "intent-reading": 2, "clarity": 10, "relationship-impact": 1 },
-          "feedback": { "ja": "信頼を求めるだけでは、相手が示した具体的な不安と連絡方法の相談に応えていません。", "en": "Demanding trust does not address the concrete uncertainty or the request to agree on communication.", "zh": "只要求信任，沒有回應對方具體的不安，也沒有一起商量聯絡方式。" }
+          "text": {
+            "ja": "連絡できない日もあるんだから、そこは信じて待っていてよ。",
+            "en": "Some days I can't message, so you just need to trust me and wait.",
+            "zh": "有些日子我沒辦法傳訊息，你就相信我、等我吧。"
+          },
+          "pronunciationGuide": {
+            "ja": "れんらく できない ひも ある んだから、 そこは しんじて まって いてよ。",
+            "en": "/sʌm deɪz aɪ kænt ˈmɛsədʒ, soʊ ju dʒʌst nid tu tɹʌst mi ənd weɪt./",
+            "zh": "Yǒu xiē rì zi wǒ méi bàn fǎ chuán xùn xī， nǐ jiù xiāng xìn wǒ、 děng wǒ ba。"
+          },
+          "axisScores": {
+            "empathy": 2,
+            "intent-reading": 2,
+            "clarity": 10,
+            "relationship-impact": 1
+          },
+          "feedback": {
+            "ja": "信頼を求めるだけでは、相手が示した具体的な不安と連絡方法の相談に応えていません。",
+            "en": "Demanding trust does not address the concrete uncertainty or the request to agree on communication.",
+            "zh": "只要求信任，沒有回應對方具體的不安，也沒有一起商量聯絡方式。"
+          }
         }
       ]
     }
