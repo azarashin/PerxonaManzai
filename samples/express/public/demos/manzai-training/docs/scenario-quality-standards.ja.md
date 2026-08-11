@@ -18,7 +18,7 @@
 | JSONの構造、必須プロパティ、値域 | `../schemas/scenario.schema.json`と`../schemas/scenario-catalog.schema.json` |
 | 生成手順と生成ツールに求める出力 | `scenario-generation-guide.md` |
 | 品質の意図、レビュー基準、例外運用 | 本文書 |
-| 機械判定する閾値と重大度 | シナリオ品質ポリシー |
+| 機械判定する閾値と重大度 | [`scenario-quality-policy.json`](../config/scenario-quality-policy.json) |
 | 実際の検査処理 | `../../../scripts/check-scenario-quality.mjs`と`../scenario-quality.js` |
 
 これらが矛盾した場合は、都合のよい規則を選ばず矛盾自体を修正する。Schemaに適合していることは必要条件
@@ -138,6 +138,9 @@
 
 機械比較ではUnicode NFKC正規化、ロケールに依存しない小文字化、空白・句読点・記号の除去を行う。言語ごとに
 比較し、日本語表現とその英訳を相互に重複判定することはしない。
+
+既存シナリオの修正は品質基盤の変更範囲に含めないため、最初にcommitするポリシーは`audit`モードとする。
+別の改善作業で既存カタログがエラー規則に合格してから、`enforce`へ切り替える。
 
 ## 6. 良い対比と悪い対比
 

@@ -11,6 +11,7 @@ JSON Schemaと追加検証によって、シナリオを追加する前に構造
 | --- | --- | --- |
 | カテゴリとシナリオ一覧 | [`scenario-catalog.schema.json`](../schemas/scenario-catalog.schema.json) | [`index.json`](../scenarios/index.json) |
 | シナリオ本体 | [`scenario.schema.json`](../schemas/scenario.schema.json) | `scenarios/*.json` |
+| 品質ポリシー | [`scenario-quality-policy.schema.json`](../schemas/scenario-quality-policy.schema.json) | [`scenario-quality-policy.json`](../config/scenario-quality-policy.json) |
 
 どちらもJSON Schema Draft 2020-12を使用し、未定義のプロパティを許可しない。
 

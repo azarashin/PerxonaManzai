@@ -18,7 +18,7 @@ violations before a new rule becomes a mandatory CI gate.
 | JSON shape, required properties, and value ranges | `../schemas/scenario.schema.json` and `../schemas/scenario-catalog.schema.json` |
 | Authoring workflow and expected generator output | `scenario-generation-guide.md` |
 | Content-quality intent, review criteria, and exceptions | This document |
-| Machine-readable thresholds and severities | Scenario quality policy |
+| Machine-readable thresholds and severities | [`scenario-quality-policy.json`](../config/scenario-quality-policy.json) |
 | Executable checks | `../../../scripts/check-scenario-quality.mjs` and `../scenario-quality.js` |
 
 If these sources disagree, fix the disagreement rather than choosing whichever rule is easiest to satisfy. Schema validity is
@@ -140,6 +140,10 @@ Diagnostics and exceptions use stable IDs so a failure can link back to its rati
 Normalization for machine comparisons uses Unicode NFKC normalization, locale-insensitive lowercase conversion, and removal
 of whitespace, punctuation, and symbols. The checker compares each language separately; a Japanese phrase is not compared
 with its English translation.
+
+The committed policy starts in `audit` mode because existing scenario content is intentionally outside the scope of the
+quality-infrastructure change. Switch it to `enforce` only after a separate remediation change makes the current catalog pass
+the error-level rules.
 
 ## 6. Good and poor contrasts
 

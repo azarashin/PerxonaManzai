@@ -10,6 +10,7 @@ Conversation Dojo stores its category and scenario index in a catalog JSON file 
 | --- | --- | --- |
 | Categories and scenario index | [`scenario-catalog.schema.json`](../schemas/scenario-catalog.schema.json) | [`index.json`](../scenarios/index.json) |
 | Scenario content | [`scenario.schema.json`](../schemas/scenario.schema.json) | `scenarios/*.json` |
+| Quality policy | [`scenario-quality-policy.schema.json`](../schemas/scenario-quality-policy.schema.json) | [`scenario-quality-policy.json`](../config/scenario-quality-policy.json) |
 
 Both schemas use JSON Schema Draft 2020-12 and reject undefined properties.
 
