@@ -186,6 +186,11 @@
             "operation-safety": 20,
             "consultation": 20
           },
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ],
           "feedback": {
             "ja": "ATM誘導を詐欺の兆候として止め、公式確認と身近な相談を同時に行う安全な対応です。",
             "en": "It stops the ATM instruction as a scam warning and combines official verification with family support.",
@@ -205,6 +210,11 @@
             "operation-safety": 16,
             "consultation": 5
           },
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ],
           "feedback": {
             "ja": "ATM操作は避けても、未確認の相手へ口座情報を渡すため、情報被害の経路が残ります。",
             "en": "It avoids the ATM but still exposes account information to an unverified caller.",
@@ -224,6 +234,11 @@
             "operation-safety": 0,
             "consultation": 0
           },
+          "routes": [
+            {
+              "nextBeatId": "screen-guidance"
+            }
+          ],
           "feedback": {
             "ja": "相手が遠隔で送金操作を誘導できる場所へ移動し、カードも持参する危険な従属です。",
             "en": "It moves to the exact place where the caller can direct a transfer and brings the bank card.",
