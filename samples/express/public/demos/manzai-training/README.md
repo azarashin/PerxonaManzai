@@ -191,6 +191,8 @@ exact catalog motion, but tag-based authoring is preferred because Motion IDs va
 
 Scenarios may also declare typed `stateVariables`, a `startBeatId`, choice-level `stateEffects`, and ordered conditional `routes`. Existing scenarios remain linear when these fields are omitted. See [the scenario generation guide](./docs/scenario-generation-guide.md#state-and-branching) for the branching contract.
 
+For a field-by-field explanation of both schemas, scoring constraints, state updates, branching order, and validation rules, see the [JSON schema reference](./docs/json-schema-reference.md).
+
 The MVP chooses the phrase with the highest normalized Levenshtein similarity. It asks the user to retry when the best score
 is below `0.48`. Content quality is deterministic and authored in the scenario; the MVP does not use an LLM to judge humor or
 emotion.
