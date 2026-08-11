@@ -794,6 +794,7 @@ function handleFinalTranscript(transcript) {
     reactionSeconds,
     speechLanguageSelect.value,
     controller.scenario.evaluationAxes,
+    playerLanguageSelect.value,
   );
 
   if (!result.matched) {
@@ -824,6 +825,7 @@ function handleChoiceSelection(choice) {
     reactionSeconds,
     speechLanguageSelect.value,
     controller.scenario.evaluationAxes,
+    playerLanguageSelect.value,
   );
   result.inputMode = "click";
   completeEvaluation(result);

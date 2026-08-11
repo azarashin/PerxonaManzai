@@ -8,6 +8,7 @@ export function evaluateResponse(
   reactionSeconds,
   language = "ja",
   evaluationAxes = [],
+  uiLanguage = language,
 ) {
   const matches = beat.choices.map((choice) => {
     const phrases = [
@@ -27,7 +28,7 @@ export function evaluateResponse(
       matched: false,
       transcript,
       similarity: bestMatch?.similarity ?? 0,
-      feedback: translate(language, "retryChoiceFeedback"),
+      feedback: translate(uiLanguage, "retryChoiceFeedback"),
     };
   }
 
