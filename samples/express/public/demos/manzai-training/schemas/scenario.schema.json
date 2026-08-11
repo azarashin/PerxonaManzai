@@ -47,6 +47,17 @@
         "zh": { "$ref": "#/$defs/nonEmptyString" }
       }
     },
+    "localizedPronunciationGuide": {
+      "type": "object",
+      "description": "Display-only whole-line pronunciation guides: hiragana for Japanese, broad General American IPA between slashes for English, and tone-marked Hanyu Pinyin for Traditional Chinese.",
+      "additionalProperties": false,
+      "required": ["ja", "en", "zh"],
+      "properties": {
+        "ja": { "$ref": "#/$defs/nonEmptyString" },
+        "en": { "$ref": "#/$defs/nonEmptyString" },
+        "zh": { "$ref": "#/$defs/nonEmptyString" }
+      }
+    },
     "localizedAliases": {
       "type": "object",
       "additionalProperties": false,
@@ -160,6 +171,7 @@
       "properties": {
         "id": { "$ref": "#/$defs/id" },
         "text": { "$ref": "#/$defs/localizedText" },
+        "pronunciationGuide": { "$ref": "#/$defs/localizedPronunciationGuide" },
         "aliases": {
           "oneOf": [
             { "$ref": "#/$defs/aliasList" },
@@ -196,6 +208,7 @@
       "properties": {
         "id": { "$ref": "#/$defs/id" },
         "boke": { "$ref": "#/$defs/localizedText" },
+        "pronunciationGuide": { "$ref": "#/$defs/localizedPronunciationGuide" },
         "reaction": { "$ref": "#/$defs/reaction" },
         "choices": {
           "type": "array",

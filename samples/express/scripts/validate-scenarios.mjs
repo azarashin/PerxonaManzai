@@ -137,9 +137,12 @@ for (const entry of catalog.scenarios) {
   assertUniqueIds(scenario.beats, `${filename} beat`);
 
   for (const beat of scenario.beats) {
-    assertOnlyKeys(beat, ["id", "boke", "reaction", "choices"], `${filename} beat`);
+    assertOnlyKeys(beat, ["id", "boke", "pronunciationGuide", "reaction", "choices"], `${filename} beat`);
     assertId(beat.id, `${filename} beat`);
     assertLocalizedText(beat.boke, `${filename} ${beat.id} boke`);
+    if (beat.pronunciationGuide !== undefined) {
+      assertPronunciationGuide(beat.pronunciationGuide, `${filename} ${beat.id} pronunciation guide`);
+    }
     assertOnlyKeys(
       beat.reaction,
       ["description", "motionTags", "motionId", "variant", "priority", "cue"],
@@ -154,11 +157,14 @@ for (const entry of catalog.scenarios) {
     for (const choice of beat.choices) {
       assertOnlyKeys(
         choice,
-        ["id", "text", "aliases", "axisScores", "stateEffects", "routes", "feedback"],
+        ["id", "text", "pronunciationGuide", "aliases", "axisScores", "stateEffects", "routes", "feedback"],
         `${filename} choice ${choice.id}`,
       );
       assertId(choice.id, `${filename} choice`);
       assertLocalizedText(choice.text, `${filename} ${choice.id} text`);
+      if (choice.pronunciationGuide !== undefined) {
+        assertPronunciationGuide(choice.pronunciationGuide, `${filename} ${choice.id} pronunciation guide`);
+      }
       assertLocalizedText(choice.feedback, `${filename} ${choice.id} feedback`);
       if (choice.aliases !== undefined) {
         if (Array.isArray(choice.aliases)) {
@@ -217,6 +223,17 @@ function assertLocalizedText(value, label) {
   for (const language of ["ja", "en", "zh"]) {
     assert.equal(typeof value[language], "string", `${label}.${language} must be a string`);
     assert.ok(value[language].trim(), `${label}.${language} must not be empty`);
+  }
+}
+
+function assertPronunciationGuide(value, label) {
+  assertLocalizedText(value, label);
+  for (const language of ["ja", "en", "zh"]) {
+    assert.equal(
+      value[language],
+      value[language].normalize("NFC"),
+      `${label}.${language} must use Unicode NFC normalization`,
+    );
   }
 }
 
