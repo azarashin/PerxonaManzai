@@ -77,6 +77,11 @@
         "en": "We can't protect quality on this deadline. Must we still proceed as planned?",
         "zh": "這個期限無法維持品質，還是一定要照原計畫進行嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "この のうきでは ひんしつを まもれません。 どうしても よていどおり すすめる んですか。",
+        "en": "/wi kænt pɹəˈtɛkt ˈkwɑləti ɑn ðɪs ˈdɛdˌlaɪn. mʌst wi stɪl pɹəˈsid æz plænd?/",
+        "zh": "Zhè ge qī xiàn wú fǎ wéi chí pǐn zhì， hái shì yí dìng yào zhào yuán jì huà jìn xíng ma？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "Thanks for raising it. Show me the remaining work, current capacity, and which checks the date would force us to skip.",
             "zh": "謝謝你提出疑慮。請依序說明剩餘工作、現有人力及照原期限會被省略的檢查。"
           },
+          "pronunciationGuide": {
+            "ja": "けねんを しらせて くれて ありがとう。 ざん さぎょう、 いまの にんずう、 よていどおりなら はぶかれる かくにんを じゅんに みせて ください。",
+            "en": "/θæŋks fɔɹ ˈɹeɪzɪŋ ɪt. ʃoʊ mi ðə ɹɪˈmeɪnɪŋ wɝk, ˈkɝənt kəˈpæsəti, ənd wɪtʃ tʃɛks ðə deɪt wʊd fɔɹs ʌs tu skɪp./",
+            "zh": "Xiè xiè nǐ tí chū yí lǜ。 qǐng yī xù shuō míng shèng yú gōng zuò、 xiàn yǒu rén lì jí zhào yuán qī xiàn huì bèi shěng lüè de jiǎn chá。"
+          },
           "axisScores": {
             "psychological-safety": 20,
             "clarity": 20,
@@ -118,6 +128,11 @@
             "en": "If quality will fall, I'll ask leadership whether the date can move.",
             "zh": "若品質會下降，我會向上級詢問能否延後。"
           },
+          "pronunciationGuide": {
+            "ja": "ひんしつが おちるなら、 のうきを のばせるか うえに そうだん します。",
+            "en": "/ɪf ˈkwɑləti wɪl fɔl, aɪl æsk ˈlidɚˌʃɪp ˈwɛðɚ ðə deɪt kæn muv./",
+            "zh": "Ruò pǐn zhì huì xià jiàng， wǒ huì xiàng shàng jí xún wèn néng fǒu yán hòu。"
+          },
           "axisScores": {
             "psychological-safety": 14,
             "clarity": 8,
@@ -136,6 +151,11 @@
             "ja": "納期は決定済みです。品質は工夫して守ってください。",
             "en": "The date is fixed. Find a way to preserve quality.",
             "zh": "期限已定，請自行想辦法維持品質。"
+          },
+          "pronunciationGuide": {
+            "ja": "のうきは けっていずみです。 ひんしつは くふう して まもって ください。",
+            "en": "/ðə deɪt ɪz fɪkst. faɪnd ə weɪ tu pɹəˈzɝv ˈkwɑləti./",
+            "zh": "Qī xiàn yǐ dìng， qǐng zì xíng xiǎng bàn fǎ wéi chí pǐn zhì。"
           },
           "axisScores": {
             "psychological-safety": 0,
@@ -157,6 +177,11 @@
         "ja": "テストに三日必要ですが、残り二日で担当は二人だけです。省けば重大な不具合を見逃します。",
         "en": "Testing needs three days, but two people have only two days left. Skipping it risks a serious defect.",
         "zh": "測試需要三天，但只剩兩天且只有兩人；省略會漏掉重大缺陷。"
+      },
+      "pronunciationGuide": {
+        "ja": "てすとに みっかひつようですが、 のこり ふつかで たんとうは ふたりだけです。 はぶけば じゅうだいな ふぐあいを みのがします。",
+        "en": "/ˈtɛstɪŋ nidz θɹi deɪz, bʌt tu ˈpipəl hæv ˈoʊnli tu deɪz lɛft. ˈskɪpɪŋ ɪt ɹɪsks ə ˈsɪɹiəs ˈdifɛkt./",
+        "zh": "Cè shì xū yào sān tiān， dàn zhī shèng liǎng tiān qiě zhǐ yǒu liǎng rén； shěng lüè huì lòu diào zhòng dà quē xiàn。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "Two people over two days cannot cover the effort. Let's quantify test scope and serious-defect impact for the decision.",
             "zh": "兩人兩天不足以完成工時。我們把測試範圍與重大缺陷影響量化，作為決策依據。"
           },
+          "pronunciationGuide": {
+            "ja": "ふたりふつかでは ひつよう こうすうを みたせませんね。 てすと はんいと じゅうだい ふぐあいの えいきょうを すうちに して、 はんだん ざいりょうに します。",
+            "en": "/tu ˈpipəl ˈoʊvɚ tu deɪz ˈkænɑt ˈkʌvɚ ðə ˈɛfɚt. lɛts ˈkwɑntɪˌfaɪ tɛst skoʊp ənd ˈsɪɹiəs - ˈdifɛkt ˌɪmˈpækt fɔɹ ðə dɪˈsɪʒən./",
+            "zh": "Liǎng rén liǎng tiān bù zú yǐ wán chéng gōng shí。 wǒ men bǎ cè shì fàn wéi yǔ zhòng dà quē xiàn yǐng xiǎng liáng huà， zuò wéi jué cè yī jù。"
+          },
           "axisScores": {
             "psychological-safety": 20,
             "clarity": 20,
@@ -199,6 +229,11 @@
             "en": "Let's see whether anyone can work overtime.",
             "zh": "先確認有沒有人能加班。"
           },
+          "pronunciationGuide": {
+            "ja": "ざんぎょう できる ひとが いるか かくにん しましょう。",
+            "en": "/lɛts si ˈwɛðɚ ˈɛniˌwʌn kæn wɝk ˈoʊvɚˌtaɪm./",
+            "zh": "Xiān què rèn yǒu méi yǒu rén néng jiā bān。"
+          },
           "axisScores": {
             "psychological-safety": 9,
             "clarity": 8,
@@ -217,6 +252,11 @@
             "ja": "見つからない程度の不具合なら、今回は許容しましょう。",
             "en": "If a defect is hard to find, let's accept it this time.",
             "zh": "若缺陷不容易被發現，這次就接受吧。"
+          },
+          "pronunciationGuide": {
+            "ja": "みつからない ていどの ふぐあいなら、 こんかいは きょよう しましょう。",
+            "en": "/ɪf ə ˈdifɛkt ɪz hɑɹd tu faɪnd, lɛts ækˈsɛpt ɪt ðɪs taɪm./",
+            "zh": "Ruò quē xiàn bù róng yì bèi fā xiàn， zhè cì jiù jiē shòu ba。"
           },
           "axisScores": {
             "psychological-safety": 1,
@@ -238,6 +278,11 @@
         "ja": "予定日、機能範囲、追加要員のどれを動かすか、責任者に選んでもらえますか。",
         "en": "Can the sponsor choose whether to move the date, reduce scope, or add staff?",
         "zh": "可以請負責人決定要調整日期、縮小範圍或增加人力嗎？"
+      },
+      "pronunciationGuide": {
+        "ja": "よていび、 きのう はんい、 ついか よういんの どれを うごかすか、 せきにんしゃに えらんで もらえますか。",
+        "en": "/kæn ðə ˈspɑnsɚ tʃuz ˈwɛðɚ tu muv ðə deɪt, ɹəˈdus skoʊp, ɔɹ æd stæf?/",
+        "zh": "Kě yǐ qǐng fù zé rén jué dìng yào tiáo zhěng rì qī、 suō xiǎo fàn wéi huò zēng jiā rén lì ma？"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "Today I'll summarize cost, finish date, and residual risk for all three options and ask the sponsor to choose.",
             "zh": "今天內整理三個方案的成本、完成日與剩餘風險，請負責人選擇。"
           },
+          "pronunciationGuide": {
+            "ja": "さんあんごとの ひよう、 かんりょうび、 のこる ひんしつ りすくを きょうちゅうに せいり し、 せきにんしゃへ せんたくを もとめます。",
+            "en": "/təˈdeɪ aɪl ˈsʌmɚˌaɪz kɑst, ˈfɪnɪʃ deɪt, ənd ɹɪˈzɪdʒuəl ɹɪsk fɔɹ ɔl θɹi ˈɑpʃənz ənd æsk ðə ˈspɑnsɚ tu tʃuz./",
+            "zh": "Jīn tiān nèi zhěng lǐ sān gè fāng àn de chéng běn、 wán chéng rì yǔ shèng yú fēng xiǎn， qǐng fù zé rén xuǎn zé。"
+          },
           "axisScores": {
             "psychological-safety": 20,
             "clarity": 20,
@@ -280,6 +330,11 @@
             "en": "I'll mainly ask the sponsor about extending the deadline.",
             "zh": "我會以延後期限方案為主向負責人請示。"
           },
+          "pronunciationGuide": {
+            "ja": "のうき えんちょうあんを ちゅうしんに せきにんしゃへ そうだん します。",
+            "en": "/aɪl ˈmeɪnli æsk ðə ˈspɑnsɚ əˈbaʊt ɪkˈstɛndɪŋ ðə ˈdɛdˌlaɪn./",
+            "zh": "Wǒ huì yǐ yán hòu qī xiàn fāng àn wéi zhǔ xiàng fù zé rén qǐng shì。"
+          },
           "axisScores": {
             "psychological-safety": 12,
             "clarity": 11,
@@ -298,6 +353,11 @@
             "ja": "責任者には問題ないと報告し、現場で何とかします。",
             "en": "I'll report no issue and have the team make it work.",
             "zh": "我會向負責人回報沒有問題，現場自行設法完成。"
+          },
+          "pronunciationGuide": {
+            "ja": "せきにんしゃには もんだいないと ほうこく し、 げんばで なんとか します。",
+            "en": "/aɪl ɹiˈpɔɹt noʊ ˈɪʃu ənd hæv ðə tim meɪk ɪt wɝk./",
+            "zh": "Wǒ huì xiàng fù zé rén huí bào méi yǒu wèn tí， xiàn chǎng zì xíng shè fǎ wán chéng。"
           },
           "axisScores": {
             "psychological-safety": 0,

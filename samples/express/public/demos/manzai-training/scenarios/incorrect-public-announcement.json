@@ -112,6 +112,11 @@
         "en": "I changed my plans because yesterday's announcement was wrong.",
         "zh": "因為昨天的公告錯誤，我改變了原本的安排。"
       },
+      "pronunciationGuide": {
+        "ja": "きのうの あんないが まちがって いた せいで、 よていを へんこう しました。",
+        "en": "/aɪ tʃeɪndʒd maɪ plænz bɪˈkɔz ˈjɛstɚˌdeɪz əˈnaʊnsmənt wɑz ɹɔŋ./",
+        "zh": "Yīn wèi zuó tiān de gōng gào cuò wù， wǒ gǎi biàn le yuán běn de ān pái。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "誤った案内で予定を変えさせてしまい、申し訳ありません。正しい開催日は確認後、同じ掲載先ですぐ訂正します。",
             "en": "I'm sorry our wrong notice made you change plans. Once verified, we'll correct the date on every original channel.",
             "zh": "很抱歉錯誤公告讓您更改行程。確認正確日期後，我們會立刻在原發布管道更正。"
+          },
+          "pronunciationGuide": {
+            "ja": "あやまった あんないで よていを かえさせて しまい、 もうしわけ ありません。 ただしい かいさいびは かくにんご、 おなじ けいさいさきで すぐ ていせい します。",
+            "en": "/aɪm ˈsɑɹi ˈaʊɚ ɹɔŋ ˈnoʊtəs meɪd ju tʃeɪndʒ plænz. wʌns ˈvɛɹəˌfaɪd, wil kɚˈɛkt ðə deɪt ɑn ˈɛvɚi ɚˈɪdʒənəl ˈtʃænəl./",
+            "zh": "Hěn bào qiàn cuò wù gōng gào ràng nín gèng gǎi xíng chéng。 què rèn zhèng què rì qī hòu， wǒ men huì lì kè zài yuán fā bù guǎn dào gēng zhèng。"
           },
           "axisScores": {
             "accountability": 20,
@@ -170,6 +180,11 @@
             "en": "I'm sorry the notice was unclear. I'll check the correct information.",
             "zh": "很抱歉公告不夠清楚，我會確認正確資訊。"
           },
+          "pronunciationGuide": {
+            "ja": "あんないが わかり にくく もうしわけ ありません。 ただしい じょうほうを かくにん します。",
+            "en": "/aɪm ˈsɑɹi ðə ˈnoʊtəs wɑz ənˈklɪɹ. aɪl tʃɛk ðə kɚˈɛkt ˌɪnfɚˈmeɪʃən./",
+            "zh": "Hěn bào qiàn gōng gào bú gòu qīng chǔ， wǒ huì què rèn zhèng què zī xùn。"
+          },
           "axisScores": {
             "accountability": 12,
             "fact-checking": 12,
@@ -200,6 +215,11 @@
             "ja": "古い資料が残っていたようです。担当者の更新ミスです。",
             "en": "An old file remained online. The staff member failed to update it.",
             "zh": "似乎留下舊資料，是負責人員更新失誤。"
+          },
+          "pronunciationGuide": {
+            "ja": "ふるい しりょうが のこって いた ようです。 たんとうしゃの こうしん みすです。",
+            "en": "/æn oʊld faɪl ɹɪˈmeɪnd ˈɔnˌlaɪn. ðə stæf ˈmɛmbɚ feɪld tu əpˈdeɪt ɪt./",
+            "zh": "Sì hū liú xià jiù zī liào， shì fù zé rén yuán gēng xīn shī wù。"
           },
           "axisScores": {
             "accountability": 2,
@@ -234,6 +254,11 @@
         "en": "What date is correct, and what is confirmed about why the error was missed?",
         "zh": "正確日期是哪天？為何未發現錯誤，目前確認到什麼程度？"
       },
+      "pronunciationGuide": {
+        "ja": "ただしい にっていは どれで、 なぜ あやまりに きづかなかった のか、 かくにんずみの はんいを おしえて ください。",
+        "en": "/wʌt deɪt ɪz kɚˈɛkt, ənd wʌt ɪz kənˈfɝmd əˈbaʊt waɪ ðə ˈɛɹɚ wɑz mɪst?/",
+        "zh": "Zhèng què rì qī shì nǎ tiān？ wèi hé wèi fā xiàn cuò wù， mù qián què rèn dào shén me chéng dù？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "主催者の原本で来週土曜と確認しました。公開前の照合記録がない点まで確認し、原因は引き続き調査します。",
             "en": "The organizer's source confirms next Saturday. We found no pre-publication check record; the cause remains under review.",
             "zh": "已依主辦方原始資料確認為下週六，也確認發布前沒有核對紀錄；原因仍在調查。"
+          },
+          "pronunciationGuide": {
+            "ja": "しゅさいしゃの げんぽんで らいしゅう どようと かくにん しました。 こうかい まえの しょうごう きろくが ない てんまで かくにん し、 げんいんは ひきつづき ちょうさ します。",
+            "en": "/ðə ˈɔɹɡəˌnaɪzɚz sɔɹs kənˈfɝmz nɛkst ˈsætɚdi. wi faʊnd noʊ pɹi - ˌpʌblɪˈkeɪʃən tʃɛk ɹəˈkɔɹd; ðə kɑz ɹɪˈmeɪnz ˈʌndɚ ˌɹivˈju./",
+            "zh": "Yǐ yī zhǔ bàn fāng yuán shǐ zī liào què rèn wèi xià zhōu liù， yě què rèn fā bù qián méi yǒu hé duì jì lù； yuán yīn réng zài diào chá。"
           },
           "axisScores": {
             "accountability": 20,
@@ -297,6 +327,11 @@
             "en": "The correct date is next Saturday. We'll look into the cause later.",
             "zh": "正確日期是下週六，原因之後再查。"
           },
+          "pronunciationGuide": {
+            "ja": "ただしい にっていは らいしゅう どようです。 げんいんは あとで しらべます。",
+            "en": "/ðə kɚˈɛkt deɪt ɪz nɛkst ˈsætɚdi. wil lʊk ˈɪntu ðə kɑz ˈleɪtɚ./",
+            "zh": "Zhèng què rì qī shì xià zhōu liù， yuán yīn zhī hòu zài chá。"
+          },
           "axisScores": {
             "accountability": 8,
             "fact-checking": 16,
@@ -327,6 +362,11 @@
             "ja": "おそらく単純な入力ミスです。誰にでもあります。",
             "en": "It was probably a simple typo. Anyone can make one.",
             "zh": "大概只是輸入錯誤，任何人都可能犯。"
+          },
+          "pronunciationGuide": {
+            "ja": "おそらく たんじゅんな にゅうりょく みすです。 だれにでも あります。",
+            "en": "/ɪt wɑz ˈpɹɑbəˌbli ə ˈsɪmpəl ˈtaɪpoʊ. ˈɛniˌwʌn kæn meɪk wʌn./",
+            "zh": "Dà gài zhǐ shì shū rù cuò wù， rèn hé rén dōu kě néng fàn。"
           },
           "axisScores": {
             "accountability": 2,
@@ -361,6 +401,11 @@
         "en": "How will you reach people who may miss the correction, and what will change?",
         "zh": "要在哪些地方通知，並做哪些改善，避免有人漏看更正？"
       },
+      "pronunciationGuide": {
+        "ja": "ていせいを みおとす ひとが でない よう、 どこで しらせ、 なにを かえる のですか。",
+        "en": "/haʊ wɪl ju ɹitʃ ˈpipəl hu meɪ mɪs ðə kɚˈɛkʃən, ənd wʌt wɪl tʃeɪndʒ?/",
+        "zh": "Yào zài nǎ xiē dì fāng tōng zhī， bìng zuò nǎ xiē gǎi shàn， bì miǎn yǒu rén lòu kàn gēng zhèng？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "元の全掲載先を訂正し、申込者へ直接連絡します。今後は公開前に原本との二者照合を記録します。",
             "en": "We'll correct each original channel, contact registrants, and record a two-person source check before publishing.",
             "zh": "我們會更正所有原發布管道、直接通知報名者，今後發布前記錄雙人核對原始資料。"
+          },
+          "pronunciationGuide": {
+            "ja": "もとの ぜん けいさいさきを ていせい し、 もうしこみしゃへ ちょくせつ れんらく します。 こんごは こうかい まえに げんぽんとの にしゃ しょうごうを きろく します。",
+            "en": "/wil kɚˈɛkt itʃ ɚˈɪdʒənəl ˈtʃænəl, ˈkɑnˌtækt ˈɹɛdʒəstɹənts, ənd ɹəˈkɔɹd ə tu - ˈpɝsən sɔɹs tʃɛk bɪˈfɔɹ ˈpʌblɪʃɪŋ./",
+            "zh": "Wǒ men huì gēng zhèng suǒ yǒu yuán fā bù guǎn dào、 zhí jiē tōng zhī bào míng zhě， jīn hòu fā bù qián jì lù shuāng rén hé duì yuán shǐ zī liào。"
           },
           "axisScores": {
             "accountability": 20,
@@ -414,6 +464,11 @@
             "en": "We'll post a correction on the website and social media.",
             "zh": "我們會在官網與社群發布更正。"
           },
+          "pronunciationGuide": {
+            "ja": "こうしき さいとと えすえぬえすで ていせいを だします。",
+            "en": "/wil poʊst ə kɚˈɛkʃən ɑn ðə ˈwɛbˌsaɪt ənd ˈsoʊʃəl ˈmidiə./",
+            "zh": "Wǒ men huì zài guān wǎng yǔ shè qún fā bù gēng zhèng。"
+          },
           "axisScores": {
             "accountability": 10,
             "fact-checking": 12,
@@ -444,6 +499,11 @@
             "ja": "間違った投稿を削除すれば、混乱は止まります。",
             "en": "Deleting the wrong post will stop the confusion.",
             "zh": "刪除錯誤貼文就能停止混亂。"
+          },
+          "pronunciationGuide": {
+            "ja": "まちがった とうこうを さくじょ すれば、 こんらんは とまります。",
+            "en": "/dɪˈlitɪŋ ðə ɹɔŋ poʊst wɪl stɑp ðə kənfˈjuʒən./",
+            "zh": "Shān chú cuò wù tiē wén jiù néng tíng zhǐ hùn luàn。"
           },
           "axisScores": {
             "accountability": 2,
@@ -478,6 +538,11 @@
         "en": "This sounds evasive. Do you understand the impact of changing my plans?",
         "zh": "說明聽起來像在卸責。你理解我更改行程受到的影響嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "せつめいが せきにん のがれに きこえます。 わたしが よていを かえた えいきょうを りかい して いますか。",
+        "en": "/ðɪs saʊndz ɪˈveɪzɪv. du ju ˌʌndɚˈstænd ðə ˌɪmˈpækt ʌv ˈtʃeɪndʒɪŋ maɪ plænz?/",
+        "zh": "Shuō míng tīng qǐ lái xiàng zài xiè zé。 nǐ lǐ jiě wǒ gēng gǎi xíng chéng shòu dào de yǐng xiǎng ma？"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "責任を薄める説明になり申し訳ありません。予定変更の影響を認め、正しい情報、訂正、再発防止の順で説明し直します。",
             "en": "I'm sorry I sounded evasive. I own the disruption and will restate the facts, correction, and prevention.",
             "zh": "很抱歉說得像在卸責。我承認行程受影響，會依正確資訊、更正、防止再犯的順序重述。"
+          },
+          "pronunciationGuide": {
+            "ja": "せきにんを うすめる せつめいに なり もうしわけ ありません。 よてい へんこうの えいきょうを みとめ、 ただしい じょうほう、 ていせい、 さいはつ ぼうしの じゅんで せつめい し なおします。",
+            "en": "/aɪm ˈsɑɹi aɪ ˈsaʊndɪd ɪˈveɪzɪv. aɪ oʊn ðə dɪsˈɹʌpʃən ənd wɪl ɹiˈsteɪt ðə fækts, kɚˈɛkʃən, ənd pɹiˈvɛnʃən./",
+            "zh": "Hěn bào qiàn shuō dé xiàng zài xiè zé。 wǒ chéng rèn xíng chéng shòu yǐng xiǎng， huì yī zhèng què zī xùn、 gēng zhèng、 fáng zhǐ zài fàn de shùn xù zhòng shù。"
           },
           "axisScores": {
             "accountability": 20,
@@ -531,6 +601,11 @@
             "en": "I'm sorry for the confusion. We're preparing a correction.",
             "zh": "很抱歉造成混亂，我們正在準備更正。"
           },
+          "pronunciationGuide": {
+            "ja": "こんらん させた てんは あやまります。 ていせい ぶんを じゅんび して います。",
+            "en": "/aɪm ˈsɑɹi fɔɹ ðə kənfˈjuʒən. wiɹ pɹiˈpɛɹɪŋ ə kɚˈɛkʃən./",
+            "zh": "Hěn bào qiàn zào chéng hùn luàn， wǒ men zhèng zài zhǔn bèi gēng zhèng。"
+          },
           "axisScores": {
             "accountability": 14,
             "fact-checking": 8,
@@ -561,6 +636,11 @@
             "ja": "法的な責任については、今ここでは回答できません。",
             "en": "I cannot address legal responsibility here.",
             "zh": "法律責任現在無法回答。"
+          },
+          "pronunciationGuide": {
+            "ja": "ほうてきな せきにんについては、 いま ここでは かいとう できません。",
+            "en": "/aɪ ˈkænɑt ˈæˌdɹɛs ˈliɡəl ɹiˌspɑnsəˈbɪləti hiɹ./",
+            "zh": "Fǎ lǜ zé rèn xiàn zài wú fǎ huí dá。"
           },
           "axisScores": {
             "accountability": 1,

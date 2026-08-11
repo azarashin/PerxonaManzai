@@ -112,6 +112,11 @@
         "en": "If I leave, I'll lose something important. I can't move just because you say it's safe.",
         "zh": "離開這裡就會失去重要物品。就算你說安全，我也無法走。"
       },
+      "pronunciationGuide": {
+        "ja": "ここを はなれたら たいせつな ものを うしないます。 あんぜんだと いわれても うごけません。",
+        "en": "/ɪf aɪ liv, aɪl luz ˈsʌmθɪŋ ˌɪmˈpɔɹtənt. aɪ kænt muv dʒʌst bɪˈkɔz ju seɪ ɪts seɪf./",
+        "zh": "Lí kāi zhè lǐ jiù huì shī qù zhòng yào wù pǐn。 jiù suàn nǐ shuō ān quán， wǒ yě wú fǎ zǒu。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "まず「残したくない物、移動を妨げる事情、現在の危険情報」を安全に確認し、公式情報を平易に示し、本人が最も心配する損失を聞く。",
             "en": "Check safety first; explain official risk plainly and ask about the feared loss.",
             "zh": "先安全確認不願留下的物品、移動障礙與目前危險資訊，再用白話說明官方風險，並詢問最擔心的損失。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「のこしたくない もの、 いどうを さまたげる じじょう、 げんざいの きけん じょうほう」を あんぜんに かくにん し、 こうしき じょうほうを へいいに しめし、 ほんにんが もっとも しんぱい する そんしつを きく。",
+            "en": "/tʃɛk ˈseɪfti fɝst; ɪkˈspleɪn əˈfɪʃəl ɹɪsk ˈpleɪnli ənd æsk əˈbaʊt ðə fɪɹd lɔs./",
+            "zh": "Xiān ān quán què rèn bú yuàn liú xià de wù pǐn、 yí dòng zhàng ài yǔ mù qián wēi xiǎn zī xùn， zài yòng bái huà shuō míng guān fāng fēng xiǎn， bìng xún wèn zuì dān xīn de sǔn shī。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -170,6 +180,11 @@
             "en": "Only explain official risk plainly and ask about the feared loss.",
             "zh": "只用白話說明官方風險，並詢問最擔心的損失，但省略不願留下的物品、移動障礙與目前危險資訊的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "こうしき じょうほうを へいいに しめし、 ほんにんが もっとも しんぱい する そんしつを きくが、「のこしたくない もの、 いどうを さまたげる じじょう、 げんざいの きけん じょうほう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ɪkˈspleɪn əˈfɪʃəl ɹɪsk ˈpleɪnli ənd æsk əˈbaʊt ðə fɪɹd lɔs./",
+            "zh": "Zhī yòng bái huà shuō míng guān fāng fēng xiǎn， bìng xún wèn zuì dān xīn de sǔn shī， dàn shěng lüè bú yuàn liú xià de wù pǐn、 yí dòng zhàng ài yǔ mù qián wēi xiǎn zī xùn dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -200,6 +215,11 @@
             "ja": "公式情報を平易に示し、本人が最も心配する損失を聞くことはせず、命令と圧力を強めます。",
             "en": "Do not explain official risk plainly and ask about the feared loss; increase commands and pressure.",
             "zh": "不用白話說明官方風險，並詢問最擔心的損失，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "こうしき じょうほうを へいいに しめし、 ほんにんが もっとも しんぱい する そんしつを きく ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt ɪkˈspleɪn əˈfɪʃəl ɹɪsk ˈpleɪnli ənd æsk əˈbaʊt ðə fɪɹd lɔs; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bú yòng bái huà shuō míng guān fāng fēng xiǎn， bìng xún wèn zuì dān xīn de sǔn shī， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,
@@ -234,6 +254,11 @@
         "en": "Is it okay if I check transport, health needs, and the location of family or pets now?",
         "zh": "現在可以讓我確認交通方式、健康需求與家人或寵物位置嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "いまは「いどう しゅだん、 けんこうじょうの はいりょ、 かぞく・ ぺっとの しょざい」を かくにん しても だいじょうぶですか？",
+        "en": "/ɪz ɪt ˌoʊˈkeɪ ɪf aɪ tʃɛk tɹænˈspɔɹt, hɛlθ nidz, ənd ðə loʊˈkeɪʃən ʌv ˈfæməli ɔɹ pɛts naʊ?/",
+        "zh": "Xiàn zài kě yǐ ràng wǒ què rèn jiāo tōng fāng shì、 jiàn kāng xū qiú yǔ jiā rén huò chǒng wù wèi zhì ma？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "まず「移動手段、健康上の配慮、家族・ペットの所在」を安全に確認し、利用可能な支援と二つの安全な移動案から本人に選んでもらう。",
             "en": "Check safety first; offer assistance and let the person choose between two safe routes.",
             "zh": "先安全確認交通方式、健康需求與家人或寵物位置，再提供協助，讓本人在兩個安全移動方案中選擇。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「いどう しゅだん、 けんこうじょうの はいりょ、 かぞく・ ぺっとの しょざい」を あんぜんに かくにん し、 りよう かのうな しえんと ふたつの あんぜんな いどうあんから ほんにんに えらんで もらう。",
+            "en": "/tʃɛk ˈseɪfti fɝst; ˈɔfɚ əˈsɪstəns ənd lɛt ðə ˈpɝsən tʃuz bɪˈtwin tu seɪf ɹuts./",
+            "zh": "Xiān ān quán què rèn jiāo tōng fāng shì、 jiàn kāng xū qiú yǔ jiā rén huò chǒng wù wèi zhì， zài tí gōng xié zhù， ràng běn rén zài liǎng gè ān quán yí dòng fāng àn zhōng xuǎn zé。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -297,6 +327,11 @@
             "en": "Only offer assistance and let the person choose between two safe routes.",
             "zh": "只提供協助，讓本人在兩個安全移動方案中選擇，但省略交通方式、健康需求與家人或寵物位置的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "りよう かのうな しえんと ふたつの あんぜんな いどうあんから ほんにんに えらんで もらうが、「いどう しゅだん、 けんこうじょうの はいりょ、 かぞく・ ぺっとの しょざい」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ˈɔfɚ əˈsɪstəns ənd lɛt ðə ˈpɝsən tʃuz bɪˈtwin tu seɪf ɹuts./",
+            "zh": "Zhī tí gōng xié zhù， ràng běn rén zài liǎng gè ān quán yí dòng fāng àn zhōng xuǎn zé， dàn shěng lüè jiāo tōng fāng shì、 jiàn kāng xū qiú yǔ jiā rén huò chǒng wù wèi zhì dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -327,6 +362,11 @@
             "ja": "利用可能な支援と二つの安全な移動案から本人に選んでもらうことはせず、命令と圧力を強めます。",
             "en": "Do not offer assistance and let the person choose between two safe routes; increase commands and pressure.",
             "zh": "不提供協助，讓本人在兩個安全移動方案中選擇，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "りよう かのうな しえんと ふたつの あんぜんな いどうあんから ほんにんに えらんで もらう ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt ˈɔfɚ əˈsɪstəns ənd lɛt ðə ˈpɝsən tʃuz bɪˈtwin tu seɪf ɹuts; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bù tí gōng xié zhù， ràng běn rén zài liǎng gè ān quán yí dòng fāng àn zhōng xuǎn zé， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,
@@ -361,6 +401,11 @@
         "en": "Can we choose how to move with essentials to a temporary safe point and review official updates, at your pace?",
         "zh": "可以依你的步調選擇如何帶必需品先到臨時安全點，再一起查看官方更新嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "あなたが えらべる かたちで、 ひつようひんを もって いちじ ちてんへ うつり、 こうしき こうしんを いっしょに かくにん する ことを きめられますか？",
+        "en": "/kæn wi tʃuz haʊ tu muv wɪð ɛˈsɛnʃəlz tu ə ˈtɛmpɚˌɛɹi seɪf pɔɪnt ənd ˌɹivˈju əˈfɪʃəl əpˈdeɪts, æt jɔɹ peɪs?/",
+        "zh": "Kě yǐ yī nǐ de bù diào xuǎn zé rú hé dài bì xū pǐn xiān dào lín shí ān quán diǎn， zài yì qǐ chá kàn guān fāng gēng xīn ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "まず「一時避難先、持ち出す物、戻れる条件と更新情報」を安全に確認し、必要品を持って一時地点へ移り、公式更新を一緒に確認する。",
             "en": "Check safety first; move with essentials to a temporary safe point and review official updates.",
             "zh": "先安全確認臨時避難處、必需品、返回條件與更新資訊，再帶必需品先到臨時安全點，再一起查看官方更新。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「いちじ ひなんさき、 もちだす もの、 もどれる じょうけんと こうしん じょうほう」を あんぜんに かくにん し、 ひつようひんを もって いちじ ちてんへ うつり、 こうしき こうしんを いっしょに かくにん する。",
+            "en": "/tʃɛk ˈseɪfti fɝst; muv wɪð ɛˈsɛnʃəlz tu ə ˈtɛmpɚˌɛɹi seɪf pɔɪnt ənd ˌɹivˈju əˈfɪʃəl əpˈdeɪts./",
+            "zh": "Xiān ān quán què rèn lín shí bì nàn chù、 bì xū pǐn、 fǎn huí tiáo jiàn yǔ gēng xīn zī xùn， zài dài bì xū pǐn xiān dào lín shí ān quán diǎn， zài yì qǐ chá kàn guān fāng gēng xīn。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -414,6 +464,11 @@
             "en": "Only move with essentials to a temporary safe point and review official updates.",
             "zh": "只帶必需品先到臨時安全點，再一起查看官方更新，但省略臨時避難處、必需品、返回條件與更新資訊的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "ひつようひんを もって いちじ ちてんへ うつり、 こうしき こうしんを いっしょに かくにん するが、「いちじ ひなんさき、 もちだす もの、 もどれる じょうけんと こうしん じょうほう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli muv wɪð ɛˈsɛnʃəlz tu ə ˈtɛmpɚˌɛɹi seɪf pɔɪnt ənd ˌɹivˈju əˈfɪʃəl əpˈdeɪts./",
+            "zh": "Zhī dài bì xū pǐn xiān dào lín shí ān quán diǎn， zài yì qǐ chá kàn guān fāng gèng xīn， dàn shěng lüè lín shí bì nán chù、 bì xū pǐn、 fǎn huí tiáo jiàn yǔ gēng xīn zī xùn dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -444,6 +499,11 @@
             "ja": "必要品を持って一時地点へ移り、公式更新を一緒に確認することはせず、命令と圧力を強めます。",
             "en": "Do not move with essentials to a temporary safe point and review official updates; increase commands and pressure.",
             "zh": "不帶必需品先到臨時安全點，再一起查看官方更新，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひつようひんを もって いちじ ちてんへ うつり、 こうしき こうしんを いっしょに かくにん する ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt muv wɪð ɛˈsɛnʃəlz tu ə ˈtɛmpɚˌɛɹi seɪf pɔɪnt ənd ˌɹivˈju əˈfɪʃəl əpˈdeɪts; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bú dài bì xū pǐn xiān dào lín shí ān quán diǎn， zài yì qǐ chá kàn guān fāng gēng xīn， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,
@@ -478,6 +538,11 @@
         "en": "Tension rose when you ignored the loss of trust after being threatened with force.",
         "zh": "你忽略被威脅強制後，對支援者資訊失去信任的影響，讓緊張升高。"
       },
+      "pronunciationGuide": {
+        "ja": "「きょうせい すると おどされ、 しえんしゃの じょうほうを しんじられなく なった えいきょう」を むし され、 きんちょうが たかまりました。",
+        "en": "/ˈtɛnʃən ɹoʊz wɛn ju ˌɪɡˈnɔɹd ðə lɔs ʌv tɹʌst ˈæftɚ ˈbiɪŋ ˈθɹɛtənd wɪð fɔɹs./",
+        "zh": "Nǐ hū lüè bèi wēi xié qiáng zhì hòu， duì zhī yuán zhě zī xùn shī qù xìn rèn de yǐng xiǎng， ràng jǐn zhāng shēng gāo。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "まず「強制すると脅され、支援者の情報を信じられなくなった影響」を安全に確認し、脅したことを認め、現在の危険と選べる支援を事実だけで示す。",
             "en": "Check safety first; acknowledge the threat and restate current risk and choices factually.",
             "zh": "先安全確認被威脅強制後，對支援者資訊失去信任的影響，再承認威脅，以事實重述目前風險與可選支援。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「きょうせい すると おどされ、 しえんしゃの じょうほうを しんじられなく なった えいきょう」を あんぜんに かくにん し、 おどした ことを みとめ、 げんざいの きけんと えらべる しえんを じじつだけで しめす。",
+            "en": "/tʃɛk ˈseɪfti fɝst; ækˈnɑlɪdʒ ðə θɹɛt ənd ɹiˈsteɪt ˈkɝənt ɹɪsk ənd ˈtʃɔɪsəz ˈfæktʃuəli./",
+            "zh": "Xiān ān quán què rèn bèi wēi xié qiáng zhì hòu， duì zhī yuán zhě zī xùn shī qù xìn rèn de yǐng xiǎng， zài chéng rèn wēi xié， yǐ shì shí zhòng shù mù qián fēng xiǎn yǔ kě xuǎn zhī yuán。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -531,6 +601,11 @@
             "en": "Only acknowledge the threat and restate current risk and choices factually.",
             "zh": "只承認威脅，以事實重述目前風險與可選支援，但省略被威脅強制後，對支援者資訊失去信任的影響的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "おどした ことを みとめ、 げんざいの きけんと えらべる しえんを じじつだけで しめすが、「きょうせい すると おどされ、 しえんしゃの じょうほうを しんじられなく なった えいきょう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ækˈnɑlɪdʒ ðə θɹɛt ənd ɹiˈsteɪt ˈkɝənt ɹɪsk ənd ˈtʃɔɪsəz ˈfæktʃuəli./",
+            "zh": "Zhī chéng rèn wēi xié， yǐ shì shí zhòng shù mù qián fēng xiǎn yǔ kě xuǎn zhī yuán， dàn shěng lüè bèi wēi xié qiáng zhì hòu， duì zhī yuán zhě zī xùn shī qù xìn rèn de yǐng xiǎng dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -561,6 +636,11 @@
             "ja": "脅したことを認め、現在の危険と選べる支援を事実だけで示すことはせず、命令と圧力を強めます。",
             "en": "Do not acknowledge the threat and restate current risk and choices factually; increase commands and pressure.",
             "zh": "不承認威脅，以事實重述目前風險與可選支援，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "おどした ことを みとめ、 げんざいの きけんと えらべる しえんを じじつだけで しめす ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt ækˈnɑlɪdʒ ðə θɹɛt ənd ɹiˈsteɪt ˈkɝənt ɹɪsk ənd ˈtʃɔɪsəz ˈfæktʃuəli; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bù chéng rèn wēi xié， yǐ shì shí zhòng shù mù qián fēng xiǎn yǔ kě xuǎn zhī yuán， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,

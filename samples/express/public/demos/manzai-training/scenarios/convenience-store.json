@@ -39,6 +39,11 @@
         "en": "Yesterday, I bought a new refrigerator at the convenience store.",
         "zh": "昨天我在便利商店買了一台新冰箱。"
       },
+      "pronunciationGuide": {
+        "ja": "きのう こんびにで、あたらしい れいぞうこを かってきてん。",
+        "en": "/ˈjɛstəɹdeɪ, aɪ bɔt ə nu ɹɪˈfɹɪdʒəˌɹeɪtəɹ æt ðə kənˈviniəns stɔɹ/",
+        "zh": "Zuótiān wǒ zài biànlì shāngdiàn mǎi le yì tái xīn bīngxiāng."
+      },
       "reaction": {
         "description": {
           "ja": "大きな買い物を得意げに紹介する",
@@ -62,6 +67,11 @@
             "en": "Convenience stores don't sell refrigerators!",
             "zh": "便利商店才不會賣冰箱咧！"
           },
+          "pronunciationGuide": {
+            "ja": "こんびにに れいぞうこ うってへんわ！",
+            "en": "/kənˈviniəns stɔɹz doʊnt sɛl ɹɪˈfɹɪdʒəˌɹeɪtəɹz/",
+            "zh": "Biànlì shāngdiàn cái bú huì mài bīngxiāng lie!"
+          },
           "aliases": ["コンビニで冷蔵庫売ってないやろ", "それ家電量販店や"],
           "axisScores": { "premise-recognition": 40, "clarity": 20, "word-choice": 20 },
           "feedback": {
@@ -77,6 +87,11 @@
             "en": "That's one seriously big purchase!",
             "zh": "你買的東西還真大啊！"
           },
+          "pronunciationGuide": {
+            "ja": "ずいぶん おおきい かいもの したな！",
+            "en": "/ðæts wʌn ˈsɪɹiəsli bɪɡ ˈpɝtʃəs/",
+            "zh": "Nǐ mǎi de dōngxi hái zhēn dà a!"
+          },
           "aliases": ["大きな買い物やな"],
           "axisScores": { "premise-recognition": 20, "clarity": 18, "word-choice": 14 },
           "feedback": {
@@ -91,6 +106,11 @@
             "ja": "冷蔵庫ええなあ！",
             "en": "Nice refrigerator!",
             "zh": "冰箱不錯嘛！"
+          },
+          "pronunciationGuide": {
+            "ja": "れいぞうこ ええなあ！",
+            "en": "/naɪs ɹɪˈfɹɪdʒəˌɹeɪtəɹ/",
+            "zh": "Bīngxiāng búcuò ma!"
           },
           "aliases": ["いい冷蔵庫やな"],
           "axisScores": { "premise-recognition": 4, "clarity": 12, "word-choice": 4 },
@@ -108,6 +128,11 @@
         "ja": "朝ごはんは健康のために、目覚まし時計を二個食べてる。",
         "en": "For my health, I eat two alarm clocks for breakfast.",
         "zh": "為了健康，我早餐都吃兩個鬧鐘。"
+      },
+      "pronunciationGuide": {
+        "ja": "あさごはんは けんこうの ために、めざましどけいを にこ たべてる。",
+        "en": "/fɔɹ maɪ hɛlθ, aɪ it tu əˈlɑɹm klɑks fɔɹ ˈbɹɛkfəst/",
+        "zh": "Wèile jiànkāng, wǒ zǎocān dōu chī liǎng ge nàozhōng."
       },
       "reaction": {
         "description": {
@@ -132,6 +157,11 @@
             "en": "Don't eat the thing that's supposed to wake you up!",
             "zh": "別把叫你起床的東西吃掉啦！"
           },
+          "pronunciationGuide": {
+            "ja": "おきる ための もんを くうな！",
+            "en": "/doʊnt it ðə θɪŋ ðæts səˈpoʊzd tə weɪk ju ʌp/",
+            "zh": "Bié bǎ jiào nǐ qǐchuáng de dōngxi chīdiào la!"
+          },
           "aliases": ["目覚まし時計は食べ物ちゃうわ", "時計食べるな"],
           "axisScores": { "premise-recognition": 40, "clarity": 20, "word-choice": 20 },
           "feedback": {
@@ -147,6 +177,11 @@
             "en": "At least stick to one!",
             "zh": "至少只吃一個啦！"
           },
+          "pronunciationGuide": {
+            "ja": "せめて いっこに しとけ！",
+            "en": "/æt list stɪk tə wʌn/",
+            "zh": "Zhìshǎo zhǐ chī yí ge la!"
+          },
           "aliases": ["一個でええやろ"],
           "axisScores": { "premise-recognition": 24, "clarity": 17, "word-choice": 14 },
           "feedback": {
@@ -161,6 +196,11 @@
             "ja": "健康的やな！",
             "en": "Sounds healthy!",
             "zh": "聽起來很健康嘛！"
+          },
+          "pronunciationGuide": {
+            "ja": "けんこうてき やな！",
+            "en": "/saʊndz ˈhɛlθi/",
+            "zh": "Tīng qǐlái hěn jiànkāng ma!"
           },
           "aliases": ["健康に良さそうやな"],
           "axisScores": { "premise-recognition": 2, "clarity": 10, "word-choice": 3 },
@@ -178,6 +218,11 @@
         "ja": "今日は急いでたから、各駅停車を走って追い越してきた。",
         "en": "I was in a hurry today, so I ran past a local train.",
         "zh": "今天因為趕時間，我用跑的超過了每站都停的電車。"
+      },
+      "pronunciationGuide": {
+        "ja": "きょうは いそいでたから、かくえきていしゃを はしって おいこしてきた。",
+        "en": "/aɪ wəz ɪn ə ˈhɝi təˈdeɪ, soʊ aɪ ɹæn pæst ə ˈloʊkəl tɹeɪn/",
+        "zh": "Jīntiān yīnwèi gǎn shíjiān, wǒ yòng pǎo de chāoguò le měi zhàn dōu tíng de diànchē."
       },
       "reaction": {
         "description": {
@@ -202,6 +247,11 @@
             "en": "How fast are you?!",
             "zh": "你的腳到底有多快啊！"
           },
+          "pronunciationGuide": {
+            "ja": "おまえ どんだけ あし はやいねん！",
+            "en": "/haʊ fæst ɑɹ ju/",
+            "zh": "Nǐ de jiǎo dàodǐ yǒu duō kuài a!"
+          },
           "aliases": ["電車より速いやないか", "電車を走って追い越せるか"],
           "axisScores": { "premise-recognition": 40, "clarity": 20, "word-choice": 20 },
           "feedback": {
@@ -217,6 +267,11 @@
             "en": "If you're in a hurry, take the express!",
             "zh": "趕時間就搭快速列車啦！"
           },
+          "pronunciationGuide": {
+            "ja": "いそぐなら かいそくに のれ！",
+            "en": "/ɪf jʊɹ ɪn ə ˈhɝi, teɪk ði ɪkˈspɹɛs/",
+            "zh": "Gǎn shíjiān jiù dā kuàisù lièchē la!"
+          },
           "aliases": ["快速乗れや"],
           "axisScores": { "premise-recognition": 28, "clarity": 18, "word-choice": 16 },
           "feedback": {
@@ -231,6 +286,11 @@
             "ja": "いい運動になったな！",
             "en": "At least you got a good workout!",
             "zh": "至少有運動到嘛！"
+          },
+          "pronunciationGuide": {
+            "ja": "いい うんどうに なったな！",
+            "en": "/æt list ju ɡɑt ə ɡʊd ˈwɝkˌaʊt/",
+            "zh": "Zhìshǎo yǒu yùndòng dào ma!"
           },
           "aliases": ["運動になってよかったな"],
           "axisScores": { "premise-recognition": 4, "clarity": 12, "word-choice": 4 },

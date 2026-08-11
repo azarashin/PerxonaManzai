@@ -112,6 +112,11 @@
         "en": "I know I made a mistake. Being told in front of everyone makes it hard to speak up.",
         "zh": "我知道自己犯錯了，但在大家面前被說，讓我很難再開口。"
       },
+      "pronunciationGuide": {
+        "ja": "みす した ことは わかって います。 みんなの まえで いわれると、 もう はなし にくいです。",
+        "en": "/aɪ noʊ aɪ meɪd ə mɪˈsteɪk. ˈbiɪŋ toʊld ɪn fɹʌnt ʌv ˈɛvɹiˌwʌn meɪks ɪt hɑɹd tu spik ʌp./",
+        "zh": "Wǒ zhī dào zì jǐ fàn cuò le， dàn zài dà jiā miàn qián bèi shuō， ràng wǒ hěn nán zài kāi kǒu。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "皆の前で伝えて話しにくくさせた。申し訳ない。ここでは止めて、あとで二人で影響と事実を確認しよう。",
             "en": "I made it harder to speak by addressing this publicly. I'm sorry. Let's review the impact and facts privately.",
             "zh": "我在大家面前指出，讓你難以開口，對不起。先停在這裡，之後私下確認影響與事實。"
+          },
+          "pronunciationGuide": {
+            "ja": "みなの まえで つたえて はなし にくく させた。 もうしわけない。 ここでは とめて、 あとで ふたりで えいきょうと じじつを かくにん しよう。",
+            "en": "/aɪ meɪd ɪt ˈhɑɹdɚ tu spik baɪ əˈdɹɛsɪŋ ðɪs ˈpʌblɪkli. aɪm ˈsɑɹi. lɛts ˌɹivˈju ðə ˌɪmˈpækt ənd fækts ˈpɹaɪvətli./",
+            "zh": "Wǒ zài dà jiā miàn qián zhǐ chū， ràng nǐ nán yǐ kāi kǒu， duì bù qǐ。 xiān tíng zài zhè lǐ， zhī hòu sī xià què rèn yǐng xiǎng yǔ shì shí。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -170,6 +180,11 @@
             "en": "I'm sorry it made speaking hard, but the mistake needed to be shared immediately.",
             "zh": "很抱歉讓你難開口，但錯誤當時必須立刻公開。"
           },
+          "pronunciationGuide": {
+            "ja": "はなし にくく させた のは ごめん。ただ、 みすは その ばで きょうゆう する ひつようが あった。",
+            "en": "/aɪm ˈsɑɹi ɪt meɪd ˈspikɪŋ hɑɹd, bʌt ðə mɪˈsteɪk ˈnidəd tu bi ʃɛɹd ˌɪˈmiˌdiətli./",
+            "zh": "Hěn bào qiàn ràng nǐ nán kāi kǒu， dàn cuò wù dāng shí bì xū lì kè gōng kāi。"
+          },
           "axisScores": {
             "psychological-safety": 12,
             "clarity": 8,
@@ -200,6 +215,11 @@
             "ja": "仕事のミスを指摘されて話せないのは、受け止め方の問題です。",
             "en": "If feedback on a work error stops you speaking, the problem is how you take it.",
             "zh": "工作錯誤被指出就不敢說話，是你接受方式的問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "しごとの みすを してき されて はなせない のは、 うけとめかたの もんだいです。",
+            "en": "/ɪf ˈfidˌbæk ɑn ə wɝk ˈɛɹɚ stɑps ju ˈspikɪŋ, ðə ˈpɹɑbləm ɪz haʊ ju teɪk ɪt./",
+            "zh": "Gōng zuò cuò wù bèi zhǐ chū jiù bù gǎn shuō huà， shì nǐ jiē shòu fāng shì de wèn tí。"
           },
           "axisScores": {
             "psychological-safety": 0,
@@ -234,6 +254,11 @@
         "en": "I sent the wrong figure, but there was no pre-send review and nobody caught it.",
         "zh": "錯誤數字是我寄出的，但寄出前沒有覆核流程，所以沒人發現。"
       },
+      "pronunciationGuide": {
+        "ja": "あやまった すうちを おくった のは わたしです。でも そうしん まえの かくにん てじゅんが なく、 だれも きづけませんでした。",
+        "en": "/aɪ sɛnt ðə ɹɔŋ ˈfɪɡjɚ, bʌt ðɛɹ wɑz noʊ pɹi - sɛnd ˌɹivˈju ənd ˈnoʊˌbɑˌdi kɑt ɪt./",
+        "zh": "Cuò wù shù zì shì wǒ jì chū de， dàn jì chū qián méi yǒu fù hé liú chéng， suǒ yǐ méi rén fā xiàn。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "送信した事実と、確認手順がなかった要因を分けよう。入力元、確認者、送信前チェックの三点を一緒にたどりたい。",
             "en": "Let's separate the send from the missing control and trace the source, reviewer, and pre-send check.",
             "zh": "把寄出錯誤與缺少覆核機制分開，逐一確認資料來源、覆核人與寄出前檢查。"
+          },
+          "pronunciationGuide": {
+            "ja": "そうしん した じじつと、 かくにん てじゅんが なかった よういんを わけよう。 にゅうりょくもと、 かくにんしゃ、 そうしん ぜん ちぇっくの さんてんを いっしょに たどりたい。",
+            "en": "/lɛts ˈsɛpɚˌeɪt ðə sɛnd fɹʌm ðə ˈmɪsɪŋ kənˈtɹoʊl ənd tɹeɪs ðə sɔɹs, ɹivˈjuɚ, ənd pɹi - sɛnd tʃɛk./",
+            "zh": "Bǎ jì chū cuò wù yǔ quē shǎo fù hé jī zhì fēn kāi， zhú yī què rèn zī liào lái yuán、 fù hé rén yǔ jì chū qián jiǎn chá。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -297,6 +327,11 @@
             "en": "Show it to me before sending next time.",
             "zh": "下次寄出前先給我看。"
           },
+          "pronunciationGuide": {
+            "ja": "つぎからは おくる まえに わたしへ みせて ください。",
+            "en": "/ʃoʊ ɪt tu mi bɪˈfɔɹ ˈsɛndɪŋ nɛkst taɪm./",
+            "zh": "Xià cì jì chū qián xiān gěi wǒ kàn。"
+          },
           "axisScores": {
             "psychological-safety": 11,
             "clarity": 7,
@@ -327,6 +362,11 @@
             "ja": "最終的に送った人が責任を持つべきです。",
             "en": "The person who sends it must take full responsibility.",
             "zh": "最後寄出的人就該負全部責任。"
+          },
+          "pronunciationGuide": {
+            "ja": "さいしゅうてきに おくった ひとが せきにんを もつべきです。",
+            "en": "/ðə ˈpɝsən hu sɛndz ɪt mʌst teɪk fʊl ɹiˌspɑnsəˈbɪləti./",
+            "zh": "Zuì hòu jì chū de rén jiù gāi fù quán bù zé rèn。"
           },
           "axisScores": {
             "psychological-safety": 1,
@@ -361,6 +401,11 @@
         "en": "I want us to define who checks what and when so this does not recur.",
         "zh": "為避免同樣錯誤，我想決定由誰在何時檢查什麼。"
       },
+      "pronunciationGuide": {
+        "ja": "おなじ みすを ふせぐ ため、 だれが なにを いつ かくにん するか きめたいです。",
+        "en": "/aɪ wɑnt ʌs tu dɪˈfaɪn hu tʃɛks wʌt ənd wɛn soʊ ðɪs dʌz nɑt ɹɪˈkɝ./",
+        "zh": "Wèi bì miǎn tóng yàng cuò wù， wǒ xiǎng jué dìng yóu shuí zài hé shí jiǎn chá shén me。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "作成者が元データを照合し、別の担当が数値を確認してから送るチェックリストを金曜までに試します。",
             "en": "By Friday we'll pilot a checklist: the author checks source data and another person verifies figures before sending.",
             "zh": "週五前試行檢查表：製作者核對原始資料，另一位同仁確認數字後再寄出。"
+          },
+          "pronunciationGuide": {
+            "ja": "さくせいしゃが もと でーたを しょうごう し、 べつの たんとうが すうちを かくにん してから おくる ちぇっく りすとを きんようまでに ためします。",
+            "en": "/baɪ ˈfɹaɪdi wil ˈpaɪlət ə ˈtʃɛˌklɪst: ðə ˈɔθɚ tʃɛks sɔɹs ˈdeɪtə ənd əˈnʌðɚ ˈpɝsən ˈvɛɹəˌfaɪz ˈfɪɡjɚz bɪˈfɔɹ ˈsɛndɪŋ./",
+            "zh": "Zhōu wǔ qián shì xíng jiǎn chá biǎo： zhì zuò zhě hé duì yuán shǐ zī liào， lìng yí wèi tóng rén què rèn shù zì hòu zài jì chū。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -414,6 +464,11 @@
             "en": "From now on, be sure to check carefully before sending.",
             "zh": "以後寄出前務必小心確認。"
           },
+          "pronunciationGuide": {
+            "ja": "こんごは そうしん まえに かならず ちゅうい して かくにん して ください。",
+            "en": "/fɹʌm naʊ ɑn, bi ʃʊɹ tu tʃɛk ˈkɛɹfəli bɪˈfɔɹ ˈsɛndɪŋ./",
+            "zh": "Yǐ hòu jì chū qián wù bì xiǎo xīn què rèn。"
+          },
           "axisScores": {
             "psychological-safety": 8,
             "clarity": 4,
@@ -444,6 +499,11 @@
             "ja": "次に間違えたら担当から外します。",
             "en": "If it happens again, I'll remove you from the role.",
             "zh": "下次再錯，就把你撤換。"
+          },
+          "pronunciationGuide": {
+            "ja": "つぎに まちがえたら たんとうから はずします。",
+            "en": "/ɪf ɪt ˈhæpənz əˈɡɛn, aɪl ɹiˈmuv ju fɹʌm ðə ɹoʊl./",
+            "zh": "Xià cì zài cuò， jiù bǎ nǐ chè huàn。"
           },
           "axisScores": {
             "psychological-safety": 0,
@@ -478,6 +538,11 @@
         "en": "I feel blamed again, so I cannot discuss the causes with you.",
         "zh": "我又覺得只有自己被責怪，無法一起討論原因。"
       },
+      "pronunciationGuide": {
+        "ja": "また わたしだけを せめられて いる ようで、 げんいんを いっしょに はなせません。",
+        "en": "/aɪ fil bleɪmd əˈɡɛn, soʊ aɪ ˈkænɑt dɪˈskʌs ðə ˈkɑzəz wɪð ju./",
+        "zh": "Wǒ yòu jué de zhǐ yǒu zì jǐ bèi zé guài， wú fǎ yì qǐ tǎo lùn yuán yīn。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "責める言い方に戻ってしまった。申し訳ない。送信した事実と手順の問題を分けて、私の責任も含めて確認し直そう。",
             "en": "I slipped into blame. I'm sorry. Let's separate the send from the process and include my responsibility.",
             "zh": "我又用責備的方式說話，對不起。把寄出事實與流程問題分開，也把我的責任納入重新確認。"
+          },
+          "pronunciationGuide": {
+            "ja": "せめる いいかたに もどって しまった。 もうしわけない。 そうしん した じじつと てじゅんの もんだいを わけて、 わたしの せきにんも ふくめて かくにん し なおそう。",
+            "en": "/aɪ slɪpt ˈɪntu bleɪm. aɪm ˈsɑɹi. lɛts ˈsɛpɚˌeɪt ðə sɛnd fɹʌm ðə ˈpɹɑˌsɛs ənd ˌɪnˈklud maɪ ɹiˌspɑnsəˈbɪləti./",
+            "zh": "Wǒ yòu yòng zé bèi de fāng shì shuō huà， duì bù qǐ。 bǎ jì chū shì shí yǔ liú chéng wèn tí fēn kāi， yě bǎ wǒ de zé rèn nà rù chóng xīn què rèn。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -531,6 +601,11 @@
             "en": "I don't intend to blame you. Just explain the cause.",
             "zh": "我沒有要責怪你，總之請說明原因。"
           },
+          "pronunciationGuide": {
+            "ja": "せめる つもりは ありません。 とにかく げんいんを せつめい して ください。",
+            "en": "/aɪ doʊnt ˌɪnˈtɛnd tu bleɪm ju. dʒʌst ɪkˈspleɪn ðə kɑz./",
+            "zh": "Wǒ méi yǒu yào zé guài nǐ， zǒng zhī qǐng shuō míng yuán yīn。"
+          },
           "axisScores": {
             "psychological-safety": 8,
             "clarity": 12,
@@ -561,6 +636,11 @@
             "ja": "事実としてあなたが送ったのだから、責められても仕方ありません。",
             "en": "You sent it, so being blamed is unavoidable.",
             "zh": "事實上是你寄出的，被責怪也是沒辦法。"
+          },
+          "pronunciationGuide": {
+            "ja": "じじつとして あなたが おくった のだから、 せめられても しかた ありません。",
+            "en": "/ju sɛnt ɪt, soʊ ˈbiɪŋ bleɪmd ɪz ˌʌnəˈvɔɪdəbəl./",
+            "zh": "Shì shí shàng shì nǐ jì chū de， bèi zé guài yě shì méi bàn fǎ。"
           },
           "axisScores": {
             "psychological-safety": 0,

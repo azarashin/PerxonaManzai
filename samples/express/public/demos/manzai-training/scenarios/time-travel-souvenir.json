@@ -77,6 +77,11 @@
         "en": "I brought back future milk that expires next week as a souvenir.",
         "zh": "我從未來帶回一瓶下週到期的牛奶當伴手禮。"
       },
+      "pronunciationGuide": {
+        "ja": "みらいの お みやげに、 らいしゅう しょうみ きげんが きれる ぎゅうにゅうを もって きたで。",
+        "en": "/aɪ bɹɔt bæk ˈfjutʃɚ mɪlk ðæt ɪkˈspaɪɚz nɛkst wik æz ə ˌsuvəˈnɪɹ./",
+        "zh": "Wǒ cóng wèi lái dài huí yì píng xià zhōu dào qī de niú nǎi dāng bàn shǒu lǐ。"
+      },
       "reaction": {
         "description": {
           "ja": "未来の牛乳を貴重品のように誇らしく差し出す",
@@ -99,6 +104,11 @@
             "en": "That milk is not worth crossing time to bring back!",
             "zh": "這瓶牛奶根本不值得穿越時空帶回來啦！"
           },
+          "pronunciationGuide": {
+            "ja": "じくう こえて もって くるほどの ぎゅうにゅう ちゃうわ！",
+            "en": "/ðæt mɪlk ɪz nɑt wɝθ ˈkɹɔsɪŋ taɪm tu bɹɪŋ bæk!/",
+            "zh": "Zhè píng niú nǎi gēn běn bù zhí dé chuān yuè shí kōng dài huí lái lā！"
+          },
           "axisScores": {
             "temporal-logic": 30,
             "detail-targeting": 20,
@@ -118,6 +128,11 @@
             "en": "At least bring milk that lasts a hundred years!",
             "zh": "至少帶瓶能放一百年的牛奶啦！"
           },
+          "pronunciationGuide": {
+            "ja": "せめて ひゃくねん もつ ぎゅうにゅう えらべ！",
+            "en": "/æt list bɹɪŋ mɪlk ðæt læsts ə ˈhʌndɹəd jɪɹz!/",
+            "zh": "Zhì shǎo dài píng néng fàng yì bǎi nián de niú nǎi lā！"
+          },
           "axisScores": {
             "temporal-logic": 16,
             "detail-targeting": 18,
@@ -136,6 +151,11 @@
             "ja": "未来の牛乳、おいしそうやな。",
             "en": "Future milk sounds delicious.",
             "zh": "未來的牛奶聽起來很好喝。"
+          },
+          "pronunciationGuide": {
+            "ja": "みらいの ぎゅうにゅう、 おいしそうやな。",
+            "en": "/ˈfjutʃɚ mɪlk saʊndz dɪˈlɪʃəs./",
+            "zh": "Wèi lái de niú nǎi tīng qǐ lái hěn hǎo hē。"
           },
           "axisScores": {
             "temporal-logic": 2,
@@ -157,6 +177,11 @@
         "ja": "未来では割引シールが昨日貼られるから、買う前から半額やねん。",
         "en": "In the future, discount stickers are applied yesterday, so everything is half-price before purchase.",
         "zh": "未來的折扣貼紙昨天就貼好，所以買之前已經半價。"
+      },
+      "pronunciationGuide": {
+        "ja": "みらいでは わりびき しーるが きのう はられるから、 かう まえから はんがくやねん。",
+        "en": "/ɪn ðə ˈfjutʃɚ, dɪˈskaʊnt ˈstɪkɚz ɑɹ əˈplaɪd ˈjɛstɚˌdeɪ, soʊ ˈɛvɹiˌθɪŋ ɪz hæf - pɹaɪs bɪˈfɔɹ ˈpɝtʃəs./",
+        "zh": "Wèi lái de zhé kòu tiē zhǐ zuó tiān jiù tiē hǎo， suǒ yǐ mǎi zhī qián yǐ jīng bàn jià。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "Don't put yesterday's sticker in a future story—the timeline is lost!",
             "zh": "未來的折扣貼紙別昨天就貼，時間線迷路了啦！"
           },
+          "pronunciationGuide": {
+            "ja": "みらいの わりびき しーるを きのう はるな、 とき けいれつ まいごや！",
+            "en": "/doʊnt pʊt ˈjɛstɚˌdeɪz ˈstɪkɚ ɪn ə ˈfjutʃɚ ˈstɔɹi — ðə ˈtaɪmlaɪn ɪz lɔst!/",
+            "zh": "Wèi lái de zhé kòu tiē zhǐ bié zuó tiān jiù tiē， shí jiān xiàn mí lù le lā！"
+          },
           "axisScores": {
             "temporal-logic": 30,
             "detail-targeting": 20,
@@ -199,6 +229,11 @@
             "en": "If it's half-price before the sale, what was the original price?",
             "zh": "買之前就半價，那原價到底多少啦！"
           },
+          "pronunciationGuide": {
+            "ja": "かう まえから はんがくなら、 もとね なんぼやねん！",
+            "en": "/ɪf ɪts hæf - pɹaɪs bɪˈfɔɹ ðə seɪl, wʌt wɑz ðə ɚˈɪdʒənəl pɹaɪs?/",
+            "zh": "Mǎi zhī qián jiù bàn jià， nà yuán jià dào dǐ duō shǎo lā！"
+          },
           "axisScores": {
             "temporal-logic": 15,
             "detail-targeting": 18,
@@ -217,6 +252,11 @@
             "ja": "未来は買い物上手やな。",
             "en": "People in the future sure know how to shop.",
             "zh": "未來的人真會買東西。"
+          },
+          "pronunciationGuide": {
+            "ja": "みらいは かいもの じょうずやな。",
+            "en": "/ˈpipəl ɪn ðə ˈfjutʃɚ ʃʊɹ noʊ haʊ tu ʃɑp./",
+            "zh": "Wèi lái de rén zhēn huì mǎi dōng xī。"
           },
           "axisScores": {
             "temporal-logic": 2,
@@ -238,6 +278,11 @@
         "ja": "帰りの時刻表をなくしたから、到着した三日前に迎えに来てな。",
         "en": "I lost the return timetable, so pick me up three days before I arrive.",
         "zh": "我弄丟回程時刻表，所以請在我抵達前三天來接我。"
+      },
+      "pronunciationGuide": {
+        "ja": "かえりの じこくひょうを なくしたから、 とうちゃく した みっかまえに むかえに きてな。",
+        "en": "/aɪ lɔst ðə ɹɪˈtɝn ˈtaɪmˌteɪbəl, soʊ pɪk mi ʌp θɹi deɪz bɪˈfɔɹ aɪ ɚˈaɪv./",
+        "zh": "Wǒ nòng diū huí chéng shí kè biǎo， suǒ yǐ qǐng zài wǒ dǐ dá qián sān tiān lái jiē wǒ。"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "If I go before you arrive, there'll be nobody to pick up!",
             "zh": "抵達前去接你，現場根本沒人啦！"
           },
+          "pronunciationGuide": {
+            "ja": "とうちゃく まえに むかえに いっても、 まだ だれも おらんわ！",
+            "en": "/ɪf aɪ ɡoʊ bɪˈfɔɹ ju ɚˈaɪv, ˈðɛɹəl bi ˈnoʊˌbɑˌdi tu pɪk ʌp!/",
+            "zh": "Dǐ dá qián qù jiē nǐ， xiàn chǎng gēn běn méi rén lā！"
+          },
           "axisScores": {
             "temporal-logic": 30,
             "detail-targeting": 20,
@@ -280,6 +330,11 @@
             "en": "You expect me to wait at the station for three days?",
             "zh": "你要我在車站等三天嗎！"
           },
+          "pronunciationGuide": {
+            "ja": "みっかまえから えきで またせる きか！",
+            "en": "/ju ɪkˈspɛkt mi tu weɪt æt ðə ˈsteɪʃən fɔɹ θɹi deɪz?/",
+            "zh": "Nǐ yào wǒ zài chē zhàn děng sān tiān ma！"
+          },
           "axisScores": {
             "temporal-logic": 18,
             "detail-targeting": 18,
@@ -298,6 +353,11 @@
             "ja": "分かった、早めに迎えに行くわ。",
             "en": "Okay, I'll go early to pick you up.",
             "zh": "好，我會提早去接你。"
+          },
+          "pronunciationGuide": {
+            "ja": "わかった、 はやめに むかえに いくわ。",
+            "en": "/ˌoʊˈkeɪ, aɪl ɡoʊ ˈɝli tu pɪk ju ʌp./",
+            "zh": "Hǎo， wǒ huì tí zǎo qù jiē nǐ。"
           },
           "axisScores": {
             "temporal-logic": 2,

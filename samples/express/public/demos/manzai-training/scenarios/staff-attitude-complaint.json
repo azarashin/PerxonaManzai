@@ -112,6 +112,11 @@
         "en": "A staff member treated me dismissively. What will you do as the manager?",
         "zh": "店員對我的態度很敷衍。身為主管你要怎麼處理？"
       },
+      "pronunciationGuide": {
+        "ja": "てんいんに ぞんざいに あつかわれました。 せきにんしゃとして どう たいおう する んですか。",
+        "en": "/ə stæf ˈmɛmbɚ ˈtɹitɪd mi dɪˈsmɪsɪvli. wʌt wɪl ju du æz ðə ˈmænədʒɚ?/",
+        "zh": "Diàn yuán duì wǒ de tài dù hěn fū yǎn。 shēn wéi zhǔ guǎn nǐ yào zěn me chǔ lǐ？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "不快な思いをさせ申し訳ありません。いつ、どこで、どのような言動があったか順に伺えますか。",
             "en": "I'm sorry you were treated that way. Could you tell me when, where, and what was said or done?",
             "zh": "很抱歉讓您感到不舒服。可以依序告訴我時間、地點及當時的具體言行嗎？"
+          },
+          "pronunciationGuide": {
+            "ja": "ふかいな おもいを させ もうしわけ ありません。 いつ、 どこで、 どの ような げんどうが あったか じゅんに うかがえますか。",
+            "en": "/aɪm ˈsɑɹi ju wɝ ˈtɹitɪd ðæt weɪ. kʊd ju tɛl mi wɛn, wɛɹ, ənd wʌt wɑz sɛd ɔɹ dʌn?/",
+            "zh": "Hěn bào qiàn ràng nín gǎn dào bù shū fú。 kě yǐ yī xù gào sù wǒ shí jiān、 dì diǎn jí dāng shí de jù tǐ yán xíng ma？"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "I apologize that the interaction made you uncomfortable.",
             "zh": "對於這次互動讓您感到不舒服，我向您道歉。"
           },
+          "pronunciationGuide": {
+            "ja": "ご ふかいな おもいを させた ことは おわび します。",
+            "en": "/aɪ əˈpɑləˌdʒaɪz ðæt ðə ˌɪntɚˈækʃən meɪd ju ənˈkʌmfɚtəbəl./",
+            "zh": "Duì yú zhè cì hù dòng ràng nín gǎn dào bù shū fú， wǒ xiàng nín dào qiàn。"
+          },
           "axisScores": {
             "empathy": 20,
             "fact-checking": 2,
@@ -200,6 +215,11 @@
             "ja": "その店員は普段まじめなので、何か事情があったのでしょう。",
             "en": "That employee is usually reliable, so there must have been a reason.",
             "zh": "那位店員平常很認真，應該是有什麼原因。"
+          },
+          "pronunciationGuide": {
+            "ja": "その てんいんは ふだん まじめなので、 なにか じじょうが あった のでしょう。",
+            "en": "/ðæt ɛmˈplɔɪi ɪz ˈjuʒəwəli ɹɪˈlaɪəbəl, soʊ ðɛɹ mʌst hæv bɪn ə ˈɹizən./",
+            "zh": "Nà wèi diàn yuán píng cháng hěn rèn zhēn， yīng gāi shì yǒu shén me yuán yīn。"
           },
           "axisScores": {
             "empathy": 1,
@@ -234,6 +254,11 @@
         "en": "Yesterday evening at the register, they avoided eye contact and answered as if my question were a nuisance.",
         "zh": "昨晚在收銀台，我提問時對方不看我，回答也顯得很不耐煩。"
       },
+      "pronunciationGuide": {
+        "ja": "きのうの ゆうがた、 れじで しつもん しても めを あわせず、 めんどうそうに へんじを されました。",
+        "en": "/ˈjɛstɚˌdeɪ ˈivnɪŋ æt ðə ˈɹɛdʒɪstɚ, ðeɪ əˈvɔɪdɪd aɪ ˈkɑnˌtækt ənd ˈænsɚd æz ɪf maɪ ˈkwɛstʃən wɝ ə ˈnusəns./",
+        "zh": "Zuó wǎn zài shōu yín tái， wǒ tí wèn shí duì fāng bú kàn wǒ， huí dá yě xiǎn de hěn bú nài fán。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "時刻とレジを記録し、担当者と周囲へ別々に確認します。事実確認後に対応をご報告します。",
             "en": "I'll record the time and register, check separately with the employee and nearby staff, then report the facts.",
             "zh": "我會記錄時間與收銀台，分別詢問當事店員及附近同仁，查清後再向您回報。"
+          },
+          "pronunciationGuide": {
+            "ja": "じこくと れじを きろく し、 たんとうしゃと しゅういへ べつべつに かくにん します。 じじつ かくにんごに たいおうを ご ほうこく します。",
+            "en": "/aɪl ɹəˈkɔɹd ðə taɪm ənd ˈɹɛdʒɪstɚ, tʃɛk ˈsɛpɚətli wɪð ðə ɛmˈplɔɪi ənd ˈnɪɹˈbaɪ stæf, ðɛn ɹiˈpɔɹt ðə fækts./",
+            "zh": "Wǒ huì jì lù shí jiān yǔ shōu yín tái， fēn bié xún wèn dāng shì diàn yuán jí fù jìn tóng rén， chá qīng hòu zài xiàng nín huí bào。"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "I'll ask the employee who served you what happened.",
             "zh": "我會詢問當時服務您的店員。"
           },
+          "pronunciationGuide": {
+            "ja": "たんとう した てんいんに じじょうを きいて みます。",
+            "en": "/aɪl æsk ðə ɛmˈplɔɪi hu sɝvd ju wʌt ˈhæpənd./",
+            "zh": "Wǒ huì xún wèn dāng shí fú wù nín de diàn yuán。"
+          },
           "axisScores": {
             "empathy": 5,
             "fact-checking": 18,
@@ -327,6 +362,11 @@
             "ja": "その態度なら、本人をすぐ処分します。",
             "en": "If they acted that way, I'll discipline them immediately.",
             "zh": "如果真是那種態度，我會立刻處分他。"
+          },
+          "pronunciationGuide": {
+            "ja": "その たいどなら、 ほんにんを すぐ しょぶん します。",
+            "en": "/ɪf ðeɪ ˈæktɪd ðæt weɪ, aɪl ˈdɪsəplən ðɛm ˌɪˈmiˌdiətli./",
+            "zh": "Rú guǒ zhēn shì nà zhǒng tài dù， wǒ huì lì kè chǔ fèn tā。"
           },
           "axisScores": {
             "empathy": 8,
@@ -361,6 +401,11 @@
         "en": "When will you tell me what you found and how you will prevent this from happening again?",
         "zh": "何時能告訴我查核結果，以及如何避免同樣情況再發生？"
       },
+      "pronunciationGuide": {
+        "ja": "しらべた けっかと、 おなじ ことを ふせぐ ための たいおうは、 いつ おしえて もらえますか。",
+        "en": "/wɛn wɪl ju tɛl mi wʌt ju faʊnd ənd haʊ ju wɪl pɹɪˈvɛnt ðɪs fɹʌm ˈhæpənɪŋ əˈɡɛn?/",
+        "zh": "Hé shí néng gào sù wǒ chá hé jié guǒ， yǐ jí rú hé bì miǎn tóng yàng qíng kuàng zài fā shēng？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "明日中に確認結果と接遇改善策をご連絡します。個別の人事措置はお伝えできない点をご理解ください。",
             "en": "I'll report our findings and service improvements by tomorrow; individual personnel actions must remain private.",
             "zh": "我會在明天內回報查核結果與服務改善措施，但個別人事處置無法對外說明，敬請理解。"
+          },
+          "pronunciationGuide": {
+            "ja": "あしたちゅうに かくにん けっかと せっ ぐう かいぜんさくを ご れんらく します。 こべつの じんじ そちは お つたえ できない てんを ご りかい ください。",
+            "en": "/aɪl ɹiˈpɔɹt ˈaʊɚ ˈfaɪndɪŋz ənd ˈsɝvəs ˌɪmˈpɹuvmənts baɪ təˈmɑˌɹoʊ; ˌɪndəˈvɪdʒəwəl ˌpɝsəˈnɛl ˈækʃənz mʌst ɹɪˈmeɪn ˈpɹaɪvət./",
+            "zh": "Wǒ huì zài míng tiān nèi huí bào chá hé jié guǒ yǔ fú wù gǎi shàn cuò shī， dàn gè bié rén shì chǔ zhì wú fǎ duì wài shuō míng， jìng qǐng lǐ jiě。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "I'll tell the employee to improve their customer service.",
             "zh": "我會要求店員改善服務態度。"
           },
+          "pronunciationGuide": {
+            "ja": "せっ ぐうを みなおす よう てんいんに つたえます。",
+            "en": "/aɪl tɛl ðə ɛmˈplɔɪi tu ˌɪmˈpɹuv ðɛɹ ˈkʌstəmɚ ˈsɝvəs./",
+            "zh": "Wǒ huì yāo qiú diàn yuán gǎi shàn fú wù tài dù。"
+          },
           "axisScores": {
             "empathy": 8,
             "fact-checking": 7,
@@ -444,6 +499,11 @@
             "ja": "本人から直接謝らせるので、連絡先をお渡しします。",
             "en": "I'll give you the employee's contact details so they can apologize directly.",
             "zh": "我把店員的聯絡方式給您，讓他直接向您道歉。"
+          },
+          "pronunciationGuide": {
+            "ja": "ほんにんから ちょくせつ あやまらせるので、 れんらくさきを お わたし します。",
+            "en": "/aɪl ɡɪv ju ðə ɛmˈplɔɪiz ˈkɑnˌtækt dɪˈteɪlz soʊ ðeɪ kæn əˈpɑləˌdʒaɪz dɚˈɛktli./",
+            "zh": "Wǒ bǎ diàn yuán de lián luò fāng shì gěi nín， ràng tā zhí jiē xiàng nín dào qiàn。"
           },
           "axisScores": {
             "empathy": 6,
@@ -478,6 +538,11 @@
         "en": "When you defend the employee, it feels as though you think I'm exaggerating, and it becomes hard to continue.",
         "zh": "你替店員辯護，讓我覺得自己被當成誇大其詞，很難繼續說下去。"
       },
+      "pronunciationGuide": {
+        "ja": "てんいんを かばわれると、 わたしが おおげさに いって いる ようで はなし にくいです。",
+        "en": "/wɛn ju dɪˈfɛnd ðə ɛmˈplɔɪi, ɪt filz æz ðoʊ ju θɪŋk aɪm ɪɡˈzædʒɚˌeɪtɪŋ, ənd ɪt bɪˈkʌmz hɑɹd tu kənˈtɪnju./",
+        "zh": "Nǐ tì diàn yuán biàn hù， ràng wǒ jué de zì jǐ bèi dàng chéng kuā dà qí cí， hěn nán jì xù shuō xià qù。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "申告を軽く扱う言い方になり申し訳ありません。先入観を置き、昨日のレジでの言動から確認し直します。",
             "en": "I'm sorry I minimized your report. I'll set aside assumptions and restart with yesterday's register interaction.",
             "zh": "很抱歉我的說法輕忽了您的陳述。我會放下成見，從昨晚收銀台的言行重新確認。"
+          },
+          "pronunciationGuide": {
+            "ja": "しんこくを かるく あつかう いいかたに なり もうしわけ ありません。 せんにゅうかんを おき、 きのうの れじでの げんどうから かくにん し なおします。",
+            "en": "/aɪm ˈsɑɹi aɪ ˈmɪnəˌmaɪzd jɔɹ ɹiˈpɔɹt. aɪl sɛt əˈsaɪd əˈsʌmpʃənz ənd ɹiˈstɑɹt wɪð ˈjɛstɚˌdeɪz ˈɹɛdʒɪstɚ ˌɪntɚˈækʃən./",
+            "zh": "Hěn bào qiàn wǒ de shuō fǎ qīng hū le nín de chén shù。 wǒ huì fàng xià chéng jiàn， cóng zuó wǎn shōu yín tái de yán xíng chóng xīn què rèn。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "I'm sorry if you were offended. Do you have any evidence?",
             "zh": "如果讓您不舒服，我道歉。您有證據嗎？"
           },
+          "pronunciationGuide": {
+            "ja": "ふかいに させたなら あやまります。 なにか しょうこは ありますか。",
+            "en": "/aɪm ˈsɑɹi ɪf ju wɝ əˈfɛndəd. du ju hæv ˈɛni ˈɛvədəns?/",
+            "zh": "Rú guǒ ràng nín bù shū fú， wǒ dào qiàn。 nín yǒu zhèng jù ma？"
+          },
           "axisScores": {
             "empathy": 7,
             "fact-checking": 15,
@@ -561,6 +636,11 @@
             "ja": "気にしすぎではありませんか。忙しい時間帯でしたから。",
             "en": "Aren't you taking it too personally? It was a busy time.",
             "zh": "您是不是太在意了？當時正是忙碌時段。"
+          },
+          "pronunciationGuide": {
+            "ja": "きに しすぎでは ありませんか。 いそがしい じかん おびでしたから。",
+            "en": "/ˈɑɹənt ju ˈteɪkɪŋ ɪt tu ˈpɝsənəli? ɪt wɑz ə ˈbɪzi taɪm./",
+            "zh": "Nín shì bu shì tài zài yì le？ dāng shí zhèng shì máng lù shí duàn。"
           },
           "axisScores": {
             "empathy": 0,

@@ -112,6 +112,11 @@
         "en": "I want to choose my own path. Please don't impose only your expectations.",
         "zh": "我想自己決定未來，請不要只把你的期待強加給我。"
       },
+      "pronunciationGuide": {
+        "ja": "じぶんの しんろは じぶんで きめたい。 おやの きぼうだけを おしつけないで。",
+        "en": "/aɪ wɑnt tu tʃuz maɪ oʊn pæθ. pliz doʊnt ˌɪmˈpoʊz ˈoʊnli jɔɹ ˌɛkspɛkˈteɪʃənz./",
+        "zh": "Wǒ xiǎng zì jǐ jué dìng wèi lái， qǐng bú yào zhī bǎ nǐ de qī dài qiáng jiā gěi wǒ。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「本人が望む進路の理由と、親が手放せない期待」を確かめ、双方の理由を別々に書き、結論を出す期限を決める。",
             "en": "Check the concern first; then write each side's reasons separately and set a decision timeline.",
             "zh": "先確認孩子想走此路的原因與父母難以放下的期待，再分開寫下雙方理由並設定決策時程。"
+          },
+          "pronunciationGuide": {
+            "ja": "「ほんにんが のぞむ しんろの りゆうと、 おやが てばなせない きたい」を たしかめ、 そうほうの りゆうを べつべつに かき、 けつろんを だす きげんを きめる。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn ɹaɪt itʃ saɪdz ˈɹizənz ˈsɛpɚətli ənd sɛt ə dɪˈsɪʒən ˈtaɪmlaɪn./",
+            "zh": "Xiān què rèn hái zi xiǎng zǒu cǐ lù de yuán yīn yǔ fù mǔ nán yǐ fàng xià de qī dài， zài fēn kāi xiě xià shuāng fāng lǐ yóu bìng shè dìng jué cè shí chéng。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "Just write each side's reasons separately and set a decision timeline, without more questions.",
             "zh": "先分開寫下雙方理由並設定決策時程，但暫不確認孩子想走此路的原因與父母難以放下的期待。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに そうほうの りゆうを べつべつに かき、 けつろんを だす きげんを きめる。ただし「ほんにんが のぞむ しんろの りゆうと、 おやが てばなせない きたい」の かくにんは あとまわしです。",
+            "en": "/dʒʌst ɹaɪt itʃ saɪdz ˈɹizənz ˈsɛpɚətli ənd sɛt ə dɪˈsɪʒən ˈtaɪmlaɪn, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān fēn kāi xiě xià shuāng fāng lǐ yóu bìng shè dìng jué cè shí chéng， dàn zàn bú què rèn hái zi xiǎng zǒu cǐ lù de yuán yīn yǔ fù mǔ nán yǐ fàng xià de qī dài。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -200,6 +215,11 @@
             "ja": "「本人が望む進路の理由と、親が手放せない期待」は関係ありません。親の判断に従わせます。",
             "en": "Do not write each side's reasons separately and set a decision timeline; the parent decides.",
             "zh": "孩子想走此路的原因與父母難以放下的期待並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「ほんにんが のぞむ しんろの りゆうと、 おやが てばなせない きたい」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt ɹaɪt itʃ saɪdz ˈɹizənz ˈsɛpɚətli ənd sɛt ə dɪˈsɪʒən ˈtaɪmlaɪn; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Hái zi xiǎng zǒu cǐ lù de yuán yīn yǔ fù mǔ nán yǐ fàng xià de qī dài bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -234,6 +254,11 @@
         "en": "What matters is specific evidence on costs, aptitude, and career prospects. How will you check it?",
         "zh": "重點是學費、適性與就業前景的具體資料。你會如何確認？"
       },
+      "pronunciationGuide": {
+        "ja": "たいせつな のは「がくひ・ てきせい・ しゅうしょく みとおしについての ぐたいてきな しりょう」です。 どう たしかめますか？",
+        "en": "/wʌt ˈmætɚz ɪz spəˈsɪfɪk ˈɛvədəns ɑn kɑsts, ˈæptəˌtud, ənd kɚˈɪɹ ˈpɹɑspɛkts. haʊ wɪl ju tʃɛk ɪt?/",
+        "zh": "Zhòng diǎn shì xué fèi、 shì xìng yǔ jiù yè qián jǐng de jù tǐ zī liào。 nǐ huì rú hé què rèn？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「学費・適性・就職見通しについての具体的な資料」を確かめ、学校説明会と経験者への質問で二つの進路を同じ基準で比べる。",
             "en": "Check the concern first; then compare both paths by the same criteria using school visits and alumni questions.",
             "zh": "先確認學費、適性與就業前景的具體資料，再透過說明會與前輩訪談，用相同標準比較兩條路。"
+          },
+          "pronunciationGuide": {
+            "ja": "「がくひ・ てきせい・ しゅうしょく みとおしについての ぐたいてきな しりょう」を たしかめ、 がっこう せつめいかいと けいけんしゃへの しつもんで ふたつの しんろを おなじ きじゅんで くらべる。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn kəmˈpɛɹ boʊθ pæðz baɪ ðə seɪm kɹaɪˈtɪɹiə ˈjuzɪŋ skul ˈvɪzɪts ənd əˈlʌmˌnaɪ ˈkwɛstʃənz./",
+            "zh": "Xiān què rèn xué fèi、 shì xìng yǔ jiù yè qián jǐng de jù tǐ zī liào， zài tòu guò shuō míng huì yǔ qián bèi fǎng tán， yòng xiāng tóng biāo zhǔn bǐ jiào liǎng tiáo lù。"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "Just compare both paths by the same criteria using school visits and alumni questions, without more questions.",
             "zh": "先透過說明會與前輩訪談，用相同標準比較兩條路，但暫不確認學費、適性與就業前景的具體資料。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに がっこう せつめいかいと けいけんしゃへの しつもんで ふたつの しんろを おなじ きじゅんで くらべる。ただし「がくひ・ てきせい・ しゅうしょく みとおしについての ぐたいてきな しりょう」の かくにんは あとまわしです。",
+            "en": "/dʒʌst kəmˈpɛɹ boʊθ pæðz baɪ ðə seɪm kɹaɪˈtɪɹiə ˈjuzɪŋ skul ˈvɪzɪts ənd əˈlʌmˌnaɪ ˈkwɛstʃənz, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān tòu guò shuō míng huì yǔ qián bèi fǎng tán， yòng xiāng tóng biāo zhǔn bǐ jiào liǎng tiáo lù， dàn zàn bú què rèn xué fèi、 shì xìng yǔ jiù yè qián jǐng de jù tǐ zī liào。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -327,6 +362,11 @@
             "ja": "「学費・適性・就職見通しについての具体的な資料」は関係ありません。親の判断に従わせます。",
             "en": "Do not compare both paths by the same criteria using school visits and alumni questions; the parent decides.",
             "zh": "學費、適性與就業前景的具體資料並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「がくひ・ てきせい・ しゅうしょく みとおしについての ぐたいてきな しりょう」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt kəmˈpɛɹ boʊθ pæðz baɪ ðə seɪm kɹaɪˈtɪɹiə ˈjuzɪŋ skul ˈvɪzɪts ənd əˈlʌmˌnaɪ ˈkwɛstʃənz; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Xué fèi、 shì xìng yǔ jiù yè qián jǐng de jù tǐ zī liào bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -361,6 +401,11 @@
         "en": "Can we decide specifically how to agree on a month of research followed by a child-led family meeting?",
         "zh": "可以具體決定如何約定一個月調查後，由孩子主導家庭會議說明依據嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "つぎに、 ほんにんが いっかげつ ちょうさ し、 かぞく かいぎで こんきょを せつめい する しこうを ごうい する ことを ぐたいてきに きめたいです。",
+        "en": "/kæn wi ˌdɪˈsaɪd spəˈsɪfɪkli haʊ tu əˈɡɹi ɑn ə mʌnθ ʌv ɹiˈsɝtʃ ˈfɑloʊd baɪ ə tʃaɪld - lɛd ˈfæməli ˈmitɪŋ?/",
+        "zh": "Kě yǐ jù tǐ jué dìng rú hé yuē dìng yí gè yuè diào chá hòu， yóu hái zi zhǔ dǎo jiā tíng huì yì shuō míng yī jù ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「最終決定を誰が担い、親がどこまで支援できるか」を確かめ、本人が一か月調査し、家族会議で根拠を説明する試行を合意する。",
             "en": "Check the concern first; then agree on a month of research followed by a child-led family meeting.",
             "zh": "先確認誰負責最終決定以及父母能提供多少支持，再約定一個月調查後，由孩子主導家庭會議說明依據。"
+          },
+          "pronunciationGuide": {
+            "ja": "「さいしゅう けっていを だれが にない、 おやが どこまで しえん できるか」を たしかめ、 ほんにんが いっかげつ ちょうさ し、 かぞく かいぎで こんきょを せつめい する しこうを ごうい する。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn əˈɡɹi ɑn ə mʌnθ ʌv ɹiˈsɝtʃ ˈfɑloʊd baɪ ə tʃaɪld - lɛd ˈfæməli ˈmitɪŋ./",
+            "zh": "Xiān què rèn shuí fù zé zuì zhōng jué dìng yǐ jí fù mǔ néng tí gōng duō shǎo zhī chí， zài yuē dìng yí gè yuè diào chá hòu， yóu hái zi zhǔ dǎo jiā tíng huì yì shuō míng yī jù。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "Just agree on a month of research followed by a child-led family meeting, without more questions.",
             "zh": "先約定一個月調查後，由孩子主導家庭會議說明依據，但暫不確認誰負責最終決定以及父母能提供多少支持。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに ほんにんが いっかげつ ちょうさ し、 かぞく かいぎで こんきょを せつめい する しこうを ごうい する。ただし「さいしゅう けっていを だれが にない、 おやが どこまで しえん できるか」の かくにんは あとまわしです。",
+            "en": "/dʒʌst əˈɡɹi ɑn ə mʌnθ ʌv ɹiˈsɝtʃ ˈfɑloʊd baɪ ə tʃaɪld - lɛd ˈfæməli ˈmitɪŋ, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān yuē dìng yí gè yuè diào chá hòu， yóu hái zi zhǔ dǎo jiā tíng huì yì shuō míng yī jù， dàn zàn bú què rèn shuí fù zé zuì zhōng jué dìng yǐ jí fù mǔ néng tí gōng duō shǎo zhī chí。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -444,6 +499,11 @@
             "ja": "「最終決定を誰が担い、親がどこまで支援できるか」は関係ありません。親の判断に従わせます。",
             "en": "Do not agree on a month of research followed by a child-led family meeting; the parent decides.",
             "zh": "誰負責最終決定以及父母能提供多少支持並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「さいしゅう けっていを だれが にない、 おやが どこまで しえん できるか」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt əˈɡɹi ɑn ə mʌnθ ʌv ɹiˈsɝtʃ ˈfɑloʊd baɪ ə tʃaɪld - lɛd ˈfæməli ˈmitɪŋ; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Shuí fù zé zuì zhōng jué dìng yǐ jí fù mǔ néng tí gōng duō shǎo zhī chí bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -478,6 +538,11 @@
         "en": "It became hard to talk when you ignored how imposed expectations made the child feel their life was not respected.",
         "zh": "你忽略被強加期待而感到自己人生不受尊重的影響，讓我很難繼續談。"
       },
+      "pronunciationGuide": {
+        "ja": "「きたいを おしつけられ、 ほんにんの じんせいが そんちょう されないと かんじた えいきょう」を むし された ようで、 はなし づらく なりました。",
+        "en": "/ɪt bɪˈkeɪm hɑɹd tu tɔk wɛn ju ˌɪɡˈnɔɹd haʊ ˌɪmˈpoʊzd ˌɛkspɛkˈteɪʃənz meɪd ðə tʃaɪld fil ðɛɹ laɪf wɑz nɑt ɹɪˈspɛktɪd./",
+        "zh": "Nǐ hū lüè bèi qiáng jiā qī dài ér gǎn dào zì jǐ rén shēng bú shòu zūn zhòng de yǐng xiǎng， ràng wǒ hěn nán jì xù tán。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「期待を押し付けられ、本人の人生が尊重されないと感じた影響」を確かめ、押し付けたことを認め、反論せずに本人の優先順位を聞き直す。",
             "en": "Check the concern first; then acknowledge the pressure and hear the child's priorities again without rebuttal.",
             "zh": "先確認被強加期待而感到自己人生不受尊重的影響，再承認施壓，不反駁地重新聽孩子的優先順序。"
+          },
+          "pronunciationGuide": {
+            "ja": "「きたいを おしつけられ、 ほんにんの じんせいが そんちょう されないと かんじた えいきょう」を たしかめ、 おしつけた ことを みとめ、 はんろん せずに ほんにんの ゆうせん じゅんいを きき なおす。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn ækˈnɑlɪdʒ ðə ˈpɹɛʃɚ ənd hiɹ ðə tʃaɪldz pɹaɪˈɔɹətiz əˈɡɛn wɪˈθaʊt ɹɪˈbʌtəl./",
+            "zh": "Xiān què rèn bèi qiáng jiā qī dài ér gǎn dào zì jǐ rén shēng bú shòu zūn zhòng de yǐng xiǎng， zài chéng rèn shī yā， bù fǎn bó dì chóng xīn tīng hái zi de yōu xiān shùn xù。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "Just acknowledge the pressure and hear the child's priorities again without rebuttal, without more questions.",
             "zh": "先承認施壓，不反駁地重新聽孩子的優先順序，但暫不確認被強加期待而感到自己人生不受尊重的影響。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに おしつけた ことを みとめ、 はんろん せずに ほんにんの ゆうせん じゅんいを きき なおす。ただし「きたいを おしつけられ、 ほんにんの じんせいが そんちょう されないと かんじた えいきょう」の かくにんは あとまわしです。",
+            "en": "/dʒʌst ækˈnɑlɪdʒ ðə ˈpɹɛʃɚ ənd hiɹ ðə tʃaɪldz pɹaɪˈɔɹətiz əˈɡɛn wɪˈθaʊt ɹɪˈbʌtəl, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān chéng rèn shī yā， bù fǎn bó dì chóng xīn tīng hái zi de yōu xiān shùn xù， dàn zàn bú què rèn bèi qiáng jiā qī dài ér gǎn dào zì jǐ rén shēng bú shòu zūn zhòng de yǐng xiǎng。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -561,6 +636,11 @@
             "ja": "「期待を押し付けられ、本人の人生が尊重されないと感じた影響」は関係ありません。親の判断に従わせます。",
             "en": "Do not acknowledge the pressure and hear the child's priorities again without rebuttal; the parent decides.",
             "zh": "被強加期待而感到自己人生不受尊重的影響並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「きたいを おしつけられ、 ほんにんの じんせいが そんちょう されないと かんじた えいきょう」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt ækˈnɑlɪdʒ ðə ˈpɹɛʃɚ ənd hiɹ ðə tʃaɪldz pɹaɪˈɔɹətiz əˈɡɛn wɪˈθaʊt ɹɪˈbʌtəl; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Bèi qiáng jiā qī dài ér gǎn dào zì jǐ rén shēng bú shòu zūn zhòng de yǐng xiǎng bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,

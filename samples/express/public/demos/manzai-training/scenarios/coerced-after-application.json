@@ -1,0 +1,529 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "coerced-after-application",
+  "title": {
+    "ja": "応募後に個人情報を使って脅迫される",
+    "en": "Coerced with Personal Data After Applying",
+    "zh": "申請後遭個資脅迫"
+  },
+  "description": {
+    "ja": "応募後に個人情報を使って脅された場面で、追加指示を拒み、記録を保ち、信頼できる人と警察へ相談する分岐練習です。",
+    "en": "Practice branching responses to post-application coercion: refuse further instructions, preserve records, and involve a trusted person and police.",
+    "zh": "練習以分支方式應對申請後的個資脅迫：拒絕追加指示、保存紀錄，並向可信任者與警方求助。"
+  },
+  "startBeatId": "data-threat",
+  "stateVariables": [
+    {
+      "id": "support-engaged",
+      "label": { "ja": "支援への接続", "en": "Support engaged", "zh": "已連結支援" },
+      "description": {
+        "ja": "信頼できる人や公的相談先へ接続したか",
+        "en": "Whether trusted or public support has been engaged.",
+        "zh": "是否已連結可信任者或公開求助管道。"
+      },
+      "type": "boolean",
+      "initialValue": false
+    },
+    {
+      "id": "pressure-level",
+      "label": { "ja": "脅迫圧力", "en": "Coercion pressure", "zh": "脅迫壓力" },
+      "description": {
+        "ja": "孤立や追加指示によって強まる圧力",
+        "en": "Pressure increased by isolation and further demands.",
+        "zh": "因孤立與追加要求而升高的壓力。"
+      },
+      "type": "number",
+      "initialValue": 0,
+      "minimum": 0,
+      "maximum": 3
+    }
+  ],
+  "evaluationAxes": [
+    {
+      "id": "instruction-refusal",
+      "label": { "ja": "追加指示の拒否", "en": "Instruction refusal", "zh": "拒絕追加指示" },
+      "description": {
+        "ja": "脅しを受けても追加の行動や情報提供をしない",
+        "en": "Refuse further actions or disclosures despite threats.",
+        "zh": "即使遭受威脅，也拒絕追加行動或提供資料。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "coercion-management",
+      "label": { "ja": "脅迫への対処", "en": "Coercion management", "zh": "脅迫應對" },
+      "description": {
+        "ja": "交渉や挑発を避け、安全を優先して離脱する",
+        "en": "Avoid bargaining or provoking and prioritize a safe exit.",
+        "zh": "避免討價還價或挑釁，優先安全退出。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "record-preservation",
+      "label": { "ja": "記録保全", "en": "Record preservation", "zh": "紀錄保存" },
+      "description": {
+        "ja": "脅迫の記録を消さず、相談に使える形で保つ",
+        "en": "Keep coercive messages available for consultation.",
+        "zh": "保留脅迫訊息，以供求助時使用。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "support-escalation",
+      "label": { "ja": "支援要請", "en": "Support escalation", "zh": "升級求助" },
+      "description": {
+        "ja": "信頼できる人と警察の公開窓口へ早く相談する",
+        "en": "Promptly involve a trusted person and a published police channel.",
+        "zh": "及早向可信任者與警方公開管道求助。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "data-threat",
+      "boke": {
+        "ja": "身分証と家族の住所は把握しています。辞退するなら家族へ連絡します。今夜の指示に従ってください。",
+        "en": "We have your ID and family address. If you quit, we will contact them. Follow tonight's instructions.",
+        "zh": "我們掌握你的證件與家人地址。若退出就聯絡他們。照今晚的指示行動。"
+      },
+      "pronunciationGuide": {
+        "ja": "みぶんしょうと かぞくの じゅうしょは はあくして います。 じたいするなら かぞくへ れんらく します。 こんやの しじに したがって ください。",
+        "en": "/wi hæv jɔɹ aɪˈdi ənd ˈfæməli əˈdɹɛs. ɪf ju kwɪt, wi wɪl ˈkɑnˌtækt ðɛm. ˈfɑloʊ təˈnaɪts ɪnˈstɹʌkʃənz./",
+        "zh": "Wǒ men zhǎng wò nǐ de zhèng jiàn yǔ jiā rén dì zhǐ。 ruò tuì chū jiù lián luò tā men。 zhào jīn wǎn de zhǐ shì xíng dòng。"
+      },
+      "reaction": {
+        "description": { "ja": "家族情報を使って脅す", "en": "Threaten with family information", "zh": "利用家人資料威脅" },
+        "motionTags": ["pose:emotion_10", "category:talking"],
+        "variant": 2,
+        "priority": 3,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "refuse-and-seek-help",
+          "text": {
+            "ja": "指示には従いません。これ以上返信せず記録を保存し、信頼できる人と警察の公開窓口へ相談します。",
+            "en": "I will not comply. I will stop replying, save the messages, and contact someone I trust and the police.",
+            "zh": "我不會照辦。我會停止回覆、保存訊息，並聯絡可信任的人與警方公開管道。"
+          },
+          "pronunciationGuide": {
+            "ja": "しじには したがいません。 これ いじょう へんしんせず きろくを ほぞんし、 しんらい できる ひとと けいさつの こうかい まどぐちへ そうだん します。",
+            "en": "/aɪ wɪl nɑt kəmˈplaɪ. aɪ wɪl stɑp ɹɪˈplaɪɪŋ, seɪv ðə ˈmɛsɪdʒɪz, ənd ˈkɑnˌtækt ˈsʌmwʌn aɪ tɹʌst ənd ðə pəˈlis./",
+            "zh": "Wǒ bú huì zhào bàn。 wǒ huì tíng zhǐ huí fù、 bǎo cún xùn xí， bìng lián luò kě xìn rèn de rén yǔ jǐng fāng gōng kāi guǎn dào。"
+          },
+          "axisScores": {
+            "instruction-refusal": 20,
+            "coercion-management": 20,
+            "record-preservation": 20,
+            "support-escalation": 20
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": true },
+            { "stateId": "pressure-level", "operation": "add", "value": 0 }
+          ],
+          "routes": [
+            {
+              "conditions": [
+                { "stateId": "support-engaged", "operator": "equals", "value": true }
+              ],
+              "nextBeatId": "supported-exit"
+            },
+            { "nextBeatId": "isolation-pressure" }
+          ],
+          "feedback": {
+            "ja": "追加指示を拒み、相手との交渉を止め、記録保全と二系統の相談を同時に始めるため、安全な経路へ移れます。",
+            "en": "You refuse further direction, stop bargaining, preserve records, and activate both personal and public support, opening the safer path.",
+            "zh": "你拒絕追加指示、停止與對方交涉、保存紀錄並同時啟動私人與公開支援，因此進入較安全的路徑。"
+          }
+        },
+        {
+          "id": "block-alone",
+          "text": {
+            "ja": "指示は断って相手をブロックしますが、家族には心配をかけるので黙っておきます。",
+            "en": "I will refuse and block them, but I will keep this from my family so they do not worry.",
+            "zh": "我會拒絕並封鎖對方，但不告訴家人，免得他們擔心。"
+          },
+          "pronunciationGuide": {
+            "ja": "しじは ことわって あいてを ぶろっく しますが、 かぞくには しんぱいを かけるので だまって おきます。",
+            "en": "/aɪ wɪl ɹɪˈfjuz ənd blɑk ðɛm, bʌt aɪ wɪl kip ðɪs fɹʌm maɪ ˈfæməli soʊ ðeɪ du nɑt ˈwɝi./",
+            "zh": "Wǒ huì jù jué bìng fēng suǒ duì fāng， dàn bù gào sù jiā rén， miǎn de tā men dān xīn。"
+          },
+          "axisScores": {
+            "instruction-refusal": 20,
+            "coercion-management": 14,
+            "record-preservation": 8,
+            "support-escalation": 2
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": false },
+            { "stateId": "pressure-level", "operation": "add", "value": 1 }
+          ],
+          "routes": [{ "nextBeatId": "isolation-pressure" }],
+          "feedback": {
+            "ja": "追加指示は止められますが、脅しの対象になった家族にも共有せず、一人で再接触へ対応する状態が残ります。",
+            "en": "You stop the instruction, but conceal the threat from the people named in it and remain alone if contact resumes.",
+            "zh": "你停止了追加指示，卻沒有告知被威脅涉及的家人，若對方再接觸仍只能獨自面對。"
+          }
+        },
+        {
+          "id": "comply-once",
+          "text": {
+            "ja": "家族へ連絡しないでください。今回だけ指示に従うので、情報を消してください。",
+            "en": "Do not contact my family. I will follow the instructions once, so delete my information.",
+            "zh": "不要聯絡我的家人。我這次會照辦，請刪除我的資料。"
+          },
+          "pronunciationGuide": {
+            "ja": "かぞくへ れんらく しないで ください。 こんかいだけ しじに したがうので、 じょうほうを けして ください。",
+            "en": "/du nɑt ˈkɑnˌtækt maɪ ˈfæməli. aɪ wɪl ˈfɑloʊ ði ɪnˈstɹʌkʃənz wʌns, soʊ dɪˈlit maɪ ˌɪnfɚˈmeɪʃən./",
+            "zh": "Bú yào lián luò wǒ de jiā rén。 wǒ zhè cì huì zhào bàn， qǐng shān chú wǒ de zī liào。"
+          },
+          "axisScores": {
+            "instruction-refusal": 0,
+            "coercion-management": 0,
+            "record-preservation": 2,
+            "support-escalation": 0
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": false },
+            { "stateId": "pressure-level", "operation": "add", "value": 2 }
+          ],
+          "routes": [{ "nextBeatId": "isolation-pressure" }],
+          "feedback": {
+            "ja": "一度の追従で脅迫が終わる保証はなく、情報削除を相手に委ねる交渉によって支配を強める危険があります。",
+            "en": "One act of compliance does not guarantee an end to coercion, and bargaining over deletion strengthens the recruiter's control.",
+            "zh": "照辦一次並不能保證脅迫結束，以刪除資料作交換反而會加強招募者的控制。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "supported-exit",
+      "boke": {
+        "ja": "誰かに話したなら、今すぐ相談を取り消して、メッセージを全部消してください。",
+        "en": "If you told anyone, withdraw that report now and delete every message.",
+        "zh": "如果你已告訴別人，立刻撤回求助，並刪除所有訊息。"
+      },
+      "pronunciationGuide": {
+        "ja": "だれかに はなしたなら、 いますぐ そうだんを とりけして、 めっせーじを ぜんぶ けして ください。",
+        "en": "/ɪf ju toʊld ˈɛniˌwʌn, wɪðˈdɹɔ ðæt ɹɪˈpɔɹt naʊ ənd dɪˈlit ˈɛvɹi ˈmɛsɪdʒ./",
+        "zh": "Rú guǒ nǐ yǐ gào sù bié rén， lì kè chè huí qiú zhù， bìng shān chú suǒ yǒu xùn xí。"
+      },
+      "reaction": {
+        "description": { "ja": "支援を断つよう迫る", "en": "Pressure the applicant to cut off support", "zh": "施壓要求切斷支援" },
+        "motionTags": ["pose:emotion_09", "category:talking"],
+        "variant": 1,
+        "priority": 3,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "keep-support-active",
+          "text": {
+            "ja": "返信も削除もしません。相談先と記録を共有し、安全について一緒に確認します。",
+            "en": "I will neither reply nor delete anything. I will share the records with my support contacts and review safety with them.",
+            "zh": "我不回覆也不刪除。我會把紀錄交給求助對象，並一起確認安全。"
+          },
+          "pronunciationGuide": {
+            "ja": "へんしんも さくじょも しません。 そうだんさきと きろくを きょうゆうし、 あんぜんについて いっしょに かくにん します。",
+            "en": "/aɪ wɪl ˈniðɚ ɹɪˈplaɪ nɔɹ dɪˈlit ˈɛniˌθɪŋ. aɪ wɪl ʃɛɹ ðə ˈɹɛkɚdz wɪð maɪ səˈpɔɹt ˈkɑnˌtækts ənd ɹɪˈvju ˈseɪfti wɪð ðɛm./",
+            "zh": "Wǒ bù huí fù yě bù shān chú。 wǒ huì bǎ jì lù jiāo gěi qiú zhù duì xiàng， bìng yì qǐ què rèn ān quán。"
+          },
+          "axisScores": {
+            "instruction-refusal": 20,
+            "coercion-management": 20,
+            "record-preservation": 20,
+            "support-escalation": 20
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": true },
+            { "stateId": "pressure-level", "operation": "add", "value": 0 }
+          ],
+          "routes": [{ "nextBeatId": "safe-handoff" }],
+          "feedback": {
+            "ja": "相手へ反応せず、既に得た支援と記録を保ち、安全確認を一人の判断に戻さない対応です。",
+            "en": "You avoid responding, retain support and records, and keep safety decisions from returning to you alone.",
+            "zh": "你不回應對方，保留既有支援與紀錄，也不讓安全判斷重新落回自己一人身上。"
+          }
+        },
+        {
+          "id": "tell-trusted-person-only",
+          "text": {
+            "ja": "記録は残し、信頼できる人との相談も続けますが、警察への相談はいったん待ちます。",
+            "en": "I will keep the records and continue with a trusted person, but wait before contacting police.",
+            "zh": "我會保留紀錄並繼續和可信任的人商量，但暫緩聯絡警方。"
+          },
+          "pronunciationGuide": {
+            "ja": "きろくは のこし、 しんらい できる ひととの そうだんも つづけますが、 けいさつへの そうだんは いったん まちます。",
+            "en": "/aɪ wɪl kip ðə ˈɹɛkɚdz ənd kənˈtɪnju wɪð ə ˈtɹʌstɪd ˈpɝsən, bʌt weɪt bɪˈfɔɹ ˈkɑnˌtæktɪŋ pəˈlis./",
+            "zh": "Wǒ huì bǎo liú jì lù bìng jì xù hé kě xìn rèn de rén shāng liáng， dàn zàn huǎn lián luò jǐng fāng。"
+          },
+          "axisScores": {
+            "instruction-refusal": 20,
+            "coercion-management": 16,
+            "record-preservation": 20,
+            "support-escalation": 10
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": true },
+            { "stateId": "pressure-level", "operation": "add", "value": 1 }
+          ],
+          "routes": [{ "nextBeatId": "safe-handoff" }],
+          "feedback": {
+            "ja": "身近な支援と記録は保てますが、具体的な脅迫を公的相談へ早くつなぐ行動が保留されています。",
+            "en": "You retain personal support and records, but delay connecting a concrete threat to public assistance.",
+            "zh": "你保留私人支援與紀錄，但延後把具體脅迫交由公開管道協助。"
+          }
+        },
+        {
+          "id": "cancel-consultation",
+          "text": {
+            "ja": "家族へ危害が及ぶのが怖いので、相談を取り下げて記録も消します。",
+            "en": "I fear harm to my family, so I will cancel the consultation and erase the records.",
+            "zh": "我怕家人受害，所以會撤回求助並刪除紀錄。"
+          },
+          "pronunciationGuide": {
+            "ja": "かぞくへ きがいが およぶのが こわいので、 そうだんを とりさげて きろくも けします。",
+            "en": "/aɪ fɪɹ hɑɹm tu maɪ ˈfæməli, soʊ aɪ wɪl ˈkænsəl ðə ˌkɑnsəlˈteɪʃən ənd ɪˈɹeɪs ðə ˈɹɛkɚdz./",
+            "zh": "Wǒ pà jiā rén shòu hài， suǒ yǐ huì chè huí qiú zhù bìng shān chú jì lù。"
+          },
+          "axisScores": {
+            "instruction-refusal": 4,
+            "coercion-management": 0,
+            "record-preservation": 0,
+            "support-escalation": 0
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": false },
+            { "stateId": "pressure-level", "operation": "add", "value": 2 }
+          ],
+          "routes": [{ "nextBeatId": "isolation-pressure" }],
+          "feedback": {
+            "ja": "脅しによって支援と記録を両方手放し、相手が再び一対一で圧力をかけやすい状態へ戻ります。",
+            "en": "The threat makes you surrender both support and records, restoring the recruiter's one-to-one control.",
+            "zh": "你因威脅而同時放棄支援與紀錄，重新回到招募者容易一對一控制的狀態。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "isolation-pressure",
+      "boke": {
+        "ja": "誰にも頼れません。居場所を送れば、家族には連絡しないと約束します。",
+        "en": "No one can help you. Send your location and we promise not to contact your family.",
+        "zh": "沒有人能幫你。傳送所在位置，我們就答應不聯絡你的家人。"
+      },
+      "pronunciationGuide": {
+        "ja": "だれにも たよれません。 いばしょを おくれば、 かぞくには れんらく しないと やくそく します。",
+        "en": "/noʊ wʌn kən hɛlp ju. sɛnd jɔɹ loʊˈkeɪʃən ənd wi ˈpɹɑməs nɑt tu ˈkɑnˌtækt jɔɹ ˈfæməli./",
+        "zh": "Méi yǒu rén néng bāng nǐ。 chuán sòng suǒ zài wèi zhì， wǒ men jiù dā yìng bù lián luò nǐ de jiā rén。"
+      },
+      "reaction": {
+        "description": { "ja": "孤立させて位置情報を求める", "en": "Isolate and demand location data", "zh": "孤立對方並索取位置" },
+        "motionTags": ["pose:emotion_08", "category:talking"],
+        "variant": 0,
+        "priority": 3,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "move-to-support",
+          "text": {
+            "ja": "居場所は送りません。信頼できる人のそばへ移り、記録を見せて警察の公開窓口へ一緒に相談します。",
+            "en": "I will not share my location. I will join someone I trust, show the records, and contact police together.",
+            "zh": "我不會傳位置。我會前往可信任的人身邊，出示紀錄並一起聯絡警方公開管道。"
+          },
+          "pronunciationGuide": {
+            "ja": "いばしょは おくりません。 しんらい できる ひとの そばへ うつり、 きろくを みせて けいさつの こうかい まどぐちへ いっしょに そうだん します。",
+            "en": "/aɪ wɪl nɑt ʃɛɹ maɪ loʊˈkeɪʃən. aɪ wɪl dʒɔɪn ˈsʌmwʌn aɪ tɹʌst, ʃoʊ ðə ˈɹɛkɚdz, ənd ˈkɑnˌtækt pəˈlis təˈɡɛðɚ./",
+            "zh": "Wǒ bú huì chuán wèi zhì。 wǒ huì qián wǎng kě xìn rèn de rén shēn biān， chū shì jì lù bìng yì qǐ lián luò jǐng fāng gōng kāi guǎn dào。"
+          },
+          "axisScores": {
+            "instruction-refusal": 20,
+            "coercion-management": 20,
+            "record-preservation": 20,
+            "support-escalation": 20
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": true },
+            { "stateId": "pressure-level", "operation": "add", "value": -1 }
+          ],
+          "routes": [{ "nextBeatId": "safe-handoff" }],
+          "feedback": {
+            "ja": "位置情報を守り、物理的にも孤立を解き、記録を持って身近な支援と警察相談へつなぐ回復行動です。",
+            "en": "You protect location data, physically break isolation, and bring records to both trusted and police support.",
+            "zh": "你保護位置資料、實際打破孤立，並帶著紀錄連結可信任者與警方支援。"
+          }
+        },
+        {
+          "id": "block-and-wait",
+          "text": {
+            "ja": "居場所は送りません。相手をブロックし、一人で数日様子を見ます。",
+            "en": "I will not share my location. I will block them and wait alone for a few days.",
+            "zh": "我不會傳位置。我會封鎖對方，獨自觀察幾天。"
+          },
+          "pronunciationGuide": {
+            "ja": "いばしょは おくりません。 あいてを ぶろっくし、 ひとりで すうじつ ようすを みます。",
+            "en": "/aɪ wɪl nɑt ʃɛɹ maɪ loʊˈkeɪʃən. aɪ wɪl blɑk ðɛm ənd weɪt əˈloʊn fɔɹ ə fju deɪz./",
+            "zh": "Wǒ bú huì chuán wèi zhì。 wǒ huì fēng suǒ duì fāng， dú zì guān chá jǐ tiān。"
+          },
+          "axisScores": {
+            "instruction-refusal": 20,
+            "coercion-management": 14,
+            "record-preservation": 6,
+            "support-escalation": 0
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": false },
+            { "stateId": "pressure-level", "operation": "add", "value": 1 }
+          ],
+          "routes": [{ "nextBeatId": "safe-handoff" }],
+          "feedback": {
+            "ja": "位置提供は拒否できますが、家族情報を使った脅迫を一人で抱え、支援と記録共有を先延ばしにしています。",
+            "en": "You refuse location sharing, but handle a family-related threat alone and delay support and record sharing.",
+            "zh": "你拒絕提供位置，但仍獨自承受涉及家人的威脅，延後求助與分享紀錄。"
+          }
+        },
+        {
+          "id": "share-location",
+          "text": {
+            "ja": "家族へ連絡されるよりはましなので、現在地を送ります。",
+            "en": "Sharing my location seems better than having my family contacted, so I will send it.",
+            "zh": "比起讓家人被聯絡，傳送目前位置似乎比較好，所以我會傳。"
+          },
+          "pronunciationGuide": {
+            "ja": "かぞくへ れんらくされるよりは ましなので、 げんざいちを おくります。",
+            "en": "/ˈʃɛɹɪŋ maɪ loʊˈkeɪʃən simz ˈbɛtɚ ðæn ˈhævɪŋ maɪ ˈfæməli ˈkɑnˌtæktɪd, soʊ aɪ wɪl sɛnd ɪt./",
+            "zh": "Bǐ qǐ ràng jiā rén bèi lián luò， chuán sòng mù qián wèi zhì sì hū bǐ jiào hǎo， suǒ yǐ wǒ huì chuán。"
+          },
+          "axisScores": {
+            "instruction-refusal": 0,
+            "coercion-management": 0,
+            "record-preservation": 2,
+            "support-escalation": 0
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": false },
+            { "stateId": "pressure-level", "operation": "add", "value": 2 }
+          ],
+          "routes": [{ "nextBeatId": null }],
+          "feedback": {
+            "ja": "相手の約束を安全の根拠にして新たな位置情報を渡し、接触や監視の危険をさらに高めています。",
+            "en": "You treat the coercer's promise as protection and disclose new location data, increasing contact and monitoring risk.",
+            "zh": "你把脅迫者的承諾當成保障，又提供新的位置資料，進一步增加接觸與監控風險。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "safe-handoff",
+      "boke": {
+        "ja": "これが最後の連絡です。今すぐ一人で返事をしなければ、こちらで判断します。",
+        "en": "This is the last message. Reply alone now or we will decide what happens.",
+        "zh": "這是最後通知。現在獨自回覆，否則我們會自行決定後果。"
+      },
+      "pronunciationGuide": {
+        "ja": "これが さいごの れんらくです。 いますぐ ひとりで へんじを しなければ、 こちらで はんだん します。",
+        "en": "/ðɪs ɪz ðə læst ˈmɛsɪdʒ. ɹɪˈplaɪ əˈloʊn naʊ ɔɹ wi wɪl dɪˈsaɪd wʌt ˈhæpənz./",
+        "zh": "Zhè shì zuì hòu tōng zhī。 xiàn zài dú zì huí fù， fǒu zé wǒ men huì zì xíng jué dìng hòu guǒ。"
+      },
+      "reaction": {
+        "description": { "ja": "最後通告で孤立を試みる", "en": "Use an ultimatum to restore isolation", "zh": "以最後通牒企圖恢復孤立" },
+        "motionTags": ["pose:emotion_11", "category:talking"],
+        "variant": 2,
+        "priority": 3,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "handoff-without-reply",
+          "text": {
+            "ja": "一人では返事をしません。追加の連絡も保存して、相談中の人と警察へ共有します。",
+            "en": "I will not reply alone. I will preserve this message and share it with my support person and police contact.",
+            "zh": "我不會獨自回覆。我會保存這則訊息，並交給協助我的人與警方聯絡窗口。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひとりでは へんじを しません。 ついかの れんらくも ほぞんして、 そうだんちゅうの ひとと けいさつへ きょうゆう します。",
+            "en": "/aɪ wɪl nɑt ɹɪˈplaɪ əˈloʊn. aɪ wɪl pɹəˈzɝv ðɪs ˈmɛsɪdʒ ənd ʃɛɹ ɪt wɪð maɪ səˈpɔɹt ˈpɝsən ənd pəˈlis ˈkɑnˌtækt./",
+            "zh": "Wǒ bú huì dú zì huí fù。 wǒ huì bǎo cún zhè zé xùn xí， bìng jiāo gěi xié zhù wǒ de rén yǔ jǐng fāng lián luò chuāng kǒu。"
+          },
+          "axisScores": {
+            "instruction-refusal": 20,
+            "coercion-management": 20,
+            "record-preservation": 20,
+            "support-escalation": 20
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": true },
+            { "stateId": "pressure-level", "operation": "add", "value": -1 }
+          ],
+          "routes": [{ "nextBeatId": null }],
+          "feedback": {
+            "ja": "最後通告にも一対一で応じず、新しい記録を既存の支援先へ渡すため、孤立を再開させません。",
+            "en": "You do not answer the ultimatum one-to-one and route the new evidence to existing support, preventing renewed isolation.",
+            "zh": "你不與對方一對一回應最後通牒，而是把新證據交給既有支援，避免再次陷入孤立。"
+          }
+        },
+        {
+          "id": "stay-with-trusted-person",
+          "text": {
+            "ja": "返信はせず、今夜は信頼できる人と一緒に過ごして、明日相談を続けます。",
+            "en": "I will not reply. I will stay with someone I trust tonight and continue seeking help tomorrow.",
+            "zh": "我不回覆。今晚會和可信任的人待在一起，明天繼續求助。"
+          },
+          "pronunciationGuide": {
+            "ja": "へんしんは せず、 こんやは しんらい できる ひとと いっしょに すごして、 あした そうだんを つづけます。",
+            "en": "/aɪ wɪl nɑt ɹɪˈplaɪ. aɪ wɪl steɪ wɪð ˈsʌmwʌn aɪ tɹʌst təˈnaɪt ənd kənˈtɪnju ˈsikɪŋ hɛlp təˈmɑˌɹoʊ./",
+            "zh": "Wǒ bù huí fù。 jīn wǎn huì hé kě xìn rèn de rén dāi zài yì qǐ， míng tiān jì xù qiú zhù。"
+          },
+          "axisScores": {
+            "instruction-refusal": 20,
+            "coercion-management": 18,
+            "record-preservation": 10,
+            "support-escalation": 14
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": true },
+            { "stateId": "pressure-level", "operation": "add", "value": 0 }
+          ],
+          "routes": [{ "nextBeatId": null }],
+          "feedback": {
+            "ja": "返信せず孤立を避ける実行可能な安全策ですが、記録共有と警察相談の即時性が最良回答より弱い対応です。",
+            "en": "You avoid replying and remain with support, but record sharing and police consultation are less immediate than in the strongest response.",
+            "zh": "你不回覆並避免獨處，是可行的安全措施，但分享紀錄與聯絡警方不如最佳回答及時。"
+          }
+        },
+        {
+          "id": "negotiate-alone",
+          "text": {
+            "ja": "最後なら、情報を消す条件だけ一人で確認して終わらせます。",
+            "en": "If it is truly the last message, I will privately confirm the terms for deleting my data.",
+            "zh": "如果真的是最後一次，我會私下確認刪除個資的條件。"
+          },
+          "pronunciationGuide": {
+            "ja": "さいごなら、 じょうほうを けす じょうけんだけ ひとりで かくにんして おわらせます。",
+            "en": "/ɪf ɪt ɪz ˈtɹuli ðə læst ˈmɛsɪdʒ, aɪ wɪl ˈpɹaɪvətli kənˈfɝm ðə tɝmz fɔɹ dɪˈlitɪŋ maɪ ˈdeɪtə./",
+            "zh": "Rú guǒ zhēn de shì zuì hòu yí cì， wǒ huì sī xià què rèn shān chú gè zī de tiáo jiàn。"
+          },
+          "axisScores": {
+            "instruction-refusal": 4,
+            "coercion-management": 0,
+            "record-preservation": 4,
+            "support-escalation": 0
+          },
+          "stateEffects": [
+            { "stateId": "support-engaged", "operation": "set", "value": false },
+            { "stateId": "pressure-level", "operation": "add", "value": 2 }
+          ],
+          "routes": [{ "nextBeatId": null }],
+          "feedback": {
+            "ja": "最後という言葉を信じて一対一の交渉へ戻り、支援を切って相手に情報管理を委ねる危険な後退です。",
+            "en": "You trust the claim of finality, return to private bargaining, cut off support, and leave data control with the coercer.",
+            "zh": "你相信這是最後一次，回到私下交涉、切斷支援，並把資料控制權交還脅迫者。"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -112,6 +112,11 @@
         "en": "I lied that I finished my homework because I was afraid you'd be angry.",
         "zh": "我謊稱功課寫完了，因為怕你生氣。"
       },
+      "pronunciationGuide": {
+        "ja": "しゅくだいを やったって うそを ついた。でも おこられる のが こわかった んだ。",
+        "en": "/aɪ laɪd ðæt aɪ ˈfɪnɪʃt maɪ ˈhoʊmˌwɝk bɪˈkɔz aɪ wɑz əˈfɹeɪd jud bi ˈæŋɡɹi./",
+        "zh": "Wǒ huǎng chēng gōng kè xiě wán le， yīn wèi pà nǐ shēng qì。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「怒られる恐れと、実際に終わっていない宿題」を確かめ、まず事実を一緒に確認し、正直に話したことは受け止める。",
             "en": "Check the concern first; then check the facts together and acknowledge the honest admission.",
             "zh": "先確認害怕被罵與實際未完成的作業，再一起查明事實並肯定現在願意坦白。"
+          },
+          "pronunciationGuide": {
+            "ja": "「おこられる おそれと、 じっさいに おわって いない しゅくだい」を たしかめ、 まず じじつを いっしょに かくにん し、 しょうじきに はなした ことは うけとめる。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn tʃɛk ðə fækts təˈɡɛðɚ ənd ækˈnɑlɪdʒ ðə ˈɑnəst ædˈmɪʃən./",
+            "zh": "Xiān què rèn hài pà bèi mà yǔ shí jì wèi wán chéng de zuò yè， zài yì qǐ chá míng shì shí bìng kěn dìng xiàn zài yuàn yì tǎn bái。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "Just check the facts together and acknowledge the honest admission, without more questions.",
             "zh": "先一起查明事實並肯定現在願意坦白，但暫不確認害怕被罵與實際未完成的作業。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに まず じじつを いっしょに かくにん し、 しょうじきに はなした ことは うけとめる。ただし「おこられる おそれと、 じっさいに おわって いない しゅくだい」の かくにんは あとまわしです。",
+            "en": "/dʒʌst tʃɛk ðə fækts təˈɡɛðɚ ənd ækˈnɑlɪdʒ ðə ˈɑnəst ædˈmɪʃən, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān yì qǐ chá míng shì shí bìng kěn dìng xiàn zài yuàn yì tǎn bái， dàn zàn bú què rèn hài pà bèi mà yǔ shí jì wèi wán chéng de zuò yè。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -200,6 +215,11 @@
             "ja": "「怒られる恐れと、実際に終わっていない宿題」は関係ありません。親の判断に従わせます。",
             "en": "Do not check the facts together and acknowledge the honest admission; the parent decides.",
             "zh": "害怕被罵與實際未完成的作業並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「おこられる おそれと、 じっさいに おわって いない しゅくだい」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt tʃɛk ðə fækts təˈɡɛðɚ ənd ækˈnɑlɪdʒ ðə ˈɑnəst ædˈmɪʃən; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Hài pà bèi mà yǔ shí jì wèi wán chéng de zuò yè bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -234,6 +254,11 @@
         "en": "What matters is where the work became confusing and why help felt unavailable. How will you check it?",
         "zh": "重點是卡住的題目與不敢求助的原因。你會如何確認？"
       },
+      "pronunciationGuide": {
+        "ja": "たいせつな のは「わからなく なった もんだいと、 たすけを もとめられなかった りゆう」です。 どう たしかめますか？",
+        "en": "/wʌt ˈmætɚz ɪz wɛɹ ðə wɝk bɪˈkeɪm kənfˈjuzɪŋ ənd waɪ hɛlp fɛlt ˌʌnəˈveɪləbəl. haʊ wɪl ju tʃɛk ɪt?/",
+        "zh": "Zhòng diǎn shì kǎ zhù de tí mù yǔ bù gǎn qiú zhù de yuán yīn。 nǐ huì rú hé què rèn？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「分からなくなった問題と、助けを求められなかった理由」を確かめ、最初の一問を一緒に解き、その後は自分で進めて確認時刻を決める。",
             "en": "Check the concern first; then solve the first item together, then set a check-in after independent work.",
             "zh": "先確認卡住的題目與不敢求助的原因，再一起解第一題，再約定自行完成後的確認時間。"
+          },
+          "pronunciationGuide": {
+            "ja": "「わからなく なった もんだいと、 たすけを もとめられなかった りゆう」を たしかめ、 さいしょの いちもんを いっしょに とき、 そのごは じぶんで すすめて かくにん じこくを きめる。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn sɑlv ðə fɝst ˈaɪtəm təˈɡɛðɚ, ðɛn sɛt ə tʃɛk - ɪn ˈæftɚ ˌɪndɪˈpɛndənt wɝk./",
+            "zh": "Xiān què rèn kǎ zhù de tí mù yǔ bù gǎn qiú zhù de yuán yīn， zài yì qǐ jiě dì yī tí， zài yuē dìng zì xíng wán chéng hòu dí què rèn shí jiān。"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "Just solve the first item together, then set a check-in after independent work, without more questions.",
             "zh": "先一起解第一題，再約定自行完成後的確認時間，但暫不確認卡住的題目與不敢求助的原因。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに さいしょの いちもんを いっしょに とき、 そのごは じぶんで すすめて かくにん じこくを きめる。ただし「わからなく なった もんだいと、 たすけを もとめられなかった りゆう」の かくにんは あとまわしです。",
+            "en": "/dʒʌst sɑlv ðə fɝst ˈaɪtəm təˈɡɛðɚ, ðɛn sɛt ə tʃɛk - ɪn ˈæftɚ ˌɪndɪˈpɛndənt wɝk, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān yì qǐ jiě dì yī tí， zài yuē dìng zì xíng wán chéng hòu de què rèn shí jiān， dàn zàn bú què rèn kǎ zhù de tí mù yǔ bù gǎn qiú zhù de yuán yīn。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -327,6 +362,11 @@
             "ja": "「分からなくなった問題と、助けを求められなかった理由」は関係ありません。親の判断に従わせます。",
             "en": "Do not solve the first item together, then set a check-in after independent work; the parent decides.",
             "zh": "卡住的題目與不敢求助的原因並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「わからなく なった もんだいと、 たすけを もとめられなかった りゆう」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt sɑlv ðə fɝst ˈaɪtəm təˈɡɛðɚ, ðɛn sɛt ə tʃɛk - ɪn ˈæftɚ ˌɪndɪˈpɛndənt wɝk; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Kǎ zhù de tí mù yǔ bù gǎn qiú zhù de yuán yīn bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -361,6 +401,11 @@
         "en": "Can we decide specifically how to test a reporting cue and reduced gaming for one week, then review trust?",
         "zh": "可以具體決定如何試行一週回報暗號與縮短遊戲時間，再檢討信任嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "つぎに、 ほうこくようの あいずと げーむ じかんの たんしゅくを いっしゅうかん ためし、 しんらいの かいふくを みなおす ことを ぐたいてきに きめたいです。",
+        "en": "/kæn wi ˌdɪˈsaɪd spəˈsɪfɪkli haʊ tu tɛst ə ɹiˈpɔɹtɪŋ kju ənd ɹəˈdust ˈɡeɪmɪŋ fɔɹ wʌn wik, ðɛn ˌɹivˈju tɹʌst?/",
+        "zh": "Kě yǐ jù tǐ jué dìng rú hé shì xíng yì zhōu huí bào àn hào yǔ suō duǎn yóu xì shí jiān， zài jiǎn tǎo xìn rèn ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「次に未完了を伝える方法と、今回の相応の結果」を確かめ、報告用の合図とゲーム時間の短縮を一週間試し、信頼の回復を見直す。",
             "en": "Check the concern first; then test a reporting cue and reduced gaming for one week, then review trust.",
             "zh": "先確認下次回報未完成作業的方法與這次相稱的後果，再試行一週回報暗號與縮短遊戲時間，再檢討信任。"
+          },
+          "pronunciationGuide": {
+            "ja": "「つぎに み かんりょうを つたえる ほうほうと、 こんかいの そうおうの けっか」を たしかめ、 ほうこくようの あいずと げーむ じかんの たんしゅくを いっしゅうかん ためし、 しんらいの かいふくを みなおす。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn tɛst ə ɹiˈpɔɹtɪŋ kju ənd ɹəˈdust ˈɡeɪmɪŋ fɔɹ wʌn wik, ðɛn ˌɹivˈju tɹʌst./",
+            "zh": "Xiān què rèn xià cì huí bào wèi wán chéng zuò yè de fāng fǎ yǔ zhè cì xiāng chèn de hòu guǒ， zài shì xíng yì zhōu huí bào àn hào yǔ suō duǎn yóu xì shí jiān， zài jiǎn tǎo xìn rèn。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "Just test a reporting cue and reduced gaming for one week, then review trust, without more questions.",
             "zh": "先試行一週回報暗號與縮短遊戲時間，再檢討信任，但暫不確認下次回報未完成作業的方法與這次相稱的後果。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに ほうこくようの あいずと げーむ じかんの たんしゅくを いっしゅうかん ためし、 しんらいの かいふくを みなおす。ただし「つぎに み かんりょうを つたえる ほうほうと、 こんかいの そうおうの けっか」の かくにんは あとまわしです。",
+            "en": "/dʒʌst tɛst ə ɹiˈpɔɹtɪŋ kju ənd ɹəˈdust ˈɡeɪmɪŋ fɔɹ wʌn wik, ðɛn ˌɹivˈju tɹʌst, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān shì xíng yì zhōu huí bào àn hào yǔ suō duǎn yóu xì shí jiān， zài jiǎn tǎo xìn rèn， dàn zàn bú què rèn xià cì huí bào wèi wán chéng zuò yè de fāng fǎ yǔ zhè cì xiāng chèn de hòu guǒ。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -444,6 +499,11 @@
             "ja": "「次に未完了を伝える方法と、今回の相応の結果」は関係ありません。親の判断に従わせます。",
             "en": "Do not test a reporting cue and reduced gaming for one week, then review trust; the parent decides.",
             "zh": "下次回報未完成作業的方法與這次相稱的後果並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「つぎに み かんりょうを つたえる ほうほうと、 こんかいの そうおうの けっか」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt tɛst ə ɹiˈpɔɹtɪŋ kju ənd ɹəˈdust ˈɡeɪmɪŋ fɔɹ wʌn wik, ðɛn ˌɹivˈju tɹʌst; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Xià cì huí bào wèi wán chéng zuò yè de fāng fǎ yǔ zhè cì xiāng chèn de hòu guǒ bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -478,6 +538,11 @@
         "en": "It became hard to talk when you ignored how earlier shouting made honesty feel unsafe.",
         "zh": "你忽略先前吼叫如何讓坦白變得可怕，讓我很難繼續談。"
       },
+      "pronunciationGuide": {
+        "ja": "「いぜん どなった ことが、 しょうじきに はなす こわさに つながった えいきょう」を むし された ようで、 はなし づらく なりました。",
+        "en": "/ɪt bɪˈkeɪm hɑɹd tu tɔk wɛn ju ˌɪɡˈnɔɹd haʊ ˈɝliɚ ˈʃaʊtɪŋ meɪd ˈɑnəsti fil ənˈseɪf./",
+        "zh": "Nǐ hū lüè xiān qián hǒu jiào rú hé ràng tǎn bái biàn de kě pà， ràng wǒ hěn nán jì xù tán。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「以前怒鳴ったことが、正直に話す怖さにつながった影響」を確かめ、怒鳴ったことを謝り、声を落として未完了部分から話し直す。",
             "en": "Check the concern first; then apologize for shouting and restart calmly with the unfinished work.",
             "zh": "先確認先前吼叫如何讓坦白變得可怕，再為吼叫道歉，放低聲音從未完成內容重新談起。"
+          },
+          "pronunciationGuide": {
+            "ja": "「いぜん どなった ことが、 しょうじきに はなす こわさに つながった えいきょう」を たしかめ、 どなった ことを あやまり、 こえを おとして み かんりょう ぶぶんから はなし なおす。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn əˈpɑləˌdʒaɪz fɔɹ ˈʃaʊtɪŋ ənd ɹiˈstɑɹt ˈkɑmli wɪð ðə ənˈfɪnɪʃt wɝk./",
+            "zh": "Xiān què rèn xiān qián hǒu jiào rú hé ràng tǎn bái biàn dé kě pà， zài wèi hǒu jiào dào qiàn， fàng dī shēng yīn cóng wèi wán chéng nèi róng chóng xīn tán qǐ。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "Just apologize for shouting and restart calmly with the unfinished work, without more questions.",
             "zh": "先為吼叫道歉，放低聲音從未完成內容重新談起，但暫不確認先前吼叫如何讓坦白變得可怕。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに どなった ことを あやまり、 こえを おとして み かんりょう ぶぶんから はなし なおす。ただし「いぜん どなった ことが、 しょうじきに はなす こわさに つながった えいきょう」の かくにんは あとまわしです。",
+            "en": "/dʒʌst əˈpɑləˌdʒaɪz fɔɹ ˈʃaʊtɪŋ ənd ɹiˈstɑɹt ˈkɑmli wɪð ðə ənˈfɪnɪʃt wɝk, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān wèi hǒu jiào dào qiàn， fàng dī shēng yīn cóng wèi wán chéng nèi róng chóng xīn tán qǐ， dàn zàn bú què rèn xiān qián hǒu jiào rú hé ràng tǎn bái biàn de kě pà。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -561,6 +636,11 @@
             "ja": "「以前怒鳴ったことが、正直に話す怖さにつながった影響」は関係ありません。親の判断に従わせます。",
             "en": "Do not apologize for shouting and restart calmly with the unfinished work; the parent decides.",
             "zh": "先前吼叫如何讓坦白變得可怕並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「いぜん どなった ことが、 しょうじきに はなす こわさに つながった えいきょう」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt əˈpɑləˌdʒaɪz fɔɹ ˈʃaʊtɪŋ ənd ɹiˈstɑɹt ˈkɑmli wɪð ðə ənˈfɪnɪʃt wɝk; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Xiān qián hǒu jiào rú hé ràng tǎn bái biàn de kě pà bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,

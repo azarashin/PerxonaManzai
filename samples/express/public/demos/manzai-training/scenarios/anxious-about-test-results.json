@@ -77,6 +77,11 @@
         "en": "While waiting for the results, I keep imagining the worst. Will I be okay?",
         "zh": "等待結果時我一直往壞處想，真的會沒事嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "けっかを まつあいだに わるい ことばかり かんがえて しまいます。 だいじょうぶでしょうか。",
+        "en": "/waɪl ˈweɪtɪŋ fɔɹ ðə ɹɪˈzʌlts, aɪ kip ˌɪˈmædʒənɪŋ ðə wɝst. wɪl aɪ bi ˌoʊˈkeɪ?/",
+        "zh": "Děng dài jié guǒ shí wǒ yì zhí wǎng huài chù xiǎng， zhēn de huì méi shì ma？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "Check first; explain what is known and what remains uncertain.",
             "zh": "先確認目前症狀、是否惡化與最害怕的事情，再區分說明已知資訊與仍不確定之處。"
           },
+          "pronunciationGuide": {
+            "ja": "「いま ある しょうじょう、 あっかの うむ、 ふあんで もっとも こわい こと」を かくにん し、 わかって いる ことと み かくていな ことを くべつ して せつめい する。",
+            "en": "/tʃɛk fɝst; ɪkˈspleɪn wʌt ɪz noʊn ənd wʌt ɹɪˈmeɪnz ənˈsɝtən./",
+            "zh": "Xiān què rèn mù qián zhèng zhuàng、 shì fǒu è huà yǔ zuì hài pà de shì qíng， zài qū fēn shuō míng yǐ zhī zī xùn yǔ réng bú què dìng zhī chù。"
+          },
           "axisScores": {
             "empathy": 20,
             "plain-language": 20,
@@ -118,6 +128,11 @@
             "en": "Only explain what is known and what remains uncertain.",
             "zh": "只區分說明已知資訊與仍不確定之處，但省略目前症狀、是否惡化與最害怕的事情的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "わかって いる ことと み かくていな ことを くべつ して せつめい するが、「いま ある しょうじょう、 あっかの うむ、 ふあんで もっとも こわい こと」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ɪkˈspleɪn wʌt ɪz noʊn ənd wʌt ɹɪˈmeɪnz ənˈsɝtən./",
+            "zh": "Zhī qū fēn shuō míng yǐ zhī zī xùn yǔ réng bú què dìng zhī chù， dàn shěng lüè mù qián zhèng zhuàng、 shì fǒu è huà yǔ zuì hài pà de shì qíng de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -136,6 +151,11 @@
             "ja": "分かっていることと未確定なことを区別して説明することはせず、問題ないと断定します。",
             "en": "Do not explain what is known and what remains uncertain; say there is no problem.",
             "zh": "不區分說明已知資訊與仍不確定之處，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "わかって いる ことと み かくていな ことを くべつ して せつめい する ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt ɪkˈspleɪn wʌt ɪz noʊn ənd wʌt ɹɪˈmeɪnz ənˈsɝtən; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bù qū fēn shuō míng yǐ zhī zī xùn yǔ réng bú què dìng zhī chù， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,
@@ -157,6 +177,11 @@
         "ja": "特に「息苦しさ・意識変化など待たずに対応すべき兆候」をもう少し確認してもらえますか？",
         "en": "Could you check signs such as breathing difficulty or confusion that should not wait more closely?",
         "zh": "可以更仔細確認呼吸困難、意識改變等不能等待的警訊嗎？"
+      },
+      "pronunciationGuide": {
+        "ja": "とくに「いきぐるしさ・ いしき へんかなど またずに たいおう すべき ちょうこう」を もうすこし かくにん して もらえますか？",
+        "en": "/kʊd ju tʃɛk saɪnz sʌtʃ æz ˈbɹiðɪŋ ˈdɪfəkəlti ɔɹ kənfˈjuʒən ðæt ʃʊd nɑt weɪt mɔɹ ˈkloʊsli?/",
+        "zh": "Kě yǐ gèng zǐ xì què rèn hū xī kùn nán、 yì shí gǎi biàn děng bù néng děng dài de jǐng xùn ma？"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "Check first; agree on whom to call and where to seek urgent care.",
             "zh": "先確認呼吸困難、意識改變等不能等待的警訊，再與患者確認出現警訊時的聯絡與就醫地點。"
           },
+          "pronunciationGuide": {
+            "ja": "「いきぐるしさ・ いしき へんかなど またずに たいおう すべき ちょうこう」を かくにん し、 がいとうじの れんらくさきと じゅしんさきを かんじゃと かくにん する。",
+            "en": "/tʃɛk fɝst; əˈɡɹi ɑn hum tu kɔl ənd wɛɹ tu sik ˈɝdʒənt kɛɹ./",
+            "zh": "Xiān què rèn hū xī kùn nán、 yì shí gǎi biàn děng bù néng děng dài de jǐng xùn， zài yǔ huàn zhě què rèn chū xiàn jǐng xùn shí de lián luò yǔ jiù yī dì diǎn。"
+          },
           "axisScores": {
             "empathy": 20,
             "plain-language": 20,
@@ -199,6 +229,11 @@
             "en": "Only agree on whom to call and where to seek urgent care.",
             "zh": "只與患者確認出現警訊時的聯絡與就醫地點，但省略呼吸困難、意識改變等不能等待的警訊的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "がいとうじの れんらくさきと じゅしんさきを かんじゃと かくにん するが、「いきぐるしさ・ いしき へんかなど またずに たいおう すべき ちょうこう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli əˈɡɹi ɑn hum tu kɔl ənd wɛɹ tu sik ˈɝdʒənt kɛɹ./",
+            "zh": "Zhī yǔ huàn zhě què rèn chū xiàn jǐng xùn shí de lián luò yǔ jiù yī dì diǎn， dàn shěng lüè hū xī kùn nán、 yì shí gǎi biàn děng bù néng děng dài de jǐng xùn de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -217,6 +252,11 @@
             "ja": "該当時の連絡先と受診先を患者と確認することはせず、問題ないと断定します。",
             "en": "Do not agree on whom to call and where to seek urgent care; say there is no problem.",
             "zh": "不與患者確認出現警訊時的聯絡與就醫地點，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "がいとうじの れんらくさきと じゅしんさきを かんじゃと かくにん する ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt əˈɡɹi ɑn hum tu kɔl ənd wɛɹ tu sik ˈɝdʒənt kɛɹ; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bù yǔ huàn zhě què rèn chū xiàn jǐng xùn shí de lián luò yǔ jiù yī dì diǎn， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,
@@ -238,6 +278,11 @@
         "ja": "私が理解できるよう、予定と安全確認を一枚にし、患者の言葉で復唱してもらうことを具体的に決められますか？",
         "en": "Can we decide clearly how to write the timeline and safety plan, then use teach-back, so I can explain it back?",
         "zh": "可以清楚決定如何寫下時程與安全計畫，再請患者回述，再讓我用自己的話重述嗎？"
+      },
+      "pronunciationGuide": {
+        "ja": "わたしが りかい できる よう、 よていと あんぜん かくにんを いちまいに し、 かんじゃの ことばで ふくしょう して もらう ことを ぐたいてきに きめられますか？",
+        "en": "/kæn wi ˌdɪˈsaɪd ˈklɪɹli haʊ tu ɹaɪt ðə ˈtaɪmlaɪn ənd ˈseɪfti plæn, ðɛn jus titʃ - bæk, soʊ aɪ kæn ɪkˈspleɪn ɪt bæk?/",
+        "zh": "Kě yǐ qīng chǔ jué dìng rú hé xiě xià shí chéng yǔ ān quán jì huà， zài qǐng huàn zhě huí shù， zài ràng wǒ yòng zì jǐ de huà zhòng shù ma？"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "Check first; write the timeline and safety plan, then use teach-back.",
             "zh": "先確認結果預定時間與未收到通知時的查詢方法，再寫下時程與安全計畫，再請患者回述。"
           },
+          "pronunciationGuide": {
+            "ja": "「けっかが でる にちじ、 れんらくが ない ばあいの といあわせ ほうほう」を かくにん し、 よていと あんぜん かくにんを いちまいに し、 かんじゃの ことばで ふくしょう して もらう。",
+            "en": "/tʃɛk fɝst; ɹaɪt ðə ˈtaɪmlaɪn ənd ˈseɪfti plæn, ðɛn jus titʃ - bæk./",
+            "zh": "Xiān què rèn jié guǒ yù dìng shí jiān yǔ wèi shōu dào tōng zhī shí de chá xún fāng fǎ， zài xiě xià shí chéng yǔ ān quán jì huà， zài qǐng huàn zhě huí shù。"
+          },
           "axisScores": {
             "empathy": 20,
             "plain-language": 20,
@@ -280,6 +330,11 @@
             "en": "Only write the timeline and safety plan, then use teach-back.",
             "zh": "只寫下時程與安全計畫，再請患者回述，但省略結果預定時間與未收到通知時的查詢方法的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "よていと あんぜん かくにんを いちまいに し、 かんじゃの ことばで ふくしょう して もらうが、「けっかが でる にちじ、 れんらくが ない ばあいの といあわせ ほうほう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ɹaɪt ðə ˈtaɪmlaɪn ənd ˈseɪfti plæn, ðɛn jus titʃ - bæk./",
+            "zh": "Zhī xiě xià shí chéng yǔ ān quán jì huà， zài qǐng huàn zhě huí shù， dàn shěng lüè jié guǒ yù dìng shí jiān yǔ wèi shōu dào tōng zhī shí de chá xún fāng fǎ de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -298,6 +353,11 @@
             "ja": "予定と安全確認を一枚にし、患者の言葉で復唱してもらうことはせず、問題ないと断定します。",
             "en": "Do not write the timeline and safety plan, then use teach-back; say there is no problem.",
             "zh": "不寫下時程與安全計畫，再請患者回述，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "よていと あんぜん かくにんを いちまいに し、 かんじゃの ことばで ふくしょう して もらう ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt ɹaɪt ðə ˈtaɪmlaɪn ənd ˈseɪfti plæn, ðɛn jus titʃ - bæk; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bù xiě xià shí chéng yǔ ān quán jì huà， zài qǐng huàn zhě huí shù， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,

@@ -1,4 +1,5 @@
 import { evaluateResponse, localizedChoiceFeedback } from "./evaluator.js";
+import { completionAnswerDetails } from "./completion-details.js";
 import { applyTranslations, translate } from "./i18n.js";
 import {
   assetDisplayName,
@@ -26,7 +27,11 @@ import {
   resolveScenarioRoute,
   updateScenarioSearch,
 } from "./scenario-routing.js";
-import { scenarioDisplayLanguages } from "./scenario-languages.js";
+import {
+  defaultPronunciationGuideVisibility,
+  pronunciationGuideText,
+  scenarioDisplayLanguages,
+} from "./scenario-languages.js";
 import {
   SPEECH_RECOGNITION_TIMEOUT_MS,
   SpeechRecognizer,
@@ -58,6 +63,7 @@ const dialogueOrderSelect = document.querySelector("#dialogue-order-select");
 const autoAdvanceToggle = document.querySelector("#auto-advance-toggle");
 const showNativeLanguageToggle = document.querySelector("#show-native-language-toggle");
 const nativeLanguageToggleLabel = document.querySelector("#native-language-toggle-label");
+const showPronunciationGuideToggle = document.querySelector("#show-pronunciation-guide-toggle");
 const progressStorageToggle = document.querySelector("#progress-storage-toggle");
 const scenarioProgressList = document.querySelector("#scenario-progress-list");
 const progressBtn = document.querySelector("#progress-btn");
@@ -155,6 +161,7 @@ let catalogReady = false;
 let autoAdvanceTimer = null;
 let pickerAssetType = "avatar";
 let pendingAssetId = "";
+let pronunciationGuidePreferenceCustomized = false;
 
 const AUTO_ADVANCE_DELAY_MS = 5000;
 
@@ -186,6 +193,7 @@ function applyUiLanguage() {
   applyTranslations(document, playerLanguageSelect.value);
   renderSelectedAssets();
   updateNativeLanguageToggleVisibility();
+  updatePronunciationGuideDefault();
   renderScenarioPicker();
   renderStoredProgress();
   renderScenarioMetadata();
@@ -201,6 +209,14 @@ function applyUiLanguage() {
 function updateNativeLanguageToggleVisibility() {
   nativeLanguageToggleLabel.hidden =
     speechLanguageSelect.value === playerLanguageSelect.value;
+}
+
+function updatePronunciationGuideDefault() {
+  if (pronunciationGuidePreferenceCustomized) return;
+  showPronunciationGuideToggle.checked = defaultPronunciationGuideVisibility(
+    speechLanguageSelect.value,
+    playerLanguageSelect.value,
+  );
 }
 
 function renderStoredProgress() {
@@ -624,14 +640,14 @@ function renderChoices(beat) {
 
       const text = document.createElement("div");
       text.className = "choice-text";
-      renderLocalizedText(text, choice.text);
+      renderLocalizedText(text, choice.text, choice.pronunciationGuide);
       row.append(number, text);
       return row;
     }),
   );
 }
 
-function renderLocalizedText(element, value) {
+function renderLocalizedText(element, value, pronunciationGuide) {
   const visibleLanguages = scenarioDisplayLanguages(
     speechLanguageSelect.value,
     playerLanguageSelect.value,
@@ -658,7 +674,23 @@ function renderLocalizedText(element, value) {
       const languageText = document.createElement("span");
       languageText.className = "language-text";
       languageText.textContent = localizedText(value, key);
-      line.append(languageLabel, languageText);
+      const guide = pronunciationGuideText(
+        pronunciationGuide,
+        key,
+        showPronunciationGuideToggle.checked &&
+          key === speechLanguageSelect.value,
+      );
+      if (guide) {
+        const textWithGuide = document.createElement("span");
+        textWithGuide.className = "language-content";
+        const pronunciation = document.createElement("span");
+        pronunciation.className = "pronunciation-guide";
+        pronunciation.textContent = guide;
+        textWithGuide.append(languageText, pronunciation);
+        line.append(languageLabel, textWithGuide);
+      } else {
+        line.append(languageLabel, languageText);
+      }
       return line;
     }),
   );
@@ -696,7 +728,7 @@ async function playCurrentBeat() {
   micIndicator.classList.remove("listening");
   micStatus.textContent = t("playingBoke");
   phaseLabel.textContent = t("listenToBoke");
-  renderLocalizedText(bokeCaption, beat.boke);
+  renderLocalizedText(bokeCaption, beat.boke, beat.pronunciationGuide);
   bokeCaption.hidden = false;
   setAppMessage(t("autoMicAfterBoke"));
 
@@ -816,6 +848,7 @@ function handleFinalTranscript(transcript) {
     return;
   }
 
+  result.inputMode = "voice";
   completeEvaluation(result);
 }
 
@@ -1214,7 +1247,7 @@ function renderSummaryBreakdown() {
 
       const boke = document.createElement("div");
       boke.className = "summary-result-boke";
-      renderLocalizedText(boke, beat.boke);
+      renderLocalizedText(boke, beat.boke, beat.pronunciationGuide);
 
       const scoreLine = document.createElement("div");
       scoreLine.className = "score-line";
@@ -1241,12 +1274,14 @@ function renderSummaryBreakdown() {
         ),
       );
       feedback.className = "summary-result-feedback";
+      const answerDetails = completionAnswerDetails(result).map(
+        ({ labelKey, value }) => createLabeledParagraph(t(labelKey), value),
+      );
       card.append(
         header,
         boke,
         scoreLine,
-        createLabeledParagraph(t("recognizedSpeechLabel"), result.transcript),
-        createLabeledParagraph(t("judgedComebackLabel"), result.choiceText),
+        ...answerDetails,
         feedback,
       );
       return card;
@@ -1376,7 +1411,7 @@ function renderScenarioPreview() {
       const heading = document.createElement("h3");
       heading.textContent = t("questionNumber", { number: beatIndex + 1 });
       const boke = document.createElement("div");
-      renderLocalizedText(boke, beat.boke);
+      renderLocalizedText(boke, beat.boke, beat.pronunciationGuide);
       const reaction = createParagraph(
         t("previewReaction", {
           description: localizedText(
@@ -1402,7 +1437,7 @@ function renderScenarioPreview() {
           score: axisScores.reduce((total, axis) => total + axis.score, 0),
         });
         const text = document.createElement("div");
-        renderLocalizedText(text, choice.text);
+        renderLocalizedText(text, choice.text, choice.pronunciationGuide);
         const feedback = document.createElement("div");
         renderLocalizedText(feedback, choice.feedback);
         const axisLine = document.createElement("div");
@@ -1428,6 +1463,10 @@ showNativeLanguageToggle.addEventListener("change", () => {
   if (!selectedScenario) return;
   renderLocalizedText(scenarioTitle, selectedScenario.title);
   renderLocalizedText(scenarioDescription, selectedScenario.description);
+});
+
+showPronunciationGuideToggle.addEventListener("change", () => {
+  pronunciationGuidePreferenceCustomized = true;
 });
 
 completionFilterSelect.addEventListener("change", () => {
@@ -1577,6 +1616,7 @@ for (const select of [sceneSelect, voiceSelect]) {
 
 speechLanguageSelect.addEventListener("change", () => {
   updateNativeLanguageToggleVisibility();
+  updatePronunciationGuideDefault();
   recognizer.setLanguage(recognitionLanguages[speechLanguageSelect.value]);
   updateVoiceOptions();
   requirePresenterPreparation();
@@ -1587,6 +1627,7 @@ speechLanguageSelect.addEventListener("change", () => {
 });
 
 playerLanguageSelect.addEventListener("change", () => {
+  updatePronunciationGuideDefault();
   applyUiLanguage();
   if (selectedScenario) {
     renderLocalizedText(scenarioTitle, selectedScenario.title);

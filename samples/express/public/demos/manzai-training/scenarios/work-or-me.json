@@ -112,6 +112,11 @@
         "en": "It's always work. Does our time together not matter to you?",
         "zh": "你總是在工作，難道我們相處的時間不重要嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "しごとばかりだけど、 わたしとの じかんは たいせつじゃないの？",
+        "en": "/ɪts ˈɔlˌweɪz wɝk. dʌz ˈaʊɚ taɪm təˈɡɛðɚ nɑt ˈmætɚ tu ju?/",
+        "zh": "Nǐ zǒng shì zài gōng zuò， nán dào wǒ men xiāng chǔ de shí jiān bú zhòng yào ma？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "仕事とあなたを比べたいわけじゃない。後回しにされたと感じた場面を聞いて、変えられることを一緒に考えたい。",
             "en": "I don't want to rank work against you. Tell me when you felt pushed aside so we can decide what to change.",
             "zh": "我不想拿工作和你比較。請告訴我何時感到被擺在後面，我們一起找能改變的地方。"
+          },
+          "pronunciationGuide": {
+            "ja": "しごとと あなたを くらべたい わけじゃない。 あとまわしに されたと かんじた ばめんを きいて、 かえられる ことを いっしょに かんがえたい。",
+            "en": "/aɪ doʊnt wɑnt tu ɹæŋk wɝk əˈɡɛnst ju. tɛl mi wɛn ju fɛlt pʊʃt əˈsaɪd soʊ wi kæn ˌdɪˈsaɪd wʌt tu tʃeɪndʒ./",
+            "zh": "Wǒ bù xiǎng ná gōng zuò hé nǐ bǐ jiào。 qǐng gào sù wǒ hé shí gǎn dào bèi bǎi zài hòu miàn， wǒ men yì qǐ zhǎo néng gǎi biàn de dì fāng。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "Of course you matter. Work is simply busy this month.",
             "zh": "你當然重要，只是這個月工作很忙。"
           },
+          "pronunciationGuide": {
+            "ja": "もちろん たいせつだよ。ただ こんげつは しごとが いそがしい んだ。",
+            "en": "/ʌv kɔɹs ju ˈmætɚ. wɝk ɪz ˈsɪmpli ˈbɪzi ðɪs mʌnθ./",
+            "zh": "Nǐ dāng rán zhòng yào， zhǐ shì zhè ge yuè gōng zuò hěn máng。"
+          },
           "axisScores": {
             "empathy": 12,
             "needs-reading": 5,
@@ -200,6 +215,11 @@
             "ja": "仕事があるから生活できるんだ。比べる話じゃない。",
             "en": "Work pays for our life. This comparison makes no sense.",
             "zh": "有工作才能生活，根本不能這樣比較。"
+          },
+          "pronunciationGuide": {
+            "ja": "しごとが あるから せいかつ できる んだ。 くらべる はなしじゃない。",
+            "en": "/wɝk peɪz fɔɹ ˈaʊɚ laɪf. ðɪs kəmˈpɛɹəsən meɪks noʊ sɛns./",
+            "zh": "Yǒu gōng zuò cái néng shēng huó， gēn běn bù néng zhè yàng bǐ jiào。"
           },
           "axisScores": {
             "empathy": 1,
@@ -234,6 +254,11 @@
         "en": "Work cancelled our plans three weekends in a row. It feels as though I'm the only one waiting.",
         "zh": "我們連續三個週末的安排都被工作取消，感覺只有我一直在等。"
       },
+      "pronunciationGuide": {
+        "ja": "しゅうまつの よていが さんかい つづけて しごとでなく なった。 わたしだけが まって いる かんじが する。",
+        "en": "/wɝk ˈkænsəld ˈaʊɚ plænz θɹi ˈwiˌkɛndz ɪn ə ɹoʊ. ɪt filz æz ðoʊ aɪm ðə ˈoʊnli wʌn ˈweɪtɪŋ./",
+        "zh": "Wǒ men lián xù sān gè zhōu mò de ān pái dōu bèi gōng zuò qǔ xiāo， gǎn jué zhǐ yǒu wǒ yì zhí zài děng。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "三回続けて予定を崩し、待つ役を任せてしまったんだね。変更されにくい時間を一緒に選んでもいい？",
             "en": "I cancelled three times and left you waiting. Can we choose time together that is less likely to be displaced?",
             "zh": "我連續取消三次，讓你一直等。可以一起選一個不容易被工作取代的時間嗎？"
+          },
+          "pronunciationGuide": {
+            "ja": "さんかい つづけて よていを くずし、 まつ やくを まかせて しまった んだね。 へんこう され にくい じかんを いっしょに えらんでも いい？",
+            "en": "/aɪ ˈkænsəld θɹi taɪmz ənd lɛft ju ˈweɪtɪŋ. kæn wi tʃuz taɪm təˈɡɛðɚ ðæt ɪz lɛs ˈlaɪkli tu bi dɪˈspleɪst?/",
+            "zh": "Wǒ lián xù qǔ xiāo sān cì， ràng nǐ yì zhí děng。 kě yǐ yì qǐ xuǎn yí gè bù róng yì bèi gōng zuò qǔ dài de shí jiān ma？"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "The next free weekend I get, we'll definitely spend it together.",
             "zh": "下次有空的週末，我一定陪你。"
           },
+          "pronunciationGuide": {
+            "ja": "つぎに ひまが できた しゅうまつは、 かならず いっしょに すごすよ。",
+            "en": "/ðə nɛkst fɹi ˈwiˌkɛnd aɪ ɡɛt, wil ˈdɛfənətli spɛnd ɪt təˈɡɛðɚ./",
+            "zh": "Xià cì yǒu kōng de zhōu mò， wǒ yí dìng péi nǐ。"
+          },
           "axisScores": {
             "empathy": 9,
             "needs-reading": 5,
@@ -327,6 +362,11 @@
             "ja": "急な仕事なんだから、理解してくれてもいいだろう。",
             "en": "It was urgent work; you should be more understanding.",
             "zh": "那是緊急工作，你應該體諒我。"
+          },
+          "pronunciationGuide": {
+            "ja": "きゅうな しごとな んだから、 りかい して くれても いいだろう。",
+            "en": "/ɪt wɑz ˈɝdʒənt wɝk; ju ʃʊd bi mɔɹ ˌʌndɚˈstændɪŋ./",
+            "zh": "Nà shì jǐn jí gōng zuò， nǐ yīng gāi tǐ liàng wǒ。"
           },
           "axisScores": {
             "empathy": 0,
@@ -361,6 +401,11 @@
         "en": "I want one protected time each week and notice before I'm left waiting if it changes.",
         "zh": "我希望每週固定一次相處時間，若有變動要在我等待前通知。"
       },
+      "pronunciationGuide": {
+        "ja": "まいしゅう いちどは ふたりの じかんを かくほ して、 かわるなら まつ まえに しらせて ほしい。",
+        "en": "/aɪ wɑnt wʌn pɹəˈtɛktɪd taɪm itʃ wik ənd ˈnoʊtəs bɪˈfɔɹ aɪm lɛft ˈweɪtɪŋ ɪf ɪt ˈtʃeɪndʒəz./",
+        "zh": "Wǒ xī wàng měi zhōu gù dìng yí cì xiāng chǔ shí jiān， ruò yǒu biàn dòng yào zài wǒ děng dài qián tōng zhī。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "水曜の夜を二人の時間にする。変更が必要なら当日十八時までに連絡し、同じ週の代替日も相談しよう。",
             "en": "Let's protect Wednesday evenings. If it must change, I'll tell you by 6 p.m. and propose another day that week.",
             "zh": "把週三晚上固定為相處時間。若需變更，我會在當天六點前通知，並商量同週替代日期。"
+          },
+          "pronunciationGuide": {
+            "ja": "すいようの よるを ふたりの じかんに する。 へんこうが ひつようなら とうじつ じゅう はちじまでに れんらく し、 おなじ しゅうの だいたいびも そうだん しよう。",
+            "en": "/lɛts pɹəˈtɛkt ˈwɛnzdi ˈivnɪŋz. ɪf ɪt mʌst tʃeɪndʒ, aɪl tɛl ju baɪ sɪks pi ɛm ənd pɹəˈpoʊz əˈnʌðɚ deɪ ðæt wik./",
+            "zh": "Bǎ zhōu sān wǎn shàng gù dìng wèi xiāng chǔ shí jiān。 ruò xū biàn gēng， wǒ huì zài dāng tiān liù diǎn qián tōng zhī， bìng shāng liáng tóng zhōu tì dài rì qī。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "From now on, I'll try to make more time for us.",
             "zh": "以後我會盡量增加我們相處的時間。"
           },
+          "pronunciationGuide": {
+            "ja": "これからは、 できるだけ ふたりの じかんを ふやすよ。",
+            "en": "/fɹʌm naʊ ɑn, aɪl tɹaɪ tu meɪk mɔɹ taɪm fɔɹ ʌs./",
+            "zh": "Yǐ hòu wǒ huì jǐn liàng zēng jiā wǒ men xiāng chǔ de shí jiān。"
+          },
           "axisScores": {
             "empathy": 12,
             "needs-reading": 7,
@@ -444,6 +499,11 @@
             "ja": "毎週は約束できない。空いている時に声をかけるよ。",
             "en": "I can't promise weekly time. I'll let you know when I'm free.",
             "zh": "我不能答應每週，有空時再告訴你。"
+          },
+          "pronunciationGuide": {
+            "ja": "まいしゅうは やくそく できない。 あいて いる ときに こえを かけるよ。",
+            "en": "/aɪ kænt ˈpɹɑməs ˈwikli taɪm. aɪl lɛt ju noʊ wɛn aɪm fɹi./",
+            "zh": "Wǒ bù néng dā ying měi zhōu， yǒu kōng shí zài gào sù nǐ。"
           },
           "axisScores": {
             "empathy": 2,
@@ -478,6 +538,11 @@
         "en": "You're explaining work again without asking how this has felt for me.",
         "zh": "你又只在解釋工作，還是沒有問我的感受。"
       },
+      "pronunciationGuide": {
+        "ja": "また しごとの せつめいばかりで、 わたしが どう かんじたかは きいて いないよね。",
+        "en": "/jʊɹ ɪkˈspleɪnɪŋ wɝk əˈɡɛn wɪˈθaʊt ˈæskɪŋ haʊ ðɪs hæz fɛlt fɔɹ mi./",
+        "zh": "Nǐ yòu zhī zài jiě shì gōng zuò， hái shì méi yǒu wèn wǒ de gǎn shòu。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "説明で正当化しようとしていた。ごめん。後回しにされたと感じた時のことを、まず聞かせて。",
             "en": "I was using explanations to justify myself. I'm sorry. First, tell me about feeling pushed aside.",
             "zh": "我一直用解釋替自己辯護，對不起。請先告訴我感到被擺在後面的時候。"
+          },
+          "pronunciationGuide": {
+            "ja": "せつめいで せいとうか しようと して いた。 ごめん。 あとまわしに されたと かんじた ときの ことを、 まず きかせて。",
+            "en": "/aɪ wɑz ˈjuzɪŋ ˌɛkspləˈneɪʃənz tu ˈdʒʌstəˌfaɪ ˌmaɪˈsɛlf. aɪm ˈsɑɹi. fɝst, tɛl mi əˈbaʊt ˈfilɪŋ pʊʃt əˈsaɪd./",
+            "zh": "Wǒ yì zhí yòng jiě shì tì zì jǐ biàn hù， duì bù qǐ。 qǐng xiān gào sù wǒ gǎn dào bèi bǎi zài hòu miàn de shí hòu。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "I understand it was hard, but the deadline could not move either.",
             "zh": "我知道你很難受，但截止日也不能改。"
           },
+          "pronunciationGuide": {
+            "ja": "つらかった のは わかった。でも しめきりも うごかせなかった んだ。",
+            "en": "/aɪ ˌʌndɚˈstænd ɪt wɑz hɑɹd, bʌt ðə ˈdɛdˌlaɪn kʊd nɑt muv ˈiðɚ./",
+            "zh": "Wǒ zhī dào nǐ hěn nán shòu， dàn jié zhǐ rì yě bù néng gǎi。"
+          },
           "axisScores": {
             "empathy": 12,
             "needs-reading": 6,
@@ -561,6 +636,11 @@
             "ja": "仕事の状況が変わらない以上、話しても仕方ないよ。",
             "en": "The work situation will not change, so talking about it is pointless.",
             "zh": "工作狀況不會變，再談也沒有用。"
+          },
+          "pronunciationGuide": {
+            "ja": "しごとの じょうきょうが かわらない いじょう、 はなしても しかたないよ。",
+            "en": "/ðə wɝk ˌsɪtʃuˈeɪʃən wɪl nɑt tʃeɪndʒ, soʊ ˈtɔkɪŋ əˈbaʊt ɪt ɪz ˈpɔɪntləs./",
+            "zh": "Gōng zuò zhuàng kuàng bú huì biàn， zài tán yě méi yǒu yòng。"
           },
           "axisScores": {
             "empathy": 0,

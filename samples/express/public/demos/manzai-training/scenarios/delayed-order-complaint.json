@@ -77,6 +77,11 @@
         "en": "I've waited thirty minutes. Please tell me clearly when the food will arrive.",
         "zh": "我已經等了三十分鐘，請清楚告訴我餐點何時會來。"
       },
+      "pronunciationGuide": {
+        "ja": "もう さんじゅっぷん まって います。 いつ りょうりが くる のか、 きちんと せつめい して ください。",
+        "en": "/aɪv ˈweɪtɪd ˈθɝˌdi ˈmɪnəts. pliz tɛl mi ˈklɪɹli wɛn ðə fud wɪl ɚˈaɪv./",
+        "zh": "Wǒ yǐ jīng děng le sān shí fēn zhōng， qǐng qīng chǔ gào sù wǒ cān diǎn hé shí huì lái。"
+      },
       "reaction": {
         "description": {
           "ja": "三十分待った負担と説明不足を訴える",
@@ -99,6 +104,11 @@
             "en": "I'm sorry you've waited thirty minutes. I'll check the order and serving estimate with the kitchen and return promptly.",
             "zh": "很抱歉讓您等了三十分鐘。我會向廚房確認訂單與預計出餐時間，馬上回來說明。"
           },
+          "pronunciationGuide": {
+            "ja": "さんじゅっぷんも お またせし もうしわけ ありません。 ちゅうぼうで ちゅうもん じょうきょうと ていきょう みこみを かくにん し、 すぐ もどります。",
+            "en": "/aɪm ˈsɑɹi juv ˈweɪtɪd ˈθɝˌdi ˈmɪnəts. aɪl tʃɛk ðə ˈɔɹdɚ ənd ˈsɝvɪŋ ˈɛstəmət wɪð ðə ˈkɪtʃən ənd ɹɪˈtɝn ˈpɹɑmptli./",
+            "zh": "Hěn bào qiàn ràng nín děng le sān shí fēn zhōng。 wǒ huì xiàng chú fáng què rèn dìng dān yǔ yù jì chū cān shí jiān， mǎ shàng huí lái shuō míng。"
+          },
           "axisScores": {
             "empathy": 20,
             "fact-checking": 20,
@@ -118,6 +128,11 @@
             "en": "You've been waiting thirty minutes. I'll check with the kitchen.",
             "zh": "您已經等了三十分鐘，我去向廚房確認。"
           },
+          "pronunciationGuide": {
+            "ja": "さんじゅっぷん おまちですね。 ちゅうぼうに かくにん します。",
+            "en": "/juv bɪn ˈweɪtɪŋ ˈθɝˌdi ˈmɪnəts. aɪl tʃɛk wɪð ðə ˈkɪtʃən./",
+            "zh": "Nín yǐ jīng děng le sān shí fēn zhōng， wǒ qù xiàng chú fáng què rèn。"
+          },
           "axisScores": {
             "empathy": 17,
             "fact-checking": 18,
@@ -136,6 +151,11 @@
             "ja": "混雑していますので、もうしばらくお待ちください。",
             "en": "We're busy, so please wait a little longer.",
             "zh": "現在很忙，請您再等一下。"
+          },
+          "pronunciationGuide": {
+            "ja": "こんざつ して いますので、 もう しばらく おまち ください。",
+            "en": "/wiɹ ˈbɪzi, soʊ pliz weɪt ə ˈlɪtəl ˈlɔŋɡɚ./",
+            "zh": "Xiàn zài hěn máng， qǐng nín zài děng yí xià。"
           },
           "axisScores": {
             "empathy": 3,
@@ -157,6 +177,11 @@
         "ja": "注文が通っているか、あと何分か、待てない場合の方法も知りたいです。",
         "en": "I need to know whether the order went through, how long it will take, and what I can do if I cannot wait.",
         "zh": "我想知道訂單是否送出、還要多久，以及無法再等時有哪些辦法。"
+      },
+      "pronunciationGuide": {
+        "ja": "ちゅうもんが かよって いるか、 あと なんふんか、 まてない ばあいの ほうほうも しりたいです。",
+        "en": "/aɪ nid tu noʊ ˈwɛðɚ ðə ˈɔɹdɚ wɛnt θɹu, haʊ lɔŋ ɪt wɪl teɪk, ənd wʌt aɪ kæn du ɪf aɪ ˈkænɑt weɪt./",
+        "zh": "Wǒ xiǎng zhī dào dìng dān shì fǒu sòng chū、 hái yào duō jiǔ， yǐ jí wú fǎ zài děng shí yǒu nǎ xiē bàn fǎ。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "Given the delay, I'll ask the kitchen about the order, the serving estimate, and dishes available sooner.",
             "zh": "考量已延誤，我會向廚房確認訂單、預計出餐時間及能更快提供的替代餐點。"
           },
+          "pronunciationGuide": {
+            "ja": "お またせ して いる じょうきょうを ふまえ、 ちゅうもん じょうきょう、 ていきょう みこみ、 すぐ だせる だいたい りょうりを ちゅうぼうで かくにん します。",
+            "en": "/ˈɡɪvən ðə dɪˈleɪ, aɪl æsk ðə ˈkɪtʃən əˈbaʊt ðə ˈɔɹdɚ, ðə ˈsɝvɪŋ ˈɛstəmət, ənd ˈdɪʃəz əˈveɪləbəl ˈsunɚ./",
+            "zh": "Kǎo liáng yǐ yán wù， wǒ huì xiàng chú fáng què rèn dìng dān、 yù jì chū cān shí jiān jí néng gèng kuài tí gōng de tì dài cān diǎn。"
+          },
           "axisScores": {
             "empathy": 20,
             "fact-checking": 20,
@@ -199,6 +229,11 @@
             "en": "First, I'll check whether the kitchen received the order.",
             "zh": "我先確認廚房是否收到訂單。"
           },
+          "pronunciationGuide": {
+            "ja": "まず ちゅうもんが ちゅうぼうに かよって いるか かくにん します。",
+            "en": "/fɝst, aɪl tʃɛk ˈwɛðɚ ðə ˈkɪtʃən ɹəˈsivd ðə ˈɔɹdɚ./",
+            "zh": "Wǒ xiān què rèn chú fáng shì fǒu shōu dào dìng dān。"
+          },
           "axisScores": {
             "empathy": 5,
             "fact-checking": 20,
@@ -217,6 +252,11 @@
             "ja": "だいたいあと十分だと思います。",
             "en": "I think it will probably be about ten more minutes.",
             "zh": "我想大概再十分鐘。"
+          },
+          "pronunciationGuide": {
+            "ja": "だいたい あとじゅっぷんだと おもいます。",
+            "en": "/aɪ θɪŋk ɪt wɪl ˈpɹɑbəˌbli bi əˈbaʊt tɛn mɔɹ ˈmɪnəts./",
+            "zh": "Wǒ xiǎng dà gài zài shí fēn zhōng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -238,6 +278,11 @@
         "ja": "料理を待つか変更するか判断できるように、いつ知らせてもらえますか。",
         "en": "When will you update me so I can decide whether to wait or change my order?",
         "zh": "請問何時會回覆，讓我能決定繼續等或更換餐點？"
+      },
+      "pronunciationGuide": {
+        "ja": "りょうりを まつか へんこう するか はんだん できる ように、 いつ しらせて もらえますか。",
+        "en": "/wɛn wɪl ju əpˈdeɪt mi soʊ aɪ kæn ˌdɪˈsaɪd ˈwɛðɚ tu weɪt ɔɹ tʃeɪndʒ maɪ ˈɔɹdɚ?/",
+        "zh": "Qǐng wèn hé shí huì huí fù， ràng wǒ néng jué dìng jì xù děng huò gēng huàn cān diǎn？"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "Within five minutes, I'll report the serving estimate and whether a change or cancellation is available.",
             "zh": "因已延誤，我會在五分鐘內回報預計出餐時間，以及能否更換或取消。"
           },
+          "pronunciationGuide": {
+            "ja": "お またせ した ため、 ごふん いないに ていきょう みこみと、 へんこうや とりけしが かのうかを かくにん して おつたえ します。",
+            "en": "/wɪˈðɪn faɪv ˈmɪnəts, aɪl ɹiˈpɔɹt ðə ˈsɝvɪŋ ˈɛstəmət ənd ˈwɛðɚ ə tʃeɪndʒ ɔɹ ˌkænsəˈleɪʃən ɪz əˈveɪləbəl./",
+            "zh": "Yīn yǐ yán wù， wǒ huì zài wǔ fēn zhōng nèi huí bào yù jì chū cān shí jiān， yǐ jí néng fǒu gēng huàn huò qǔ xiāo。"
+          },
           "axisScores": {
             "empathy": 20,
             "fact-checking": 20,
@@ -280,6 +330,11 @@
             "en": "I'll come back once I have checked.",
             "zh": "確認後我會再來告知。"
           },
+          "pronunciationGuide": {
+            "ja": "かくにん できたら、また お こえが けします。",
+            "en": "/aɪl kʌm bæk wʌns aɪ hæv tʃɛkt./",
+            "zh": "Què rèn hòu wǒ huì zài lái gào zhī。"
+          },
           "axisScores": {
             "empathy": 7,
             "fact-checking": 13,
@@ -298,6 +353,11 @@
             "ja": "もうすぐ出るはずなので、そのままお待ちください。",
             "en": "It should be out soon, so please keep waiting.",
             "zh": "應該快好了，請繼續等候。"
+          },
+          "pronunciationGuide": {
+            "ja": "もうすぐ でる はずなので、 そのまま おまち ください。",
+            "en": "/ɪt ʃʊd bi aʊt sun, soʊ pliz kip ˈweɪtɪŋ./",
+            "zh": "Yīng gāi kuài hǎo le， qǐng jì xù děng hòu。"
           },
           "axisScores": {
             "empathy": 2,

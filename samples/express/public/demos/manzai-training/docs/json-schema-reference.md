@@ -42,6 +42,26 @@ Every `localizedText` object requires Japanese, English, and Traditional Chinese
 
 Values may not be empty or contain only whitespace.
 
+### Pronunciation guides
+
+`pronunciationGuide` is optional display-only metadata for a character line or player choice. When present, it must include
+all three supported languages and use whole-line notation:
+
+- `ja`: a full hiragana reading;
+- `en`: broad General American IPA enclosed in `/slashes/`;
+- `zh`: Hanyu Pinyin with tone marks.
+
+Store each value in Unicode NFC form. The guide does not change the displayed source text, speech-recognition phrase,
+aliases, scoring, or feedback. Authors should omit the field rather than guess at a reading.
+
+```json
+"pronunciationGuide": {
+  "ja": "こんびにに れいぞうこ うってへんわ！",
+  "en": "/kənˈviːniəns stɔrz doʊnt sɛl rɪˈfrɪdʒəˌreɪtərz/",
+  "zh": "Biànlì shāngdiàn cái bú huì mài bīngxiāng lie!"
+}
+```
+
 ## 3. Scenario catalog
 
 The catalog contains top-level `categories` and `scenarios` arrays.
@@ -137,6 +157,7 @@ Every choice must provide exactly one `axisScores` entry for every declared axis
 | --- | --- |
 | `id` | Beat ID, unique within the scenario |
 | `boke` | Localized line spoken by the character |
+| `pronunciationGuide` | Optional localized whole-line reading for `boke` |
 | `reaction` | Performance instructions for the line |
 | `choices` | Two or more player responses |
 
@@ -148,6 +169,7 @@ Every choice must provide exactly one `axisScores` entry for every declared axis
 | --- | --- | --- |
 | `id` | Yes | Choice ID |
 | `text` | Yes | Localized response |
+| `pronunciationGuide` | No | Localized whole-line reading for `text` |
 | `aliases` | No | Alternative phrases matched as this response |
 | `axisScores` | Yes | Content score for every evaluation axis |
 | `feedback` | Yes | Localized feedback displayed after scoring |

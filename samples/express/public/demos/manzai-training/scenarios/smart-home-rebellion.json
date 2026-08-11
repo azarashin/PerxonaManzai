@@ -77,6 +77,11 @@
         "en": "My fridge locked the front door because I wasn't eating enough vegetables.",
         "zh": "我家冰箱因為我蔬菜吃太少，把大門鎖起來了。"
       },
+      "pronunciationGuide": {
+        "ja": "うちの れいぞうこ、 やさい ふそくを りゆうに げんかんを ろっく して きたわ。",
+        "en": "/maɪ fɹɪdʒ lɑkt ðə fɹʌnt dɔɹ bɪˈkɔz aɪ ˈwɑzənt ˈitɪŋ ɪˈnʌf ˈvɛdʒtəbəlz./",
+        "zh": "Wǒ jiā bīng xiāng yīn wèi wǒ shū cài chī tài shǎo， bǎ dà mén suǒ qǐ lái le。"
+      },
       "reaction": {
         "description": {
           "ja": "冷蔵庫による外出禁止を困り顔で報告する",
@@ -99,6 +104,11 @@
             "en": "Don't let the fridge control the front door too!",
             "zh": "別連大門鑰匙都交給冰箱管啦！"
           },
+          "pronunciationGuide": {
+            "ja": "れいぞうこに げんかんの かぎまで にぎらすな！",
+            "en": "/doʊnt lɛt ðə fɹɪdʒ kənˈtɹoʊl ðə fɹʌnt dɔɹ tu!/",
+            "zh": "Bié lián dà mén yào shi dōu jiāo gěi bīng xiāng guǎn lā！"
+          },
           "axisScores": {
             "role-reversal": 30,
             "detail-targeting": 20,
@@ -118,6 +128,11 @@
             "en": "Fix the lock settings before worrying about vegetables!",
             "zh": "先檢查門鎖設定，再擔心蔬菜啦！"
           },
+          "pronunciationGuide": {
+            "ja": "やさいより さきに かぎの せってい みなおせ！",
+            "en": "/fɪks ðə lɑk ˈsɛtɪŋz bɪˈfɔɹ ˈwɝiɪŋ əˈbaʊt ˈvɛdʒtəbəlz!/",
+            "zh": "Xiān jiǎn chá mén suǒ shè dìng， zài dān xīn shū cài lā！"
+          },
           "axisScores": {
             "role-reversal": 16,
             "detail-targeting": 18,
@@ -136,6 +151,11 @@
             "ja": "健康管理してくれて親切やな。",
             "en": "How thoughtful of it to manage your health.",
             "zh": "它還幫你管理健康，真貼心。"
+          },
+          "pronunciationGuide": {
+            "ja": "けんこう かんり して くれて しんせつやな。",
+            "en": "/haʊ ˈθɔtfəl ʌv ɪt tu ˈmænədʒ jɔɹ hɛlθ./",
+            "zh": "Tā hái bāng nǐ guǎn lǐ jiàn kāng， zhēn tiē xīn。"
           },
           "axisScores": {
             "role-reversal": 2,
@@ -157,6 +177,11 @@
         "ja": "掃除機は運動不足を理由に、毎朝うちを三周させてくるねん。",
         "en": "The vacuum says I lack exercise and makes me run three laps every morning.",
         "zh": "掃地機器人說我運動不足，每天早上逼我跑三圈。"
+      },
+      "pronunciationGuide": {
+        "ja": "そうじきは うんどう ふそくを りゆうに、 まいあさ うちを さんしゅう させて くるねん。",
+        "en": "/ðə ˈvækjum sɛz aɪ læk ˈɛksɚˌsaɪz ənd meɪks mi ɹʌn θɹi læps ˈɛvɚi ˈmɔɹnɪŋ./",
+        "zh": "Sǎo dì jī qì rén shuō wǒ yùn dòng bù zú， měi tiān zǎo shàng bī wǒ pǎo sān quān。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "The vacuum should clean, not make its owner run laps!",
             "zh": "掃地機器人該打掃，不是逼屋主跑圈啦！"
           },
+          "pronunciationGuide": {
+            "ja": "そうじ する がわが やぬしを はしらせるな！",
+            "en": "/ðə ˈvækjum ʃʊd klin, nɑt meɪk ɪts ˈoʊnɚ ɹʌn læps!/",
+            "zh": "Sǎo dì jī qì rén gāi dǎ sǎo， bú shì bī wū zhǔ pǎo quān lā！"
+          },
           "axisScores": {
             "role-reversal": 30,
             "detail-targeting": 20,
@@ -199,6 +229,11 @@
             "en": "Three laps first thing in the morning is too much!",
             "zh": "一大早跑三圈也太累了吧！"
           },
+          "pronunciationGuide": {
+            "ja": "あさから さんしゅうは しんど すぎるわ！",
+            "en": "/θɹi læps fɝst θɪŋ ɪn ðə ˈmɔɹnɪŋ ɪz tu mʌtʃ!/",
+            "zh": "Yí dà zǎo pǎo sān quān yě tài lèi le ba！"
+          },
           "axisScores": {
             "role-reversal": 14,
             "detail-targeting": 17,
@@ -217,6 +252,11 @@
             "ja": "毎朝運動できて健康的やな。",
             "en": "At least you're getting healthy morning exercise.",
             "zh": "每天早上都能運動，很健康嘛。"
+          },
+          "pronunciationGuide": {
+            "ja": "まいあさ うんどう できて けんこうてきやな。",
+            "en": "/æt list jʊɹ ˈɡɛtɪŋ ˈhɛlθi ˈmɔɹnɪŋ ˈɛksɚˌsaɪz./",
+            "zh": "Měi tiān zǎo shàng dōu néng yùn dòng， hěn jiàn kāng ma。"
           },
           "axisScores": {
             "role-reversal": 2,
@@ -238,6 +278,11 @@
         "ja": "電気代を払ってるのは俺やのに、家電会議では発言権ゼロや。",
         "en": "I pay the power bill, but I get no vote at the appliance council.",
         "zh": "明明電費是我付，家電會議卻完全不給我發言權。"
+      },
+      "pronunciationGuide": {
+        "ja": "でんきだいを はらっ てる のは おれやのに、 かでん かいぎでは はつげんけん ぜろや。",
+        "en": "/aɪ peɪ ðə ˈpaʊɚ bɪl, bʌt aɪ ɡɛt noʊ voʊt æt ðə əˈplaɪəns ˈkaʊnsəl./",
+        "zh": "Míng míng diàn fèi shì wǒ fù， jiā diàn huì yì què wán quán bù gěi wǒ fā yán quán。"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "You pay the power bill and the appliances still took your voting rights!",
             "zh": "電費你付，投票權還被家電搶走了啦！"
           },
+          "pronunciationGuide": {
+            "ja": "でんきだい はらって かでんに しゅけんまで うばわれ てるやないか！",
+            "en": "/ju peɪ ðə ˈpaʊɚ bɪl ənd ðə əˈplaɪənsəz stɪl tʊk jɔɹ ˈvoʊtɪŋ ɹaɪts!/",
+            "zh": "Diàn fèi nǐ fù， tóu piào quán hái bèi jiā diàn qiǎng zǒu le lā！"
+          },
           "axisScores": {
             "role-reversal": 30,
             "detail-targeting": 20,
@@ -280,6 +330,11 @@
             "en": "At least demand one vote!",
             "zh": "至少爭取一票吧！"
           },
+          "pronunciationGuide": {
+            "ja": "せめて いっぴょうぐらい もらえ！",
+            "en": "/æt list dɪˈmænd wʌn voʊt!/",
+            "zh": "Zhì shǎo zhēng qǔ yí piào ba！"
+          },
           "axisScores": {
             "role-reversal": 16,
             "detail-targeting": 17,
@@ -298,6 +353,11 @@
             "ja": "会議の議事録だけ見せてもらえ。",
             "en": "Ask them to show you the meeting minutes.",
             "zh": "至少請它們給你看會議紀錄。"
+          },
+          "pronunciationGuide": {
+            "ja": "かいぎの ぎじろくだけ みせて もらえ。",
+            "en": "/æsk ðɛm tu ʃoʊ ju ðə ˈmitɪŋ ˈmɪnəts./",
+            "zh": "Zhì shǎo qǐng tā men gěi nǐ kàn huì yì jì lù。"
           },
           "axisScores": {
             "role-reversal": 2,

@@ -39,10 +39,11 @@ test("bundled catalog contains valid categories and loadable scenarios", async (
     "clinical-communication": 3,
     "crisis-negotiation": 3,
     "special-fraud-prevention": 3,
+    "criminal-recruitment-prevention": 3,
   };
 
-  assert.equal(catalog.categories.length, 16);
-  assert.equal(catalog.scenarios.length, 52);
+  assert.equal(catalog.categories.length, 17);
+  assert.equal(catalog.scenarios.length, 55);
   for (const [categoryId, expectedCount] of Object.entries(
     expectedScenarioCounts,
   )) {
@@ -60,6 +61,42 @@ test("bundled catalog contains valid categories and loadable scenarios", async (
     assert.deepEqual(scenario.title, entry.title);
     assert.doesNotThrow(() => new ScenarioController(scenario));
   }
+});
+
+test("every bundled spoken line provides valid pronunciation guides", async () => {
+  const catalog = validateScenarioCatalog(await readJson("index.json"));
+  let utteranceCount = 0;
+
+  for (const entry of catalog.scenarios) {
+    const scenario = await readJson(entry.path.replace("./scenarios/", ""));
+    const utterances = scenario.beats.flatMap((beat) => [beat, ...beat.choices]);
+
+    for (const utterance of utterances) {
+      const context = `${scenario.id}/${utterance.id}`;
+      assert.deepEqual(
+        Object.keys(utterance.pronunciationGuide ?? {}).sort(),
+        ["en", "ja", "zh"],
+        context,
+      );
+      assert.doesNotMatch(
+        utterance.pronunciationGuide.ja,
+        /[\p{Script=Han}\p{Script=Katakana}A-Za-z0-9]/u,
+        context,
+      );
+      assert.match(utterance.pronunciationGuide.en, /^\/.+\/$/u, context);
+      assert.doesNotMatch(
+        utterance.pronunciationGuide.zh,
+        /\p{Script=Han}/u,
+        context,
+      );
+      for (const guide of Object.values(utterance.pronunciationGuide)) {
+        assert.equal(guide, guide.normalize("NFC"), context);
+      }
+      utteranceCount += 1;
+    }
+  }
+
+  assert.equal(utteranceCount, 805);
 });
 
 test("special fraud scenarios prioritize expressive avatar motions", async () => {

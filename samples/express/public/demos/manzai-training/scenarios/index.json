@@ -256,6 +256,22 @@
         "en": "Special Fraud Prevention",
         "zh": "特殊詐騙防範"
       }
+    },
+    {
+      "id": "criminal-recruitment-prevention",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "基本的な求人確認は直線型で練習できますが、個人情報の送信、匿名アプリへの移行、脅迫の有無によって安全な離脱と相談行動が変わるため、中級以上では分岐を推奨します。",
+          "en": "Basic job-offer screening can be linear; branching is recommended at intermediate and advanced levels because disclosed personal information, migration to anonymous apps, and coercion change safe disengagement and help-seeking.",
+          "zh": "基礎的求職查核可採線性；中高階情境中，是否已提供個人資料、轉移至匿名通訊軟體及遭受脅迫，會改變安全退出與求助方式，因此建議使用分支。"
+        }
+      },
+      "title": {
+        "ja": "闇バイト・犯罪加担防止",
+        "en": "Criminal Recruitment Prevention",
+        "zh": "犯罪招募與加害防範"
+      }
     }
   ],
   "scenarios": [
@@ -1662,6 +1678,87 @@
         "zh": "假冒警察的資產保護要求"
       },
       "path": "./scenarios/fake-police-asset-protection.json"
+    },
+    {
+      "id": "suspicious-high-pay-job",
+      "categoryId": "criminal-recruitment-prevention",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "仕事内容、雇用主、報酬根拠を応募前に具体化し、独立して確認する",
+          "個人情報を守り、匿名アプリへの移行と記録削除を拒否する"
+        ],
+        "en": [
+          "Clarify duties, the employer, and the pay basis before applying, then verify independently.",
+          "Protect personal data and refuse anonymous-app migration or record deletion."
+        ],
+        "zh": [
+          "申請前具體確認工作內容、雇主與薪酬依據，再進行獨立查核。",
+          "保護個資，拒絕轉往匿名通訊軟體或刪除紀錄。"
+        ]
+      },
+      "title": {
+        "ja": "怪しい高額求人への問い合わせ",
+        "en": "Questioning a Suspicious High-Pay Job",
+        "zh": "查問可疑高薪職缺"
+      },
+      "path": "./scenarios/suspicious-high-pay-job.json"
+    },
+    {
+      "id": "identity-and-family-data-request",
+      "categoryId": "criminal-recruitment-prevention",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "選考前の身分証と家族情報の要求を断り、同意と利用目的の不足を見抜く",
+          "会話を保存して接触を止め、信頼できる人と求人サイトへ相談する"
+        ],
+        "en": [
+          "Refuse pre-interview requests for ID and family data, recognizing missing consent and purpose.",
+          "Preserve the exchange, end contact, and involve a trusted person and the job platform."
+        ],
+        "zh": [
+          "拒絕面試前索取證件與家人資料，辨識缺乏同意與使用目的。",
+          "保存對話、停止聯絡，並向可信任者與求職平台求助。"
+        ]
+      },
+      "title": {
+        "ja": "身分証と家族情報を要求される求人",
+        "en": "A Job Asking for ID and Family Details",
+        "zh": "要求證件與家人資料的職缺"
+      },
+      "path": "./scenarios/identity-and-family-data-request.json"
+    },
+    {
+      "id": "coerced-after-application",
+      "categoryId": "criminal-recruitment-prevention",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "個人情報を使った脅迫を受けても、追加指示、位置情報提供、一対一の交渉を拒否する",
+          "脅迫の記録を保ち、信頼できる人と警察の公開窓口へ早く相談する"
+        ],
+        "en": [
+          "Refuse further instructions, location sharing, and private bargaining despite personal-data threats.",
+          "Preserve coercive messages and promptly involve a trusted person and a published police channel."
+        ],
+        "zh": [
+          "即使遭個資脅迫，也拒絕追加指示、提供位置及私下交涉。",
+          "保存脅迫訊息，及早向可信任者與警方公開管道求助。"
+        ]
+      },
+      "title": {
+        "ja": "応募後に個人情報を使って脅迫される",
+        "en": "Coerced with Personal Data After Applying",
+        "zh": "申請後遭個資脅迫"
+      },
+      "path": "./scenarios/coerced-after-application.json"
     }
   ]
 }

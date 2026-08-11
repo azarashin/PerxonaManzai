@@ -6,6 +6,8 @@ cannot enforce.
 
 Before authoring content, read the [scenario quality standards](scenario-quality-standards.md). The standards define the
 quality rationale, stable diagnostic IDs, manual-review criteria, and exception policy used by all scenario generators.
+When adding readings, also follow the dedicated
+[pronunciation guide authoring instructions](pronunciation-guide-authoring.md).
 
 ## Choose the schema
 
@@ -32,6 +34,7 @@ A generation prompt should state:
 - the difficulty, tone, and safety or compliance requirements;
 - whether the task may modify `scenarios/index.json`;
 - that all authored text must have `ja`, `en`, and `zh` versions;
+- whether the task includes pronunciation guides and, if so, the target scope and notation contract;
 - that generated files must conform to the repository schemas;
 - that `npm run validate:scenarios` and `npm test` must pass.
 
@@ -65,6 +68,7 @@ Requirements:
 - Define scenario-specific `evaluationAxes`; their `maxPoints` must total 80.
 - Give every choice an `axisScores` entry for every declared axis. Each score must be an integer from 0 through that axis's `maxPoints`.
 - Use axes that explain the skill being trained (for example empathy, fact checking, or premise recognition), and explain the overall judgment in `feedback`.
+- If pronunciation guides are requested, use full-line hiragana for `ja`, broad General American IPA in `/slashes/` for `en`, and tone-marked Hanyu Pinyin for `zh`. Follow `docs/pronunciation-guide-authoring.md` and report uncertain readings instead of guessing.
 
 ## State and branching
 
@@ -141,6 +145,9 @@ filenames. Do not return fragments, JavaScript object literals, comments inside 
 - Set the catalog entry's `beatCount` to the exact number of items in the scenario's `beats` array.
 - Set `difficulty`, `estimatedMinutes`, and localized `learningObjectives` in every catalog entry.
 - Author translations for meaning and training intent, not word-for-word similarity.
+- Add display-only `pronunciationGuide` metadata to every bundled beat and choice, keep all three languages together, and do
+  not use it for speech recognition or scoring. The Schema field remains optional only for compatibility with external and
+  older scenarios.
 - Keep spoken choices short and distinct enough for browser speech recognition.
 - Add aliases only for realistic equivalent utterances; do not use aliases to make different answers indistinguishable.
 - Provide at least two choices. Three choices are recommended when a useful best, partial, and weak or unsafe contrast exists.
@@ -167,3 +174,5 @@ npm test
 The first command checks the schema-aligned structure and repository-level relationships, including IDs, translations,
 unknown properties, scoring ranges, catalog references, file existence, and matching catalog/scenario titles. The second
 command includes that validation and the application unit tests. Generation is not complete until both commands succeed.
+For pronunciation-guide work, also preview every affected scenario language with a different player native language, toggle
+the guide off and on, and check a mobile-width layout. Record unresolved pronunciation questions for human review.

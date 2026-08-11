@@ -77,6 +77,11 @@
         "en": "Tell me about a weakness and how you are addressing it.",
         "zh": "請說明你的一項弱點，以及你如何改善。"
       },
+      "pronunciationGuide": {
+        "ja": "あなたの よわみと、それに どう むきあって いるかを おしえて ください。",
+        "en": "/tɛl mi əˈbaʊt ə ˈwiknəs ənd haʊ ju ɑɹ əˈdɹɛsɪŋ ɪt./",
+        "zh": "Qǐng shuō míng nǐ de yí xiàng ruò diǎn， yǐ jí nǐ rú hé gǎi shàn。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "I can overthink priorities and start late. I now share my top three each morning, which has reduced missed deadlines.",
             "zh": "我有時過度糾結優先順序而延遲開始。現在每天早上分享前三項，已減少逾期。"
           },
+          "pronunciationGuide": {
+            "ja": "ゆうせん じゅんいを かかえこみ、 ちゃくしゅが おくれる ことが あります。 いまは あさに じょうい さんけんを きょうゆう し、 きげん おくれを へらして います。",
+            "en": "/aɪ kæn ˌoʊvɚˈθɪŋk pɹaɪˈɔɹətiz ənd stɑɹt leɪt. aɪ naʊ ʃɛɹ maɪ tɑp θɹi itʃ ˈmɔɹnɪŋ, wɪtʃ hæz ɹəˈdust mɪst ˈdɛdˌlaɪnz./",
+            "zh": "Wǒ yǒu shí guò dù jiū jié yōu xiān shùn xù ér yán chí kāi shǐ。 xiàn zài měi tiān zǎo shàng fēn xiǎng qián sān xiàng， yǐ jiǎn shǎo yú qī。"
+          },
           "axisScores": {
             "relevance": 20,
             "credibility": 20,
@@ -118,6 +128,11 @@
             "en": "My weakness is that I care too much about perfection.",
             "zh": "我的弱點是過度追求完美。"
           },
+          "pronunciationGuide": {
+            "ja": "よわみは かんぺきを もとめ すぎる ところです。",
+            "en": "/maɪ ˈwiknəs ɪz ðæt aɪ kɛɹ tu mʌtʃ əˈbaʊt pɚˈfɛkʃən./",
+            "zh": "Wǒ de ruò diǎn shì guò dù zhuī qiú wán měi。"
+          },
           "axisScores": {
             "relevance": 12,
             "credibility": 7,
@@ -136,6 +151,11 @@
             "ja": "特に弱みはありません。必要なことは全部できます。",
             "en": "I do not have a notable weakness; I can do everything required.",
             "zh": "我沒有特別的弱點，所需工作都能完成。"
+          },
+          "pronunciationGuide": {
+            "ja": "とくに よわみは ありません。 ひつような ことは ぜんぶ できます。",
+            "en": "/aɪ du nɑt hæv ə ˈnoʊtəbəl ˈwiknəs; aɪ kæn du ˈɛvɹiˌθɪŋ ɹikˈwaɪɚd./",
+            "zh": "Wǒ méi yǒu tè bié de ruò diǎn， suǒ xū gōng zuò dōu néng wán chéng。"
           },
           "axisScores": {
             "relevance": 5,
@@ -157,6 +177,11 @@
         "ja": "その弱みが実際に問題になった例と、改善した結果を教えてください。",
         "en": "Give an example where it caused a problem and the result of your improvement.",
         "zh": "請舉例這個弱點何時造成問題，以及改善後的結果。"
+      },
+      "pronunciationGuide": {
+        "ja": "その よわみが じっさいに もんだいに なった れいと、 かいぜん した けっかを おしえて ください。",
+        "en": "/ɡɪv æn ɪɡˈzæmpəl wɛɹ ɪt kɑzd ə ˈpɹɑbləm ənd ðə ɹɪˈzʌlt ʌv jɔɹ ˌɪmˈpɹuvmənt./",
+        "zh": "Qǐng jǔ lì zhè ge ruò diǎn hé shí zào chéng wèn tí， yǐ jí gǎi shàn hòu de jié guǒ。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "An analysis started two days late. After adding morning priority checks, I met every deadline for three months.",
             "zh": "前職有次分析延遲兩天開始。加入晨會確認優先順序後，三個月都準時完成。"
           },
+          "pronunciationGuide": {
+            "ja": "まえしょくで ぶんせき かいしが ふつか おくれました。 よくしゅうから ちょうかいで ゆうせん じゅんいを かくにん し、 さんかげつは きげんないに かんりょう して います。",
+            "en": "/æn əˈnæləsəs ˈstɑɹtɪd tu deɪz leɪt. ˈæftɚ ˈædɪŋ ˈmɔɹnɪŋ pɹaɪˈɔɹəti tʃɛks, aɪ mɛt ˈɛvɚi ˈdɛdˌlaɪn fɔɹ θɹi mʌnθs./",
+            "zh": "Qián zhí yǒu cì fēn xī yán chí liǎng tiān kāi shǐ。 jiā rù chén huì què rèn yōu xiān shùn xù hòu， sān gè yuè dōu zhǔn shí wán chéng。"
+          },
           "axisScores": {
             "relevance": 20,
             "credibility": 20,
@@ -199,6 +229,11 @@
             "en": "I read a time-management book and became more mindful.",
             "zh": "我讀了時間管理的書，也更注意了。"
           },
+          "pronunciationGuide": {
+            "ja": "じかん かんりの ほんを よみ、 いしき する ように なりました。",
+            "en": "/aɪ ɹɛd ə taɪm - ˈmænədʒmənt bʊk ənd bɪˈkeɪm mɔɹ ˈmaɪndfəl./",
+            "zh": "Wǒ dú le shí jiān guǎn lǐ de shū， yě gèng zhù yì le。"
+          },
           "axisScores": {
             "relevance": 10,
             "credibility": 12,
@@ -217,6 +252,11 @@
             "ja": "前のチームは依頼が曖昧だったので、遅れても仕方ありませんでした。",
             "en": "My prior team gave vague requests, so the delays were unavoidable.",
             "zh": "前團隊的需求很模糊，所以延遲也是沒辦法。"
+          },
+          "pronunciationGuide": {
+            "ja": "まえの ちーむは いらいが あいまいだったので、 おくれても しかた ありませんでした。",
+            "en": "/maɪ ˈpɹaɪɚ tim ɡeɪv veɪɡ ɹɪkˈwɛsts, soʊ ðə dɪˈleɪz wɝ ˌʌnəˈvɔɪdəbəl./",
+            "zh": "Qián tuán duì de xū qiú hěn mó hu， suǒ yǐ yán chí yě shì méi bàn fǎ。"
           },
           "axisScores": {
             "relevance": 3,
@@ -238,6 +278,11 @@
         "ja": "複数案件を並行するこの職務で、同じ弱みをどう管理しますか。",
         "en": "How will you manage this weakness in a role with concurrent projects?",
         "zh": "在需要並行多個專案的職務中，你會如何管理這個弱點？"
+      },
+      "pronunciationGuide": {
+        "ja": "ふくすう あんけんを へいこう する この しょくむで、 おなじ よわみを どう かんり しますか。",
+        "en": "/haʊ wɪl ju ˈmænədʒ ðɪs ˈwiknəs ɪn ə ɹoʊl wɪð kənˈkɝənt ˈpɹɑdʒɛkts?/",
+        "zh": "Zài xū yào bìng xíng duō gè zhuān àn de zhí wù zhōng， nǐ huì rú hé guǎn lǐ zhè ge ruò diǎn？"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "Each morning I'll confirm the top three by deadline and impact, and escalate unclear priorities that day.",
             "zh": "每天早上依期限與影響和負責人確認前三項，優先順序不明時當天就詢問。"
           },
+          "pronunciationGuide": {
+            "ja": "まいあさ、 きげんと えいきょうで じょうい さんけんを たんとうしゃと かくにん し、 まよった あんけんは とうじつちゅうに ゆうせん じゅんいを そうだん します。",
+            "en": "/itʃ ˈmɔɹnɪŋ aɪl kənˈfɝm ðə tɑp θɹi baɪ ˈdɛdˌlaɪn ənd ˌɪmˈpækt, ənd ˈɛskəˌleɪt ənˈklɪɹ pɹaɪˈɔɹətiz ðæt deɪ./",
+            "zh": "Měi tiān zǎo shàng yī qī xiàn yǔ yǐng xiǎng hé fù zé rén què rèn qián sān xiàng， yōu xiān shùn xù bù míng shí dāng tiān jiù xún wèn。"
+          },
           "axisScores": {
             "relevance": 20,
             "credibility": 20,
@@ -280,6 +330,11 @@
             "en": "I'll manage tasks carefully and work hard not to fall behind.",
             "zh": "我會徹底管理任務，努力不落後。"
           },
+          "pronunciationGuide": {
+            "ja": "たすく かんりを てってい し、 おくれない よう どりょく します。",
+            "en": "/aɪl ˈmænədʒ tæsks ˈkɛɹfəli ənd wɝk hɑɹd nɑt tu fɔl bɪˈhaɪnd./",
+            "zh": "Wǒ huì chè dǐ guǎn lǐ rèn wu， nǔ lì bú luò hòu。"
+          },
           "axisScores": {
             "relevance": 12,
             "credibility": 8,
@@ -298,6 +353,11 @@
             "ja": "入社後は指示された順にやるので問題ありません。",
             "en": "At this company I'll follow the given order, so it will not be a problem.",
             "zh": "入職後照指示順序做，就不會有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "にゅうしゃごは しじ された じゅんに やるので もんだい ありません。",
+            "en": "/æt ðɪs ˈkʌmpəˌni aɪl ˈfɑloʊ ðə ˈɡɪvən ˈɔɹdɚ, soʊ ɪt wɪl nɑt bi ə ˈpɹɑbləm./",
+            "zh": "Rù zhí hòu zhào zhǐ shì shùn xù zuò， jiù bú huì yǒu wèn tí。"
           },
           "axisScores": {
             "relevance": 4,

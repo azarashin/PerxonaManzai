@@ -112,6 +112,11 @@
         "en": "Have you noticed that I'm doing almost all the housework?",
         "zh": "你有注意到幾乎所有家事都是我在做嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "かじの ほとんどを わたしが して いる ことに きづい てる？",
+        "en": "/hæv ju ˈnoʊtəst ðæt aɪm ˈduɪŋ ˈɔlˌmoʊst ɔl ðə ˈhaʊˌswɝk?/",
+        "zh": "Nǐ yǒu zhù yì dào jī hū suǒ yǒu jiā shì dōu shì wǒ zài zuò ma？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "気づけていなかった。負担を押しつけてごめん。作業だけでなく、予定や在庫管理も含めて一度全部出そう。",
             "en": "I failed to notice and left the load to you. I'm sorry. Let's list the chores plus planning and supply tracking.",
             "zh": "我沒有注意到，把負擔都留給你，對不起。我們把家事、安排與用品管理全部列出來。"
+          },
+          "pronunciationGuide": {
+            "ja": "き づけて いなかった。 ふたんを おしつけて ごめん。 さぎょうだけでなく、 よていや ざいこ かんりも ふくめて いちど ぜんぶ でそう。",
+            "en": "/aɪ feɪld tu ˈnoʊtəs ənd lɛft ðə loʊd tu ju. aɪm ˈsɑɹi. lɛts lɪst ðə tʃɔɹz plʌs ˈplænɪŋ ənd səˈplaɪ ˈtɹækɪŋ./",
+            "zh": "Wǒ méi yǒu zhù yì dào， bǎ fù dān dōu liú gěi nǐ， duì bù qǐ。 wǒ men bǎ jiā shì、 ān pái yǔ yòng pǐn guǎn lǐ quán bù liè chū lái。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "I understand. I'll help with dishes more often.",
             "zh": "我知道了，以後會多幫忙洗碗。"
           },
+          "pronunciationGuide": {
+            "ja": "わかった。 これから さらあらいは もっと てつだうよ。",
+            "en": "/aɪ ˌʌndɚˈstænd. aɪl hɛlp wɪð ˈdɪʃəz mɔɹ ˈɔfən./",
+            "zh": "Wǒ zhī dào le， yǐ hòu huì duō bāng máng xǐ wǎn。"
+          },
           "axisScores": {
             "empathy": 11,
             "needs-reading": 5,
@@ -200,6 +215,11 @@
             "ja": "やってほしいことがあるなら、その都度言ってくれればいい。",
             "en": "Just tell me whenever you want something done.",
             "zh": "有需要我做的事，每次告訴我就好。"
+          },
+          "pronunciationGuide": {
+            "ja": "やって ほしい ことが あるなら、 その つど いって くれれば いい。",
+            "en": "/dʒʌst tɛl mi wɛˈnɛvɚ ju wɑnt ˈsʌmθɪŋ dʌn./",
+            "zh": "Yǒu xū yào wǒ zuò de shì， měi cì gào sù wǒ jiù hǎo。"
           },
           "axisScores": {
             "empathy": 1,
@@ -234,6 +254,11 @@
         "en": "It isn't just cleaning. I plan meals, track supplies, and remember the family's schedule too.",
         "zh": "不只是打掃，想菜單、留意用品存量、記住家人行程也都是我。"
       },
+      "pronunciationGuide": {
+        "ja": "そうじだけじゃない。 こんだてを かんがえ、 にち ようひんの のこりを みて、 かぞくの よていを おぼえる のも わたしだよ。",
+        "en": "/ɪt ˈɪzənt dʒʌst ˈklinɪŋ. aɪ plæn milz, tɹæk səˈplaɪz, ənd ɹɪˈmɛmbɚ ðə ˈfæməliz ˈskɛdʒʊl tu./",
+        "zh": "Bù zhǐ shì dǎ sǎo， xiǎng cài dān、 liú yì yòng pǐn cún liáng、 jì zhù jiā rén xíng chéng yě dōu shì wǒ。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "見えない段取りまで一人に任せていたんだね。一週間分を記録して、作業と管理をセットで分け直そう。",
             "en": "I left all the invisible planning to you. Let's track a week and reassign each chore together with its management.",
             "zh": "原來我把隱性安排全留給你。我們記錄一週，把家事與其管理責任一起重新分配。"
+          },
+          "pronunciationGuide": {
+            "ja": "みえない だんどりまで ひとりに まかせて いた んだね。 いっしゅうかんぶんを きろく して、 さぎょうと かんりを せっとで わけ なおそう。",
+            "en": "/aɪ lɛft ɔl ðə ˌɪnˈvɪzəbəl ˈplænɪŋ tu ju. lɛts tɹæk ə wik ənd ˌɹiəˈsaɪn itʃ tʃɔɹ təˈɡɛðɚ wɪð ɪts ˈmænədʒmənt./",
+            "zh": "Yuán lái wǒ bǎ yǐn xìng ān pái quán liú gěi nǐ。 wǒ men jì lù yì zhōu， bǎ jiā shì yǔ qí guǎn lǐ zé rèn yì qǐ chóng xīn fēn pèi。"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "Let's chart how often each of us cleans and does laundry.",
             "zh": "把打掃和洗衣次數做成表格比較吧。"
           },
+          "pronunciationGuide": {
+            "ja": "そうじと せんたくの かいすうを ひょうに して くらべよう。",
+            "en": "/lɛts tʃɑɹt haʊ ˈɔfən itʃ ʌv ʌs klinz ənd dʌz ˈlɔndɹi./",
+            "zh": "Bǎ dǎ sǎo hé xǐ yī cì shù zuò chéng biǎo gé bǐ jiào ba。"
+          },
           "axisScores": {
             "empathy": 8,
             "needs-reading": 14,
@@ -327,6 +362,11 @@
             "ja": "献立や買い物は、得意な人がやる方が早いよ。",
             "en": "Meal planning and shopping are faster when the person good at them does them.",
             "zh": "菜單和採買交給擅長的人做比較快。"
+          },
+          "pronunciationGuide": {
+            "ja": "こんだてや かいものは、 とくいな ひとが やる ほうが はやいよ。",
+            "en": "/mil ˈplænɪŋ ənd ˈʃɑpɪŋ ɑɹ ˈfæstɚ wɛn ðə ˈpɝsən ɡʊd æt ðɛm dʌz ðɛm./",
+            "zh": "Cài dān hé cǎi mǎi jiāo gěi shàn cháng de rén zuò bǐ jiào kuài。"
           },
           "axisScores": {
             "empathy": 1,
@@ -361,6 +401,11 @@
         "en": "I don't want help only when I ask. I need you to own responsibilities through completion.",
         "zh": "我不要每次開口才得到幫忙，希望你把自己的責任從頭做到尾。"
       },
+      "pronunciationGuide": {
+        "ja": "いわれた ときだけ てつだう のではなく、 じぶんの たんとうとして さいごまで もって ほしい。",
+        "en": "/aɪ doʊnt wɑnt hɛlp ˈoʊnli wɛn aɪ æsk. aɪ nid ju tu oʊn ɹiˌspɑnsəˈbɪlətiz θɹu kəmˈpliʃən./",
+        "zh": "Wǒ bú yào měi cì kāi kǒu cái dé dào bāng máng， xī wàng nǐ bǎ zì jǐ de zé rèn cóng tóu zuò dào wěi。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "夕食の献立、買い物、後片付けは私が週三日まとめて担当する。二週間後に負担を一緒に見直そう。",
             "en": "I'll own planning, shopping, and cleanup for dinner three days a week. Let's review the load in two weeks.",
             "zh": "每週三天的晚餐規劃、採買與收拾由我完整負責，兩週後一起檢討負擔。"
+          },
+          "pronunciationGuide": {
+            "ja": "ゆうしょくの こんだて、 かいもの、 あとかたづけは わたしが しゅう さんにち まとめて たんとう する。 にしゅうかんごに ふたんを いっしょに みなおそう。",
+            "en": "/aɪl oʊn ˈplænɪŋ, ˈʃɑpɪŋ, ənd ˈkliˌnʌp fɔɹ ˈdɪnɚ θɹi deɪz ə wik. lɛts ˌɹivˈju ðə loʊd ɪn tu wiks./",
+            "zh": "Měi zhōu sān tiān de wǎn cān guī huà、 cǎi mǎi yǔ shōu shí yóu wǒ wán zhěng fù zé， liǎng zhōu hòu yì qǐ jiǎn tǎo fù dān。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "From now on, whoever notices a chore should do it.",
             "zh": "以後誰注意到家事就由誰做。"
           },
+          "pronunciationGuide": {
+            "ja": "これからは きづいた ほうが かじを する ことに しよう。",
+            "en": "/fɹʌm naʊ ɑn, huˈɛvɚ ˈnoʊtəsəz ə tʃɔɹ ʃʊd du ɪt./",
+            "zh": "Yǐ hòu shuí zhù yì dào jiā shì jiù yóu shuí zuò。"
+          },
           "axisScores": {
             "empathy": 8,
             "needs-reading": 5,
@@ -444,6 +499,11 @@
             "ja": "家事アプリを入れるから、あなたが担当を登録して。",
             "en": "I'll install a chore app, and you can enter everyone's assignments.",
             "zh": "我安裝家事App，你來登記每個人的分工。"
+          },
+          "pronunciationGuide": {
+            "ja": "かじ あぷりを いれるから、 あなたが たんとうを とうろく して。",
+            "en": "/aɪl ˌɪnˈstɔl ə tʃɔɹ æp, ənd ju kæn ˈɛntɚ ˈɛvɹiˌwʌnz əˈsaɪnmənts./",
+            "zh": "Wǒ ān zhuāng jiā shì App， nǐ lái dēng jì měi gè rén de fēn gōng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -478,6 +538,11 @@
         "en": "When you say 'help,' it sounds as if the household is fundamentally my job.",
         "zh": "你說『幫忙』時，聽起來家事本來就是我的責任，讓我很難受。"
       },
+      "pronunciationGuide": {
+        "ja": "『てつだう』と いわれると、 かじは わたしの しごとだと おもわれて いる ようで つらい。",
+        "en": "/wɛn ju seɪ ' hɛlp, ' ɪt saʊndz æz ɪf ðə ˈhaʊsˌhoʊld ɪz ˌfʌndəˈmɛntəli maɪ dʒɑb./",
+        "zh": "Nǐ shuō 『bāng máng』 shí， tīng qǐ lái jiā shì běn lái jiù shì wǒ de zé rèn， ràng wǒ hěn nán shòu。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "家事をあなたの仕事として考えていた言い方だった。ごめん。共同責任として、私が持つ担当を決め直したい。",
             "en": "Calling it help treated the household as your job. I'm sorry. I want to define what I own as a shared responsibility.",
             "zh": "說成幫忙，等於把家事當成你的工作，對不起。我想以共同責任重新決定我完整負責的項目。"
+          },
+          "pronunciationGuide": {
+            "ja": "かじを あなたの しごととして かんがえて いた いいかただった。 ごめん。 きょうどう せきにんとして、 わたしが もつ たんとうを きめ なおしたい。",
+            "en": "/ˈkɔlɪŋ ɪt hɛlp ˈtɹitɪd ðə ˈhaʊsˌhoʊld æz jɔɹ dʒɑb. aɪm ˈsɑɹi. aɪ wɑnt tu dɪˈfaɪn wʌt aɪ oʊn æz ə ʃɛɹd ɹiˌspɑnsəˈbɪləti./",
+            "zh": "Shuō chéng bāng máng， děng yú bǎ jiā shì dàng chéng nǐ de gōng zuò， duì bù qǐ。 wǒ xiǎng yǐ gòng tóng zé rèn chóng xīn jué dìng wǒ wán zhěng fù zé de xiàng mù。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "That was poor wording. I won't call it helping; I'll do chores.",
             "zh": "是我用詞不好，不說幫忙，我會做家事。"
           },
+          "pronunciationGuide": {
+            "ja": "ことばが わるかった。 てつだうじゃ なくて、 かじを するよ。",
+            "en": "/ðæt wɑz puɹ ˈwɝdɪŋ. aɪ woʊnt kɔl ɪt ˈhɛlpɪŋ; aɪl du tʃɔɹz./",
+            "zh": "Shì wǒ yòng cí bù hǎo， bù shuō bāng máng， wǒ huì zuò jiā shì。"
+          },
           "axisScores": {
             "empathy": 13,
             "needs-reading": 8,
@@ -561,6 +636,11 @@
             "ja": "言葉の問題でしょ。実際にやっているなら気にしなくていい。",
             "en": "That's just wording. If I do some chores, it shouldn't matter.",
             "zh": "那只是用詞問題，有做家事就不用在意。"
+          },
+          "pronunciationGuide": {
+            "ja": "ことばの もんだいでしょ。 じっさいに やって いるなら きに しなくて いい。",
+            "en": "/ðæts dʒʌst ˈwɝdɪŋ. ɪf aɪ du sʌm tʃɔɹz, ɪt ˈʃʊdənt ˈmætɚ./",
+            "zh": "Nà zhǐ shì yòng cí wèn tí， yǒu zuò jiā shì jiù bú yòng zài yì。"
           },
           "axisScores": {
             "empathy": 0,

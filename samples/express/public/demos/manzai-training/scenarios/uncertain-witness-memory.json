@@ -112,6 +112,11 @@
         "en": "I think the clothing was blue, but the more I'm asked, the less certain I feel.",
         "zh": "我覺得衣服是藍色，但越被問越沒有把握。"
       },
+      "pronunciationGuide": {
+        "ja": "あおい ふくだった きも しますが、 しつもん される ほど じしんが なくなって きました。",
+        "en": "/aɪ θɪŋk ðə ˈkloʊðɪŋ wɑz blu, bʌt ðə mɔɹ aɪm æskt, ðə lɛs ˈsɝtən aɪ fil./",
+        "zh": "Wǒ jué de yī fu shì lán sè， dàn yuè bèi wèn yuè méi yǒu bǎ wò。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「服の色についての最初の印象と現在の確信度」を中立に確認し、遮らずに一度すべて話してもらい、色の確信度を本人の言葉で記録する。",
             "en": "Verify first; obtain an uninterrupted account and record confidence in the witness's own words.",
             "zh": "中立查證衣服顏色的第一印象與目前確信度，再先不打斷地完整陳述，再用本人措辭記錄顏色確信度。"
+          },
+          "pronunciationGuide": {
+            "ja": "「ふくの いろについての さいしょの いんしょうと げんざいの かくしんど」を ちゅうりつに かくにん し、 さえぎらずに いちど すべて はなして もらい、 いろの かくしんどを ほんにんの ことばで きろく する。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; əbˈteɪn æn ˌʌnɪntɚˈʌptɪd əˈkaʊnt ənd ɹəˈkɔɹd ˈkɑnfədəns ɪn ðə ˈwɪtnəsɪz oʊn wɝdz./",
+            "zh": "Zhōng lì chá zhèng yī fu yán sè de dì yī yìn xiàng yǔ mù qián què xìn dù， zài xiān bù dǎ duàn dì wán zhěng chén shù， zài yòng běn rén cuò cí jì lù yán sè què xìn dù。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -170,6 +180,11 @@
             "en": "Only obtain an uninterrupted account and record confidence in the witness's own words.",
             "zh": "先不打斷地完整陳述，再用本人措辭記錄顏色確信度，但不查衣服顏色的第一印象與目前確信度的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "さえぎらずに いちど すべて はなして もらい、 いろの かくしんどを ほんにんの ことばで きろく するが、「ふくの いろについての さいしょの いんしょうと げんざいの かくしんど」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli əbˈteɪn æn ˌʌnɪntɚˈʌptɪd əˈkaʊnt ənd ɹəˈkɔɹd ˈkɑnfədəns ɪn ðə ˈwɪtnəsɪz oʊn wɝdz./",
+            "zh": "Xiān bù dǎ duàn dì wán zhěng chén shù， zài yòng běn rén cuò cí jì lù yán sè què xìn dù， dàn bù chá yī fu yán sè de dì yī yìn xiàng yǔ mù qián què xìn dù de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -200,6 +215,11 @@
             "ja": "「服の色についての最初の印象と現在の確信度」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat the first impression of clothing color and current confidence as a lie and press for an admission.",
             "zh": "只憑衣服顏色的第一印象與目前確信度就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「ふくの いろについての さいしょの いんしょうと げんざいの かくしんど」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit ðə fɝst ˌɪmˈpɹɛʃən ʌv ˈkloʊðɪŋ ˈkʌlɚ ənd ˈkɝənt ˈkɑnfədəns æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng yī fú yán sè de dì yī yìn xiàng yǔ mù qián què xìn dù jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
@@ -234,6 +254,11 @@
         "en": "The key issue is how lighting, distance, and viewing time affected color perception. Which records and questions will you use?",
         "zh": "關鍵是光線、距離與觀看時間對顏色判斷的影響。你會用哪些紀錄與問題查證？"
       },
+      "pronunciationGuide": {
+        "ja": "じゅうような のは「しょうめい・ きょり・ かんさつ じかんが いろの みえかたに あたえた えいきょう」です。 どの しりょうと しつもんで かくにん しますか？",
+        "en": "/ðə ki ˈɪʃu ɪz haʊ ˈlaɪtɪŋ, ˈdɪstəns, ənd ˈvjuɪŋ taɪm əˈfɛktɪd ˈkʌlɚ pɚˈsɛpʃən. wɪtʃ ɹəˈkɔɹdz ənd ˈkwɛstʃənz wɪl ju jus?/",
+        "zh": "Guān jiàn shì guāng xiàn、 jù lí yǔ guān kàn shí jiān duì yán sè pàn duàn de yǐng xiǎng。 nǐ huì yòng nǎ xiē jì lù yǔ wèn tí chá zhèng？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「照明・距離・観察時間が色の見え方に与えた影響」を中立に確認し、条件を一つずつ非誘導質問で確認し、初回回答を上書きしない。",
             "en": "Verify first; check each condition with open questions without overwriting the first answer.",
             "zh": "中立查證光線、距離與觀看時間對顏色判斷的影響，再逐項以非誘導問題確認，不覆蓋首次回答。"
+          },
+          "pronunciationGuide": {
+            "ja": "「しょうめい・ きょり・ かんさつ じかんが いろの みえかたに あたえた えいきょう」を ちゅうりつに かくにん し、 じょうけんを ひとつずつ ひ ゆうどう しつもんで かくにん し、 しょかい かいとうを うわがき しない。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; tʃɛk itʃ kənˈdɪʃən wɪð ˈoʊpən ˈkwɛstʃənz wɪˈθaʊt ˌoʊvɚˈɹaɪtɪŋ ðə fɝst ˈænsɚ./",
+            "zh": "Zhōng lì chá zhèng guāng xiàn、 jù lí yǔ guān kàn shí jiān duì yán sè pàn duàn de yǐng xiǎng， zài zhú xiàng yǐ fēi yòu dǎo wèn tí què rèn， bú fù gài shǒu cì huí dá。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -297,6 +327,11 @@
             "en": "Only check each condition with open questions without overwriting the first answer.",
             "zh": "逐項以非誘導問題確認，不覆蓋首次回答，但不查光線、距離與觀看時間對顏色判斷的影響的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "じょうけんを ひとつずつ ひ ゆうどう しつもんで かくにん し、 しょかい かいとうを うわがき しないが、「しょうめい・ きょり・ かんさつ じかんが いろの みえかたに あたえた えいきょう」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli tʃɛk itʃ kənˈdɪʃən wɪð ˈoʊpən ˈkwɛstʃənz wɪˈθaʊt ˌoʊvɚˈɹaɪtɪŋ ðə fɝst ˈænsɚ./",
+            "zh": "Zhú xiàng yǐ fēi yòu dǎo wèn tí què rèn， bú fù gài shǒu cì huí dá， dàn bù chá guāng xiàn、 jù lí yǔ guān kàn shí jiān duì yán sè pàn duàn de yǐng xiǎng de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -327,6 +362,11 @@
             "ja": "「照明・距離・観察時間が色の見え方に与えた影響」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat how lighting, distance, and viewing time affected color perception as a lie and press for an admission.",
             "zh": "只憑光線、距離與觀看時間對顏色判斷的影響就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「しょうめい・ きょり・ かんさつ じかんが いろの みえかたに あたえた えいきょう」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit haʊ ˈlaɪtɪŋ, ˈdɪstəns, ənd ˈvjuɪŋ taɪm əˈfɛktɪd ˈkʌlɚ pɚˈsɛpʃən æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng guāng xiàn、 jù lí yǔ guān kàn shí jiān duì yán sè pàn duàn de yǐng xiǎng jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
@@ -361,6 +401,11 @@
         "en": "Can you make the procedure clear to lock in pre-identification confidence and compare video in a separate field?",
         "zh": "可以清楚說明如何固定辨認前確信度，並與影像等獨立證據分欄比較嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "ほんにん かくにん まえの かくしんどを こてい し、 えいぞうなど どくりつ しょうこと べつ らんで ひかく する てじゅんを めいかくに できますか？",
+        "en": "/kæn ju meɪk ðə pɹəˈsidʒɚ klɪɹ tu lɑk ɪn pɹi - aɪˌdɛntəfəˈkeɪʃən ˈkɑnfədəns ənd kəmˈpɛɹ ˈvɪdioʊ ɪn ə ˈsɛpɚˌeɪt fild?/",
+        "zh": "Kě yǐ qīng chǔ shuō míng rú hé gù dìng biàn rèn qián què xìn dù， bìng yǔ yǐng xiàng děng dú lì zhèng jù fēn lán bǐ jiào ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「確かな特徴と不確かな特徴を捜査資料で分ける方法」を中立に確認し、本人確認前の確信度を固定し、映像など独立証拠と別欄で比較する。",
             "en": "Verify first; lock in pre-identification confidence and compare video in a separate field.",
             "zh": "中立查證在調查紀錄中區分確定與不確定特徵的方法，再固定辨認前確信度，並與影像等獨立證據分欄比較。"
+          },
+          "pronunciationGuide": {
+            "ja": "「たしかな とくちょうと ふたしかな とくちょうを そうさ しりょうで わける ほうほう」を ちゅうりつに かくにん し、 ほんにん かくにん まえの かくしんどを こてい し、 えいぞうなど どくりつ しょうこと べつ らんで ひかく する。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; lɑk ɪn pɹi - aɪˌdɛntəfəˈkeɪʃən ˈkɑnfədəns ənd kəmˈpɛɹ ˈvɪdioʊ ɪn ə ˈsɛpɚˌeɪt fild./",
+            "zh": "Zhōng lì chá zhèng zài diào chá jì lù zhōng qū fēn què dìng yǔ bú què dìng tè zhēng de fāng fǎ， zài gù dìng biàn rèn qián què xìn dù， bìng yǔ yǐng xiàng děng dú lì zhèng jù fēn lán bǐ jiào。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -414,6 +464,11 @@
             "en": "Only lock in pre-identification confidence and compare video in a separate field.",
             "zh": "固定辨認前確信度，並與影像等獨立證據分欄比較，但不查在調查紀錄中區分確定與不確定特徵的方法的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "ほんにん かくにん まえの かくしんどを こてい し、 えいぞうなど どくりつ しょうこと べつ らんで ひかく するが、「たしかな とくちょうと ふたしかな とくちょうを そうさ しりょうで わける ほうほう」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli lɑk ɪn pɹi - aɪˌdɛntəfəˈkeɪʃən ˈkɑnfədəns ənd kəmˈpɛɹ ˈvɪdioʊ ɪn ə ˈsɛpɚˌeɪt fild./",
+            "zh": "Gù dìng biàn rèn qián què xìn dù， bìng yǔ yǐng xiàng děng dú lì zhèng jù fēn lán bǐ jiào， dàn bù chá zài diào chá jì lù zhōng qū fēn què dìng yǔ bú què dìng tè zhēng de fāng fǎ de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -444,6 +499,11 @@
             "ja": "「確かな特徴と不確かな特徴を捜査資料で分ける方法」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat how to separate confident and uncertain features in the record as a lie and press for an admission.",
             "zh": "只憑在調查紀錄中區分確定與不確定特徵的方法就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「たしかな とくちょうと ふたしかな とくちょうを そうさ しりょうで わける ほうほう」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit haʊ tu ˈsɛpɚˌeɪt ˈkɑnfədənt ənd ənˈsɝtən ˈfitʃɚz ɪn ðə ɹəˈkɔɹd æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng zài diào chá jì lù zhōng qū fēn què dìng yǔ bú què dìng tè zhēng de fāng fǎ jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
@@ -478,6 +538,11 @@
         "en": "Presuming possible memory change after repeated suggestions that the clothing was blue made it harder to give an accurate account.",
         "zh": "你預設反覆暗示衣服是藍色後，記憶可能被改變，讓我更難準確陳述。"
       },
+      "pronunciationGuide": {
+        "ja": "「あおだった はずと くりかえし しさ され、 きおくが かわった かのうせい」を きめつけられ、 せいかくに はなし にくく なりました。",
+        "en": "/pɹɪˈzumɪŋ ˈpɑsəbəl ˈmɛmɚi tʃeɪndʒ ˈæftɚ ɹɪˈpitɪd səˈdʒɛstʃənz ðæt ðə ˈkloʊðɪŋ wɑz blu meɪd ɪt ˈhɑɹdɚ tu ɡɪv æn ˈækjɚət əˈkaʊnt./",
+        "zh": "Nǐ yù shè fǎn fù àn shì yī fu shì lán sè hòu， jì yì kě néng bèi gǎi biàn， ràng wǒ gèng nán zhǔn què chén shù。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「青だったはずと繰り返し示唆され、記憶が変わった可能性」を中立に確認し、誘導質問を認め、影響後の回答と初回陳述を分けて記録する。",
             "en": "Verify first; acknowledge the leading question and separate later answers from the first account.",
             "zh": "中立查證反覆暗示衣服是藍色後，記憶可能被改變，再承認誘導提問，分開記錄受影響後回答與首次陳述。"
+          },
+          "pronunciationGuide": {
+            "ja": "「あおだった はずと くりかえし しさ され、 きおくが かわった かのうせい」を ちゅうりつに かくにん し、 ゆうどう しつもんを みとめ、 えいきょうごの かいとうと しょかい ちんじゅつを わけて きろく する。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; ækˈnɑlɪdʒ ðə ˈlidɪŋ ˈkwɛstʃən ənd ˈsɛpɚˌeɪt ˈleɪtɚ ˈænsɚz fɹʌm ðə fɝst əˈkaʊnt./",
+            "zh": "Zhōng lì chá zhèng fǎn fù àn shì yī fu shì lán sè hòu， jì yì kě néng bèi gǎi biàn， zài chéng rèn yòu dǎo tí wèn， fēn kāi jì lù shòu yǐng xiǎng hòu huí dá yǔ shǒu cì chén shù。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -531,6 +601,11 @@
             "en": "Only acknowledge the leading question and separate later answers from the first account.",
             "zh": "承認誘導提問，分開記錄受影響後回答與首次陳述，但不查反覆暗示衣服是藍色後，記憶可能被改變的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "ゆうどう しつもんを みとめ、 えいきょうごの かいとうと しょかい ちんじゅつを わけて きろく するが、「あおだった はずと くりかえし しさ され、 きおくが かわった かのうせい」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli ækˈnɑlɪdʒ ðə ˈlidɪŋ ˈkwɛstʃən ənd ˈsɛpɚˌeɪt ˈleɪtɚ ˈænsɚz fɹʌm ðə fɝst əˈkaʊnt./",
+            "zh": "Chéng rèn yòu dǎo tí wèn， fēn kāi jì lù shòu yǐng xiǎng hòu huí dá yǔ shǒu cì chén shù， dàn bù chá fǎn fù àn shì yī fu shì lán sè hòu， jì yì kě néng bèi gǎi biàn de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -561,6 +636,11 @@
             "ja": "「青だったはずと繰り返し示唆され、記憶が変わった可能性」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat possible memory change after repeated suggestions that the clothing was blue as a lie and press for an admission.",
             "zh": "只憑反覆暗示衣服是藍色後，記憶可能被改變就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「あおだった はずと くりかえし しさ され、 きおくが かわった かのうせい」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit ˈpɑsəbəl ˈmɛmɚi tʃeɪndʒ ˈæftɚ ɹɪˈpitɪd səˈdʒɛstʃənz ðæt ðə ˈkloʊðɪŋ wɑz blu æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng fǎn fù àn shì yī fú shì lán sè hòu， jì yì kě néng bèi gǎi biàn jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,

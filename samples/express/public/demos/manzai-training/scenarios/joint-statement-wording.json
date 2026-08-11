@@ -112,6 +112,11 @@
         "en": "That wording will be seen at home as a unilateral concession by our country.",
         "zh": "這種措辭在國內會被視為我方單方面讓步。"
       },
+      "pronunciationGuide": {
+        "ja": "その ひょうげんでは、 わがくにがいっぽうてきに じょうほ した ように こくないで うけとられます。",
+        "en": "/ðæt ˈwɝdɪŋ wɪl bi sin æt hoʊm æz ə ˌjunəˈlætɚəl kənˈsɛʃən baɪ ˈaʊɚ ˈkʌntɹi./",
+        "zh": "Zhè zhǒng cuò cí zài guó nèi huì bèi shì wèi wǒ fāng dān fāng miàn ràng bù。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「一方的譲歩と見える語句と、声明で必要な実務効果」を確認し、問題語句を特定し、双方の行動を並列する代案を二つ作る。",
             "en": "Confirm the constraint; then identify the disputed words and draft two options with parallel commitments.",
             "zh": "先確認哪些措辭像單方面讓步，以及聲明需要的實際效果，再找出爭議措辭，提出兩個並列雙方承諾的版本。"
+          },
+          "pronunciationGuide": {
+            "ja": "「いっぽうてき じょうほと みえる ごくと、 せいめいで ひつような じつむ こうか」を かくにん し、 もんだい ごくを とくてい し、 そうほうの こうどうを へいれつ する だいあんを ふたつ つくる。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn aɪˈdɛntəˌfaɪ ðə dɪspˈjutəd wɝdz ənd dɹæft tu ˈɑpʃənz wɪð ˈpɛɹəˌlɛl kəˈmɪtmənts./",
+            "zh": "Xiān què rèn nǎ xiē cuò cí xiàng dān fāng miàn ràng bù， yǐ jí shēng míng xū yào de shí jì xiào guǒ， zài zhǎo chū zhēng yì cuò cí， tí chū liǎng gè bìng liè shuāng fāng chéng nuò de bǎn běn。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -170,6 +180,11 @@
             "en": "identify the disputed words and draft two options with parallel commitments, without resolving the constraint.",
             "zh": "找出爭議措辭，提出兩個並列雙方承諾的版本，但未處理哪些措辭像單方面讓步，以及聲明需要的實際效果。"
           },
+          "pronunciationGuide": {
+            "ja": "もんだい ごくを とくてい し、 そうほうの こうどうを へいれつ する だいあんを ふたつ つくるが、「いっぽうてき じょうほと みえる ごくと、 せいめいで ひつような じつむ こうか」への はいりょは あいまいです。",
+            "en": "/aɪˈdɛntəˌfaɪ ðə dɪspˈjutəd wɝdz ənd dɹæft tu ˈɑpʃənz wɪð ˈpɛɹəˌlɛl kəˈmɪtmənts, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Zhǎo chū zhēng yì cuò cí， tí chū liǎng gè bìng liè shuāng fāng chéng nuò de bǎn běn， dàn wèi chù lǐ nǎ xiē cuò cí xiàng dān fāng miàn ràng bù， yǐ jí shēng míng xū yào de shí jì xiào guǒ。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -200,6 +215,11 @@
             "ja": "「一方的譲歩と見える語句と、声明で必要な実務効果」を退け、自国案への即時同意を求めます。",
             "en": "Ignore which words imply unilateral concession and what operational effect is needed; demand acceptance.",
             "zh": "否定哪些措辭像單方面讓步，以及聲明需要的實際效果並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「いっぽうてき じょうほと みえる ごくと、 せいめいで ひつような じつむ こうか」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ wɪtʃ wɝdz ˌɪmˈplaɪ ˌjunəˈlætɚəl kənˈsɛʃən ənd wʌt ˌɑpɚˈeɪʃənəl ɪˈfɛkt ɪz ˈnidəd; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng nǎ xiē cuò cí xiàng dān fāng miàn ràng bù， yǐ jí shēng míng xū yào de shí jì xiào guǒ bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
@@ -234,6 +254,11 @@
         "en": "How much can you share about domestically unacceptable wording on agency, regret, and responsibility, which blocks agreement?",
         "zh": "阻礙協議的國內無法接受的主詞、遺憾與責任表述，你能透露到什麼程度？"
       },
+      "pronunciationGuide": {
+        "ja": "ごういを はばむ「こくないで うけいれられない しゅご・ しゃい・ せきにん ひょうげん」を、 どこまで きょうゆう できますか？",
+        "en": "/haʊ mʌtʃ kæn ju ʃɛɹ əˈbaʊt dəˈmɛstɪkli ˌʌnækˈsɛptəbəl ˈwɝdɪŋ ɑn ˈeɪdʒənsi, ɹəˈɡɹɛt, ənd ɹiˌspɑnsəˈbɪləti, wɪtʃ blɑks əˈɡɹimənt?/",
+        "zh": "Zǔ ài xié yì de guó nèi wú fǎ jiē shòu de zhǔ cí、 yí hàn yǔ zé rèn biǎo shù， nǐ néng tòu lù dào shén me chéng dù？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「国内で受け入れられない主語・謝意・責任表現」を確認し、法的立場を害さない注記と、相互的な懸念表明を組み合わせる。",
             "en": "Confirm the constraint; then pair a no-prejudice clause with reciprocal acknowledgment of concerns.",
             "zh": "先確認國內無法接受的主詞、遺憾與責任表述，再結合不損法律立場條款與相互承認關切。"
+          },
+          "pronunciationGuide": {
+            "ja": "「こくないで うけいれられない しゅご・ しゃい・ せきにん ひょうげん」を かくにん し、 ほうてき たちばを がいさない ちゅうきと、 そうごてきな けねん ひょうめいを くみあわせる。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn pɛɹ ə noʊ - ˈpɹɛdʒədɪs klɔz wɪð ɹɪˈsɪpɹəkəl ækˈnɑlɪdʒmənt ʌv kənˈsɝnz./",
+            "zh": "Xiān què rèn guó nèi wú fǎ jiē shòu de zhǔ cí、 yí hàn yǔ zé rèn biǎo shù， zài jié hé bù sǔn fǎ lǜ lì chǎng tiáo kuǎn yǔ xiāng hù chéng rèn guān qiè。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -297,6 +327,11 @@
             "en": "pair a no-prejudice clause with reciprocal acknowledgment of concerns, without resolving the constraint.",
             "zh": "結合不損法律立場條款與相互承認關切，但未處理國內無法接受的主詞、遺憾與責任表述。"
           },
+          "pronunciationGuide": {
+            "ja": "ほうてき たちばを がいさない ちゅうきと、 そうごてきな けねん ひょうめいを くみあわせるが、「こくないで うけいれられない しゅご・ しゃい・ せきにん ひょうげん」への はいりょは あいまいです。",
+            "en": "/pɛɹ ə noʊ - ˈpɹɛdʒədɪs klɔz wɪð ɹɪˈsɪpɹəkəl ækˈnɑlɪdʒmənt ʌv kənˈsɝnz, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Jié hé bù sǔn fǎ lǜ lì chǎng tiáo kuǎn yǔ xiāng hù chéng rèn guān qiè， dàn wèi chǔ lǐ guó nèi wú fǎ jiē shòu de zhǔ cí、 yí hàn yǔ zé rèn biǎo shù。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -327,6 +362,11 @@
             "ja": "「国内で受け入れられない主語・謝意・責任表現」を退け、自国案への即時同意を求めます。",
             "en": "Ignore domestically unacceptable wording on agency, regret, and responsibility; demand acceptance.",
             "zh": "否定國內無法接受的主詞、遺憾與責任表述並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「こくないで うけいれられない しゅご・ しゃい・ せきにん ひょうげん」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ dəˈmɛstɪkli ˌʌnækˈsɛptəbəl ˈwɝdɪŋ ɑn ˈeɪdʒənsi, ɹəˈɡɹɛt, ənd ɹiˌspɑnsəˈbɪləti; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng guó nèi wú fǎ jiē shòu de zhǔ cí、 yí hàn yǔ zé rèn biǎo shù bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
@@ -361,6 +401,11 @@
         "en": "Can we set conditions and timing to publish simultaneously and jointly approve translations and questions?",
         "zh": "可以設定條件與期限來同步發布並共同確認譯文與問答嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "どうじ こうひょう し、 ほんやくひょうと そうてい もんどうを きょうどう かくにん する ための じょうけんと きげんを さだめられますか？",
+        "en": "/kæn wi sɛt kənˈdɪʃənz ənd ˈtaɪmɪŋ tu ˈpʌblɪʃ ˌsaɪməlˈteɪniəsli ənd ˈdʒɔɪntli əˈpɹuv tɹænzˈleɪʃənz ənd ˈkwɛstʃənz?/",
+        "zh": "Kě yǐ shè dìng tiáo jiàn yǔ qī xiàn lái tóng bù fā bù bìng gòng tóng què rèn yì wén yǔ wèn dá ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「公表順序、翻訳一致、各国説明文の整合性」を確認し、同時公表し、翻訳表と想定問答を共同確認する。",
             "en": "Confirm the constraint; then publish simultaneously and jointly approve translations and questions.",
             "zh": "先確認發布順序、翻譯一致與各國說明稿的整合，再同步發布並共同確認譯文與問答。"
+          },
+          "pronunciationGuide": {
+            "ja": "「こうひょう じゅんじょ、 ほんやく いっち、 かっこく せつめい ぶんの せいごうせい」を かくにん し、 どうじ こうひょう し、 ほんやくひょうと そうてい もんどうを きょうどう かくにん する。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn ˈpʌblɪʃ ˌsaɪməlˈteɪniəsli ənd ˈdʒɔɪntli əˈpɹuv tɹænzˈleɪʃənz ənd ˈkwɛstʃənz./",
+            "zh": "Xiān què rèn fā bù shùn xù、 fān yì yí zhì yǔ gè guó shuō míng gǎo de zhěng hé， zài tóng bù fā bù bìng gòng tóng què rèn yì wén yǔ wèn dá。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -414,6 +464,11 @@
             "en": "publish simultaneously and jointly approve translations and questions, without resolving the constraint.",
             "zh": "同步發布並共同確認譯文與問答，但未處理發布順序、翻譯一致與各國說明稿的整合。"
           },
+          "pronunciationGuide": {
+            "ja": "どうじ こうひょう し、 ほんやくひょうと そうてい もんどうを きょうどう かくにん するが、「こうひょう じゅんじょ、 ほんやく いっち、 かっこく せつめい ぶんの せいごうせい」への はいりょは あいまいです。",
+            "en": "/ˈpʌblɪʃ ˌsaɪməlˈteɪniəsli ənd ˈdʒɔɪntli əˈpɹuv tɹænzˈleɪʃənz ənd ˈkwɛstʃənz, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Tóng bù fā bù bìng gòng tóng què rèn yì wén yǔ wèn dá， dàn wèi chǔ lǐ fā bù shùn xù、 fān yì yí zhì yǔ gè guó shuō míng gǎo de zhěng hé。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -444,6 +499,11 @@
             "ja": "「公表順序、翻訳一致、各国説明文の整合性」を退け、自国案への即時同意を求めます。",
             "en": "Ignore release order, translation equivalence, and consistency of domestic explanations; demand acceptance.",
             "zh": "否定發布順序、翻譯一致與各國說明稿的整合並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「こうひょう じゅんじょ、 ほんやく いっち、 かっこく せつめい ぶんの せいごうせい」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ ɹiˈlis ˈɔɹdɚ, tɹænzˈleɪʃən ɪkˈwɪvələns, ənd kənˈsɪstənsi ʌv dəˈmɛstɪk ˌɛkspləˈneɪʃənz; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng fā bù shùn xù、 fān yì yí zhì yǔ gè guó shuō míng gǎo de zhěng hé bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
@@ -478,6 +538,11 @@
         "en": "It is hard to continue after you dismissed the loss of face caused by language implying an admission of defeat.",
         "zh": "你輕視被解讀為承認失敗所造成的顏面損失，讓談判難以繼續。"
       },
+      "pronunciationGuide": {
+        "ja": "「はいぼくを みとめろと いわれたと うけとられる めんこの そんしつ」を けいし され、 こうしょうを つづけ にくく なりました。",
+        "en": "/ɪt ɪz hɑɹd tu kənˈtɪnju ˈæftɚ ju dɪˈsmɪst ðə lɔs ʌv feɪs kɑzd baɪ ˈlæŋɡwədʒ ˌɪmˈplaɪɪŋ æn ædˈmɪʃən ʌv dɪˈfit./",
+        "zh": "Nǐ qīng shì bèi jiě dú wèi chéng rèn shī bài suǒ zào chéng de yán miàn sǔn shī， ràng tán pàn nán yǐ jì xù。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「敗北を認めろと言われたと受け取られる面子の損失」を確認し、勝敗の表現を撤回し、共通利益と相互行動の文案へ戻る。",
             "en": "Confirm the constraint; then withdraw win-loss framing and return to mutual actions and shared interests.",
             "zh": "先確認被解讀為承認失敗所造成的顏面損失，再撤回勝負框架，回到共同利益與相互行動的措辭。"
+          },
+          "pronunciationGuide": {
+            "ja": "「はいぼくを みとめろと いわれたと うけとられる めんこの そんしつ」を かくにん し、 しょうはいの ひょうげんを てっかい し、 きょうつう りえきと そうご こうどうの ぶんあんへ もどる。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn wɪðˈdɹɔ wɪn - lɔs ˈfɹeɪmɪŋ ənd ɹɪˈtɝn tu ˈmjutʃuəl ˈækʃənz ənd ʃɛɹd ˈɪntɹəsts./",
+            "zh": "Xiān què rèn bèi jiě dú wèi chéng rèn shī bài suǒ zào chéng de yán miàn sǔn shī， zài chè huí shèng fù kuàng jià， huí dào gòng tóng lì yì yǔ xiāng hù xíng dòng de cuò cí。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -531,6 +601,11 @@
             "en": "withdraw win-loss framing and return to mutual actions and shared interests, without resolving the constraint.",
             "zh": "撤回勝負框架，回到共同利益與相互行動的措辭，但未處理被解讀為承認失敗所造成的顏面損失。"
           },
+          "pronunciationGuide": {
+            "ja": "しょうはいの ひょうげんを てっかい し、 きょうつう りえきと そうご こうどうの ぶんあんへ もどるが、「はいぼくを みとめろと いわれたと うけとられる めんこの そんしつ」への はいりょは あいまいです。",
+            "en": "/wɪðˈdɹɔ wɪn - lɔs ˈfɹeɪmɪŋ ənd ɹɪˈtɝn tu ˈmjutʃuəl ˈækʃənz ənd ʃɛɹd ˈɪntɹəsts, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Chè huí shèng fù kuàng jià， huí dào gòng tóng lì yì yǔ xiāng hù xíng dòng de cuò cí， dàn wèi chǔ lǐ bèi jiě dú wèi chéng rèn shī bài suǒ zào chéng de yán miàn sǔn shī。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -561,6 +636,11 @@
             "ja": "「敗北を認めろと言われたと受け取られる面子の損失」を退け、自国案への即時同意を求めます。",
             "en": "Ignore the loss of face caused by language implying an admission of defeat; demand acceptance.",
             "zh": "否定被解讀為承認失敗所造成的顏面損失並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「はいぼくを みとめろと いわれたと うけとられる めんこの そんしつ」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ ðə lɔs ʌv feɪs kɑzd baɪ ˈlæŋɡwədʒ ˌɪmˈplaɪɪŋ æn ædˈmɪʃən ʌv dɪˈfit; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng bèi jiě dú wèi chéng rèn shī bài suǒ zào chéng de yán miàn sǔn shī bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,

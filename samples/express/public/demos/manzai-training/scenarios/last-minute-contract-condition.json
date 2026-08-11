@@ -112,6 +112,11 @@
         "en": "We'll sign today if you add another discount. That's our final condition.",
         "zh": "如果今天再給折扣，我們就簽約。這是最後條件。"
       },
+      "pronunciationGuide": {
+        "ja": "きょうちゅうに ついか ねびきが でれば けいやく します。 これが さいごの じょうけんです。",
+        "en": "/wil saɪn təˈdeɪ ɪf ju æd əˈnʌðɚ dɪˈskaʊnt. ðæts ˈaʊɚ ˈfaɪnəl kənˈdɪʃən./",
+        "zh": "Rú guǒ jīn tiān zài gěi zhé kòu， wǒ men jiù qiān yuē。 zhè shì zuì hòu tiáo jiàn。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "本日中という条件を確認します。追加値引きが必要になった理由と、それで最終決裁になるか教えてください。",
             "en": "Let me confirm today's condition: why is another discount now required, and would it complete final approval?",
             "zh": "我先確認今天的條件：為何現在需要追加折扣，以及折扣後是否就能最終核准？"
+          },
+          "pronunciationGuide": {
+            "ja": "ほんじつちゅうという じょうけんを かくにん します。 ついか ねびきが ひつように なった りゆうと、それで さいしゅう けっさいに なるか おしえて ください。",
+            "en": "/lɛt mi kənˈfɝm təˈdeɪz kənˈdɪʃən: waɪ ɪz əˈnʌðɚ dɪˈskaʊnt naʊ ɹikˈwaɪɚd, ənd wʊd ɪt kəmˈplit ˈfaɪnəl əˈpɹuvəl?/",
+            "zh": "Wǒ xiān què rèn jīn tiān de tiáo jiàn： wèi hé xiàn zài xū yào zhuī jiā zhé kòu， yǐ jí zhé kòu hòu shì fǒu jiù néng zuì zhōng hé zhǔn？"
           },
           "axisScores": {
             "discovery": 20,
@@ -170,6 +180,11 @@
             "en": "If we sign today, I can consider another three percent.",
             "zh": "若今天簽約，我可以考慮再降百分之三。"
           },
+          "pronunciationGuide": {
+            "ja": "きょうちゅうなら、 ついかで さんぱーせんとまで けんとう します。",
+            "en": "/ɪf wi saɪn təˈdeɪ, aɪ kæn kənˈsɪdɚ əˈnʌðɚ θɹi pɚˈsɛnt./",
+            "zh": "Ruò jīn tiān qiān yuē， wǒ kě yǐ kǎo lǜ zài jiàng bǎi fēn zhī sān。"
+          },
           "axisScores": {
             "discovery": 5,
             "value-articulation": 3,
@@ -200,6 +215,11 @@
             "ja": "契約直前の値引き要求は交渉のやり方として不適切です。",
             "en": "Demanding a discount just before signature is inappropriate negotiation.",
             "zh": "簽約前才要求折扣，這種談判方式不恰當。"
+          },
+          "pronunciationGuide": {
+            "ja": "けいやく ちょくぜんの ねびき ようきゅうは こうしょうの やりかたとして ふてきせつです。",
+            "en": "/dɪˈmændɪŋ ə dɪˈskaʊnt dʒʌst bɪˈfɔɹ ˈsɪɡnətʃɚ ɪz ˌɪnəˈpɹoʊpɹiɪt nɪˌɡoʊʃiˈeɪʃən./",
+            "zh": "Qiān yuē qián cái yāo qiú zhé kòu， zhè zhǒng tán pàn fāng shì bú qià dàng。"
           },
           "axisScores": {
             "discovery": 3,
@@ -234,6 +254,11 @@
         "en": "Procurement wants the total rounded down, and my approval alone is not enough.",
         "zh": "採購要求把總額尾數降下來，而且只有我核准還不夠。"
       },
+      "pronunciationGuide": {
+        "ja": "こうばい ぶもんが そうがくの はすうを けずる よう もとめて います。 わたしの しょうにんだけでは たりません。",
+        "en": "/pɹoʊkˈjʊɹmənt wɑnts ðə ˈtoʊtəl ˈɹaʊndəd daʊn, ənd maɪ əˈpɹuvəl əˈloʊn ɪz nɑt ɪˈnʌf./",
+        "zh": "Cǎi gòu yāo qiú bǎ zǒng é wěi shù jiàng xià lái， ér qiě zhǐ yǒu wǒ hé zhǔn hái bú gòu。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "必要額と購買部門の承認者を確認し、端数調整と引き換えに支払時期か契約期間を確定できるか相談しましょう。",
             "en": "Let's confirm the exact amount and procurement approver, then trade rounding for a firm payment date or term.",
             "zh": "先確認所需金額與採購核准人，再協商以尾數調整交換確定付款日期或合約期間。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひつようがくと こうばい ぶもんの しょうにんしゃを かくにん し、 はすう ちょうせいと ひきかえに しはらい じきか けいやく きかんを かくてい できるか そうだん しましょう。",
+            "en": "/lɛts kənˈfɝm ðə ɪɡˈzækt əˈmaʊnt ənd pɹoʊkˈjʊɹmənt əˈpɹuvɚ, ðɛn tɹeɪd ˈɹaʊndɪŋ fɔɹ ə fɝm ˈpeɪmənt deɪt ɔɹ tɝm./",
+            "zh": "Xiān què rèn suǒ xū jīn é yǔ cǎi gòu hé zhǔn rén， zài xié shāng yǐ wěi shù tiáo zhěng jiāo huàn què dìng fù kuǎn rì qī huò hé yuē qī jiān。"
           },
           "axisScores": {
             "discovery": 20,
@@ -297,6 +327,11 @@
             "en": "If it is only the rounding amount, I think we can absorb it.",
             "zh": "如果只是尾數，我想我們可以吸收。"
           },
+          "pronunciationGuide": {
+            "ja": "はすうだけなら、 こちらで きゅうしゅう できると おもいます。",
+            "en": "/ɪf ɪt ɪz ˈoʊnli ðə ˈɹaʊndɪŋ əˈmaʊnt, aɪ θɪŋk wi kæn əbˈzɔɹb ɪt./",
+            "zh": "Rú guǒ zhǐ shì wěi shù， wǒ xiǎng wǒ men kě yǐ xī shōu。"
+          },
           "axisScores": {
             "discovery": 5,
             "value-articulation": 6,
@@ -327,6 +362,11 @@
             "ja": "あなたが決められないなら、決められる人を今すぐ呼んでください。",
             "en": "If you cannot decide, bring in someone who can right now.",
             "zh": "既然你不能決定，請立刻找能決定的人來。"
+          },
+          "pronunciationGuide": {
+            "ja": "あなたが きめられないなら、 きめられる ひとを いま すぐ よんで ください。",
+            "en": "/ɪf ju ˈkænɑt ˌdɪˈsaɪd, bɹɪŋ ɪn ˈsʌmˌwʌn hu kæn ɹaɪt naʊ./",
+            "zh": "Jì rán nǐ bù néng jué dìng， qǐng lì kè zhǎo néng jué dìng de rén lái。"
           },
           "axisScores": {
             "discovery": 4,
@@ -361,6 +401,11 @@
         "en": "If you round the total and fix payment at month-end, I'll submit the final procurement request.",
         "zh": "若調整尾數並把付款日定在月底，我會向採購送出最終申請。"
       },
+      "pronunciationGuide": {
+        "ja": "はすうを ちょうせい し、 しはらいびを こんげつまつで こてい できれば、 こうばいへ さいしゅう しんせい します。",
+        "en": "/ɪf ju ɹaʊnd ðə ˈtoʊtəl ənd fɪks ˈpeɪmənt æt mʌnθ - ɛnd, aɪl səbˈmɪt ðə ˈfaɪnəl pɹoʊkˈjʊɹmənt ɹɪkˈwɛst./",
+        "zh": "Ruò tiáo zhěng wěi shù bìng bǎ fù kuǎn rì dìng zài yuè dǐ， wǒ huì xiàng cǎi gòu sòng chū zuì zhōng shēn qǐng。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "端数調整と今月末支払を一つの条件として書面化します。購買の回答期限と、否決時に元条件へ戻る点も記載します。",
             "en": "We'll document rounding and month-end payment as one condition, with an approval deadline and reversion if rejected.",
             "zh": "把尾數調整與月底付款寫成一項條件，並註明採購回覆期限及否決時恢復原條件。"
+          },
+          "pronunciationGuide": {
+            "ja": "はすう ちょうせいと こんげつまつ しはらいを ひとつの じょうけんとして しょめんか します。 こうばいの かいとう きげんと、 ひけつじに もと じょうけんへ もどる てんも きさい します。",
+            "en": "/wil ˈdɑkjəmɛnt ˈɹaʊndɪŋ ənd mʌnθ - ɛnd ˈpeɪmənt æz wʌn kənˈdɪʃən, wɪð æn əˈpɹuvəl ˈdɛdˌlaɪn ənd ɹɪˈvɝʒən ɪf ɹɪˈdʒɛktɪd./",
+            "zh": "Bǎ wěi shù tiáo zhěng yǔ yuè dǐ fù kuǎn xiě chéng yí xiàng tiáo jiàn， bìng zhù míng cǎi gòu huí fù qī xiàn jí fǒu jué shí huī fù yuán tiáo jiàn。"
           },
           "axisScores": {
             "discovery": 20,
@@ -414,6 +464,11 @@
             "en": "I'll send a revised rounded quote today.",
             "zh": "我今天會寄出調整尾數後的報價。"
           },
+          "pronunciationGuide": {
+            "ja": "はすうを なおした みつもりしょを きょうちゅうに おくります。",
+            "en": "/aɪl sɛnd ə ɹɪˈvaɪzd ˈɹaʊndəd kwoʊt təˈdeɪ./",
+            "zh": "Wǒ jīn tiān huì jì chū tiáo zhěng wěi shù hòu de bào jià。"
+          },
           "axisScores": {
             "discovery": 6,
             "value-articulation": 8,
@@ -444,6 +499,11 @@
             "ja": "端数は下げます。これで今日必ず署名してください。",
             "en": "I'll reduce the total; you must sign today.",
             "zh": "我會調降尾數，你們今天一定要簽。"
+          },
+          "pronunciationGuide": {
+            "ja": "はすうは さげます。 これで きょう かならず しょめい して ください。",
+            "en": "/aɪl ɹəˈdus ðə ˈtoʊtəl; ju mʌst saɪn təˈdeɪ./",
+            "zh": "Wǒ huì tiáo jiàng wěi shù， nǐ men jīn tiān yí dìng yào qiān。"
           },
           "axisScores": {
             "discovery": 2,
@@ -478,6 +538,11 @@
         "en": "Even under pressure, I cannot skip procurement. Being told to decide today is uncomfortable.",
         "zh": "即使被催促，我也不能跳過採購流程，要求今天決定讓我感到壓力。"
       },
+      "pronunciationGuide": {
+        "ja": "きょう きめろと いわれても、 こうばいの てつづきは とばせません。 あつりょくを かんじます。",
+        "en": "/ˈivɪn ˈʌndɚ ˈpɹɛʃɚ, aɪ ˈkænɑt skɪp pɹoʊkˈjʊɹmənt. ˈbiɪŋ toʊld tu ˌdɪˈsaɪd təˈdeɪ ɪz ənˈkʌmfɚtəbəl./",
+        "zh": "Jí shǐ bèi cuī cù， wǒ yě bù néng tiào guò cǎi gòu liú chéng， yāo qiú jīn tiān jué dìng ràng wǒ gǎn dào yā lì。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "手続を軽視する言い方になり失礼しました。必要書類と購買の期限を確認し、判断可能な日程へ組み直しましょう。",
             "en": "I'm sorry I dismissed your process. Let's confirm the documents and procurement timing, then set a decision date.",
             "zh": "很抱歉我的說法輕忽了流程。我們確認所需文件與採購時程，再重訂可決策日期。"
+          },
+          "pronunciationGuide": {
+            "ja": "てつづきを けいし する いいかたに なり しつれい しました。 ひつよう しょるいと こうばいの きげんを かくにん し、 はんだん かのうな にっていへ くみなおしましょう。",
+            "en": "/aɪm ˈsɑɹi aɪ dɪˈsmɪst jɔɹ ˈpɹɑˌsɛs. lɛts kənˈfɝm ðə ˈdɑkjəmənts ənd pɹoʊkˈjʊɹmənt ˈtaɪmɪŋ, ðɛn sɛt ə dɪˈsɪʒən deɪt./",
+            "zh": "Hěn bào qiàn wǒ de shuō fǎ qīng hū le liú chéng。 wǒ men què rèn suǒ xū wén jiàn yǔ cǎi gòu shí chéng， zài zhòng dìng kě jué cè rì qī。"
           },
           "axisScores": {
             "discovery": 20,
@@ -531,6 +601,11 @@
             "en": "Understood, but I cannot guarantee this price after tomorrow.",
             "zh": "了解，但明天以後無法保證這個價格。"
           },
+          "pronunciationGuide": {
+            "ja": "わかりました。ただ、 この かかくは あした いこう ほしょう できません。",
+            "en": "/ˌʌndɚˈstʊd, bʌt aɪ ˈkænɑt ˌɡɛɹənˈti ðɪs pɹaɪs ˈæftɚ təˈmɑˌɹoʊ./",
+            "zh": "Liǎo jiě， dàn míng tiān yǐ hòu wú fǎ bǎo zhèng zhè ge jià gé。"
+          },
           "axisScores": {
             "discovery": 7,
             "value-articulation": 5,
@@ -561,6 +636,11 @@
             "ja": "手続が間に合わないなら、この契約は成立しません。",
             "en": "If your process cannot finish in time, there will be no deal.",
             "zh": "如果流程來不及，這份合約就不成立。"
+          },
+          "pronunciationGuide": {
+            "ja": "てつづきが まにあわないなら、 この けいやくは せいりつ しません。",
+            "en": "/ɪf jɔɹ ˈpɹɑˌsɛs ˈkænɑt ˈfɪnɪʃ ɪn taɪm, ðɛɹ wɪl bi noʊ dil./",
+            "zh": "Rú guǒ liú chéng lái bù jí， zhè fèn hé yuē jiù bù chéng lì。"
           },
           "axisScores": {
             "discovery": 0,

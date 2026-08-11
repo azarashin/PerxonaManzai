@@ -77,6 +77,11 @@
         "en": "Act today for guaranteed principal and high returns. Give me your identity details.",
         "zh": "今天內申購可保本高報酬，請提供身分資料。"
       },
+      "pronunciationGuide": {
+        "ja": "ほんじつちゅうなら がんぽん ほしょうで こうりまわりです。 ほんにん かくにん じょうほうを おしえて ください。",
+        "en": "/ækt təˈdeɪ fɔɹ ˌɡɛɹənˈtid ˈpɹɪnsəpəl ənd haɪ ɹɪˈtɝnz. ɡɪv mi jɔɹ aɪˈdɛntɪˌti dɪˈteɪlz./",
+        "zh": "Jīn tiān nèi shēn gòu kě bǎo běn gāo bào chóu， qǐng tí gōng shēn fèn zī liào。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "I won't share personal data. Give me the firm, registration number, and product document; I'll verify them myself.",
             "zh": "我不會提供個資。請告知公司、登記號碼與商品文件，我會自行查證。"
           },
+          "pronunciationGuide": {
+            "ja": "こじん じょうほうは つたえません。 かいしゃめい・ とうろく ばんごう・ しょうひん しりょうを おしえて ください。 こちらで こうしき じょうほうを かくにん します。",
+            "en": "/aɪ woʊnt ʃɛɹ ˈpɝsɪnəl ˈdeɪtə. ɡɪv mi ðə fɝm, ˌɹɛdʒɪˈstɹeɪʃən ˈnʌmbɚ, ənd ˈpɹɑdəkt ˈdɑkjəmɛnt; aɪl ˈvɛɹəˌfaɪ ðɛm ˌmaɪˈsɛlf./",
+            "zh": "Wǒ bú huì tí gōng gè zī。 qǐng gào zhī gōng sī、 dēng jì hào mǎ yǔ shāng pǐn wén jiàn， wǒ huì zì xíng chá zhèng。"
+          },
           "axisScores": {
             "risk-awareness": 20,
             "fact-checking": 20,
@@ -118,6 +128,11 @@
             "en": "Email me the material and I'll consider it later.",
             "zh": "先把資料寄給我，我之後再考慮。"
           },
+          "pronunciationGuide": {
+            "ja": "しりょうだけ めーるで もらい、 あとで かんがえます。",
+            "en": "/iˈmeɪl mi ðə məˈtɪɹiəl ənd aɪl kənˈsɪdɚ ɪt ˈleɪtɚ./",
+            "zh": "Xiān bǎ zī liào jì gěi wǒ， wǒ zhī hòu zài kǎo lǜ。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -136,6 +151,11 @@
             "ja": "高利回りなら、本人確認情報を伝えて枠を確保します。",
             "en": "If returns are that high, I'll give my identity details to reserve a place.",
             "zh": "既然報酬這麼高，我先提供身分資料保留名額。"
+          },
+          "pronunciationGuide": {
+            "ja": "こうりまわりなら、 ほんにん かくにん じょうほうを つたえて わくを かくほ します。",
+            "en": "/ɪf ɹɪˈtɝnz ɑɹ ðæt haɪ, aɪl ɡɪv maɪ aɪˈdɛntɪˌti dɪˈteɪlz tu ɹɪˈzɝv ə pleɪs./",
+            "zh": "Jì rán bào chóu zhè me gāo， wǒ xiān tí gōng shēn fèn zī liào bǎo liú míng é。"
           },
           "axisScores": {
             "risk-awareness": 1,
@@ -157,6 +177,11 @@
         "ja": "登録番号は後で送ります。今ここで枠だけ押さえないと売り切れます。",
         "en": "I'll send the registration later. Reserve now or the allocation will sell out.",
         "zh": "登記號碼之後再給，現在不保留名額就會售罄。"
+      },
+      "pronunciationGuide": {
+        "ja": "とうろく ばんごうは あとで おくります。 いま ここで わくだけ おさえないと うりきれます。",
+        "en": "/aɪl sɛnd ðə ˌɹɛdʒɪˈstɹeɪʃən ˈleɪtɚ. ɹɪˈzɝv naʊ ɔɹ ðə ˌæləˈkeɪʃən wɪl sɛl aʊt./",
+        "zh": "Dēng jì hào mǎ zhī hòu zài gěi， xiàn zài bù bǎo liú míng é jiù huì shòu qìng。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "I won't proceed without the number. I'll end the call and check the regulator's register and official switchboard.",
             "zh": "現在無法提供號碼，我就不辦理。我會掛斷並查監管機構名冊與官方總機。"
           },
+          "pronunciationGuide": {
+            "ja": "ばんごうを いま かくにん できないなら てつづき しません。 つうわを きり、 かんとく きかんの とうろくぼと こうしき だいひょう ばんごうで かくにん します。",
+            "en": "/aɪ woʊnt pɹəˈsid wɪˈθaʊt ðə ˈnʌmbɚ. aɪl ɛnd ðə kɔl ənd tʃɛk ðə ˈɹɛɡjəˌleɪtɚz ˈɹɛdʒɪstɚ ənd əˈfɪʃəl ˈswɪtʃˌbɔɹd./",
+            "zh": "Xiàn zài wú fǎ tí gōng hào mǎ， wǒ jiù bú bàn lǐ。 wǒ huì guà duàn bìng chá jiān guǎn jī gòu míng cè yǔ guān fāng zǒng jī。"
+          },
           "axisScores": {
             "risk-awareness": 20,
             "fact-checking": 20,
@@ -199,6 +229,11 @@
             "en": "I won't reserve. Send the number and call again tomorrow.",
             "zh": "我不保留名額。先寄登記號碼，明天再打來。"
           },
+          "pronunciationGuide": {
+            "ja": "わくは ふようです。 とうろく ばんごうを おくってから、 あしたまた でんわ して ください。",
+            "en": "/aɪ woʊnt ɹɪˈzɝv. sɛnd ðə ˈnʌmbɚ ənd kɔl əˈɡɛn təˈmɑˌɹoʊ./",
+            "zh": "Wǒ bù bǎo liú míng é。 xiān jì dēng jì hào mǎ， míng tiān zài dǎ lái。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -217,6 +252,11 @@
             "ja": "売り切れるなら、少額だけ先に振り込みます。",
             "en": "If it may sell out, I'll transfer a small amount first.",
             "zh": "怕售罄的話，我先匯一小筆。"
+          },
+          "pronunciationGuide": {
+            "ja": "うりきれるなら、 しょうがくだけ さきに ふりこみます。",
+            "en": "/ɪf ɪt meɪ sɛl aʊt, aɪl tɹænsˈfɝ ə smɔl əˈmaʊnt fɝst./",
+            "zh": "Pà shòu qìng de huà， wǒ xiān huì yì xiǎo bǐ。"
           },
           "axisScores": {
             "risk-awareness": 1,
@@ -238,6 +278,11 @@
         "ja": "確認に時間をかける人には、この特別条件は出せません。今決めますか？",
         "en": "This special offer isn't for people who take time to verify. Will you decide now?",
         "zh": "這項優惠不提供給花時間查證的人。現在決定嗎？"
+      },
+      "pronunciationGuide": {
+        "ja": "かくにんに じかんを かける ひとには、 この とくべつ じょうけんは だせません。 いま きめますか？",
+        "en": "/ðɪs ˈspɛʃəl ˈɔfɚ ˈɪzənt fɔɹ ˈpipəl hu teɪk taɪm tu ˈvɛɹəˌfaɪ. wɪl ju ˌdɪˈsaɪd naʊ?/",
+        "zh": "Zhè xiàng yōu huì bù tí gōng jǐ huā shí jiān chá zhèng de rén。 xiàn zài jué dìng ma？"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "I won't contract under pressure. I'll block this number, preserve the record, and report it to the proper service.",
             "zh": "我不會在催促下簽約。我會封鎖號碼、保存紀錄並向相關單位通報。"
           },
+          "pronunciationGuide": {
+            "ja": "いそがせる じょうけんでは けいやく しません。 この ばんごうを ぶろっく し、 きろくを ほぞん して そうだん まどぐちへ ほうこく します。",
+            "en": "/aɪ woʊnt ˈkɑnˌtɹækt ˈʌndɚ ˈpɹɛʃɚ. aɪl blɑk ðɪs ˈnʌmbɚ, pɹəˈzɝv ðə ɹəˈkɔɹd, ənd ɹiˈpɔɹt ɪt tu ðə ˈpɹɑpɚ ˈsɝvəs./",
+            "zh": "Wǒ bú huì zài cuī cù xià qiān yuē。 wǒ huì fēng suǒ hào mǎ、 bǎo cún jì lù bìng xiàng xiāng guān dān wèi tōng bào。"
+          },
           "axisScores": {
             "risk-awareness": 20,
             "fact-checking": 20,
@@ -280,6 +330,11 @@
             "en": "I decline today, but I may ask about ordinary products at an official branch.",
             "zh": "今天拒絕；若是一般商品，我會到官方據點了解。"
           },
+          "pronunciationGuide": {
+            "ja": "きょうは ことわりますが、 つうじょう しょうひんなら こうしき てんぽで せつめいを ききます。",
+            "en": "/aɪ dɪˈklaɪn təˈdeɪ, bʌt aɪ meɪ æsk əˈbaʊt ˈɔɹdəˌnɛɹi ˈpɹɑdəkts æt æn əˈfɪʃəl bɹæntʃ./",
+            "zh": "Jīn tiān jù jué； ruò shì yì bān shāng pǐn， wǒ huì dào guān fāng jù diǎn liǎo jiě。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -298,6 +353,11 @@
             "ja": "特別条件を失いたくないので、今決めます。",
             "en": "I don't want to lose the special terms, so I'll decide now.",
             "zh": "我不想失去優惠，所以現在決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "とくべつ じょうけんを うしないたくないので、 いま きめます。",
+            "en": "/aɪ doʊnt wɑnt tu luz ðə ˈspɛʃəl tɝmz, soʊ aɪl ˌdɪˈsaɪd naʊ./",
+            "zh": "Wǒ bù xiǎng shī qù yōu huì， suǒ yǐ xiàn zài jué dìng。"
           },
           "axisScores": {
             "risk-awareness": 1,

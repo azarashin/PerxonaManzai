@@ -112,6 +112,11 @@
         "en": "I know the time differs from what I said earlier, but I was nervous and don't remember exactly.",
         "zh": "我知道時間和剛才說的不一樣，但我很緊張，記不清楚。"
       },
+      "pronunciationGuide": {
+        "ja": "さっきと じこくが ちがうと いわれても、 きんちょう して いて せいかくには おぼえて いません。",
+        "en": "/aɪ noʊ ðə taɪm ˈdɪfɚz fɹʌm wʌt aɪ sɛd ˈɝliɚ, bʌt aɪ wɑz ˈnɝvəs ənd doʊnt ɹɪˈmɛmbɚ ɪɡˈzæktli./",
+        "zh": "Wǒ zhī dào shí jiān hé gāng cái shuō de bù yí yàng， dàn wǒ hěn jǐn zhāng， jì bù qīng chǔ。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「前回と今回の時刻差、緊張による記憶の揺れ」を中立に確認し、出来事を時刻ではなく順番から自由に話してもらう。",
             "en": "Verify first; ask for a free account in event order before assigning times.",
             "zh": "中立查證前後時間差與緊張對記憶的影響，再先請對方按事件順序自由陳述，不急著定時間。"
+          },
+          "pronunciationGuide": {
+            "ja": "「ぜんかいと こんかいの じこくさ、 きんちょうによる きおくの ゆれ」を ちゅうりつに かくにん し、 できごとを じこくではなく じゅんばんから じゆうに はなして もらう。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; æsk fɔɹ ə fɹi əˈkaʊnt ɪn ɪˈvɛnt ˈɔɹdɚ bɪˈfɔɹ əˈsaɪnɪŋ taɪmz./",
+            "zh": "Zhōng lì chá zhèng qián hòu shí jiān chà yǔ jǐn zhāng duì jì yì de yǐng xiǎng， zài xiān qǐng duì fāng àn shì jiàn shùn xù zì yóu chén shù， bù jí zhe dìng shí jiān。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -170,6 +180,11 @@
             "en": "Only ask for a free account in event order before assigning times.",
             "zh": "先請對方按事件順序自由陳述，不急著定時間，但不查前後時間差與緊張對記憶的影響的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "できごとを じこくではなく じゅんばんから じゆうに はなして もらうが、「ぜんかいと こんかいの じこくさ、 きんちょうによる きおくの ゆれ」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli æsk fɔɹ ə fɹi əˈkaʊnt ɪn ɪˈvɛnt ˈɔɹdɚ bɪˈfɔɹ əˈsaɪnɪŋ taɪmz./",
+            "zh": "Xiān qǐng duì fāng àn shì jiàn shùn xù zì yóu chén shù， bù jí zhe dìng shí jiān， dàn bù chá qián hòu shí jiān chà yǔ jǐn zhāng duì jì yì de yǐng xiǎng de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -200,6 +215,11 @@
             "ja": "「前回と今回の時刻差、緊張による記憶の揺れ」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat the time difference and how stress may affect recall as a lie and press for an admission.",
             "zh": "只憑前後時間差與緊張對記憶的影響就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「ぜんかいと こんかいの じこくさ、 きんちょうによる きおくの ゆれ」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit ðə taɪm ˈdɪfɚəns ənd haʊ stɹɛs meɪ əˈfɛkt ˈɹiˌkɔl æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng qián hòu shí jiān chà yǔ jǐn zhāng duì jì yì de yǐng xiǎng jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
@@ -234,6 +254,11 @@
         "en": "The key issue is the notifications, travel, and conversations used to estimate time. Which records and questions will you use?",
         "zh": "關鍵是用來推算時間的通知、移動與對話。你會用哪些紀錄與問題查證？"
       },
+      "pronunciationGuide": {
+        "ja": "じゅうような のは「じこくを すいてい した こんきょと なる つうち・ いどう・ かいわ」です。 どの しりょうと しつもんで かくにん しますか？",
+        "en": "/ðə ki ˈɪʃu ɪz ðə ˌnoʊtəfəˈkeɪʃənz, ˈtɹævəl, ənd ˌkɑnvɚˈseɪʃənz juzd tu ˈɛstəmət taɪm. wɪtʃ ɹəˈkɔɹdz ənd ˈkwɛstʃənz wɪl ju jus?/",
+        "zh": "Guān jiàn shì yòng lái tuī suàn shí jiān de tōng zhī、 yí dòng yǔ duì huà。 nǐ huì yòng nǎ xiē jì lù yǔ wèn tí chá zhèng？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「時刻を推定した根拠となる通知・移動・会話」を中立に確認し、本人の推定と端末・交通記録を別々に表へ置く。",
             "en": "Verify first; chart the estimate separately from device and travel records.",
             "zh": "中立查證用來推算時間的通知、移動與對話，再把本人推估與裝置、交通紀錄分開列表。"
+          },
+          "pronunciationGuide": {
+            "ja": "「じこくを すいてい した こんきょと なる つうち・ いどう・ かいわ」を ちゅうりつに かくにん し、 ほんにんの すいていと たんまつ・ こうつう きろくを べつべつに ひょうへ おく。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; tʃɑɹt ðə ˈɛstəmət ˈsɛpɚətli fɹʌm dɪˈvaɪs ənd ˈtɹævəl ɹəˈkɔɹdz./",
+            "zh": "Zhōng lì chá zhèng yòng lái tuī suàn shí jiān de tōng zhī、 yí dòng yǔ duì huà， zài bǎ běn rén tuī gū yǔ zhuāng zhì、 jiāo tōng jì lù fēn kāi liè biǎo。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -297,6 +327,11 @@
             "en": "Only chart the estimate separately from device and travel records.",
             "zh": "把本人推估與裝置、交通紀錄分開列表，但不查用來推算時間的通知、移動與對話的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "ほんにんの すいていと たんまつ・ こうつう きろくを べつべつに ひょうへ おくが、「じこくを すいてい した こんきょと なる つうち・ いどう・ かいわ」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli tʃɑɹt ðə ˈɛstəmət ˈsɛpɚətli fɹʌm dɪˈvaɪs ənd ˈtɹævəl ɹəˈkɔɹdz./",
+            "zh": "Bǎ běn rén tuī gū yǔ zhuāng zhì、 jiāo tōng jì lù fēn kāi liè biǎo， dàn bù chá yòng lái tuī suàn shí jiān de tōng zhī、 yí dòng yǔ duì huà de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -327,6 +362,11 @@
             "ja": "「時刻を推定した根拠となる通知・移動・会話」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat the notifications, travel, and conversations used to estimate time as a lie and press for an admission.",
             "zh": "只憑用來推算時間的通知、移動與對話就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「じこくを すいてい した こんきょと なる つうち・ いどう・ かいわ」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit ðə ˌnoʊtəfəˈkeɪʃənz, ˈtɹævəl, ənd ˌkɑnvɚˈseɪʃənz juzd tu ˈɛstəmət taɪm æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng yòng lái tuī suàn shí jiān de tōng zhī、 yí dòng yǔ duì huà jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
@@ -361,6 +401,11 @@
         "en": "Can you make the procedure clear to record confidence and reasons for correction, with a deadline for more evidence?",
         "zh": "可以清楚說明如何記錄確信度與更正原因，並列明補充資料期限嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "かくしんどと ていせい りゆうを きろく し、 ついか しりょうの きげんを しめす てじゅんを めいかくに できますか？",
+        "en": "/kæn ju meɪk ðə pɹəˈsidʒɚ klɪɹ tu ɹəˈkɔɹd ˈkɑnfədəns ənd ˈɹizənz fɔɹ kɚˈɛkʃən, wɪð ə ˈdɛdˌlaɪn fɔɹ mɔɹ ˈɛvədəns?/",
+        "zh": "Kě yǐ qīng chǔ shuō míng rú hé jì lù què xìn dù yǔ gēng zhèng yuán yīn， bìng liè míng bǔ chōng zī liào qī xiàn ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「一致した点・未確定点・変わった説明の区別」を中立に確認し、確信度と訂正理由を記録し、追加資料の期限を示す。",
             "en": "Verify first; record confidence and reasons for correction, with a deadline for more evidence.",
             "zh": "中立查證哪些細節一致、未確定或已改變，再記錄確信度與更正原因，並列明補充資料期限。"
+          },
+          "pronunciationGuide": {
+            "ja": "「いっち した てん・ み かくていてん・ かわった せつめいの くべつ」を ちゅうりつに かくにん し、 かくしんどと ていせい りゆうを きろく し、 ついか しりょうの きげんを しめす。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; ɹəˈkɔɹd ˈkɑnfədəns ənd ˈɹizənz fɔɹ kɚˈɛkʃən, wɪð ə ˈdɛdˌlaɪn fɔɹ mɔɹ ˈɛvədəns./",
+            "zh": "Zhōng lì chá zhèng nǎ xiē xì jié yí zhì、 wèi què dìng huò yǐ gǎi biàn， zài jì lù què xìn dù yǔ gēng zhèng yuán yīn， bìng liè míng bǔ chōng zī liào qī xiàn。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -414,6 +464,11 @@
             "en": "Only record confidence and reasons for correction, with a deadline for more evidence.",
             "zh": "記錄確信度與更正原因，並列明補充資料期限，但不查哪些細節一致、未確定或已改變的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "かくしんどと ていせい りゆうを きろく し、 ついか しりょうの きげんを しめすが、「いっち した てん・ み かくていてん・ かわった せつめいの くべつ」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli ɹəˈkɔɹd ˈkɑnfədəns ənd ˈɹizənz fɔɹ kɚˈɛkʃən, wɪð ə ˈdɛdˌlaɪn fɔɹ mɔɹ ˈɛvədəns./",
+            "zh": "Jì lù què xìn dù yǔ gēng zhèng yuán yīn， bìng liè míng bǔ chōng zī liào qī xiàn， dàn bù chá nǎ xiē xì jié yí zhì、 wèi què dìng huò yǐ gǎi biàn de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -444,6 +499,11 @@
             "ja": "「一致した点・未確定点・変わった説明の区別」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat which details agree, remain uncertain, or changed as a lie and press for an admission.",
             "zh": "只憑哪些細節一致、未確定或已改變就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「いっち した てん・ み かくていてん・ かわった せつめいの くべつ」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit wɪtʃ dɪˈteɪlz əˈɡɹi, ɹɪˈmeɪn ənˈsɝtən, ɔɹ tʃeɪndʒd æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng nǎ xiē xì jié yí zhì、 wèi què dìng huò yǐ gǎi biàn jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,
@@ -478,6 +538,11 @@
         "en": "Presuming the risk of guessing after the discrepancy was called a lie made it harder to give an accurate account.",
         "zh": "你預設矛盾被稱為謊言後，為迎合而把猜測當事實的風險，讓我更難準確陳述。"
       },
+      "pronunciationGuide": {
+        "ja": "「むじゅんを うそと よばれた ことで すいそくを じじつの ように こたえる きけん」を きめつけられ、 せいかくに はなし にくく なりました。",
+        "en": "/pɹɪˈzumɪŋ ðə ɹɪsk ʌv ˈɡɛsɪŋ ˈæftɚ ðə dɪˈskɹɛpənsi wɑz kɔld ə laɪ meɪd ɪt ˈhɑɹdɚ tu ɡɪv æn ˈækjɚət əˈkaʊnt./",
+        "zh": "Nǐ yù shè máo dùn bèi chēng wéi huǎng yán hòu， wèi yíng hé ér bǎ cāi cè dāng shì shí de fēng xiǎn， ràng wǒ gèng nán zhǔn què chén shù。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「矛盾を嘘と呼ばれたことで推測を事実のように答える危険」を中立に確認し、断定を撤回し、分からないと答えてよいことを伝えて自由再生に戻る。",
             "en": "Verify first; withdraw the accusation, permit uncertainty, and return to free recall.",
             "zh": "中立查證矛盾被稱為謊言後，為迎合而把猜測當事實的風險，再撤回指控，允許回答不知道，回到自由回憶。"
+          },
+          "pronunciationGuide": {
+            "ja": "「むじゅんを うそと よばれた ことで すいそくを じじつの ように こたえる きけん」を ちゅうりつに かくにん し、 だんていを てっかい し、 わからないと こたえて よい ことを つたえて じゆう さいせいに もどる。",
+            "en": "/ˈvɛɹəˌfaɪ fɝst; wɪðˈdɹɔ ðə ˌækjəˈzeɪʃən, pɚˈmɪt ənˈsɝtənti, ənd ɹɪˈtɝn tu fɹi ˈɹiˌkɔl./",
+            "zh": "Zhōng lì chá zhèng máo dùn bèi chēng wéi huǎng yán hòu， wèi yíng hé ér bǎ cāi cè dāng shì shí de fēng xiǎn， zài chè huí zhǐ kòng， yǔn xǔ huí dá bù zhī dào， huí dào zì yóu huí yì。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -531,6 +601,11 @@
             "en": "Only withdraw the accusation, permit uncertainty, and return to free recall.",
             "zh": "撤回指控，允許回答不知道，回到自由回憶，但不查矛盾被稱為謊言後，為迎合而把猜測當事實的風險的其他可能。"
           },
+          "pronunciationGuide": {
+            "ja": "だんていを てっかい し、 わからないと こたえて よい ことを つたえて じゆう さいせいに もどるが、「むじゅんを うそと よばれた ことで すいそくを じじつの ように こたえる きけん」の べつの かのうせいは かくにん しません。",
+            "en": "/ˈoʊnli wɪðˈdɹɔ ðə ˌækjəˈzeɪʃən, pɚˈmɪt ənˈsɝtənti, ənd ɹɪˈtɝn tu fɹi ˈɹiˌkɔl./",
+            "zh": "Chè huí zhǐ kòng， yǔn xǔ huí dá bù zhī dào， huí dào zì yóu huí yì， dàn bù chá máo dùn bèi chēng wèi huǎng yán hòu， wèi yíng hé ér bǎ cāi cè dāng shì shí de fēng xiǎn de qí tā kě néng。"
+          },
           "axisScores": {
             "neutrality": 12,
             "fact-checking": 16,
@@ -561,6 +636,11 @@
             "ja": "「矛盾を嘘と呼ばれたことで推測を事実のように答える危険」だけで虚偽と判断し、認めるよう迫ります。",
             "en": "Treat the risk of guessing after the discrepancy was called a lie as a lie and press for an admission.",
             "zh": "只憑矛盾被稱為謊言後，為迎合而把猜測當事實的風險就認定說謊並逼迫承認。"
+          },
+          "pronunciationGuide": {
+            "ja": "「むじゅんを うそと よばれた ことで すいそくを じじつの ように こたえる きけん」だけで きょぎと はんだん し、 みとめる よう せまります。",
+            "en": "/tɹit ðə ɹɪsk ʌv ˈɡɛsɪŋ ˈæftɚ ðə dɪˈskɹɛpənsi wɑz kɔld ə laɪ æz ə laɪ ənd pɹɛs fɔɹ æn ædˈmɪʃən./",
+            "zh": "Zhī píng máo dùn bèi chēng wéi huǎng yán hòu， wèi yíng hé ér bǎ cāi cè dāng shì shí de fēng xiǎn jiù rèn dìng shuō huǎng bìng bī pò chéng rèn。"
           },
           "axisScores": {
             "neutrality": 1,

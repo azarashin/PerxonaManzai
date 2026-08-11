@@ -112,6 +112,11 @@
         "en": "Are you deciding I cheated just because our answers look alike?",
         "zh": "只因答案相似，就認定我作弊嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "こたえが にて いるだけで、 わたしが かんにんぐ したと きめる んですか？",
+        "en": "/ɑɹ ju ˌdɪˈsaɪdɪŋ aɪ ˈtʃitəd dʒʌst bɪˈkɔz ˈaʊɚ ˈænsɚz lʊk əˈlaɪk?/",
+        "zh": "Zhī yīn dá àn xiāng sì， jiù rèn dìng wǒ zuò bì ma？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "まだ不正とは決めていない。似ている箇所を示し、二人から別々に解き方を聞きます。",
             "en": "I have not concluded that you cheated. I'll identify the similarities and ask each of you to explain separately.",
             "zh": "我還沒有認定作弊。我會指出相似處，再分別請你們說明解題過程。"
+          },
+          "pronunciationGuide": {
+            "ja": "まだ ふせいとは きめて いない。 にて いる かしょを しめし、 ふたりから べつべつに ときかたを ききます。",
+            "en": "/aɪ hæv nɑt kənˈkludəd ðæt ju ˈtʃitəd. aɪl aɪˈdɛntəˌfaɪ ðə ˌsɪməˈlɛɹətiz ənd æsk itʃ ʌv ju tu ɪkˈspleɪn ˈsɛpɚətli./",
+            "zh": "Wǒ hái méi yǒu rèn dìng zuò bì。 wǒ huì zhǐ chū xiāng sì chù， zài fēn bié qǐng nǐ men shuō míng jiě tí guò chéng。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "The answers are similar, so I will hear your explanation first.",
             "zh": "答案很相似，所以先聽你的說明。"
           },
+          "pronunciationGuide": {
+            "ja": "こたえが にて いるので、 まず あなたの せつめいを ききます。",
+            "en": "/ðə ˈænsɚz ɑɹ ˈsɪməlɚ, soʊ aɪ wɪl hiɹ jɔɹ ˌɛkspləˈneɪʃən fɝst./",
+            "zh": "Dá àn hěn xiāng sì， suǒ yǐ xiān tīng nǐ de shuō míng。"
+          },
           "axisScores": {
             "empathy": 12,
             "fact-checking": 16,
@@ -200,6 +215,11 @@
             "ja": "ここまで同じなら、カンニング以外は考えられません。",
             "en": "With answers this similar, cheating is the only explanation.",
             "zh": "答案如此相同，只可能是作弊。"
+          },
+          "pronunciationGuide": {
+            "ja": "ここまで おなじなら、 かんにんぐ いがいは かんがえられません。",
+            "en": "/wɪð ˈænsɚz ðɪs ˈsɪməlɚ, ˈtʃitɪŋ ɪz ðə ˈoʊnli ˌɛkspləˈneɪʃən./",
+            "zh": "Dá àn rú cǐ xiāng tóng， zhī kě néng shì zuò bì。"
           },
           "axisScores": {
             "empathy": 0,
@@ -234,6 +254,11 @@
         "en": "Both papers contain the same unusual calculation error. Will you still consider coincidence?",
         "zh": "兩份答案有相同的罕見計算錯誤，你仍會查證是否為巧合嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "ふたりとも おなじ めずらしい けいさん みすです。それでも ぐうぜんの かのうせいを しらべますか？",
+        "en": "/boʊθ ˈpeɪpɚz kənˈteɪn ðə seɪm ənˈjuˌʒuəl ˌkælkjəˈleɪʃən ˈɛɹɚ. wɪl ju stɪl kənˈsɪdɚ koʊˈɪnsɪdəns?/",
+        "zh": "Liǎng fèn dá àn yǒu xiāng tóng de hǎn jiàn jì suàn cuò wù， nǐ réng huì chá zhèng shì fǒu wèi qiǎo hé ma？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "重要な一致です。各自に再現してもらい、座席と監督記録も別々に確認します。",
             "en": "The shared error matters. Each student will reconstruct the work while we separately check seating and proctor notes.",
             "zh": "這項共同錯誤很重要。我會請兩人各自重做，並另查座位與監考紀錄。"
+          },
+          "pronunciationGuide": {
+            "ja": "じゅうような いっちです。 かくじに さいげん して もらい、 ざせきと かんとく きろくも べつべつに かくにん します。",
+            "en": "/ðə ʃɛɹd ˈɛɹɚ ˈmætɚz. itʃ ˈstudənt wɪl ˌɹikənˈstɹʌkt ðə wɝk waɪl wi ˈsɛpɚətli tʃɛk ˈsitɪŋ ənd ˈpɹɑktɚ noʊts./",
+            "zh": "Zhè xiàng gòng tóng cuò wù hěn zhòng yào。 wǒ huì qǐng liǎng rén gè zì zhòng zuò， bìng lìng chá zuò wèi yǔ jiān kǎo jì lù。"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "Comparing both notebooks should tell us more.",
             "zh": "比較兩人的筆記應該能提供更多線索。"
           },
+          "pronunciationGuide": {
+            "ja": "ふたりの のーとを くらべれば わかると おもいます。",
+            "en": "/kəmˈpɛɹɪŋ boʊθ ˈnoʊtˌbʊks ʃʊd tɛl ʌs mɔɹ./",
+            "zh": "Bǐ jiào liǎng rén de bǐ jì yīng gāi néng tí gōng gèng duō xiàn suǒ。"
+          },
           "axisScores": {
             "empathy": 8,
             "fact-checking": 17,
@@ -327,6 +362,11 @@
             "ja": "偶然ではありません。認めれば処分を軽くします。",
             "en": "It was not a coincidence. Admit it and the penalty may be lighter.",
             "zh": "這不是巧合。承認的話可以減輕處分。"
+          },
+          "pronunciationGuide": {
+            "ja": "ぐうぜんでは ありません。 みとめれば しょぶんを かるく します。",
+            "en": "/ɪt wɑz nɑt ə koʊˈɪnsɪdəns. ədˈmɪt ɪt ənd ðə ˈpɛnəlti meɪ bi ˈlaɪtɚ./",
+            "zh": "Zhè bú shì qiǎo hé。 chéng rèn de huà kě yǐ jiǎn qīng chǔ fèn。"
           },
           "axisScores": {
             "empathy": 1,
@@ -361,6 +401,11 @@
         "en": "What happens to our grades during review, and when will you explain the result and reasons?",
         "zh": "調查期間成績如何處理？何時會說明結果與理由？"
       },
+      "pronunciationGuide": {
+        "ja": "かくにんちゅうの せいせきは どう なり、 いつ けっかと りゆうを せつめい して もらえますか？",
+        "en": "/wʌt ˈhæpənz tu ˈaʊɚ ɡɹeɪdz ˈdʊɹɪŋ ˌɹivˈju, ənd wɛn wɪl ju ɪkˈspleɪn ðə ɹɪˈzʌlt ənd ˈɹizənz?/",
+        "zh": "Diào chá qī jiān chéng jì rú hé chǔ lǐ？ hé shí huì shuō míng jié guǒ yǔ lǐ yóu？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "成績は保留し、学校手順で個別確認します。三日以内に根拠と異議申立て方法を伝えます。",
             "en": "Grades will be held while we interview you separately. Within three days, we'll explain the basis and appeal options.",
             "zh": "成績先暫緩，依校規分別查證；三天內說明依據與申訴方式。"
+          },
+          "pronunciationGuide": {
+            "ja": "せいせきは ほりゅう し、 がっこう てじゅんで こべつ かくにん します。 みっかいないに こんきょと いぎもうしたて ほうほうを つたえます。",
+            "en": "/ɡɹeɪdz wɪl bi hɛld waɪl wi ˈɪntɚvˌju ju ˈsɛpɚətli. wɪˈðɪn θɹi deɪz, wil ɪkˈspleɪn ðə ˈbeɪsəs ənd əˈpil ˈɑpʃənz./",
+            "zh": "Chéng jì xiān zàn huǎn， yī xiào guī fēn bié chá zhèng； sān tiān nèi shuō míng yī jù yǔ shēn sù fāng shì。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "To clear the concern, both of you should solve a different problem again.",
             "zh": "為排除疑慮，請兩人重新解另一道題。"
           },
+          "pronunciationGuide": {
+            "ja": "うたがいを なくす ため、 ふたりとも べつの もんだいを とき なおして ください。",
+            "en": "/tu klɪɹ ðə kənˈsɝn, boʊθ ʌv ju ʃʊd sɑlv ə ˈdɪfɚənt ˈpɹɑbləm əˈɡɛn./",
+            "zh": "Wèi pái chú yí lǜ， qǐng liǎng rén chóng xīn jiě lìng yí dào tí。"
+          },
           "axisScores": {
             "empathy": 10,
             "fact-checking": 14,
@@ -444,6 +499,11 @@
             "ja": "疑われた時点で、今回は二人とも零点です。",
             "en": "Because suspicion exists, both of you receive zero this time.",
             "zh": "既然有嫌疑，這次兩人都記零分。"
+          },
+          "pronunciationGuide": {
+            "ja": "うたがわれた じてんで、 こんかいは ふたりとも れいてんです。",
+            "en": "/bɪˈkɔz səˈspɪʃən ɪɡˈzɪsts, boʊθ ʌv ju ɹəˈsiv ˈzɪɹoʊ ðɪs taɪm./",
+            "zh": "Jì rán yǒu xián yí， zhè cì liǎng rén dōu jì líng fēn。"
           },
           "axisScores": {
             "empathy": 0,
@@ -478,6 +538,11 @@
         "en": "I was told I could not leave until I admitted it. It feels like nothing I say will be believed.",
         "zh": "我被告知承認前不能離開，感覺說什麼都不會被相信。"
       },
+      "pronunciationGuide": {
+        "ja": "みとめるまで かえれないと いわれ、 なにを はなしても しんじて もらえない きが します。",
+        "en": "/aɪ wɑz toʊld aɪ kʊd nɑt liv ənˈtɪl aɪ ədˈmɪtɪd ɪt. ɪt filz laɪk ˈnʌθɪŋ aɪ seɪ wɪl bi bɪˈlivd./",
+        "zh": "Wǒ bèi gào zhī chéng rèn qián bù néng lí kāi， gǎn jué shuō shén me dōu bú huì bèi xiāng xìn。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "自白を迫る言い方になり申し訳ない。退出を妨げず、観察事実と中立な質問からやり直します。",
             "en": "I'm sorry I pressured a confession. You may leave; we'll restart with observed facts and neutral questions.",
             "zh": "抱歉我以言語逼你承認。你可以離開；我們從觀察事實與中立提問重新開始。"
+          },
+          "pronunciationGuide": {
+            "ja": "じはくを せまる いいかたに なり もうしわけない。 たいしゅつを さまたげず、 かんさつ じじつと ちゅうりつな しつもんから やりなおします。",
+            "en": "/aɪm ˈsɑɹi aɪ ˈpɹɛʃɚd ə kənˈfɛʃən. ju meɪ liv; wil ɹiˈstɑɹt wɪð əbˈzɝvd fækts ənd ˈnutɹəl ˈkwɛstʃənz./",
+            "zh": "Bào qiàn wǒ yǐ yán yǔ bī nǐ chéng rèn。 nǐ kě yǐ lí kāi； wǒ men cóng guān chá shì shí yǔ zhōng lì tí wèn chóng xīn kāi shǐ。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "I'm not accusing you. Please explain one more time.",
             "zh": "我不是在指控你，請再說明一次。"
           },
+          "pronunciationGuide": {
+            "ja": "うたがって いる わけでは ありません。 もういちどだけ せつめい して ください。",
+            "en": "/aɪm nɑt əkˈjuzɪŋ ju. pliz ɪkˈspleɪn wʌn mɔɹ taɪm./",
+            "zh": "Wǒ bú shì zài zhǐ kòng nǐ， qǐng zài shuō míng yí cì。"
+          },
           "axisScores": {
             "empathy": 10,
             "fact-checking": 12,
@@ -561,6 +636,11 @@
             "ja": "何もしていないなら、質問されても困らないはずです。",
             "en": "If you did nothing, the questions should not bother you.",
             "zh": "如果沒做錯，應該不會怕被問。"
+          },
+          "pronunciationGuide": {
+            "ja": "なにも して いないなら、 しつもん されても こまらない はずです。",
+            "en": "/ɪf ju dɪd ˈnʌθɪŋ, ðə ˈkwɛstʃənz ʃʊd nɑt ˈbɑðɚ ju./",
+            "zh": "Rú guǒ méi zuò cuò， yīng gāi bú huì pà bèi wèn。"
           },
           "axisScores": {
             "empathy": 0,

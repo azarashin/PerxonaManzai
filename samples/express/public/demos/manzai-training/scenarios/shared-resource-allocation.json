@@ -112,6 +112,11 @@
         "en": "Given our level of need, it is fair for our country to receive more than half.",
         "zh": "考量我方需求，取得過半資源才算公平。"
       },
+      "pronunciationGuide": {
+        "ja": "じゅようの おおきさを かんがえれば、 わがくにが かはんを うけとる のが こうへいです。",
+        "en": "/ˈɡɪvən ˈaʊɚ ˈlɛvəl ʌv nid, ɪt ɪz fɛɹ fɔɹ ˈaʊɚ ˈkʌntɹi tu ɹəˈsiv mɔɹ ðæn hæf./",
+        "zh": "Kǎo liáng wǒ fāng xū qiú， qǔ dé guò bàn zī yuán cái suàn gōng píng。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「人口・備蓄・緊急度のどの指標で必要量を測るか」を確認し、双方のデータを同じ様式で開示し、暫定配分を計算する。",
             "en": "Confirm the constraint; then share data in one format and calculate a provisional allocation.",
             "zh": "先確認以人口、庫存與緊急程度中的哪些指標衡量需求，再以同一格式公開雙方資料並計算暫定分配。"
+          },
+          "pronunciationGuide": {
+            "ja": "「じんこう・ びちく・ きんきゅうどの どの しひょうで ひつようりょうを はかるか」を かくにん し、 そうほうの でーたを おなじ ようしきで かいじ し、 ざんてい はいぶんを けいさん する。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn ʃɛɹ ˈdeɪtə ɪn wʌn ˈfɔɹˌmæt ənd ˈkælkjəˌleɪt ə pɹəˈvɪʒənəl ˌæləˈkeɪʃən./",
+            "zh": "Xiān què rèn yǐ rén kǒu、 kù cún yǔ jǐn jí chéng dù zhōng de nǎ xiē zhǐ biāo héng liáng xū qiú， zài yǐ tóng yì gé shì gōng kāi shuāng fāng zī liào bìng jì suàn zàn dìng fēn pèi。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -170,6 +180,11 @@
             "en": "share data in one format and calculate a provisional allocation, without resolving the constraint.",
             "zh": "以同一格式公開雙方資料並計算暫定分配，但未處理以人口、庫存與緊急程度中的哪些指標衡量需求。"
           },
+          "pronunciationGuide": {
+            "ja": "そうほうの でーたを おなじ ようしきで かいじ し、 ざんてい はいぶんを けいさん するが、「じんこう・ びちく・ きんきゅうどの どの しひょうで ひつようりょうを はかるか」への はいりょは あいまいです。",
+            "en": "/ʃɛɹ ˈdeɪtə ɪn wʌn ˈfɔɹˌmæt ənd ˈkælkjəˌleɪt ə pɹəˈvɪʒənəl ˌæləˈkeɪʃən, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Yǐ tóng yì gé shì gōng kāi shuāng fāng zī liào bìng jì suàn zàn dìng fēn pèi， dàn wèi chǔ lǐ yǐ rén kǒu、 kù cún yǔ jǐn jí chéng dù zhōng de nǎ xiē zhǐ biāo héng liáng xū qiú。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -200,6 +215,11 @@
             "ja": "「人口・備蓄・緊急度のどの指標で必要量を測るか」を退け、自国案への即時同意を求めます。",
             "en": "Ignore which measures of population, reserves, and urgency define need; demand acceptance.",
             "zh": "否定以人口、庫存與緊急程度中的哪些指標衡量需求並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「じんこう・ びちく・ きんきゅうどの どの しひょうで ひつようりょうを はかるか」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ wɪtʃ ˈmɛʒɚz ʌv ˌpɑpjəˈleɪʃən, ɹɪˈzɝvz, ənd ˈɝdʒənsi dɪˈfaɪn nid; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng yǐ rén kǒu、 kù cún yǔ jǐn jí chéng dù zhōng de nǎ xiē zhǐ biāo héng liáng xū qiú bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
@@ -234,6 +254,11 @@
         "en": "How much can you share about who verifies the data and the minimum each side must receive, which blocks agreement?",
         "zh": "阻礙協議的由誰驗證資料以及雙方最低保障量，你能透露到什麼程度？"
       },
+      "pronunciationGuide": {
+        "ja": "ごういを はばむ「でーたの けんしょう しゅたいと、 さいていげん かくほ すべき りょう」を、 どこまで きょうゆう できますか？",
+        "en": "/haʊ mʌtʃ kæn ju ʃɛɹ əˈbaʊt hu ˈvɛɹəˌfaɪz ðə ˈdeɪtə ənd ðə ˈmɪnəməm itʃ saɪd mʌst ɹəˈsiv, wɪtʃ blɑks əˈɡɹimənt?/",
+        "zh": "Zǔ ài xié yì de yóu shuí yàn zhèng zī liào yǐ jí shuāng fāng zuì dī bǎo zhàng liáng， nǐ néng tòu lù dào shén me chéng dù？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「データの検証主体と、最低限確保すべき量」を確認し、第三者確認と最低保障を置き、残りを指標比例で分ける。",
             "en": "Confirm the constraint; then use third-party checks and minimum guarantees, then divide the remainder proportionally.",
             "zh": "先確認由誰驗證資料以及雙方最低保障量，再由第三方查核並保障最低量，再按指標比例分配餘額。"
+          },
+          "pronunciationGuide": {
+            "ja": "「でーたの けんしょう しゅたいと、 さいていげん かくほ すべき りょう」を かくにん し、 だいさんしゃ かくにんと さいてい ほしょうを おき、 のこりを しひょう ひれいで わける。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn jus θɝd - ˈpɑɹti tʃɛks ənd ˈmɪnəməm ˌɡɛɹənˈtiz, ðɛn dɪˈvaɪd ðə ɹɪˈmeɪndɚ pɹəˈpɔɹʃənəli./",
+            "zh": "Xiān què rèn yóu shuí yàn zhèng zī liào yǐ jí shuāng fāng zuì dī bǎo zhàng liáng， zài yóu dì sān fāng chá hé bìng bǎo zhàng zuì dī liáng， zài àn zhǐ biāo bǐ lì fēn pèi yú é。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -297,6 +327,11 @@
             "en": "use outside checks and minimum guarantees, then divide the remainder proportionally, without resolving the constraint.",
             "zh": "由第三方查核並保障最低量，再按指標比例分配餘額，但未處理由誰驗證資料以及雙方最低保障量。"
           },
+          "pronunciationGuide": {
+            "ja": "だいさんしゃ かくにんと さいてい ほしょうを おき、 のこりを しひょう ひれいで わけるが、「でーたの けんしょう しゅたいと、 さいていげん かくほ すべき りょう」への はいりょは あいまいです。",
+            "en": "/jus ˈaʊtˈsaɪd tʃɛks ənd ˈmɪnəməm ˌɡɛɹənˈtiz, ðɛn dɪˈvaɪd ðə ɹɪˈmeɪndɚ pɹəˈpɔɹʃənəli, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Yóu dì sān fāng chá hé bìng bǎo zhàng zuì dī liáng， zài àn zhǐ biāo bǐ lì fēn pèi yú é， dàn wèi chǔ lǐ yóu shuí yàn zhèng zī liào yǐ jí shuāng fāng zuì dī bǎo zhàng liáng。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -327,6 +362,11 @@
             "ja": "「データの検証主体と、最低限確保すべき量」を退け、自国案への即時同意を求めます。",
             "en": "Ignore who verifies the data and the minimum each side must receive; demand acceptance.",
             "zh": "否定由誰驗證資料以及雙方最低保障量並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「でーたの けんしょう しゅたいと、 さいていげん かくほ すべき りょう」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ hu ˈvɛɹəˌfaɪz ðə ˈdeɪtə ənd ðə ˈmɪnəməm itʃ saɪd mʌst ɹəˈsiv; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng yóu shuí yàn zhèng zī liào yǐ jí shuāng fāng zuì dī bǎo zhàng liáng bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
@@ -361,6 +401,11 @@
         "en": "Can we set conditions and timing to set weekly data and thresholds that trigger recalculation?",
         "zh": "可以設定條件與期限來設定每週資料與門檻，超過時才自動重算嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "しゅうじ でーたと しき いちを さだめ、 こえた ばあいだけ じどう さい けいさん する ための じょうけんと きげんを さだめられますか？",
+        "en": "/kæn wi sɛt kənˈdɪʃənz ənd ˈtaɪmɪŋ tu sɛt ˈwikli ˈdeɪtə ənd ˈθɹɛˌʃoʊldz ðæt ˈtɹɪɡɚ ɹiˌkælkjəˈleɪʃən?/",
+        "zh": "Kě yǐ shè dìng tiáo jiàn yǔ qī xiàn lái shè dìng měi zhōu zī liào yǔ mén kǎn， chāo guò shí cái zì dòng zhòng suàn ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「需要が変化した時の再配分基準と見直し日」を確認し、週次データと閾値を定め、超えた場合だけ自動再計算する。",
             "en": "Confirm the constraint; then set weekly data and thresholds that trigger recalculation.",
             "zh": "先確認需求變化時的重分配門檻與檢討日期，再設定每週資料與門檻，超過時才自動重算。"
+          },
+          "pronunciationGuide": {
+            "ja": "「じゅようが へんか した ときの さい はいぶん きじゅんと みなおしび」を かくにん し、 しゅうじ でーたと しき いちを さだめ、 こえた ばあいだけ じどう さい けいさん する。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn sɛt ˈwikli ˈdeɪtə ənd ˈθɹɛˌʃoʊldz ðæt ˈtɹɪɡɚ ɹiˌkælkjəˈleɪʃən./",
+            "zh": "Xiān què rèn xū qiú biàn huà shí de zhòng fēn pèi mén kǎn yǔ jiǎn tǎo rì qī， zài shè dìng měi zhōu zī liào yǔ mén kǎn， chāo guò shí cái zì dòng zhòng suàn。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -414,6 +464,11 @@
             "en": "set weekly data and thresholds that trigger recalculation, without resolving the constraint.",
             "zh": "設定每週資料與門檻，超過時才自動重算，但未處理需求變化時的重分配門檻與檢討日期。"
           },
+          "pronunciationGuide": {
+            "ja": "しゅうじ でーたと しき いちを さだめ、 こえた ばあいだけ じどう さい けいさん するが、「じゅようが へんか した ときの さい はいぶん きじゅんと みなおしび」への はいりょは あいまいです。",
+            "en": "/sɛt ˈwikli ˈdeɪtə ənd ˈθɹɛˌʃoʊldz ðæt ˈtɹɪɡɚ ɹiˌkælkjəˈleɪʃən, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Shè dìng měi zhōu zī liào yǔ mén kǎn， chāo guò shí cái zì dòng zhòng suàn， dàn wèi chǔ lǐ xū qiú biàn huà shí de zhòng fēn pèi mén kǎn yǔ jiǎn tǎo rì qī。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -444,6 +499,11 @@
             "ja": "「需要が変化した時の再配分基準と見直し日」を退け、自国案への即時同意を求めます。",
             "en": "Ignore reallocation triggers and a review date if needs change; demand acceptance.",
             "zh": "否定需求變化時的重分配門檻與檢討日期並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「じゅようが へんか した ときの さい はいぶん きじゅんと みなおしび」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ ɹiˌæləˈkeɪʃən ˈtɹɪɡɚz ənd ə ˌɹivˈju deɪt ɪf nidz tʃeɪndʒ; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng xū qiú biàn huà shí de zhòng fēn pèi mén kǎn yǔ jiǎn tǎo rì qī bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
@@ -478,6 +538,11 @@
         "en": "It is hard to continue after you dismissed how being called greedy blocked disclosure of the basis for need.",
         "zh": "你輕視被指責貪婪後，無法再提出需求依據的影響，讓談判難以繼續。"
       },
+      "pronunciationGuide": {
+        "ja": "「どんよくだと ひなん され、 ひつようりょうの こんきょを だせなく なった えいきょう」を けいし され、 こうしょうを つづけ にくく なりました。",
+        "en": "/ɪt ɪz hɑɹd tu kənˈtɪnju ˈæftɚ ju dɪˈsmɪst haʊ ˈbiɪŋ kɔld ˈɡɹidi blɑkt dɪsˈkloʊʒɚ ʌv ðə ˈbeɪsəs fɔɹ nid./",
+        "zh": "Nǐ qīng shì bèi zhǐ zé tān lán hòu， wú fǎ zài tí chū xū qiú yī jù de yǐng xiǎng， ràng tán pàn nán yǐ jì xù。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「貪欲だと非難され、必要量の根拠を出せなくなった影響」を確認し、非難を撤回し、双方の必要量を同じ指標で再提出する。",
             "en": "Confirm the constraint; then withdraw the accusation and resubmit both needs under one metric.",
             "zh": "先確認被指責貪婪後，無法再提出需求依據的影響，再撤回指責，以相同指標重新提交雙方需求。"
+          },
+          "pronunciationGuide": {
+            "ja": "「どんよくだと ひなん され、 ひつようりょうの こんきょを だせなく なった えいきょう」を かくにん し、 ひなんを てっかい し、 そうほうの ひつようりょうを おなじ しひょうで さい ていしゅつ する。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn wɪðˈdɹɔ ðə ˌækjəˈzeɪʃən ənd ˌɹisəbˈmɪt boʊθ nidz ˈʌndɚ wʌn ˈmɛtɹɪk./",
+            "zh": "Xiān què rèn bèi zhǐ zé tān lán hòu， wú fǎ zài tí chū xū qiú yī jù de yǐng xiǎng， zài chè huí zhǐ zé， yǐ xiāng tóng zhǐ biāo chóng xīn tí jiāo shuāng fāng xū qiú。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -531,6 +601,11 @@
             "en": "withdraw the accusation and resubmit both needs under one metric, without resolving the constraint.",
             "zh": "撤回指責，以相同指標重新提交雙方需求，但未處理被指責貪婪後，無法再提出需求依據的影響。"
           },
+          "pronunciationGuide": {
+            "ja": "ひなんを てっかい し、 そうほうの ひつようりょうを おなじ しひょうで さい ていしゅつ するが、「どんよくだと ひなん され、 ひつようりょうの こんきょを だせなく なった えいきょう」への はいりょは あいまいです。",
+            "en": "/wɪðˈdɹɔ ðə ˌækjəˈzeɪʃən ənd ˌɹisəbˈmɪt boʊθ nidz ˈʌndɚ wʌn ˈmɛtɹɪk, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Chè huí zhǐ zé， yǐ xiāng tóng zhǐ biāo chóng xīn tí jiāo shuāng fāng xū qiú， dàn wèi chǔ lǐ bèi zhǐ zé tān lán hòu， wú fǎ zài tí chū xū qiú yī jù de yǐng xiǎng。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -561,6 +636,11 @@
             "ja": "「貪欲だと非難され、必要量の根拠を出せなくなった影響」を退け、自国案への即時同意を求めます。",
             "en": "Ignore how being called greedy blocked disclosure of the basis for need; demand acceptance.",
             "zh": "否定被指責貪婪後，無法再提出需求依據的影響並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「どんよくだと ひなん され、 ひつようりょうの こんきょを だせなく なった えいきょう」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ haʊ ˈbiɪŋ kɔld ˈɡɹidi blɑkt dɪsˈkloʊʒɚ ʌv ðə ˈbeɪsəs fɔɹ nid; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng bèi zhǐ zé tān lán hòu， wú fǎ zài tí chū xū qiú yī jù de yǐng xiǎng bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,

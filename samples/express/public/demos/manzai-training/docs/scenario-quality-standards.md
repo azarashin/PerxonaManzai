@@ -341,3 +341,118 @@ Constraints:
 ```
 
 For an evaluation-only task, add: `Do not modify files in this phase.` Review the report before authorizing content changes.
+
+## 11. Generator request templates for new content
+
+Replace every value in angle brackets before using these prompts. State explicit safety, compliance, tone, and audience
+requirements instead of expecting the generator to infer them.
+
+### 11.1 Add a scenario to an existing category
+
+```text
+Add a new scenario to the existing <category-id> category.
+
+Scenario requirements:
+- Scenario ID: <scenario-id>
+- Setting: <concrete situation>
+- Learner role: <role>
+- Avatar role: <role>
+- Target audience and difficulty: <audience-and-difficulty>
+- Learning objective: <observable skill>
+- Desired beat count: <count>
+- Safety or professional constraints: <constraints>
+
+Before editing, read the scenario generation guide, scenario quality standards,
+scenario quality policy, pronunciation-guide authoring guide, and both scenario
+JSON Schemas. Inspect the target category entry in scenarios/index.json and
+multiple scenarios in that category, but do not copy their dialogue, choices,
+feedback, or aliases.
+
+First summarize the proposed situation, evaluation axes, choice-strategy contrast,
+and branching decision. Then implement the scenario unless a blocking ambiguity
+would materially change the training objective.
+
+Constraints:
+- Modify only the new scenario file and the registration required in scenarios/index.json.
+- Preserve $schema and use unique lowercase kebab-case IDs.
+- Follow the category's branching.requirement and localized branching.rationale.
+- Keep the scenario linear when earlier choices have no later consequence; when
+  branching is used, make state changes and routes materially affect later dialogue.
+- Define distinct, scenario-specific evaluation axes whose maxPoints total 80.
+- Give every beat meaningfully different best, partial, and weak or unsafe strategies.
+- Keep feedback consistent with axisScores and explain the consequence of that choice.
+- Preserve the same learning distinction in ja, en, and Traditional Chinese zh.
+- Add pronunciationGuide to every boke and choice text: full-line hiragana for ja,
+  broad General American IPA in /slashes/ for en, and tone-marked Hanyu Pinyin for zh.
+- Keep spoken choices practical for speech recognition and aliases narrow and unambiguous.
+- Do not change quality thresholds, severities, exceptions, schemas, or unrelated scenarios.
+- Do not weaken safety or professional boundaries to make a choice more dramatic.
+
+Run from samples/express:
+- npm run validate:scenarios
+- npm run quality:scenarios -- --summary
+- npm test
+
+Report the files changed, category and scenario IDs, beat count, branching decision,
+scoring approach, validation results, before-and-after quality finding totals, and
+remaining manual-review items. Do not commit or push unless explicitly requested.
+```
+
+### 11.2 Add a category and representative scenarios
+
+```text
+Add a new <category-id> category and <scenario-count> representative scenarios.
+
+Category requirements:
+- Localized title and scope: <ja-en-zh-title-and-scope>
+- Learner roles and counterpart roles: <roles>
+- Transferable skills: <skills>
+- Intended difficulty range: <range>
+- Safety or professional boundaries: <boundaries>
+- Candidate situations: <situations>
+
+Before editing, read the scenario generation guide, scenario quality standards,
+scenario quality policy, pronunciation-guide authoring guide, both scenario JSON
+Schemas, and scenarios/index.json. Compare the proposal with all existing categories
+and inspect multiple scenarios from the closest categories.
+
+First report:
+- whether this category is sufficiently distinct or should be incorporated into an existing category;
+- its learning boundary and the situations that are explicitly out of scope;
+- branching.requirement (not-required, recommended, or required) and a concrete
+  ja/en/zh rationale;
+- the proposed scenario set, difficulty progression, evaluation axes, and safety risks.
+
+If the category would substantially duplicate an existing category, stop after the
+report and request a scope decision. Otherwise, proceed with implementation.
+
+Constraints:
+- Add one category entry and the required scenario registrations to scenarios/index.json.
+- Create complete scenario JSON files using the shared scenario schema; do not create
+  a category-specific schema unless the runtime data model genuinely changes.
+- Preserve $schema and use stable, unique lowercase kebab-case IDs.
+- Make the representative scenarios cover different situations and communication
+  strategies rather than noun-swapped versions of one template.
+- Follow the declared branching guidance in every scenario and use consequential
+  state and routes whenever branching is required.
+- Give every scenario specific evaluation axes totaling 80 content points and choices
+  with meaningfully different best, partial, and weak or unsafe strategies.
+- Keep feedback, axisScores, state effects, and outcomes mutually consistent.
+- Preserve training intent independently in ja, en, and Traditional Chinese zh.
+- Add pronunciationGuide to every boke and choice text using hiragana, broad General
+  American IPA, and tone-marked Hanyu Pinyin respectively.
+- Keep choices suitable for speech recognition and avoid preferred-response, dialogue,
+  feedback, and alias reuse within the category and across the catalog.
+- Do not change quality thresholds, severities, exceptions, or unrelated content.
+- Do not invent authoritative medical, legal, financial, identity, payment, or safety claims.
+
+Run from samples/express after each reviewable scenario or category batch:
+- npm run validate:scenarios
+- npm run quality:scenarios -- --summary
+- npm test
+
+Report the category definition, scenarios and beat counts, branching design, scoring
+strategy, files changed, validation results, before-and-after quality finding totals,
+and all remaining localization, pronunciation, safety, or domain-expert review items.
+Do not commit or push unless explicitly requested.
+```

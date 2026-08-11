@@ -112,6 +112,11 @@
         "en": "Do you really not remember what today is?",
         "zh": "你真的不記得今天是什麼日子嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "きょうが なにの ひか、 ほんとうに おぼえて いないの？",
+        "en": "/du ju ˈɹɪli nɑt ɹɪˈmɛmbɚ wʌt təˈdeɪ ɪz?/",
+        "zh": "Nǐ zhēn de bú jì de jīn tiān shì shén me rì zi ma？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "忘れて傷つけたことは本当にごめん。言い訳せず、今日はどんな思いで待っていたか聞かせて。",
             "en": "I'm truly sorry I forgot and hurt you. Before I explain, please tell me what today and the wait felt like.",
             "zh": "我忘記了還傷害你，真的很抱歉。我先不辯解，請告訴我今天等待時的感受。"
+          },
+          "pronunciationGuide": {
+            "ja": "わすれて きずつけた ことは ほんとうに ごめん。 いいわけ せず、 きょうは どんな おもいで まって いたか きかせて。",
+            "en": "/aɪm ˈtɹuli ˈsɑɹi aɪ fɚˈɡɑt ənd hɝt ju. bɪˈfɔɹ aɪ ɪkˈspleɪn, pliz tɛl mi wʌt təˈdeɪ ənd ðə weɪt fɛlt laɪk./",
+            "zh": "Wǒ wàng jì le hái shāng hài nǐ， zhēn de hěn bào qiàn。 wǒ xiān bú biàn jiě， qǐng gào sù wǒ jīn tiān děng dài shí de gǎn shòu。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "I'm sorry. I'll book an expensive restaurant tomorrow to make up for it.",
             "zh": "對不起，我明天訂一家高級餐廳補償你。"
           },
+          "pronunciationGuide": {
+            "ja": "ごめん。 あした、 ごうかな みせを よやく して うめあわせるよ。",
+            "en": "/aɪm ˈsɑɹi. aɪl bʊk æn ɪkˈspɛnsɪv ˈɹɛstɚˌɑnt təˈmɑˌɹoʊ tu meɪk ʌp fɔɹ ɪt./",
+            "zh": "Duì bù qǐ， wǒ míng tiān dìng yì jiā gāo jí cān tīng bǔ cháng nǐ。"
+          },
           "axisScores": {
             "empathy": 14,
             "needs-reading": 5,
@@ -200,6 +215,11 @@
             "ja": "毎年全部の記念日を覚えるなんて無理だよ。",
             "en": "No one can remember every anniversary every year.",
             "zh": "不可能每年把所有紀念日都記住。"
+          },
+          "pronunciationGuide": {
+            "ja": "まいとし ぜんぶの きねんびを おぼえるなんて むりだよ。",
+            "en": "/noʊ wʌn kæn ɹɪˈmɛmbɚ ˈɛvɚi ˌænəˈvɝsɚi ˈɛvɚi jɪɹ./",
+            "zh": "Bù kě néng měi nián bǎ suǒ yǒu jì niàn rì dōu jì zhù。"
           },
           "axisScores": {
             "empathy": 0,
@@ -234,6 +254,11 @@
         "en": "I don't want an expensive gift. I wanted you to remember a day that matters to us.",
         "zh": "我不是想要昂貴禮物，只希望你記得這個對我們很重要的日子。"
       },
+      "pronunciationGuide": {
+        "ja": "たかい ものが ほしい わけじゃない。 ふたりにとって たいせつな ひを おぼえて いて ほしかった。",
+        "en": "/aɪ doʊnt wɑnt æn ɪkˈspɛnsɪv ɡɪft. aɪ ˈwɔntɪd ju tu ɹɪˈmɛmbɚ ə deɪ ðæt ˈmætɚz tu ʌs./",
+        "zh": "Wǒ bú shì xiǎng yào áng guì lǐ wù， zhī xī wàng nǐ jì de zhè ge duì wǒ men hěn zhòng yào de rì zi。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "物ではなく、二人の歴史を大切にしていると感じたかったんだね。特に何を一緒に振り返りたかった？",
             "en": "You wanted to feel that our shared history matters, not receive a gift. What did you most want us to remember together?",
             "zh": "你想感受到我重視我們的共同回憶，而不是收到禮物。你最希望我們一起回顧什麼？"
+          },
+          "pronunciationGuide": {
+            "ja": "ものではなく、 ふたりの れきしを たいせつに して いると かんじたかった んだね。 とくに なにを いっしょに ふりかえりたかった？",
+            "en": "/ju ˈwɔntɪd tu fil ðæt ˈaʊɚ ʃɛɹd ˈhɪstɚi ˈmætɚz, nɑt ɹəˈsiv ə ɡɪft. wʌt dɪd ju moʊst wɑnt ʌs tu ɹɪˈmɛmbɚ təˈɡɛðɚ?/",
+            "zh": "Nǐ xiǎng gǎn shòu dào wǒ zhòng shì wǒ men de gòng tóng huí yì， ér bú shì shōu dào lǐ wù。 nǐ zuì xī wàng wǒ men yì qǐ huí gù shén me？"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "I understand. I'll add a calendar reminder for next year.",
             "zh": "我懂了，明年開始會在行事曆設定提醒。"
           },
+          "pronunciationGuide": {
+            "ja": "わかった。 らいねんから かれんだーに つうちを いれるよ。",
+            "en": "/aɪ ˌʌndɚˈstænd. aɪl æd ə ˈkæləndɚ ɹiˈmaɪndɚ fɔɹ nɛkst jɪɹ./",
+            "zh": "Wǒ dǒng le， míng nián kāi shǐ huì zài háng shì lì shè dìng tí xǐng。"
+          },
           "axisScores": {
             "empathy": 8,
             "needs-reading": 7,
@@ -327,6 +362,11 @@
             "ja": "大事なら前日に言ってくれればよかったのに。",
             "en": "If it mattered that much, you should have reminded me yesterday.",
             "zh": "既然那麼重要，你昨天就該提醒我。"
+          },
+          "pronunciationGuide": {
+            "ja": "だいじなら ぜんじつに いって くれれば よかったのに。",
+            "en": "/ɪf ɪt ˈmætɚd ðæt mʌtʃ, ju ʃʊd hæv ɹiˈmaɪndɪd mi ˈjɛstɚˌdeɪ./",
+            "zh": "Jì rán nà me zhòng yào， nǐ zuó tiān jiù gāi tí xǐng wǒ。"
           },
           "axisScores": {
             "empathy": 0,
@@ -361,6 +401,11 @@
         "en": "I want us to decide what we can do now and how to avoid this same hurt next year.",
         "zh": "我想一起決定現在能做什麼，以及明年如何避免同樣的傷害。"
       },
+      "pronunciationGuide": {
+        "ja": "いまから できる ことと、 らいねんまた おなじ おもいを しない ほうほうを いっしょに きめたい。",
+        "en": "/aɪ wɑnt ʌs tu ˌdɪˈsaɪd wʌt wi kæn du naʊ ənd haʊ tu əˈvɔɪd ðɪs seɪm hɝt nɛkst jɪɹ./",
+        "zh": "Wǒ xiǎng yì qǐ jué dìng xiàn zài néng zuò shén me， yǐ jí míng nián rú hé bì miǎn tóng yàng de shāng hài。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "今夜はあなたの気持ちを聞く時間にしたい。お祝いは二人で日を選び、来年の予定も一緒に登録しよう。",
             "en": "Tonight I want to listen. We can choose a celebration date together and add next year's plan to both calendars.",
             "zh": "今晚我想先聽你的感受。我們一起選慶祝日期，也共同登記明年的安排。"
+          },
+          "pronunciationGuide": {
+            "ja": "こんやは あなたの きもちを きく じかんに したい。 おいわいは ふたりで ひを えらび、 らいねんの よていも いっしょに とうろく しよう。",
+            "en": "/təˈnaɪt aɪ wɑnt tu ˈlɪsən. wi kæn tʃuz ə ˌsɛləˈbɹeɪʃən deɪt təˈɡɛðɚ ənd æd nɛkst jɪɹz plæn tu boʊθ ˈkæləndɚz./",
+            "zh": "Jīn wǎn wǒ xiǎng xiān tīng nǐ de gǎn shòu。 wǒ men yì qǐ xuǎn qìng zhù rì qī， yě gòng tóng dēng jì míng nián de ān pái。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "I'll keep tomorrow evening free, so let's go out for dinner.",
             "zh": "我把明晚空下來，我們去吃飯吧。"
           },
+          "pronunciationGuide": {
+            "ja": "あしたの よるは あけるから、 しょくじに いこう。",
+            "en": "/aɪl kip təˈmɑˌɹoʊ ˈivnɪŋ fɹi, soʊ lɛts ɡoʊ aʊt fɔɹ ˈdɪnɚ./",
+            "zh": "Wǒ bǎ míng wǎn kōng xià lái， wǒ men qù chī fàn ba。"
+          },
           "axisScores": {
             "empathy": 10,
             "needs-reading": 7,
@@ -444,6 +499,11 @@
             "ja": "来年は絶対に忘れないから、もうこの話は終わりにしよう。",
             "en": "I definitely won't forget next year, so let's end this conversation.",
             "zh": "明年我絕對不會忘記，這件事就到此為止吧。"
+          },
+          "pronunciationGuide": {
+            "ja": "らいねんは ぜったいに わすれないから、 もう この はなしは おわりに しよう。",
+            "en": "/aɪ ˈdɛfənətli woʊnt fɚˈɡɛt nɛkst jɪɹ, soʊ lɛts ɛnd ðɪs ˌkɑnvɚˈseɪʃən./",
+            "zh": "Míng nián wǒ jué duì bú huì wàng jì， zhè jiàn shì jiù dào cǐ wéi zhǐ ba。"
           },
           "axisScores": {
             "empathy": 2,
@@ -478,6 +538,11 @@
         "en": "You keep planning how to make up for it, but you still haven't heard how I was hurt.",
         "zh": "你一直安排補償，卻還沒有聽我說受到什麼傷害。"
       },
+      "pronunciationGuide": {
+        "ja": "うめあわせの よていばかりで、 わたしが きずついた ことは まだ きいて もらえて いない。",
+        "en": "/ju kip ˈplænɪŋ haʊ tu meɪk ʌp fɔɹ ɪt, bʌt ju stɪl ˈhævənt hɝd haʊ aɪ wɑz hɝt./",
+        "zh": "Nǐ yì zhí ān pái bǔ cháng， què hái méi yǒu tīng wǒ shuō shòu dào shén me shāng hài。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "解決を急いで気持ちを置き去りにした。ごめん。予定の話を止めて、傷ついたことを聞かせて。",
             "en": "I rushed to fix this and left your feelings behind. I'm sorry. Let's pause the plans so I can listen.",
             "zh": "我急著解決，反而忽略你的感受，對不起。先停下安排，請讓我聽你受傷的部分。"
+          },
+          "pronunciationGuide": {
+            "ja": "かいけつを いそいで きもちを おきざりに した。 ごめん。 よていの はなしを とめて、 きずついた ことを きかせて。",
+            "en": "/aɪ ɹʌʃt tu fɪks ðɪs ənd lɛft jɔɹ ˈfilɪŋz bɪˈhaɪnd. aɪm ˈsɑɹi. lɛts pɔz ðə plænz soʊ aɪ kæn ˈlɪsən./",
+            "zh": "Wǒ jí zhe jiě jué， fǎn ér hū lüè nǐ de gǎn shòu， duì bù qǐ。 xiān tíng xià ān pái， qǐng ràng wǒ tīng nǐ shòu shāng de bù fen。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "I understand that I hurt you, but this week was genuinely busy.",
             "zh": "我知道傷害了你，但這週真的很忙。"
           },
+          "pronunciationGuide": {
+            "ja": "きずつけた のは わかった。でも こんしゅうは ほんとうに いそがしかった んだ。",
+            "en": "/aɪ ˌʌndɚˈstænd ðæt aɪ hɝt ju, bʌt ðɪs wik wɑz ˈdʒɛnjəwənli ˈbɪzi./",
+            "zh": "Wǒ zhī dào shāng hài le nǐ， dàn zhè zhōu zhēn de hěn máng。"
+          },
           "axisScores": {
             "empathy": 11,
             "needs-reading": 7,
@@ -561,6 +636,11 @@
             "ja": "そんなに大事なら、覚えているか試すような聞き方をしないで。",
             "en": "If it mattered so much, don't test whether I remember.",
             "zh": "既然那麼重要，就別用問題測試我記不記得。"
+          },
+          "pronunciationGuide": {
+            "ja": "そんなに だいじなら、 おぼえて いるか ためす ような ききかたを しないで。",
+            "en": "/ɪf ɪt ˈmætɚd soʊ mʌtʃ, doʊnt tɛst ˈwɛðɚ aɪ ɹɪˈmɛmbɚ./",
+            "zh": "Jì rán nà me zhòng yào， jiù bié yòng wèn tí cè shì wǒ jì bu jì de。"
           },
           "axisScores": {
             "empathy": 0,

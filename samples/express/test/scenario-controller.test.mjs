@@ -142,6 +142,27 @@ test("the enterprise renewal scenario reaches outcomes from accumulated state", 
   assert.equal(overDiscounted.currentBeat.id, "guarded-close");
 });
 
+test("the coerced applicant scenario branches on early support", async () => {
+  const url = new URL(
+    "../public/demos/manzai-training/scenarios/coerced-after-application.json",
+    import.meta.url,
+  );
+  const scenario = JSON.parse(await readFile(url, "utf8"));
+
+  const supported = new ScenarioController(scenario);
+  supported.start();
+  play(supported, "refuse-and-seek-help");
+  assert.equal(supported.state["support-engaged"], true);
+  assert.equal(supported.currentBeat.id, "supported-exit");
+
+  const isolated = new ScenarioController(scenario);
+  isolated.start();
+  play(isolated, "block-alone");
+  assert.equal(isolated.state["support-engaged"], false);
+  assert.equal(isolated.state["pressure-level"], 1);
+  assert.equal(isolated.currentBeat.id, "isolation-pressure");
+});
+
 function play(controller, choiceId) {
   controller.recordResult({ choiceId, totalScore: 80, reactionSeconds: 1 });
   controller.advance();

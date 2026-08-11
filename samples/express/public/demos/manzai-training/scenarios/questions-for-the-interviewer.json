@@ -112,6 +112,11 @@
         "en": "Finally, do you have questions about the company or this role?",
         "zh": "最後，你對公司或這個職位有什麼問題嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "さいごに、 かいしゃや この やくわりについて しつもんは ありますか。",
+        "en": "/ˈfaɪnəli, du ju hæv ˈkwɛstʃənz əˈbaʊt ðə ˈkʌmpəˌni ɔɹ ðɪs ɹoʊl?/",
+        "zh": "Zuì hòu， nǐ duì gōng sī huò zhè ge zhí wèi yǒu shén me wèn tí ma？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "最初の九十日で期待される成果と、その達成に最も連携するチームを教えてください。",
             "en": "What outcomes are expected in the first ninety days, and which team is the closest partner in delivering them?",
             "zh": "請問前九十天期待的成果，以及達成時最需要合作的團隊。"
+          },
+          "pronunciationGuide": {
+            "ja": "さいしょの きゅう とおかで きたい される せいかと、 その たっせいに もっとも れんけい する ちーむを おしえて ください。",
+            "en": "/wʌt ˈaʊtˌkʌmz ɑɹ ɪkˈspɛktəd ɪn ðə fɝst ˈnaɪnti deɪz, ənd wɪtʃ tim ɪz ðə ˈkloʊsəst ˈpɑɹtnɚ ɪn dɪˈlɪvɚɪŋ ðɛm?/",
+            "zh": "Qǐng wèn qián jiǔ shí tiān qī dài de chéng guǒ， yǐ jí dá chéng shí zuì xū yào hé zuò de tuán duì。"
           },
           "axisScores": {
             "relevance": 20,
@@ -170,6 +180,11 @@
             "en": "Could you tell me about the company culture?",
             "zh": "可以介紹公司的企業文化嗎？"
           },
+          "pronunciationGuide": {
+            "ja": "おんしゃの しゃふうについて おしえて ください。",
+            "en": "/kʊd ju tɛl mi əˈbaʊt ðə ˈkʌmpəˌni ˈkʌltʃɚ?/",
+            "zh": "Kě yǐ jiè shào gōng sī de qǐ yè wén huà ma？"
+          },
           "axisScores": {
             "relevance": 13,
             "credibility": 10,
@@ -200,6 +215,11 @@
             "ja": "特にありません。ホームページは読みました。",
             "en": "No questions. I read the website.",
             "zh": "沒有問題，我已看過官網。"
+          },
+          "pronunciationGuide": {
+            "ja": "とくに ありません。 ほーむぺーじは よみました。",
+            "en": "/noʊ ˈkwɛstʃənz. aɪ ɹɛd ðə ˈwɛbˌsaɪt./",
+            "zh": "Méi yǒu wèn tí， wǒ yǐ kàn guò guān wǎng。"
           },
           "axisScores": {
             "relevance": 4,
@@ -234,6 +254,11 @@
         "en": "Fast releases and cross-functional coordination matter here. What would you like to explore?",
         "zh": "這個職務重視快速發布與跨部門協調。你想深入了解什麼？"
       },
+      "pronunciationGuide": {
+        "ja": "この やくわりは じんそくな りりーすと ぶもん おうだんの ちょうせいが じゅうようです。 なにを くわしく しりたいですか。",
+        "en": "/fæst ɹɪˈlisɪz ənd kɹɔs - ˈfʌŋkʃənəl koʊˌɔɹdəˈneɪʃən ˈmætɚ hiɹ. wʌt wʊd ju laɪk tu ɪkˈsplɔɹ?/",
+        "zh": "Zhè gè zhí wù zhòng shì kuài sù fā bù yǔ kuà bù mén xié tiáo。 nǐ xiǎng shēn rù liǎo jiě shén me？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "速度と品質が衝突した時、誰が優先順位を決め、どの指標でリリース可否を判断しますか。",
             "en": "When speed and quality conflict, who sets priority and which metrics decide release readiness?",
             "zh": "速度與品質衝突時，由誰決定優先順序，並用哪些指標判斷能否發布？"
+          },
+          "pronunciationGuide": {
+            "ja": "そくどと ひんしつが しょうとつ した とき、 だれが ゆうせん じゅんいを きめ、 どの しひょうで りりーす かひを はんだん しますか。",
+            "en": "/wɛn spid ənd ˈkwɑləti ˈkɑnflɪkt, hu sɛts pɹaɪˈɔɹəti ənd wɪtʃ ˈmɛtɹɪks ˌdɪˈsaɪd ɹiˈlis ˈɹɛdinəs?/",
+            "zh": "Sù dù yǔ pǐn zhì chōng tū shí， yóu shuí jué dìng yōu xiān shùn xù， bìng yòng nǎ xiē zhǐ biāo pàn duàn néng fǒu fā bù？"
           },
           "axisScores": {
             "relevance": 20,
@@ -297,6 +327,11 @@
             "en": "Which project-management tool do you usually use?",
             "zh": "平常使用哪種專案管理工具？"
           },
+          "pronunciationGuide": {
+            "ja": "ふだんは どの ぷろじぇくと かんり つーるを つかいますか。",
+            "en": "/wɪtʃ ˈpɹɑdʒɛkt - ˈmænədʒmənt tul du ju ˈjuʒəwəli jus?/",
+            "zh": "Píng cháng shǐ yòng nǎ zhǒng zhuān àn guǎn lǐ gōng jù？"
+          },
           "axisScores": {
             "relevance": 12,
             "credibility": 13,
@@ -327,6 +362,11 @@
             "ja": "どれくらい早く昇進できますか。",
             "en": "How quickly can I be promoted?",
             "zh": "最快多久可以升遷？"
+          },
+          "pronunciationGuide": {
+            "ja": "どれくらい はやく しょうしん できますか。",
+            "en": "/haʊ ˈkwɪkli kæn aɪ bi pɹəˈmoʊtɪd?/",
+            "zh": "Zuì kuài duō jiǔ kě yǐ shēng qiān？"
           },
           "axisScores": {
             "relevance": 5,
@@ -361,6 +401,11 @@
         "en": "One last question: what would help you decide whether to choose this role?",
         "zh": "最後一題：什麼資訊能幫助你判斷是否選擇這個職務？"
       },
+      "pronunciationGuide": {
+        "ja": "さいごに ひとつ、 この しょくむを えらぶ はんだんに やくだつ しつもんは ありますか。",
+        "en": "/wʌn læst ˈkwɛstʃən: wʌt wʊd hɛlp ju ˌdɪˈsaɪd ˈwɛðɚ tu tʃuz ðɪs ɹoʊl?/",
+        "zh": "Zuì hòu yì tí： shén me zī xùn néng bāng zhù nǐ pàn duàn shì fǒu xuǎn zé zhè ge zhí wù？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "今チームが直面する最大の課題と、この役割が半年で変えられる部分を教えてください。",
             "en": "What is the team's biggest current challenge, and what could this role change within six months?",
             "zh": "團隊目前最大的挑戰是什麼？這個職務半年內能改變哪些部分？"
+          },
+          "pronunciationGuide": {
+            "ja": "こん ちーむが ちょくめん する さいだいの かだいと、 この やくわりが はんとしで かえられる ぶぶんを おしえて ください。",
+            "en": "/wʌt ɪz ðə timz ˈbɪɡəst ˈkɝənt ˈtʃæləndʒ, ənd wʌt kʊd ðɪs ɹoʊl tʃeɪndʒ wɪˈðɪn sɪks mʌnθs?/",
+            "zh": "Tuán duì mù qián zuì dà de tiǎo zhàn shì shén me？ zhè ge zhí wù bàn nián nèi néng gǎi biàn nǎ xiē bù fen？"
           },
           "axisScores": {
             "relevance": 20,
@@ -414,6 +464,11 @@
             "en": "How many days per week can I work remotely?",
             "zh": "每週可以遠端工作幾天？"
           },
+          "pronunciationGuide": {
+            "ja": "ざいたく きんむは しゅうに なんにち できますか。",
+            "en": "/haʊ ˈmɛni deɪz pɝ wik kæn aɪ wɝk ɹiˈmoʊtli?/",
+            "zh": "Měi zhōu kě yǐ yuǎn duān gōng zuò jǐ tiān？"
+          },
           "axisScores": {
             "relevance": 9,
             "credibility": 12,
@@ -444,6 +499,11 @@
             "ja": "求人票に書いてある給与で間違いないですか。",
             "en": "Is the salary exactly what the job posting states?",
             "zh": "薪資確定和職缺公告寫的一樣嗎？"
+          },
+          "pronunciationGuide": {
+            "ja": "きゅうじんひょうに かいて ある きゅうよで まちがいないですか。",
+            "en": "/ɪz ðə ˈsælɚi ɪɡˈzæktli wʌt ðə dʒɑb ˈpoʊstɪŋ steɪts?/",
+            "zh": "Xīn zī què dìng hé zhí quē gōng gào xiě de yí yàng ma？"
           },
           "axisScores": {
             "relevance": 7,
@@ -478,6 +538,11 @@
         "en": "That is on the careers page. Do you have a question based on this interview?",
         "zh": "那在職缺頁面就能找到。你有根據這次面試內容的問題嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "その しつもんは きゅうじん ぺーじで わかります。 めんせつで きいた ないようを ふまえた しつもんは ありますか。",
+        "en": "/ðæt ɪz ɑn ðə kɚˈɪɹz peɪdʒ. du ju hæv ə ˈkwɛstʃən beɪst ɑn ðɪs ˈɪntɚvˌju?/",
+        "zh": "Nà zài zhí quē yè miàn jiù néng zhǎo dào。 nǐ yǒu gēn jù zhè cì miàn shì nèi róng de wèn tí ma？"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "調べ方が足りませんでした。先ほどの部門横断調整で、入社者が最初につまずきやすい点を教えてください。",
             "en": "I should have researched that. In the cross-team work you mentioned, where do new hires struggle first?",
             "zh": "是我查得不夠。關於剛提到的跨部門協作，新進人員最常先卡在哪裡？"
+          },
+          "pronunciationGuide": {
+            "ja": "しらべかたが たりませんでした。 さきほどの ぶもん おうだん ちょうせいで、 にゅうしゃしゃが さいしょに つまずき やすい てんを おしえて ください。",
+            "en": "/aɪ ʃʊd hæv ɹiˈsɝtʃt ðæt. ɪn ðə kɹɔs - tim wɝk ju ˈmɛnʃənd, wɛɹ du nu ˈhaɪɚz ˈstɹʌɡəl fɝst?/",
+            "zh": "Shì wǒ chá dé bú gòu。 guān yú gāng tí dào de kuà bù mén xié zuò， xīn jìn rén yuán zuì cháng xiān kǎ zài nǎ lǐ？"
           },
           "axisScores": {
             "relevance": 20,
@@ -531,6 +601,11 @@
             "en": "Then could you tell me more about the company atmosphere?",
             "zh": "那可以再多說一些公司氣氛嗎？"
           },
+          "pronunciationGuide": {
+            "ja": "では、 かいしゃの ふんいきについて もうすこし おしえて ください。",
+            "en": "/ðɛn kʊd ju tɛl mi mɔɹ əˈbaʊt ðə ˈkʌmpəˌni ˈætməsˌfɪɹ?/",
+            "zh": "Nà kě yǐ zài duō shuō yì xiē gōng sī qì fēn ma？"
+          },
           "axisScores": {
             "relevance": 11,
             "credibility": 8,
@@ -561,6 +636,11 @@
             "ja": "必要な情報は求人ページだけでは足りないと思います。",
             "en": "I don't think the careers page provides enough information.",
             "zh": "我覺得職缺頁面的資訊並不足夠。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひつような じょうほうは きゅうじん ぺーじだけでは たりないと おもいます。",
+            "en": "/aɪ doʊnt θɪŋk ðə kɚˈɪɹz peɪdʒ pɹəˈvaɪdz ɪˈnʌf ˌɪnfɚˈmeɪʃən./",
+            "zh": "Wǒ jué de zhí quē yè miàn de zī xùn bìng bù zú gòu。"
           },
           "axisScores": {
             "relevance": 5,

@@ -112,6 +112,11 @@
         "en": "My head is overwhelmed and I don't know where to start. Nobody understands.",
         "zh": "我腦中一片混亂，不知道從哪裡說起。沒有人理解我。"
       },
+      "pronunciationGuide": {
+        "ja": "あたまが いっぱいで、 なにから はなせば いいか わかりません。 だれも わかって くれない。",
+        "en": "/maɪ hɛd ɪz ˌoʊvɚˈwɛlmd ənd aɪ doʊnt noʊ wɛɹ tu stɑɹt. ˈnoʊˌbɑˌdi ˌʌndɚˈstændz./",
+        "zh": "Wǒ nǎo zhōng yí piàn hùn luàn， bù zhī dào cóng nǎ lǐ shuō qǐ。 méi yǒu rén lǐ jiě wǒ。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "まず「今いる場所、差し迫った危険、一番困っていること」を安全に確認し、急かさず一つずつ聞き、話せるところから始める。",
             "en": "Check safety first; listen one point at a time and start wherever the caller can.",
             "zh": "先安全確認目前位置、立即危險與最困擾的事情，再不催促地逐一傾聽，從來電者能說的地方開始。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「いま いる ばしょ、 さしせまった きけん、 いちばん こまって いる こと」を あんぜんに かくにん し、 せかさず ひとつずつ きき、 はなせる ところから はじめる。",
+            "en": "/tʃɛk ˈseɪfti fɝst; ˈlɪsən wʌn pɔɪnt æt ə taɪm ənd stɑɹt wɛˈɹɛvɚ ðə ˈkɔlɚ kæn./",
+            "zh": "Xiān ān quán què rèn mù qián wèi zhì、 lì jí wēi xiǎn yǔ zuì kùn rǎo de shì qíng， zài bù cuī cù dì zhú yī qīng tīng， cóng lái diàn zhě néng shuō de dì fāng kāi shǐ。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -170,6 +180,11 @@
             "en": "Only listen one point at a time and start wherever the caller can.",
             "zh": "只不催促地逐一傾聽，從來電者能說的地方開始，但省略目前位置、立即危險與最困擾的事情的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "せかさず ひとつずつ きき、 はなせる ところから はじめるが、「いま いる ばしょ、 さしせまった きけん、 いちばん こまって いる こと」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ˈlɪsən wʌn pɔɪnt æt ə taɪm ənd stɑɹt wɛˈɹɛvɚ ðə ˈkɔlɚ kæn./",
+            "zh": "Zhī bù cuī cù dì zhú yī qīng tīng， cóng lái diàn zhě néng shuō de dì fāng kāi shǐ， dàn shěng lüè mù qián wèi zhì、 lì jí wēi xiǎn yǔ zuì kùn rǎo de shì qíng dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -200,6 +215,11 @@
             "ja": "急かさず一つずつ聞き、話せるところから始めることはせず、命令と圧力を強めます。",
             "en": "Do not listen one point at a time and start wherever the caller can; increase commands and pressure.",
             "zh": "不不催促地逐一傾聽，從來電者能說的地方開始，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "せかさず ひとつずつ きき、 はなせる ところから はじめる ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt ˈlɪsən wʌn pɔɪnt æt ə taɪm ənd stɑɹt wɛˈɹɛvɚ ðə ˈkɔlɚ kæn; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bú bù cuī cù dì zhú yī qīng tīng， cóng lái diàn zhě néng shuō de dì fāng kāi shǐ， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,
@@ -234,6 +254,11 @@
         "en": "Is it okay if I check whether anyone is in immediate danger and whether the caller is alone now?",
         "zh": "現在可以讓我確認本人或周圍是否有立即危險，以及是否獨處嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "いまは「ほんにんや しゅういの ひとが いま すぐ きけんか、 ひとりで いるか」を かくにん しても だいじょうぶですか？",
+        "en": "/ɪz ɪt ˌoʊˈkeɪ ɪf aɪ tʃɛk ˈwɛðɚ ˈɛniˌwʌn ɪz ɪn ˌɪˈmiˌdiət ˈdeɪndʒɚ ənd ˈwɛðɚ ðə ˈkɔlɚ ɪz əˈloʊn naʊ?/",
+        "zh": "Xiàn zài kě yǐ ràng wǒ què rèn běn rén huò zhōu wéi shì fǒu yǒu lì jí wēi xiǎn， yǐ jí shì fǒu dú chǔ ma？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "まず「本人や周囲の人が今すぐ危険か、一人でいるか」を安全に確認し、危険があれば地域の緊急支援へつなぎ、通話を保つ。",
             "en": "Check safety first; connect local emergency support when needed and stay on the line.",
             "zh": "先安全確認本人或周圍是否有立即危險，以及是否獨處，再有危險時連結當地緊急支援並保持通話。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「ほんにんや しゅういの ひとが いま すぐ きけんか、 ひとりで いるか」を あんぜんに かくにん し、 きけんが あれば ちいきの きんきゅう しえんへ つなぎ、 つうわを たもつ。",
+            "en": "/tʃɛk ˈseɪfti fɝst; kəˈnɛkt ˈloʊkəl ɪˈmɝdʒənsi səˈpɔɹt wɛn ˈnidəd ənd steɪ ɑn ðə laɪn./",
+            "zh": "Xiān ān quán què rèn běn rén huò zhōu wéi shì fǒu yǒu lì jí wēi xiǎn， yǐ jí shì fǒu dú chǔ， zài yǒu wēi xiǎn shí lián jié dāng dì jǐn jí zhī yuán bìng bǎo chí tōng huà。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -297,6 +327,11 @@
             "en": "Only connect local emergency support when needed and stay on the line.",
             "zh": "只有危險時連結當地緊急支援並保持通話，但省略本人或周圍是否有立即危險，以及是否獨處的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "きけんが あれば ちいきの きんきゅう しえんへ つなぎ、 つうわを たもつが、「ほんにんや しゅういの ひとが いま すぐ きけんか、 ひとりで いるか」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli kəˈnɛkt ˈloʊkəl ɪˈmɝdʒənsi səˈpɔɹt wɛn ˈnidəd ənd steɪ ɑn ðə laɪn./",
+            "zh": "Zhǐ yǒu wēi xiǎn shí lián jié dāng dì jǐn jí zhī yuán bìng bǎo chí tōng huà， dàn shěng lüè běn rén huò zhōu wéi shì fǒu yǒu lì jí wēi xiǎn， yǐ jí shì fǒu dú chǔ dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -327,6 +362,11 @@
             "ja": "危険があれば地域の緊急支援へつなぎ、通話を保つことはせず、命令と圧力を強めます。",
             "en": "Do not connect local emergency support when needed and stay on the line; increase commands and pressure.",
             "zh": "不有危險時連結當地緊急支援並保持通話，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "きけんが あれば ちいきの きんきゅう しえんへ つなぎ、 つうわを たもつ ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt kəˈnɛkt ˈloʊkəl ɪˈmɝdʒənsi səˈpɔɹt wɛn ˈnidəd ənd steɪ ɑn ðə laɪn; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bù yǒu wēi xiǎn shí lián jié dāng dì jǐn jí zhī yuán bìng bǎo chí tōng huà， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,
@@ -361,6 +401,11 @@
         "en": "Can we choose how to confirm the chosen step and hand over to crisis support, at your pace?",
         "zh": "可以依你的步調選擇如何確認本人選擇的一步並轉接危機支援嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "あなたが えらべる かたちで、 ほんにんが えらんだ いっぽを かくにん し、 きき しえんへの ひきつぎを おこなう ことを きめられますか？",
+        "en": "/kæn wi tʃuz haʊ tu kənˈfɝm ðə ˈtʃoʊzən stɛp ənd hænd ˈoʊvɚ tu ˈkɹaɪsəs səˈpɔɹt, æt jɔɹ peɪs?/",
+        "zh": "Kě yǐ yī nǐ de bù diào xuǎn zé rú hé què rèn běn rén xuǎn zé de yí bù bìng zhuǎn jiē wēi jī zhī yuán ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "まず「次の10分にできることと、連絡できる信頼できる人」を安全に確認し、本人が選んだ一歩を確認し、危機支援への引継ぎを行う。",
             "en": "Check safety first; confirm the chosen step and hand over to crisis support.",
             "zh": "先安全確認接下來十分鐘能做的事與可聯絡的可信任者，再確認本人選擇的一步並轉接危機支援。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「つぎの じゅっぷんに できる ことと、 れんらく できる しんらい できる ひと」を あんぜんに かくにん し、 ほんにんが えらんだ いっぽを かくにん し、 きき しえんへの ひきつぎを おこなう。",
+            "en": "/tʃɛk ˈseɪfti fɝst; kənˈfɝm ðə ˈtʃoʊzən stɛp ənd hænd ˈoʊvɚ tu ˈkɹaɪsəs səˈpɔɹt./",
+            "zh": "Xiān ān quán què rèn jiē xià lái shí fēn zhōng néng zuò de shì yǔ kě lián luò de kě xìn rèn zhě， zài què rèn běn rén xuǎn zé de yí bù bìng zhuǎn jiē wēi jī zhī yuán。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -414,6 +464,11 @@
             "en": "Only confirm the chosen step and hand over to crisis support.",
             "zh": "只確認本人選擇的一步並轉接危機支援，但省略接下來十分鐘能做的事與可聯絡的可信任者的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "ほんにんが えらんだ いっぽを かくにん し、 きき しえんへの ひきつぎを おこなうが、「つぎの じゅっぷんに できる ことと、 れんらく できる しんらい できる ひと」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli kənˈfɝm ðə ˈtʃoʊzən stɛp ənd hænd ˈoʊvɚ tu ˈkɹaɪsəs səˈpɔɹt./",
+            "zh": "Zhī què rèn běn rén xuǎn zé de yí bù bìng zhuǎn jiē wēi jī zhī yuán， dàn shěng lüè jiē xià lái shí fēn zhōng néng zuò de shì yǔ kě lián luò de kě xìn rèn zhě dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -444,6 +499,11 @@
             "ja": "本人が選んだ一歩を確認し、危機支援への引継ぎを行うことはせず、命令と圧力を強めます。",
             "en": "Do not confirm the chosen step and hand over to crisis support; increase commands and pressure.",
             "zh": "不確認本人選擇的一步並轉接危機支援，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "ほんにんが えらんだ いっぽを かくにん し、 きき しえんへの ひきつぎを おこなう ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt kənˈfɝm ðə ˈtʃoʊzən stɛp ənd hænd ˈoʊvɚ tu ˈkɹaɪsəs səˈpɔɹt; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bú què rèn běn rén xuǎn zé de yí bù bìng zhuǎn jiē wēi jī zhī yuán， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,
@@ -478,6 +538,11 @@
         "en": "Tension rose when you ignored the impact of being called dramatic after asking for help.",
         "zh": "你忽略求助後被說誇張而感到後悔的影響，讓緊張升高。"
       },
+      "pronunciationGuide": {
+        "ja": "「おおげさだと はんだん され、 たすけを もとめた ことを こうかい した えいきょう」を むし され、 きんちょうが たかまりました。",
+        "en": "/ˈtɛnʃən ɹoʊz wɛn ju ˌɪɡˈnɔɹd ðə ˌɪmˈpækt ʌv ˈbiɪŋ kɔld dɹəˈmætɪk ˈæftɚ ˈæskɪŋ fɔɹ hɛlp./",
+        "zh": "Nǐ hū lüè qiú zhù hòu bèi shuō kuā zhāng ér gǎn dào hòu huǐ de yǐng xiǎng， ràng jǐn zhāng shēng gāo。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "まず「大げさだと判断され、助けを求めたことを後悔した影響」を安全に確認し、判断したことを謝り、今の安全と必要な支援から聞き直す。",
             "en": "Check safety first; apologize for judging and restart with present safety and needs.",
             "zh": "先安全確認求助後被說誇張而感到後悔的影響，再為評斷道歉，從目前安全與需要重新聽起。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「おおげさだと はんだん され、 たすけを もとめた ことを こうかい した えいきょう」を あんぜんに かくにん し、 はんだん した ことを あやまり、 いまの あんぜんと ひつような しえんから きき なおす。",
+            "en": "/tʃɛk ˈseɪfti fɝst; əˈpɑləˌdʒaɪz fɔɹ ˈdʒʌdʒɪŋ ənd ɹiˈstɑɹt wɪð ˈpɹɛzənt ˈseɪfti ənd nidz./",
+            "zh": "Xiān ān quán què rèn qiú zhù hòu bèi shuō kuā zhāng ér gǎn dào hòu huǐ de yǐng xiǎng， zài wèi píng duàn dào qiàn， cóng mù qián ān quán yǔ xū yào chóng xīn tīng qǐ。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -531,6 +601,11 @@
             "en": "Only apologize for judging and restart with present safety and needs.",
             "zh": "只為評斷道歉，從目前安全與需要重新聽起，但省略求助後被說誇張而感到後悔的影響的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "はんだん した ことを あやまり、 いまの あんぜんと ひつような しえんから きき なおすが、「おおげさだと はんだん され、 たすけを もとめた ことを こうかい した えいきょう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli əˈpɑləˌdʒaɪz fɔɹ ˈdʒʌdʒɪŋ ənd ɹiˈstɑɹt wɪð ˈpɹɛzənt ˈseɪfti ənd nidz./",
+            "zh": "Zhī wèi píng duàn dào qiàn， cóng mù qián ān quán yǔ xū yào zhòng xīn tīng qǐ， dàn shěng lüè qiú zhù hòu bèi shuō kuā zhāng ér gǎn dào hòu huǐ de yǐng xiǎng dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -561,6 +636,11 @@
             "ja": "判断したことを謝り、今の安全と必要な支援から聞き直すことはせず、命令と圧力を強めます。",
             "en": "Do not apologize for judging and restart with present safety and needs; increase commands and pressure.",
             "zh": "不為評斷道歉，從目前安全與需要重新聽起，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "はんだん した ことを あやまり、 いまの あんぜんと ひつような しえんから きき なおす ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt əˈpɑləˌdʒaɪz fɔɹ ˈdʒʌdʒɪŋ ənd ɹiˈstɑɹt wɪð ˈpɹɛzənt ˈseɪfti ənd nidz; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bú wèi píng duàn dào qiàn， cóng mù qián ān quán yǔ xū yào chóng xīn tīng qǐ， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,

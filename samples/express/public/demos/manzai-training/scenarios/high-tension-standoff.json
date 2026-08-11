@@ -112,6 +112,11 @@
         "en": "Do not come any closer. I don't want to follow anyone's instructions right now.",
         "zh": "不要再靠近。我現在不想聽任何人的指示。"
       },
+      "pronunciationGuide": {
+        "ja": "これ いじょう ちかづかないで ください。 いまは だれの しじも ききたく ありません。",
+        "en": "/du nɑt kʌm ˈɛni ˈkloʊsɚ. aɪ doʊnt wɑnt tu ˈfɑloʊ ˈɛniˌwʌnz ˌɪnˈstɹʌkʃənz ɹaɪt naʊ./",
+        "zh": "Bú yào zài kào jìn。 wǒ xiàn zài bù xiǎng tīng rèn hé rén de zhǐ shì。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "まず「これ以上近づかない距離、差し迫った危険、希望する連絡方法」を安全に確認し、動きを止め、話し手を一人にし、短く落ち着いて応答する。",
             "en": "Check safety first; stop movement, use one speaker, and respond briefly and calmly.",
             "zh": "先安全確認不可再接近的距離、立即危險與偏好的溝通方式，再停止移動、由一人發言，簡短冷靜回應。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「これ いじょう ちかづかない きょり、 さしせまった きけん、 きぼう する れんらく ほうほう」を あんぜんに かくにん し、 うごきを とめ、 はなしてを ひとりに し、 みじかく おちついて おうとう する。",
+            "en": "/tʃɛk ˈseɪfti fɝst; stɑp ˈmuvmənt, jus wʌn ˈspikɚ, ənd ɹɪˈspɑnd ˈbɹifli ənd ˈkɑmli./",
+            "zh": "Xiān ān quán què rèn bù kě zài jiē jìn de jù lí、 lì jí wēi xiǎn yǔ piān hǎo de gōu tōng fāng shì， zài tíng zhǐ yí dòng、 yóu yì rén fā yán， jiǎn duǎn lěng jìng huí yìng。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -170,6 +180,11 @@
             "en": "Only stop movement, use one speaker, and respond briefly and calmly.",
             "zh": "只停止移動、由一人發言，簡短冷靜回應，但省略不可再接近的距離、立即危險與偏好的溝通方式的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "うごきを とめ、 はなしてを ひとりに し、 みじかく おちついて おうとう するが、「これ いじょう ちかづかない きょり、 さしせまった きけん、 きぼう する れんらく ほうほう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli stɑp ˈmuvmənt, jus wʌn ˈspikɚ, ənd ɹɪˈspɑnd ˈbɹifli ənd ˈkɑmli./",
+            "zh": "Zhī tíng zhǐ yí dòng、 yóu yì rén fā yán， jiǎn duǎn lěng jìng huí yìng， dàn shěng lüè bù kě zài jiē jìn de jù lí、 lì jí wēi xiǎn yǔ piān hǎo de gōu tōng fāng shì dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -200,6 +215,11 @@
             "ja": "動きを止め、話し手を一人にし、短く落ち着いて応答することはせず、命令と圧力を強めます。",
             "en": "Do not stop movement, use one speaker, and respond briefly and calmly; increase commands and pressure.",
             "zh": "不停止移動、由一人發言，簡短冷靜回應，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "うごきを とめ、 はなしてを ひとりに し、 みじかく おちついて おうとう する ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt stɑp ˈmuvmənt, jus wʌn ˈspikɚ, ənd ɹɪˈspɑnd ˈbɹifli ənd ˈkɑmli; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bù tíng zhǐ yí dòng、 yóu yì rén fā yán， jiǎn duǎn lěng jìng huí yìng， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,
@@ -234,6 +254,11 @@
         "en": "Is it okay if I check whether anyone is hurt, immediate needs, and conditions for continued talk now?",
         "zh": "現在可以讓我確認是否有人受傷、眼前需要與繼續對話的條件嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "いまは「けがにんの うむ、 いまひつような もの、 かいわを つづけられる じょうけん」を かくにん しても だいじょうぶですか？",
+        "en": "/ɪz ɪt ˌoʊˈkeɪ ɪf aɪ tʃɛk ˈwɛðɚ ˈɛniˌwʌn ɪz hɝt, ˌɪˈmiˌdiət nidz, ənd kənˈdɪʃənz fɔɹ kənˈtɪnjud tɔk naʊ?/",
+        "zh": "Xiàn zài kě yǐ ràng wǒ què rèn shì fǒu yǒu rén shòu shāng、 yǎn qián xū yào yǔ jì xù duì huà de tiáo jiàn ma？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "まず「けが人の有無、今必要な物、会話を続けられる条件」を安全に確認し、一度に一つだけ非難せず尋ね、沈黙と時間を許す。",
             "en": "Check safety first; ask one nonjudgmental question at a time and allow silence.",
             "zh": "先安全確認是否有人受傷、眼前需要與繼續對話的條件，再一次只問一個不帶批判的問題，容許沉默與時間。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「けがにんの うむ、 いまひつような もの、 かいわを つづけられる じょうけん」を あんぜんに かくにん し、 いちどに ひとつだけ ひなん せず たずね、 ちんもくと じかんを ゆるす。",
+            "en": "/tʃɛk ˈseɪfti fɝst; æsk wʌn ˌnɑndʒədʒˈmɛntəl ˈkwɛstʃən æt ə taɪm ənd əˈlaʊ ˈsaɪləns./",
+            "zh": "Xiān ān quán què rèn shì fǒu yǒu rén shòu shāng、 yǎn qián xū yào yǔ jì xù duì huà de tiáo jiàn， zài yí cì zhī wèn yí gè bú dài pī pàn de wèn tí， róng xǔ chén mò yǔ shí jiān。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -297,6 +327,11 @@
             "en": "Only ask one nonjudgmental question at a time and allow silence.",
             "zh": "只一次只問一個不帶批判的問題，容許沉默與時間，但省略是否有人受傷、眼前需要與繼續對話的條件的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "いちどに ひとつだけ ひなん せず たずね、 ちんもくと じかんを ゆるすが、「けがにんの うむ、 いまひつような もの、 かいわを つづけられる じょうけん」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli æsk wʌn ˌnɑndʒədʒˈmɛntəl ˈkwɛstʃən æt ə taɪm ənd əˈlaʊ ˈsaɪləns./",
+            "zh": "Zhī yí cì zhī wèn yí gè bú dài pī pàn de wèn tí， róng xǔ chén mò yǔ shí jiān， dàn shěng lüè shì fǒu yǒu rén shòu shāng、 yǎn qián xū yào yǔ jì xù duì huà de tiáo jiàn dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -327,6 +362,11 @@
             "ja": "一度に一つだけ非難せず尋ね、沈黙と時間を許すことはせず、命令と圧力を強めます。",
             "en": "Do not ask one nonjudgmental question at a time and allow silence; increase commands and pressure.",
             "zh": "不一次只問一個不帶批判的問題，容許沉默與時間，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "いちどに ひとつだけ ひなん せず たずね、 ちんもくと じかんを ゆるす ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt æsk wʌn ˌnɑndʒədʒˈmɛntəl ˈkwɛstʃən æt ə taɪm ənd əˈlaʊ ˈsaɪləns; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bù yí cì zhī wèn yí gè bú dài pī pàn de wèn tí， róng xǔ chén mò yǔ shí jiān， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,
@@ -361,6 +401,11 @@
         "en": "Can we choose how to have both sides repeat the step and wait for the agreed signal, at your pace?",
         "zh": "可以依你的步調選擇如何由專業人員與本人各自重述步驟，等約定信號再行動嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "あなたが えらべる かたちで、 せんもん たいおうしゃと ほんにんの そうほうで てじゅんを ふくしょう し、 あいずまで うごかない ことを きめられますか？",
+        "en": "/kæn wi tʃuz haʊ tu hæv boʊθ saɪdz ɹɪˈpit ðə stɛp ənd weɪt fɔɹ ðə əˈɡɹid ˈsɪɡnəl, æt jɔɹ peɪs?/",
+        "zh": "Kě yǐ yī nǐ de bù diào xuǎn zé rú hé yóu zhuān yè rén yuán yǔ běn rén gè zì zhòng shù bù zhòu， děng yuē dìng xìn hào zài xíng dòng ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "まず「急な動きを避けて確認できる、安全な一つの次の行動」を安全に確認し、専門対応者と本人の双方で手順を復唱し、合図まで動かない。",
             "en": "Check safety first; have both sides repeat the step and wait for the agreed signal.",
             "zh": "先安全確認可在沒有突然動作下確認的一個安全下一步，再由專業人員與本人各自重述步驟，等約定信號再行動。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「きゅうな うごきを さけて かくにん できる、 あんぜんな ひとつの つぎの こうどう」を あんぜんに かくにん し、 せんもん たいおうしゃと ほんにんの そうほうで てじゅんを ふくしょう し、 あいずまで うごかない。",
+            "en": "/tʃɛk ˈseɪfti fɝst; hæv boʊθ saɪdz ɹɪˈpit ðə stɛp ənd weɪt fɔɹ ðə əˈɡɹid ˈsɪɡnəl./",
+            "zh": "Xiān ān quán què rèn kě zài méi yǒu tū rán dòng zuò xià què rèn de yí gè ān quán xià yí bù， zài yóu zhuān yè rén yuán yǔ běn rén gè zì zhòng shù bù zhòu， děng yuē dìng xìn hào zài xíng dòng。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -414,6 +464,11 @@
             "en": "Only have both sides repeat the step and wait for the agreed signal.",
             "zh": "只由專業人員與本人各自重述步驟，等約定信號再行動，但省略可在沒有突然動作下確認的一個安全下一步的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "せんもん たいおうしゃと ほんにんの そうほうで てじゅんを ふくしょう し、 あいずまで うごかないが、「きゅうな うごきを さけて かくにん できる、 あんぜんな ひとつの つぎの こうどう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli hæv boʊθ saɪdz ɹɪˈpit ðə stɛp ənd weɪt fɔɹ ðə əˈɡɹid ˈsɪɡnəl./",
+            "zh": "Zhī yóu zhuān yè rén yuán yǔ běn rén gè zì zhòng shù bù zhòu， děng yuē dìng xìn hào zài xíng dòng， dàn shěng lüè kě zài méi yǒu tū rán dòng zuò xià què rèn de yí gè ān quán xià yí bù dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -444,6 +499,11 @@
             "ja": "専門対応者と本人の双方で手順を復唱し、合図まで動かないことはせず、命令と圧力を強めます。",
             "en": "Do not have both sides repeat the step and wait for the agreed signal; increase commands and pressure.",
             "zh": "不由專業人員與本人各自重述步驟，等約定信號再行動，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "せんもん たいおうしゃと ほんにんの そうほうで てじゅんを ふくしょう し、 あいずまで うごかない ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt hæv boʊθ saɪdz ɹɪˈpit ðə stɛp ənd weɪt fɔɹ ðə əˈɡɹid ˈsɪɡnəl; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bù yóu zhuān yè rén yuán yǔ běn rén gè zì zhòng shù bù zhòu， děng yuē dìng xìn hào zài xíng dòng， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,
@@ -478,6 +538,11 @@
         "en": "Tension rose when you ignored how an ultimatum created pressure toward impulsive action.",
         "zh": "你忽略最後通牒造成被逼迫與衝動行動的影響，讓緊張升高。"
       },
+      "pronunciationGuide": {
+        "ja": "「さいご つうこくで おいつめられ、 はんしゃてきに こうどう しそうに なった えいきょう」を むし され、 きんちょうが たかまりました。",
+        "en": "/ˈtɛnʃən ɹoʊz wɛn ju ˌɪɡˈnɔɹd haʊ æn ˌʌltəˈmeɪtəm kɹiˈeɪtəd ˈpɹɛʃɚ təˈwɔɹd ˌɪmˈpʌlsɪv ˈækʃən./",
+        "zh": "Nǐ hū lüè zuì hòu tōng dié zào chéng bèi bī pò yǔ chōng dòng xíng dòng de yǐng xiǎng， ràng jǐn zhāng shēng gāo。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "まず「最後通告で追い詰められ、反射的に行動しそうになった影響」を安全に確認し、最後通告を撤回し、時間を与えて一つの安全条件から再開する。",
             "en": "Check safety first; withdraw the ultimatum, allow time, and restart with one safety condition.",
             "zh": "先安全確認最後通牒造成被逼迫與衝動行動的影響，再撤回最後通牒，給予時間，從一個安全條件重新開始。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず「さいご つうこくで おいつめられ、 はんしゃてきに こうどう しそうに なった えいきょう」を あんぜんに かくにん し、 さいご つうこくを てっかい し、 じかんを あたえて ひとつの あんぜん じょうけんから さいかい する。",
+            "en": "/tʃɛk ˈseɪfti fɝst; wɪðˈdɹɔ ðə ˌʌltəˈmeɪtəm, əˈlaʊ taɪm, ənd ɹiˈstɑɹt wɪð wʌn ˈseɪfti kənˈdɪʃən./",
+            "zh": "Xiān ān quán què rèn zuì hòu tōng dié zào chéng bèi bī pò yǔ chōng dòng xíng dòng de yǐng xiǎng， zài chè huí zuì hòu tōng dié， jǐ yǔ shí jiān， cóng yí gè ān quán tiáo jiàn chóng xīn kāi shǐ。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -531,6 +601,11 @@
             "en": "Only withdraw the ultimatum, allow time, and restart with one safety condition.",
             "zh": "只撤回最後通牒，給予時間，從一個安全條件重新開始，但省略最後通牒造成被逼迫與衝動行動的影響的確認。"
           },
+          "pronunciationGuide": {
+            "ja": "さいご つうこくを てっかい し、 じかんを あたえて ひとつの あんぜん じょうけんから さいかい するが、「さいご つうこくで おいつめられ、 はんしゃてきに こうどう しそうに なった えいきょう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli wɪðˈdɹɔ ðə ˌʌltəˈmeɪtəm, əˈlaʊ taɪm, ənd ɹiˈstɑɹt wɪð wʌn ˈseɪfti kənˈdɪʃən./",
+            "zh": "Zhī chè huí zuì hòu tōng dié， jǐ yǔ shí jiān， cóng yí gè ān quán tiáo jiàn chóng xīn kāi shǐ， dàn shěng lüè zuì hòu tōng dié zào chéng bèi bī pò yǔ chōng dòng xíng dòng de yǐng xiǎng dí què rèn。"
+          },
           "axisScores": {
             "emotional-stabilization": 14,
             "active-listening": 12,
@@ -561,6 +636,11 @@
             "ja": "最後通告を撤回し、時間を与えて一つの安全条件から再開することはせず、命令と圧力を強めます。",
             "en": "Do not withdraw the ultimatum, allow time, and restart with one safety condition; increase commands and pressure.",
             "zh": "不撤回最後通牒，給予時間，從一個安全條件重新開始，反而加強命令與壓力。"
+          },
+          "pronunciationGuide": {
+            "ja": "さいご つうこくを てっかい し、 じかんを あたえて ひとつの あんぜん じょうけんから さいかい する ことは せず、 めいれいと あつりょくを つよめます。",
+            "en": "/du nɑt wɪðˈdɹɔ ðə ˌʌltəˈmeɪtəm, əˈlaʊ taɪm, ənd ɹiˈstɑɹt wɪð wʌn ˈseɪfti kənˈdɪʃən; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
+            "zh": "Bú chè huí zuì hòu tōng dié， gěi yǔ shí jiān， cóng yí gè ān quán tiáo jiàn chóng xīn kāi shǐ， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
           "axisScores": {
             "emotional-stabilization": 1,

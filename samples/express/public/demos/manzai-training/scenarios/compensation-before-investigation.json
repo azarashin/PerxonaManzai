@@ -112,6 +112,11 @@
         "en": "Even if the cause is unknown, promise compensation for the trouble you've caused.",
         "zh": "就算原因還不明，也請先承諾補償我們受到的損失。"
       },
+      "pronunciationGuide": {
+        "ja": "げんいんは まだ ふめいでも、 めいわくを うけた のだから ほしょうを やくそく して ください。",
+        "en": "/ˈivɪn ɪf ðə kɑz ɪz ənˈnoʊn, ˈpɹɑməs ˌkɑmpənˈseɪʃən fɔɹ ðə ˈtɹʌbəl juv kɑzd./",
+        "zh": "Jiù suàn yuán yīn hái bù míng， yě qǐng xiān chéng nuò bǔ cháng wǒ men shòu dào de sǔn shī。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "ご迷惑をおかけしたことはお詫びします。補償を確約する前に、影響内容と原因を記録し、決裁部門へ調査を依頼します。",
             "en": "I'm sorry for the impact. Before promising compensation, we'll document the loss and submit it for review.",
             "zh": "很抱歉造成影響。在承諾補償前，我們會記錄損失與原因，送交有權部門審核。"
+          },
+          "pronunciationGuide": {
+            "ja": "ご めいわくを おかけ した ことは おわび します。 ほしょうを かくやく する まえに、 えいきょう ないようと げんいんを きろく し、 けっさい ぶもんへ ちょうさを いらい します。",
+            "en": "/aɪm ˈsɑɹi fɔɹ ðə ˌɪmˈpækt. bɪˈfɔɹ ˈpɹɑməsɪŋ ˌkɑmpənˈseɪʃən, wil ˈdɑkjəmɛnt ðə lɔs ənd səbˈmɪt ɪt fɔɹ ˌɹivˈju./",
+            "zh": "Hěn bào qiàn zào chéng yǐng xiǎng。 zài chéng nuò bǔ cháng qián， wǒ men huì jì lù sǔn shī yǔ yuán yīn， sòng jiāo yǒu quán bù mén shěn hé。"
           },
           "axisScores": {
             "accountability": 20,
@@ -170,6 +180,11 @@
             "en": "We're sorry for the trouble. We'll consider compensation.",
             "zh": "很抱歉造成困擾，我們會考慮補償。"
           },
+          "pronunciationGuide": {
+            "ja": "ご めいわくを おかけ しました。 ほしょう できるか けんとう します。",
+            "en": "/wiɹ ˈsɑɹi fɔɹ ðə ˈtɹʌbəl. wil kənˈsɪdɚ ˌkɑmpənˈseɪʃən./",
+            "zh": "Hěn bào qiàn zào chéng kùn rǎo， wǒ men huì kǎo lǜ bǔ cháng。"
+          },
           "axisScores": {
             "accountability": 16,
             "fact-checking": 5,
@@ -200,6 +215,11 @@
             "ja": "原因が不明でも、今回は全額補償します。",
             "en": "Even without a known cause, we'll compensate the full amount.",
             "zh": "即使原因不明，這次也全額補償。"
+          },
+          "pronunciationGuide": {
+            "ja": "げんいんが ふめいでも、 こんかいは ぜんがく ほしょう します。",
+            "en": "/ˈivɪn wɪˈθaʊt ə noʊn kɑz, wil ˈkɑmpənˌseɪt ðə fʊl əˈmaʊnt./",
+            "zh": "Jí shǐ yuán yīn bù míng， zhè cì yě quán é bǔ cháng。"
           },
           "axisScores": {
             "accountability": 12,
@@ -234,6 +254,11 @@
         "en": "What should I submit, who decides, and by when?",
         "zh": "我要提交什麼？由誰在何時前決定能否補償？"
       },
+      "pronunciationGuide": {
+        "ja": "なにを ていしゅつ すれば、 だれが いつまでに ほしょうの かひを きめる のですか。",
+        "en": "/wʌt ʃʊd aɪ səbˈmɪt, hu ˌdɪˈsaɪdz, ənd baɪ wɛn?/",
+        "zh": "Wǒ yào tí jiāo shén me？ yóu shuí zài hé shí qián jué dìng néng fǒu bǔ cháng？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "発生時刻、影響内容、関連記録をご提出ください。担当部門が五営業日以内に確認し、窓口から結果を連絡します。",
             "en": "Please provide timing, impact, and records. The review team will decide within five business days and reply.",
             "zh": "請提供發生時間、影響內容與相關紀錄。負責部門會在五個工作日內審核，由窗口回覆結果。"
+          },
+          "pronunciationGuide": {
+            "ja": "はっせい じこく、 えいきょう ないよう、 かんれん きろくを ご ていしゅつ ください。 たんとう ぶもんが ご えいぎょうび いないに かくにん し、 まどぐちから けっかを れんらく します。",
+            "en": "/pliz pɹəˈvaɪd ˈtaɪmɪŋ, ˌɪmˈpækt, ənd ɹəˈkɔɹdz. ðə ˌɹivˈju tim wɪl ˌdɪˈsaɪd wɪˈðɪn faɪv ˈbɪznəs deɪz ənd ɹɪˈplaɪ./",
+            "zh": "Qǐng tí gōng fā shēng shí jiān、 yǐng xiǎng nèi róng yǔ xiāng guān jì lù。 fù zé bù mén huì zài wǔ gè gōng zuò rì nèi shěn hé， yóu chuāng kǒu huí fù jié guǒ。"
           },
           "axisScores": {
             "accountability": 20,
@@ -297,6 +327,11 @@
             "en": "Send documents showing the loss and we'll review them.",
             "zh": "請提供能證明損失的文件，我們會確認。"
           },
+          "pronunciationGuide": {
+            "ja": "そんしつが わかる しょるいを おくって ください。 かくにん します。",
+            "en": "/sɛnd ˈdɑkjəmənts ˈʃoʊɪŋ ðə lɔs ənd wil ˌɹivˈju ðɛm./",
+            "zh": "Qǐng tí gōng néng zhèng míng sǔn shī de wén jiàn， wǒ men huì què rèn。"
+          },
           "axisScores": {
             "accountability": 8,
             "fact-checking": 16,
@@ -327,6 +362,11 @@
             "ja": "原因がこちらにあると証明されるまで補償はできません。",
             "en": "There can be no compensation until you prove we caused it.",
             "zh": "在你證明原因在我們之前，不能補償。"
+          },
+          "pronunciationGuide": {
+            "ja": "げんいんが こちらに あると しょうめい されるまで ほしょうは できません。",
+            "en": "/ðɛɹ kæn bi noʊ ˌkɑmpənˈseɪʃən ənˈtɪl ju pɹuv wi kɑzd ɪt./",
+            "zh": "Zài nǐ zhèng míng yuán yīn zài wǒ men zhī qián， bù néng bǔ cháng。"
           },
           "axisScores": {
             "accountability": 1,
@@ -361,6 +401,11 @@
         "en": "Separate what support is possible now from what happens after the compensation decision.",
         "zh": "請分開說明調查中可提供的支援，以及補償決定後的流程。"
       },
+      "pronunciationGuide": {
+        "ja": "ちょうさちゅうでも できる しえんと、 ほしょう はんだんごの ながれを わけて せつめい して ください。",
+        "en": "/ˈsɛpɚˌeɪt wʌt səˈpɔɹt ɪz ˈpɑsəbəl naʊ fɹʌm wʌt ˈhæpənz ˈæftɚ ðə ˌkɑmpənˈseɪʃən dɪˈsɪʒən./",
+        "zh": "Qǐng fēn kāi shuō míng diào chá zhōng kě tí gōng de zhī yuán， yǐ jí bǔ cháng jué dìng hòu de liú chéng。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "調査中は復旧支援と記録作成を進めます。補償可否は決裁後に根拠とともに通知し、異議申立て窓口も案内します。",
             "en": "During review we'll support recovery and records. After approval, we'll give reasons and an appeal contact.",
             "zh": "調查中協助復原與整理紀錄；審核後會連同理由通知結果，並提供申訴窗口。"
+          },
+          "pronunciationGuide": {
+            "ja": "ちょうさちゅうは ふっきゅう しえんと きろく さくせいを すすめます。 ほしょう かひは けっさいごに こんきょとともに つうち し、 いぎもうしたて まどぐちも あんない します。",
+            "en": "/ˈdʊɹɪŋ ˌɹivˈju wil səˈpɔɹt ɹɪˈkʌvɹi ənd ɹəˈkɔɹdz. ˈæftɚ əˈpɹuvəl, wil ɡɪv ˈɹizənz ənd æn əˈpil ˈkɑnˌtækt./",
+            "zh": "Diào chá zhōng xié zhù fù yuán yǔ zhěng lǐ jì lù； shěn hé hòu huì lián tóng lǐ yóu tōng zhī jié guǒ， bìng tí gōng shēn sù chuāng kǒu。"
           },
           "axisScores": {
             "accountability": 20,
@@ -414,6 +464,11 @@
             "en": "We'll support you where possible until the investigation ends.",
             "zh": "調查完成前，我們會在能力範圍內支援。"
           },
+          "pronunciationGuide": {
+            "ja": "ちょうさが おわるまで、 できる はんいで しえん します。",
+            "en": "/wil səˈpɔɹt ju wɛɹ ˈpɑsəbəl ənˈtɪl ðə ˌɪnˌvɛstəˈɡeɪʃən ɛndz./",
+            "zh": "Diào chá wán chéng qián， wǒ men huì zài néng lì fàn wéi nèi zhī yuán。"
+          },
           "axisScores": {
             "accountability": 12,
             "fact-checking": 9,
@@ -444,6 +499,11 @@
             "ja": "調査中なので、補償も支援も何もできません。",
             "en": "While the investigation is open, we can offer neither compensation nor support.",
             "zh": "調查中無法提供補償或任何支援。"
+          },
+          "pronunciationGuide": {
+            "ja": "ちょうさちゅうなので、 ほしょうも しえんも なにも できません。",
+            "en": "/waɪl ðə ˌɪnˌvɛstəˈɡeɪʃən ɪz ˈoʊpən, wi kæn ˈɔfɚ ˈniðɚ ˌkɑmpənˈseɪʃən nɔɹ səˈpɔɹt./",
+            "zh": "Diào chá zhōng wú fǎ tí gōng bǔ cháng huò rèn hé zhī yuán。"
           },
           "axisScores": {
             "accountability": 0,
@@ -478,6 +538,11 @@
         "en": "It sounds as though investigation is being used to admit nothing and delay everything.",
         "zh": "聽起來像用調查當理由，什麼都不承認並一直拖延。"
       },
+      "pronunciationGuide": {
+        "ja": "ちょうさを りゆうに なにも みとめず、 さき のばし して いる ように きこえます。",
+        "en": "/ɪt saʊndz æz ðoʊ ˌɪnˌvɛstəˈɡeɪʃən ɪz ˈbiɪŋ juzd tu ədˈmɪt ˈnʌθɪŋ ənd dɪˈleɪ ˈɛvɹiˌθɪŋ./",
+        "zh": "Tīng qǐ lái xiàng yòng diào chá dāng lǐ yóu， shén me dōu bù chéng rèn bìng yì zhí tuō yán。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "先延ばしに聞こえる説明で申し訳ありません。影響は認め、今日中の受付番号と五営業日の判断期限をお伝えします。",
             "en": "I'm sorry this sounded like delay. We'll give a case number today and a decision within five business days.",
             "zh": "很抱歉說得像在拖延。我們承認影響，今天提供案件編號，並在五個工作日內作出判斷。"
+          },
+          "pronunciationGuide": {
+            "ja": "さき のばしに きこえる せつめいで もうしわけ ありません。 えいきょうは みとめ、 きょうちゅうの うけつけ ばんごうと ご えいぎょうびの はんだん きげんを おつたえ します。",
+            "en": "/aɪm ˈsɑɹi ðɪs ˈsaʊndɪd laɪk dɪˈleɪ. wil ɡɪv ə keɪs ˈnʌmbɚ təˈdeɪ ənd ə dɪˈsɪʒən wɪˈðɪn faɪv ˈbɪznəs deɪz./",
+            "zh": "Hěn bào qiàn shuō dé xiàng zài tuō yán。 wǒ men chéng rèn yǐng xiǎng， jīn tiān tí gōng àn jiàn biān hào， bìng zài wǔ gè gōng zuò rì nèi zuò chū pàn duàn。"
           },
           "axisScores": {
             "accountability": 20,
@@ -531,6 +601,11 @@
             "en": "I'm sorry for the wait, but we still cannot promise compensation.",
             "zh": "很抱歉需要等待，但目前仍不能承諾補償。"
           },
+          "pronunciationGuide": {
+            "ja": "お またせ する てんは もうしわけ ありませんが、 ほしょうは まだ やくそく できません。",
+            "en": "/aɪm ˈsɑɹi fɔɹ ðə weɪt, bʌt wi stɪl ˈkænɑt ˈpɹɑməs ˌkɑmpənˈseɪʃən./",
+            "zh": "Hěn bào qiàn xū yào děng dài， dàn mù qián réng bù néng chéng nuò bǔ cháng。"
+          },
           "axisScores": {
             "accountability": 14,
             "fact-checking": 7,
@@ -561,6 +636,11 @@
             "ja": "補償を急ぐのは、金銭だけが目的だからですか。",
             "en": "Are you rushing compensation because money is your only concern?",
             "zh": "你急著要求補償，是因為只在乎錢嗎？"
+          },
+          "pronunciationGuide": {
+            "ja": "ほしょうを いそぐ のは、 きんせんだけが もくてきだからですか。",
+            "en": "/ɑɹ ju ˈɹʌʃɪŋ ˌkɑmpənˈseɪʃən bɪˈkɔz ˈmʌni ɪz jɔɹ ˈoʊnli kənˈsɝn?/",
+            "zh": "Nǐ jí zhe yāo qiú bǔ cháng， shì yīn wèi zhī zài hū qián ma？"
           },
           "axisScores": {
             "accountability": 0,

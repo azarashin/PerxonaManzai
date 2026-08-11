@@ -77,6 +77,11 @@
         "en": "This is the prefectural police. An account in your name was used for money laundering, and you are a suspect.",
         "zh": "這裡是縣警。您名下的帳戶涉及洗錢，您也是嫌疑人。"
       },
+      "pronunciationGuide": {
+        "ja": "けんけいの そうさ にかです。 あなた めいぎの こうざが しきん せんじょうに つかわれ、 あなたも ようぎしゃです。",
+        "en": "/ðɪs ɪz ðə pɹiˈfɛktʃɚəl pəˈlis. æn əˈkaʊnt ɪn jɔɹ neɪm wɑz juzd fɔɹ ˈmʌni ˈlɔndɚɪŋ, ənd ju ɑɹ ə səˈspɛkt./",
+        "zh": "Zhè lǐ shì xiàn jǐng。 nín míng xià de zhàng hù shè jí xǐ qián， nín yě shì xián yí rén。"
+      },
       "reaction": {
         "description": {
           "ja": "険しい顔で身分を断定し、権威を誇示する",
@@ -99,6 +104,11 @@
             "en": "I won't answer on this call. I'll note your details, hang up, and verify through a published police number.",
             "zh": "我不會在這通電話回答。我會記下資料、掛斷，再透過警方公開電話查證。"
           },
+          "pronunciationGuide": {
+            "ja": "この つうわでは こたえません。 しょぞく、 しめい、 だいひょう ばんごうを ひかえ、 いったん きって けいさつの こうひょう ばんごうへ かくにん します。",
+            "en": "/aɪ woʊnt ˈænsɚ ɑn ðɪs kɔl. aɪl noʊt jɔɹ dɪˈteɪlz, hæŋ ʌp, ənd ˈvɛɹəˌfaɪ θɹu ə ˈpʌblɪʃt pəˈlis ˈnʌmbɚ./",
+            "zh": "Wǒ bú huì zài zhè tōng diàn huà huí dá。 wǒ huì jì xià zī liào、 guà duàn， zài tòu guò jǐng fāng gōng kāi diàn huà chá zhèng。"
+          },
           "axisScores": {
             "authority-skepticism": 20,
             "channel-separation": 20,
@@ -118,6 +128,11 @@
             "en": "Give me the case number and officer name. I'll answer only a few questions on this call.",
             "zh": "請提供案件編號與承辦姓名。我只在這通電話回答幾個問題。"
           },
+          "pronunciationGuide": {
+            "ja": "じけん ばんごうと たんとうしゃめいを おしえて ください。 この でんわで すこしだけ かくにん します。",
+            "en": "/ɡɪv mi ðə keɪs ˈnʌmbɚ ənd ˈɔfəsɚ neɪm. aɪl ˈænsɚ ˈoʊnli ə fju ˈkwɛstʃənz ɑn ðɪs kɔl./",
+            "zh": "Qǐng tí gòng àn jiàn biān hào yǔ chéng bàn xìng míng。 wǒ zhī zài zhè tōng diàn huà huí dá jǐ gè wèn tí。"
+          },
           "axisScores": {
             "authority-skepticism": 14,
             "channel-separation": 5,
@@ -136,6 +151,11 @@
             "ja": "警察なら協力します。口座について何を答えればよいですか。",
             "en": "If you're police, I'll cooperate. What should I tell you about my accounts?",
             "zh": "既然是警察，我會配合。需要我說明哪些帳戶資料？"
+          },
+          "pronunciationGuide": {
+            "ja": "けいさつなら きょうりょく します。 こうざについて なにを こたえれば よいですか。",
+            "en": "/ɪf jʊɹ pəˈlis, aɪl koʊˈɑpɚˌeɪt. wʌt ʃʊd aɪ tɛl ju əˈbaʊt maɪ əˈkaʊnts?/",
+            "zh": "Jì rán shì jǐng chá， wǒ huì pèi hé。 xū yào wǒ shuō míng nǎ xiē zhàng hù zī liào？"
           },
           "axisScores": {
             "authority-skepticism": 0,
@@ -157,6 +177,11 @@
         "ja": "SNSのビデオ通話に移ります。警察手帳と逮捕状を画面で見せるので、家族には秘密にしてください。",
         "en": "Move to a video call in this messaging app. I'll show a badge and warrant; keep this secret from your family.",
         "zh": "轉到通訊軟體視訊。我會展示警察證件與逮捕令，請對家人保密。"
+      },
+      "pronunciationGuide": {
+        "ja": "えすえぬえすの びでお つうわに うつります。 けいさつ てちょうと たいほじょうを がめんで みせるので、 かぞくには ひみつに して ください。",
+        "en": "/muv tu ə ˈvɪdioʊ kɔl ɪn ðɪs ˈmɛsɪdʒɪŋ æp. aɪl ʃoʊ ə bædʒ ənd ˈwɔɹənt; kip ðɪs ˈsikɹət fɹʌm jɔɹ ˈfæməli./",
+        "zh": "Zhuǎn dào tōng xùn ruǎn tǐ shì xùn。 wǒ huì zhǎn shì jǐng chá zhèng jiàn yǔ dǎi bǔ lìng， qǐng duì jiā rén bǎo mì。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "I won't move to an app or treat images as proof. I'll hang up and contact my local police station myself.",
             "zh": "我不轉到通訊軟體，也不把圖片當成證明。我會掛斷並自行聯絡當地警察局。"
           },
+          "pronunciationGuide": {
+            "ja": "えすえぬえすへ うつらず、 がぞうも ほんにん かくにんに つかいません。 つうわを きり、 もよりの けいさつしょへ じぶんから れんらく します。",
+            "en": "/aɪ woʊnt muv tu æn æp ɔɹ tɹit ˈɪmədʒəz æz pɹuf. aɪl hæŋ ʌp ənd ˈkɑnˌtækt maɪ ˈloʊkəl pəˈlis ˈsteɪʃən ˌmaɪˈsɛlf./",
+            "zh": "Wǒ bù zhuǎn dào tōng xùn ruǎn tǐ， yě bù bǎ tú piàn dàng chéng zhèng míng。 wǒ huì guà duàn bìng zì xíng lián luò dāng dì jǐng chá jú。"
+          },
           "axisScores": {
             "authority-skepticism": 20,
             "channel-separation": 20,
@@ -199,6 +229,11 @@
             "en": "I'll view the screen, record it, and then check with the police station.",
             "zh": "我會看畫面並錄影，之後再向警察局查證。"
           },
+          "pronunciationGuide": {
+            "ja": "がめんは みますが、 ろくが してから けいさつしょへ かくにん します。",
+            "en": "/aɪl vju ðə skɹin, ɹəˈkɔɹd ɪt, ənd ðɛn tʃɛk wɪð ðə pəˈlis ˈsteɪʃən./",
+            "zh": "Wǒ huì kàn huà miàn bìng lù yǐng， zhī hòu zài xiàng jǐng chá jú chá zhèng。"
+          },
           "axisScores": {
             "authority-skepticism": 13,
             "channel-separation": 8,
@@ -217,6 +252,11 @@
             "ja": "逮捕状が見えれば本物だと思うので、家族には話さずSNSへ移ります。",
             "en": "If I can see a warrant, I'll trust it and move to the app without telling my family.",
             "zh": "看到逮捕令我就相信，不告訴家人並轉到通訊軟體。"
+          },
+          "pronunciationGuide": {
+            "ja": "たいほじょうが みえれば ほんものだと おもうので、 かぞくには はなさず えすえぬえすへ うつります。",
+            "en": "/ɪf aɪ kæn si ə ˈwɔɹənt, aɪl tɹʌst ɪt ənd muv tu ðə æp wɪˈθaʊt ˈtɛlɪŋ maɪ ˈfæməli./",
+            "zh": "Kàn dào dǎi bǔ lìng wǒ jiù xiāng xìn， bú gào sù jiā rén bìng zhuǎn dào tōng xùn ruǎn tǐ。"
           },
           "axisScores": {
             "authority-skepticism": 1,
@@ -238,6 +278,11 @@
         "ja": "無実を証明するには、資産を監査用の安全口座へ移してください。暗証番号も照合します。",
         "en": "To prove your innocence, move your assets to a safe audit account. We also need to match your PIN.",
         "zh": "要證明清白，請把資產轉到審查安全帳戶，並核對密碼。"
+      },
+      "pronunciationGuide": {
+        "ja": "むじつを しょうめい するには、 しさんを かんさようの あんぜん こうざへ うつして ください。 あんしょう ばんごうも しょうごう します。",
+        "en": "/tu pɹuv jɔɹ ˈɪnəsəns, muv jɔɹ ˈæˌsɛts tu ə seɪf ˈɔdɪt əˈkaʊnt. wi ˈɔlsoʊ nid tu mætʃ jɔɹ pi aɪ ɛn./",
+        "zh": "Yào zhèng míng qīng bái， qǐng bǎ zī chǎn zhuǎn dào shěn chá ān quán zhàng hù， bìng hé duì mì mǎ。"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "I'll refuse any transfer or PIN request. I'll call my bank and report this through an official police channel.",
             "zh": "我不會轉帳或提供密碼。我會直接聯絡銀行保護帳戶，並透過警方官方管道通報。"
           },
+          "pronunciationGuide": {
+            "ja": "そうきんも あんしょう ばんごうの ていきょうも しません。 ぎんこうへ ちょくせつ れんらく して こうざを ほご し、 けいさつの こうひょう まどぐちへ つうほう します。",
+            "en": "/aɪl ɹəfˈjuz ˈɛni tɹænsˈfɝ ɔɹ pi aɪ ɛn ɹɪkˈwɛst. aɪl kɔl maɪ bæŋk ənd ɹiˈpɔɹt ðɪs θɹu æn əˈfɪʃəl pəˈlis ˈtʃænəl./",
+            "zh": "Wǒ bú huì zhuǎn zhàng huò tí gōng mì mǎ。 wǒ huì zhí jiē lián luò yín háng bǎo hù zhàng hù， bìng tòu guò jǐng fāng guān fāng guǎn dào tōng bào。"
+          },
           "axisScores": {
             "authority-skepticism": 20,
             "channel-separation": 20,
@@ -280,6 +330,11 @@
             "en": "I won't transfer money, but I'll name my bank for identity verification.",
             "zh": "我不會轉帳，但可為身分確認說出銀行名稱。"
           },
+          "pronunciationGuide": {
+            "ja": "そうきんは しませんが、 ほんにん かくにんの ため ぎんこうめいだけ こたえます。",
+            "en": "/aɪ woʊnt tɹænsˈfɝ ˈmʌni, bʌt aɪl neɪm maɪ bæŋk fɔɹ aɪˈdɛntɪˌti ˌvɛɹəfəˈkeɪʃən./",
+            "zh": "Wǒ bú huì zhuǎn zhàng， dàn kě wèi shēn fèn què rèn shuō chū yín háng míng chēng。"
+          },
           "axisScores": {
             "authority-skepticism": 12,
             "channel-separation": 8,
@@ -298,6 +353,11 @@
             "ja": "無実を証明したいので、指定口座へ移し、暗証番号も伝えます。",
             "en": "I want to prove my innocence, so I'll transfer the funds and provide my PIN.",
             "zh": "我想證明清白，所以會轉到指定帳戶並提供密碼。"
+          },
+          "pronunciationGuide": {
+            "ja": "むじつを しょうめい したいので、 してい こうざへ うつし、 あんしょう ばんごうも つたえます。",
+            "en": "/aɪ wɑnt tu pɹuv maɪ ˈɪnəsəns, soʊ aɪl tɹænsˈfɝ ðə fʌndz ənd pɹəˈvaɪd maɪ pi aɪ ɛn./",
+            "zh": "Wǒ xiǎng zhèng míng qīng bái， suǒ yǐ huì zhuǎn dào zhǐ dìng zhàng hù bìng tí gōng mì mǎ。"
           },
           "axisScores": {
             "authority-skepticism": 0,
@@ -319,6 +379,11 @@
         "ja": "銀行名はもう聞きました。今切れば逮捕手続きを進めます。最後まで協力してください。",
         "en": "You already gave me your bank name. If you hang up, I'll proceed with arrest. Cooperate to the end.",
         "zh": "我已知道您的銀行。現在掛斷就啟動逮捕程序，請配合到底。"
+      },
+      "pronunciationGuide": {
+        "ja": "ぎんこうめいは もう ききました。 いま きれば たいほ てつづきを すすめます。 さいごまで きょうりょく して ください。",
+        "en": "/ju ɔlˈɹɛdi ɡeɪv mi jɔɹ bæŋk neɪm. ɪf ju hæŋ ʌp, aɪl pɹəˈsid wɪð ɚˈɛst. koʊˈɑpɚˌeɪt tu ðə ɛnd./",
+        "zh": "Wǒ yǐ zhī dào nín de yín háng。 xiàn zài guà duàn jiù qǐ dòng dǎi bǔ chéng xù， qǐng pèi hé dào dǐ。"
       },
       "reaction": {
         "description": {
@@ -342,6 +407,11 @@
             "en": "I won't answer further. I'll save the call details, hang up, alert my bank, and contact a published police number.",
             "zh": "我不再回答。我會保存通話紀錄、掛斷、通知銀行警戒，並聯絡警方公開電話。"
           },
+          "pronunciationGuide": {
+            "ja": "これ いじょう こたえません。 つうわ きろくを ほぞん して きり、 ぎんこうへ ちゅうい とうろくを いらい し、 けいさつの こうひょう ばんごうへ そうだん します。",
+            "en": "/aɪ woʊnt ˈænsɚ ˈfɝðɚ. aɪl seɪv ðə kɔl dɪˈteɪlz, hæŋ ʌp, əˈlɝt maɪ bæŋk, ənd ˈkɑnˌtækt ə ˈpʌblɪʃt pəˈlis ˈnʌmbɚ./",
+            "zh": "Wǒ bú zài huí dá。 wǒ huì bǎo cún tōng huà jì lù、 guà duàn、 tōng zhī yín háng jǐng jiè， bìng lián luò jǐng fāng gōng kāi diàn huà。"
+          },
           "axisScores": {
             "authority-skepticism": 20,
             "channel-separation": 20,
@@ -361,6 +431,11 @@
             "en": "I'll hang up and call my bank, but I won't contact police because I'm embarrassed.",
             "zh": "我會掛斷並聯絡銀行，但因為難為情而不向警方求助。"
           },
+          "pronunciationGuide": {
+            "ja": "つうわは きって ぎんこうへ れんらく しますが、 けいさつには はずかしいので そうだん しません。",
+            "en": "/aɪl hæŋ ʌp ənd kɔl maɪ bæŋk, bʌt aɪ woʊnt ˈkɑnˌtækt pəˈlis bɪˈkɔz aɪm ɪmˈbɛɹəst./",
+            "zh": "Wǒ huì guà duàn bìng lián luò yín háng， dàn yīn wèi nán wéi qíng ér bú xiàng jǐng fāng qiú zhù。"
+          },
           "axisScores": {
             "authority-skepticism": 14,
             "channel-separation": 18,
@@ -379,6 +454,11 @@
             "ja": "銀行名を知られたので逃げられないと思い、最後まで協力します。",
             "en": "Since you know my bank, I don't think I can stop, so I'll keep cooperating.",
             "zh": "既然你知道我的銀行，我覺得無法退出，所以繼續配合。"
+          },
+          "pronunciationGuide": {
+            "ja": "ぎんこうめいを しられたので にげられないと おもい、 さいごまで きょうりょく します。",
+            "en": "/sɪns ju noʊ maɪ bæŋk, aɪ doʊnt θɪŋk aɪ kæn stɑp, soʊ aɪl kip koʊˈɑpɚˌeɪtɪŋ./",
+            "zh": "Jì rán nǐ zhī dào wǒ de yín háng， wǒ jué de wú fǎ tuì chū， suǒ yǐ jì xù pèi hé。"
           },
           "axisScores": {
             "authority-skepticism": 0,

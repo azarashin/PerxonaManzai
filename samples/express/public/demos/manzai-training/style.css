@@ -773,6 +773,20 @@ sv-presenter:not([hidden]) {
   overflow-wrap: anywhere;
 }
 
+.language-content {
+  display: grid;
+  min-width: 0;
+  gap: 0.15rem;
+}
+
+.pronunciation-guide {
+  color: var(--muted);
+  font-size: 0.78em;
+  font-weight: 500;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
 .language-en .language-text,
 .language-zh .language-text {
   color: var(--muted);
