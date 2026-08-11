@@ -160,6 +160,22 @@
         "en": "Scam and Manipulative Sales Awareness",
         "zh": "詐騙與惡質推銷防範"
       }
+    },
+    {
+      "id": "parent-child",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "信頼、過去の約束、子供の反応が後続の対話を変えるため、中級以上では分岐を推奨します。",
+          "en": "Branching is recommended when trust, prior agreements, and the child's reaction affect later dialogue.",
+          "zh": "信任、過往約定與孩子的反應會影響後續對話，因此建議分支。"
+        }
+      },
+      "title": {
+        "ja": "親子会話",
+        "en": "Parent and Child Communication",
+        "zh": "親子溝通"
+      }
     }
   ],
   "scenarios": [
@@ -1080,6 +1096,33 @@
         "zh": "緊急帳號驗證"
       },
       "path": "./scenarios/urgent-account-verification.json"
+    },
+    {
+      "id": "gaming-time-agreement",
+      "categoryId": "parent-child",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合親子溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "ゲーム時間の約束",
+        "en": "A Gaming Time Agreement",
+        "zh": "遊戲時間約定"
+      },
+      "path": "./scenarios/gaming-time-agreement.json"
     }
   ]
 }
