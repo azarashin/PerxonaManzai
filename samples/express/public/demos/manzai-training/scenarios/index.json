@@ -929,6 +929,33 @@
         "zh": "考慮離職"
       },
       "path": "./scenarios/considering-resignation.json"
+    },
+    {
+      "id": "after-a-breakup",
+      "categoryId": "friend-advice",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "別れた直後の相談",
+        "en": "After a Breakup",
+        "zh": "分手之後"
+      },
+      "path": "./scenarios/after-a-breakup.json"
     }
   ]
 }
