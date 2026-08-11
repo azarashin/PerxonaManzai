@@ -240,6 +240,22 @@
         "en": "Crisis Communication",
         "zh": "危機情境溝通"
       }
+    },
+    {
+      "id": "special-fraud-prevention",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "基本の遮断と独立確認は直線型で練習でき、相手の圧力や情報開示状況に応じた高度な展開では分岐を推奨します。",
+          "en": "Core disengagement and independent verification can be linear; branching is recommended for advanced changes in pressure or disclosure.",
+          "zh": "基本中斷與獨立查證可用線性流程；進階情境可依施壓或資訊揭露狀態採用分支。"
+        }
+      },
+      "title": {
+        "ja": "特殊詐欺対策",
+        "en": "Special Fraud Prevention",
+        "zh": "特殊詐騙防範"
+      }
     }
   ],
   "scenarios": [
@@ -1565,6 +1581,87 @@
         "zh": "高度緊張的對峙"
       },
       "path": "./scenarios/high-tension-standoff.json"
+    },
+    {
+      "id": "family-emergency-impersonation",
+      "categoryId": "special-fraud-prevention",
+      "beatCount": 4,
+      "difficulty": "beginner",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "緊急性と秘密の要求に気付き、通話相手へ家族情報を追加で渡さない",
+          "いったん通話を切り、登録済み番号と別の家族を使って本人確認する"
+        ],
+        "en": [
+          "Recognize urgency and secrecy without revealing more family information.",
+          "End the call and verify through a saved number and another family member."
+        ],
+        "zh": [
+          "辨識催促與保密要求，不再透露家人資訊。",
+          "先掛斷，再用已儲存號碼與另一位家人獨立查證。"
+        ]
+      },
+      "title": {
+        "ja": "家族の緊急事態を装う電話",
+        "en": "A Fake Family Emergency Call",
+        "zh": "假冒家人緊急來電"
+      },
+      "path": "./scenarios/family-emergency-impersonation.json"
+    },
+    {
+      "id": "municipal-refund-atm",
+      "categoryId": "special-fraud-prevention",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "還付金受取とATM操作を結び付ける説明を危険信号として認識する",
+          "ATMから離れ、自治体の代表番号と書面通知で独立確認して相談する"
+        ],
+        "en": [
+          "Recognize a refund tied to ATM operation as a warning sign.",
+          "Leave the ATM and verify through an official municipal number and written notice."
+        ],
+        "zh": [
+          "辨識把退款與ATM操作連結的說法是警訊。",
+          "離開ATM，透過政府官方電話與書面通知獨立查證並求助。"
+        ]
+      },
+      "title": {
+        "ja": "自治体を装う還付金ATM誘導",
+        "en": "A Fake Municipal Refund at an ATM",
+        "zh": "假冒政府退款的ATM誘導"
+      },
+      "path": "./scenarios/municipal-refund-atm.json"
+    },
+    {
+      "id": "fake-police-asset-protection",
+      "categoryId": "special-fraud-prevention",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "警察を名乗ることや画面上の証票を本人確認の根拠にしない",
+          "資産移動・暗証番号・秘密保持を拒否し、通話外の公表窓口へ相談する"
+        ],
+        "en": [
+          "Do not treat a police claim or on-screen badge as proof of identity.",
+          "Reject asset transfers, credentials, and secrecy; verify through a published channel."
+        ],
+        "zh": [
+          "不把自稱警察或螢幕上的證件視為身分證明。",
+          "拒絕轉移資產、提供憑證與保密，透過公開管道查證。"
+        ]
+      },
+      "title": {
+        "ja": "警察を装う資産保護要求",
+        "en": "A Fake Police Asset Protection Demand",
+        "zh": "假冒警察的資產保護要求"
+      },
+      "path": "./scenarios/fake-police-asset-protection.json"
     }
   ]
 }

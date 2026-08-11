@@ -1,0 +1,398 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "municipal-refund-atm",
+  "title": {
+    "ja": "自治体を装う還付金ATM誘導",
+    "en": "A Fake Municipal Refund at an ATM",
+    "zh": "假冒政府退款的ATM誘導"
+  },
+  "description": {
+    "ja": "自治体職員を装う相手から還付金を口実にATM操作を求められた際、公式通知と代表番号で確認し、操作を中止する練習です。",
+    "en": "Practice rejecting ATM instructions for a supposed government refund and verifying through written notice and an official switchboard.",
+    "zh": "練習拒絕假冒政府退款的ATM操作指示，並透過書面通知與官方總機查證。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "refund-scam-recognition",
+      "label": {
+        "ja": "手口認識",
+        "en": "Refund scam recognition",
+        "zh": "退款詐騙辨識"
+      },
+      "description": {
+        "ja": "ATM還付という矛盾に気付く",
+        "en": "Recognize the contradiction in an ATM refund.",
+        "zh": "辨識ATM退款說法的矛盾。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "official-verification",
+      "label": {
+        "ja": "公式確認",
+        "en": "Official verification",
+        "zh": "官方查證"
+      },
+      "description": {
+        "ja": "通知書と代表番号で確認する",
+        "en": "Verify through written notice and the official switchboard.",
+        "zh": "透過書面通知與官方總機查證。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "operation-safety",
+      "label": {
+        "ja": "操作安全",
+        "en": "Transaction safety",
+        "zh": "操作安全"
+      },
+      "description": {
+        "ja": "通話中のATM操作や入力を止める",
+        "en": "Stop ATM actions and entries during the call.",
+        "zh": "停止通話中的ATM操作與輸入。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "consultation",
+      "label": {
+        "ja": "周囲への相談",
+        "en": "Consultation",
+        "zh": "向周圍求助"
+      },
+      "description": {
+        "ja": "職員・家族・公的相談先へ助けを求める",
+        "en": "Seek help from staff, family, or an official service.",
+        "zh": "向職員、家人或官方服務求助。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "refund-notice",
+      "boke": {
+        "ja": "市役所保険課です。医療費の還付が2万8千円ありますが、今日が期限です。",
+        "en": "This is the city insurance office. You have a 28,000-yen medical refund, but today is the deadline.",
+        "zh": "這裡是市政府保險課。您有兩萬八千日圓醫療費退款，今天截止。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "親切そうな笑みの奥に鋭い目つきを見せて期限を告げる",
+          "en": "Announce the deadline with a falsely kind smile and sharp eyes",
+          "zh": "以假意親切的笑容與銳利眼神告知期限"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "refund-notice-strong",
+          "text": {
+            "ja": "電話では手続きしません。通知書を確認し、市役所の公開された代表番号へ自分からかけます。",
+            "en": "I won't act through this call. I'll check my mail and call the city's published switchboard myself.",
+            "zh": "我不會透過這通電話辦理。我會查看通知書，並自行撥打市政府公開總機。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 20,
+            "official-verification": 20,
+            "operation-safety": 20,
+            "consultation": 20
+          },
+          "feedback": {
+            "ja": "電話の期限を判断根拠にせず、書面と自分で調べた代表番号という独立した二つの手段で確認します。",
+            "en": "It rejects the caller's deadline and verifies through two independent sources: mail and a published number.",
+            "zh": "不以來電者期限為依據，改用書面與公開電話兩個獨立來源查證。"
+          }
+        },
+        {
+          "id": "refund-notice-partial",
+          "text": {
+            "ja": "担当者名と内線番号を聞いて、折り返します。",
+            "en": "I'll ask for your name and extension, then call back.",
+            "zh": "我會詢問姓名與分機後回撥。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 12,
+            "official-verification": 12,
+            "operation-safety": 18,
+            "consultation": 8
+          },
+          "feedback": {
+            "ja": "即時手続きは避けますが、相手が示す内線を信頼しており、公開された代表番号からの確認になっていません。",
+            "en": "It delays action but still relies on contact details supplied by the caller rather than an official source.",
+            "zh": "雖延後操作，仍依賴來電者提供的聯絡資料，而非官方來源。"
+          }
+        },
+        {
+          "id": "refund-notice-weak",
+          "text": {
+            "ja": "今日までなら、必要な手続きを今すぐ教えてください。",
+            "en": "If today is the deadline, tell me how to complete it now.",
+            "zh": "既然今天截止，請立刻告訴我如何辦理。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 2,
+            "official-verification": 2,
+            "operation-safety": 6,
+            "consultation": 0
+          },
+          "feedback": {
+            "ja": "期限を事実として受け入れ、相手に次の操作を委ねることで誘導を始めさせています。",
+            "en": "It accepts the deadline as fact and invites the caller to begin directing the transaction.",
+            "zh": "把期限當成事實，並讓對方開始引導交易操作。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "atm-direction",
+      "boke": {
+        "ja": "書類は不要です。携帯電話とキャッシュカードを持って、近くのATMへ行ってください。",
+        "en": "No paperwork is needed. Take your phone and bank card to a nearby ATM.",
+        "zh": "不需要文件。請帶手機與提款卡到附近ATM。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "冷たい笑顔で携帯電話とカードを同時に持たせようとする",
+          "en": "Use a cold smile while directing the target to carry both phone and card",
+          "zh": "露出冰冷笑容，要求同時攜帶手機與提款卡"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "atm-direction-strong",
+          "text": {
+            "ja": "ATMへは行きません。通話を切り、市役所の代表番号へ確認して、家族にもこの電話を共有します。",
+            "en": "I won't go to an ATM. I'll hang up, call the city's official number, and tell my family about this call.",
+            "zh": "我不會去ATM。我會掛斷、撥打市政府官方電話，並把此事告訴家人。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 20,
+            "official-verification": 20,
+            "operation-safety": 20,
+            "consultation": 20
+          },
+          "feedback": {
+            "ja": "ATM誘導を詐欺の兆候として止め、公式確認と身近な相談を同時に行う安全な対応です。",
+            "en": "It stops the ATM instruction as a scam warning and combines official verification with family support.",
+            "zh": "把ATM誘導視為詐騙警訊並停止，同時進行官方查證與家人求助。"
+          }
+        },
+        {
+          "id": "atm-direction-partial",
+          "text": {
+            "ja": "ATMには行きませんが、電話で口座番号だけ確認してもらいます。",
+            "en": "I won't go to an ATM, but I'll let you verify my account number by phone.",
+            "zh": "我不去ATM，但可在電話中讓你核對帳號。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 14,
+            "official-verification": 8,
+            "operation-safety": 16,
+            "consultation": 5
+          },
+          "feedback": {
+            "ja": "ATM操作は避けても、未確認の相手へ口座情報を渡すため、情報被害の経路が残ります。",
+            "en": "It avoids the ATM but still exposes account information to an unverified caller.",
+            "zh": "雖避開ATM，仍把帳戶資料交給未查證的來電者。"
+          }
+        },
+        {
+          "id": "atm-direction-weak",
+          "text": {
+            "ja": "カードを持ってATMへ行き、着いたら電話します。",
+            "en": "I'll take my card to the ATM and call when I arrive.",
+            "zh": "我會帶提款卡去ATM，到了再打電話。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 0,
+            "official-verification": 0,
+            "operation-safety": 0,
+            "consultation": 0
+          },
+          "feedback": {
+            "ja": "相手が遠隔で送金操作を誘導できる場所へ移動し、カードも持参する危険な従属です。",
+            "en": "It moves to the exact place where the caller can direct a transfer and brings the bank card.",
+            "zh": "前往對方可遠端引導轉帳的場所，還攜帶提款卡，是危險的服從。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "screen-guidance",
+      "boke": {
+        "ja": "ATMに着きましたね。画面の残高は見ず、私の言うボタンだけ押してください。",
+        "en": "You're at the ATM. Ignore the balance and press only the buttons I name.",
+        "zh": "您到ATM了吧。不要看餘額，只按我說的按鈕。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "薄い笑いを浮かべ、画面を見せず操作だけ従わせようとする",
+          "en": "Smirk while ordering blind compliance with the machine",
+          "zh": "露出陰險笑容，要求不看畫面只照指示操作"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "screen-guidance-strong",
+          "text": {
+            "ja": "何も押しません。カードをしまってATMから離れ、銀行員へ今の通話を伝えて相談します。",
+            "en": "I won't press anything. I'll put away my card, leave the ATM, and tell bank staff about this call.",
+            "zh": "我不會按任何鍵。我會收好提款卡、離開ATM，並告知銀行職員這通電話。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 20,
+            "official-verification": 20,
+            "operation-safety": 20,
+            "consultation": 20
+          },
+          "feedback": {
+            "ja": "入力前に操作を完全に止め、カードを保護し、その場の信頼できる職員へ相談できます。",
+            "en": "It stops before any input, secures the card, and brings in trusted staff at the location.",
+            "zh": "在輸入前完全停止操作、保護提款卡，並向現場可信職員求助。"
+          }
+        },
+        {
+          "id": "screen-guidance-partial",
+          "text": {
+            "ja": "通話を切ってカードを抜きますが、ATMの前で自治体名を検索します。",
+            "en": "I'll end the call and remove my card, but search for the agency while staying at the ATM.",
+            "zh": "我會掛斷並取回卡片，但留在ATM前搜尋政府機關。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 16,
+            "official-verification": 12,
+            "operation-safety": 17,
+            "consultation": 5
+          },
+          "feedback": {
+            "ja": "通話と操作を止める点はよいものの、ATM前に残り、検索広告や再着信による誘導を受ける余地があります。",
+            "en": "It stops the call and transaction, but remaining at the ATM leaves room for search ads or another call to redirect the victim.",
+            "zh": "停止通話與操作是優點，但留在ATM前仍可能受搜尋廣告或再次來電誘導。"
+          }
+        },
+        {
+          "id": "screen-guidance-weak",
+          "text": {
+            "ja": "残高を見なければ安全だと思い、言われたボタンを押します。",
+            "en": "If ignoring the balance makes it safe, I'll press the buttons you name.",
+            "zh": "既然不看餘額就安全，我會按你說的按鈕。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 1,
+            "official-verification": 0,
+            "operation-safety": 0,
+            "consultation": 0
+          },
+          "feedback": {
+            "ja": "画面を確認しないことを安全策と誤解し、実際の送金内容を隠した操作誘導に従っています。",
+            "en": "It mistakes blindness for safety and follows instructions designed to conceal the actual transfer.",
+            "zh": "誤把不看畫面當成安全，服從了刻意隱藏實際轉帳內容的指示。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "official-check",
+      "boke": {
+        "ja": "今切ると還付番号が失効します。銀行員に話したら手続きも取り消しますよ。",
+        "en": "If you hang up, the refund code expires. Tell bank staff and the refund will be canceled.",
+        "zh": "現在掛斷退款碼就失效。告訴銀行職員，手續也會取消。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "目を見開いた威圧的な表情で相談を妨げる",
+          "en": "Use a wide-eyed threatening expression to block consultation",
+          "zh": "瞪大眼睛以威脅表情阻止求助"
+        },
+        "motionTags": [
+          "pose:emotion_01",
+          "category:talking"
+        ],
+        "variant": 3,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "official-check-strong",
+          "text": {
+            "ja": "失効して構いません。通話を終え、ATMを離れて、市役所と警察の公表窓口へ相談します。",
+            "en": "It can expire. I'll end the call, leave the ATM, and contact published city and police channels.",
+            "zh": "失效也沒關係。我會掛斷、離開ATM，聯絡市政府與警方公開管道。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 20,
+            "official-verification": 20,
+            "operation-safety": 20,
+            "consultation": 20
+          },
+          "feedback": {
+            "ja": "還付を失う恐怖より安全を優先し、現場を離れて二つの公的経路へ確認するため、再誘導も防げます。",
+            "en": "It prioritizes safety over loss pressure, leaves the site, and verifies through two official channels.",
+            "zh": "把安全置於失去退款的恐懼之上，離開現場並透過兩個官方管道查證。"
+          }
+        },
+        {
+          "id": "official-check-partial",
+          "text": {
+            "ja": "通話は切りますが、還付は諦めて誰にも相談しません。",
+            "en": "I'll hang up, but give up the refund and tell nobody.",
+            "zh": "我會掛斷，但放棄退款，也不告訴任何人。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 14,
+            "official-verification": 6,
+            "operation-safety": 20,
+            "consultation": 2
+          },
+          "feedback": {
+            "ja": "直接被害は止められますが、公式確認と相談をしないため、再接触への備えや通報につながりません。",
+            "en": "It stops the immediate harm but misses official verification, reporting, and preparation for repeat contact.",
+            "zh": "可阻止眼前損害，但缺少官方查證、通報與防範再次接觸。"
+          }
+        },
+        {
+          "id": "official-check-weak",
+          "text": {
+            "ja": "還付を失いたくないので、銀行員には話さず通話を続けます。",
+            "en": "I don't want to lose the refund, so I won't tell bank staff and will stay on the call.",
+            "zh": "我不想失去退款，所以不告訴銀行職員，繼續通話。"
+          },
+          "axisScores": {
+            "refund-scam-recognition": 0,
+            "official-verification": 0,
+            "operation-safety": 2,
+            "consultation": 0
+          },
+          "feedback": {
+            "ja": "取消しの脅しで孤立させる狙いを受け入れ、最も利用しやすい現場支援を自ら断っています。",
+            "en": "It accepts the isolation tactic and refuses the most accessible source of help at the scene.",
+            "zh": "接受以取消退款來孤立受害者的手法，主動拒絕現場最容易取得的協助。"
+          }
+        }
+      ]
+    }
+  ]
+}
