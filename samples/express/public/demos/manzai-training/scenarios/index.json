@@ -764,16 +764,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "障害の影響に謝罪し、確認済み事実と推測を分ける",
+          "復旧を断定せず、次回報告時刻と確認済みの暫定対応を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
-          "Compare how different responses affect the other person and the next action."
+          "Apologize for outage impact and separate confirmed facts from speculation.",
+          "Avoid predicting recovery; give an update time and verified interim action."
         ],
         "zh": [
-          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "針對中斷影響致歉，區分已確認事實與推測。",
+          "不武斷預測復原，提出下次回報時間與已確認的暫時措施。"
         ]
       },
       "title": {
@@ -791,16 +791,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "誤案内そのものと予定変更への影響を認め、確認済みの正しい情報を示す",
+          "公開訂正、対象者への連絡、再発防止の順序を具体化する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
-          "Compare how different responses affect the other person and the next action."
+          "Own both the incorrect notice and its impact, then provide verified corrected information.",
+          "Specify public correction, outreach to affected people, and prevention."
         ],
         "zh": [
-          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "承認公告錯誤及其造成的行程影響，提供已確認的正確資訊。",
+          "具體安排公開更正、通知受影響者及防止再犯。"
         ]
       },
       "title": {
@@ -818,16 +818,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "影響への謝罪と、未確定の原因・責任認定を明確に分ける",
+          "補償判断に必要な資料、期限、決裁者と暫定支援を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate apology for impact from unconfirmed cause and liability.",
+          "Explain evidence, deadline, approver, and interim support for compensation review."
         ],
         "zh": [
-          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "清楚區分對影響致歉與尚未確認的原因及責任。",
+          "說明補償審核所需資料、期限、決策者與暫時支援。"
         ]
       },
       "title": {

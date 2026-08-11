@@ -7,9 +7,9 @@
     "zh": "調查前的補償要求"
   },
   "description": {
-    "ja": "謝罪・火消しとして「調査前の補償要求」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Compensation Before Investigation” for Apology and Incident Response.",
-    "zh": "在「調查前的補償要求」中練習符合情境的簡短道歉與事件應對回應。"
+    "ja": "原因未確定の補償要求に対し、影響への謝罪と責任認定を分け、証拠・期限・権限を明示する練習です。",
+    "en": "Practice separating apology from liability when compensation is requested before investigation, with evidence, timing, and authority.",
+    "zh": "練習面對調查前的補償要求，區分影響致歉與責任認定，明示證據、期限與權限。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "影響へのお詫びと、現時点で確認済みの事実を分けて伝えます。",
-            "en": "I will apologize for the impact and distinguish confirmed facts from unknowns.",
-            "zh": "我會對影響致歉，並區分已確認事實與未知部分。"
+            "ja": "ご迷惑をおかけしたことはお詫びします。補償を確約する前に、影響内容と原因を記録し、決裁部門へ調査を依頼します。",
+            "en": "I'm sorry for the impact. Before promising compensation, we'll document the loss and submit it for review.",
+            "zh": "很抱歉造成影響。在承諾補償前，我們會記錄損失與原因，送交有權部門審核。"
           },
           "axisScores": {
             "accountability": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "影響には謝りつつ責任を断定せず、補償判断の具体的な入口を示しています。",
+            "en": "It apologizes for impact without deciding liability and starts a defined review.",
+            "zh": "針對影響致歉但不預斷責任，並啟動明確審核流程。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "ご迷惑をおかけしました。補償できるか検討します。",
+            "en": "We're sorry for the trouble. We'll consider compensation.",
+            "zh": "很抱歉造成困擾，我們會考慮補償。"
           },
           "axisScores": {
-            "accountability": 13,
-            "fact-checking": 11,
-            "clarity": 12,
-            "solution-quality": 12
+            "accountability": 16,
+            "fact-checking": 5,
+            "clarity": 10,
+            "solution-quality": 15
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "謝罪と検討はありますが、必要な確認と誰が判断するかが不明です。",
+            "en": "It apologizes and considers relief but leaves facts and authority undefined.",
+            "zh": "有致歉並考慮補償，但未說明要確認什麼或由誰決定。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "原因が不明でも、今回は全額補償します。",
+            "en": "Even without a known cause, we'll compensate the full amount.",
+            "zh": "即使原因不明，這次也全額補償。"
           },
           "axisScores": {
-            "accountability": 2,
-            "fact-checking": 3,
-            "clarity": 2,
-            "solution-quality": 3
+            "accountability": 12,
+            "fact-checking": 0,
+            "clarity": 5,
+            "solution-quality": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "確認前に責任と金額を確約し、権限と公平な判断を失います。",
+            "en": "It promises liability and amount before review, violating authority and fairness.",
+            "zh": "查核前就承諾責任與金額，失去權限界線與公平判斷。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "何を提出すれば、誰がいつまでに補償の可否を決めるのですか。",
+        "en": "What should I submit, who decides, and by when?",
+        "zh": "我要提交什麼？由誰在何時前決定能否補償？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "推測で原因を断定せず、調査状況と次の報告時刻を示します。",
-            "en": "I will not guess the cause; I will state the investigation status and next update time.",
-            "zh": "我不推測原因，會說明調查狀態與下次更新時間。"
+            "ja": "発生時刻、影響内容、関連記録をご提出ください。担当部門が五営業日以内に確認し、窓口から結果を連絡します。",
+            "en": "Please provide timing, impact, and records. The review team will decide within five business days and reply.",
+            "zh": "請提供發生時間、影響內容與相關紀錄。負責部門會在五個工作日內審核，由窗口回覆結果。"
           },
           "axisScores": {
             "accountability": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "必要資料、決裁部門、期限、連絡経路を具体的に示しています。",
+            "en": "It specifies evidence, decision owner, deadline, and response channel.",
+            "zh": "具體說明所需資料、決策部門、期限與回覆管道。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "損失が分かる書類を送ってください。確認します。",
+            "en": "Send documents showing the loss and we'll review them.",
+            "zh": "請提供能證明損失的文件，我們會確認。"
           },
           "axisScores": {
-            "accountability": 13,
-            "fact-checking": 11,
-            "clarity": 12,
-            "solution-quality": 12
+            "accountability": 8,
+            "fact-checking": 16,
+            "clarity": 9,
+            "solution-quality": 15
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "資料確認はできますが、判断者、期限、連絡方法がありません。",
+            "en": "It requests evidence but omits owner, deadline, and response method.",
+            "zh": "有要求資料，但未說明決策者、期限與聯絡方式。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "原因がこちらにあると証明されるまで補償はできません。",
+            "en": "There can be no compensation until you prove we caused it.",
+            "zh": "在你證明原因在我們之前，不能補償。"
           },
           "axisScores": {
-            "accountability": 2,
+            "accountability": 1,
             "fact-checking": 3,
-            "clarity": 2,
-            "solution-quality": 3
+            "clarity": 0,
+            "solution-quality": 5
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "調査責任を相手へ転嫁し、共同で確認する手順を閉ざしています。",
+            "en": "It shifts the investigation burden to the claimant and blocks a fair process.",
+            "zh": "把調查責任推給對方，封閉共同查核的公平流程。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "調査中でもできる支援と、補償判断後の流れを分けて説明してください。",
+        "en": "Separate what support is possible now from what happens after the compensation decision.",
+        "zh": "請分開說明調查中可提供的支援，以及補償決定後的流程。"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "再発防止や補償は確認と権限の範囲で具体化します。",
-            "en": "I will make prevention and remedy specific within confirmed facts and authority.",
-            "zh": "我會在已確認事實與權限範圍內具體說明預防與補救。"
+            "ja": "調査中は復旧支援と記録作成を進めます。補償可否は決裁後に根拠とともに通知し、異議申立て窓口も案内します。",
+            "en": "During review we'll support recovery and records. After approval, we'll give reasons and an appeal contact.",
+            "zh": "調查中協助復原與整理紀錄；審核後會連同理由通知結果，並提供申訴窗口。"
           },
           "axisScores": {
             "accountability": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "暫定支援と金銭判断を分離し、結果の説明と見直し経路まで示しています。",
+            "en": "It separates interim help from monetary review and includes reasons and recourse.",
+            "zh": "區分暫時支援與金錢審核，並提供結果理由與申訴途徑。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "調査が終わるまで、できる範囲で支援します。",
+            "en": "We'll support you where possible until the investigation ends.",
+            "zh": "調查完成前，我們會在能力範圍內支援。"
           },
           "axisScores": {
-            "accountability": 13,
-            "fact-checking": 11,
+            "accountability": 12,
+            "fact-checking": 9,
             "clarity": 12,
-            "solution-quality": 12
+            "solution-quality": 15
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "支援姿勢はありますが、内容、補償結果、異議対応が曖昧です。",
+            "en": "It offers support but leaves its content and the later decision process vague.",
+            "zh": "有支援態度，但內容、補償結果與異議處理都不明確。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "調査中なので、補償も支援も何もできません。",
+            "en": "While the investigation is open, we can offer neither compensation nor support.",
+            "zh": "調查中無法提供補償或任何支援。"
           },
           "axisScores": {
-            "accountability": 2,
+            "accountability": 0,
             "fact-checking": 3,
-            "clarity": 2,
-            "solution-quality": 3
+            "clarity": 0,
+            "solution-quality": 4
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "金銭判断と即時支援を不必要に一括して拒み、被害拡大を防げません。",
+            "en": "It wrongly bundles monetary review with immediate help and may let harm grow.",
+            "zh": "不必要地一併拒絕金錢判斷與即時支援，可能讓損害擴大。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "調査を理由に何も認めず、先延ばししているように聞こえます。",
+        "en": "It sounds as though investigation is being used to admit nothing and delay everything.",
+        "zh": "聽起來像用調查當理由，什麼都不承認並一直拖延。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "説明不足を認め、影響、事実、次の行動の順で伝え直します。",
-            "en": "I acknowledge the poor explanation and will restate the impact, facts, and next action in order.",
-            "zh": "我承認說明不足，會依影響、事實與下一步重新說明。"
+            "ja": "先延ばしに聞こえる説明で申し訳ありません。影響は認め、今日中の受付番号と五営業日の判断期限をお伝えします。",
+            "en": "I'm sorry this sounded like delay. We'll give a case number today and a decision within five business days.",
+            "zh": "很抱歉說得像在拖延。我們承認影響，今天提供案件編號，並在五個工作日內作出判斷。"
           },
           "axisScores": {
             "accountability": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "影響を明確に認め、追跡番号と判断期限で調査を検証可能にしています。",
+            "en": "It clearly owns impact and makes review trackable with a case number and deadline.",
+            "zh": "明確認可影響，以案件編號與期限讓調查可追蹤。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "お待たせする点は申し訳ありませんが、補償はまだ約束できません。",
+            "en": "I'm sorry for the wait, but we still cannot promise compensation.",
+            "zh": "很抱歉需要等待，但目前仍不能承諾補償。"
           },
           "axisScores": {
-            "accountability": 13,
-            "fact-checking": 11,
-            "clarity": 12,
-            "solution-quality": 12
+            "accountability": 14,
+            "fact-checking": 7,
+            "clarity": 7,
+            "solution-quality": 17
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "境界と謝罪は適切ですが、進捗を追える期限や窓口がありません。",
+            "en": "It preserves the boundary and apologizes but gives no trackable process.",
+            "zh": "有守住界線並道歉，但沒有可追蹤的期限或窗口。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "補償を急ぐのは、金銭だけが目的だからですか。",
+            "en": "Are you rushing compensation because money is your only concern?",
+            "zh": "你急著要求補償，是因為只在乎錢嗎？"
           },
           "axisScores": {
-            "accountability": 2,
-            "fact-checking": 3,
-            "clarity": 2,
-            "solution-quality": 3
+            "accountability": 0,
+            "fact-checking": 0,
+            "clarity": 0,
+            "solution-quality": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "要求者の動機を攻撃し、影響確認と公正な審査を不可能にします。",
+            "en": "It attacks motive and destroys a fair fact-based review.",
+            "zh": "攻擊要求者動機，使影響查核與公平審核無法進行。"
           },
           "stateEffects": [
             {
