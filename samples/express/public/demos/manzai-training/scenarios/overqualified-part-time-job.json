@@ -77,6 +77,11 @@
         "en": "I applied to be a store clerk; my last job was uniting three countries.",
         "zh": "我來應徵店員，上一份工作是統一三個國家。"
       },
+      "pronunciationGuide": {
+        "ja": "ばいとに おうぼ した んやけど、 まえしょくは みっつの くにを まとめる しごと やってん。",
+        "en": "/aɪ əˈplaɪd tu bi ə stɔɹ klɝk; maɪ læst dʒɑb wɑz juˈnaɪtɪŋ θɹi ˈkʌntɹiz./",
+        "zh": "Wǒ lái yìng zhēng diàn yuán， shàng yí fèn gōng zuò shì tǒng yī sān gè guó jiā。"
+      },
       "reaction": {
         "description": {
           "ja": "国家級の経歴を面接で誇らしげに語る",
@@ -99,6 +104,11 @@
             "en": "You united three countries—why are you interviewing for a part-time job?",
             "zh": "都統一三個國家了，怎麼會來面試打工啦！"
           },
+          "pronunciationGuide": {
+            "ja": "さんかこく まとめた ひとが、 なんで ばいとの めんせつ き てんねん！",
+            "en": "/ju juˈnaɪtɪd θɹi ˈkʌntɹiz — waɪ ɑɹ ju ˈɪntɚvˌjuɪŋ fɔɹ ə pɑɹt - taɪm dʒɑb?/",
+            "zh": "Dōu tǒng yī sān gè guó jiā le， zěn me huì lái miàn shì dǎ gōng lā！"
+          },
           "axisScores": {
             "status-mismatch": 30,
             "detail-targeting": 20,
@@ -118,6 +128,11 @@
             "en": "That last job won't even fit on a résumé!",
             "zh": "你上一份工作的規模，履歷根本寫不下啦！"
           },
+          "pronunciationGuide": {
+            "ja": "まえしょくの きぼが りれきしょに おさまらへんわ！",
+            "en": "/ðæt læst dʒɑb woʊnt ˈivɪn fɪt ɑn ə ɑɹ é sʌm é!/",
+            "zh": "Nǐ shàng yí fèn gōng zuò de guī mó， lǚ lì gēn běn xiě bú xià lā！"
+          },
           "axisScores": {
             "status-mismatch": 18,
             "detail-targeting": 16,
@@ -136,6 +151,11 @@
             "ja": "国際経験が豊富ですね。",
             "en": "You certainly have a lot of international experience.",
             "zh": "你的國際經驗很豐富呢。"
+          },
+          "pronunciationGuide": {
+            "ja": "こくさい けいけんが ほうふですね。",
+            "en": "/ju ˈsɝtənli hæv ə lɑt ʌv ˌɪntɚˈnæʃənəl ɪkˈspɪɹiəns./",
+            "zh": "Nǐ de guó jì jīng yàn hěn fēng fù ne。"
           },
           "axisScores": {
             "status-mismatch": 2,
@@ -157,6 +177,11 @@
         "ja": "履歴書の代わりに国連決議を持ってきたで。推薦人は三か国の大統領や。",
         "en": "I brought a UN resolution instead of a résumé. Three presidents are my references.",
         "zh": "我用聯合國決議代替履歷，推薦人是三國總統。"
+      },
+      "pronunciationGuide": {
+        "ja": "りれきしょの かわりに こくれん けつぎを もって きたで。 すいせんじんは さんかこくの だいとうりょうや。",
+        "en": "/aɪ bɹɔt ə ju ɛn ˌɹɛzəˈluʃən ˌɪnˈstɛd ʌv ə ɑɹ é sʌm é. θɹi ˈpɹɛzəˌdɛnts ɑɹ maɪ ˈɹɛfɚənsɪz./",
+        "zh": "Wǒ yòng lián hé guó jué yì dài tì lǚ lì， tuī jiàn rén shì sān guó zǒng tǒng。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "No one submits a UN resolution instead of a résumé!",
             "zh": "哪有人拿聯合國決議代替履歷啦！"
           },
+          "pronunciationGuide": {
+            "ja": "りれきしょの かわりに こくれん けつぎ だす ひと おらんわ！",
+            "en": "/noʊ wʌn ˌsʌbˈmɪts ə ju ɛn ˌɹɛzəˈluʃən ˌɪnˈstɛd ʌv ə ɑɹ é sʌm é!/",
+            "zh": "Nǎ yǒu rén ná lián hé guó jué yì dài tì lǚ lì lā！"
+          },
           "axisScores": {
             "status-mismatch": 30,
             "detail-targeting": 20,
@@ -199,6 +229,11 @@
             "en": "Those references are too important for a routine phone check!",
             "zh": "推薦人太大咖，電話查核都做不了啦！"
           },
+          "pronunciationGuide": {
+            "ja": "すいせんじんが おおもの すぎて でんわ かくにん できへんわ！",
+            "en": "/ðoʊz ˈɹɛfɚənsɪz ɑɹ tu ˌɪmˈpɔɹtənt fɔɹ ə ɹuˈtin foʊn tʃɛk!/",
+            "zh": "Tuī jiàn rén tài dà kā， diàn huà chá hé dōu zuò bù liǎo lā！"
+          },
           "axisScores": {
             "status-mismatch": 17,
             "detail-targeting": 18,
@@ -217,6 +252,11 @@
             "ja": "推薦人まで豪華ですね。",
             "en": "Those are some impressive references.",
             "zh": "連推薦人都很豪華呢。"
+          },
+          "pronunciationGuide": {
+            "ja": "すいせんじんまで ごうかですね。",
+            "en": "/ðoʊz ɑɹ sʌm ˌɪmˈpɹɛsɪv ˈɹɛfɚənsɪz./",
+            "zh": "Lián tuī jiàn rén dōu hěn háo huá ne。"
           },
           "axisScores": {
             "status-mismatch": 2,
@@ -238,6 +278,11 @@
         "ja": "でもレジ経験はないから、まず世界平和より品出しを覚えるわ。",
         "en": "I have no register experience, so I'll learn stocking shelves before world peace.",
         "zh": "但我沒用過收銀機，所以先學補貨再談世界和平。"
+      },
+      "pronunciationGuide": {
+        "ja": "でも れじ けいけんは ないから、 まず せかい へいわより しなだしを おぼえるわ。",
+        "en": "/aɪ hæv noʊ ˈɹɛdʒɪstɚ ɪkˈspɪɹiəns, soʊ aɪl lɝn ˈstɑkɪŋ ʃɛlvz bɪˈfɔɹ wɝld pis./",
+        "zh": "Dàn wǒ méi yòng guò shōu yín jī， suǒ yǐ xiān xué bǔ huò zài tán shì jiè hé píng。"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "Don't put stocking shelves and world peace on the same training plan!",
             "zh": "別把補貨和世界和平排在同一張訓練表上啦！"
           },
+          "pronunciationGuide": {
+            "ja": "しなだしと せかい へいわを おなじ けんしゅうひょうに ならべるな！",
+            "en": "/doʊnt pʊt ˈstɑkɪŋ ʃɛlvz ənd wɝld pis ɑn ðə seɪm ˈtɹeɪnɪŋ plæn!/",
+            "zh": "Bié bǎ bǔ huò hé shì jiè hé píng pái zài tóng yì zhāng xùn liàn biǎo shàng lā！"
+          },
           "axisScores": {
             "status-mismatch": 30,
             "detail-targeting": 20,
@@ -280,6 +330,11 @@
             "en": "Let's start with the register, at least!",
             "zh": "至少先從收銀機學起吧！"
           },
+          "pronunciationGuide": {
+            "ja": "まず れじうちから おぼえよか！",
+            "en": "/lɛts stɑɹt wɪð ðə ˈɹɛdʒɪstɚ, æt list!/",
+            "zh": "Zhì shǎo xiān cóng shōu yín jī xué qǐ ba！"
+          },
           "axisScores": {
             "status-mismatch": 12,
             "detail-targeting": 13,
@@ -298,6 +353,11 @@
             "ja": "世界平和のあとに品出し頼むわ。",
             "en": "Handle world peace first, then stock the shelves.",
             "zh": "先處理世界和平，再來補貨吧。"
+          },
+          "pronunciationGuide": {
+            "ja": "せかい へいわの あとに しなだし たのむわ。",
+            "en": "/ˈhændəl wɝld pis fɝst, ðɛn stɑk ðə ʃɛlvz./",
+            "zh": "Xiān chǔ lǐ shì jiè hé píng， zài lái bǔ huò ba。"
           },
           "axisScores": {
             "status-mismatch": 4,
