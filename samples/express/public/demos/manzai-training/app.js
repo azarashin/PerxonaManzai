@@ -1172,7 +1172,7 @@ function showSummary() {
     recordScenarioCompletion(selectedScenario.id);
     completionRecorded = true;
     renderStoredProgress();
-    renderScenarioOptions();
+    renderScenarioOptions(selectedScenario.id);
   }
   summaryScore.textContent = t("summaryScore", {
     total: summary.totalScore,
@@ -1320,10 +1320,15 @@ function startReviewTraining() {
 }
 
 function returnToTrainingMenu() {
+  const pickerScenarioChanged = selectedScenario?.id !== scenarioSelect.value;
   resetTrainingView();
   setScenarioPickerDisabled(false);
   setPresenterControlsDisabled(false);
   setAppMessage("");
+  if (pickerScenarioChanged) {
+    syncScenarioUrl();
+    void loadSelectedScenario().catch(console.error);
+  }
 }
 
 function restartCurrentTraining() {
