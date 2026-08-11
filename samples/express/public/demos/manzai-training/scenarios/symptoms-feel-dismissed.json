@@ -112,6 +112,11 @@
         "en": "Even if tests are normal, I feel that my suffering is being dismissed.",
         "zh": "即使檢查正常，我仍覺得自己的痛苦被輕忽。"
       },
+      "pronunciationGuide": {
+        "ja": "けんさに いじょうが ないと いわれても、 つらさを かるく あつかわれた ように かんじます。",
+        "en": "/ˈivɪn ɪf tɛsts ɑɹ ˈnɔɹməl, aɪ fil ðæt maɪ ˈsʌfɚɪŋ ɪz ˈbiɪŋ dɪˈsmɪst./",
+        "zh": "Jí shǐ jiǎn chá zhèng cháng， wǒ réng jué de zì jǐ de tòng kǔ bèi qīng hū。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「症状の頻度・強さ・生活への影響と、正常だった検査範囲」を確認し、検査が否定したことと、まだ説明できないことを分ける。",
             "en": "Check first; separate what tests ruled out from what remains unexplained.",
             "zh": "先確認症狀頻率、強度、生活影響與正常檢查涵蓋範圍，再區分檢查已排除與仍無法解釋的部分。"
+          },
+          "pronunciationGuide": {
+            "ja": "「しょうじょうの ひんど・ つよさ・ せいかつへの えいきょうと、 せいじょうだった けんさ はんい」を かくにん し、 けんさが ひてい した ことと、 まだ せつめい できない ことを わける。",
+            "en": "/tʃɛk fɝst; ˈsɛpɚˌeɪt wʌt tɛsts ɹuld aʊt fɹʌm wʌt ɹɪˈmeɪnz ˌʌnɪkˈspleɪnd./",
+            "zh": "Xiān què rèn zhèng zhuàng pín lǜ、 qiáng dù、 shēng huó yǐng xiǎng yǔ zhèng cháng jiǎn chá hán gài fàn wéi， zài qū fēn jiǎn chá yǐ pái chú yǔ réng wú fǎ jiě shì de bù fen。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "Only separate what tests ruled out from what remains unexplained.",
             "zh": "只區分檢查已排除與仍無法解釋的部分，但省略症狀頻率、強度、生活影響與正常檢查涵蓋範圍的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "けんさが ひてい した ことと、 まだ せつめい できない ことを わけるが、「しょうじょうの ひんど・ つよさ・ せいかつへの えいきょうと、 せいじょうだった けんさ はんい」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ˈsɛpɚˌeɪt wʌt tɛsts ɹuld aʊt fɹʌm wʌt ɹɪˈmeɪnz ˌʌnɪkˈspleɪnd./",
+            "zh": "Zhī qū fēn jiǎn chá yǐ pái chú yǔ réng wú fǎ jiě shì de bù fen， dàn shěng lüè zhèng zhuàng pín lǜ、 qiáng dù、 shēng huó yǐng xiǎng yǔ zhèng cháng jiǎn chá hán gài fàn wéi de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -200,6 +215,11 @@
             "ja": "検査が否定したことと、まだ説明できないことを分けることはせず、問題ないと断定します。",
             "en": "Do not separate what tests ruled out from what remains unexplained; say there is no problem.",
             "zh": "不區分檢查已排除與仍無法解釋的部分，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "けんさが ひてい した ことと、 まだ せつめい できない ことを わける ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt ˈsɛpɚˌeɪt wʌt tɛsts ɹuld aʊt fɹʌm wʌt ɹɪˈmeɪnz ˌʌnɪkˈspleɪnd; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bù qū fēn jiǎn chá yǐ pái chú yǔ réng wú fǎ jiě shì de bù fen， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,
@@ -234,6 +254,11 @@
         "en": "Could you check symptom records, triggers, medicines, and sleep relevant to next assessment more closely?",
         "zh": "可以更仔細確認症狀紀錄、誘因、藥物與睡眠等後續評估資訊嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "とくに「しょうじょう きろく、 ゆういん、 くすり、 すいみんなど つぎの ひょうかに やくだつ じょうほう」を もうすこし かくにん して もらえますか？",
+        "en": "/kʊd ju tʃɛk ˈsɪmptəm ɹəˈkɔɹdz, ˈtɹɪɡɚz, ˈmɛdəsənz, ənd slip ˈɹɛləvənt tu nɛkst əˈsɛsmənt mɔɹ ˈkloʊsli?/",
+        "zh": "Kě yǐ gèng zǎi xì què rèn zhèng zhuàng jì lù、 yòu yīn、 yào wù yǔ shuì mián děng hòu xù píng gū zī xùn ma？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「症状記録、誘因、薬、睡眠など次の評価に役立つ情報」を確認し、患者と優先順位を決め、追加評価の候補を説明する。",
             "en": "Check first; set priorities with the patient and explain possible next assessments.",
             "zh": "先確認症狀紀錄、誘因、藥物與睡眠等後續評估資訊，再與患者排定優先順序並說明後續評估選項。"
+          },
+          "pronunciationGuide": {
+            "ja": "「しょうじょう きろく、 ゆういん、 くすり、 すいみんなど つぎの ひょうかに やくだつ じょうほう」を かくにん し、 かんじゃと ゆうせん じゅんいを きめ、 ついか ひょうかの こうほを せつめい する。",
+            "en": "/tʃɛk fɝst; sɛt pɹaɪˈɔɹətiz wɪð ðə ˈpeɪʃənt ənd ɪkˈspleɪn ˈpɑsəbəl nɛkst əˈsɛsmənts./",
+            "zh": "Xiān què rèn zhèng zhuàng jì lù、 yòu yīn、 yào wù yǔ shuì mián děng hòu xù píng gū zī xùn， zài yǔ huàn zhě pái dìng yōu xiān shùn xù bìng shuō míng hòu xù píng gū xuǎn xiàng。"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "Only set priorities with the patient and explain possible next assessments.",
             "zh": "只與患者排定優先順序並說明後續評估選項，但省略症狀紀錄、誘因、藥物與睡眠等後續評估資訊的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "かんじゃと ゆうせん じゅんいを きめ、 ついか ひょうかの こうほを せつめい するが、「しょうじょう きろく、 ゆういん、 くすり、 すいみんなど つぎの ひょうかに やくだつ じょうほう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli sɛt pɹaɪˈɔɹətiz wɪð ðə ˈpeɪʃənt ənd ɪkˈspleɪn ˈpɑsəbəl nɛkst əˈsɛsmənts./",
+            "zh": "Zhī yǔ huàn zhě pái dìng yōu xiān shùn xù bìng shuō míng hòu xù píng gū xuǎn xiàng， dàn shěng lüè zhèng zhuàng jì lù、 yòu yīn、 yào wù yǔ shuì mián děng hòu xù píng gū zī xùn de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -327,6 +362,11 @@
             "ja": "患者と優先順位を決め、追加評価の候補を説明することはせず、問題ないと断定します。",
             "en": "Do not set priorities with the patient and explain possible next assessments; say there is no problem.",
             "zh": "不與患者排定優先順序並說明後續評估選項，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "かんじゃと ゆうせん じゅんいを きめ、 ついか ひょうかの こうほを せつめい する ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt sɛt pɹaɪˈɔɹətiz wɪð ðə ˈpeɪʃənt ənd ɪkˈspleɪn ˈpɑsəbəl nɛkst əˈsɛsmənts; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bù yǔ huàn zhě pái dìng yōu xiān shùn xù bìng shuō míng hòu xù píng gū xuǎn xiàng， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,
@@ -361,6 +401,11 @@
         "en": "Can we decide clearly how to document follow-up and safety-netting and confirm with teach-back, so I can explain it back?",
         "zh": "可以清楚決定如何書面化追蹤與安全網，並以回述確認理解，再讓我用自己的話重述嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "わたしが りかい できる よう、 ついせき けいかくと あんぜん かくにんを しょめんか し、 りかいを ふくしょうで たしかめる ことを ぐたいてきに きめられますか？",
+        "en": "/kæn wi ˌdɪˈsaɪd ˈklɪɹli haʊ tu ˈdɑkjəmɛnt ˈfɑloʊ - ʌp ənd ˈseɪfti - ˈnɛtɪŋ ənd kənˈfɝm wɪð titʃ - bæk, soʊ aɪ kæn ɪkˈspleɪn ɪt bæk?/",
+        "zh": "Kě yǐ qīng chǔ jué dìng rú hé shū miàn huà zhuī zōng yǔ ān quán wǎng， bìng yǐ huí shù què rèn lǐ jiě， zài ràng wǒ yòng zì jǐ de huà zhòng shù ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「次回予約、担当窓口、早く受診すべき変化」を確認し、追跡計画と安全確認を書面化し、理解を復唱で確かめる。",
             "en": "Check first; document follow-up and safety-netting and confirm with teach-back.",
             "zh": "先確認下次預約、聯絡窗口與需提早就醫的變化，再書面化追蹤與安全網，並以回述確認理解。"
+          },
+          "pronunciationGuide": {
+            "ja": "「じかい よやく、 たんとう まどぐち、 はやく じゅしん すべき へんか」を かくにん し、 ついせき けいかくと あんぜん かくにんを しょめんか し、 りかいを ふくしょうで たしかめる。",
+            "en": "/tʃɛk fɝst; ˈdɑkjəmɛnt ˈfɑloʊ - ʌp ənd ˈseɪfti - ˈnɛtɪŋ ənd kənˈfɝm wɪð titʃ - bæk./",
+            "zh": "Xiān què rèn xià cì yù yuē、 lián luò chuāng kǒu yǔ xū tí zǎo jiù yī de biàn huà， zài shū miàn huà zhuī zōng yǔ ān quán wǎng， bìng yǐ huí shù què rèn lǐ jiě。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "Only document follow-up and safety-netting and confirm with teach-back.",
             "zh": "只書面化追蹤與安全網，並以回述確認理解，但省略下次預約、聯絡窗口與需提早就醫的變化的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "ついせき けいかくと あんぜん かくにんを しょめんか し、 りかいを ふくしょうで たしかめるが、「じかい よやく、 たんとう まどぐち、 はやく じゅしん すべき へんか」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ˈdɑkjəmɛnt ˈfɑloʊ - ʌp ənd ˈseɪfti - ˈnɛtɪŋ ənd kənˈfɝm wɪð titʃ - bæk./",
+            "zh": "Zhī shū miàn huà zhuī zōng yǔ ān quán wǎng， bìng yǐ huí shù què rèn lǐ jiě， dàn shěng lüè xià cì yù yuē、 lián luò chuāng kǒu yǔ xū tí zǎo jiù yī de biàn huà de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -444,6 +499,11 @@
             "ja": "追跡計画と安全確認を書面化し、理解を復唱で確かめることはせず、問題ないと断定します。",
             "en": "Do not document follow-up and safety-netting and confirm with teach-back; say there is no problem.",
             "zh": "不書面化追蹤與安全網，並以回述確認理解，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "ついせき けいかくと あんぜん かくにんを しょめんか し、 りかいを ふくしょうで たしかめる ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt ˈdɑkjəmɛnt ˈfɑloʊ - ʌp ənd ˈseɪfti - ˈnɛtɪŋ ənd kənˈfɝm wɪð titʃ - bæk; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bù shū miàn huà zhuī zōng yǔ ān quán wǎng， bìng yǐ huí shù què rèn lǐ jiě， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,
@@ -478,6 +538,11 @@
         "en": "I feel unsafe because you minimized how being told it was imagined discouraged reporting important changes.",
         "zh": "你淡化被說成想太多後，不敢回報重要變化的影響，讓我感到不安。"
       },
+      "pronunciationGuide": {
+        "ja": "「きの せいと いわれ、 じゅうような へんかも はなせなく なった えいきょう」を かるく あつかわれた ようで ふあんです。",
+        "en": "/aɪ fil ənˈseɪf bɪˈkɔz ju ˈmɪnəˌmaɪzd haʊ ˈbiɪŋ toʊld ɪt wɑz ˌɪˈmædʒənd dɪˈskɝədʒd ɹiˈpɔɹtɪŋ ˌɪmˈpɔɹtənt ˈtʃeɪndʒəz./",
+        "zh": "Nǐ dàn huà bèi shuō chéng xiǎng tài duō hòu， bù gǎn huí bào zhòng yào biàn huà de yǐng xiǎng， ràng wǒ gǎn dào bù ān。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「気のせいと言われ、重要な変化も話せなくなった影響」を確認し、症状を否定したことを謝り、患者の言葉で経過を聞き直す。",
             "en": "Check first; apologize for dismissing symptoms and retake the history in the patient's words.",
             "zh": "先確認被說成想太多後，不敢回報重要變化的影響，再為否定症狀道歉，重新用患者的話了解病程。"
+          },
+          "pronunciationGuide": {
+            "ja": "「きの せいと いわれ、 じゅうような へんかも はなせなく なった えいきょう」を かくにん し、 しょうじょうを ひてい した ことを あやまり、 かんじゃの ことばで けいかを きき なおす。",
+            "en": "/tʃɛk fɝst; əˈpɑləˌdʒaɪz fɔɹ dɪˈsmɪsɪŋ ˈsɪmptəmz ənd ˈɹiˈteɪk ðə ˈhɪstɚi ɪn ðə ˈpeɪʃənts wɝdz./",
+            "zh": "Xiān què rèn bèi shuō chéng xiǎng tài duō hòu， bù gǎn huí bào zhòng yào biàn huà de yǐng xiǎng， zài wèi fǒu dìng zhèng zhuàng dào qiàn， chóng xīn yòng huàn zhě de huà liǎo jiě bìng chéng。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "Only apologize for dismissing symptoms and retake the history in the patient's words.",
             "zh": "只為否定症狀道歉，重新用患者的話了解病程，但省略被說成想太多後，不敢回報重要變化的影響的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "しょうじょうを ひてい した ことを あやまり、 かんじゃの ことばで けいかを きき なおすが、「きの せいと いわれ、 じゅうような へんかも はなせなく なった えいきょう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli əˈpɑləˌdʒaɪz fɔɹ dɪˈsmɪsɪŋ ˈsɪmptəmz ənd ˈɹiˈteɪk ðə ˈhɪstɚi ɪn ðə ˈpeɪʃənts wɝdz./",
+            "zh": "Zhī wèi fǒu dìng zhèng zhuàng dào qiàn， chóng xīn yòng huàn zhě de huà liǎo jiě bìng chéng， dàn shěng lüè bèi shuō chéng xiǎng tài duō hòu， bù gǎn huí bào zhòng yào biàn huà de yǐng xiǎng de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -561,6 +636,11 @@
             "ja": "症状を否定したことを謝り、患者の言葉で経過を聞き直すことはせず、問題ないと断定します。",
             "en": "Do not apologize for dismissing symptoms and retake the history in the patient's words; say there is no problem.",
             "zh": "不為否定症狀道歉，重新用患者的話了解病程，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "しょうじょうを ひてい した ことを あやまり、 かんじゃの ことばで けいかを きき なおす ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt əˈpɑləˌdʒaɪz fɔɹ dɪˈsmɪsɪŋ ˈsɪmptəmz ənd ˈɹiˈteɪk ðə ˈhɪstɚi ɪn ðə ˈpeɪʃənts wɝdz; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bú wèi fǒu dìng zhèng zhuàng dào qiàn， chóng xīn yòng huàn zhě de huà liǎo jiě bìng chéng， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,

@@ -112,6 +112,11 @@
         "en": "Give me the same medicine as before. Antibiotics will make me recover faster, right?",
         "zh": "請開上次一樣的藥，抗生素會讓我快點好，對吧？"
       },
+      "pronunciationGuide": {
+        "ja": "まえと おなじ くすりを だして ください。 こうきんやくなら はやく なおりますよね。",
+        "en": "/ɡɪv mi ðə seɪm ˈmɛdəsən æz bɪˈfɔɹ. ˌæntibaɪˈɑtɪks wɪl meɪk mi ɹɪˈkʌvɚ ˈfæstɚ, ɹaɪt?/",
+        "zh": "Qǐng kāi shàng cì yí yàng de yào， kàng shēng sù huì ràng wǒ kuài diǎn hǎo， duì ba？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「症状、経過、アレルギー、前回薬が効いたと感じた理由」を確認し、診察所見に基づき細菌性かウイルス性かを説明する。",
             "en": "Check first; explain the likely cause using the examination findings.",
             "zh": "先確認症狀、病程、過敏史與上次藥物看似有效的原因，再依診察結果說明較可能是細菌或病毒感染。"
+          },
+          "pronunciationGuide": {
+            "ja": "「しょうじょう、 けいか、 あれるぎー、 ぜんかいやくが きいたと かんじた りゆう」を かくにん し、 しんさつ しょけんに もとづき さいきんせいか ういるすせいかを せつめい する。",
+            "en": "/tʃɛk fɝst; ɪkˈspleɪn ðə ˈlaɪkli kɑz ˈjuzɪŋ ðə ɪɡˌzæməˈneɪʃən ˈfaɪndɪŋz./",
+            "zh": "Xiān què rèn zhèng zhuàng、 bìng chéng、 guò mǐn shǐ yǔ shàng cì yào wù kàn sì yǒu xiào de yuán yīn， zài yī zhěn chá jié guǒ shuō míng jiào kě néng shì xì jūn huò bìng dú gǎn rǎn。"
           },
           "axisScores": {
             "empathy": 20,
@@ -170,6 +180,11 @@
             "en": "Only explain the likely cause using the examination findings.",
             "zh": "只依診察結果說明較可能是細菌或病毒感染，但省略症狀、病程、過敏史與上次藥物看似有效的原因的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "しんさつ しょけんに もとづき さいきんせいか ういるすせいかを せつめい するが、「しょうじょう、 けいか、 あれるぎー、 ぜんかいやくが きいたと かんじた りゆう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ɪkˈspleɪn ðə ˈlaɪkli kɑz ˈjuzɪŋ ðə ɪɡˌzæməˈneɪʃən ˈfaɪndɪŋz./",
+            "zh": "Zhī yī zhěn chá jié guǒ shuō míng jiào kě néng shì xì jūn huò bìng dú gǎn rǎn， dàn shěng lüè zhèng zhuàng、 bìng chéng、 guò mǐn shǐ yǔ shàng cì yào wù kàn sì yǒu xiào de yuán yīn de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -200,6 +215,11 @@
             "ja": "診察所見に基づき細菌性かウイルス性かを説明することはせず、問題ないと断定します。",
             "en": "Do not explain the likely cause using the examination findings; say there is no problem.",
             "zh": "不依診察結果說明較可能是細菌或病毒感染，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "しんさつ しょけんに もとづき さいきんせいか ういるすせいかを せつめい する ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt ɪkˈspleɪn ðə ˈlaɪkli kɑz ˈjuzɪŋ ðə ɪɡˌzæməˈneɪʃən ˈfaɪndɪŋz; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bù yī zhěn chá jié guǒ shuō míng jiào kě néng shì xì jūn huò bìng dú gǎn rǎn， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,
@@ -234,6 +254,11 @@
         "en": "Could you check findings that support benefit versus side effects and resistance more closely?",
         "zh": "可以更仔細確認可能受益的診察所見與副作用、抗藥性風險嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "とくに「こうきんやくの りえきが みこめる しょけんと、 ふくさよう・ たいせいの ふりえき」を もうすこし かくにん して もらえますか？",
+        "en": "/kʊd ju tʃɛk ˈfaɪndɪŋz ðæt səˈpɔɹt ˈbɛnəfɪt ˈvɝsəs saɪd ɪˈfɛkts ənd ɹɪˈzɪstəns mɔɹ ˈkloʊsli?/",
+        "zh": "Kě yǐ gèng zǎi xì què rèn kě néng shòu yì de zhěn chá suǒ jiàn yǔ fù zuò yòng、 kàng yào xìng fēng xiǎn ma？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「抗菌薬の利益が見込める所見と、副作用・耐性の不利益」を確認し、今回は不要な根拠を平易に伝え、症状を和らげる方法を選ぶ。",
             "en": "Check first; explain plainly why it is not needed and choose symptom relief.",
             "zh": "先確認可能受益的診察所見與副作用、抗藥性風險，再用白話說明這次不需要，並選擇緩解症狀的方法。"
+          },
+          "pronunciationGuide": {
+            "ja": "「こうきんやくの りえきが みこめる しょけんと、 ふくさよう・ たいせいの ふりえき」を かくにん し、 こんかいは ふような こんきょを へいいに つたえ、 しょうじょうを やわらげる ほうほうを えらぶ。",
+            "en": "/tʃɛk fɝst; ɪkˈspleɪn ˈpleɪnli waɪ ɪt ɪz nɑt ˈnidəd ənd tʃuz ˈsɪmptəm ɹɪˈlif./",
+            "zh": "Xiān què rèn kě néng shòu yì de zhěn chá suǒ jiàn yǔ fù zuò yòng、 kàng yào xìng fēng xiǎn， zài yòng bái huà shuō míng zhè cì bù xū yào， bìng xuǎn zé huǎn jiě zhèng zhuàng de fāng fǎ。"
           },
           "axisScores": {
             "empathy": 20,
@@ -297,6 +327,11 @@
             "en": "Only explain plainly why it is not needed and choose symptom relief.",
             "zh": "只用白話說明這次不需要，並選擇緩解症狀的方法，但省略可能受益的診察所見與副作用、抗藥性風險的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "こんかいは ふような こんきょを へいいに つたえ、 しょうじょうを やわらげる ほうほうを えらぶが、「こうきんやくの りえきが みこめる しょけんと、 ふくさよう・ たいせいの ふりえき」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli ɪkˈspleɪn ˈpleɪnli waɪ ɪt ɪz nɑt ˈnidəd ənd tʃuz ˈsɪmptəm ɹɪˈlif./",
+            "zh": "Zhī yòng bái huà shuō míng zhè cì bù xū yào， bìng xuǎn zé huǎn jiě zhèng zhuàng de fāng fǎ， dàn shěng lüè kě néng shòu yì de zhěn chá suǒ jiàn yǔ fù zuò yòng、 kàng yào xìng fēng xiǎn de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -327,6 +362,11 @@
             "ja": "今回は不要な根拠を平易に伝え、症状を和らげる方法を選ぶことはせず、問題ないと断定します。",
             "en": "Do not explain plainly why it is not needed and choose symptom relief; say there is no problem.",
             "zh": "不用白話說明這次不需要，並選擇緩解症狀的方法，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "こんかいは ふような こんきょを へいいに つたえ、 しょうじょうを やわらげる ほうほうを えらぶ ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt ɪkˈspleɪn ˈpleɪnli waɪ ɪt ɪz nɑt ˈnidəd ənd tʃuz ˈsɪmptəm ɹɪˈlif; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bú yòng bái huà shuō míng zhè cì bù xū yào， bìng xuǎn zé huǎn jiě zhèng zhuàng de fāng fǎ， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,
@@ -361,6 +401,11 @@
         "en": "Can we decide clearly how to use teach-back for home care, review timing, and urgent contact, so I can explain it back?",
         "zh": "可以清楚決定如何請患者回述居家照護、回診期限與緊急聯絡，再讓我用自己的話重述嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "わたしが りかい できる よう、 じたく けあ、 さい み きげん、 きんきゅうじ れんらくを かんじゃに ふくしょう して もらう ことを ぐたいてきに きめられますか？",
+        "en": "/kæn wi ˌdɪˈsaɪd ˈklɪɹli haʊ tu jus titʃ - bæk fɔɹ hoʊm kɛɹ, ˌɹivˈju ˈtaɪmɪŋ, ənd ˈɝdʒənt ˈkɑnˌtækt, soʊ aɪ kæn ɪkˈspleɪn ɪt bæk?/",
+        "zh": "Kě yǐ qīng chǔ jué dìng rú hé qǐng huàn zhě huí shù jū jiā zhào hù、 huí zhěn qī xiàn yǔ jǐn jí lián luò， zài ràng wǒ yòng zì jǐ de huà zhòng shù ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「発熱継続、呼吸困難、悪化など再診すべき条件」を確認し、自宅ケア、再診期限、緊急時連絡を患者に復唱してもらう。",
             "en": "Check first; use teach-back for home care, review timing, and urgent contact.",
             "zh": "先確認持續發燒、呼吸困難或惡化等回診條件，再請患者回述居家照護、回診期限與緊急聯絡。"
+          },
+          "pronunciationGuide": {
+            "ja": "「はつねつ けいぞく、 こきゅう こんなん、 あっかなど さい み すべき じょうけん」を かくにん し、 じたく けあ、 さい み きげん、 きんきゅうじ れんらくを かんじゃに ふくしょう して もらう。",
+            "en": "/tʃɛk fɝst; jus titʃ - bæk fɔɹ hoʊm kɛɹ, ˌɹivˈju ˈtaɪmɪŋ, ənd ˈɝdʒənt ˈkɑnˌtækt./",
+            "zh": "Xiān què rèn chí xù fā shāo、 hū xī kùn nán huò è huà děng huí zhěn tiáo jiàn， zài qǐng huàn zhě huí shù jū jiā zhào hù、 huí zhěn qī xiàn yǔ jǐn jí lián luò。"
           },
           "axisScores": {
             "empathy": 20,
@@ -414,6 +464,11 @@
             "en": "Only use teach-back for home care, review timing, and urgent contact.",
             "zh": "只請患者回述居家照護、回診期限與緊急聯絡，但省略持續發燒、呼吸困難或惡化等回診條件的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "じたく けあ、 さい み きげん、 きんきゅうじ れんらくを かんじゃに ふくしょう して もらうが、「はつねつ けいぞく、 こきゅう こんなん、 あっかなど さい み すべき じょうけん」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli jus titʃ - bæk fɔɹ hoʊm kɛɹ, ˌɹivˈju ˈtaɪmɪŋ, ənd ˈɝdʒənt ˈkɑnˌtækt./",
+            "zh": "Zhī qǐng huàn zhě huí shù jū jiā zhào hù、 huí zhěn qī xiàn yǔ jǐn jí lián luò， dàn shěng lüè chí xù fā shāo、 hū xī kùn nán huò è huà děng huí zhěn tiáo jiàn de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -444,6 +499,11 @@
             "ja": "自宅ケア、再診期限、緊急時連絡を患者に復唱してもらうことはせず、問題ないと断定します。",
             "en": "Do not use teach-back for home care, review timing, and urgent contact; say there is no problem.",
             "zh": "不請患者回述居家照護、回診期限與緊急聯絡，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "じたく けあ、 さい み きげん、 きんきゅうじ れんらくを かんじゃに ふくしょう して もらう ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt jus titʃ - bæk fɔɹ hoʊm kɛɹ, ˌɹivˈju ˈtaɪmɪŋ, ənd ˈɝdʒənt ˈkɑnˌtækt; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bù qǐng huàn zhě huí shù jū jiā zhào hù、 huí zhěn qī xiàn yǔ jǐn jí lián luò， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,
@@ -478,6 +538,11 @@
         "en": "I feel unsafe because you minimized the impact of being labeled as drug-seeking before symptoms were heard.",
         "zh": "你淡化在症狀未被聽取前就被貼上求藥標籤的影響，讓我感到不安。"
       },
+      "pronunciationGuide": {
+        "ja": "「くすりを もとめる かんじゃだと きめつけられ、 しょうじょうを きかれなかった えいきょう」を かるく あつかわれた ようで ふあんです。",
+        "en": "/aɪ fil ənˈseɪf bɪˈkɔz ju ˈmɪnəˌmaɪzd ðə ˌɪmˈpækt ʌv ˈbiɪŋ ˈleɪbəld æz dɹʌɡ - ˈsikɪŋ bɪˈfɔɹ ˈsɪmptəmz wɝ hɝd./",
+        "zh": "Nǐ dàn huà zài zhèng zhuàng wèi bèi tīng qǔ qián jiù bèi tiē shàng qiú yào biāo qiān de yǐng xiǎng， ràng wǒ gǎn dào bù ān。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「薬を求める患者だと決めつけられ、症状を聞かれなかった影響」を確認し、決めつけを謝罪し、症状と期待を最初から評価し直す。",
             "en": "Check first; apologize for the label and reassess symptoms and expectations.",
             "zh": "先確認在症狀未被聽取前就被貼上求藥標籤的影響，再為貼標籤道歉，重新評估症狀與期待。"
+          },
+          "pronunciationGuide": {
+            "ja": "「くすりを もとめる かんじゃだと きめつけられ、 しょうじょうを きかれなかった えいきょう」を かくにん し、 きめつけを しゃざい し、 しょうじょうと きたいを さいしょから ひょうか し なおす。",
+            "en": "/tʃɛk fɝst; əˈpɑləˌdʒaɪz fɔɹ ðə ˈleɪbəl ənd ɹiəˈsɛs ˈsɪmptəmz ənd ˌɛkspɛkˈteɪʃənz./",
+            "zh": "Xiān què rèn zài zhèng zhuàng wèi bèi tīng qǔ qián jiù bèi tiē shàng qiú yào biāo qiān de yǐng xiǎng， zài wèi tiē biāo qiān dào qiàn， chóng xīn píng gū zhèng zhuàng yǔ qī dài。"
           },
           "axisScores": {
             "empathy": 20,
@@ -531,6 +601,11 @@
             "en": "Only apologize for the label and reassess symptoms and expectations.",
             "zh": "只為貼標籤道歉，重新評估症狀與期待，但省略在症狀未被聽取前就被貼上求藥標籤的影響的查證。"
           },
+          "pronunciationGuide": {
+            "ja": "きめつけを しゃざい し、 しょうじょうと きたいを さいしょから ひょうか し なおすが、「くすりを もとめる かんじゃだと きめつけられ、 しょうじょうを きかれなかった えいきょう」の かくにんは はぶきます。",
+            "en": "/ˈoʊnli əˈpɑləˌdʒaɪz fɔɹ ðə ˈleɪbəl ənd ɹiəˈsɛs ˈsɪmptəmz ənd ˌɛkspɛkˈteɪʃənz./",
+            "zh": "Zhī wèi tiē biāo qiān dào qiàn， chóng xīn píng gū zhèng zhuàng yǔ qī dài， dàn shěng lüè zài zhèng zhuàng wèi bèi tīng qǔ qián jiù bèi tiē shàng qiú yào biāo qiān de yǐng xiǎng de chá zhèng。"
+          },
           "axisScores": {
             "empathy": 14,
             "plain-language": 14,
@@ -561,6 +636,11 @@
             "ja": "決めつけを謝罪し、症状と期待を最初から評価し直すことはせず、問題ないと断定します。",
             "en": "Do not apologize for the label and reassess symptoms and expectations; say there is no problem.",
             "zh": "不為貼標籤道歉，重新評估症狀與期待，直接斷言沒有問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "きめつけを しゃざい し、 しょうじょうと きたいを さいしょから ひょうか し なおす ことは せず、 もんだいないと だんてい します。",
+            "en": "/du nɑt əˈpɑləˌdʒaɪz fɔɹ ðə ˈleɪbəl ənd ɹiəˈsɛs ˈsɪmptəmz ənd ˌɛkspɛkˈteɪʃənz; seɪ ðɛɹ ɪz noʊ ˈpɹɑbləm./",
+            "zh": "Bú wèi tiē biāo qiān dào qiàn， chóng xīn píng gū zhèng zhuàng yǔ qī dài， zhí jiē duàn yán méi yǒu wèn tí。"
           },
           "axisScores": {
             "empathy": 2,
