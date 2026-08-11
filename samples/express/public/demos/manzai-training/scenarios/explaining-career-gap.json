@@ -77,6 +77,11 @@
         "en": "Your résumé has an eighteen-month gap. Please tell me about that period.",
         "zh": "履歷上有一年半的空窗，請說明這段期間。"
       },
+      "pronunciationGuide": {
+        "ja": "りれきしょに いちねんはんの くうはくが あります。 この きかんについて おしえて ください。",
+        "en": "/jɔɹ ɑɹ é sʌm é hæz æn eɪˈtin - mʌnθ ɡæp. pliz tɛl mi əˈbaʊt ðæt ˈpɪɹiəd./",
+        "zh": "Lǚ lì shàng yǒu yì nián bàn de kōng chuāng， qǐng shuō míng zhè duàn qī jiān。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "I left to support family and completed a professional course. The situation is settled and I can work consistently.",
             "zh": "我因支援家人離職，期間完成每週兩次的職能課程。目前狀況已穩定，可持續工作。"
           },
+          "pronunciationGuide": {
+            "ja": "かぞくの しえんで りしょく し、 そのかんに しゅう にかいの ぎょうむ こうざを しゅうりょう しました。 じょうきょうは ととのい、 げんざいは けいぞく して きんむ できます。",
+            "en": "/aɪ lɛft tu səˈpɔɹt ˈfæməli ənd kəmˈplitəd ə pɹəˈfɛʃənəl kɔɹs. ðə ˌsɪtʃuˈeɪʃən ɪz ˈsɛtəld ənd aɪ kæn wɝk kənˈsɪstəntli./",
+            "zh": "Wǒ yīn zhī yuán jiā rén lí zhí， qī jiān wán chéng měi zhōu liǎng cì de zhí néng kè chéng。 mù qián zhuàng kuàng yǐ wěn dìng， kě chí xù gōng zuò。"
+          },
           "axisScores": {
             "relevance": 20,
             "credibility": 20,
@@ -118,6 +128,11 @@
             "en": "I took time off for family reasons, but it is no longer an issue.",
             "zh": "我因家庭因素休息了一段時間，現在已沒有問題。"
           },
+          "pronunciationGuide": {
+            "ja": "かていの じじょうで やすんで いましたが、 いまは もんだい ありません。",
+            "en": "/aɪ tʊk taɪm ɔf fɔɹ ˈfæməli ˈɹizənz, bʌt ɪt ɪz noʊ ˈlɔŋɡɚ æn ˈɪʃu./",
+            "zh": "Wǒ yīn jiā tíng yīn sù xiū xi le yí duàn shí jiān， xiàn zài yǐ méi yǒu wèn tí。"
+          },
           "axisScores": {
             "relevance": 14,
             "credibility": 13,
@@ -136,6 +151,11 @@
             "ja": "その期間はフリーランスのコンサルタントをしていました。",
             "en": "I worked as a freelance consultant during that period.",
             "zh": "那段期間我擔任自由顧問。"
+          },
+          "pronunciationGuide": {
+            "ja": "その きかんは ふりーらんすの こんさるたんとを して いました。",
+            "en": "/aɪ wɝkt æz ə ˈfɹiˌlæns kənˈsʌltənt ˈdʊɹɪŋ ðæt ˈpɪɹiəd./",
+            "zh": "Nà duàn qī jiān wǒ dān rèn zì yóu gù wèn。"
           },
           "axisScores": {
             "relevance": 8,
@@ -157,6 +177,11 @@
         "ja": "その期間に得たことと、今この仕事を続けられる根拠を教えてください。",
         "en": "What did you gain during the period, and what supports your readiness for this role now?",
         "zh": "那段期間獲得了什麼？現在能持續從事這份工作的根據是什麼？"
+      },
+      "pronunciationGuide": {
+        "ja": "その きかんに えた ことと、 いま この しごとを つづけられる こんきょを おしえて ください。",
+        "en": "/wʌt dɪd ju ɡeɪn ˈdʊɹɪŋ ðə ˈpɪɹiəd, ənd wʌt səˈpɔɹts jɔɹ ˈɹɛdinəs fɔɹ ðɪs ɹoʊl naʊ?/",
+        "zh": "Nà duàn qī jiān huò dé le shén me？ xiàn zài néng chí xù cóng shì zhè fèn gōng zuò de gēn jù shì shén me？"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "I learned customer analytics and built a case project. My arrangements are stable, so I can work five days a week.",
             "zh": "我學習顧客數據分析並完成案例改善案；支援安排已穩定，可每週工作五天。"
           },
+          "pronunciationGuide": {
+            "ja": "こうざで こきゃく でーた ぶんせきを まなび、 かくう あんけんで かいぜんあんを つくりました。 しえん たいせいも ととのい、 しゅう ごにちの きんむが かのうです。",
+            "en": "/aɪ lɝnd ˈkʌstəmɚ ˌænəˈlɪtɪks ənd bɪlt ə keɪs ˈpɹɑdʒɛkt. maɪ ɚˈeɪndʒmənts ɑɹ ˈsteɪbəl, soʊ aɪ kæn wɝk faɪv deɪz ə wik./",
+            "zh": "Wǒ xué xí gù kè shù jù fēn xī bìng wán chéng àn lì gǎi shàn àn； zhī yuán ān pái yǐ wěn dìng， kě měi zhōu gōng zuò wǔ tiān。"
+          },
           "axisScores": {
             "relevance": 20,
             "credibility": 20,
@@ -199,6 +229,11 @@
             "en": "Let me explain my family member's condition and treatment in detail.",
             "zh": "我來詳細說明家人的病情與治療經過。"
           },
+          "pronunciationGuide": {
+            "ja": "かぞくの びょうじょうと ちりょう けいかを くわしく せつめい します。",
+            "en": "/lɛt mi ɪkˈspleɪn maɪ ˈfæməli ˈmɛmbɚz kənˈdɪʃən ənd ˈtɹitmənt ɪn dɪˈteɪl./",
+            "zh": "Wǒ lái xiáng xì shuō míng jiā rén de bìng qíng yǔ zhì liáo jīng guò。"
+          },
           "axisScores": {
             "relevance": 7,
             "credibility": 12,
@@ -217,6 +252,11 @@
             "ja": "空白期間で評価されるのは納得できません。今の能力だけ見てください。",
             "en": "It is unfair to judge a gap. Evaluate only my current ability.",
             "zh": "用空窗期評價我並不合理，請只看現在能力。"
+          },
+          "pronunciationGuide": {
+            "ja": "くうはく きかんで ひょうか される のは なっとく できません。 いまの のうりょくだけ みて ください。",
+            "en": "/ɪt ɪz ənˈfɛɹ tu dʒʌdʒ ə ɡæp. ɪˈvæljuˌeɪt ˈoʊnli maɪ ˈkɝənt əˈbɪləˌti./",
+            "zh": "Yòng kōng chuāng qī píng jià wǒ bìng bù hé lǐ， qǐng zhī kàn xiàn zài néng lì。"
           },
           "axisScores": {
             "relevance": 5,
@@ -238,6 +278,11 @@
         "ja": "この経験を、募集している顧客分析の役割でどう生かせますか。",
         "en": "How would this experience help in our customer analytics role?",
         "zh": "這段經驗如何運用在我們招募的顧客分析職位？"
+      },
+      "pronunciationGuide": {
+        "ja": "この けいけんを、 ぼしゅう して いる こきゃく ぶんせきの やくわりで どう いかせますか。",
+        "en": "/haʊ wʊd ðɪs ɪkˈspɪɹiəns hɛlp ɪn ˈaʊɚ ˈkʌstəmɚ ˌænəˈlɪtɪks ɹoʊl?/",
+        "zh": "Zhè duàn jīng yàn rú hé yùn yòng zài wǒ men zhāo mù de gù kè fēn xī zhí wèi？"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "I can apply my churn-analysis project to retention work here. What outcomes are expected in the first three months?",
             "zh": "我能把課程中的流失分析運用於貴公司留存改善。也想請問前三個月期待的成果。"
           },
+          "pronunciationGuide": {
+            "ja": "こうざで おこなった りだつ ぶんせきを、 おんしゃの けいぞくりつ かいぜんに おうよう できます。 さいしょの さんかげつで きたい される せいかも うかがえますか。",
+            "en": "/aɪ kæn əˈplaɪ maɪ tʃɝn - əˈnæləsəs ˈpɹɑdʒɛkt tu ɹiˈtɛnʃən wɝk hiɹ. wʌt ˈaʊtˌkʌmz ɑɹ ɪkˈspɛktəd ɪn ðə fɝst θɹi mʌnθs?/",
+            "zh": "Wǒ néng bǎ kè chéng zhōng de liú shī fēn xī yùn yòng yú guì gōng sī liú cún gǎi shàn。 yě xiǎng qǐng wèn qián sān gè yuè qī dài de chéng guǒ。"
+          },
           "axisScores": {
             "relevance": 20,
             "credibility": 20,
@@ -280,6 +330,11 @@
             "en": "I learn quickly, so I can handle any work.",
             "zh": "我學習能力強，任何工作都能應付。"
           },
+          "pronunciationGuide": {
+            "ja": "まなぶ ちからが あるので、 どんな しごとにも たいおう できます。",
+            "en": "/aɪ lɝn ˈkwɪkli, soʊ aɪ kæn ˈhændəl ˈɛni wɝk./",
+            "zh": "Wǒ xué xí néng lì qiáng， rèn hé gōng zuò dōu néng yìng fù。"
+          },
           "axisScores": {
             "relevance": 12,
             "credibility": 8,
@@ -298,6 +353,11 @@
             "ja": "まず給与と休暇の日数を確認したいです。",
             "en": "First, I want to confirm salary and vacation days.",
             "zh": "我想先確認薪資與休假天數。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず きゅうよと きゅうかの にっすうを かくにん したいです。",
+            "en": "/fɝst, aɪ wɑnt tu kənˈfɝm ˈsælɚi ənd veɪˈkeɪʃən deɪz./",
+            "zh": "Wǒ xiǎng xiān què rèn xīn zī yǔ xiū jià tiān shù。"
           },
           "axisScores": {
             "relevance": 3,
