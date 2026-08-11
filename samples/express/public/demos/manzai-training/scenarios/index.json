@@ -80,6 +80,22 @@
         "en": "Workplace Communication",
         "zh": "主管與部屬溝通"
       }
+    },
+    {
+      "id": "apology-response",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "確認された事実と相手の反応によって説明や補償の順序が変わるため、中級以上では分岐を推奨します。",
+          "en": "Branching is recommended when confirmed facts and reactions change the order of explanation and remedy.",
+          "zh": "當已確認事實與對方反應會改變說明及補救順序時，建議採用分支。"
+        }
+      },
+      "title": {
+        "ja": "謝罪・火消し",
+        "en": "Apology and Incident Response",
+        "zh": "道歉與事件應對"
+      }
     }
   ],
   "scenarios": [
@@ -595,6 +611,33 @@
         "zh": "向主管提出異議"
       },
       "path": "./scenarios/disagreeing-with-manager.json"
+    },
+    {
+      "id": "service-outage-apology",
+      "categoryId": "apology-response",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "サービス障害の初動謝罪",
+        "en": "Service Outage Apology",
+        "zh": "服務中斷道歉"
+      },
+      "path": "./scenarios/service-outage-apology.json"
     }
   ]
 }
