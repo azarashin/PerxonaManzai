@@ -77,6 +77,11 @@
         "en": "I'll do my homework later, so I want one more hour of gaming.",
         "zh": "功課晚點再做，我想再玩一小時。"
       },
+      "pronunciationGuide": {
+        "ja": "しゅくだいは あとで やるから、 もう いちじかんだけ げーむを つづけたい。",
+        "en": "/aɪl du maɪ ˈhoʊmˌwɝk ˈleɪtɚ, soʊ aɪ wɑnt wʌn mɔɹ ˈaʊɚ ʌv ˈɡeɪmɪŋ./",
+        "zh": "Gōng kè wǎn diǎn zài zuò， wǒ xiǎng zài wán yì xiǎo shí。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "Check the concern first; then try a 30-minute extension followed by homework when the timer rings.",
             "zh": "先確認何時開始作業以及剩餘份量，再試行延長三十分鐘，計時器響後開始作業。"
           },
+          "pronunciationGuide": {
+            "ja": "「しゅくだいを はじめる じこくと のこって いる りょう」を たしかめ、 さんじ ゅっぷんだけ えんちょう し、 たいまーごに しゅくだいを はじめる やくそくを ためす。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn tɹaɪ ə ˈθɝˌdi - ˈmɪnət ɪkˈstɛnʃən ˈfɑloʊd baɪ ˈhoʊmˌwɝk wɛn ðə ˈtaɪmɚ ɹɪŋz./",
+            "zh": "Xiān què rèn hé shí kāi shǐ zuò yè yǐ jí shèng yú fèn liàng， zài shì xíng yán cháng sān shí fēn zhōng， jì shí qì xiǎng hòu kāi shǐ zuò yè。"
+          },
           "axisScores": {
             "empathy": 20,
             "boundary-keeping": 20,
@@ -118,6 +128,11 @@
             "en": "Just try a 30-minute extension followed by homework when the timer rings, without more questions.",
             "zh": "先試行延長三十分鐘，計時器響後開始作業，但暫不確認何時開始作業以及剩餘份量。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに さんじ ゅっぷんだけ えんちょう し、 たいまーごに しゅくだいを はじめる やくそくを ためす。ただし「しゅくだいを はじめる じこくと のこって いる りょう」の かくにんは あとまわしです。",
+            "en": "/dʒʌst tɹaɪ ə ˈθɝˌdi - ˈmɪnət ɪkˈstɛnʃən ˈfɑloʊd baɪ ˈhoʊmˌwɝk wɛn ðə ˈtaɪmɚ ɹɪŋz, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān shì xíng yán cháng sān shí fēn zhōng， jì shí qì xiǎng hòu kāi shǐ zuò yè， dàn zàn bú què rèn hé shí kāi shǐ zuò yè yǐ jí shèng yú fèn liàng。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -136,6 +151,11 @@
             "ja": "「宿題を始める時刻と残っている量」は関係ありません。親の判断に従わせます。",
             "en": "Do not try a 30-minute extension followed by homework when the timer rings; the parent decides.",
             "zh": "何時開始作業以及剩餘份量並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「しゅくだいを はじめる じこくと のこって いる りょう」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt tɹaɪ ə ˈθɝˌdi - ˈmɪnət ɪkˈstɛnʃən ˈfɑloʊd baɪ ˈhoʊmˌwɝk wɛn ðə ˈtaɪmɚ ɹɪŋz; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Hé shí kāi shǐ zuò yè yǐ jí shèng yú fèn liàng bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -157,6 +177,11 @@
         "ja": "大切なのは「友達との対戦が終わる時刻と途中退出の影響」です。どう確かめますか？",
         "en": "What matters is when the match ends and what leaving early affects. How will you check it?",
         "zh": "重點是對戰結束時間與中途退出的影響。你會如何確認？"
+      },
+      "pronunciationGuide": {
+        "ja": "たいせつな のは「ともだちとの たいせんが おわる じこくと とちゅう たいしゅつの えいきょう」です。 どう たしかめますか？",
+        "en": "/wʌt ˈmætɚz ɪz wɛn ðə mætʃ ɛndz ənd wʌt ˈlivɪŋ ˈɝli əˈfɛkts. haʊ wɪl ju tʃɛk ɪt?/",
+        "zh": "Zhòng diǎn shì duì zhàn jié shù shí jiān yǔ zhōng tú tuì chū de yǐng xiǎng。 nǐ huì rú hé què rèn？"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "Check the concern first; then end after one match and set a five-minute warning.",
             "zh": "先確認對戰結束時間與中途退出的影響，再一局後結束並設定五分鐘前提醒。"
           },
+          "pronunciationGuide": {
+            "ja": "「ともだちとの たいせんが おわる じこくと とちゅう たいしゅつの えいきょう」を たしかめ、 いち しあいで おえ、 しゅうりょう ごふん まえの あいずを せってい する。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn ɛnd ˈæftɚ wʌn mætʃ ənd sɛt ə faɪv - ˈmɪnət ˈwɔɹnɪŋ./",
+            "zh": "Xiān què rèn duì zhàn jié shù shí jiān yǔ zhōng tú tuì chū de yǐng xiǎng， zài yì jú hòu jié shù bìng shè dìng wǔ fēn zhōng qián tí xǐng。"
+          },
           "axisScores": {
             "empathy": 20,
             "boundary-keeping": 20,
@@ -199,6 +229,11 @@
             "en": "Just end after one match and set a five-minute warning, without more questions.",
             "zh": "先一局後結束並設定五分鐘前提醒，但暫不確認對戰結束時間與中途退出的影響。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに いち しあいで おえ、 しゅうりょう ごふん まえの あいずを せってい する。ただし「ともだちとの たいせんが おわる じこくと とちゅう たいしゅつの えいきょう」の かくにんは あとまわしです。",
+            "en": "/dʒʌst ɛnd ˈæftɚ wʌn mætʃ ənd sɛt ə faɪv - ˈmɪnət ˈwɔɹnɪŋ, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān yì jú hòu jié shù bìng shè dìng wǔ fēn zhōng qián tí xǐng， dàn zàn bú què rèn duì zhàn jié shù shí jiān yǔ zhōng tú tuì chū de yǐng xiǎng。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -217,6 +252,11 @@
             "ja": "「友達との対戦が終わる時刻と途中退出の影響」は関係ありません。親の判断に従わせます。",
             "en": "Do not end after one match and set a five-minute warning; the parent decides.",
             "zh": "對戰結束時間與中途退出的影響並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「ともだちとの たいせんが おわる じこくと とちゅう たいしゅつの えいきょう」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt ɛnd ˈæftɚ wʌn mætʃ ənd sɛt ə faɪv - ˈmɪnət ˈwɔɹnɪŋ; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Duì zhàn jié shù shí jiān yǔ zhōng tú tuì chū de yǐng xiǎng bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,
@@ -238,6 +278,11 @@
         "ja": "次に、今夜の順番を記録し、週末に機能したか親子で見直すことを具体的に決めたいです。",
         "en": "Can we decide specifically how to write tonight's sequence and review together on the weekend?",
         "zh": "可以具體決定如何記下今晚順序並在週末親子共同檢討嗎？"
+      },
+      "pronunciationGuide": {
+        "ja": "つぎに、 こんやの じゅんばんを きろく し、 しゅうまつに きのう したか おやこで みなおす ことを ぐたいてきに きめたいです。",
+        "en": "/kæn wi ˌdɪˈsaɪd spəˈsɪfɪkli haʊ tu ɹaɪt təˈnaɪts ˈsikwəns ənd ˌɹivˈju təˈɡɛðɚ ɑn ðə ˈwiˌkɛnd?/",
+        "zh": "Kě yǐ jù tǐ jué dìng rú hé jì xià jīn wǎn shùn xù bìng zài zhōu mò qīn zǐ gòng tóng jiǎn tǎo ma？"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "Check the concern first; then write tonight's sequence and review together on the weekend.",
             "zh": "先確認延後作業的責任與明日行程，再記下今晚順序並在週末親子共同檢討。"
           },
+          "pronunciationGuide": {
+            "ja": "「しゅくだいを あとまわしに した ばあいの せきにんと あしたの よてい」を たしかめ、 こんやの じゅんばんを きろく し、 しゅうまつに きのう したか おやこで みなおす。",
+            "en": "/tʃɛk ðə kənˈsɝn fɝst; ðɛn ɹaɪt təˈnaɪts ˈsikwəns ənd ˌɹivˈju təˈɡɛðɚ ɑn ðə ˈwiˌkɛnd./",
+            "zh": "Xiān què rèn yán hòu zuò yè de zé rèn yǔ míng rì xíng chéng， zài jì xià jīn wǎn shùn xù bìng zài zhōu mò qīn zǐ gòng tóng jiǎn tǎo。"
+          },
           "axisScores": {
             "empathy": 20,
             "boundary-keeping": 20,
@@ -280,6 +330,11 @@
             "en": "Just write tonight's sequence and review together on the weekend, without more questions.",
             "zh": "先記下今晚順序並在週末親子共同檢討，但暫不確認延後作業的責任與明日行程。"
           },
+          "pronunciationGuide": {
+            "ja": "さきに こんやの じゅんばんを きろく し、 しゅうまつに きのう したか おやこで みなおす。ただし「しゅくだいを あとまわしに した ばあいの せきにんと あしたの よてい」の かくにんは あとまわしです。",
+            "en": "/dʒʌst ɹaɪt təˈnaɪts ˈsikwəns ənd ˌɹivˈju təˈɡɛðɚ ɑn ðə ˈwiˌkɛnd, wɪˈθaʊt mɔɹ ˈkwɛstʃənz./",
+            "zh": "Xiān jì xià jīn wǎn shùn xù bìng zài zhōu mò qīn zǐ gòng tóng jiǎn tǎo， dàn zàn bú què rèn yán hòu zuò yè de zé rèn yǔ míng rì xíng chéng。"
+          },
           "axisScores": {
             "empathy": 13,
             "boundary-keeping": 14,
@@ -298,6 +353,11 @@
             "ja": "「宿題を後回しにした場合の責任と明日の予定」は関係ありません。親の判断に従わせます。",
             "en": "Do not write tonight's sequence and review together on the weekend; the parent decides.",
             "zh": "延後作業的責任與明日行程並不重要；由父母決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「しゅくだいを あとまわしに した ばあいの せきにんと あしたの よてい」は かんけい ありません。 おやの はんだんに したがわせます。",
+            "en": "/du nɑt ɹaɪt təˈnaɪts ˈsikwəns ənd ˌɹivˈju təˈɡɛðɚ ɑn ðə ˈwiˌkɛnd; ðə ˈpɛɹənt ˌdɪˈsaɪdz./",
+            "zh": "Yán hòu zuò yè de zé rèn yǔ míng rì xíng chéng bìng bú zhòng yào； yóu fù mǔ jué dìng。"
           },
           "axisScores": {
             "empathy": 2,
