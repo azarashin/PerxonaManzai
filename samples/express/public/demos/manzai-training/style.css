@@ -418,6 +418,27 @@ button:disabled {
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 20%, transparent);
 }
 
+.asset-choice-selected-mark {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  display: none;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 2px solid var(--surface-raised);
+  border-radius: 50%;
+  color: #fff;
+  background: var(--accent);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+  place-items: center;
+}
+
+.asset-choice:has(input:checked) .asset-choice-selected-mark {
+  display: grid;
+}
+
 .asset-choice:has(input:focus-visible) {
   outline: 2px solid var(--accent);
   outline-offset: 2px;

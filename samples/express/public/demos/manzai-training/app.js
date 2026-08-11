@@ -1026,10 +1026,16 @@ function createAssetChoice(asset) {
   const name = document.createElement("span");
   name.className = "asset-choice-name";
   name.textContent = assetDisplayName(asset);
+  name.title = name.textContent;
   const id = document.createElement("span");
   id.className = "asset-choice-id";
   id.textContent = asset.id;
-  label.append(input, media, name, id);
+  id.title = asset.id;
+  const selectedMark = document.createElement("span");
+  selectedMark.className = "asset-choice-selected-mark";
+  selectedMark.setAttribute("aria-hidden", "true");
+  selectedMark.textContent = "✓";
+  label.append(input, media, name, id, selectedMark);
   return label;
 }
 
