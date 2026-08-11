@@ -112,6 +112,11 @@
         "en": "The direction is set. If you disagree, show evidence rather than an opinion.",
         "zh": "方向已經決定。如果反對，請提出依據而不是感想。"
       },
+      "pronunciationGuide": {
+        "ja": "ほうしんは きめました。 はんたいなら、 かんそうではなく こんきょを しめして ください。",
+        "en": "/ðə dɚˈɛkʃən ɪz sɛt. ɪf ju dɪsəˈɡɹi, ʃoʊ ˈɛvədəns ˈɹæðɚ ðæn æn əˈpɪnjən./",
+        "zh": "Fāng xiàng yǐ jīng jué dìng。 rú guǒ fǎn duì， qǐng tí chū yī jù ér bú shì gǎn xiǎng。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "承知しました。反対理由は、先月の解約率データと実施後の影響です。数字を三分で示し、限定案も提案してよいですか。",
             "en": "My concern is based on last month's churn data. May I show it in three minutes and offer a limited option?",
             "zh": "了解。我的異議依據是上月流失率與預期影響。可以用三分鐘說明數據並提出有限方案嗎？"
+          },
+          "pronunciationGuide": {
+            "ja": "しょうち しました。 はんたい りゆうは、 せんげつの かいやくりつ でーたと じっしごの えいきょうです。 すうじを さんふんで しめし、 げんていあんも ていあん して よいですか。",
+            "en": "/maɪ kənˈsɝn ɪz beɪst ɑn læst mʌnθs tʃɝn ˈdeɪtə. meɪ aɪ ʃoʊ ɪt ɪn θɹi ˈmɪnəts ənd ˈɔfɚ ə ˈlɪmətəd ˈɑpʃən?/",
+            "zh": "Liǎo jiě。 wǒ de yì yì yī jù shì shàng yuè liú shī lǜ yǔ yù qī yǐng xiǎng。 kě yǐ yòng sān fēn zhōng shuō míng shù jù bìng tí chū yǒu xiàn fāng àn ma？"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -170,6 +180,11 @@
             "en": "I disagree. My field experience tells me this will fail.",
             "zh": "我反對這個方針，依現場經驗判斷會失敗。"
           },
+          "pronunciationGuide": {
+            "ja": "わたしは この ほうしんに はんたいです。 げんば けいけんから しっぱい すると おもいます。",
+            "en": "/aɪ dɪsəˈɡɹi. maɪ fild ɪkˈspɪɹiəns tɛlz mi ðɪs wɪl feɪl./",
+            "zh": "Wǒ fǎn duì zhè ge fāng zhēn， yī xiàn chǎng jīng yàn pàn duàn huì shī bài。"
+          },
           "axisScores": {
             "psychological-safety": 8,
             "clarity": 14,
@@ -200,6 +215,11 @@
             "ja": "決まったなら従います。問題が起きても知りません。",
             "en": "If it is decided, I'll comply. Don't blame me if it goes wrong.",
             "zh": "既然決定了我就照做，出問題別怪我。"
+          },
+          "pronunciationGuide": {
+            "ja": "きまったなら したがいます。 もんだいが おきても しりません。",
+            "en": "/ɪf ɪt ɪz ˌdɪˈsaɪdɪd, aɪl kəmˈplaɪ. doʊnt bleɪm mi ɪf ɪt ɡoʊz ɹɔŋ./",
+            "zh": "Jì rán jué dìng le wǒ jiù zhào zuò， chū wèn tí bié guài wǒ。"
           },
           "axisScores": {
             "psychological-safety": 1,
@@ -234,6 +254,11 @@
         "en": "Explain which metric contradicts the direction and how it affects the deadline.",
         "zh": "請具體說明哪項數據與方針矛盾，以及會如何影響期限。"
       },
+      "pronunciationGuide": {
+        "ja": "どの すうちが ほうしんと むじゅん し、 のうきに どう えいきょう する のか ぐたいてきに せつめい して ください。",
+        "en": "/ɪkˈspleɪn wɪtʃ ˈmɛtɹɪk ˌkɑntɹəˈdɪkts ðə dɚˈɛkʃən ənd haʊ ɪt əˈfɛkts ðə ˈdɛdˌlaɪn./",
+        "zh": "Qǐng jù tǐ shuō míng nǎ xiàng shù jù yǔ fāng zhēn máo dùn， yǐ jí huì rú hé yǐng xiǎng qī xiàn。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "同施策では解約率が八％上がり、修正に二週間かかりました。今回も同じ前提なら納期が十日延びる見込みです。",
             "en": "A similar change raised churn eight percent and took two weeks to fix; this date could slip ten days.",
             "zh": "類似措施使流失率上升百分之八，修正花兩週；若前提相同，本次期限預計延後十天。"
+          },
+          "pronunciationGuide": {
+            "ja": "どう しさくでは かいやくりつが はちぱーせんと あがり、 しゅうせいに にしゅうかん かかりました。 こんかいも おなじ ぜんていなら のうきが じゅうにち のびる みこみです。",
+            "en": "/ə ˈsɪməlɚ tʃeɪndʒ ɹeɪzd tʃɝn eɪt pɚˈsɛnt ənd tʊk tu wiks tu fɪks; ðɪs deɪt kʊd slɪp tɛn deɪz./",
+            "zh": "Lèi sì cuò shī shǐ liú shī lǜ shàng shēng bǎi fēn zhī bā， xiū zhèng huā liǎng zhōu； ruò qián tí xiāng tóng， běn cì qī xiàn yù jì yán hòu shí tiān。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -297,6 +327,11 @@
             "en": "Customers complained last time, so this is risky again.",
             "zh": "上次顧客抱怨很多，所以這次也有風險。"
           },
+          "pronunciationGuide": {
+            "ja": "ぜんかいも こきゃくから ふまんが おおかったので、 こんかいも きけんです。",
+            "en": "/ˈkʌstəmɚz kəmˈpleɪnd læst taɪm, soʊ ðɪs ɪz ˈɹɪski əˈɡɛn./",
+            "zh": "Shàng cì gù kè bào yuàn hěn duō， suǒ yǐ zhè cì yě yǒu fēng xiǎn。"
+          },
           "axisScores": {
             "psychological-safety": 9,
             "clarity": 15,
@@ -327,6 +362,11 @@
             "ja": "チームの全員がこの方針は無理だと言っています。",
             "en": "Everyone on the team says this direction is impossible.",
             "zh": "團隊所有人都說這個方針不可行。"
+          },
+          "pronunciationGuide": {
+            "ja": "ちーむの ぜんいんが この ほうしんは むりだと いって います。",
+            "en": "/ˈɛvɹiˌwʌn ɑn ðə tim sɛz ðɪs dɚˈɛkʃən ɪz ˌɪmˈpɑsəbəl./",
+            "zh": "Tuán duì suǒ yǒu rén dōu shuō zhè ge fāng zhēn bù kě xíng。"
           },
           "axisScores": {
             "psychological-safety": 3,
@@ -361,6 +401,11 @@
         "en": "Can we test an option without a full reversal or moving the deadline?",
         "zh": "有沒有不全面改變、又能守住期限的驗證方案？"
       },
+      "pronunciationGuide": {
+        "ja": "ぜんめん へんこうではなく、 のうきを まもりながら けんしょう できる あんは ありますか。",
+        "en": "/kæn wi tɛst æn ˈɑpʃən wɪˈθaʊt ə fʊl ɹɪˈvɝsəl ɔɹ ˈmuvɪŋ ðə ˈdɛdˌlaɪn?/",
+        "zh": "Yǒu méi yǒu bù quán miàn gǎi biàn、 yòu néng shǒu zhù qī xiàn de yàn zhèng fāng àn？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "対象の一割で三日間試し、解約意向と問い合わせ増加を測ります。基準を超えた場合だけ代替案へ切り替えます。",
             "en": "Run a three-day pilot on ten percent, measure churn intent and contacts, and switch only if thresholds are exceeded.",
             "zh": "以一成對象試行三天，測量流失意向與詢問增加；只有超過標準才切換替代案。"
+          },
+          "pronunciationGuide": {
+            "ja": "たいしょうの いちわりで さんにちかん ためし、 かいやく いこうと といあわせ ぞうかを はかります。 きじゅんを こえた ばあいだけ だいたいあんへ きりかえます。",
+            "en": "/ɹʌn ə θɹi - deɪ ˈpaɪlət ɑn tɛn pɚˈsɛnt, ˈmɛʒɚ tʃɝn ˌɪnˈtɛnt ənd ˈkɑnˌtækts, ənd swɪtʃ ˈoʊnli ɪf ˈθɹɛˌʃoʊldz ɑɹ ɪkˈsidəd./",
+            "zh": "Yǐ yì chéng duì xiàng shì xíng sān tiān， cè liáng liú shī yì xiàng yǔ xún wèn zēng jiā； zhǐ yǒu chāo guò biāo zhǔn cái qiè huàn tì dài àn。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -414,6 +464,11 @@
             "en": "Let's try it with some customers and see what happens.",
             "zh": "先找部分顧客試試看。"
           },
+          "pronunciationGuide": {
+            "ja": "まず いちぶの こきゃくで ためして ようすを みましょう。",
+            "en": "/lɛts tɹaɪ ɪt wɪð sʌm ˈkʌstəmɚz ənd si wʌt ˈhæpənz./",
+            "zh": "Xiān zhǎo bù fen gù kè shì shì kàn。"
+          },
           "axisScores": {
             "psychological-safety": 12,
             "clarity": 10,
@@ -444,6 +499,11 @@
             "ja": "では反対意見は取り下げます。元の方針で進めます。",
             "en": "Then I withdraw my objection and will follow the original direction.",
             "zh": "那我撤回反對，照原方針進行。"
+          },
+          "pronunciationGuide": {
+            "ja": "では はんたい いけんは とりさげます。 もとの ほうしんで すすめます。",
+            "en": "/ðɛn aɪ wɪðˈdɹɔ maɪ əbˈdʒɛkʃən ənd wɪl ˈfɑloʊ ðə ɚˈɪdʒənəl dɚˈɛkʃən./",
+            "zh": "Nà wǒ chè huí fǎn duì， zhào yuán fāng zhēn jìn xíng。"
           },
           "axisScores": {
             "psychological-safety": 4,
@@ -478,6 +538,11 @@
         "en": "In front of everyone, it sounded as though you rejected the decision itself. Process matters too.",
         "zh": "在大家面前聽起來像你否定了決定本身，提出方式也需要顧慮。"
       },
+      "pronunciationGuide": {
+        "ja": "みなの まえで けっていを ひてい された ように きこえました。 すすめかたへの はいりょも ひつようです。",
+        "en": "/ɪn fɹʌnt ʌv ˈɛvɹiˌwʌn, ɪt ˈsaʊndɪd æz ðoʊ ju ɹɪˈdʒɛktɪd ðə dɪˈsɪʒən ˌɪtˈsɛlf. ˈpɹɑˌsɛs ˈmætɚz tu./",
+        "zh": "Zài dà jiā miàn qián tīng qǐ lái xiàng nǐ fǒu dìng le jué dìng běn shēn， tí chū fāng shì yě xū yào gù lǜ。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "公開の場で決定そのものを否定する言い方になり、申し訳ありません。共通目標を確認し、根拠と試行案は個別に説明します。",
             "en": "I'm sorry I publicly rejected the decision. I'll restate our goal and discuss the evidence and pilot privately.",
             "zh": "很抱歉我在公開場合說得像是否定決定。我會重申共同目標，並私下說明證據與試行案。"
+          },
+          "pronunciationGuide": {
+            "ja": "こうかいの ばで けってい そのものを ひてい する いいかたに なり、 もうしわけ ありません。 きょうつう もくひょうを かくにん し、 こんきょと しこうあんは こべつに せつめい します。",
+            "en": "/aɪm ˈsɑɹi aɪ ˈpʌblɪkli ɹɪˈdʒɛktɪd ðə dɪˈsɪʒən. aɪl ɹiˈsteɪt ˈaʊɚ ɡoʊl ənd dɪˈskʌs ðə ˈɛvədəns ənd ˈpaɪlət ˈpɹaɪvətli./",
+            "zh": "Hěn bào qiàn wǒ zài gōng kāi chǎng hé shuō dé xiàng shì fǒu dìng jué dìng。 wǒ huì chóng shēn gòng tóng mù biāo， bìng sī xià shuō míng zhèng jù yǔ shì xíng àn。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -531,6 +601,11 @@
             "en": "I apologize for how I said it and withdraw my objection.",
             "zh": "我為說法道歉，也撤回反對。"
           },
+          "pronunciationGuide": {
+            "ja": "いいかたは あやまります。 はんたい いけんも とりさげます。",
+            "en": "/aɪ əˈpɑləˌdʒaɪz fɔɹ haʊ aɪ sɛd ɪt ənd wɪðˈdɹɔ maɪ əbˈdʒɛkʃən./",
+            "zh": "Wǒ wèi shuō fǎ dào qiàn， yě chè huí fǎn duì。"
+          },
           "axisScores": {
             "psychological-safety": 13,
             "clarity": 5,
@@ -561,6 +636,11 @@
             "ja": "根拠を求めたのはそちらです。聞きたくないなら最初から言ってください。",
             "en": "You asked for evidence. If you did not want it, you should have said so.",
             "zh": "是你要求證據的，不想聽就該一開始說。"
+          },
+          "pronunciationGuide": {
+            "ja": "こんきょを もとめた のは そちらです。 ききたくないなら さいしょから いって ください。",
+            "en": "/ju æskt fɔɹ ˈɛvədəns. ɪf ju dɪd nɑt wɑnt ɪt, ju ʃʊd hæv sɛd soʊ./",
+            "zh": "Shì nǐ yāo qiú zhèng jù de， bù xiǎng tīng jiù gāi yì kāi shǐ shuō。"
           },
           "axisScores": {
             "psychological-safety": 1,
