@@ -22,11 +22,35 @@ async function readJson(relativePath) {
 test("bundled catalog contains valid categories and loadable scenarios", async () => {
   const catalog = validateScenarioCatalog(await readJson("index.json"));
 
-  assert.equal(catalog.categories.length, 4);
-  assert.equal(scenariosForCategory(catalog, "manzai").length, 1);
-  assert.equal(scenariosForCategory(catalog, "customer-service").length, 1);
-  assert.equal(scenariosForCategory(catalog, "partner-communication").length, 1);
-  assert.equal(scenariosForCategory(catalog, "negotiation-sales").length, 1);
+  const expectedScenarioCounts = {
+    manzai: 4,
+    "customer-service": 4,
+    "partner-communication": 4,
+    "negotiation-sales": 4,
+    "workplace-communication": 3,
+    "apology-response": 3,
+    "interview-hiring": 3,
+    "teacher-student": 3,
+    "friend-advice": 3,
+    "scam-awareness": 3,
+    "parent-child": 3,
+    "investigative-interview": 3,
+    "diplomatic-negotiation": 3,
+    "clinical-communication": 3,
+    "crisis-negotiation": 3,
+  };
+
+  assert.equal(catalog.categories.length, 15);
+  assert.equal(catalog.scenarios.length, 49);
+  for (const [categoryId, expectedCount] of Object.entries(
+    expectedScenarioCounts,
+  )) {
+    assert.equal(
+      scenariosForCategory(catalog, categoryId).length,
+      expectedCount,
+      categoryId,
+    );
+  }
 
   for (const entry of catalog.scenarios) {
     const filename = entry.path.replace("./scenarios/", "");
