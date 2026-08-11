@@ -7,9 +7,9 @@
     "zh": "預算削減下的提案"
   },
   "description": {
-    "ja": "交渉・値切り・営業として「予算削減への提案再設計」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Proposal Under a Budget Cut” for Negotiation and Sales.",
-    "zh": "在「預算削減下的提案」中練習符合情境的簡短談判、議價與銷售回應。"
+    "ja": "二割減の予算で守る成果と変更可能な範囲を分け、段階導入へ提案を再設計する練習です。",
+    "en": "Practice redesigning a proposal after a twenty-percent budget cut by protecting outcomes and phasing flexible scope.",
+    "zh": "練習在預算削減兩成後，區分必須成果與可調範圍，以分階段方式重構提案。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "その条件が重要な理由と、決裁で他に重視される点を確認します。",
-            "en": "I will clarify why that condition matters and what else drives approval.",
-            "zh": "我會確認該條件重要的原因，以及決策還重視哪些因素。"
+            "ja": "二割減の中で守る成果を決めたいです。必須機能、延期できる範囲、社内で担える作業を確認させてください。",
+            "en": "Which outcomes and features are essential, what can be delayed, and what can your team handle?",
+            "zh": "先確認兩成縮減下必須守住的成果。哪些功能不可少、哪些可延後、哪些工作可由貴方承擔？"
           },
           "axisScores": {
             "discovery": 20,
@@ -141,9 +141,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "値引き前に成果・範囲・役割を探索し、再設計に必要な情報をそろえています。",
+            "en": "It discovers outcomes, scope, and ownership before changing price.",
+            "zh": "在調整價格前先探索成果、範圍與分工，取得重構所需資訊。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "分かりました。全体を二割値引きできるか確認します。",
+            "en": "Understood. I'll see whether we can discount everything by twenty percent.",
+            "zh": "了解，我會確認整體能否降價兩成。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
-            "relationship-impact": 12,
+            "discovery": 3,
+            "value-articulation": 2,
+            "relationship-impact": 10,
             "commercial-discipline": 12
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "予算には応答しますが、成果と範囲を変えず利益だけを譲る前提です。",
+            "en": "It responds to budget but assumes margin alone absorbs the cut without testing scope.",
+            "zh": "有回應預算，卻假設不改成果與範圍、只犧牲利潤。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "成果を変えず二割減は無理です。予算を戻してください。",
+            "en": "The same outcome for twenty percent less is impossible. Restore the budget.",
+            "zh": "成果不變又少兩成不可能，請恢復預算。"
           },
           "axisScores": {
-            "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
-            "commercial-discipline": 3
+            "discovery": 1,
+            "value-articulation": 2,
+            "relationship-impact": 1,
+            "commercial-discipline": 4
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "制約を拒むだけで、優先順位や段階化という交渉余地を探索していません。",
+            "en": "It rejects the constraint without exploring priorities or phasing.",
+            "zh": "只是否定限制，未探索優先順序或分階段等談判空間。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "二つの連携機能と月次報告は必須です。研修の回数と導入時期は調整できます。",
+        "en": "Two integrations and monthly reporting are essential; training frequency and launch timing can change.",
+        "zh": "兩項整合功能與月報不可少；培訓次數與導入時程可調整。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "価格だけでなく、必要な成果と変更可能な範囲を整理しましょう。",
-            "en": "Let's separate the required outcome from the scope that can change, not just the price.",
-            "zh": "我們不只看價格，也整理必要成果與可調整範圍。"
+            "ja": "必須機能と月次報告を第一段階に残し、研修を絞って導入を二期に分けた費用を作ります。",
+            "en": "I'll keep the integrations and monthly reporting in phase one, reduce training, and price a two-stage rollout.",
+            "zh": "第一階段保留整合與月報，減少培訓並拆成兩期導入後重新報價。"
           },
           "axisScores": {
             "discovery": 20,
@@ -263,9 +263,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "守る成果と調整可能項目をそのまま段階案へ反映しています。",
+            "en": "It translates the stated must-haves and flex points directly into a phased design.",
+            "zh": "直接把必須成果與可調項目轉成分階段方案。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "研修と導入後サポートをすべて外せば近づけます。",
+            "en": "Removing all training and post-launch support would get us closer.",
+            "zh": "若全部取消培訓與上線後支援，價格會比較接近。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
+            "discovery": 5,
+            "value-articulation": 8,
             "relationship-impact": 12,
-            "commercial-discipline": 12
+            "commercial-discipline": 17
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "調整可能な研修は扱いますが、未確認のサポートまで削り、成果への影響を検証していません。",
+            "en": "It uses a flexible item but also removes untested support without assessing outcome risk.",
+            "zh": "有調整培訓，卻連未確認可刪的支援也取消，未評估成果風險。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "その必須条件なら、二割減という要望が現実的ではありません。",
+            "en": "With those requirements, the twenty-percent cut is unrealistic.",
+            "zh": "在這些必要條件下，削減兩成並不現實。"
           },
           "axisScores": {
             "discovery": 2,
             "value-articulation": 3,
             "relationship-impact": 2,
-            "commercial-discipline": 3
+            "commercial-discipline": 4
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "条件間の緊張は示しますが、時期を動かせるという提案材料を使っていません。",
+            "en": "It notes tension but ignores timing flexibility that could enable a deal.",
+            "zh": "指出條件衝突，卻未利用可調時程作為方案材料。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "二期導入で、初年度予算と最終成果が分かる案をください。",
+        "en": "Give us a phased option showing first-year cost and the final outcome.",
+        "zh": "請提出分兩期、能看出首年成本與最終成果的方案。"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "譲歩は期間や範囲などの交換条件と組み合わせて提示します。",
-            "en": "I will pair any concession with a clear trade such as term or scope.",
-            "zh": "任何讓步都會搭配期間或範圍等明確交換條件。"
+            "ja": "初年度は必須二連携と月次報告、次年度に研修と追加機能を実施します。各期の費用と成果指標を明記します。",
+            "en": "Year one covers integrations and reporting; year two adds training and features, with cost and metrics for each.",
+            "zh": "首年完成兩項整合與月報，次年加入培訓與追加功能，並列明各期成本與成果指標。"
           },
           "axisScores": {
             "discovery": 20,
@@ -390,9 +390,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "段階ごとの範囲、費用、成果指標を示し、予算と最終成果を両立させています。",
+            "en": "It makes phase scope, cost, and outcome metrics explicit.",
+            "zh": "清楚列出各期範圍、成本與成果指標，兼顧預算與最終成果。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "作業時間を減らして初年度の金額を合わせます。",
+            "en": "We'll reduce hours to fit the first-year amount.",
+            "zh": "我們會減少工時以符合首年金額。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
-            "relationship-impact": 12,
-            "commercial-discipline": 12
+            "discovery": 5,
+            "value-articulation": 6,
+            "relationship-impact": 10,
+            "commercial-discipline": 15
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "金額には合わせますが、どの成果や品質へ影響するかを示していません。",
+            "en": "It fits price but does not explain which outcomes or quality levels change.",
+            "zh": "雖符合金額，卻未說明會影響哪些成果或品質。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "同じ成果を二割安く必ず実現します。",
+            "en": "We guarantee the same result for twenty percent less.",
+            "zh": "我們保證以少兩成的價格達成相同成果。"
           },
           "axisScores": {
-            "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
-            "commercial-discipline": 3
+            "discovery": 1,
+            "value-articulation": 0,
+            "relationship-impact": 4,
+            "commercial-discipline": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "範囲も方法も示さず成果を保証し、商業規律と信頼性を失います。",
+            "en": "It guarantees an unchanged result without scope or method, undermining credibility and discipline.",
+            "zh": "沒有範圍或方法就保證成果，失去可信度與商業紀律。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "必須だと伝えた機能まで削られ、成果より値段だけを見られている気がします。",
+        "en": "You removed features I called essential; it feels as though price matters more than the outcome.",
+        "zh": "連我說必要的功能也被刪掉，感覺你只看價格不看成果。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "結論を急がせず、未確認の条件をそろえて次の協議を設定します。",
-            "en": "I will not force a decision; let's confirm the missing conditions and schedule the next discussion.",
-            "zh": "我不會催促決定；先補齊未確認條件並安排下次討論。"
+            "ja": "必須範囲を取り違えました。申し訳ありません。二つの連携と月次報告を固定し、研修と時期だけで再設計します。",
+            "en": "I misread the must-haves. I'm sorry. I'll lock the integrations and reporting and redesign only training and timing.",
+            "zh": "我誤解了必要範圍，很抱歉。我會固定整合與月報，只調整培訓和時程。"
           },
           "axisScores": {
             "discovery": 20,
@@ -507,9 +507,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "誤りを認め、顧客が明示した固定条件へ提案を正確に戻しています。",
+            "en": "It owns the error and restores the proposal to the buyer's explicit constraints.",
+            "zh": "承認錯誤，並把方案準確拉回買方明示的固定條件。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "では連携機能を一つ戻し、ほかで調整します。",
+            "en": "Then I'll restore one integration and adjust elsewhere.",
+            "zh": "那我恢復一項整合功能，再從其他地方調整。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
-            "relationship-impact": 12,
-            "commercial-discipline": 12
+            "discovery": 8,
+            "value-articulation": 10,
+            "relationship-impact": 10,
+            "commercial-discipline": 14
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "修正はしますが、必須の二機能をまだ満たさず、何を削るかも不明です。",
+            "en": "It repairs part of the error but still misses one must-have and leaves other cuts vague.",
+            "zh": "有部分修正，但仍缺一項必要整合，也未說明其他削減內容。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "予算を下げた以上、何かを諦めてもらうしかありません。",
+            "en": "With a lower budget, you simply have to give something up.",
+            "zh": "既然預算降低，就只能放棄一些東西。"
           },
           "axisScores": {
-            "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
+            "discovery": 0,
+            "value-articulation": 2,
+            "relationship-impact": 1,
             "commercial-discipline": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "顧客が示した調整可能項目を無視し、誤った削減を正当化しています。",
+            "en": "It ignores the stated flex points and defends the wrong cuts.",
+            "zh": "忽略顧客已提出的可調項目，反而合理化錯誤削減。"
           },
           "stateEffects": [
             {

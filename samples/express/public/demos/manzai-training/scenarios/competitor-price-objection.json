@@ -7,9 +7,9 @@
     "zh": "競爭對手價格異議"
   },
   "description": {
-    "ja": "交渉・値切り・営業として「競合価格への異議」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Competitor Price Objection” for Negotiation and Sales.",
-    "zh": "在「競爭對手價格異議」中練習符合情境的簡短談判、議價與銷售回應。"
+    "ja": "競合の一割安い提示に対し、比較条件と決裁基準を確認して価値と交換条件を組み立てる練習です。",
+    "en": "Practice responding to a ten-percent cheaper competitor by testing comparability, decision criteria, and conditional value.",
+    "zh": "練習面對競爭對手便宜一成的報價，確認比較條件與決策標準，再設計價值與交換條件。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "その条件が重要な理由と、決裁で他に重視される点を確認します。",
-            "en": "I will clarify why that condition matters and what else drives approval.",
-            "zh": "我會確認該條件重要的原因，以及決策還重視哪些因素。"
+            "ja": "一割の差は重要ですね。同じ条件か確認するため、導入支援、対応時間、決裁で重視する点を教えてください。",
+            "en": "A ten-percent gap matters. May I compare onboarding, response times, and your approval criteria?",
+            "zh": "一成價差很重要。為了同條件比較，請說明導入支援、回應時間及核准標準。"
           },
           "axisScores": {
             "discovery": 20,
@@ -141,9 +141,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "価格差を認め、比較可能性と決裁基準を同時に探索して値引き前の情報を確保しています。",
+            "en": "It acknowledges the gap and investigates comparability and approval criteria before conceding.",
+            "zh": "承認價差，同時探索可比性與核准標準，在讓價前取得必要資訊。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "一割は難しいですが、まず五％なら下げられます。",
+            "en": "Ten percent is difficult, but I can start with a five-percent reduction.",
+            "zh": "一成很難，但我可以先降百分之五。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
+            "discovery": 4,
+            "value-articulation": 3,
             "relationship-impact": 12,
-            "commercial-discipline": 12
+            "commercial-discipline": 14
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続きますが、条件を調べず先に値引きし、価値と交換条件を失っています。",
+            "en": "It keeps talks open but discounts before discovery and asks for nothing in return.",
+            "zh": "能延續談判，卻未探索條件就先降價，也沒有換取任何承諾。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "安さだけなら競合を選べばよいと思います。",
+            "en": "If price is all that matters, you should choose the competitor.",
+            "zh": "如果只看價格，那就選競爭對手吧。"
           },
           "axisScores": {
-            "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
-            "commercial-discipline": 3
+            "discovery": 0,
+            "value-articulation": 2,
+            "relationship-impact": 0,
+            "commercial-discipline": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "相手の比較理由を調べず関係を切り、価値を示す機会も失います。",
+            "en": "It ends discovery and damages the relationship before value can be tested.",
+            "zh": "未了解比較理由就切斷關係，也失去呈現價值的機會。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "競合には初期設定が含まれませんが、役員は年間総額を最も気にしています。",
+        "en": "The competitor excludes setup, but executives care most about the annual total.",
+        "zh": "競品不含初始設定，但主管最在意年度總額。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "価格だけでなく、必要な成果と変更可能な範囲を整理しましょう。",
-            "en": "Let's separate the required outcome from the scope that can change, not just the price.",
-            "zh": "我們不只看價格，也整理必要成果與可調整範圍。"
+            "ja": "初期設定を含む年間総額と、稼働までの社内工数を並べて比較しましょう。役員が許容する上限も確認できますか。",
+            "en": "Let's compare annual totals including setup and internal effort to launch. Can we also confirm the executives' ceiling?",
+            "zh": "我們比較包含設定費與上線內部工時的年度總額，也請確認主管可接受的上限。"
           },
           "axisScores": {
             "discovery": 20,
@@ -263,9 +263,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "比較単位を年間総コストへそろえ、意思決定可能な上限まで確認しています。",
+            "en": "It normalizes the comparison to annual total cost and seeks a usable approval ceiling.",
+            "zh": "把比較基準統一為年度總成本，並確認可供決策的上限。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "当社には専任担当と分析機能があります。",
+            "en": "We provide a dedicated manager and analytics features.",
+            "zh": "我們提供專任窗口與分析功能。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
+            "discovery": 5,
+            "value-articulation": 15,
             "relationship-impact": 12,
             "commercial-discipline": 12
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "価値要素は示しますが、年間総額や初期設定差との関連を定量化していません。",
+            "en": "It names value but does not connect it to annual cost or the setup difference.",
+            "zh": "有提出價值，但未連結年度總額或設定費差異。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "初期設定が別なら、競合の見積りは比較になりません。",
+            "en": "If setup is separate, the competitor quote is not comparable.",
+            "zh": "既然設定另計，競品報價就不能比較。"
           },
           "axisScores": {
-            "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
+            "discovery": 4,
+            "value-articulation": 6,
+            "relationship-impact": 3,
             "commercial-discipline": 3
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "差は指摘しますが、年間総額を求める役員の関心を退け、比較作業を止めています。",
+            "en": "It spots a difference but dismisses the executive concern and stops comparison.",
+            "zh": "雖指出差異，卻忽略主管對年度總額的關注並停止比較。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "年間総額を一割以内に収められるなら、三年契約も検討できます。",
+        "en": "If annual cost stays within ten percent, we can consider a three-year term.",
+        "zh": "若年度總額能控制在一成差距內，我們可考慮三年合約。"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "譲歩は期間や範囲などの交換条件と組み合わせて提示します。",
-            "en": "I will pair any concession with a clear trade such as term or scope.",
-            "zh": "任何讓步都會搭配期間或範圍等明確交換條件。"
+            "ja": "三年契約を条件に五％調整し、初期設定を含む総額表を提示します。残る差は運用工数削減で比較しましょう。",
+            "en": "For a three-year term, we can adjust five percent, include setup, and compare the rest through labor savings.",
+            "zh": "以三年合約為條件可調整百分之五，並提出含設定費的總額表；其餘差距以節省工時比較。"
           },
           "axisScores": {
             "discovery": 20,
@@ -390,9 +390,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "価格譲歩を期間と交換し、残る差を検証可能な価値で説明しています。",
+            "en": "It exchanges price for term and addresses the remaining gap with testable value.",
+            "zh": "以合約期間交換價格讓步，並用可驗證價值說明剩餘差距。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "社内に五％値引きで相談してみます。",
+            "en": "I'll ask internally about a five-percent discount.",
+            "zh": "我會在內部爭取百分之五折扣。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
-            "relationship-impact": 12,
-            "commercial-discipline": 12
+            "discovery": 4,
+            "value-articulation": 4,
+            "relationship-impact": 10,
+            "commercial-discipline": 18
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "権限確認は守りますが、提示された三年契約を交換条件として確定していません。",
+            "en": "It respects approval limits but fails to secure the offered three-year exchange.",
+            "zh": "有遵守核准權限，卻未把對方提出的三年合約確定為交換條件。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "三年なら一割下げます。今ここで決めてください。",
+            "en": "For three years, I'll cut ten percent. Decide now.",
+            "zh": "簽三年就降一成，請現在決定。"
           },
           "axisScores": {
             "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
-            "commercial-discipline": 3
+            "value-articulation": 2,
+            "relationship-impact": 4,
+            "commercial-discipline": 4
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "上限まで即座に譲歩し、比較資料も社内決裁も飛ばして圧力をかけています。",
+            "en": "It gives away the full gap and pressures a decision without evidence or approval discipline.",
+            "zh": "立刻讓出全部價差，未準備比較資料或遵守核准程序就施壓成交。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "値引きか他社かと迫られているように感じます。比較材料を社内で整理したいです。",
+        "en": "This feels like discount-or-leave pressure. I need to organize the comparison internally.",
+        "zh": "我感覺被逼著在折扣或他家之間選擇，需要先整理內部比較資料。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "結論を急がせず、未確認の条件をそろえて次の協議を設定します。",
-            "en": "I will not force a decision; let's confirm the missing conditions and schedule the next discussion.",
-            "zh": "我不會催促決定；先補齊未確認條件並安排下次討論。"
+            "ja": "急がせる言い方になり失礼しました。年間総額、支援範囲、社内工数を一枚にまとめ、判断日を相談しましょう。",
+            "en": "I'm sorry I created pressure. I'll summarize cost, support, and internal effort, then we can set a decision date.",
+            "zh": "很抱歉造成壓力。我會整理年度總額、支援範圍與內部工時，再共同確認決策日期。"
           },
           "axisScores": {
             "discovery": 20,
@@ -507,9 +507,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "圧力を認め、比較資料と合意した判断日へ交渉を戻しています。",
+            "en": "It owns the pressure and restores a process based on evidence and an agreed decision date.",
+            "zh": "承認施壓，並把談判拉回比較資料與共同決定的日期。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "では見積りだけ更新して、来週また連絡します。",
+            "en": "Then I'll update the quote and contact you next week.",
+            "zh": "那我先更新報價，下週再聯絡。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
-            "relationship-impact": 12,
-            "commercial-discipline": 12
+            "discovery": 5,
+            "value-articulation": 5,
+            "relationship-impact": 10,
+            "commercial-discipline": 14
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "圧力は下がりますが、何を比較し、誰がいつ判断するかが残ります。",
+            "en": "It reduces pressure but leaves the comparison criteria and decision process undefined.",
+            "zh": "壓力降低，但比較內容及由誰何時決策仍不明確。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "この条件で難しいなら、今回は見送るしかありません。",
+            "en": "If these terms do not work, we will have to walk away.",
+            "zh": "若這些條件不行，這次只能放棄。"
           },
           "axisScores": {
-            "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
-            "commercial-discipline": 3
+            "discovery": 0,
+            "value-articulation": 1,
+            "relationship-impact": 1,
+            "commercial-discipline": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "相手が整理を求めた段階で交渉を打ち切り、関係と価値提示を失います。",
+            "en": "It walks away when the buyer asks for evidence, losing both relationship and value discussion.",
+            "zh": "買方只是要求整理資料就終止談判，失去關係與價值說明。"
           },
           "stateEffects": [
             {

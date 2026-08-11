@@ -602,16 +602,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "競合価格が同一条件かを確認し、価格以外の決裁基準を発見する",
+          "値引きを契約期間や範囲などの交換条件と結び付ける"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
-          "Compare how different responses affect the other person and the next action."
+          "Test whether the competitor comparison is equivalent and discover non-price decision criteria.",
+          "Link any discount to an exchange such as term, scope, or commitment."
         ],
         "zh": [
-          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "確認競品是否真為相同條件，並找出價格以外的決策標準。",
+          "把折扣與合約期間、範圍或承諾等交換條件連結。"
         ]
       },
       "title": {
@@ -629,16 +629,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "予算削減下でも守る成果と変更可能な範囲を確認する",
+          "範囲・時期・支援を組み替え、成果を検証できる段階案を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate required outcomes from flexible scope after a budget reduction.",
+          "Repackage scope, timing, and support into a phased, testable proposal."
         ],
         "zh": [
-          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "在預算縮減後區分必須成果與可調整範圍。",
+          "重組範圍、時程與支援，提出可驗證成果的分階段方案。"
         ]
       },
       "title": {
@@ -656,16 +656,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "契約直前の値引き要求の理由、決裁権、未合意条件を確認する",
+          "期限に流されず、譲歩を契約期間や支払条件と交換する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
-          "Compare how different responses affect the other person and the next action."
+          "Check the reason, authority, and unresolved terms behind a last-minute discount request.",
+          "Resist deadline pressure and exchange concessions for term or payment commitments."
         ],
         "zh": [
-          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "確認簽約前追加折扣背後的理由、決策權與未決條件。",
+          "不受期限壓力影響，以合約期間或付款承諾交換讓步。"
         ]
       },
       "title": {

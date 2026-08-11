@@ -7,9 +7,9 @@
     "zh": "簽約前的追加條件"
   },
   "description": {
-    "ja": "交渉・値切り・営業として「契約直前の追加条件」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “A Last-Minute Contract Condition” for Negotiation and Sales.",
-    "zh": "在「簽約前的追加條件」中練習符合情境的簡短談判、議價與銷售回應。"
+    "ja": "契約直前の追加値引き要求に対し、背景と決裁権を確認し、期限に流されず条件交換を行う練習です。",
+    "en": "Practice handling a last-minute discount demand by checking authority and reasons, then trading conditions without deadline pressure.",
+    "zh": "練習面對簽約前的追加折扣要求，確認背景與決策權，不受期限壓迫地交換條件。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "その条件が重要な理由と、決裁で他に重視される点を確認します。",
-            "en": "I will clarify why that condition matters and what else drives approval.",
-            "zh": "我會確認該條件重要的原因，以及決策還重視哪些因素。"
+            "ja": "本日中という条件を確認します。追加値引きが必要になった理由と、それで最終決裁になるか教えてください。",
+            "en": "Let me confirm today's condition: why is another discount now required, and would it complete final approval?",
+            "zh": "我先確認今天的條件：為何現在需要追加折扣，以及折扣後是否就能最終核准？"
           },
           "axisScores": {
             "discovery": 20,
@@ -141,9 +141,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "期限に反応して譲歩せず、要求理由と相手の決裁能力を確認しています。",
+            "en": "It does not concede to the deadline and tests both the reason and authority.",
+            "zh": "沒有因期限立即讓步，而是確認要求理由與對方決策能力。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "今日中なら、追加で三％まで検討します。",
+            "en": "If we sign today, I can consider another three percent.",
+            "zh": "若今天簽約，我可以考慮再降百分之三。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
+            "discovery": 5,
+            "value-articulation": 3,
             "relationship-impact": 12,
-            "commercial-discipline": 12
+            "commercial-discipline": 13
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "期限を交換条件にしていますが、理由と最終決裁かを確認せず数字を出しています。",
+            "en": "It trades for timing but names a number before checking the reason or finality.",
+            "zh": "有以簽約時間交換，但未確認原因與是否最終核准就先報出數字。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "契約直前の値引き要求は交渉のやり方として不適切です。",
+            "en": "Demanding a discount just before signature is inappropriate negotiation.",
+            "zh": "簽約前才要求折扣，這種談判方式不恰當。"
           },
           "axisScores": {
-            "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
-            "commercial-discipline": 3
+            "discovery": 3,
+            "value-articulation": 4,
+            "relationship-impact": 1,
+            "commercial-discipline": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "戦術を非難して関係を悪化させ、背景にある決裁条件を探索できません。",
+            "en": "It attacks the tactic, damages the relationship, and learns nothing about approval.",
+            "zh": "批評對方策略、破壞關係，也無法了解核准條件。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "購買部門が総額の端数を削るよう求めています。私の承認だけでは足りません。",
+        "en": "Procurement wants the total rounded down, and my approval alone is not enough.",
+        "zh": "採購要求把總額尾數降下來，而且只有我核准還不夠。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "価格だけでなく、必要な成果と変更可能な範囲を整理しましょう。",
-            "en": "Let's separate the required outcome from the scope that can change, not just the price.",
-            "zh": "我們不只看價格，也整理必要成果與可調整範圍。"
+            "ja": "必要額と購買部門の承認者を確認し、端数調整と引き換えに支払時期か契約期間を確定できるか相談しましょう。",
+            "en": "Let's confirm the exact amount and procurement approver, then trade rounding for a firm payment date or term.",
+            "zh": "先確認所需金額與採購核准人，再協商以尾數調整交換確定付款日期或合約期間。"
           },
           "axisScores": {
             "discovery": 20,
@@ -263,9 +263,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "要求額と真の決裁者を確認し、値引きを別条件の確定と交換しています。",
+            "en": "It identifies the amount and true approver, then trades concession for another commitment.",
+            "zh": "確認要求金額與真正核准者，並以讓價交換其他承諾。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "端数だけなら、こちらで吸収できると思います。",
+            "en": "If it is only the rounding amount, I think we can absorb it.",
+            "zh": "如果只是尾數，我想我們可以吸收。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
+            "discovery": 5,
+            "value-articulation": 6,
             "relationship-impact": 12,
-            "commercial-discipline": 12
+            "commercial-discipline": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "要求を小さいと判断して受け入れますが、金額も権限も交換条件も未確認です。",
+            "en": "It assumes the request is small without confirming amount, authority, or return value.",
+            "zh": "自行判斷要求不大就接受，未確認金額、權限或交換條件。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "あなたが決められないなら、決められる人を今すぐ呼んでください。",
+            "en": "If you cannot decide, bring in someone who can right now.",
+            "zh": "既然你不能決定，請立刻找能決定的人來。"
           },
           "axisScores": {
-            "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
-            "commercial-discipline": 3
+            "discovery": 4,
+            "value-articulation": 8,
+            "relationship-impact": 3,
+            "commercial-discipline": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決裁者確認の意図はあっても、相手の立場を損ない、協力的な社内調整を難しくします。",
+            "en": "It seeks authority but undermines the counterpart and makes internal coordination harder.",
+            "zh": "雖想找決策者，卻傷害對方面子，使內部協調更困難。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "端数を調整し、支払日を今月末で固定できれば、購買へ最終申請します。",
+        "en": "If you round the total and fix payment at month-end, I'll submit the final procurement request.",
+        "zh": "若調整尾數並把付款日定在月底，我會向採購送出最終申請。"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "譲歩は期間や範囲などの交換条件と組み合わせて提示します。",
-            "en": "I will pair any concession with a clear trade such as term or scope.",
-            "zh": "任何讓步都會搭配期間或範圍等明確交換條件。"
+            "ja": "端数調整と今月末支払を一つの条件として書面化します。購買の回答期限と、否決時に元条件へ戻る点も記載します。",
+            "en": "We'll document rounding and month-end payment as one condition, with an approval deadline and reversion if rejected.",
+            "zh": "把尾數調整與月底付款寫成一項條件，並註明採購回覆期限及否決時恢復原條件。"
           },
           "axisScores": {
             "discovery": 20,
@@ -390,9 +390,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "譲歩、見返り、期限、不成立時の扱いを明文化し、直前交渉の曖昧さを除いています。",
+            "en": "It documents concession, return, deadline, and what happens if approval fails.",
+            "zh": "把讓步、回報、期限與未核准時的處理寫清楚，消除簽約前的模糊。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "端数を直した見積書を今日中に送ります。",
+            "en": "I'll send a revised rounded quote today.",
+            "zh": "我今天會寄出調整尾數後的報價。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
+            "discovery": 6,
+            "value-articulation": 8,
             "relationship-impact": 12,
-            "commercial-discipline": 12
+            "commercial-discipline": 14
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "迅速ですが、支払日と最終申請、否決時の扱いを条件化していません。",
+            "en": "It is prompt but does not bind payment, final submission, or rejection handling.",
+            "zh": "行動迅速，但未把付款日、最終申請或否決處理列為條件。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "端数は下げます。これで今日必ず署名してください。",
+            "en": "I'll reduce the total; you must sign today.",
+            "zh": "我會調降尾數，你們今天一定要簽。"
           },
           "axisScores": {
             "discovery": 2,
             "value-articulation": 3,
-            "relationship-impact": 2,
-            "commercial-discipline": 3
+            "relationship-impact": 4,
+            "commercial-discipline": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "相手にない署名権限を前提に圧力をかけ、購買否決リスクを管理していません。",
+            "en": "It pressures someone without signature authority and ignores procurement rejection risk.",
+            "zh": "向沒有簽署權的人施壓，也未管理採購否決風險。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "今日決めろと言われても、購買の手続は飛ばせません。圧力を感じます。",
+        "en": "Even under pressure, I cannot skip procurement. Being told to decide today is uncomfortable.",
+        "zh": "即使被催促，我也不能跳過採購流程，要求今天決定讓我感到壓力。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "結論を急がせず、未確認の条件をそろえて次の協議を設定します。",
-            "en": "I will not force a decision; let's confirm the missing conditions and schedule the next discussion.",
-            "zh": "我不會催促決定；先補齊未確認條件並安排下次討論。"
+            "ja": "手続を軽視する言い方になり失礼しました。必要書類と購買の期限を確認し、判断可能な日程へ組み直しましょう。",
+            "en": "I'm sorry I dismissed your process. Let's confirm the documents and procurement timing, then set a decision date.",
+            "zh": "很抱歉我的說法輕忽了流程。我們確認所需文件與採購時程，再重訂可決策日期。"
           },
           "axisScores": {
             "discovery": 20,
@@ -507,9 +507,9 @@
             "commercial-discipline": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "圧力を認め、相手の正式手続と現実的な日程へ交渉を戻しています。",
+            "en": "It owns the pressure and restores the buyer's formal process and realistic timing.",
+            "zh": "承認施壓，並把談判拉回正式流程與可行時程。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "分かりました。ただ、この価格は明日以降保証できません。",
+            "en": "Understood, but I cannot guarantee this price after tomorrow.",
+            "zh": "了解，但明天以後無法保證這個價格。"
           },
           "axisScores": {
-            "discovery": 13,
-            "value-articulation": 11,
-            "relationship-impact": 12,
-            "commercial-discipline": 12
+            "discovery": 7,
+            "value-articulation": 5,
+            "relationship-impact": 7,
+            "commercial-discipline": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "手続は認めますが、すぐ期限圧力を重ね、必要書類の支援を示していません。",
+            "en": "It accepts the process but immediately reapplies deadline pressure without helping it move.",
+            "zh": "雖承認流程，卻立刻再次施加期限壓力，也未協助準備文件。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "手続が間に合わないなら、この契約は成立しません。",
+            "en": "If your process cannot finish in time, there will be no deal.",
+            "zh": "如果流程來不及，這份合約就不成立。"
           },
           "axisScores": {
-            "discovery": 2,
-            "value-articulation": 3,
-            "relationship-impact": 2,
-            "commercial-discipline": 3
+            "discovery": 0,
+            "value-articulation": 1,
+            "relationship-impact": 1,
+            "commercial-discipline": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "調整可能な日程や条件を探さず交渉を打ち切り、関係を損ないます。",
+            "en": "It ends the deal without exploring timing or conditions and harms the relationship.",
+            "zh": "未探索可調時程或條件就終止談判，損害關係。"
           },
           "stateEffects": [
             {
