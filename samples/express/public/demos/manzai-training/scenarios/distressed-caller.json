@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "急がせず落ち着いた声で、今いちばん気がかりなことを聞きます。",
-            "en": "Without rushing, I will calmly ask what is most concerning right now.",
-            "zh": "我不催促，用平靜語氣詢問目前最擔心的事。"
+            "ja": "まず「今いる場所、差し迫った危険、一番困っていること」を安全に確認し、急かさず一つずつ聞き、話せるところから始める。",
+            "en": "Check safety first; listen one point at a time and start wherever the caller can.",
+            "zh": "先安全確認目前位置、立即危險與最困擾的事情，再不催促地逐一傾聽，從來電者能說的地方開始。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -141,9 +141,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "安全を先に確かめ、傾聴と本人が選べる小さな行動を結び付けています：まず「今いる場所、差し迫った危険、一番困っていること」を安全に確認し、急かさず一つずつ聞き、話せるところから始める。",
+            "en": "This checks safety first and connects listening with a small, chosen action: Check safety first; listen one point at a time and start wherever the caller can.",
+            "zh": "這先確認安全，再把傾聽連結到當事人選擇的小行動：先安全確認目前位置、立即危險與最困擾的事情，再不催促地逐一傾聽，從來電者能說的地方開始。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "急かさず一つずつ聞き、話せるところから始めるが、「今いる場所、差し迫った危険、一番困っていること」の確認は省きます。",
+            "en": "Only listen one point at a time and start wherever the caller can.",
+            "zh": "只不催促地逐一傾聽，從來電者能說的地方開始，但省略目前位置、立即危險與最困擾的事情的確認。"
           },
           "axisScores": {
-            "emotional-stabilization": 13,
-            "active-listening": 11,
-            "clarity": 12,
-            "boundary-keeping": 12
+            "emotional-stabilization": 14,
+            "active-listening": 12,
+            "clarity": 14,
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動は提案しますが、安全確認か本人の選択が不足します：急かさず一つずつ聞き、話せるところから始めるが、「今いる場所、差し迫った危険、一番困っていること」の確認は省きます。",
+            "en": "This proposes action but lacks safety assessment or personal choice: Only listen one point at a time and start wherever the caller can.",
+            "zh": "這提出行動，但缺少安全評估或本人選擇：只不催促地逐一傾聽，從來電者能說的地方開始，但省略目前位置、立即危險與最困擾的事情的確認。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "急かさず一つずつ聞き、話せるところから始めることはせず、命令と圧力を強めます。",
+            "en": "Do not listen one point at a time and start wherever the caller can; increase commands and pressure.",
+            "zh": "不不催促地逐一傾聽，從來電者能說的地方開始，反而加強命令與壓力。"
           },
           "axisScores": {
-            "emotional-stabilization": 2,
-            "active-listening": 3,
-            "clarity": 2,
-            "boundary-keeping": 3
+            "emotional-stabilization": 1,
+            "active-listening": 2,
+            "clarity": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "命令・圧力・虚偽の安心は緊張と危険を高めます：急かさず一つずつ聞き、話せるところから始めることはせず、命令と圧力を強めます。",
+            "en": "Commands, pressure, and false reassurance can increase tension and danger: Do not listen one point at a time and start wherever the caller can; increase commands and pressure.",
+            "zh": "命令、壓力與虛假保證可能提高緊張和危險：不不催促地逐一傾聽，從來電者能說的地方開始，反而加強命令與壓力。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "今は「本人や周囲の人が今すぐ危険か、一人でいるか」を確認しても大丈夫ですか？",
+        "en": "Is it okay if I check whether anyone is in immediate danger and whether the caller is alone now?",
+        "zh": "現在可以讓我確認本人或周圍是否有立即危險，以及是否獨處嗎？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "相手の言葉を短く言い換えて確認し、指示を重ねません。",
-            "en": "I will briefly reflect what I heard and avoid piling on instructions.",
-            "zh": "我會簡短重述確認，不連續下指令。"
+            "ja": "まず「本人や周囲の人が今すぐ危険か、一人でいるか」を安全に確認し、危険があれば地域の緊急支援へつなぎ、通話を保つ。",
+            "en": "Check safety first; connect local emergency support when needed and stay on the line.",
+            "zh": "先安全確認本人或周圍是否有立即危險，以及是否獨處，再有危險時連結當地緊急支援並保持通話。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -263,9 +263,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "安全を先に確かめ、傾聴と本人が選べる小さな行動を結び付けています：まず「本人や周囲の人が今すぐ危険か、一人でいるか」を安全に確認し、危険があれば地域の緊急支援へつなぎ、通話を保つ。",
+            "en": "This checks safety first and connects listening with a small, chosen action: Check safety first; connect local emergency support when needed and stay on the line.",
+            "zh": "這先確認安全，再把傾聽連結到當事人選擇的小行動：先安全確認本人或周圍是否有立即危險，以及是否獨處，再有危險時連結當地緊急支援並保持通話。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "危険があれば地域の緊急支援へつなぎ、通話を保つが、「本人や周囲の人が今すぐ危険か、一人でいるか」の確認は省きます。",
+            "en": "Only connect local emergency support when needed and stay on the line.",
+            "zh": "只有危險時連結當地緊急支援並保持通話，但省略本人或周圍是否有立即危險，以及是否獨處的確認。"
           },
           "axisScores": {
-            "emotional-stabilization": 13,
-            "active-listening": 11,
-            "clarity": 12,
-            "boundary-keeping": 12
+            "emotional-stabilization": 14,
+            "active-listening": 12,
+            "clarity": 14,
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動は提案しますが、安全確認か本人の選択が不足します：危険があれば地域の緊急支援へつなぎ、通話を保つが、「本人や周囲の人が今すぐ危険か、一人でいるか」の確認は省きます。",
+            "en": "This proposes action but lacks safety assessment or personal choice: Only connect local emergency support when needed and stay on the line.",
+            "zh": "這提出行動，但缺少安全評估或本人選擇：只有危險時連結當地緊急支援並保持通話，但省略本人或周圍是否有立即危險，以及是否獨處的確認。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "危険があれば地域の緊急支援へつなぎ、通話を保つことはせず、命令と圧力を強めます。",
+            "en": "Do not connect local emergency support when needed and stay on the line; increase commands and pressure.",
+            "zh": "不有危險時連結當地緊急支援並保持通話，反而加強命令與壓力。"
           },
           "axisScores": {
-            "emotional-stabilization": 2,
-            "active-listening": 3,
-            "clarity": 2,
-            "boundary-keeping": 3
+            "emotional-stabilization": 1,
+            "active-listening": 2,
+            "clarity": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "命令・圧力・虚偽の安心は緊張と危険を高めます：危険があれば地域の緊急支援へつなぎ、通話を保つことはせず、命令と圧力を強めます。",
+            "en": "Commands, pressure, and false reassurance can increase tension and danger: Do not connect local emergency support when needed and stay on the line; increase commands and pressure.",
+            "zh": "命令、壓力與虛假保證可能提高緊張和危險：不有危險時連結當地緊急支援並保持通話，反而加強命令與壓力。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "あなたが選べる形で、本人が選んだ一歩を確認し、危機支援への引継ぎを行うことを決められますか？",
+        "en": "Can we choose how to confirm the chosen step and hand over to crisis support, at your pace?",
+        "zh": "可以依你的步調選擇如何確認本人選擇的一步並轉接危機支援嗎？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "安全に関わる次の小さな行動を一つだけ、選択肢として提案します。",
-            "en": "I will offer one small safety-supporting next step as a choice.",
-            "zh": "我會以選項方式提出一個有助安全的小步驟。"
+            "ja": "まず「次の10分にできることと、連絡できる信頼できる人」を安全に確認し、本人が選んだ一歩を確認し、危機支援への引継ぎを行う。",
+            "en": "Check safety first; confirm the chosen step and hand over to crisis support.",
+            "zh": "先安全確認接下來十分鐘能做的事與可聯絡的可信任者，再確認本人選擇的一步並轉接危機支援。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -390,9 +390,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "安全を先に確かめ、傾聴と本人が選べる小さな行動を結び付けています：まず「次の10分にできることと、連絡できる信頼できる人」を安全に確認し、本人が選んだ一歩を確認し、危機支援への引継ぎを行う。",
+            "en": "This checks safety first and connects listening with a small, chosen action: Check safety first; confirm the chosen step and hand over to crisis support.",
+            "zh": "這先確認安全，再把傾聽連結到當事人選擇的小行動：先安全確認接下來十分鐘能做的事與可聯絡的可信任者，再確認本人選擇的一步並轉接危機支援。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "本人が選んだ一歩を確認し、危機支援への引継ぎを行うが、「次の10分にできることと、連絡できる信頼できる人」の確認は省きます。",
+            "en": "Only confirm the chosen step and hand over to crisis support.",
+            "zh": "只確認本人選擇的一步並轉接危機支援，但省略接下來十分鐘能做的事與可聯絡的可信任者的確認。"
           },
           "axisScores": {
-            "emotional-stabilization": 13,
-            "active-listening": 11,
-            "clarity": 12,
-            "boundary-keeping": 12
+            "emotional-stabilization": 14,
+            "active-listening": 12,
+            "clarity": 14,
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動は提案しますが、安全確認か本人の選択が不足します：本人が選んだ一歩を確認し、危機支援への引継ぎを行うが、「次の10分にできることと、連絡できる信頼できる人」の確認は省きます。",
+            "en": "This proposes action but lacks safety assessment or personal choice: Only confirm the chosen step and hand over to crisis support.",
+            "zh": "這提出行動，但缺少安全評估或本人選擇：只確認本人選擇的一步並轉接危機支援，但省略接下來十分鐘能做的事與可聯絡的可信任者的確認。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "本人が選んだ一歩を確認し、危機支援への引継ぎを行うことはせず、命令と圧力を強めます。",
+            "en": "Do not confirm the chosen step and hand over to crisis support; increase commands and pressure.",
+            "zh": "不確認本人選擇的一步並轉接危機支援，反而加強命令與壓力。"
           },
           "axisScores": {
-            "emotional-stabilization": 2,
-            "active-listening": 3,
-            "clarity": 2,
-            "boundary-keeping": 3
+            "emotional-stabilization": 1,
+            "active-listening": 2,
+            "clarity": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "命令・圧力・虚偽の安心は緊張と危険を高めます：本人が選んだ一歩を確認し、危機支援への引継ぎを行うことはせず、命令と圧力を強めます。",
+            "en": "Commands, pressure, and false reassurance can increase tension and danger: Do not confirm the chosen step and hand over to crisis support; increase commands and pressure.",
+            "zh": "命令、壓力與虛假保證可能提高緊張和危險：不確認本人選擇的一步並轉接危機支援，反而加強命令與壓力。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "「大げさだと判断され、助けを求めたことを後悔した影響」を無視され、緊張が高まりました。",
+        "en": "Tension rose when you ignored the impact of being called dramatic after asking for help.",
+        "zh": "你忽略求助後被說誇張而感到後悔的影響，讓緊張升高。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "圧力をかけたことを認め、距離と対話のペースを相手に合わせます。",
-            "en": "I recognize that I added pressure and will match the person's distance and pace.",
-            "zh": "我承認剛才造成壓力，會配合對方的距離與對話節奏。"
+            "ja": "まず「大げさだと判断され、助けを求めたことを後悔した影響」を安全に確認し、判断したことを謝り、今の安全と必要な支援から聞き直す。",
+            "en": "Check safety first; apologize for judging and restart with present safety and needs.",
+            "zh": "先安全確認求助後被說誇張而感到後悔的影響，再為評斷道歉，從目前安全與需要重新聽起。"
           },
           "axisScores": {
             "emotional-stabilization": 20,
@@ -507,9 +507,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "安全を先に確かめ、傾聴と本人が選べる小さな行動を結び付けています：まず「大げさだと判断され、助けを求めたことを後悔した影響」を安全に確認し、判断したことを謝り、今の安全と必要な支援から聞き直す。",
+            "en": "This checks safety first and connects listening with a small, chosen action: Check safety first; apologize for judging and restart with present safety and needs.",
+            "zh": "這先確認安全，再把傾聽連結到當事人選擇的小行動：先安全確認求助後被說誇張而感到後悔的影響，再為評斷道歉，從目前安全與需要重新聽起。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "判断したことを謝り、今の安全と必要な支援から聞き直すが、「大げさだと判断され、助けを求めたことを後悔した影響」の確認は省きます。",
+            "en": "Only apologize for judging and restart with present safety and needs.",
+            "zh": "只為評斷道歉，從目前安全與需要重新聽起，但省略求助後被說誇張而感到後悔的影響的確認。"
           },
           "axisScores": {
-            "emotional-stabilization": 13,
-            "active-listening": 11,
-            "clarity": 12,
-            "boundary-keeping": 12
+            "emotional-stabilization": 14,
+            "active-listening": 12,
+            "clarity": 14,
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動は提案しますが、安全確認か本人の選択が不足します：判断したことを謝り、今の安全と必要な支援から聞き直すが、「大げさだと判断され、助けを求めたことを後悔した影響」の確認は省きます。",
+            "en": "This proposes action but lacks safety assessment or personal choice: Only apologize for judging and restart with present safety and needs.",
+            "zh": "這提出行動，但缺少安全評估或本人選擇：只為評斷道歉，從目前安全與需要重新聽起，但省略求助後被說誇張而感到後悔的影響的確認。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "判断したことを謝り、今の安全と必要な支援から聞き直すことはせず、命令と圧力を強めます。",
+            "en": "Do not apologize for judging and restart with present safety and needs; increase commands and pressure.",
+            "zh": "不為評斷道歉，從目前安全與需要重新聽起，反而加強命令與壓力。"
           },
           "axisScores": {
-            "emotional-stabilization": 2,
-            "active-listening": 3,
-            "clarity": 2,
-            "boundary-keeping": 3
+            "emotional-stabilization": 1,
+            "active-listening": 2,
+            "clarity": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "命令・圧力・虚偽の安心は緊張と危険を高めます：判断したことを謝り、今の安全と必要な支援から聞き直すことはせず、命令と圧力を強めます。",
+            "en": "Commands, pressure, and false reassurance can increase tension and danger: Do not apologize for judging and restart with present safety and needs; increase commands and pressure.",
+            "zh": "命令、壓力與虛假保證可能提高緊張和危險：不為評斷道歉，從目前安全與需要重新聽起，反而加強命令與壓力。"
           },
           "stateEffects": [
             {

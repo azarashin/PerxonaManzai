@@ -1493,16 +1493,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "落ち着いて安全・居場所・差し迫った危険を確認し、話を急かさず聞く",
+          "本人が選ぶ小さな行動と、地域の危機支援・信頼できる人への接続を作る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Crisis Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Calmly check safety, location, and immediate danger without rushing the caller.",
+          "Support one chosen step and connect local crisis help or a trusted person."
         ],
         "zh": [
-          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "冷靜確認安全、位置與立即危險，不催促來電者。",
+          "支持一個自選的小步驟，連結當地危機服務或可信任的人。"
         ]
       },
       "title": {
@@ -1520,16 +1520,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "避難拒否を頑固さと決めず、失いたくない物・移動障壁・情報源を確認する",
+          "平易な危険情報と選べる移動支援を示し、段階的な避難を合意する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Crisis Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Explore valued items, access barriers, and information sources rather than labeling refusal.",
+          "Use plain risk information and selectable assistance to agree on staged evacuation."
         ],
         "zh": [
-          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "不把拒絕視為固執，了解重要物品、移動障礙與資訊來源。",
+          "用白話風險資訊與可選支援，約定分階段撤離。"
         ]
       },
       "title": {
@@ -1547,16 +1547,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "距離と落ち着いた連絡を保ち、差し迫った危険と当事者の必要を確認する",
+          "急な動きを避け、専門対応者と本人が確認できる一つの安全な次の行動を作る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Crisis Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Maintain distance and calm contact while assessing immediate danger and needs.",
+          "Avoid sudden movement and establish one safe next action with trained responders."
         ],
         "zh": [
-          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "保持距離與冷靜聯絡，確認立即危險與當事人需求。",
+          "避免突然動作，與專業人員和本人確認一個安全下一步。"
         ]
       },
       "title": {
