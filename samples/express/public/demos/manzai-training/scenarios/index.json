@@ -1088,16 +1088,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "元本保証・即決要求・本人確認情報の要求を危険信号として切り分ける",
+          "連絡先を自分で調べ、登録・商品・担当者を公式窓口で確認してから判断する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
-          "Compare how different responses affect the other person and the next action."
+          "Identify guarantees, urgency, and identity requests as separate warning signs.",
+          "Verify the firm, product, and caller through independently found official channels."
         ],
         "zh": [
-          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "分辨保本、高報酬、催促與索取身分資料等警訊。",
+          "自行尋找官方管道，查核公司、商品與來電者。"
         ]
       },
       "title": {
@@ -1115,16 +1115,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "返金を口実にした画面共有・銀行情報要求を拒否する",
+          "購入履歴と公式窓口を自分で開き、認証情報を変えて被害を抑える"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
-          "Compare how different responses affect the other person and the next action."
+          "Refuse screen sharing and banking requests made under the pretext of a refund.",
+          "Use independently opened purchase records and official support, then secure credentials."
         ],
         "zh": [
-          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "拒絕以退款為由要求螢幕共享與銀行資料。",
+          "自行開啟購買紀錄與官方客服，並保護帳戶憑證。"
         ]
       },
       "title": {
@@ -1142,16 +1142,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "ワンタイムコードを誰にも伝えず、期限による圧力から離れる",
+          "公式アプリで状態を確認し、漏えい時はセッションと認証情報を失効させる"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
-          "Compare how different responses affect the other person and the next action."
+          "Never disclose one-time codes and disengage from deadline pressure.",
+          "Check status in the official app and revoke sessions and credentials after exposure."
         ],
         "zh": [
-          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "絕不透露一次性驗證碼，並退出限時施壓。",
+          "從官方應用程式查狀態；若已外洩，撤銷工作階段與憑證。"
         ]
       },
       "title": {
