@@ -208,6 +208,22 @@
         "en": "Diplomatic Negotiation",
         "zh": "外交與政治談判"
       }
+    },
+    {
+      "id": "clinical-communication",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "不安や理解度で説明の仕方が変わるため分岐を推奨しますが、診断や個別治療は扱いません。",
+          "en": "Branching is recommended as anxiety and understanding change communication; diagnosis and individualized treatment are out of scope.",
+          "zh": "焦慮與理解程度會改變溝通方式，因此建議分支；不涉及診斷或個別治療。"
+        }
+      },
+      "title": {
+        "ja": "医療コミュニケーション",
+        "en": "Clinical Communication",
+        "zh": "醫療溝通"
+      }
     }
   ],
   "scenarios": [
@@ -1371,6 +1387,33 @@
         "zh": "臨時邊界協議"
       },
       "path": "./scenarios/temporary-border-agreement.json"
+    },
+    {
+      "id": "anxious-about-test-results",
+      "categoryId": "clinical-communication",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Clinical Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "検査結果を待つ不安",
+        "en": "Anxious About Test Results",
+        "zh": "等待檢查結果的焦慮"
+      },
+      "path": "./scenarios/anxious-about-test-results.json"
     }
   ]
 }
