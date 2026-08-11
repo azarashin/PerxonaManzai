@@ -735,6 +735,33 @@
         "zh": "說明職涯空窗"
       },
       "path": "./scenarios/explaining-career-gap.json"
+    },
+    {
+      "id": "weakness-with-evidence",
+      "categoryId": "interview-hiring",
+      "beatCount": 3,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合面試與招募的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "弱みと改善行動",
+        "en": "A Weakness with Evidence",
+        "zh": "有依據地說明弱點"
+      },
+      "path": "./scenarios/weakness-with-evidence.json"
     }
   ]
 }

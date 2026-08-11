@@ -1,0 +1,317 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "weakness-with-evidence",
+  "title": {
+    "ja": "弱みと改善行動",
+    "en": "A Weakness with Evidence",
+    "zh": "有依據地說明弱點"
+  },
+  "description": {
+    "ja": "面接・採用として「弱みと改善行動」に対応し、状況に合う短い応答を選ぶ練習です。",
+    "en": "Practice concise, context-appropriate responses in “A Weakness with Evidence” for Interview and Hiring.",
+    "zh": "在「有依據地說明弱點」中練習符合情境的簡短面試與招募回應。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "relevance",
+      "label": {
+        "ja": "関連性",
+        "en": "Relevance",
+        "zh": "相關性"
+      },
+      "description": {
+        "ja": "質問に沿って具体的に答える",
+        "en": "Answer the question with relevant specifics.",
+        "zh": "針對問題提供具體回答。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "credibility",
+      "label": {
+        "ja": "信頼性",
+        "en": "Credibility",
+        "zh": "可信度"
+      },
+      "description": {
+        "ja": "誇張せず根拠を示す",
+        "en": "Use evidence without exaggeration.",
+        "zh": "不誇大並提出依據。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "clarity",
+      "label": {
+        "ja": "明瞭さ",
+        "en": "Clarity",
+        "zh": "清晰度"
+      },
+      "description": {
+        "ja": "短く分かりやすく伝える",
+        "en": "Communicate briefly and clearly.",
+        "zh": "簡短清楚地表達。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "reciprocal-fit",
+      "label": {
+        "ja": "相互適合",
+        "en": "Reciprocal fit",
+        "zh": "雙向適合"
+      },
+      "description": {
+        "ja": "双方に合う条件を確認する",
+        "en": "Explore fit for both sides.",
+        "zh": "確認雙方是否適合。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "boke": {
+        "ja": "あなたの弱みと、それにどう向き合っているかを教えてください。",
+        "en": "Tell me about a weakness and how you are addressing it.",
+        "zh": "請說明你的一項弱點，以及你如何改善。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "率直に問題を切り出す",
+          "en": "Raise the issue candidly",
+          "zh": "坦率提出問題"
+        },
+        "motionTags": [
+          "pose:talking_02",
+          "category:talking"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "opening-strong",
+          "text": {
+            "ja": "質問に直接答え、具体的な経験と学びを簡潔に示します。",
+            "en": "I will answer directly with a concise example and what I learned.",
+            "zh": "我會直接回答，簡潔說明具體經驗與學習。"
+          },
+          "axisScores": {
+            "relevance": 20,
+            "credibility": 20,
+            "clarity": 20,
+            "reciprocal-fit": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          }
+        },
+        {
+          "id": "opening-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "relevance": 13,
+            "credibility": 11,
+            "clarity": 12,
+            "reciprocal-fit": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          }
+        },
+        {
+          "id": "opening-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "relevance": 2,
+            "credibility": 3,
+            "clarity": 2,
+            "reciprocal-fit": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify",
+      "boke": {
+        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
+        "en": "I don't think the key point is clear yet. What will you check?",
+        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "説明や確認を求める",
+          "en": "Ask for clarification",
+          "zh": "要求說明與確認"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "clarify-strong",
+          "text": {
+            "ja": "誇張せず、自分の行動と結果を分けて説明します。",
+            "en": "I will avoid exaggeration and distinguish my actions from the result.",
+            "zh": "我不誇大，並分開說明自己的行動與結果。"
+          },
+          "axisScores": {
+            "relevance": 20,
+            "credibility": 20,
+            "clarity": 20,
+            "reciprocal-fit": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          }
+        },
+        {
+          "id": "clarify-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "relevance": 13,
+            "credibility": 11,
+            "clarity": 12,
+            "reciprocal-fit": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          }
+        },
+        {
+          "id": "clarify-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "relevance": 2,
+            "credibility": 3,
+            "clarity": 2,
+            "reciprocal-fit": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "constructive-close",
+      "boke": {
+        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
+        "en": "Understood. Can we decide specifically what happens next?",
+        "zh": "了解。那麼可以具體決定下一步嗎？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "次の行動を確かめる",
+          "en": "Confirm the next action",
+          "zh": "確認下一步行動"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "constructive-close-strong",
+          "text": {
+            "ja": "役割の期待と自分の経験が合う点、確認したい点を示します。",
+            "en": "I will connect my experience to the role and identify what I still need to learn.",
+            "zh": "我會連結自身經驗與職務，也提出仍需了解之處。"
+          },
+          "axisScores": {
+            "relevance": 20,
+            "credibility": 20,
+            "clarity": 20,
+            "reciprocal-fit": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          }
+        },
+        {
+          "id": "constructive-close-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "relevance": 13,
+            "credibility": 11,
+            "clarity": 12,
+            "reciprocal-fit": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          }
+        },
+        {
+          "id": "constructive-close-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "relevance": 2,
+            "credibility": 3,
+            "clarity": 2,
+            "reciprocal-fit": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          }
+        }
+      ]
+    }
+  ]
+}
