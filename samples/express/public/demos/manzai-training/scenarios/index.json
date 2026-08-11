@@ -1123,6 +1123,33 @@
         "zh": "遊戲時間約定"
       },
       "path": "./scenarios/gaming-time-agreement.json"
+    },
+    {
+      "id": "homework-lie",
+      "categoryId": "parent-child",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合親子溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "宿題についての嘘",
+        "en": "A Lie About Homework",
+        "zh": "關於功課的謊言"
+      },
+      "path": "./scenarios/homework-lie.json"
     }
   ]
 }
