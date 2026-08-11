@@ -67,10 +67,13 @@ export class ScenarioController {
   }
 
   get summary() {
-    const totalScore = this.results.reduce(
+    const scoreSum = this.results.reduce(
       (sum, entry) => sum + entry.result.totalScore,
       0,
     );
+    const totalScore = this.results.length
+      ? Math.round(scoreSum / this.results.length)
+      : 0;
     const averageReactionSeconds = this.results.length
       ? this.results.reduce(
           (sum, entry) => sum + entry.result.reactionSeconds,
@@ -80,7 +83,7 @@ export class ScenarioController {
 
     return {
       totalScore,
-      maximumScore: this.results.length * 100,
+      maximumScore: 100,
       averageReactionSeconds,
       completedBeats: this.results.length,
     };

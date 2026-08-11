@@ -76,7 +76,8 @@ test("state effects are clamped before conditional routes are evaluated", () => 
   controller.advance();
   assert.equal(controller.isComplete, true);
   assert.deepEqual(controller.resultDetails.map(({ beat }) => beat.id), ["opening", "resolution"]);
-  assert.equal(controller.summary.maximumScore, 200);
+  assert.equal(controller.summary.totalScore, 95);
+  assert.equal(controller.summary.maximumScore, 100);
 });
 
 test("a scenario without routes advances in array order", () => {
