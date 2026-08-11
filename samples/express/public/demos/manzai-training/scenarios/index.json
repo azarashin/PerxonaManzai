@@ -1250,16 +1250,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "時刻の食い違いを虚偽と断定せず、記憶の基準点と確信度を確認する",
+          "端末・交通・第三者記録と照合し、不確実性を含めて記録する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Investigative Interview.",
-          "Compare how different responses affect the other person and the next action."
+          "Explore memory anchors and confidence before treating a time discrepancy as deception.",
+          "Compare device, travel, and witness records while documenting uncertainty."
         ],
         "zh": [
-          "掌握情境重點，選擇符合調查訪談的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "先查記憶基準點與確信度，不把時間矛盾直接視為說謊。",
+          "比對裝置、交通與第三方紀錄，並記下不確定性。"
         ]
       },
       "title": {
@@ -1277,16 +1277,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "最後の使用者と紛失責任を切り分け、保管経路を時系列で確認する",
+          "アクセス記録・引継ぎ・捜索範囲を照合し、公平な次の手順を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Investigative Interview.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate being the last user from responsibility and reconstruct custody.",
+          "Cross-check access, handoffs, and search locations with a fair next procedure."
         ],
         "zh": [
-          "掌握情境重點，選擇符合調查訪談的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分最後使用者與遺失責任，重建保管流程。",
+          "交叉查核進出、交接與搜尋範圍，提出公平後續程序。"
         ]
       },
       "title": {
@@ -1304,16 +1304,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "目撃者の自由な記憶と質問後の推測を分け、確信度を保存する",
+          "誘導語を避け、初回陳述と独立証拠を用いて不確実性を保つ"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Investigative Interview.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate free recall from later guesses and preserve confidence levels.",
+          "Avoid leading language and retain uncertainty alongside the first account and independent evidence."
         ],
         "zh": [
-          "掌握情境重點，選擇符合調查訪談的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分自由回憶與後續猜測，保存各細節確信度。",
+          "避免誘導語，保留首次陳述、不確定性與獨立證據。"
         ]
       },
       "title": {

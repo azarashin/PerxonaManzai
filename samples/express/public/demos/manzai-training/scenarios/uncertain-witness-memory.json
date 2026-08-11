@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "結論を前提にせず、本人の言葉で順序を説明してもらいます。",
-            "en": "Without assuming a conclusion, I will ask for the sequence in the person's own words.",
-            "zh": "我不預設結論，請對方用自己的話說明順序。"
+            "ja": "「服の色についての最初の印象と現在の確信度」を中立に確認し、遮らずに一度すべて話してもらい、色の確信度を本人の言葉で記録する。",
+            "en": "Verify first; obtain an uninterrupted account and record confidence in the witness's own words.",
+            "zh": "中立查證衣服顏色的第一印象與目前確信度，再先不打斷地完整陳述，再用本人措辭記錄顏色確信度。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -141,9 +141,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「服の色についての最初の印象と現在の確信度」を中立に確認し、遮らずに一度すべて話してもらい、色の確信度を本人の言葉で記録する。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; obtain an uninterrupted account and record confidence in the witness's own words.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證衣服顏色的第一印象與目前確信度，再先不打斷地完整陳述，再用本人措辭記錄顏色確信度。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "遮らずに一度すべて話してもらい、色の確信度を本人の言葉で記録するが、「服の色についての最初の印象と現在の確信度」の別の可能性は確認しません。",
+            "en": "Only obtain an uninterrupted account and record confidence in the witness's own words.",
+            "zh": "先不打斷地完整陳述，再用本人措辭記錄顏色確信度，但不查衣服顏色的第一印象與目前確信度的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：遮らずに一度すべて話してもらい、色の確信度を本人の言葉で記録するが、「服の色についての最初の印象と現在の確信度」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only obtain an uninterrupted account and record confidence in the witness's own words.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：先不打斷地完整陳述，再用本人措辭記錄顏色確信度，但不查衣服顏色的第一印象與目前確信度的其他可能。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「服の色についての最初の印象と現在の確信度」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat the first impression of clothing color and current confidence as a lie and press for an admission.",
+            "zh": "只憑衣服顏色的第一印象與目前確信度就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「服の色についての最初の印象と現在の確信度」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat the first impression of clothing color and current confidence as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑衣服顏色的第一印象與目前確信度就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "重要なのは「照明・距離・観察時間が色の見え方に与えた影響」です。どの資料と質問で確認しますか？",
+        "en": "The key issue is how lighting, distance, and viewing time affected color perception. Which records and questions will you use?",
+        "zh": "關鍵是光線、距離與觀看時間對顏色判斷的影響。你會用哪些紀錄與問題查證？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "食い違う箇所を具体的に示し、訂正や不確かさを受け入れます。",
-            "en": "I will identify the specific inconsistency and allow correction or uncertainty.",
-            "zh": "我會具體指出不一致，並允許更正或表達不確定。"
+            "ja": "「照明・距離・観察時間が色の見え方に与えた影響」を中立に確認し、条件を一つずつ非誘導質問で確認し、初回回答を上書きしない。",
+            "en": "Verify first; check each condition with open questions without overwriting the first answer.",
+            "zh": "中立查證光線、距離與觀看時間對顏色判斷的影響，再逐項以非誘導問題確認，不覆蓋首次回答。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -263,9 +263,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「照明・距離・観察時間が色の見え方に与えた影響」を中立に確認し、条件を一つずつ非誘導質問で確認し、初回回答を上書きしない。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; check each condition with open questions without overwriting the first answer.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證光線、距離與觀看時間對顏色判斷的影響，再逐項以非誘導問題確認，不覆蓋首次回答。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "条件を一つずつ非誘導質問で確認し、初回回答を上書きしないが、「照明・距離・観察時間が色の見え方に与えた影響」の別の可能性は確認しません。",
+            "en": "Only check each condition with open questions without overwriting the first answer.",
+            "zh": "逐項以非誘導問題確認，不覆蓋首次回答，但不查光線、距離與觀看時間對顏色判斷的影響的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：条件を一つずつ非誘導質問で確認し、初回回答を上書きしないが、「照明・距離・観察時間が色の見え方に与えた影響」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only check each condition with open questions without overwriting the first answer.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：逐項以非誘導問題確認，不覆蓋首次回答，但不查光線、距離與觀看時間對顏色判斷的影響的其他可能。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「照明・距離・観察時間が色の見え方に与えた影響」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat how lighting, distance, and viewing time affected color perception as a lie and press for an admission.",
+            "zh": "只憑光線、距離與觀看時間對顏色判斷的影響就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「照明・距離・観察時間が色の見え方に与えた影響」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat how lighting, distance, and viewing time affected color perception as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑光線、距離與觀看時間對顏色判斷的影響就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "本人確認前の確信度を固定し、映像など独立証拠と別欄で比較する手順を明確にできますか？",
+        "en": "Can you make the procedure clear to lock in pre-identification confidence and compare video in a separate field?",
+        "zh": "可以清楚說明如何固定辨認前確信度，並與影像等獨立證據分欄比較嗎？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "確認済み事実と未確認事項を整理し、次の確認方法を合意します。",
-            "en": "I will separate confirmed facts from open points and agree on the next verification step.",
-            "zh": "我會區分已確認事實與未確認事項，並同意下一個查證步驟。"
+            "ja": "「確かな特徴と不確かな特徴を捜査資料で分ける方法」を中立に確認し、本人確認前の確信度を固定し、映像など独立証拠と別欄で比較する。",
+            "en": "Verify first; lock in pre-identification confidence and compare video in a separate field.",
+            "zh": "中立查證在調查紀錄中區分確定與不確定特徵的方法，再固定辨認前確信度，並與影像等獨立證據分欄比較。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -390,9 +390,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「確かな特徴と不確かな特徴を捜査資料で分ける方法」を中立に確認し、本人確認前の確信度を固定し、映像など独立証拠と別欄で比較する。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; lock in pre-identification confidence and compare video in a separate field.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證在調查紀錄中區分確定與不確定特徵的方法，再固定辨認前確信度，並與影像等獨立證據分欄比較。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "本人確認前の確信度を固定し、映像など独立証拠と別欄で比較するが、「確かな特徴と不確かな特徴を捜査資料で分ける方法」の別の可能性は確認しません。",
+            "en": "Only lock in pre-identification confidence and compare video in a separate field.",
+            "zh": "固定辨認前確信度，並與影像等獨立證據分欄比較，但不查在調查紀錄中區分確定與不確定特徵的方法的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：本人確認前の確信度を固定し、映像など独立証拠と別欄で比較するが、「確かな特徴と不確かな特徴を捜査資料で分ける方法」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only lock in pre-identification confidence and compare video in a separate field.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：固定辨認前確信度，並與影像等獨立證據分欄比較，但不查在調查紀錄中區分確定與不確定特徵的方法的其他可能。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「確かな特徴と不確かな特徴を捜査資料で分ける方法」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat how to separate confident and uncertain features in the record as a lie and press for an admission.",
+            "zh": "只憑在調查紀錄中區分確定與不確定特徵的方法就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「確かな特徴と不確かな特徴を捜査資料で分ける方法」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat how to separate confident and uncertain features in the record as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑在調查紀錄中區分確定與不確定特徵的方法就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "「青だったはずと繰り返し示唆され、記憶が変わった可能性」を決めつけられ、正確に話しにくくなりました。",
+        "en": "Presuming possible memory change after repeated suggestions that the clothing was blue made it harder to give an accurate account.",
+        "zh": "你預設反覆暗示衣服是藍色後，記憶可能被改變，讓我更難準確陳述。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "決めつけた印象を与えたことを認め、中立な質問に戻します。",
-            "en": "I recognize that I sounded prejudged and will return to neutral questions.",
-            "zh": "我承認剛才像先入為主，會回到中立提問。"
+            "ja": "「青だったはずと繰り返し示唆され、記憶が変わった可能性」を中立に確認し、誘導質問を認め、影響後の回答と初回陳述を分けて記録する。",
+            "en": "Verify first; acknowledge the leading question and separate later answers from the first account.",
+            "zh": "中立查證反覆暗示衣服是藍色後，記憶可能被改變，再承認誘導提問，分開記錄受影響後回答與首次陳述。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -507,9 +507,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「青だったはずと繰り返し示唆され、記憶が変わった可能性」を中立に確認し、誘導質問を認め、影響後の回答と初回陳述を分けて記録する。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; acknowledge the leading question and separate later answers from the first account.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證反覆暗示衣服是藍色後，記憶可能被改變，再承認誘導提問，分開記錄受影響後回答與首次陳述。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "誘導質問を認め、影響後の回答と初回陳述を分けて記録するが、「青だったはずと繰り返し示唆され、記憶が変わった可能性」の別の可能性は確認しません。",
+            "en": "Only acknowledge the leading question and separate later answers from the first account.",
+            "zh": "承認誘導提問，分開記錄受影響後回答與首次陳述，但不查反覆暗示衣服是藍色後，記憶可能被改變的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：誘導質問を認め、影響後の回答と初回陳述を分けて記録するが、「青だったはずと繰り返し示唆され、記憶が変わった可能性」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only acknowledge the leading question and separate later answers from the first account.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：承認誘導提問，分開記錄受影響後回答與首次陳述，但不查反覆暗示衣服是藍色後，記憶可能被改變的其他可能。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「青だったはずと繰り返し示唆され、記憶が変わった可能性」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat possible memory change after repeated suggestions that the clothing was blue as a lie and press for an admission.",
+            "zh": "只憑反覆暗示衣服是藍色後，記憶可能被改變就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「青だったはずと繰り返し示唆され、記憶が変わった可能性」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat possible memory change after repeated suggestions that the clothing was blue as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑反覆暗示衣服是藍色後，記憶可能被改變就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {

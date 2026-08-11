@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "結論を前提にせず、本人の言葉で順序を説明してもらいます。",
-            "en": "Without assuming a conclusion, I will ask for the sequence in the person's own words.",
-            "zh": "我不預設結論，請對方用自己的話說明順序。"
+            "ja": "「前回と今回の時刻差、緊張による記憶の揺れ」を中立に確認し、出来事を時刻ではなく順番から自由に話してもらう。",
+            "en": "Verify first; ask for a free account in event order before assigning times.",
+            "zh": "中立查證前後時間差與緊張對記憶的影響，再先請對方按事件順序自由陳述，不急著定時間。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -141,9 +141,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「前回と今回の時刻差、緊張による記憶の揺れ」を中立に確認し、出来事を時刻ではなく順番から自由に話してもらう。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; ask for a free account in event order before assigning times.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證前後時間差與緊張對記憶的影響，再先請對方按事件順序自由陳述，不急著定時間。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "出来事を時刻ではなく順番から自由に話してもらうが、「前回と今回の時刻差、緊張による記憶の揺れ」の別の可能性は確認しません。",
+            "en": "Only ask for a free account in event order before assigning times.",
+            "zh": "先請對方按事件順序自由陳述，不急著定時間，但不查前後時間差與緊張對記憶的影響的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：出来事を時刻ではなく順番から自由に話してもらうが、「前回と今回の時刻差、緊張による記憶の揺れ」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only ask for a free account in event order before assigning times.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：先請對方按事件順序自由陳述，不急著定時間，但不查前後時間差與緊張對記憶的影響的其他可能。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「前回と今回の時刻差、緊張による記憶の揺れ」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat the time difference and how stress may affect recall as a lie and press for an admission.",
+            "zh": "只憑前後時間差與緊張對記憶的影響就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「前回と今回の時刻差、緊張による記憶の揺れ」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat the time difference and how stress may affect recall as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑前後時間差與緊張對記憶的影響就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "重要なのは「時刻を推定した根拠となる通知・移動・会話」です。どの資料と質問で確認しますか？",
+        "en": "The key issue is the notifications, travel, and conversations used to estimate time. Which records and questions will you use?",
+        "zh": "關鍵是用來推算時間的通知、移動與對話。你會用哪些紀錄與問題查證？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "食い違う箇所を具体的に示し、訂正や不確かさを受け入れます。",
-            "en": "I will identify the specific inconsistency and allow correction or uncertainty.",
-            "zh": "我會具體指出不一致，並允許更正或表達不確定。"
+            "ja": "「時刻を推定した根拠となる通知・移動・会話」を中立に確認し、本人の推定と端末・交通記録を別々に表へ置く。",
+            "en": "Verify first; chart the estimate separately from device and travel records.",
+            "zh": "中立查證用來推算時間的通知、移動與對話，再把本人推估與裝置、交通紀錄分開列表。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -263,9 +263,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「時刻を推定した根拠となる通知・移動・会話」を中立に確認し、本人の推定と端末・交通記録を別々に表へ置く。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; chart the estimate separately from device and travel records.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證用來推算時間的通知、移動與對話，再把本人推估與裝置、交通紀錄分開列表。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "本人の推定と端末・交通記録を別々に表へ置くが、「時刻を推定した根拠となる通知・移動・会話」の別の可能性は確認しません。",
+            "en": "Only chart the estimate separately from device and travel records.",
+            "zh": "把本人推估與裝置、交通紀錄分開列表，但不查用來推算時間的通知、移動與對話的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：本人の推定と端末・交通記録を別々に表へ置くが、「時刻を推定した根拠となる通知・移動・会話」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only chart the estimate separately from device and travel records.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：把本人推估與裝置、交通紀錄分開列表，但不查用來推算時間的通知、移動與對話的其他可能。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「時刻を推定した根拠となる通知・移動・会話」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat the notifications, travel, and conversations used to estimate time as a lie and press for an admission.",
+            "zh": "只憑用來推算時間的通知、移動與對話就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「時刻を推定した根拠となる通知・移動・会話」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat the notifications, travel, and conversations used to estimate time as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑用來推算時間的通知、移動與對話就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "確信度と訂正理由を記録し、追加資料の期限を示す手順を明確にできますか？",
+        "en": "Can you make the procedure clear to record confidence and reasons for correction, with a deadline for more evidence?",
+        "zh": "可以清楚說明如何記錄確信度與更正原因，並列明補充資料期限嗎？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "確認済み事実と未確認事項を整理し、次の確認方法を合意します。",
-            "en": "I will separate confirmed facts from open points and agree on the next verification step.",
-            "zh": "我會區分已確認事實與未確認事項，並同意下一個查證步驟。"
+            "ja": "「一致した点・未確定点・変わった説明の区別」を中立に確認し、確信度と訂正理由を記録し、追加資料の期限を示す。",
+            "en": "Verify first; record confidence and reasons for correction, with a deadline for more evidence.",
+            "zh": "中立查證哪些細節一致、未確定或已改變，再記錄確信度與更正原因，並列明補充資料期限。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -390,9 +390,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「一致した点・未確定点・変わった説明の区別」を中立に確認し、確信度と訂正理由を記録し、追加資料の期限を示す。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; record confidence and reasons for correction, with a deadline for more evidence.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證哪些細節一致、未確定或已改變，再記錄確信度與更正原因，並列明補充資料期限。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "確信度と訂正理由を記録し、追加資料の期限を示すが、「一致した点・未確定点・変わった説明の区別」の別の可能性は確認しません。",
+            "en": "Only record confidence and reasons for correction, with a deadline for more evidence.",
+            "zh": "記錄確信度與更正原因，並列明補充資料期限，但不查哪些細節一致、未確定或已改變的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：確信度と訂正理由を記録し、追加資料の期限を示すが、「一致した点・未確定点・変わった説明の区別」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only record confidence and reasons for correction, with a deadline for more evidence.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：記錄確信度與更正原因，並列明補充資料期限，但不查哪些細節一致、未確定或已改變的其他可能。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「一致した点・未確定点・変わった説明の区別」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat which details agree, remain uncertain, or changed as a lie and press for an admission.",
+            "zh": "只憑哪些細節一致、未確定或已改變就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「一致した点・未確定点・変わった説明の区別」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat which details agree, remain uncertain, or changed as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑哪些細節一致、未確定或已改變就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "「矛盾を嘘と呼ばれたことで推測を事実のように答える危険」を決めつけられ、正確に話しにくくなりました。",
+        "en": "Presuming the risk of guessing after the discrepancy was called a lie made it harder to give an accurate account.",
+        "zh": "你預設矛盾被稱為謊言後，為迎合而把猜測當事實的風險，讓我更難準確陳述。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "決めつけた印象を与えたことを認め、中立な質問に戻します。",
-            "en": "I recognize that I sounded prejudged and will return to neutral questions.",
-            "zh": "我承認剛才像先入為主，會回到中立提問。"
+            "ja": "「矛盾を嘘と呼ばれたことで推測を事実のように答える危険」を中立に確認し、断定を撤回し、分からないと答えてよいことを伝えて自由再生に戻る。",
+            "en": "Verify first; withdraw the accusation, permit uncertainty, and return to free recall.",
+            "zh": "中立查證矛盾被稱為謊言後，為迎合而把猜測當事實的風險，再撤回指控，允許回答不知道，回到自由回憶。"
           },
           "axisScores": {
             "neutrality": 20,
@@ -507,9 +507,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "仮説を結論にせず、供述と独立資料を照合しています：「矛盾を嘘と呼ばれたことで推測を事実のように答える危険」を中立に確認し、断定を撤回し、分からないと答えてよいことを伝えて自由再生に戻る。",
+            "en": "This tests a hypothesis against the account and independent evidence: Verify first; withdraw the accusation, permit uncertainty, and return to free recall.",
+            "zh": "這會把假設與陳述、獨立證據交叉查核：中立查證矛盾被稱為謊言後，為迎合而把猜測當事實的風險，再撤回指控，允許回答不知道，回到自由回憶。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "断定を撤回し、分からないと答えてよいことを伝えて自由再生に戻るが、「矛盾を嘘と呼ばれたことで推測を事実のように答える危険」の別の可能性は確認しません。",
+            "en": "Only withdraw the accusation, permit uncertainty, and return to free recall.",
+            "zh": "撤回指控，允許回答不知道，回到自由回憶，但不查矛盾被稱為謊言後，為迎合而把猜測當事實的風險的其他可能。"
           },
           "axisScores": {
-            "neutrality": 13,
-            "fact-checking": 11,
+            "neutrality": 12,
+            "fact-checking": 16,
             "contradiction-handling": 12,
-            "relationship-impact": 12
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認は進みますが、代替説明か記録手順が不足します：断定を撤回し、分からないと答えてよいことを伝えて自由再生に戻るが、「矛盾を嘘と呼ばれたことで推測を事実のように答える危険」の別の可能性は確認しません。",
+            "en": "This advances the check but misses an alternative explanation or record: Only withdraw the accusation, permit uncertainty, and return to free recall.",
+            "zh": "查證有所進展，但缺少替代解釋或紀錄程序：撤回指控，允許回答不知道，回到自由回憶，但不查矛盾被稱為謊言後，為迎合而把猜測當事實的風險的其他可能。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「矛盾を嘘と呼ばれたことで推測を事実のように答える危険」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Treat the risk of guessing after the discrepancy was called a lie as a lie and press for an admission.",
+            "zh": "只憑矛盾被稱為謊言後，為迎合而把猜測當事實的風險就認定說謊並逼迫承認。"
           },
           "axisScores": {
-            "neutrality": 2,
+            "neutrality": 1,
             "fact-checking": 3,
-            "contradiction-handling": 2,
-            "relationship-impact": 3
+            "contradiction-handling": 1,
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけと圧力は供述の正確性と信頼を損ないます：「矛盾を嘘と呼ばれたことで推測を事実のように答える危険」だけで虚偽と判断し、認めるよう迫ります。",
+            "en": "Presumption and pressure damage accuracy and trust: Treat the risk of guessing after the discrepancy was called a lie as a lie and press for an admission.",
+            "zh": "預設與施壓會損害陳述準確性與信任：只憑矛盾被稱為謊言後，為迎合而把猜測當事實的風險就認定說謊並逼迫承認。"
           },
           "stateEffects": [
             {
