@@ -471,6 +471,33 @@
         "zh": "預算削減下的提案"
       },
       "path": "./scenarios/budget-cut-proposal.json"
+    },
+    {
+      "id": "last-minute-contract-condition",
+      "categoryId": "negotiation-sales",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "契約直前の追加条件",
+        "en": "A Last-Minute Contract Condition",
+        "zh": "簽約前的追加條件"
+      },
+      "path": "./scenarios/last-minute-contract-condition.json"
     }
   ]
 }
