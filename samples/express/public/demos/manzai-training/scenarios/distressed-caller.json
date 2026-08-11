@@ -255,7 +255,7 @@
         "zh": "現在可以讓我確認本人或周圍是否有立即危險，以及是否獨處嗎？"
       },
       "pronunciationGuide": {
-        "ja": "いまは「ほんにんや しゅういの ひとが いま すぐ きけんか、 いちにんで いるか」を かくにん しても だいじょうぶですか？",
+        "ja": "いまは「ほんにんや しゅういの ひとが いま すぐ きけんか、 ひとりで いるか」を かくにん しても だいじょうぶですか？",
         "en": "/ɪz ɪt ˌoʊˈkeɪ ɪf aɪ tʃɛk ˈwɛðɚ ˈɛniˌwʌn ɪz ɪn ˌɪˈmiˌdiət ˈdeɪndʒɚ ənd ˈwɛðɚ ðə ˈkɔlɚ ɪz əˈloʊn naʊ?/",
         "zh": "Xiàn zài kě yǐ ràng wǒ què rèn běn rén huò zhōu wéi shì fǒu yǒu lì jí wēi xiǎn， yǐ jí shì fǒu dú chǔ ma？"
       },
@@ -282,7 +282,7 @@
             "zh": "先安全確認本人或周圍是否有立即危險，以及是否獨處，再有危險時連結當地緊急支援並保持通話。"
           },
           "pronunciationGuide": {
-            "ja": "まず「ほんにんや しゅういの ひとが いま すぐ きけんか、 いちにんで いるか」を あんぜんに かくにん し、 きけんが あれば ちいきの きんきゅう しえんへ つなぎ、 つうわを たもつ。",
+            "ja": "まず「ほんにんや しゅういの ひとが いま すぐ きけんか、 ひとりで いるか」を あんぜんに かくにん し、 きけんが あれば ちいきの きんきゅう しえんへ つなぎ、 つうわを たもつ。",
             "en": "/tʃɛk ˈseɪfti fɝst; kəˈnɛkt ˈloʊkəl ɪˈmɝdʒənsi səˈpɔɹt wɛn ˈnidəd ənd steɪ ɑn ðə laɪn./",
             "zh": "Xiān ān quán què rèn běn rén huò zhōu wéi shì fǒu yǒu lì jí wēi xiǎn， yǐ jí shì fǒu dú chǔ， zài yǒu wēi xiǎn shí lián jié dāng dì jǐn jí zhī yuán bìng bǎo chí tōng huà。"
           },
@@ -328,7 +328,7 @@
             "zh": "只有危險時連結當地緊急支援並保持通話，但省略本人或周圍是否有立即危險，以及是否獨處的確認。"
           },
           "pronunciationGuide": {
-            "ja": "きけんが あれば ちいきの きんきゅう しえんへ つなぎ、 つうわを たもつが、「ほんにんや しゅういの ひとが いま すぐ きけんか、 いちにんで いるか」の かくにんは はぶきます。",
+            "ja": "きけんが あれば ちいきの きんきゅう しえんへ つなぎ、 つうわを たもつが、「ほんにんや しゅういの ひとが いま すぐ きけんか、 ひとりで いるか」の かくにんは はぶきます。",
             "en": "/ˈoʊnli kəˈnɛkt ˈloʊkəl ɪˈmɝdʒənsi səˈpɔɹt wɛn ˈnidəd ənd steɪ ɑn ðə laɪn./",
             "zh": "Zhǐ yǒu wēi xiǎn shí lián jié dāng dì jǐn jí zhī yuán bìng bǎo chí tōng huà， dàn shěng lüè běn rén huò zhōu wéi shì fǒu yǒu lì jí wēi xiǎn， yǐ jí shì fǒu dú chǔ dí què rèn。"
           },
@@ -402,7 +402,7 @@
         "zh": "可以依你的步調選擇如何確認本人選擇的一步並轉接危機支援嗎？"
       },
       "pronunciationGuide": {
-        "ja": "あなたが えらべる かたちで、 ほんにんが えらんだ いちほを かくにん し、 きき しえんへの ひきつぎを おこなう ことを きめられますか？",
+        "ja": "あなたが えらべる かたちで、 ほんにんが えらんだ いっぽを かくにん し、 きき しえんへの ひきつぎを おこなう ことを きめられますか？",
         "en": "/kæn wi tʃuz haʊ tu kənˈfɝm ðə ˈtʃoʊzən stɛp ənd hænd ˈoʊvɚ tu ˈkɹaɪsəs səˈpɔɹt, æt jɔɹ peɪs?/",
         "zh": "Kě yǐ yī nǐ de bù diào xuǎn zé rú hé què rèn běn rén xuǎn zé de yí bù bìng zhuǎn jiē wēi jī zhī yuán ma？"
       },
@@ -429,7 +429,7 @@
             "zh": "先安全確認接下來十分鐘能做的事與可聯絡的可信任者，再確認本人選擇的一步並轉接危機支援。"
           },
           "pronunciationGuide": {
-            "ja": "まず「つぎの じゅっ ぷんにできることと、 れんらく できる しんらい できる ひと」を あんぜんに かくにん し、 ほんにんが えらんだ いちほを かくにん し、 きき しえんへの ひきつぎを おこなう。",
+            "ja": "まず「つぎの じゅっぷんに できる ことと、 れんらく できる しんらい できる ひと」を あんぜんに かくにん し、 ほんにんが えらんだ いっぽを かくにん し、 きき しえんへの ひきつぎを おこなう。",
             "en": "/tʃɛk ˈseɪfti fɝst; kənˈfɝm ðə ˈtʃoʊzən stɛp ənd hænd ˈoʊvɚ tu ˈkɹaɪsəs səˈpɔɹt./",
             "zh": "Xiān ān quán què rèn jiē xià lái shí fēn zhōng néng zuò de shì yǔ kě lián luò de kě xìn rèn zhě， zài què rèn běn rén xuǎn zé de yí bù bìng zhuǎn jiē wēi jī zhī yuán。"
           },
@@ -465,7 +465,7 @@
             "zh": "只確認本人選擇的一步並轉接危機支援，但省略接下來十分鐘能做的事與可聯絡的可信任者的確認。"
           },
           "pronunciationGuide": {
-            "ja": "ほんにんが えらんだ いちほを かくにん し、 きき しえんへの ひきつぎを おこなうが、「つぎの じゅっ ぷんにできることと、 れんらく できる しんらい できる ひと」の かくにんは はぶきます。",
+            "ja": "ほんにんが えらんだ いっぽを かくにん し、 きき しえんへの ひきつぎを おこなうが、「つぎの じゅっぷんに できる ことと、 れんらく できる しんらい できる ひと」の かくにんは はぶきます。",
             "en": "/ˈoʊnli kənˈfɝm ðə ˈtʃoʊzən stɛp ənd hænd ˈoʊvɚ tu ˈkɹaɪsəs səˈpɔɹt./",
             "zh": "Zhī què rèn běn rén xuǎn zé de yí bù bìng zhuǎn jiē wēi jī zhī yuán， dàn shěng lüè jiē xià lái shí fēn zhōng néng zuò de shì yǔ kě lián luò de kě xìn rèn zhě dí què rèn。"
           },
@@ -501,7 +501,7 @@
             "zh": "不確認本人選擇的一步並轉接危機支援，反而加強命令與壓力。"
           },
           "pronunciationGuide": {
-            "ja": "ほんにんが えらんだ いちほを かくにん し、 きき しえんへの ひきつぎを おこなう ことは せず、 めいれいと あつりょくを つよめます。",
+            "ja": "ほんにんが えらんだ いっぽを かくにん し、 きき しえんへの ひきつぎを おこなう ことは せず、 めいれいと あつりょくを つよめます。",
             "en": "/du nɑt kənˈfɝm ðə ˈtʃoʊzən stɛp ənd hænd ˈoʊvɚ tu ˈkɹaɪsəs səˈpɔɹt; ˌɪnˈkɹis kəˈmændz ənd ˈpɹɛʃɚ./",
             "zh": "Bú què rèn běn rén xuǎn zé de yí bù bìng zhuǎn jiē wēi jī zhī yuán， fǎn ér jiā qiáng mìng lìng yǔ yā lì。"
           },
