@@ -14,26 +14,58 @@
   "evaluationAxes": [
     {
       "id": "empathy",
-      "label": { "ja": "共感", "en": "Empathy", "zh": "同理心" },
-      "description": { "ja": "相手の不安や不満を受け止める", "en": "Acknowledge the customer's concern or frustration.", "zh": "接住顧客的不安或不滿。" },
+      "label": {
+        "ja": "共感",
+        "en": "Empathy",
+        "zh": "同理心"
+      },
+      "description": {
+        "ja": "相手の不安や不満を受け止める",
+        "en": "Acknowledge the customer's concern or frustration.",
+        "zh": "接住顧客的不安或不滿。"
+      },
       "maxPoints": 20
     },
     {
       "id": "fact-checking",
-      "label": { "ja": "事実確認", "en": "Fact checking", "zh": "事實確認" },
-      "description": { "ja": "推測せず必要な事実を確認する", "en": "Verify necessary facts instead of guessing.", "zh": "不憑猜測，確認必要事實。" },
+      "label": {
+        "ja": "事実確認",
+        "en": "Fact checking",
+        "zh": "事實確認"
+      },
+      "description": {
+        "ja": "推測せず必要な事実を確認する",
+        "en": "Verify necessary facts instead of guessing.",
+        "zh": "不憑猜測，確認必要事實。"
+      },
       "maxPoints": 20
     },
     {
       "id": "solution-quality",
-      "label": { "ja": "代替案・行動", "en": "Solution quality", "zh": "解決方案" },
-      "description": { "ja": "次の行動や代替案を具体的に示す", "en": "Offer a concrete next action or alternative.", "zh": "提出具體的下一步或替代方案。" },
+      "label": {
+        "ja": "代替案・行動",
+        "en": "Solution quality",
+        "zh": "解決方案"
+      },
+      "description": {
+        "ja": "次の行動や代替案を具体的に示す",
+        "en": "Offer a concrete next action or alternative.",
+        "zh": "提出具體的下一步或替代方案。"
+      },
       "maxPoints": 20
     },
     {
       "id": "boundary-keeping",
-      "label": { "ja": "境界維持", "en": "Boundary keeping", "zh": "界線維持" },
-      "description": { "ja": "確認前に責任や安全を断定しない", "en": "Avoid unsupported commitments or unsafe assurances.", "zh": "避免未經確認的承諾或不安全保證。" },
+      "label": {
+        "ja": "境界維持",
+        "en": "Boundary keeping",
+        "zh": "界線維持"
+      },
+      "description": {
+        "ja": "確認前に責任や安全を断定しない",
+        "en": "Avoid unsupported commitments or unsafe assurances.",
+        "zh": "避免未經確認的承諾或不安全保證。"
+      },
       "maxPoints": 20
     }
   ],
@@ -45,13 +77,21 @@
         "en": "Excuse me, how much longer will my order take?",
         "zh": "不好意思，我點的餐還要多久才會好？"
       },
+      "pronunciationGuide": {
+        "ja": "すみません、 ちゅうもん した りょうりは あと どれくらいで できますか？",
+        "en": "/ɪkskˈjus mi, haʊ mʌtʃ ˈlɔŋɡɚ wɪl maɪ ˈɔɹdɚ teɪk?/",
+        "zh": "Bù hǎo yì si， wǒ diǎn de cān hái yào duō jiǔ cái huì hǎo？"
+      },
       "reaction": {
         "description": {
           "ja": "料理を待ちながらスタッフに尋ねる",
           "en": "Ask a staff member while waiting for the meal",
           "zh": "等待餐點時詢問服務人員"
         },
-        "motionTags": ["pose:talking_02", "category:talking"],
+        "motionTags": [
+          "pose:talking_02",
+          "category:talking"
+        ],
         "variant": 0,
         "priority": 1,
         "cue": "start"
@@ -64,12 +104,28 @@
             "en": "I apologize for the wait. Let me check on your order.",
             "zh": "很抱歉讓您久等了，我馬上為您確認。"
           },
-          "aliases": {
-            "ja": ["申し訳ございません、すぐ確認します"],
-            "en": ["Sorry for the wait, I will check right away"],
-            "zh": ["抱歉久等了，我立刻確認"]
+          "pronunciationGuide": {
+            "ja": "お またせ して もうしわけございません。 かくにん して まいります。",
+            "en": "/aɪ əˈpɑləˌdʒaɪz fɔɹ ðə weɪt. lɛt mi tʃɛk ɑn jɔɹ ˈɔɹdɚ./",
+            "zh": "Hěn bào qiàn ràng nín jiǔ děng le， wǒ mǎ shàng wèi nín què rèn。"
           },
-          "axisScores": { "empathy": 20, "fact-checking": 20, "solution-quality": 20, "boundary-keeping": 20 },
+          "aliases": {
+            "ja": [
+              "申し訳ございません、すぐ確認します"
+            ],
+            "en": [
+              "Sorry for the wait, I will check right away"
+            ],
+            "zh": [
+              "抱歉久等了，我立刻確認"
+            ]
+          },
+          "axisScores": {
+            "empathy": 20,
+            "fact-checking": 20,
+            "solution-quality": 20,
+            "boundary-keeping": 20
+          },
           "feedback": {
             "ja": "お詫びと確認する行動の両方を伝えられています。",
             "en": "You included both an apology and a clear next action.",
@@ -83,7 +139,17 @@
             "en": "I will check right away.",
             "zh": "我馬上為您確認。"
           },
-          "axisScores": { "empathy": 5, "fact-checking": 20, "solution-quality": 20, "boundary-keeping": 15 },
+          "pronunciationGuide": {
+            "ja": "ただ いま かくにん いたします。",
+            "en": "/aɪ wɪl tʃɛk ɹaɪt əˈweɪ./",
+            "zh": "Wǒ mǎ shàng wèi nín què rèn。"
+          },
+          "axisScores": {
+            "empathy": 5,
+            "fact-checking": 20,
+            "solution-quality": 20,
+            "boundary-keeping": 15
+          },
           "feedback": {
             "ja": "行動は明確です。お待たせしたことへのお詫びも添えると、より丁寧です。",
             "en": "The action is clear. Adding an apology for the wait would be more courteous.",
@@ -99,13 +165,21 @@
         "en": "Does this dish contain eggs? I have an allergy.",
         "zh": "這道菜有加蛋嗎？我對蛋過敏。"
       },
+      "pronunciationGuide": {
+        "ja": "この りょうりには たまごが はいって いますか？ あれるぎーが ある んです。",
+        "en": "/dʌz ðɪs dɪʃ kənˈteɪn ɛɡz? aɪ hæv æn ˈælɚdʒi./",
+        "zh": "Zhè dào cài yǒu jiā dàn ma？ wǒ duì dàn guò mǐn。"
+      },
       "reaction": {
         "description": {
           "ja": "アレルギーについて慎重に確認する",
           "en": "Carefully ask about an allergy",
           "zh": "謹慎詢問過敏原資訊"
         },
-        "motionTags": ["pose:talking_03", "category:talking"],
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
         "variant": 0,
         "priority": 1,
         "cue": "start"
@@ -118,12 +192,28 @@
             "en": "For your safety, I will confirm with the kitchen. Please wait a moment.",
             "zh": "為了您的安全，我會向廚房確認，請稍候。"
           },
-          "aliases": {
-            "ja": ["厨房に確認しますので少々お待ちください"],
-            "en": ["I will check with the kitchen, please wait"],
-            "zh": ["我會向廚房確認，請稍等"]
+          "pronunciationGuide": {
+            "ja": "あんぜんの ため ちゅうぼうに かくにん いたします。 しょうしょう おまち ください。",
+            "en": "/fɔɹ jɔɹ ˈseɪfti, aɪ wɪl kənˈfɝm wɪð ðə ˈkɪtʃən. pliz weɪt ə ˈmoʊmənt./",
+            "zh": "Wèi le nín de ān quán， wǒ huì xiàng chú fáng què rèn， qǐng shāo hòu。"
           },
-          "axisScores": { "empathy": 20, "fact-checking": 20, "solution-quality": 20, "boundary-keeping": 20 },
+          "aliases": {
+            "ja": [
+              "厨房に確認しますので少々お待ちください"
+            ],
+            "en": [
+              "I will check with the kitchen, please wait"
+            ],
+            "zh": [
+              "我會向廚房確認，請稍等"
+            ]
+          },
+          "axisScores": {
+            "empathy": 20,
+            "fact-checking": 20,
+            "solution-quality": 20,
+            "boundary-keeping": 20
+          },
           "feedback": {
             "ja": "断定せず、安全を優先して確認する適切な応対です。",
             "en": "You avoided guessing and appropriately prioritized the customer's safety.",
@@ -137,7 +227,17 @@
             "en": "I don't think it contains eggs.",
             "zh": "我想應該沒有加蛋。"
           },
-          "axisScores": { "empathy": 5, "fact-checking": 0, "solution-quality": 0, "boundary-keeping": 10 },
+          "pronunciationGuide": {
+            "ja": "たぶん はいって いないと おもいます。",
+            "en": "/aɪ doʊnt θɪŋk ɪt kənˈteɪnz ɛɡz./",
+            "zh": "Wǒ xiǎng yīng gāi méi yǒu jiā dàn。"
+          },
+          "axisScores": {
+            "empathy": 5,
+            "fact-checking": 0,
+            "solution-quality": 0,
+            "boundary-keeping": 10
+          },
           "feedback": {
             "ja": "アレルギー対応では推測を避け、必ず厨房や原材料表示を確認しましょう。",
             "en": "Do not guess about allergens; always check with the kitchen or ingredient information.",
