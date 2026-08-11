@@ -7,9 +7,9 @@
     "zh": "店員態度客訴"
   },
   "description": {
-    "ja": "接客・クレーム対応として「店員の態度への苦情」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Complaint About Staff Attitude” for Customer Service and Complaints.",
-    "zh": "在「店員態度客訴」中練習符合情境的簡短顧客服務與客訴回應。"
+    "ja": "店員の態度への苦情を受け、顧客の体験を尊重しながら具体的な言動を中立に調査する練習です。",
+    "en": "Practice respecting a guest's complaint about staff conduct while investigating the specific behavior neutrally.",
+    "zh": "練習處理店員態度客訴，在尊重顧客感受的同時中立查核具體言行。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "ご不便を受け止め、まず確認すべき事実を整理します。",
-            "en": "I acknowledge the inconvenience and will first verify the relevant facts.",
-            "zh": "我理解造成的不便，會先確認相關事實。"
+            "ja": "不快な思いをさせ申し訳ありません。いつ、どこで、どのような言動があったか順に伺えますか。",
+            "en": "I'm sorry you were treated that way. Could you tell me when, where, and what was said or done?",
+            "zh": "很抱歉讓您感到不舒服。可以依序告訴我時間、地點及當時的具體言行嗎？"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "不快な体験に謝意を示し、処分を決めつけず調査に必要な日時・場所・言動を確認しています。",
+            "en": "It acknowledges the experience and gathers time, place, and conduct without prejudging discipline.",
+            "zh": "回應了不愉快的經歷，並在不預斷懲處的情況下確認時間、地點與言行。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "ご不快な思いをさせたことはお詫びします。",
+            "en": "I apologize that the interaction made you uncomfortable.",
+            "zh": "對於這次互動讓您感到不舒服，我向您道歉。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "empathy": 20,
+            "fact-checking": 2,
+            "solution-quality": 6,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "体験への謝罪はできていますが、問題の言動も今後の確認方法も尋ねていません。",
+            "en": "The apology shows empathy, but it does not identify the conduct or explain how it will be checked.",
+            "zh": "道歉展現同理，但未確認具體言行，也沒有說明如何查核。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "その店員は普段まじめなので、何か事情があったのでしょう。",
+            "en": "That employee is usually reliable, so there must have been a reason.",
+            "zh": "那位店員平常很認真，應該是有什麼原因。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "solution-quality": 2,
-            "boundary-keeping": 3
+            "empathy": 1,
+            "fact-checking": 0,
+            "solution-quality": 0,
+            "boundary-keeping": 8
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "普段の印象で店員を擁護し、顧客の申告も当日の事実も確認していません。",
+            "en": "It defends the employee from prior impressions and checks neither the report nor the actual incident.",
+            "zh": "只憑平日印象替店員辯護，沒有查核顧客陳述或當時事實。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "昨日の夕方、レジで質問しても目を合わせず、面倒そうに返事をされました。",
+        "en": "Yesterday evening at the register, they avoided eye contact and answered as if my question were a nuisance.",
+        "zh": "昨晚在收銀台，我提問時對方不看我，回答也顯得很不耐煩。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "確認できたことと未確認のことを分けてご説明します。",
-            "en": "I will separate what is confirmed from what still needs checking.",
-            "zh": "我會分開說明已確認與仍待查證的部分。"
+            "ja": "時刻とレジを記録し、担当者と周囲へ別々に確認します。事実確認後に対応をご報告します。",
+            "en": "I'll record the time and register, check separately with the employee and nearby staff, then report the facts.",
+            "zh": "我會記錄時間與收銀台，分別詢問當事店員及附近同仁，查清後再向您回報。"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "特定された時刻と場所を使い、複数の情報源から中立に確認して報告する手順を示しています。",
+            "en": "It uses the specific time and location, checks separate sources, and commits to a factual follow-up.",
+            "zh": "運用具體時間與地點，從不同來源中立查核，並承諾依事實回報。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "担当した店員に事情を聞いてみます。",
+            "en": "I'll ask the employee who served you what happened.",
+            "zh": "我會詢問當時服務您的店員。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "empathy": 5,
+            "fact-checking": 18,
+            "solution-quality": 10,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "担当者への確認は必要ですが、一人の説明だけに頼り、顧客への報告方法も示していません。",
+            "en": "Asking the employee is necessary, but relies on one account and gives no follow-up plan for the guest.",
+            "zh": "詢問當事店員有必要，但只依賴單一說法，也未安排如何回覆顧客。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "その態度なら、本人をすぐ処分します。",
+            "en": "If they acted that way, I'll discipline them immediately.",
+            "zh": "如果真是那種態度，我會立刻處分他。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
+            "empathy": 8,
+            "fact-checking": 0,
             "solution-quality": 2,
-            "boundary-keeping": 3
+            "boundary-keeping": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "顧客に同調しても、事実確認前の処分約束は公正さと管理上の境界を損ないます。",
+            "en": "It sides with the guest but promises discipline before investigation, undermining fairness and authority boundaries.",
+            "zh": "雖站在顧客一方，卻在查明前承諾處分，損害公平與管理界線。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "調べた結果と、同じことを防ぐための対応は、いつ教えてもらえますか。",
+        "en": "When will you tell me what you found and how you will prevent this from happening again?",
+        "zh": "何時能告訴我查核結果，以及如何避免同樣情況再發生？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "可能な選択肢と次のご案内時刻を具体的にお伝えします。",
-            "en": "I will give you available options and a specific time for the next update.",
-            "zh": "我會說明可行選項與下次更新的明確時間。"
+            "ja": "明日中に確認結果と接遇改善策をご連絡します。個別の人事措置はお伝えできない点をご理解ください。",
+            "en": "I'll report our findings and service improvements by tomorrow; individual personnel actions must remain private.",
+            "zh": "我會在明天內回報查核結果與服務改善措施，但個別人事處置無法對外說明，敬請理解。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "報告期限と共有可能な改善策を示しつつ、人事情報の境界を明確にしています。",
+            "en": "It provides a deadline and shareable corrective action while clearly protecting personnel confidentiality.",
+            "zh": "明確提出回報期限與可公開的改善措施，同時守住人事資訊的保密界線。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "接遇を見直すよう店員に伝えます。",
+            "en": "I'll tell the employee to improve their customer service.",
+            "zh": "我會要求店員改善服務態度。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "empathy": 8,
+            "fact-checking": 7,
+            "solution-quality": 14,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "改善を促す方向は示しますが、事実確認の完了、具体策、顧客への報告時期がありません。",
+            "en": "It points toward improvement but omits completed fact checking, a concrete measure, and a reporting time.",
+            "zh": "方向上要求改善，但未說明查核完成、具體措施或回覆顧客的時間。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "本人から直接謝らせるので、連絡先をお渡しします。",
+            "en": "I'll give you the employee's contact details so they can apologize directly.",
+            "zh": "我把店員的聯絡方式給您，讓他直接向您道歉。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
+            "empathy": 6,
+            "fact-checking": 0,
             "solution-quality": 2,
-            "boundary-keeping": 3
+            "boundary-keeping": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "調査を飛ばして従業員の連絡先を渡す行為は、問題解決にならず個人情報も侵害します。",
+            "en": "Skipping the investigation and sharing employee contact details neither resolves the issue nor protects privacy.",
+            "zh": "跳過調查並交付員工聯絡資訊，不但無助於解決問題，也侵犯隱私。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "店員をかばわれると、私が大げさに言っているようで話しにくいです。",
+        "en": "When you defend the employee, it feels as though you think I'm exaggerating, and it becomes hard to continue.",
+        "zh": "你替店員辯護，讓我覺得自己被當成誇大其詞，很難繼續說下去。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "説明が足りず申し訳ありません。要点を確認して対応を立て直します。",
-            "en": "I apologize that my explanation fell short. Let me confirm the key point and reset our response.",
-            "zh": "很抱歉說明不足，我先確認重點並重新處理。"
+            "ja": "申告を軽く扱う言い方になり申し訳ありません。先入観を置き、昨日のレジでの言動から確認し直します。",
+            "en": "I'm sorry I minimized your report. I'll set aside assumptions and restart with yesterday's register interaction.",
+            "zh": "很抱歉我的說法輕忽了您的陳述。我會放下成見，從昨晚收銀台的言行重新確認。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "軽視した影響を認め、店員擁護でも顧客擁護でもない具体的な事実確認へ戻しています。",
+            "en": "It owns the dismissive impact and returns to a specific fact inquiry without taking either side in advance.",
+            "zh": "承認先前輕忽造成的影響，並回到不預先偏袒任何一方的具體查核。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "不快にさせたなら謝ります。何か証拠はありますか。",
+            "en": "I'm sorry if you were offended. Do you have any evidence?",
+            "zh": "如果讓您不舒服，我道歉。您有證據嗎？"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "solution-quality": 12,
-            "boundary-keeping": 12
+            "empathy": 7,
+            "fact-checking": 15,
+            "solution-quality": 5,
+            "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "確認を試みていますが、条件付きの謝罪と証拠要求が、顧客側だけに立証責任を負わせます。",
+            "en": "It seeks evidence, but the conditional apology and demand place the entire burden of proof on the guest.",
+            "zh": "雖試圖查核，但條件式道歉與證據要求把全部舉證責任推給顧客。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "気にしすぎではありませんか。忙しい時間帯でしたから。",
+            "en": "Aren't you taking it too personally? It was a busy time.",
+            "zh": "您是不是太在意了？當時正是忙碌時段。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "solution-quality": 2,
-            "boundary-keeping": 3
+            "empathy": 0,
+            "fact-checking": 1,
+            "solution-quality": 0,
+            "boundary-keeping": 5
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "忙しさを免責理由にして顧客の受け止めを否定し、調査と関係修復の機会を失います。",
+            "en": "It uses busyness as an excuse, denies the guest's experience, and loses the chance to investigate or repair trust.",
+            "zh": "以忙碌作為開脫並否定顧客感受，失去調查與修復信任的機會。"
           },
           "stateEffects": [
             {

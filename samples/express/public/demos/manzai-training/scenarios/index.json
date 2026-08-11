@@ -440,16 +440,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "料理の遅延に謝意を示し、注文状況と提供見込みを推測せず確認する",
+          "案内期限と、変更・取消しを含む確認可能な選択肢を示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
-          "Compare how different responses affect the other person and the next action."
+          "Acknowledge a delayed meal and verify the order and serving estimate without guessing.",
+          "Give an update deadline and check available options such as changing or cancelling the order."
         ],
         "zh": [
-          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "回應餐點延誤，並在不猜測的情況下確認訂單與預計出餐時間。",
+          "提出回覆期限，並確認更換或取消餐點等可行選項。"
         ]
       },
       "title": {
@@ -467,16 +467,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "レシート以外の購入証明を中立に確認する",
+          "返金を確約せず、店舗規定内の代替案と確認期限を案内する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
-          "Compare how different responses affect the other person and the next action."
+          "Verify alternative proof of purchase without treating the guest as suspicious.",
+          "Explain policy-based alternatives and review timing without guaranteeing a refund."
         ],
         "zh": [
-          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "不把顧客當成可疑對象，改以替代購買證明中立查核。",
+          "不保證退款，說明規定內的替代方案與審核時間。"
         ]
       },
       "title": {
@@ -494,16 +494,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "顧客の体験を尊重しつつ、問題となった言動を中立に確認する",
+          "調査結果と改善策の報告期限を示し、人事情報の境界を守る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
-          "Compare how different responses affect the other person and the next action."
+          "Respect the guest's experience while investigating the reported conduct neutrally.",
+          "Set a deadline for findings and service improvements while protecting personnel privacy."
         ],
         "zh": [
-          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "尊重顧客經歷，同時中立查核被投訴的具體言行。",
+          "設定查核與改善回報期限，並守住人事資訊的隱私界線。"
         ]
       },
       "title": {
