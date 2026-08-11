@@ -38,13 +38,13 @@
       "branching": {
         "requirement": "recommended",
         "rationale": {
-          "ja": "短い練習は線形でも成立しますが、過去の発言や感情の変化が後の応答を左右する上級シナリオでは分岐を推奨します。",
-          "en": "Short practice can remain linear, but branching is recommended for advanced scenarios where earlier statements and emotional changes affect later responses.",
-          "zh": "短篇練習可採線性流程；進階情境若先前發言與情緒變化會影響後續回應，則建議使用分支。"
+          "ja": "感情や過去の発言が後続の応答を左右するため、中級以上では分岐を推奨します。",
+          "en": "Branching is recommended when emotions and earlier statements affect later responses.",
+          "zh": "當情緒與先前發言會影響後續回應時，建議採用分支。"
         }
       },
       "title": {
-        "ja": "恋愛・パートナー会話",
+        "ja": "恋愛・夫婦・パートナー会話",
         "en": "Partner Communication",
         "zh": "伴侶溝通"
       }
@@ -336,6 +336,33 @@
         "zh": "店員態度客訴"
       },
       "path": "./scenarios/staff-attitude-complaint.json"
+    },
+    {
+      "id": "forgotten-anniversary",
+      "categoryId": "partner-communication",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "恋愛・夫婦・パートナー会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Partner Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合伴侶溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "忘れられた記念日",
+        "en": "The Forgotten Anniversary",
+        "zh": "被忘記的紀念日"
+      },
+      "path": "./scenarios/forgotten-anniversary.json"
     }
   ]
 }
