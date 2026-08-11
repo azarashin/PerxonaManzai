@@ -17,6 +17,15 @@ test("random order shuffles a copy without changing the source", () => {
   assert.deepEqual(scenario.beats.map(({ id }) => id), ["first", "second", "third"]);
 });
 
+test("random order preserves branching scenario beat order", () => {
+  const branching = {
+    ...scenario,
+    stateVariables: [{ id: "trust" }],
+  };
+  const ordered = createOrderedScenario(branching, "random", () => 0);
+  assert.deepEqual(ordered.beats.map(({ id }) => id), ["first", "second", "third"]);
+});
+
 test("review selects scores below the threshold", () => {
   const review = createReviewScenario(scenario, [
     { beat: scenario.beats[0], result: { totalScore: 90 } },

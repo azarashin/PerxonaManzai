@@ -807,7 +807,7 @@ function completeEvaluation(result) {
   replayBtn.hidden = false;
   nextBtn.hidden = false;
   const nextAction =
-    controller.progress.current === controller.progress.total
+    !controller.hasNext
       ? t("viewResults")
       : t("nextBoke");
   const delaySeconds = AUTO_ADVANCE_DELAY_MS / 1000;
@@ -976,9 +976,8 @@ function showSummary() {
   reviewBtn.hidden = reviewRun || controller.resultDetails.length === 0;
   setScenarioPickerDisabled(false);
   setPresenterControlsDisabled(false);
-  progressElement.textContent = `${controller.progress.total} / ${controller.progress.total}`;
-
   const summary = controller.summary;
+  progressElement.textContent = `${summary.completedBeats} / ${summary.completedBeats}`;
   if (!completionRecorded && !reviewRun) {
     recordScenarioCompletion(selectedScenario.id);
     completionRecorded = true;

@@ -1,6 +1,6 @@
 export function createOrderedScenario(scenario, order = "normal", random = Math.random) {
   const beats = [...scenario.beats];
-  if (order === "random") {
+  if (order === "random" && !isBranchingScenario(scenario)) {
     for (let index = beats.length - 1; index > 0; index -= 1) {
       const target = Math.floor(random() * (index + 1));
       [beats[index], beats[target]] = [beats[target], beats[index]];
@@ -24,6 +24,25 @@ export function createReviewScenario(scenario, resultDetails, threshold = 80) {
   const selectedIds = new Set(beatIds);
   return {
     ...scenario,
-    beats: scenario.beats.filter((beat) => selectedIds.has(beat.id)),
+    startBeatId: undefined,
+    stateVariables: undefined,
+    beats: scenario.beats
+      .filter((beat) => selectedIds.has(beat.id))
+      .map((beat) => ({
+        ...beat,
+        ...(beat.choices
+          ? { choices: beat.choices.map(({ stateEffects, routes, ...choice }) => choice) }
+          : {}),
+      })),
   };
+}
+
+export function isBranchingScenario(scenario) {
+  return Boolean(
+    scenario.startBeatId ||
+    scenario.stateVariables?.length ||
+    scenario.beats.some((beat) =>
+      beat.choices?.some((choice) => choice.stateEffects?.length || choice.routes?.length),
+    ),
+  );
 }
