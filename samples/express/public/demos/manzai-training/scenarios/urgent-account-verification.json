@@ -112,6 +112,11 @@
         "en": "Give me the verification code within ten minutes or your account will be permanently closed.",
         "zh": "十分鐘內不提供驗證碼，帳戶將永久停用。"
       },
+      "pronunciationGuide": {
+        "ja": "じゅっ ぷん いないに かくにん こーどを おしえないと、 あかうんとを えいきゅう ていし します。",
+        "en": "/ɡɪv mi ðə ˌvɛɹəfəˈkeɪʃən koʊd wɪˈðɪn tɛn ˈmɪnəts ɔɹ jɔɹ əˈkaʊnt wɪl bi ˈpɝmənəntli kloʊzd./",
+        "zh": "Shí fēn zhōng nèi bù tí gōng yàn zhèng mǎ， zhàng hù jiāng yǒng jiǔ tíng yòng。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "確認コードは誰にも伝えません。通話を切り、自分で公式アプリを開いて通知を確認します。",
             "en": "I never share verification codes. I'll end the call and check notifications in the official app myself.",
             "zh": "我不會把驗證碼告訴任何人；我會掛斷並自行查看官方應用程式通知。"
+          },
+          "pronunciationGuide": {
+            "ja": "かくにん こーどは だれにも つたえません。 つうわを きり、 じぶんで こうしき あぷりを ひらいて つうちを かくにん します。",
+            "en": "/aɪ ˈnɛvɚ ʃɛɹ ˌvɛɹəfəˈkeɪʃən koʊdz. aɪl ɛnd ðə kɔl ənd tʃɛk ˌnoʊtəfəˈkeɪʃənz ɪn ðə əˈfɪʃəl æp ˌmaɪˈsɛlf./",
+            "zh": "Wǒ bú huì bǎ yàn zhèng mǎ gào sù rèn hé rén； wǒ huì guà duàn bìng zì xíng chá kàn guān fāng yìng yòng chéng shì tōng zhī。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -170,6 +180,11 @@
             "en": "I won't share the code. Give me your department and callback number.",
             "zh": "我不提供驗證碼；請告知部門與回撥號碼。"
           },
+          "pronunciationGuide": {
+            "ja": "こーどは つたえません。 たんとうぶ しょめいと おりかえし ばんごうを おしえて ください。",
+            "en": "/aɪ woʊnt ʃɛɹ ðə koʊd. ɡɪv mi jɔɹ dɪˈpɑɹtmənt ənd ˈkɔlˌbæk ˈnʌmbɚ./",
+            "zh": "Wǒ bù tí gōng yàn zhèng mǎ； qǐng gào zhī bù mén yǔ huí bō hào mǎ。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -200,6 +215,11 @@
             "ja": "停止は困るので、今回だけコードを伝えます。",
             "en": "I can't lose the account, so I'll share the code this once.",
             "zh": "我不能失去帳戶，所以這次提供驗證碼。"
+          },
+          "pronunciationGuide": {
+            "ja": "ていしは こまるので、 こんかいだけ こーどを つたえます。",
+            "en": "/aɪ kænt luz ðə əˈkaʊnt, soʊ aɪl ʃɛɹ ðə koʊd ðɪs wʌns./",
+            "zh": "Wǒ bù néng shī qù zhàng hù， suǒ yǐ zhè cì tí gōng yàn zhèng mǎ。"
           },
           "axisScores": {
             "risk-awareness": 1,
@@ -234,6 +254,11 @@
         "en": "The app shows no warning because this is a confidential emergency investigation.",
         "zh": "應用程式沒有警告，因為這是保密的緊急調查。"
       },
+      "pronunciationGuide": {
+        "ja": "あぷりには けいこくが でません。 これは ひこうかいの きんきゅう ちょうさだからです。",
+        "en": "/ðə æp ʃoʊz noʊ ˈwɔɹnɪŋ bɪˈkɔz ðɪs ɪz ə ˌkɑnfəˈdɛnʃəl ɪˈmɝdʒənsi ˌɪnˌvɛstəˈɡeɪʃən./",
+        "zh": "Yìng yòng chéng shì méi yǒu jǐng gào， yīn wèi zhè shì bǎo mì de jǐn jí diào chá。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "表示されない手続きには応じません。公式サイトの番号へ自分から電話し、口座状態と調査の有無を確認します。",
             "en": "I won't follow an invisible process. I'll call the official number and verify the account and investigation.",
             "zh": "我不接受看不見的程序；我會主動撥打官方電話查帳戶與調查是否存在。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひょうじ されない てつづきには おうじません。 こうしき さいとの ばんごうへ じぶんから でんわ し、 こうざ じょうたいと ちょうさの うむを かくにん します。",
+            "en": "/aɪ woʊnt ˈfɑloʊ æn ˌɪnˈvɪzəbəl ˈpɹɑˌsɛs. aɪl kɔl ðə əˈfɪʃəl ˈnʌmbɚ ənd ˈvɛɹəˌfaɪ ðə əˈkaʊnt ənd ˌɪnˌvɛstəˈɡeɪʃən./",
+            "zh": "Wǒ bù jiē shòu kàn bú jiàn de chéng xù； wǒ huì zhǔ dòng bō dǎ guān fāng diàn huà chá zhàng hù yǔ diào chá shì fǒu cún zài。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -297,6 +327,11 @@
             "en": "I'll ask for the case number and verify it through official chat.",
             "zh": "我會詢問案件編號，再透過官方聊天查證。"
           },
+          "pronunciationGuide": {
+            "ja": "ちょうさ ばんごうを きき、 こうしき ちゃっとで ばんごうだけ しょうかい します。",
+            "en": "/aɪl æsk fɔɹ ðə keɪs ˈnʌmbɚ ənd ˈvɛɹəˌfaɪ ɪt θɹu əˈfɪʃəl tʃæt./",
+            "zh": "Wǒ huì xún wèn àn jiàn biān hào， zài tòu guò guān fāng liáo tiān chá zhèng。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -327,6 +362,11 @@
             "ja": "非公開なら仕方ないので、本人確認質問に答えます。",
             "en": "If it's confidential, I'll answer the identity questions.",
             "zh": "既然保密，我就回答身分問題。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひこうかいなら しかたないので、 ほんにん かくにん しつもんに こたえます。",
+            "en": "/ɪf ɪts ˌkɑnfəˈdɛnʃəl, aɪl ˈænsɚ ðə aɪˈdɛntɪˌti ˈkwɛstʃənz./",
+            "zh": "Jì rán bǎo mì， wǒ jiù huí dá shēn fèn wèn tí。"
           },
           "axisScores": {
             "risk-awareness": 1,
@@ -361,6 +401,11 @@
         "en": "I already read the first three digits of the code, but not the rest.",
         "zh": "我剛才已念出驗證碼前三位，還沒說其餘部分。"
       },
+      "pronunciationGuide": {
+        "ja": "さきほど こーどの さいしょの さんけたを よみあげました。 のこりは まだです。",
+        "en": "/aɪ ɔlˈɹɛdi ɹɛd ðə fɝst θɹi ˈdɪdʒəts ʌv ðə koʊd, bʌt nɑt ðə ɹɛst./",
+        "zh": "Wǒ gāng cái yǐ niàn chū yàn zhèng mǎ qián sān wèi， hái méi shuō qí yú bù fen。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "通話を終了し、別端末で全セッションを終了します。パスワード変更後、公式窓口へ漏えいを報告します。",
             "en": "End the call, revoke all sessions from another device, change the password, and report the disclosure officially.",
             "zh": "結束通話，用另一台裝置登出所有工作階段，更改密碼並向官方通報外洩。"
+          },
+          "pronunciationGuide": {
+            "ja": "つうわを しゅうりょう し、 べつ たんまつで ぜん せっしょんを しゅうりょう します。 ぱすわーど へんこうご、 こうしき まどぐちへ ろうえいを ほうこく します。",
+            "en": "/ɛnd ðə kɔl, ɹɪˈvoʊk ɔl ˈsɛʃənz fɹʌm əˈnʌðɚ dɪˈvaɪs, tʃeɪndʒ ðə ˈpæˌswɝd, ənd ɹiˈpɔɹt ðə dɪsˈkloʊʒɚ əˈfɪʃəli./",
+            "zh": "Jié shù tōng huà， yòng lìng yì tái zhuāng zhì dēng chū suǒ yǒu gōng zuò jiē duàn， gēng gǎi mì mǎ bìng xiàng guān fāng tōng bào wài xiè。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -414,6 +464,11 @@
             "en": "I won't share the rest, and I'll change only the password.",
             "zh": "我不說剩下的，只更改密碼。"
           },
+          "pronunciationGuide": {
+            "ja": "のこりを つたえず、 ぱすわーどだけ へんこう します。",
+            "en": "/aɪ woʊnt ʃɛɹ ðə ɹɛst, ənd aɪl tʃeɪndʒ ˈoʊnli ðə ˈpæˌswɝd./",
+            "zh": "Wǒ bù shuō shèng xià de， zhī gēng gǎi mì mǎ。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -444,6 +499,11 @@
             "ja": "全部ではないので問題ありません。電話を続けます。",
             "en": "It wasn't the full code, so it is fine; I'll stay on the call.",
             "zh": "不是完整驗證碼，所以沒問題；我繼續通話。"
+          },
+          "pronunciationGuide": {
+            "ja": "ぜんぶではないので もんだい ありません。 でんわを つづけます。",
+            "en": "/ɪt ˈwɑzənt ðə fʊl koʊd, soʊ ɪt ɪz faɪn; aɪl steɪ ɑn ðə kɔl./",
+            "zh": "Bú shì wán zhěng yàn zhèng mǎ， suǒ yǐ méi wèn tí； wǒ jì xù tōng huà。"
           },
           "axisScores": {
             "risk-awareness": 1,
@@ -478,6 +538,11 @@
         "en": "If you refuse verification, you will be responsible for any fraud.",
         "zh": "若拒絕驗證，任何詐騙損失都由你負責。"
       },
+      "pronunciationGuide": {
+        "ja": "かくにんを こばむなら、 ふせい りようの せきにんは あなたに あります。",
+        "en": "/ɪf ju ɹəfˈjuz ˌvɛɹəfəˈkeɪʃən, ju wɪl bi ɹiˈspɑnsəbəl fɔɹ ˈɛni fɹɔd./",
+        "zh": "Ruò jù jué yàn zhèng， rèn hé zhà piàn sǔn shī dōu yóu nǐ fù zé。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "責任を迫られても情報は渡しません。発信番号と時刻を記録し、公式窓口と警察相談へ共有します。",
             "en": "Pressure about liability won't make me share data. I'll record the number and time and report them officially.",
             "zh": "即使被威脅負責，我也不提供資料；我會記錄號碼與時間並正式通報。"
+          },
+          "pronunciationGuide": {
+            "ja": "せきにんを せまられても じょうほうは わたしません。 はっしん ばんごうと じこくを きろく し、 こうしき まどぐちと けいさつ そうだんへ きょうゆう します。",
+            "en": "/ˈpɹɛʃɚ əˈbaʊt ˌlaɪəˈbɪlɪti woʊnt meɪk mi ʃɛɹ ˈdeɪtə. aɪl ɹəˈkɔɹd ðə ˈnʌmbɚ ənd taɪm ənd ɹiˈpɔɹt ðɛm əˈfɪʃəli./",
+            "zh": "Jí shǐ bèi wēi xié fù zé， wǒ yě bù tí gōng zī liào； wǒ huì jì lù hào mǎ yǔ shí jiān bìng zhèng shì tōng bào。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -531,6 +601,11 @@
             "en": "Understood. I'll decide after checking with official support.",
             "zh": "明白，我向官方客服確認後再判斷。"
           },
+          "pronunciationGuide": {
+            "ja": "わかりました。 こうしき まどぐちに かくにん してから はんだん します。",
+            "en": "/ˌʌndɚˈstʊd. aɪl ˌdɪˈsaɪd ˈæftɚ ˈtʃɛkɪŋ wɪð əˈfɪʃəl səˈpɔɹt./",
+            "zh": "Míng bái， wǒ xiàng guān fāng kè fú què rèn hòu zài pàn duàn。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -561,6 +636,11 @@
             "ja": "責任を負いたくないので、必要な情報を答えます。",
             "en": "I don't want liability, so I'll provide the requested information.",
             "zh": "我不想負責，所以會提供所需資訊。"
+          },
+          "pronunciationGuide": {
+            "ja": "せきにんを おいたくないので、 ひつような じょうほうを こたえます。",
+            "en": "/aɪ doʊnt wɑnt ˌlaɪəˈbɪlɪti, soʊ aɪl pɹəˈvaɪd ðə ɹɪkˈwɛstɪd ˌɪnfɚˈmeɪʃən./",
+            "zh": "Wǒ bù xiǎng fù zé， suǒ yǐ huì tí gōng suǒ xū zī xùn。"
           },
           "axisScores": {
             "risk-awareness": 1,

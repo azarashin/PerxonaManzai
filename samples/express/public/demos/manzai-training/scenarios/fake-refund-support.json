@@ -112,6 +112,11 @@
         "en": "To issue your refund, enable screen sharing and enter your bank details.",
         "zh": "為辦理退款，請開啟螢幕共享並輸入銀行資料。"
       },
+      "pronunciationGuide": {
+        "ja": "へんきんの ため がめん きょうゆうを ゆうこうに し、 ぎんこう じょうほうを にゅうりょく して ください。",
+        "en": "/tu ˈɪʃu jɔɹ ɹɪˈfʌnd, ɛˈneɪbəl skɹin ˈʃɛɹɪŋ ənd ˈɛntɚ jɔɹ bæŋk dɪˈteɪlz./",
+        "zh": "Wèi bàn lǐ tuì kuǎn， qǐng kāi qǐ yíng mù gòng xiǎng bìng shū rù yín háng zī liào。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "画面共有も銀行情報の入力もしません。注文番号を確認し、自分で公式アプリの返金画面を開きます。",
             "en": "I won't share my screen or bank details. I'll verify the order and use the official app's refund page.",
             "zh": "我不會共享畫面或輸入銀行資料；我會核對訂單並自行開啟官方退款頁。"
+          },
+          "pronunciationGuide": {
+            "ja": "がめん きょうゆうも ぎんこう じょうほうの にゅうりょくも しません。 ちゅうもん ばんごうを かくにん し、 じぶんで こうしき あぷりの へんきん がめんを ひらきます。",
+            "en": "/aɪ woʊnt ʃɛɹ maɪ skɹin ɔɹ bæŋk dɪˈteɪlz. aɪl ˈvɛɹəˌfaɪ ðə ˈɔɹdɚ ənd jus ðə əˈfɪʃəl æps ɹɪˈfʌnd peɪdʒ./",
+            "zh": "Wǒ bú huì gòng xiǎng huà miàn huò shū rù yín háng zī liào； wǒ huì hé duì dìng dān bìng zì xíng kāi qǐ guān fāng tuì kuǎn yè。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -170,6 +180,11 @@
             "en": "I won't give bank details, but I can share my screen.",
             "zh": "我不提供銀行資料，但可以共享畫面。"
           },
+          "pronunciationGuide": {
+            "ja": "ぎんこう じょうほうは だしませんが、 がめん きょうゆうだけなら できます。",
+            "en": "/aɪ woʊnt ɡɪv bæŋk dɪˈteɪlz, bʌt aɪ kæn ʃɛɹ maɪ skɹin./",
+            "zh": "Wǒ bù tí gōng yín háng zī liào， dàn kě yǐ gòng xiǎng huà miàn。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -200,6 +215,11 @@
             "ja": "返金が必要なので、案内どおり遠隔操作を許可します。",
             "en": "I need the refund, so I'll allow remote access as instructed.",
             "zh": "我需要退款，所以照指示允許遠端操作。"
+          },
+          "pronunciationGuide": {
+            "ja": "へんきんが ひつようなので、 あんないどおり えんかく そうさを きょか します。",
+            "en": "/aɪ nid ðə ɹɪˈfʌnd, soʊ aɪl əˈlaʊ ɹɪˈmoʊt ˈækˌsɛs æz ˌɪnˈstɹʌktəd./",
+            "zh": "Wǒ xū yào tuì kuǎn， suǒ yǐ zhào zhǐ shì yǔn xǔ yuǎn duān cāo zuò。"
           },
           "axisScores": {
             "risk-awareness": 1,
@@ -234,6 +254,11 @@
         "en": "The official app cannot process it. Open this support page from the search results.",
         "zh": "官方應用程式無法處理，請開啟搜尋結果中的客服頁面。"
       },
+      "pronunciationGuide": {
+        "ja": "こうしき あぷりでは しょり できません。 けんさく けっかの この さぽーと ぺーじを ひらいて ください。",
+        "en": "/ðə əˈfɪʃəl æp ˈkænɑt ˈpɹɑˌsɛs ɪt. ˈoʊpən ðɪs səˈpɔɹt peɪdʒ fɹʌm ðə sɝtʃ ɹɪˈzʌlts./",
+        "zh": "Guān fāng yìng yòng chéng shì wú fǎ chǔ lǐ， qǐng kāi qǐ sōu xún jié guǒ zhōng de kè fú yè miàn。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "そのリンクは開きません。購入履歴に返金表示があるか確認し、アプリ内の連絡先へ自分から問い合わせます。",
             "en": "I won't open that link. I'll check the order history and contact support from inside the app.",
             "zh": "我不開那個連結；我會查購買紀錄，並從應用程式內主動聯絡客服。"
+          },
+          "pronunciationGuide": {
+            "ja": "その りんくは ひらきません。 こうにゅう りれきに へんきん ひょうじが あるか かくにん し、 あぷりないの れんらくさきへ じぶんから といあわせます。",
+            "en": "/aɪ woʊnt ˈoʊpən ðæt lɪŋk. aɪl tʃɛk ðə ˈɔɹdɚ ˈhɪstɚi ənd ˈkɑnˌtækt səˈpɔɹt fɹʌm ˌɪnˈsaɪd ðə æp./",
+            "zh": "Wǒ bù kāi nà ge lián jié； wǒ huì chá gòu mǎi jì lù， bìng cóng yìng yòng chéng shì nèi zhǔ dòng lián luò kè fú。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -297,6 +327,11 @@
             "en": "Read the URL aloud and I'll inspect how it looks.",
             "zh": "請念出網址，我先看看外觀。"
           },
+          "pronunciationGuide": {
+            "ja": "ぺーじの ゆ ーあーる えるを よみあげて もらい、 みためだけ かくにん します。",
+            "en": "/ɹɛd ðə ju ɑɹ ɛl əˈlaʊd ənd aɪl ˌɪnˈspɛkt haʊ ɪt lʊks./",
+            "zh": "Qǐng niàn chū wǎng zhǐ， wǒ xiān kàn kàn wài guān。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -327,6 +362,11 @@
             "ja": "検索上位なら安全だと思うので、そのページを開きます。",
             "en": "If it ranks high in search, it should be safe, so I'll open it.",
             "zh": "搜尋排名高應該安全，我會開啟。"
+          },
+          "pronunciationGuide": {
+            "ja": "けんさく じょういなら あんぜんだと おもうので、 その ぺーじを ひらきます。",
+            "en": "/ɪf ɪt ɹæŋks haɪ ɪn sɝtʃ, ɪt ʃʊd bi seɪf, soʊ aɪl ˈoʊpən ɪt./",
+            "zh": "Sōu xún pái míng gāo yīng gāi ān quán， wǒ huì kāi qǐ。"
           },
           "axisScores": {
             "risk-awareness": 1,
@@ -361,6 +401,11 @@
         "en": "I already approved the connection, but I haven't opened my bank yet.",
         "zh": "我已允許連線，但還沒開啟銀行頁面。"
       },
+      "pronunciationGuide": {
+        "ja": "すでに せつぞく きょかを おしました。 まだ ぎんこう がめんは ひらいて いません。",
+        "en": "/aɪ ɔlˈɹɛdi əˈpɹuvd ðə kəˈnɛkʃən, bʌt aɪ ˈhævənt ˈoʊpənd maɪ bæŋk jɛt./",
+        "zh": "Wǒ yǐ yǔn xǔ lián xiàn， dàn hái méi kāi qǐ yín háng yè miàn。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "通信を切って遠隔アプリを削除し、別端末で公式窓口と銀行へ連絡します。パスワードも変更します。",
             "en": "Disconnect, remove the remote app, contact official support and the bank from another device, then change passwords.",
             "zh": "立即斷線並移除遠端程式，用另一台裝置聯絡官方客服與銀行，之後更改密碼。"
+          },
+          "pronunciationGuide": {
+            "ja": "つうしんを きって えんかく あぷりを さくじょ し、 べつ たんまつで こうしき まどぐちと ぎんこうへ れんらく します。 ぱすわーども へんこう します。",
+            "en": "/dɪskəˈnɛkt, ɹiˈmuv ðə ɹɪˈmoʊt æp, ˈkɑnˌtækt əˈfɪʃəl səˈpɔɹt ənd ðə bæŋk fɹʌm əˈnʌðɚ dɪˈvaɪs, ðɛn tʃeɪndʒ ˈpæˌswɝdz./",
+            "zh": "Lì jí duàn xiàn bìng yí chú yuǎn duān chéng shì， yòng lìng yì tái zhuāng zhì lián luò guān fāng kè fú yǔ yín háng， zhī hòu gēng gǎi mì mǎ。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -414,6 +464,11 @@
             "en": "I'll disconnect, restart the device, and monitor it.",
             "zh": "我會斷線、重新啟動裝置並觀察。"
           },
+          "pronunciationGuide": {
+            "ja": "せつぞくを きり、 たんまつを さい きどう して ようすを みます。",
+            "en": "/aɪl dɪskəˈnɛkt, ɹiˈstɑɹt ðə dɪˈvaɪs, ənd ˈmɑnətɚ ɪt./",
+            "zh": "Wǒ huì duàn xiàn、 chóng xīn qǐ dòng zhuāng zhì bìng guān chá。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -444,6 +499,11 @@
             "ja": "銀行画面を開かなければ安全なので、そのまま返金を続けます。",
             "en": "It is safe if I don't open the bank, so I'll continue the refund.",
             "zh": "只要不開銀行頁面就安全，所以繼續退款。"
+          },
+          "pronunciationGuide": {
+            "ja": "ぎんこう がめんを ひらかなければ あんぜんなので、 そのまま へんきんを つづけます。",
+            "en": "/ɪt ɪz seɪf ɪf aɪ doʊnt ˈoʊpən ðə bæŋk, soʊ aɪl kənˈtɪnju ðə ɹɪˈfʌnd./",
+            "zh": "Zhǐ yào bù kāi yín háng yè miàn jiù ān quán， suǒ yǐ jì xù tuì kuǎn。"
           },
           "axisScores": {
             "risk-awareness": 1,
@@ -478,6 +538,11 @@
         "en": "If you doubt me, I'll cancel the refund. Reconnect now.",
         "zh": "如果懷疑我就取消退款，現在立刻重新連線。"
       },
+      "pronunciationGuide": {
+        "ja": "うたがうなら へんきんを とりけします。 いま すぐ せつぞく し なおして ください。",
+        "en": "/ɪf ju daʊt mi, aɪl ˈkænsəl ðə ɹɪˈfʌnd. ɹikəˈnɛkt naʊ./",
+        "zh": "Rú guǒ huái yí wǒ jiù qǔ xiāo tuì kuǎn， xiàn zài lì kè chóng xīn lián xiàn。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "返金の取消しには同意しませんが再接続もしません。通話を終了し、公式の注文記録を証拠として保存します。",
             "en": "I don't accept cancellation, but I won't reconnect. I'll end the call and preserve the official order record.",
             "zh": "我不同意取消退款，也不會重新連線；我會結束通話並保存官方訂單紀錄。"
+          },
+          "pronunciationGuide": {
+            "ja": "へんきんの とりけしには どうい しませんが さい せつぞくも しません。 つうわを しゅうりょう し、 こうしきの ちゅうもん きろくを しょうことして ほぞん します。",
+            "en": "/aɪ doʊnt ækˈsɛpt ˌkænsəˈleɪʃən, bʌt aɪ woʊnt ɹikəˈnɛkt. aɪl ɛnd ðə kɔl ənd pɹəˈzɝv ðə əˈfɪʃəl ˈɔɹdɚ ɹəˈkɔɹd./",
+            "zh": "Wǒ bù tóng yì qǔ xiāo tuì kuǎn， yě bú huì chóng xīn lián xiàn； wǒ huì jié shù tōng huà bìng bǎo cún guān fāng dìng dān jì lù。"
           },
           "axisScores": {
             "risk-awareness": 20,
@@ -531,6 +601,11 @@
             "en": "I'll give up the refund; don't contact me again.",
             "zh": "我放棄退款，請不要再聯絡。"
           },
+          "pronunciationGuide": {
+            "ja": "へんきんは あきらめるので、 これ いじょう れんらく しないで ください。",
+            "en": "/aɪl ɡɪv ʌp ðə ɹɪˈfʌnd; doʊnt ˈkɑnˌtækt mi əˈɡɛn./",
+            "zh": "Wǒ fàng qì tuì kuǎn， qǐng bú yào zài lián luò。"
+          },
           "axisScores": {
             "risk-awareness": 13,
             "fact-checking": 15,
@@ -561,6 +636,11 @@
             "ja": "取り消されると困るので、一度だけ再接続します。",
             "en": "I can't risk cancellation, so I'll reconnect once.",
             "zh": "我不能讓退款被取消，所以再連一次。"
+          },
+          "pronunciationGuide": {
+            "ja": "とりけされると こまるので、 いちどだけ さい せつぞく します。",
+            "en": "/aɪ kænt ɹɪsk ˌkænsəˈleɪʃən, soʊ aɪl ɹikəˈnɛkt wʌns./",
+            "zh": "Wǒ bù néng ràng tuì kuǎn bèi qǔ xiāo， suǒ yǐ zài lián yí cì。"
           },
           "axisScores": {
             "risk-awareness": 1,
