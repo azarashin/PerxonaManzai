@@ -6,15 +6,15 @@
       "branching": {
         "requirement": "not-required",
         "rationale": {
-          "ja": "各発話へのツッコミを独立して採点できるため、基本シナリオは直線進行で成立します。",
-          "en": "Basic scenarios work as a linear sequence because each comeback can be scored independently.",
-          "zh": "每次吐槽都能獨立評分，因此基礎情境使用線性流程即可成立。"
+          "ja": "各発話の矛盾や誇張を独立して採点できるため、直線型で成立します。",
+          "en": "Each contradiction or exaggeration can be scored independently, so linear scenarios are sufficient.",
+          "zh": "每段對話的矛盾或誇張都能獨立評分，因此線性情境即可成立。"
         }
       },
       "title": {
-        "ja": "漫才",
-        "en": "Manzai",
-        "zh": "漫才"
+        "ja": "漫才・ツッコミ",
+        "en": "Manzai and Comebacks",
+        "zh": "漫才與吐槽"
       }
     },
     {
@@ -74,9 +74,18 @@
       "difficulty": "beginner",
       "estimatedMinutes": 5,
       "learningObjectives": {
-        "ja": ["会話の矛盾や誇張を素早く見つける", "短く明確なツッコミを返す"],
-        "en": ["Quickly identify contradictions and exaggerations", "Deliver a short and clear comeback"],
-        "zh": ["快速找出對話中的矛盾與誇張", "做出簡短清楚的吐槽"]
+        "ja": [
+          "会話の矛盾や誇張を素早く見つける",
+          "短く明確なツッコミを返す"
+        ],
+        "en": [
+          "Quickly identify contradictions and exaggerations",
+          "Deliver a short and clear comeback"
+        ],
+        "zh": [
+          "快速找出對話中的矛盾與誇張",
+          "做出簡短清楚的吐槽"
+        ]
       },
       "title": {
         "ja": "コンビニに行った話",
@@ -92,9 +101,18 @@
       "difficulty": "beginner",
       "estimatedMinutes": 4,
       "learningObjectives": {
-        "ja": ["お待たせしたことを丁寧に謝罪する", "安全を優先して確認行動を伝える"],
-        "en": ["Apologize politely for a wait", "Prioritize safety and explain the verification step"],
-        "zh": ["為久候禮貌致歉", "以安全為優先並說明確認步驟"]
+        "ja": [
+          "お待たせしたことを丁寧に謝罪する",
+          "安全を優先して確認行動を伝える"
+        ],
+        "en": [
+          "Apologize politely for a wait",
+          "Prioritize safety and explain the verification step"
+        ],
+        "zh": [
+          "為久候禮貌致歉",
+          "以安全為優先並說明確認步驟"
+        ]
       },
       "title": {
         "ja": "レストランでの接客",
@@ -110,9 +128,18 @@
       "difficulty": "intermediate",
       "estimatedMinutes": 6,
       "learningObjectives": {
-        "ja": ["不満の背後にある寂しさや不安を受け止める", "説明だけで終わらず実行可能な予定共有を提案する"],
-        "en": ["Acknowledge the loneliness or concern behind a complaint", "Move beyond explanation and propose a workable way to share plans"],
-        "zh": ["理解抱怨背後的寂寞或不安", "不只解釋原因，也提出可實行的行程共享方式"]
+        "ja": [
+          "不満の背後にある寂しさや不安を受け止める",
+          "説明だけで終わらず実行可能な予定共有を提案する"
+        ],
+        "en": [
+          "Acknowledge the loneliness or concern behind a complaint",
+          "Move beyond explanation and propose a workable way to share plans"
+        ],
+        "zh": [
+          "理解抱怨背後的寂寞或不安",
+          "不只解釋原因，也提出可實行的行程共享方式"
+        ]
       },
       "title": {
         "ja": "帰宅が遅い夜の話し合い",
@@ -128,9 +155,18 @@
       "difficulty": "advanced",
       "estimatedMinutes": 10,
       "learningObjectives": {
-        "ja": ["値下げ要求の背景にある決裁条件を質問で特定する", "信頼と利益を守りながら条件付きの譲歩を組み立てる"],
-        "en": ["Use questions to identify the approval condition behind a discount request", "Build conditional concessions while protecting trust and margin"],
-        "zh": ["透過提問找出折扣要求背後的決策條件", "在維持信任與利潤的同時設計有條件的讓步"]
+        "ja": [
+          "値下げ要求の背景にある決裁条件を質問で特定する",
+          "信頼と利益を守りながら条件付きの譲歩を組み立てる"
+        ],
+        "en": [
+          "Use questions to identify the approval condition behind a discount request",
+          "Build conditional concessions while protecting trust and margin"
+        ],
+        "zh": [
+          "透過提問找出折扣要求背後的決策條件",
+          "在維持信任與利潤的同時設計有條件的讓步"
+        ]
       },
       "title": {
         "ja": "法人契約の更新交渉",
@@ -138,6 +174,33 @@
         "zh": "企業續約談判"
       },
       "path": "./scenarios/enterprise-renewal-negotiation.json"
+    },
+    {
+      "id": "overqualified-part-time-job",
+      "categoryId": "manzai",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 4,
+      "learningObjectives": {
+        "ja": [
+          "漫才・ツッコミで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Manzai and Comebacks.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合漫才與吐槽的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "バイト面接の超人的経歴",
+        "en": "An Overqualified Part-Time Applicant",
+        "zh": "超規格的打工應徵者"
+      },
+      "path": "./scenarios/overqualified-part-time-job.json"
     }
   ]
 }
