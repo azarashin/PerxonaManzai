@@ -32,6 +32,22 @@
         "en": "Customer Service",
         "zh": "顧客服務"
       }
+    },
+    {
+      "id": "partner-communication",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "短い練習は線形でも成立しますが、過去の発言や感情の変化が後の応答を左右する上級シナリオでは分岐を推奨します。",
+          "en": "Short practice can remain linear, but branching is recommended for advanced scenarios where earlier statements and emotional changes affect later responses.",
+          "zh": "短篇練習可採線性流程；進階情境若先前發言與情緒變化會影響後續回應，則建議使用分支。"
+        }
+      },
+      "title": {
+        "ja": "恋愛・パートナー会話",
+        "en": "Partner Communication",
+        "zh": "伴侶溝通"
+      }
     }
   ],
   "scenarios": [
@@ -70,6 +86,24 @@
         "zh": "餐廳顧客服務"
       },
       "path": "./scenarios/restaurant-service.json"
+    },
+    {
+      "id": "late-home-conversation",
+      "categoryId": "partner-communication",
+      "beatCount": 3,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": ["不満の背後にある寂しさや不安を受け止める", "説明だけで終わらず実行可能な予定共有を提案する"],
+        "en": ["Acknowledge the loneliness or concern behind a complaint", "Move beyond explanation and propose a workable way to share plans"],
+        "zh": ["理解抱怨背後的寂寞或不安", "不只解釋原因，也提出可實行的行程共享方式"]
+      },
+      "title": {
+        "ja": "帰宅が遅い夜の話し合い",
+        "en": "Talking About Late Nights",
+        "zh": "談談晚歸的夜晚"
+      },
+      "path": "./scenarios/late-home-conversation.json"
     }
   ]
 }
