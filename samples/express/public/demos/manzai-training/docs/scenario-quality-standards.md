@@ -213,3 +213,131 @@ Run `npm run quality:scenarios` for the policy's committed mode. During the cata
 `npm run quality:scenarios:enforce` to preview the future CI gate without changing the committed policy. Do not add the strict
 command to the normal test pipeline until the existing catalog has been remediated in its separate change. Pass `-- --summary`
 to either npm command when only the totals are needed.
+
+## 9. Existing-catalog evaluation and remediation
+
+Treat quality-infrastructure changes and scenario-content changes as separate work. Merge the infrastructure first, then
+create a new branch from the updated default branch for scenario remediation. Do not change thresholds, severities, or
+exceptions in the remediation branch unless a separately reviewed policy decision requires it.
+
+### 9.1 Record a baseline
+
+Run the following commands from `samples/express` before editing content:
+
+```text
+npm run validate:scenarios
+npm run quality:scenarios -- --summary
+```
+
+Record the error and warning totals in the task or pull-request notes. These totals are the comparison point for each batch of
+changes; do not hard-code them in documentation because they should decrease as the catalog improves.
+
+Use the detailed command to inspect individual diagnostics:
+
+```text
+npm run quality:scenarios
+```
+
+In PowerShell, results can be narrowed to a scenario or rule without modifying files:
+
+```powershell
+npm run quality:scenarios 2>&1 | Select-String "after-a-breakup"
+npm run quality:scenarios 2>&1 | Select-String "CHOICE_DUPLICATE_WITHIN_SCENARIO"
+```
+
+### 9.2 Choose a bounded batch
+
+Improve one category, one small related group, or one scenario at a time. Prefer this order when repeated templates affect
+many files:
+
+1. generic preferred, partial, and weak choices;
+2. repeated feedback;
+3. repeated avatar dialogue;
+4. overlapping or overly broad aliases;
+5. scoring, localization, motion, and branching concerns.
+
+Do not perform a catalog-wide search-and-replace with synonyms. Each revision must be authored from the scenario's facts,
+speaker intent, learner role, and learning objective.
+
+### 9.3 Evaluate meaning before editing
+
+For each beat, write down:
+
+- what the other speaker is claiming, feeling, or requesting;
+- what skill the learner should demonstrate;
+- the distinct strategy represented by every choice;
+- why each strategy earns its axis scores;
+- the expected conversational consequence;
+- any safety, professional-boundary, or localization risk.
+
+Automated diagnostics establish measurable problems, but they do not decide whether a response is empathetic, persuasive,
+funny, safe, or appropriate. Apply the manual-review rules in this document before accepting rewritten content.
+
+### 9.4 Revise and localize
+
+Rewrite choices and feedback together so the score justification remains accurate. Preserve the intended strategic contrast
+in Japanese, English, and Traditional Chinese rather than translating word for word. Recheck aliases after finalizing the
+displayed choices. If the scenario branches, verify that revised choices still produce proportionate state effects and
+coherent routes.
+
+An exception is not a substitute for rewriting generic content. If an exception is genuinely required, propose it as a
+separate policy change with the evidence required by section 7.
+
+### 9.5 Verify each batch
+
+After every bounded batch, run:
+
+```text
+npm run validate:scenarios
+npm run quality:scenarios -- --summary
+npm test
+```
+
+Compare the new totals with the recorded baseline and inspect the detailed output for the modified scenarios. The batch is
+ready to commit when:
+
+- structural validation and tests pass;
+- the targeted findings are resolved;
+- total error and warning counts do not increase without a documented reason;
+- no scenario outside the declared scope was changed;
+- the manual-review checklist has been completed.
+
+Prefer one commit per category or other reviewable batch. State the before-and-after totals in the commit or pull-request
+notes.
+
+### 9.6 Enable enforcement only after remediation
+
+When all planned batches are complete, preview the future gate:
+
+```text
+npm run quality:scenarios:enforce -- --summary
+```
+
+This command is expected to fail while any error-level finding remains. After it succeeds, change the committed policy from
+`audit` to `enforce` in a separate infrastructure commit, add the enforcing command to CI, and run the complete test suite
+again.
+
+## 10. Generator request template for remediation
+
+Use a prompt similar to the following for Codex, Claude Code, or another repository-aware generator:
+
+```text
+Evaluate and improve scenario quality for <category-or-scenario>.
+
+Before editing, read the scenario generation guide, scenario quality standards,
+scenario quality policy, and both scenario JSON Schemas. Inspect multiple scenarios
+in the target category.
+
+Constraints:
+- First report the findings and proposed revisions.
+- Modify only the declared scenario or category scope.
+- Do not change quality thresholds, severities, or exceptions.
+- Do not replace repeated lines with superficial synonyms.
+- Give every choice a scenario-specific and meaningfully distinct strategy.
+- Keep score explanations consistent with the evaluation axes.
+- Preserve the learning distinction in ja, en, and zh.
+- Run schema validation, quality audit, and tests.
+- Report before-and-after finding totals and any remaining manual-review concerns.
+```
+
+For an evaluation-only task, add: `Do not modify files in this phase.` Review the report before authorizing content changes.
