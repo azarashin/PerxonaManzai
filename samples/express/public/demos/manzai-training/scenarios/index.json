@@ -128,6 +128,22 @@
         "en": "Teacher and Student",
         "zh": "教師與學生"
       }
+    },
+    {
+      "id": "friend-advice",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "短編は直線型で成立しますが、相手が共感か助言のどちらを求めるかで分岐が有効です。",
+          "en": "Short scenarios may be linear; branching helps when the friend may want empathy or advice.",
+          "zh": "短篇可採線性；當朋友可能需要同理或建議時，分支更有效。"
+        }
+      },
+      "title": {
+        "ja": "友人同士の相談",
+        "en": "Advice Between Friends",
+        "zh": "朋友間的商量"
+      }
     }
   ],
   "scenarios": [
@@ -886,6 +902,33 @@
         "zh": "升學方向衝突"
       },
       "path": "./scenarios/career-path-conflict.json"
+    },
+    {
+      "id": "considering-resignation",
+      "categoryId": "friend-advice",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "退職を考える友人",
+        "en": "Considering Resignation",
+        "zh": "考慮離職"
+      },
+      "path": "./scenarios/considering-resignation.json"
     }
   ]
 }
