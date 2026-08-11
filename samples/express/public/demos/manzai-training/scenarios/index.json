@@ -665,6 +665,33 @@
         "zh": "更正錯誤公告"
       },
       "path": "./scenarios/incorrect-public-announcement.json"
+    },
+    {
+      "id": "compensation-before-investigation",
+      "categoryId": "apology-response",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "調査前の補償要求",
+        "en": "Compensation Before Investigation",
+        "zh": "調查前的補償要求"
+      },
+      "path": "./scenarios/compensation-before-investigation.json"
     }
   ]
 }
