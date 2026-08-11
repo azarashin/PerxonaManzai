@@ -192,6 +192,22 @@
         "en": "Investigative Interview",
         "zh": "調查訪談"
       }
+    },
+    {
+      "id": "diplomatic-negotiation",
+      "branching": {
+        "requirement": "required",
+        "rationale": {
+          "ja": "複数の利害、面子、条件付き合意で交渉経路が変わるため分岐が必要です。",
+          "en": "Branching is required because interests, face, and conditional agreements change the negotiation path.",
+          "zh": "多方利益、面子與條件式協議會改變談判路徑，因此必須分支。"
+        }
+      },
+      "title": {
+        "ja": "外交・政治交渉",
+        "en": "Diplomatic Negotiation",
+        "zh": "外交與政治談判"
+      }
     }
   ],
   "scenarios": [
@@ -1274,6 +1290,33 @@
         "zh": "模糊的目擊記憶"
       },
       "path": "./scenarios/uncertain-witness-memory.json"
+    },
+    {
+      "id": "joint-statement-wording",
+      "categoryId": "diplomatic-negotiation",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "共同声明の文言",
+        "en": "Wording a Joint Statement",
+        "zh": "共同聲明措辭"
+      },
+      "path": "./scenarios/joint-statement-wording.json"
     }
   ]
 }
