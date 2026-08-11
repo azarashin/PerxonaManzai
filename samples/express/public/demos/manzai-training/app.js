@@ -978,7 +978,7 @@ function showSummary() {
   summaryElement.hidden = false;
   nextBtn.hidden = true;
   replayBtn.hidden = true;
-  trainingMenuBtn.hidden = true;
+  trainingMenuBtn.hidden = false;
   trainingRestartBtn.hidden = true;
   restartBtn.hidden = false;
   reviewBtn.hidden = reviewRun || controller.resultDetails.length === 0;
