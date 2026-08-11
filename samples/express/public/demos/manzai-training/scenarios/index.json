@@ -683,16 +683,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "納期への懸念を否定せず、残作業・要員・品質リスクを具体化する",
+          "納期、範囲、要員のトレードオフを意思決定者へ示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Workplace Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Quantify remaining work, capacity, and quality risk without dismissing the concern.",
+          "Present decision makers with tradeoffs among date, scope, and staffing."
         ],
         "zh": [
-          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "不否定期限疑慮，具體確認剩餘工作、人力與品質風險。",
+          "向決策者呈現期限、範圍與人力之間的取捨。"
         ]
       },
       "title": {
@@ -710,16 +710,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "公開指導が発言しやすさへ与えた影響を認め、私的な対話へ戻す",
+          "ミスの事実と仕組み上の要因を分け、再発防止を具体化する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Workplace Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Acknowledge how public correction reduced psychological safety and move to a private conversation.",
+          "Separate the error from system causes and define concrete prevention."
         ],
         "zh": [
-          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "承認公開指責對心理安全的影響，回到私下對話。",
+          "區分錯誤事實與制度因素，具體制定防止再犯措施。"
         ]
       },
       "title": {
@@ -737,16 +737,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "感想ではなく前提、データ、影響を短く整理して反論する",
+          "全面否定ではなく検証可能な試行案と判断基準を提示する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Workplace Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Challenge a decision with assumptions, data, and impact rather than opinion.",
+          "Offer a testable pilot and decision criteria instead of a blanket rejection."
         ],
         "zh": [
-          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "不用感想，而以假設、數據與影響簡潔提出異議。",
+          "不全面否定，提出可驗證試行方案與判斷標準。"
         ]
       },
       "title": {

@@ -7,9 +7,9 @@
     "zh": "向主管提出異議"
   },
   "description": {
-    "ja": "上司・部下との会話として「上司への根拠ある反論」に対応し、状況に合う短い応答を選ぶ練習です。",
-    "en": "Practice concise, context-appropriate responses in “Disagreeing with a Manager” for Workplace Communication.",
-    "zh": "在「向主管提出異議」中練習符合情境的簡短主管與部屬溝通回應。"
+    "ja": "決定済みの方針に対し、上司の面子を損なわず根拠と限定的な代替案を提示する練習です。",
+    "en": "Practice challenging a decided direction with evidence and a limited alternative while preserving working trust.",
+    "zh": "練習針對已決方針，以證據與有限替代案提出異議，同時維持工作信任。"
   },
   "startBeatId": "opening",
   "stateVariables": [
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "まず懸念を否定せず、根拠と影響を具体的に聞きます。",
-            "en": "I will not dismiss the concern; first I want the evidence and likely impact.",
-            "zh": "我不會先否定疑慮，會先了解依據與可能影響。"
+            "ja": "承知しました。反対理由は、先月の解約率データと実施後の影響です。数字を三分で示し、限定案も提案してよいですか。",
+            "en": "My concern is based on last month's churn data. May I show it in three minutes and offer a limited option?",
+            "zh": "了解。我的異議依據是上月流失率與預期影響。可以用三分鐘說明數據並提出有限方案嗎？"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "上司の要請どおり根拠と影響を示し、時間を限定して代替案の許可を求めています。",
+            "en": "It meets the request for evidence and impact and asks permission for a time-bounded alternative.",
+            "zh": "依主管要求提出證據與影響，並在限定時間內徵求提出替代案的許可。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "私はこの方針に反対です。現場経験から失敗すると思います。",
+            "en": "I disagree. My field experience tells me this will fail.",
+            "zh": "我反對這個方針，依現場經驗判斷會失敗。"
           },
           "axisScores": {
-            "psychological-safety": 13,
-            "clarity": 11,
-            "fact-checking": 12,
-            "solution-quality": 12
+            "psychological-safety": 8,
+            "clarity": 14,
+            "fact-checking": 9,
+            "solution-quality": 9
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "立場と経験は明確ですが、検証できるデータと代替案がありません。",
+            "en": "It is clear and experience-based but lacks testable evidence and an alternative.",
+            "zh": "立場與經驗清楚，但缺少可驗證數據與替代方案。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "決まったなら従います。問題が起きても知りません。",
+            "en": "If it is decided, I'll comply. Don't blame me if it goes wrong.",
+            "zh": "既然決定了我就照做，出問題別怪我。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
-            "fact-checking": 2,
-            "solution-quality": 3
+            "psychological-safety": 1,
+            "clarity": 2,
+            "fact-checking": 0,
+            "solution-quality": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "表面上従いながらリスク情報を共有せず、協働関係も損ないます。",
+            "en": "It withholds risk while signaling resentment, harming both evidence quality and trust.",
+            "zh": "表面服從卻不分享風險資訊，也損害合作關係。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "どの数値が方針と矛盾し、納期にどう影響するのか具体的に説明してください。",
+        "en": "Explain which metric contradicts the direction and how it affects the deadline.",
+        "zh": "請具體說明哪項數據與方針矛盾，以及會如何影響期限。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "人ではなく事実と行動に焦点を当てて確認します。",
-            "en": "Let's focus on facts and actions rather than judging the person.",
-            "zh": "我們聚焦事實與行動，不評斷個人。"
+            "ja": "同施策では解約率が八％上がり、修正に二週間かかりました。今回も同じ前提なら納期が十日延びる見込みです。",
+            "en": "A similar change raised churn eight percent and took two weeks to fix; this date could slip ten days.",
+            "zh": "類似措施使流失率上升百分之八，修正花兩週；若前提相同，本次期限預計延後十天。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "比較データ、因果の前提、納期影響を数値で結び、上司の質問へ直接答えています。",
+            "en": "It connects comparative data, assumptions, and schedule impact numerically.",
+            "zh": "以數字連結比較資料、因果假設與期限影響，直接回答主管問題。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "前回も顧客から不満が多かったので、今回も危険です。",
+            "en": "Customers complained last time, so this is risky again.",
+            "zh": "上次顧客抱怨很多，所以這次也有風險。"
           },
           "axisScores": {
-            "psychological-safety": 13,
-            "clarity": 11,
-            "fact-checking": 12,
-            "solution-quality": 12
+            "psychological-safety": 9,
+            "clarity": 15,
+            "fact-checking": 10,
+            "solution-quality": 8
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "過去事例は示しますが、数値と今回の納期へのつながりが曖昧です。",
+            "en": "It cites precedent but does not quantify it or connect it to this deadline.",
+            "zh": "有提出過去案例，但未量化，也未連結本次期限。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "チームの全員がこの方針は無理だと言っています。",
+            "en": "Everyone on the team says this direction is impossible.",
+            "zh": "團隊所有人都說這個方針不可行。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
-            "fact-checking": 2,
-            "solution-quality": 3
+            "psychological-safety": 3,
+            "clarity": 5,
+            "fact-checking": 4,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "人数を根拠の代わりに使い、検証可能な事実や影響を示していません。",
+            "en": "It substitutes popularity for verifiable evidence and impact.",
+            "zh": "以人數取代可驗證的事實與影響。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "全面変更ではなく、納期を守りながら検証できる案はありますか。",
+        "en": "Can we test an option without a full reversal or moving the deadline?",
+        "zh": "有沒有不全面改變、又能守住期限的驗證方案？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "優先順位、担当、期限を調整できる案に落とし込みます。",
-            "en": "Let's turn this into options for priorities, ownership, and timing.",
-            "zh": "把問題整理成可調整優先順序、負責人與期限的方案。"
+            "ja": "対象の一割で三日間試し、解約意向と問い合わせ増加を測ります。基準を超えた場合だけ代替案へ切り替えます。",
+            "en": "Run a three-day pilot on ten percent, measure churn intent and contacts, and switch only if thresholds are exceeded.",
+            "zh": "以一成對象試行三天，測量流失意向與詢問增加；只有超過標準才切換替代案。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "範囲、期間、指標、切替条件を限定し、決定を尊重しながらリスクを検証できます。",
+            "en": "It limits scope, time, metrics, and switch criteria while respecting the decision.",
+            "zh": "限定範圍、期間、指標與切換條件，在尊重決定下驗證風險。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "まず一部の顧客で試して様子を見ましょう。",
+            "en": "Let's try it with some customers and see what happens.",
+            "zh": "先找部分顧客試試看。"
           },
           "axisScores": {
-            "psychological-safety": 13,
-            "clarity": 11,
+            "psychological-safety": 12,
+            "clarity": 10,
             "fact-checking": 12,
             "solution-quality": 12
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "小規模試行は有効ですが、期間、指標、判断基準がありません。",
+            "en": "A pilot is useful, but it lacks duration, metrics, and decision criteria.",
+            "zh": "小規模試行有幫助，但缺少期間、指標與判斷標準。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "では反対意見は取り下げます。元の方針で進めます。",
+            "en": "Then I withdraw my objection and will follow the original direction.",
+            "zh": "那我撤回反對，照原方針進行。"
           },
           "axisScores": {
-            "psychological-safety": 2,
+            "psychological-safety": 4,
             "clarity": 3,
             "fact-checking": 2,
-            "solution-quality": 3
+            "solution-quality": 6
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "対立は避けますが、示したリスクを検証せず組織の判断材料を失わせます。",
+            "en": "It avoids conflict but abandons a material risk without testing it.",
+            "zh": "雖避免衝突，卻未驗證已提出的重大風險，使組織失去判斷材料。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "皆の前で決定を否定されたように聞こえました。進め方への配慮も必要です。",
+        "en": "In front of everyone, it sounded as though you rejected the decision itself. Process matters too.",
+        "zh": "在大家面前聽起來像你否定了決定本身，提出方式也需要顧慮。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "話しにくくさせた点を認め、安心して事実を話せる場に戻します。",
-            "en": "I recognize that I made this hard to discuss; let's restore a safe space for the facts.",
-            "zh": "我承認剛才讓人難以開口，讓我們回到能安心談事實的狀態。"
+            "ja": "公開の場で決定そのものを否定する言い方になり、申し訳ありません。共通目標を確認し、根拠と試行案は個別に説明します。",
+            "en": "I'm sorry I publicly rejected the decision. I'll restate our goal and discuss the evidence and pilot privately.",
+            "zh": "很抱歉我在公開場合說得像是否定決定。我會重申共同目標，並私下說明證據與試行案。"
           },
           "axisScores": {
             "psychological-safety": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "内容を撤回せず伝え方の影響を認め、共通目標と適切な場へ対話を戻しています。",
+            "en": "It owns the process impact without suppressing evidence and moves discussion to the right setting.",
+            "zh": "承認提出方式的影響但不壓下證據，把對話拉回共同目標與適當場合。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "言い方は謝ります。反対意見も取り下げます。",
+            "en": "I apologize for how I said it and withdraw my objection.",
+            "zh": "我為說法道歉，也撤回反對。"
           },
           "axisScores": {
             "psychological-safety": 13,
-            "clarity": 11,
-            "fact-checking": 12,
-            "solution-quality": 12
+            "clarity": 5,
+            "fact-checking": 6,
+            "solution-quality": 13
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "関係修復は試みますが、有益な根拠まで引っ込め、代替の伝え方を示しません。",
+            "en": "It attempts repair but suppresses useful evidence and offers no better process.",
+            "zh": "試圖修復關係，卻連有用證據也撤回，未提出更好的溝通方式。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "根拠を求めたのはそちらです。聞きたくないなら最初から言ってください。",
+            "en": "You asked for evidence. If you did not want it, you should have said so.",
+            "zh": "是你要求證據的，不想聽就該一開始說。"
           },
           "axisScores": {
-            "psychological-safety": 2,
-            "clarity": 3,
+            "psychological-safety": 1,
+            "clarity": 6,
             "fact-checking": 2,
-            "solution-quality": 3
+            "solution-quality": 0
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "要求の矛盾を責めるだけで、公開の場での影響と今後の協働を扱いません。",
+            "en": "It attacks inconsistency and ignores the public impact and future collaboration.",
+            "zh": "只責怪要求矛盾，未處理公開場合的影響與後續合作。"
           },
           "stateEffects": [
             {
