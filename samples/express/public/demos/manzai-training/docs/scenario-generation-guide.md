@@ -4,6 +4,9 @@ Use this guide when asking Codex or another generator to create or update traini
 machine-readable shape; this guide defines which artifacts to produce and the content-quality expectations that schemas
 cannot enforce.
 
+Before authoring content, read the [scenario quality standards](scenario-quality-standards.md). The standards define the
+quality rationale, stable diagnostic IDs, manual-review criteria, and exception policy used by all scenario generators.
+
 ## Choose the schema
 
 | Task | Schema | Artifact |

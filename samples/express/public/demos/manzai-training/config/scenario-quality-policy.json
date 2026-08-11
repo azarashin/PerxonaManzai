@@ -1,0 +1,51 @@
+{
+  "$schema": "../schemas/scenario-quality-policy.schema.json",
+  "version": 1,
+  "mode": "audit",
+  "languages": ["ja", "en", "zh"],
+  "normalization": {
+    "unicodeForm": "NFKC",
+    "lowercase": true,
+    "stripWhitespace": true,
+    "stripPunctuationAndSymbols": true
+  },
+  "rules": {
+    "CHOICE_DUPLICATE_WITHIN_SCENARIO": {
+      "enabled": true,
+      "severity": "error"
+    },
+    "CHOICE_REUSED_WITHIN_CATEGORY": {
+      "enabled": true,
+      "severity": "error"
+    },
+    "CHOICE_OVERUSED_ACROSS_CATALOG": {
+      "enabled": true,
+      "severity": "error",
+      "maxOccurrences": 2
+    },
+    "DIALOGUE_OVERUSED_ACROSS_CATALOG": {
+      "enabled": true,
+      "severity": "warning",
+      "maxOccurrences": 2
+    },
+    "FEEDBACK_OVERUSED_ACROSS_CATALOG": {
+      "enabled": true,
+      "severity": "error",
+      "maxOccurrences": 2
+    },
+    "SCORES_NOT_DIFFERENTIATED": {
+      "enabled": true,
+      "severity": "error"
+    },
+    "SPEECH_CHOICE_TOO_LONG": {
+      "enabled": true,
+      "severity": "warning",
+      "maxCharacters": 120
+    },
+    "MOTION_TAGS_NOT_VARIED": {
+      "enabled": true,
+      "severity": "warning"
+    }
+  },
+  "exceptions": []
+}

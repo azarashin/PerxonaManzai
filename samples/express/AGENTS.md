@@ -102,6 +102,16 @@ Modern ESM JavaScript (`"type": "module"`) and Node built-ins. Follow `.editorco
 indentation, trimmed trailing whitespace, and final newlines. The frontend is dependency-free vanilla JS by design — keep it
 that way unless you have a concrete reason to add a build step.
 
+## Manzai training scenario authoring
+
+Before creating, editing, or reviewing files in `public/demos/manzai-training/scenarios/`, read the scenario generation guide,
+the scenario quality standards, the active quality policy, and both scenario JSON Schemas. Inspect multiple scenarios in the
+target category for context, but do not reuse their dialogue, choices, feedback, or aliases as templates.
+
+Keep scenario content changes separate from changes to quality rules or exceptions. Do not weaken a threshold, reduce a
+severity, or add an exception merely to make generated content pass. Run `npm run validate:scenarios` and
+`npm run quality:scenarios`; report audit-mode findings, and resolve error-level findings when enforcement is active.
+
 ## Configuration
 
 Required (the server exits at startup if either is missing):
