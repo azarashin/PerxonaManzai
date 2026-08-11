@@ -77,6 +77,11 @@
         "en": "The service is down and our work has stopped. What do you know right now?",
         "zh": "服務無法使用，工作都停了。目前你們知道什麼？"
       },
+      "pronunciationGuide": {
+        "ja": "さーびすが つかえず ぎょうむが とまって います。 いま、 なにが わかって いる んですか。",
+        "en": "/ðə ˈsɝvəs ɪz daʊn ənd ˈaʊɚ wɝk hæz stɑpt. wʌt du ju noʊ ɹaɪt naʊ?/",
+        "zh": "Fú wù wú fǎ shǐ yòng， gōng zuò dōu tíng le。 mù qián nǐ men zhī dào shén me？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -99,6 +104,11 @@
             "en": "I'm sorry the outage stopped your work. We have confirmed login failures and are checking scope and start time.",
             "zh": "很抱歉中斷了工作。目前已確認登入異常，正在調查影響範圍與開始時間。"
           },
+          "pronunciationGuide": {
+            "ja": "ぎょうむを とめて しまい もうしわけ ありません。 げんざいは ろぐいん しょうがいを かくにん し、 えいきょう はんいと かいし じこくを ちょうさ して います。",
+            "en": "/aɪm ˈsɑɹi ðə ˈaʊtədʒ stɑpt jɔɹ wɝk. wi hæv kənˈfɝmd ˈlɔˌɡɪn ˈfeɪljɚz ənd ɑɹ ˈtʃɛkɪŋ skoʊp ənd stɑɹt taɪm./",
+            "zh": "Hěn bào qiàn zhōng duàn le gōng zuò。 mù qián yǐ què rèn dēng rù yì cháng， zhèng zài diào chá yǐng xiǎng fàn wéi yǔ kāi shǐ shí jiān。"
+          },
           "axisScores": {
             "accountability": 20,
             "fact-checking": 20,
@@ -118,6 +128,11 @@
             "en": "We're sorry for the inconvenience. We are investigating.",
             "zh": "很抱歉造成不便，目前正在調查。"
           },
+          "pronunciationGuide": {
+            "ja": "ご めいわくを おかけ して います。 げんざい ちょうさちゅうです。",
+            "en": "/wiɹ ˈsɑɹi fɔɹ ðə ˌɪnkənˈvinjəns. wi ɑɹ ˌɪnˈvɛstəˌɡeɪtɪŋ./",
+            "zh": "Hěn bào qiàn zào chéng bú biàn， mù qián zhèng zài diào chá。"
+          },
           "axisScores": {
             "accountability": 16,
             "fact-checking": 8,
@@ -136,6 +151,11 @@
             "ja": "まもなく復旧しますので、少々お待ちください。",
             "en": "Service will be restored shortly, so please wait.",
             "zh": "服務很快就會恢復，請稍候。"
+          },
+          "pronunciationGuide": {
+            "ja": "まもなく ふっきゅう しますので、 しょうしょう おまち ください。",
+            "en": "/ˈsɝvəs wɪl bi ɹɪˈstɔɹd ˈʃɔɹtli, soʊ pliz weɪt./",
+            "zh": "Fú wù hěn kuài jiù huì huī fù， qǐng shāo hòu。"
           },
           "axisScores": {
             "accountability": 4,
@@ -157,6 +177,11 @@
         "ja": "影響している利用者数、原因、次の報告時刻のうち、どこまで確認できていますか。",
         "en": "What is confirmed about affected users, cause, and the next update time?",
         "zh": "受影響使用者數、原因與下次回報時間，目前確認到哪裡？"
+      },
+      "pronunciationGuide": {
+        "ja": "えいきょう して いる りようしゃすう、 げんいん、 つぎの ほうこく じこくの うち、 どこまで かくにん できて いますか。",
+        "en": "/wʌt ɪz kənˈfɝmd əˈbaʊt əˈfɛktɪd ˈjuzɚz, kɑz, ənd ðə nɛkst əpˈdeɪt taɪm?/",
+        "zh": "Shòu yǐng xiǎng shǐ yòng zhě shù、 yuán yīn yǔ xià cì huí bào shí jiān， mù qián què rèn dào nǎ lǐ？"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "User count is being tallied and the cause is unconfirmed. We will update at 3 p.m. even if still investigating.",
             "zh": "使用者數仍在統計，原因尚未確定。即使仍在調查，也會在十五點回報進度。"
           },
+          "pronunciationGuide": {
+            "ja": "りようしゃすうは しゅうけいちゅうで げんいんは み かくていです。 じゅう ごじに、 はんめい して いない ばあいも しんちょくを ほうこく します。",
+            "en": "/ˈjuzɚ kaʊnt ɪz ˈbiɪŋ ˈtælid ənd ðə kɑz ɪz ˌʌnkənˈfɝmd. wi wɪl əpˈdeɪt æt θɹi pi ɛm ˈivɪn ɪf stɪl ˌɪnˈvɛstəˌɡeɪtɪŋ./",
+            "zh": "Shǐ yòng zhě shù réng zài tǒng jì， yuán yīn shàng wèi què dìng。 jí shǐ réng zài diào chá， yě huì zài shí wǔ diǎn huí bào jìn dù。"
+          },
           "axisScores": {
             "accountability": 20,
             "fact-checking": 20,
@@ -199,6 +229,11 @@
             "en": "Server load is the likely cause. We'll report when we know more.",
             "zh": "原因很可能是伺服器負載，確認後會回報。"
           },
+          "pronunciationGuide": {
+            "ja": "げんいんは さーば ふかの かのうせいが たかいです。 わかり しだい ほうこく します。",
+            "en": "/ˈsɝvɚ loʊd ɪz ðə ˈlaɪkli kɑz. wil ɹiˈpɔɹt wɛn wi noʊ mɔɹ./",
+            "zh": "Yuán yīn hěn kě néng shì sì fú qì fù zài， què rèn hòu huì huí bào。"
+          },
           "axisScores": {
             "accountability": 8,
             "fact-checking": 8,
@@ -217,6 +252,11 @@
             "ja": "外部からの攻撃かもしれません。詳細はまだ言えません。",
             "en": "It may be an external attack. I cannot say more yet.",
             "zh": "可能是外部攻擊，目前不能多說。"
+          },
+          "pronunciationGuide": {
+            "ja": "がいぶからの こうげきかも しれません。 しょうさいは まだ いえません。",
+            "en": "/ɪt meɪ bi æn ɪkˈstɝnəl əˈtæk. aɪ ˈkænɑt seɪ mɔɹ jɛt./",
+            "zh": "Kě néng shì wài bù gōng jī， mù qián bù néng duō shuō。"
           },
           "axisScores": {
             "accountability": 2,
@@ -238,6 +278,11 @@
         "ja": "復旧までの代替手段と、補償についていつ案内されるか教えてください。",
         "en": "Tell us the workaround and when compensation information will be available.",
         "zh": "請說明復原前的替代方式，以及何時會通知補償資訊。"
+      },
+      "pronunciationGuide": {
+        "ja": "ふっきゅうまでの だいたい しゅだんと、 ほしょうについて いつ あんない されるか おしえて ください。",
+        "en": "/tɛl ʌs ðə ˈwɝkɚˈaʊnd ənd wɛn ˌkɑmpənˈseɪʃən ˌɪnfɚˈmeɪʃən wɪl bi əˈveɪləbəl./",
+        "zh": "Qǐng shuō míng fù yuán qián de tì dài fāng shì， yǐ jí hé shí huì tōng zhī bǔ cháng zī xùn。"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "We'll share the verified read-only workaround, update recovery at 5 p.m., and address compensation after impact review.",
             "zh": "我們會提供已驗證的唯讀替代方式，十七點更新復原狀況，補償則在確認影響後由負責部門說明。"
           },
+          "pronunciationGuide": {
+            "ja": "かくにんずみの えつらん せんよう てじゅんを あんない します。 じゅう ななじに ふっきゅう じょうきょうを こうしん し、 ほしょうは えいきょう かくにんごに たんとう ぶもんから せつめい します。",
+            "en": "/wil ʃɛɹ ðə ˈvɛɹəˌfaɪd ɹɛd - ˈoʊnli ˈwɝkɚˈaʊnd, əpˈdeɪt ɹɪˈkʌvɹi æt faɪv pi ɛm, ənd ˈæˌdɹɛs ˌkɑmpənˈseɪʃən ˈæftɚ ˌɪmˈpækt ˌɹivˈju./",
+            "zh": "Wǒ men huì tí gōng yǐ yàn zhèng de wéi dú tì dài fāng shì， shí qī diǎn gēng xīn fù yuán zhuàng kuàng， bǔ cháng zé zài què rèn yǐng xiǎng hòu yóu fù zé bù mén shuō míng。"
+          },
           "axisScores": {
             "accountability": 20,
             "fact-checking": 20,
@@ -280,6 +330,11 @@
             "en": "We'll look for a workaround and let you know later.",
             "zh": "我們會尋找替代方式，之後再通知。"
           },
+          "pronunciationGuide": {
+            "ja": "つかえる だいたい しゅだんを さがし、 のちほど おしらせ します。",
+            "en": "/wil lʊk fɔɹ ə ˈwɝkɚˈaʊnd ənd lɛt ju noʊ ˈleɪtɚ./",
+            "zh": "Wǒ men huì xún zhǎo tì dài fāng shì， zhī hòu zài tōng zhī。"
+          },
           "axisScores": {
             "accountability": 9,
             "fact-checking": 11,
@@ -298,6 +353,11 @@
             "ja": "全利用者へ一か月分を返金します。",
             "en": "We will refund one month to every user.",
             "zh": "我們會向所有使用者退還一個月費用。"
+          },
+          "pronunciationGuide": {
+            "ja": "ぜん りようしゃへ いちかげつぶんを へんきん します。",
+            "en": "/wi wɪl ɹɪˈfʌnd wʌn mʌnθ tu ˈɛvɚi ˈjuzɚ./",
+            "zh": "Wǒ men huì xiàng suǒ yǒu shǐ yòng zhě tuì huán yí gè yuè fèi yòng。"
           },
           "axisScores": {
             "accountability": 10,
