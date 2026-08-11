@@ -176,6 +176,22 @@
         "en": "Parent and Child Communication",
         "zh": "親子溝通"
       }
+    },
+    {
+      "id": "investigative-interview",
+      "branching": {
+        "requirement": "required",
+        "rationale": {
+          "ja": "確認済み事実、矛盾、信頼度に応じて質問順と得られる情報が変わるため分岐が必要です。",
+          "en": "Branching is required because known facts, inconsistencies, and rapport change questioning and disclosure.",
+          "zh": "已知事實、矛盾與信任程度會改變提問及資訊揭露，因此必須分支。"
+        }
+      },
+      "title": {
+        "ja": "調査面談",
+        "en": "Investigative Interview",
+        "zh": "調查訪談"
+      }
     }
   ],
   "scenarios": [
@@ -1177,6 +1193,33 @@
         "zh": "不同的生涯期待"
       },
       "path": "./scenarios/different-career-expectations.json"
+    },
+    {
+      "id": "inconsistent-timeline",
+      "categoryId": "investigative-interview",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Investigative Interview.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合調查訪談的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "食い違う時系列",
+        "en": "An Inconsistent Timeline",
+        "zh": "不一致的時間線"
+      },
+      "path": "./scenarios/inconsistent-timeline.json"
     }
   ]
 }
