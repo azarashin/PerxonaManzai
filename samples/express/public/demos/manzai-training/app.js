@@ -69,6 +69,8 @@ const launchBtn = document.querySelector("#launch-btn");
 const startBtn = document.querySelector("#start-btn");
 const replayBtn = document.querySelector("#replay-btn");
 const nextBtn = document.querySelector("#next-btn");
+const trainingMenuBtn = document.querySelector("#training-menu-btn");
+const trainingRestartBtn = document.querySelector("#training-restart-btn");
 const restartBtn = document.querySelector("#restart-btn");
 const reviewBtn = document.querySelector("#review-btn");
 const micBtn = document.querySelector("#mic-btn");
@@ -380,6 +382,8 @@ function resetTrainingView() {
   bokeCaption.hidden = true;
   replayBtn.hidden = true;
   nextBtn.hidden = true;
+  trainingMenuBtn.hidden = true;
+  trainingRestartBtn.hidden = true;
   restartBtn.hidden = true;
   reviewBtn.hidden = true;
   startBtn.hidden = false;
@@ -946,6 +950,8 @@ function startTraining() {
   );
   controller.start();
   startBtn.hidden = true;
+  trainingMenuBtn.hidden = false;
+  trainingRestartBtn.hidden = false;
   restartBtn.hidden = true;
   void playCurrentBeat();
 }
@@ -972,6 +978,8 @@ function showSummary() {
   summaryElement.hidden = false;
   nextBtn.hidden = true;
   replayBtn.hidden = true;
+  trainingMenuBtn.hidden = true;
+  trainingRestartBtn.hidden = true;
   restartBtn.hidden = false;
   reviewBtn.hidden = reviewRun || controller.resultDetails.length === 0;
   setScenarioPickerDisabled(false);
@@ -1086,6 +1094,8 @@ startBtn.addEventListener("click", startTraining);
 micBtn.addEventListener("click", startRecognition);
 replayBtn.addEventListener("click", () => void playCurrentBeat());
 nextBtn.addEventListener("click", advanceTraining);
+trainingMenuBtn.addEventListener("click", returnToTrainingMenu);
+trainingRestartBtn.addEventListener("click", restartCurrentTraining);
 restartBtn.addEventListener("click", startTraining);
 reviewBtn.addEventListener("click", startReviewTraining);
 
@@ -1104,9 +1114,26 @@ function startReviewTraining() {
   controller = new ScenarioController(reviewScenario);
   controller.start();
   startBtn.hidden = true;
+  trainingMenuBtn.hidden = false;
+  trainingRestartBtn.hidden = false;
   restartBtn.hidden = true;
   reviewBtn.hidden = true;
   void playCurrentBeat();
+}
+
+function returnToTrainingMenu() {
+  resetTrainingView();
+  setScenarioPickerDisabled(false);
+  setPresenterControlsDisabled(false);
+  setAppMessage("");
+}
+
+function restartCurrentTraining() {
+  clearAutoAdvance();
+  recognizer.abort();
+  presenter.setListening?.(false);
+  presenter.interruptPresentation?.();
+  startTraining();
 }
 
 previewBtn.addEventListener("click", () => {
