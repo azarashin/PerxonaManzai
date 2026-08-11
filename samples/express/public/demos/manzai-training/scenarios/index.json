@@ -6,15 +6,15 @@
       "branching": {
         "requirement": "not-required",
         "rationale": {
-          "ja": "各発話へのツッコミを独立して採点できるため、基本シナリオは直線進行で成立します。",
-          "en": "Basic scenarios work as a linear sequence because each comeback can be scored independently.",
-          "zh": "每次吐槽都能獨立評分，因此基礎情境使用線性流程即可成立。"
+          "ja": "各発話の矛盾や誇張を独立して採点できるため、直線型で成立します。",
+          "en": "Each contradiction or exaggeration can be scored independently, so linear scenarios are sufficient.",
+          "zh": "每段對話的矛盾或誇張都能獨立評分，因此線性情境即可成立。"
         }
       },
       "title": {
-        "ja": "漫才",
-        "en": "Manzai",
-        "zh": "漫才"
+        "ja": "漫才・ツッコミ",
+        "en": "Manzai and Comebacks",
+        "zh": "漫才與吐槽"
       }
     },
     {
@@ -22,15 +22,15 @@
       "branching": {
         "requirement": "recommended",
         "rationale": {
-          "ja": "初級編は直線進行で成立しますが、確認結果や客の反応に応じて対応を変える中級以上では分岐を推奨します。",
-          "en": "Beginner scenarios can stay linear, but branching is recommended at higher levels when verification results or customer reactions change the appropriate response.",
-          "zh": "初級情境可使用線性流程，但中高級內容會因查證結果或顧客反應而改變適當回應，因此建議使用分支。"
+          "ja": "初級は直線型で成立しますが、確認結果や顧客反応が変わる中級以上では分岐を推奨します。",
+          "en": "Beginner scenarios may be linear; branching is recommended when verification or customer reactions affect later responses.",
+          "zh": "初級可採線性；當確認結果或顧客反應會影響後續時，建議使用分支。"
         }
       },
       "title": {
-        "ja": "接客",
-        "en": "Customer Service",
-        "zh": "顧客服務"
+        "ja": "接客・クレーム対応",
+        "en": "Customer Service and Complaints",
+        "zh": "顧客服務與客訴"
       }
     },
     {
@@ -38,13 +38,13 @@
       "branching": {
         "requirement": "recommended",
         "rationale": {
-          "ja": "短い練習は線形でも成立しますが、過去の発言や感情の変化が後の応答を左右する上級シナリオでは分岐を推奨します。",
-          "en": "Short practice can remain linear, but branching is recommended for advanced scenarios where earlier statements and emotional changes affect later responses.",
-          "zh": "短篇練習可採線性流程；進階情境若先前發言與情緒變化會影響後續回應，則建議使用分支。"
+          "ja": "感情や過去の発言が後続の応答を左右するため、中級以上では分岐を推奨します。",
+          "en": "Branching is recommended when emotions and earlier statements affect later responses.",
+          "zh": "當情緒與先前發言會影響後續回應時，建議採用分支。"
         }
       },
       "title": {
-        "ja": "恋愛・パートナー会話",
+        "ja": "恋愛・夫婦・パートナー会話",
         "en": "Partner Communication",
         "zh": "伴侶溝通"
       }
@@ -54,15 +54,191 @@
       "branching": {
         "requirement": "required",
         "rationale": {
-          "ja": "高度な営業交渉では、確認した課題、信頼、残りの譲歩余地によって有効な提案と着地点が変わるため、状態と分岐が必要です。",
-          "en": "Advanced sales negotiation requires state and branching because confirmed needs, trust, and remaining concessions change the viable proposal and outcome.",
-          "zh": "進階銷售談判中，已確認需求、信任與剩餘讓步空間會改變可行提案與結果，因此必須使用狀態與分支。"
+          "ja": "信頼、確認済みの条件、残りの譲歩幅で提案と結果が変わるため分岐が必要です。",
+          "en": "Branching is required because trust, confirmed conditions, and remaining concessions change viable offers and outcomes.",
+          "zh": "信任、已確認條件與剩餘讓步空間會改變可行方案與結果，因此必須分支。"
         }
       },
       "title": {
-        "ja": "交渉・営業",
+        "ja": "交渉・値切り・営業",
         "en": "Negotiation and Sales",
-        "zh": "談判與銷售"
+        "zh": "談判、議價與銷售"
+      }
+    },
+    {
+      "id": "workplace-communication",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "相手の立場と心理的安全性が後続の情報開示を左右するため、中級以上では分岐を推奨します。",
+          "en": "Branching is recommended when hierarchy and psychological safety affect what is disclosed next.",
+          "zh": "當職位關係與心理安全會影響後續資訊揭露時，建議採用分支。"
+        }
+      },
+      "title": {
+        "ja": "上司・部下との会話",
+        "en": "Workplace Communication",
+        "zh": "主管與部屬溝通"
+      }
+    },
+    {
+      "id": "apology-response",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "確認された事実と相手の反応によって説明や補償の順序が変わるため、中級以上では分岐を推奨します。",
+          "en": "Branching is recommended when confirmed facts and reactions change the order of explanation and remedy.",
+          "zh": "當已確認事實與對方反應會改變說明及補救順序時，建議採用分支。"
+        }
+      },
+      "title": {
+        "ja": "謝罪・火消し",
+        "en": "Apology and Incident Response",
+        "zh": "道歉與事件應對"
+      }
+    },
+    {
+      "id": "interview-hiring",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "基本質問は直線型で成立しますが、回答に応じた掘り下げや逆質問には分岐が有効です。",
+          "en": "Basic questions can be linear, while branching helps with follow-ups and candidate questions.",
+          "zh": "基本題可採線性，而追問與反向提問適合使用分支。"
+        }
+      },
+      "title": {
+        "ja": "面接・採用",
+        "en": "Interview and Hiring",
+        "zh": "面試與招募"
+      }
+    },
+    {
+      "id": "teacher-student",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "生徒の背景や反応により、注意、励まし、見守りの適切な選択が変わるため分岐を推奨します。",
+          "en": "Branching is recommended because the student's context and reaction change the appropriate balance of guidance and support.",
+          "zh": "學生的背景與反應會改變提醒、鼓勵與支持的平衡，因此建議分支。"
+        }
+      },
+      "title": {
+        "ja": "教師・生徒",
+        "en": "Teacher and Student",
+        "zh": "教師與學生"
+      }
+    },
+    {
+      "id": "friend-advice",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "短編は直線型で成立しますが、相手が共感か助言のどちらを求めるかで分岐が有効です。",
+          "en": "Short scenarios may be linear; branching helps when the friend may want empathy or advice.",
+          "zh": "短篇可採線性；當朋友可能需要同理或建議時，分支更有效。"
+        }
+      },
+      "title": {
+        "ja": "友人同士の相談",
+        "en": "Advice Between Friends",
+        "zh": "朋友間的商量"
+      }
+    },
+    {
+      "id": "scam-awareness",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "初動は直線型で練習できますが、相手の圧力や要求の変化に対応する中級以上では分岐を推奨します。",
+          "en": "Initial responses may be linear; branching is recommended as pressure and requests change.",
+          "zh": "初步應對可採線性；當壓力與要求改變時，建議使用分支。"
+        }
+      },
+      "title": {
+        "ja": "詐欺・悪質勧誘への対処",
+        "en": "Scam and Manipulative Sales Awareness",
+        "zh": "詐騙與惡質推銷防範"
+      }
+    },
+    {
+      "id": "parent-child",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "信頼、過去の約束、子供の反応が後続の対話を変えるため、中級以上では分岐を推奨します。",
+          "en": "Branching is recommended when trust, prior agreements, and the child's reaction affect later dialogue.",
+          "zh": "信任、過往約定與孩子的反應會影響後續對話，因此建議分支。"
+        }
+      },
+      "title": {
+        "ja": "親子会話",
+        "en": "Parent and Child Communication",
+        "zh": "親子溝通"
+      }
+    },
+    {
+      "id": "investigative-interview",
+      "branching": {
+        "requirement": "required",
+        "rationale": {
+          "ja": "確認済み事実、矛盾、信頼度に応じて質問順と得られる情報が変わるため分岐が必要です。",
+          "en": "Branching is required because known facts, inconsistencies, and rapport change questioning and disclosure.",
+          "zh": "已知事實、矛盾與信任程度會改變提問及資訊揭露，因此必須分支。"
+        }
+      },
+      "title": {
+        "ja": "調査面談",
+        "en": "Investigative Interview",
+        "zh": "調查訪談"
+      }
+    },
+    {
+      "id": "diplomatic-negotiation",
+      "branching": {
+        "requirement": "required",
+        "rationale": {
+          "ja": "複数の利害、面子、条件付き合意で交渉経路が変わるため分岐が必要です。",
+          "en": "Branching is required because interests, face, and conditional agreements change the negotiation path.",
+          "zh": "多方利益、面子與條件式協議會改變談判路徑，因此必須分支。"
+        }
+      },
+      "title": {
+        "ja": "外交・政治交渉",
+        "en": "Diplomatic Negotiation",
+        "zh": "外交與政治談判"
+      }
+    },
+    {
+      "id": "clinical-communication",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "不安や理解度で説明の仕方が変わるため分岐を推奨しますが、診断や個別治療は扱いません。",
+          "en": "Branching is recommended as anxiety and understanding change communication; diagnosis and individualized treatment are out of scope.",
+          "zh": "焦慮與理解程度會改變溝通方式，因此建議分支；不涉及診斷或個別治療。"
+        }
+      },
+      "title": {
+        "ja": "医療コミュニケーション",
+        "en": "Clinical Communication",
+        "zh": "醫療溝通"
+      }
+    },
+    {
+      "id": "crisis-negotiation",
+      "branching": {
+        "requirement": "required",
+        "rationale": {
+          "ja": "緊張度と協力度に応じて安全な対話経路が変わるため分岐が必要です。実務手順ではなく傾聴を訓練します。",
+          "en": "Branching is required as tension and cooperation change the safe dialogue path. The focus is listening, not operational procedure.",
+          "zh": "緊張與合作程度會改變安全對話路徑，因此必須分支；重點是傾聽而非實務程序。"
+        }
+      },
+      "title": {
+        "ja": "危機場面の対話",
+        "en": "Crisis Communication",
+        "zh": "危機情境溝通"
       }
     }
   ],
@@ -74,9 +250,18 @@
       "difficulty": "beginner",
       "estimatedMinutes": 5,
       "learningObjectives": {
-        "ja": ["会話の矛盾や誇張を素早く見つける", "短く明確なツッコミを返す"],
-        "en": ["Quickly identify contradictions and exaggerations", "Deliver a short and clear comeback"],
-        "zh": ["快速找出對話中的矛盾與誇張", "做出簡短清楚的吐槽"]
+        "ja": [
+          "会話の矛盾や誇張を素早く見つける",
+          "短く明確なツッコミを返す"
+        ],
+        "en": [
+          "Quickly identify contradictions and exaggerations",
+          "Deliver a short and clear comeback"
+        ],
+        "zh": [
+          "快速找出對話中的矛盾與誇張",
+          "做出簡短清楚的吐槽"
+        ]
       },
       "title": {
         "ja": "コンビニに行った話",
@@ -92,9 +277,18 @@
       "difficulty": "beginner",
       "estimatedMinutes": 4,
       "learningObjectives": {
-        "ja": ["お待たせしたことを丁寧に謝罪する", "安全を優先して確認行動を伝える"],
-        "en": ["Apologize politely for a wait", "Prioritize safety and explain the verification step"],
-        "zh": ["為久候禮貌致歉", "以安全為優先並說明確認步驟"]
+        "ja": [
+          "お待たせしたことを丁寧に謝罪する",
+          "安全を優先して確認行動を伝える"
+        ],
+        "en": [
+          "Apologize politely for a wait",
+          "Prioritize safety and explain the verification step"
+        ],
+        "zh": [
+          "為久候禮貌致歉",
+          "以安全為優先並說明確認步驟"
+        ]
       },
       "title": {
         "ja": "レストランでの接客",
@@ -110,9 +304,18 @@
       "difficulty": "intermediate",
       "estimatedMinutes": 6,
       "learningObjectives": {
-        "ja": ["不満の背後にある寂しさや不安を受け止める", "説明だけで終わらず実行可能な予定共有を提案する"],
-        "en": ["Acknowledge the loneliness or concern behind a complaint", "Move beyond explanation and propose a workable way to share plans"],
-        "zh": ["理解抱怨背後的寂寞或不安", "不只解釋原因，也提出可實行的行程共享方式"]
+        "ja": [
+          "不満の背後にある寂しさや不安を受け止める",
+          "説明だけで終わらず実行可能な予定共有を提案する"
+        ],
+        "en": [
+          "Acknowledge the loneliness or concern behind a complaint",
+          "Move beyond explanation and propose a workable way to share plans"
+        ],
+        "zh": [
+          "理解抱怨背後的寂寞或不安",
+          "不只解釋原因，也提出可實行的行程共享方式"
+        ]
       },
       "title": {
         "ja": "帰宅が遅い夜の話し合い",
@@ -128,9 +331,18 @@
       "difficulty": "advanced",
       "estimatedMinutes": 10,
       "learningObjectives": {
-        "ja": ["値下げ要求の背景にある決裁条件を質問で特定する", "信頼と利益を守りながら条件付きの譲歩を組み立てる"],
-        "en": ["Use questions to identify the approval condition behind a discount request", "Build conditional concessions while protecting trust and margin"],
-        "zh": ["透過提問找出折扣要求背後的決策條件", "在維持信任與利潤的同時設計有條件的讓步"]
+        "ja": [
+          "値下げ要求の背景にある決裁条件を質問で特定する",
+          "信頼と利益を守りながら条件付きの譲歩を組み立てる"
+        ],
+        "en": [
+          "Use questions to identify the approval condition behind a discount request",
+          "Build conditional concessions while protecting trust and margin"
+        ],
+        "zh": [
+          "透過提問找出折扣要求背後的決策條件",
+          "在維持信任與利潤的同時設計有條件的讓步"
+        ]
       },
       "title": {
         "ja": "法人契約の更新交渉",
@@ -138,6 +350,1221 @@
         "zh": "企業續約談判"
       },
       "path": "./scenarios/enterprise-renewal-negotiation.json"
+    },
+    {
+      "id": "overqualified-part-time-job",
+      "categoryId": "manzai",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 4,
+      "learningObjectives": {
+        "ja": [
+          "漫才・ツッコミで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Manzai and Comebacks.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合漫才與吐槽的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "バイト面接の超人的経歴",
+        "en": "An Overqualified Part-Time Applicant",
+        "zh": "超規格的打工應徵者"
+      },
+      "path": "./scenarios/overqualified-part-time-job.json"
+    },
+    {
+      "id": "smart-home-rebellion",
+      "categoryId": "manzai",
+      "beatCount": 3,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "漫才・ツッコミで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Manzai and Comebacks.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合漫才與吐槽的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "反乱するスマートホーム",
+        "en": "The Smart Home Rebellion",
+        "zh": "智慧家庭叛變"
+      },
+      "path": "./scenarios/smart-home-rebellion.json"
+    },
+    {
+      "id": "time-travel-souvenir",
+      "categoryId": "manzai",
+      "beatCount": 3,
+      "difficulty": "advanced",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "漫才・ツッコミで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Manzai and Comebacks.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合漫才與吐槽的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "未来からのお土産",
+        "en": "A Souvenir from the Future",
+        "zh": "來自未來的伴手禮"
+      },
+      "path": "./scenarios/time-travel-souvenir.json"
+    },
+    {
+      "id": "delayed-order-complaint",
+      "categoryId": "customer-service",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "料理の提供遅延",
+        "en": "Delayed Order Complaint",
+        "zh": "餐點延遲客訴"
+      },
+      "path": "./scenarios/delayed-order-complaint.json"
+    },
+    {
+      "id": "refund-without-receipt",
+      "categoryId": "customer-service",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "レシートのない返金要求",
+        "en": "Refund Without a Receipt",
+        "zh": "無收據退款要求"
+      },
+      "path": "./scenarios/refund-without-receipt.json"
+    },
+    {
+      "id": "staff-attitude-complaint",
+      "categoryId": "customer-service",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "店員の態度への苦情",
+        "en": "Complaint About Staff Attitude",
+        "zh": "店員態度客訴"
+      },
+      "path": "./scenarios/staff-attitude-complaint.json"
+    },
+    {
+      "id": "forgotten-anniversary",
+      "categoryId": "partner-communication",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "恋愛・夫婦・パートナー会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Partner Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合伴侶溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "忘れられた記念日",
+        "en": "The Forgotten Anniversary",
+        "zh": "被忘記的紀念日"
+      },
+      "path": "./scenarios/forgotten-anniversary.json"
+    },
+    {
+      "id": "work-or-me",
+      "categoryId": "partner-communication",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "恋愛・夫婦・パートナー会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Partner Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合伴侶溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "仕事と関係の優先順位",
+        "en": "Work or Me",
+        "zh": "工作還是我"
+      },
+      "path": "./scenarios/work-or-me.json"
+    },
+    {
+      "id": "unequal-housework",
+      "categoryId": "partner-communication",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "恋愛・夫婦・パートナー会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Partner Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合伴侶溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "偏った家事負担",
+        "en": "Unequal Housework",
+        "zh": "家事分工不均"
+      },
+      "path": "./scenarios/unequal-housework.json"
+    },
+    {
+      "id": "competitor-price-objection",
+      "categoryId": "negotiation-sales",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "競合価格への異議",
+        "en": "Competitor Price Objection",
+        "zh": "競爭對手價格異議"
+      },
+      "path": "./scenarios/competitor-price-objection.json"
+    },
+    {
+      "id": "budget-cut-proposal",
+      "categoryId": "negotiation-sales",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "予算削減への提案再設計",
+        "en": "Proposal Under a Budget Cut",
+        "zh": "預算削減下的提案"
+      },
+      "path": "./scenarios/budget-cut-proposal.json"
+    },
+    {
+      "id": "last-minute-contract-condition",
+      "categoryId": "negotiation-sales",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "契約直前の追加条件",
+        "en": "A Last-Minute Contract Condition",
+        "zh": "簽約前的追加條件"
+      },
+      "path": "./scenarios/last-minute-contract-condition.json"
+    },
+    {
+      "id": "unrealistic-deadline",
+      "categoryId": "workplace-communication",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Workplace Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "実現困難な納期",
+        "en": "An Unrealistic Deadline",
+        "zh": "不切實際的期限"
+      },
+      "path": "./scenarios/unrealistic-deadline.json"
+    },
+    {
+      "id": "feedback-after-mistake",
+      "categoryId": "workplace-communication",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Workplace Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "ミス後の改善指導",
+        "en": "Feedback After a Mistake",
+        "zh": "失誤後的回饋"
+      },
+      "path": "./scenarios/feedback-after-mistake.json"
+    },
+    {
+      "id": "disagreeing-with-manager",
+      "categoryId": "workplace-communication",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "上司・部下との会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Workplace Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合主管與部屬溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "上司への根拠ある反論",
+        "en": "Disagreeing with a Manager",
+        "zh": "向主管提出異議"
+      },
+      "path": "./scenarios/disagreeing-with-manager.json"
+    },
+    {
+      "id": "service-outage-apology",
+      "categoryId": "apology-response",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "サービス障害の初動謝罪",
+        "en": "Service Outage Apology",
+        "zh": "服務中斷道歉"
+      },
+      "path": "./scenarios/service-outage-apology.json"
+    },
+    {
+      "id": "incorrect-public-announcement",
+      "categoryId": "apology-response",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "誤った公開案内の訂正",
+        "en": "Correcting a Public Announcement",
+        "zh": "更正錯誤公告"
+      },
+      "path": "./scenarios/incorrect-public-announcement.json"
+    },
+    {
+      "id": "compensation-before-investigation",
+      "categoryId": "apology-response",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "謝罪・火消しで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Apology and Incident Response.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合道歉與事件應對的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "調査前の補償要求",
+        "en": "Compensation Before Investigation",
+        "zh": "調查前的補償要求"
+      },
+      "path": "./scenarios/compensation-before-investigation.json"
+    },
+    {
+      "id": "explaining-career-gap",
+      "categoryId": "interview-hiring",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合面試與招募的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "経歴の空白期間",
+        "en": "Explaining a Career Gap",
+        "zh": "說明職涯空窗"
+      },
+      "path": "./scenarios/explaining-career-gap.json"
+    },
+    {
+      "id": "weakness-with-evidence",
+      "categoryId": "interview-hiring",
+      "beatCount": 3,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合面試與招募的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "弱みと改善行動",
+        "en": "A Weakness with Evidence",
+        "zh": "有依據地說明弱點"
+      },
+      "path": "./scenarios/weakness-with-evidence.json"
+    },
+    {
+      "id": "questions-for-the-interviewer",
+      "categoryId": "interview-hiring",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "面接・採用で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Interview and Hiring.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合面試與招募的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "企業を理解する逆質問",
+        "en": "Questions for the Interviewer",
+        "zh": "向面試官反向提問"
+      },
+      "path": "./scenarios/questions-for-the-interviewer.json"
+    },
+    {
+      "id": "repeated-lateness",
+      "categoryId": "teacher-student",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Teacher and Student.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合教師與學生的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "繰り返す遅刻",
+        "en": "Repeated Lateness",
+        "zh": "反覆遲到"
+      },
+      "path": "./scenarios/repeated-lateness.json"
+    },
+    {
+      "id": "suspected-cheating",
+      "categoryId": "teacher-student",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Teacher and Student.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合教師與學生的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "カンニングの疑い",
+        "en": "Suspected Cheating",
+        "zh": "疑似作弊"
+      },
+      "path": "./scenarios/suspected-cheating.json"
+    },
+    {
+      "id": "career-path-conflict",
+      "categoryId": "teacher-student",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Teacher and Student.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合教師與學生的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "進路希望の対立",
+        "en": "A Career Path Conflict",
+        "zh": "升學方向衝突"
+      },
+      "path": "./scenarios/career-path-conflict.json"
+    },
+    {
+      "id": "considering-resignation",
+      "categoryId": "friend-advice",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "退職を考える友人",
+        "en": "Considering Resignation",
+        "zh": "考慮離職"
+      },
+      "path": "./scenarios/considering-resignation.json"
+    },
+    {
+      "id": "after-a-breakup",
+      "categoryId": "friend-advice",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "別れた直後の相談",
+        "en": "After a Breakup",
+        "zh": "分手之後"
+      },
+      "path": "./scenarios/after-a-breakup.json"
+    },
+    {
+      "id": "request-to-borrow-money",
+      "categoryId": "friend-advice",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "友人からの借金依頼",
+        "en": "A Request to Borrow Money",
+        "zh": "朋友借錢請求"
+      },
+      "path": "./scenarios/request-to-borrow-money.json"
+    },
+    {
+      "id": "suspicious-investment-call",
+      "categoryId": "scam-awareness",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "不審な投資勧誘",
+        "en": "A Suspicious Investment Call",
+        "zh": "可疑投資電話"
+      },
+      "path": "./scenarios/suspicious-investment-call.json"
+    },
+    {
+      "id": "fake-refund-support",
+      "categoryId": "scam-awareness",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "返金を装うサポート",
+        "en": "Fake Refund Support",
+        "zh": "假冒退款客服"
+      },
+      "path": "./scenarios/fake-refund-support.json"
+    },
+    {
+      "id": "urgent-account-verification",
+      "categoryId": "scam-awareness",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "緊急のアカウント確認",
+        "en": "Urgent Account Verification",
+        "zh": "緊急帳號驗證"
+      },
+      "path": "./scenarios/urgent-account-verification.json"
+    },
+    {
+      "id": "gaming-time-agreement",
+      "categoryId": "parent-child",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合親子溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "ゲーム時間の約束",
+        "en": "A Gaming Time Agreement",
+        "zh": "遊戲時間約定"
+      },
+      "path": "./scenarios/gaming-time-agreement.json"
+    },
+    {
+      "id": "homework-lie",
+      "categoryId": "parent-child",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合親子溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "宿題についての嘘",
+        "en": "A Lie About Homework",
+        "zh": "關於功課的謊言"
+      },
+      "path": "./scenarios/homework-lie.json"
+    },
+    {
+      "id": "different-career-expectations",
+      "categoryId": "parent-child",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合親子溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "親子で異なる進路希望",
+        "en": "Different Career Expectations",
+        "zh": "不同的生涯期待"
+      },
+      "path": "./scenarios/different-career-expectations.json"
+    },
+    {
+      "id": "inconsistent-timeline",
+      "categoryId": "investigative-interview",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Investigative Interview.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合調查訪談的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "食い違う時系列",
+        "en": "An Inconsistent Timeline",
+        "zh": "不一致的時間線"
+      },
+      "path": "./scenarios/inconsistent-timeline.json"
+    },
+    {
+      "id": "missing-equipment-interview",
+      "categoryId": "investigative-interview",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Investigative Interview.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合調查訪談的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "紛失備品の聞き取り",
+        "en": "Interview About Missing Equipment",
+        "zh": "遺失設備訪談"
+      },
+      "path": "./scenarios/missing-equipment-interview.json"
+    },
+    {
+      "id": "uncertain-witness-memory",
+      "categoryId": "investigative-interview",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "調査面談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Investigative Interview.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合調查訪談的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "曖昧な目撃記憶",
+        "en": "Uncertain Witness Memory",
+        "zh": "模糊的目擊記憶"
+      },
+      "path": "./scenarios/uncertain-witness-memory.json"
+    },
+    {
+      "id": "joint-statement-wording",
+      "categoryId": "diplomatic-negotiation",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "共同声明の文言",
+        "en": "Wording a Joint Statement",
+        "zh": "共同聲明措辭"
+      },
+      "path": "./scenarios/joint-statement-wording.json"
+    },
+    {
+      "id": "shared-resource-allocation",
+      "categoryId": "diplomatic-negotiation",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "共同資源の配分",
+        "en": "Allocating a Shared Resource",
+        "zh": "共享資源分配"
+      },
+      "path": "./scenarios/shared-resource-allocation.json"
+    },
+    {
+      "id": "temporary-border-agreement",
+      "categoryId": "diplomatic-negotiation",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "暫定的な境界合意",
+        "en": "A Temporary Border Agreement",
+        "zh": "臨時邊界協議"
+      },
+      "path": "./scenarios/temporary-border-agreement.json"
+    },
+    {
+      "id": "anxious-about-test-results",
+      "categoryId": "clinical-communication",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Clinical Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "検査結果を待つ不安",
+        "en": "Anxious About Test Results",
+        "zh": "等待檢查結果的焦慮"
+      },
+      "path": "./scenarios/anxious-about-test-results.json"
+    },
+    {
+      "id": "requesting-unnecessary-antibiotics",
+      "categoryId": "clinical-communication",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Clinical Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "抗菌薬への思い込み",
+        "en": "Requesting Unnecessary Antibiotics",
+        "zh": "要求不必要的抗生素"
+      },
+      "path": "./scenarios/requesting-unnecessary-antibiotics.json"
+    },
+    {
+      "id": "symptoms-feel-dismissed",
+      "categoryId": "clinical-communication",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Clinical Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "症状を軽視された不満",
+        "en": "Feeling That Symptoms Were Dismissed",
+        "zh": "感覺症狀被輕視"
+      },
+      "path": "./scenarios/symptoms-feel-dismissed.json"
+    },
+    {
+      "id": "distressed-caller",
+      "categoryId": "crisis-negotiation",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Crisis Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "強く動揺した通話相手",
+        "en": "A Distressed Caller",
+        "zh": "情緒激動的來電者"
+      },
+      "path": "./scenarios/distressed-caller.json"
+    },
+    {
+      "id": "refusing-safe-evacuation",
+      "categoryId": "crisis-negotiation",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Crisis Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "避難を拒む人との対話",
+        "en": "Refusing Safe Evacuation",
+        "zh": "拒絕安全疏散"
+      },
+      "path": "./scenarios/refusing-safe-evacuation.json"
+    },
+    {
+      "id": "high-tension-standoff",
+      "categoryId": "crisis-negotiation",
+      "beatCount": 4,
+      "difficulty": "advanced",
+      "estimatedMinutes": 9,
+      "learningObjectives": {
+        "ja": [
+          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Crisis Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "緊張の高い対立場面",
+        "en": "A High-Tension Standoff",
+        "zh": "高度緊張的對峙"
+      },
+      "path": "./scenarios/high-tension-standoff.json"
     }
   ]
 }

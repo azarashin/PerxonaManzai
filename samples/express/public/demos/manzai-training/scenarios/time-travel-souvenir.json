@@ -1,0 +1,317 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "time-travel-souvenir",
+  "title": {
+    "ja": "未来からのお土産",
+    "en": "A Souvenir from the Future",
+    "zh": "來自未來的伴手禮"
+  },
+  "description": {
+    "ja": "漫才・ツッコミとして「未来からのお土産」に対応し、状況に合う短い応答を選ぶ練習です。",
+    "en": "Practice concise, context-appropriate responses in “A Souvenir from the Future” for Manzai and Comebacks.",
+    "zh": "在「來自未來的伴手禮」中練習符合情境的簡短漫才與吐槽回應。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "premise-recognition",
+      "label": {
+        "ja": "前提の発見",
+        "en": "Premise recognition",
+        "zh": "前提辨識"
+      },
+      "description": {
+        "ja": "矛盾や誇張の核心を拾う",
+        "en": "Identify the central contradiction or exaggeration.",
+        "zh": "抓住矛盾或誇張的核心。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "clarity",
+      "label": {
+        "ja": "明瞭さ",
+        "en": "Clarity",
+        "zh": "清晰度"
+      },
+      "description": {
+        "ja": "短く分かりやすく伝える",
+        "en": "Communicate briefly and clearly.",
+        "zh": "簡短清楚地表達。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "timing",
+      "label": {
+        "ja": "タイミング",
+        "en": "Timing",
+        "zh": "時機"
+      },
+      "description": {
+        "ja": "流れを止めず素早く返す",
+        "en": "Respond promptly without breaking the flow.",
+        "zh": "迅速回應，不打斷節奏。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "word-choice",
+      "label": {
+        "ja": "言葉選び",
+        "en": "Word choice",
+        "zh": "措辭"
+      },
+      "description": {
+        "ja": "場面に合う勢いと言葉を選ぶ",
+        "en": "Choose language and energy suited to the moment.",
+        "zh": "選擇符合情境的措辭與力度。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "boke": {
+        "ja": "未来のお土産に、来週賞味期限が切れる牛乳を持ってきたで。",
+        "en": "I brought back future milk that expires next week as a souvenir.",
+        "zh": "我從未來帶回一瓶下週到期的牛奶當伴手禮。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "率直に問題を切り出す",
+          "en": "Raise the issue candidly",
+          "zh": "坦率提出問題"
+        },
+        "motionTags": [
+          "pose:talking_02",
+          "category:talking"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "opening-strong",
+          "text": {
+            "ja": "どこから突っ込めばええねん！",
+            "en": "Where am I even supposed to start with that?",
+            "zh": "這到底要我從哪裡吐槽起！"
+          },
+          "axisScores": {
+            "premise-recognition": 20,
+            "clarity": 20,
+            "timing": 20,
+            "word-choice": 20
+          },
+          "feedback": {
+            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
+            "en": "This catches the central exaggeration with a short, energetic comeback.",
+            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+          }
+        },
+        {
+          "id": "opening-partial",
+          "text": {
+            "ja": "なんでやねん。",
+            "en": "Come on, that's ridiculous.",
+            "zh": "太扯了吧。"
+          },
+          "axisScores": {
+            "premise-recognition": 13,
+            "clarity": 11,
+            "timing": 12,
+            "word-choice": 12
+          },
+          "feedback": {
+            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
+            "en": "This is a comeback, but naming the absurd point would make it stronger.",
+            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+          }
+        },
+        {
+          "id": "opening-weak",
+          "text": {
+            "ja": "なるほど、すごいな。",
+            "en": "I see. That's impressive.",
+            "zh": "原來如此，真厲害。"
+          },
+          "axisScores": {
+            "premise-recognition": 2,
+            "clarity": 3,
+            "timing": 2,
+            "word-choice": 3
+          },
+          "feedback": {
+            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
+            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
+            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify",
+      "boke": {
+        "ja": "未来では割引シールが昨日貼られるから、買う前から半額やねん。",
+        "en": "In the future, discount stickers are applied yesterday, so everything is half-price before purchase.",
+        "zh": "未來的折扣貼紙昨天就貼好，所以買之前已經半價。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "説明や確認を求める",
+          "en": "Ask for clarification",
+          "zh": "要求說明與確認"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "clarify-strong",
+          "text": {
+            "ja": "設定を足すほどおかしなってるやないか！",
+            "en": "Every extra detail makes it even more absurd!",
+            "zh": "設定越加越離譜了吧！"
+          },
+          "axisScores": {
+            "premise-recognition": 20,
+            "clarity": 20,
+            "timing": 20,
+            "word-choice": 20
+          },
+          "feedback": {
+            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
+            "en": "This catches the central exaggeration with a short, energetic comeback.",
+            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+          }
+        },
+        {
+          "id": "clarify-partial",
+          "text": {
+            "ja": "なんでやねん。",
+            "en": "Come on, that's ridiculous.",
+            "zh": "太扯了吧。"
+          },
+          "axisScores": {
+            "premise-recognition": 13,
+            "clarity": 11,
+            "timing": 12,
+            "word-choice": 12
+          },
+          "feedback": {
+            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
+            "en": "This is a comeback, but naming the absurd point would make it stronger.",
+            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+          }
+        },
+        {
+          "id": "clarify-weak",
+          "text": {
+            "ja": "なるほど、すごいな。",
+            "en": "I see. That's impressive.",
+            "zh": "原來如此，真厲害。"
+          },
+          "axisScores": {
+            "premise-recognition": 2,
+            "clarity": 3,
+            "timing": 2,
+            "word-choice": 3
+          },
+          "feedback": {
+            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
+            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
+            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "constructive-close",
+      "boke": {
+        "ja": "帰りの時刻表をなくしたから、到着した三日前に迎えに来てな。",
+        "en": "I lost the return timetable, so pick me up three days before I arrive.",
+        "zh": "我弄丟回程時刻表，所以請在我抵達前三天來接我。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "次の行動を確かめる",
+          "en": "Confirm the next action",
+          "zh": "確認下一步行動"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "constructive-close-strong",
+          "text": {
+            "ja": "もうその世界観ごと片づけてこい！",
+            "en": "Take that whole ridiculous world with you!",
+            "zh": "把那整個荒唐世界觀一起收走啦！"
+          },
+          "axisScores": {
+            "premise-recognition": 20,
+            "clarity": 20,
+            "timing": 20,
+            "word-choice": 20
+          },
+          "feedback": {
+            "ja": "誇張の中心を拾い、短く勢いのあるツッコミにできています。",
+            "en": "This catches the central exaggeration with a short, energetic comeback.",
+            "zh": "抓住誇張核心，做出簡短有力的吐槽。"
+          }
+        },
+        {
+          "id": "constructive-close-partial",
+          "text": {
+            "ja": "なんでやねん。",
+            "en": "Come on, that's ridiculous.",
+            "zh": "太扯了吧。"
+          },
+          "axisScores": {
+            "premise-recognition": 13,
+            "clarity": 11,
+            "timing": 12,
+            "word-choice": 12
+          },
+          "feedback": {
+            "ja": "ツッコミにはなっていますが、どこがおかしいかを具体的にすると強くなります。",
+            "en": "This is a comeback, but naming the absurd point would make it stronger.",
+            "zh": "雖然有吐槽，但若具體指出荒謬之處會更有力。"
+          }
+        },
+        {
+          "id": "constructive-close-weak",
+          "text": {
+            "ja": "なるほど、すごいな。",
+            "en": "I see. That's impressive.",
+            "zh": "原來如此，真厲害。"
+          },
+          "axisScores": {
+            "premise-recognition": 2,
+            "clarity": 3,
+            "timing": 2,
+            "word-choice": 3
+          },
+          "feedback": {
+            "ja": "前提を受け入れると笑いの焦点が消えます。矛盾か誇張を一つ拾いましょう。",
+            "en": "Accepting the premise loses the comic focus. Pick one contradiction or exaggeration.",
+            "zh": "接受前提會失去笑點，應抓住一個矛盾或誇張。"
+          }
+        }
+      ]
+    }
+  ]
+}

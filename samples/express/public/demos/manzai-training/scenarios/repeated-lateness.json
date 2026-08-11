@@ -1,0 +1,317 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "repeated-lateness",
+  "title": {
+    "ja": "繰り返す遅刻",
+    "en": "Repeated Lateness",
+    "zh": "反覆遲到"
+  },
+  "description": {
+    "ja": "教師・生徒として「繰り返す遅刻」に対応し、状況に合う短い応答を選ぶ練習です。",
+    "en": "Practice concise, context-appropriate responses in “Repeated Lateness” for Teacher and Student.",
+    "zh": "在「反覆遲到」中練習符合情境的簡短教師與學生回應。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "empathy",
+      "label": {
+        "ja": "共感",
+        "en": "Empathy",
+        "zh": "同理心"
+      },
+      "description": {
+        "ja": "相手の感情や負担を受け止める",
+        "en": "Acknowledge the other person's feelings or burden.",
+        "zh": "接住對方的感受或負擔。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "fact-checking",
+      "label": {
+        "ja": "事実確認",
+        "en": "Fact checking",
+        "zh": "事實確認"
+      },
+      "description": {
+        "ja": "推測せず必要な事実を確認する",
+        "en": "Verify necessary facts instead of guessing.",
+        "zh": "不憑猜測，確認必要事實。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "psychological-safety",
+      "label": {
+        "ja": "心理的安全性",
+        "en": "Psychological safety",
+        "zh": "心理安全"
+      },
+      "description": {
+        "ja": "率直に話せる余地を守る",
+        "en": "Preserve room for candid discussion.",
+        "zh": "保留坦誠溝通的空間。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "solution-quality",
+      "label": {
+        "ja": "解決策",
+        "en": "Solution quality",
+        "zh": "解決方案"
+      },
+      "description": {
+        "ja": "実行可能な次の行動を示す",
+        "en": "Offer a workable next action.",
+        "zh": "提出可執行的下一步。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "boke": {
+        "ja": "遅刻したのは分かっています。でも理由を聞かずに叱らないでください。",
+        "en": "I know I was late, but please don't scold me without asking why.",
+        "zh": "我知道自己遲到，但請不要還沒問原因就責罵我。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "率直に問題を切り出す",
+          "en": "Raise the issue candidly",
+          "zh": "坦率提出問題"
+        },
+        "motionTags": [
+          "pose:talking_02",
+          "category:talking"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "opening-strong",
+          "text": {
+            "ja": "決めつけずに本人の事情と受け止めを聞きます。",
+            "en": "I will ask about the student's circumstances without assuming.",
+            "zh": "我不預設立場，先了解學生的情況與感受。"
+          },
+          "axisScores": {
+            "empathy": 20,
+            "fact-checking": 20,
+            "psychological-safety": 20,
+            "solution-quality": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          }
+        },
+        {
+          "id": "opening-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "empathy": 13,
+            "fact-checking": 11,
+            "psychological-safety": 12,
+            "solution-quality": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          }
+        },
+        {
+          "id": "opening-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "empathy": 2,
+            "fact-checking": 3,
+            "psychological-safety": 2,
+            "solution-quality": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "clarify",
+      "boke": {
+        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
+        "en": "I don't think the key point is clear yet. What will you check?",
+        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "説明や確認を求める",
+          "en": "Ask for clarification",
+          "zh": "要求說明與確認"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "clarify-strong",
+          "text": {
+            "ja": "観察した事実と心配している理由を分けて伝えます。",
+            "en": "I will separate observed facts from why I am concerned.",
+            "zh": "我會分開說明觀察到的事實與擔心原因。"
+          },
+          "axisScores": {
+            "empathy": 20,
+            "fact-checking": 20,
+            "psychological-safety": 20,
+            "solution-quality": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          }
+        },
+        {
+          "id": "clarify-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "empathy": 13,
+            "fact-checking": 11,
+            "psychological-safety": 12,
+            "solution-quality": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          }
+        },
+        {
+          "id": "clarify-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "empathy": 2,
+            "fact-checking": 3,
+            "psychological-safety": 2,
+            "solution-quality": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "constructive-close",
+      "boke": {
+        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
+        "en": "Understood. Can we decide specifically what happens next?",
+        "zh": "了解。那麼可以具體決定下一步嗎？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "次の行動を確かめる",
+          "en": "Confirm the next action",
+          "zh": "確認下一步行動"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "constructive-close-strong",
+          "text": {
+            "ja": "本人が選べる小さな次の行動と支援を一緒に決めます。",
+            "en": "We will choose a small next step and support the student can accept.",
+            "zh": "一起決定學生能接受的小步驟與支援。"
+          },
+          "axisScores": {
+            "empathy": 20,
+            "fact-checking": 20,
+            "psychological-safety": 20,
+            "solution-quality": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          }
+        },
+        {
+          "id": "constructive-close-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "empathy": 13,
+            "fact-checking": 11,
+            "psychological-safety": 12,
+            "solution-quality": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          }
+        },
+        {
+          "id": "constructive-close-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "empathy": 2,
+            "fact-checking": 3,
+            "psychological-safety": 2,
+            "solution-quality": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          }
+        }
+      ]
+    }
+  ]
+}

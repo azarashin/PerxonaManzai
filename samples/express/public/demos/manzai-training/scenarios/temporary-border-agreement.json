@@ -1,0 +1,592 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "temporary-border-agreement",
+  "title": {
+    "ja": "暫定的な境界合意",
+    "en": "A Temporary Border Agreement",
+    "zh": "臨時邊界協議"
+  },
+  "description": {
+    "ja": "外交・政治交渉として「暫定的な境界合意」に対応し、状況に合う短い応答を選ぶ練習です。",
+    "en": "Practice concise, context-appropriate responses in “A Temporary Border Agreement” for Diplomatic Negotiation.",
+    "zh": "在「臨時邊界協議」中練習符合情境的簡短外交與政治談判回應。"
+  },
+  "startBeatId": "opening",
+  "stateVariables": [
+    {
+      "id": "engagement",
+      "label": {
+        "ja": "対話の維持",
+        "en": "Engagement",
+        "zh": "對話投入"
+      },
+      "description": {
+        "ja": "相手が対話を続けられると感じる度合い",
+        "en": "How willing the other person is to continue the dialogue.",
+        "zh": "對方願意繼續對話的程度。"
+      },
+      "type": "number",
+      "initialValue": 0,
+      "minimum": -2,
+      "maximum": 2
+    },
+    {
+      "id": "key-point-confirmed",
+      "label": {
+        "ja": "要点確認",
+        "en": "Key point confirmed",
+        "zh": "重點已確認"
+      },
+      "description": {
+        "ja": "応答前に中心的な論点を確認できたか",
+        "en": "Whether the central issue was confirmed before acting.",
+        "zh": "採取行動前是否已確認核心問題。"
+      },
+      "type": "boolean",
+      "initialValue": false
+    }
+  ],
+  "evaluationAxes": [
+    {
+      "id": "interest-discovery",
+      "label": {
+        "ja": "利害把握",
+        "en": "Interest discovery",
+        "zh": "利益探索"
+      },
+      "description": {
+        "ja": "立場の背後にある利害を確認する",
+        "en": "Identify interests behind stated positions.",
+        "zh": "確認立場背後的利益。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "face-saving",
+      "label": {
+        "ja": "面子への配慮",
+        "en": "Face saving",
+        "zh": "顧全面子"
+      },
+      "description": {
+        "ja": "相手の尊厳を保つ表現を選ぶ",
+        "en": "Use language that preserves dignity.",
+        "zh": "使用維護對方尊嚴的表達。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "conditionality",
+      "label": {
+        "ja": "条件設計",
+        "en": "Conditionality",
+        "zh": "條件設計"
+      },
+      "description": {
+        "ja": "合意と譲歩に明確な条件を付ける",
+        "en": "Attach clear conditions to agreements and concessions.",
+        "zh": "為協議與讓步設定明確條件。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "relationship-impact",
+      "label": {
+        "ja": "関係への影響",
+        "en": "Relationship impact",
+        "zh": "關係影響"
+      },
+      "description": {
+        "ja": "継続的な信頼を損なわない",
+        "en": "Protect trust in the ongoing relationship.",
+        "zh": "維護長期關係中的信任。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "opening",
+      "boke": {
+        "ja": "恒久合意は無理でも、現場の緊張を下げる暫定措置なら検討できます。",
+        "en": "A permanent agreement is impossible, but we can consider interim steps to reduce field tensions.",
+        "zh": "永久協議雖不可能，但可考慮降低現場緊張的臨時措施。"
+      },
+      "reaction": {
+        "description": {
+          "ja": "率直に問題を切り出す",
+          "en": "Raise the issue candidly",
+          "zh": "坦率提出問題"
+        },
+        "motionTags": [
+          "pose:talking_02",
+          "category:talking"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "opening-strong",
+          "text": {
+            "ja": "表明された立場の背後にある国内事情と核心的利益を確認します。",
+            "en": "I will clarify the domestic constraints and core interests behind the stated position.",
+            "zh": "我會確認公開立場背後的國內限制與核心利益。"
+          },
+          "axisScores": {
+            "interest-discovery": 20,
+            "face-saving": 20,
+            "conditionality": 20,
+            "relationship-impact": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": 1
+            },
+            {
+              "stateId": "key-point-confirmed",
+              "operation": "set",
+              "value": true
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "clarify"
+            }
+          ]
+        },
+        {
+          "id": "opening-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "interest-discovery": 13,
+            "face-saving": 11,
+            "conditionality": 12,
+            "relationship-impact": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": 0
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "clarify"
+            }
+          ]
+        },
+        {
+          "id": "opening-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "interest-discovery": 2,
+            "face-saving": 3,
+            "conditionality": 2,
+            "relationship-impact": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": -1
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "recovery"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clarify",
+      "boke": {
+        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
+        "en": "I don't think the key point is clear yet. What will you check?",
+        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "説明や確認を求める",
+          "en": "Ask for clarification",
+          "zh": "要求說明與確認"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "clarify-strong",
+          "text": {
+            "ja": "相手の面子を保ちながら、双方が受け入れられない線を整理します。",
+            "en": "While preserving face, I will map each side's non-negotiable limits.",
+            "zh": "在顧全面子的同時，整理雙方不可接受的底線。"
+          },
+          "axisScores": {
+            "interest-discovery": 20,
+            "face-saving": 20,
+            "conditionality": 20,
+            "relationship-impact": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": 1
+            }
+          ],
+          "routes": [
+            {
+              "conditions": [
+                {
+                  "stateId": "engagement",
+                  "operator": "greater-than-or-equal",
+                  "value": 1
+                }
+              ],
+              "nextBeatId": "constructive-close"
+            },
+            {
+              "nextBeatId": "recovery"
+            }
+          ]
+        },
+        {
+          "id": "clarify-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "interest-discovery": 13,
+            "face-saving": 11,
+            "conditionality": 12,
+            "relationship-impact": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": 0
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "recovery"
+            }
+          ]
+        },
+        {
+          "id": "clarify-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "interest-discovery": 2,
+            "face-saving": 3,
+            "conditionality": 2,
+            "relationship-impact": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": -1
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "recovery"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "constructive-close",
+      "boke": {
+        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
+        "en": "Understood. Can we decide specifically what happens next?",
+        "zh": "了解。那麼可以具體決定下一步嗎？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "次の行動を確かめる",
+          "en": "Confirm the next action",
+          "zh": "確認下一步行動"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "constructive-close-strong",
+          "text": {
+            "ja": "譲歩を相互の条件、期限、検証方法と組み合わせます。",
+            "en": "I will pair concessions with reciprocal conditions, timing, and verification.",
+            "zh": "我會把讓步與對等條件、期限及驗證方式結合。"
+          },
+          "axisScores": {
+            "interest-discovery": 20,
+            "face-saving": 20,
+            "conditionality": 20,
+            "relationship-impact": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": 1
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ]
+        },
+        {
+          "id": "constructive-close-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "interest-discovery": 13,
+            "face-saving": 11,
+            "conditionality": 12,
+            "relationship-impact": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": 0
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ]
+        },
+        {
+          "id": "constructive-close-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "interest-discovery": 2,
+            "face-saving": 3,
+            "conditionality": 2,
+            "relationship-impact": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": -1
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "boke": {
+        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
+        "en": "That response makes it hard to continue. Could you explain again?",
+        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "対話を続けられるか見極める",
+          "en": "Decide whether dialogue can continue",
+          "zh": "判斷能否繼續對話"
+        },
+        "motionTags": [
+          "pose:talking_05",
+          "category:talking"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "recovery-strong",
+          "text": {
+            "ja": "対立的に聞こえた点を修正し、共通利益から協議を再開します。",
+            "en": "I will correct the confrontational framing and restart from the shared interest.",
+            "zh": "我會修正對立式表述，從共同利益重新協商。"
+          },
+          "axisScores": {
+            "interest-discovery": 20,
+            "face-saving": 20,
+            "conditionality": 20,
+            "relationship-impact": 20
+          },
+          "feedback": {
+            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
+            "en": "This response acknowledges the key point and links verification to a clear next action.",
+            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": 1
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "constructive-close"
+            }
+          ]
+        },
+        {
+          "id": "recovery-partial",
+          "text": {
+            "ja": "分かりました。少し考えさせてください。",
+            "en": "I understand. Let me think about it.",
+            "zh": "我明白了，請讓我想一下。"
+          },
+          "axisScores": {
+            "interest-discovery": 13,
+            "face-saving": 11,
+            "conditionality": 12,
+            "relationship-impact": 12
+          },
+          "feedback": {
+            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
+            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
+            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": 0
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "constructive-close"
+            }
+          ]
+        },
+        {
+          "id": "recovery-weak",
+          "text": {
+            "ja": "それは私の問題ではありません。",
+            "en": "That is not my problem.",
+            "zh": "那不是我的問題。"
+          },
+          "axisScores": {
+            "interest-discovery": 2,
+            "face-saving": 3,
+            "conditionality": 2,
+            "relationship-impact": 3
+          },
+          "feedback": {
+            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
+            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
+            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+          },
+          "stateEffects": [
+            {
+              "stateId": "engagement",
+              "operation": "add",
+              "value": -1
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
