@@ -62,19 +62,40 @@ test("bundled catalog contains valid categories and loadable scenarios", async (
   }
 });
 
-test("convenience store pilot provides pronunciation guides for every spoken line", async () => {
-  const scenario = await readJson("convenience-store.json");
-  const utterances = scenario.beats.flatMap((beat) => [beat, ...beat.choices]);
+test("every bundled spoken line provides valid pronunciation guides", async () => {
+  const catalog = validateScenarioCatalog(await readJson("index.json"));
+  let utteranceCount = 0;
 
-  for (const utterance of utterances) {
-    assert.deepEqual(Object.keys(utterance.pronunciationGuide).sort(), ["en", "ja", "zh"]);
-    assert.doesNotMatch(utterance.pronunciationGuide.ja, /[\p{Script=Han}\p{Script=Katakana}]/u);
-    assert.match(utterance.pronunciationGuide.en, /^\/.+\/$/u);
-    assert.doesNotMatch(utterance.pronunciationGuide.zh, /\p{Script=Han}/u);
-    for (const guide of Object.values(utterance.pronunciationGuide)) {
-      assert.equal(guide, guide.normalize("NFC"));
+  for (const entry of catalog.scenarios) {
+    const scenario = await readJson(entry.path.replace("./scenarios/", ""));
+    const utterances = scenario.beats.flatMap((beat) => [beat, ...beat.choices]);
+
+    for (const utterance of utterances) {
+      const context = `${scenario.id}/${utterance.id}`;
+      assert.deepEqual(
+        Object.keys(utterance.pronunciationGuide ?? {}).sort(),
+        ["en", "ja", "zh"],
+        context,
+      );
+      assert.doesNotMatch(
+        utterance.pronunciationGuide.ja,
+        /[\p{Script=Han}\p{Script=Katakana}A-Za-z0-9]/u,
+        context,
+      );
+      assert.match(utterance.pronunciationGuide.en, /^\/.+\/$/u, context);
+      assert.doesNotMatch(
+        utterance.pronunciationGuide.zh,
+        /\p{Script=Han}/u,
+        context,
+      );
+      for (const guide of Object.values(utterance.pronunciationGuide)) {
+        assert.equal(guide, guide.normalize("NFC"), context);
+      }
+      utteranceCount += 1;
     }
   }
+
+  assert.equal(utteranceCount, 761);
 });
 
 test("special fraud scenarios prioritize expressive avatar motions", async () => {
