@@ -10,8 +10,9 @@
   "scripts": {
     "predev": "node scripts/check-env.mjs",
     "prestart": "node scripts/check-env.mjs",
-    "test": "npm run validate:scenarios && npm run quality:scenarios && node --test",
+    "test": "npm run validate:scenarios && npm run quality:scenarios -- --summary && node --test",
     "quality:scenarios": "node scripts/check-scenario-quality.mjs",
+    "quality:scenarios:enforce": "node scripts/check-scenario-quality.mjs --enforce",
     "validate:scenarios": "node scripts/validate-scenarios.mjs",
     "start": "node --env-file=.env server.mjs",
     "dev": "node --env-file=.env --watch server.mjs"

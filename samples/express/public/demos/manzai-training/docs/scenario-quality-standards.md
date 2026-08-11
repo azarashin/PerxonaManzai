@@ -208,3 +208,8 @@ Changing generated content is normally preferable to adding an exception.
 
 Scenario generation is complete only when structural validation succeeds, automated quality checks meet the active policy,
 and manual-review concerns have been resolved.
+
+Run `npm run quality:scenarios` for the policy's committed mode. During the catalog-remediation work, use
+`npm run quality:scenarios:enforce` to preview the future CI gate without changing the committed policy. Do not add the strict
+command to the normal test pipeline until the existing catalog has been remediated in its separate change. Pass `-- --summary`
+to either npm command when only the totals are needed.
