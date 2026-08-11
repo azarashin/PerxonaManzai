@@ -22,15 +22,15 @@
       "branching": {
         "requirement": "recommended",
         "rationale": {
-          "ja": "初級編は直線進行で成立しますが、確認結果や客の反応に応じて対応を変える中級以上では分岐を推奨します。",
-          "en": "Beginner scenarios can stay linear, but branching is recommended at higher levels when verification results or customer reactions change the appropriate response.",
-          "zh": "初級情境可使用線性流程，但中高級內容會因查證結果或顧客反應而改變適當回應，因此建議使用分支。"
+          "ja": "初級は直線型で成立しますが、確認結果や顧客反応が変わる中級以上では分岐を推奨します。",
+          "en": "Beginner scenarios may be linear; branching is recommended when verification or customer reactions affect later responses.",
+          "zh": "初級可採線性；當確認結果或顧客反應會影響後續時，建議使用分支。"
         }
       },
       "title": {
-        "ja": "接客",
-        "en": "Customer Service",
-        "zh": "顧客服務"
+        "ja": "接客・クレーム対応",
+        "en": "Customer Service and Complaints",
+        "zh": "顧客服務與客訴"
       }
     },
     {
@@ -255,6 +255,33 @@
         "zh": "來自未來的伴手禮"
       },
       "path": "./scenarios/time-travel-souvenir.json"
+    },
+    {
+      "id": "delayed-order-complaint",
+      "categoryId": "customer-service",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "接客・クレーム対応で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Customer Service and Complaints.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合顧客服務與客訴的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "料理の提供遅延",
+        "en": "Delayed Order Complaint",
+        "zh": "餐點延遲客訴"
+      },
+      "path": "./scenarios/delayed-order-complaint.json"
     }
   ]
 }
