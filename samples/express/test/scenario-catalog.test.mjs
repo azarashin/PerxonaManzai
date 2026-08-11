@@ -57,6 +57,15 @@ test("catalog rejects a scenario with an unknown category", () => {
   );
 });
 
+test("catalog rejects invalid branching guidance", () => {
+  const invalidCategory = category("manzai");
+  invalidCategory.branching.requirement = "sometimes";
+  assert.throws(
+    () => validateScenarioCatalog({ categories: [invalidCategory], scenarios: [] }),
+    /branching guidance/,
+  );
+});
+
 test("an empty category returns no scenarios", () => {
   const catalog = validateScenarioCatalog({
     categories: [category("empty")],
@@ -82,7 +91,14 @@ test("scenarios are ordered by beat count within a category", () => {
 });
 
 function category(id) {
-  return { id, title: localized(id) };
+  return {
+    id,
+    title: localized(id),
+    branching: {
+      requirement: "not-required",
+      rationale: localized("Linear progression is sufficient."),
+    },
+  };
 }
 
 function scenario(id, categoryId, beatCount = 1) {

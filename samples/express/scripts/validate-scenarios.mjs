@@ -24,9 +24,24 @@ const catalog = validateScenarioCatalog(catalogData);
 assertOnlyKeys(catalog, ["$schema", "categories", "scenarios"], "catalog");
 
 for (const category of catalog.categories) {
-  assertOnlyKeys(category, ["id", "title"], `category ${category.id}`);
+  assertOnlyKeys(category, ["id", "title", "branching"], `category ${category.id}`);
   assertId(category.id, "category");
   assertLocalizedText(category.title, `category ${category.id} title`);
+  assertOnlyKeys(
+    category.branching,
+    ["requirement", "rationale"],
+    `category ${category.id} branching`,
+  );
+  assert.ok(
+    ["not-required", "recommended", "required"].includes(
+      category.branching.requirement,
+    ),
+    `category ${category.id} branching requirement is invalid`,
+  );
+  assertLocalizedText(
+    category.branching.rationale,
+    `category ${category.id} branching rationale`,
+  );
 }
 
 for (const entry of catalog.scenarios) {

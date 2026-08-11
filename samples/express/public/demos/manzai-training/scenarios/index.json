@@ -3,6 +3,14 @@
   "categories": [
     {
       "id": "manzai",
+      "branching": {
+        "requirement": "not-required",
+        "rationale": {
+          "ja": "各発話へのツッコミを独立して採点できるため、基本シナリオは直線進行で成立します。",
+          "en": "Basic scenarios work as a linear sequence because each comeback can be scored independently.",
+          "zh": "每次吐槽都能獨立評分，因此基礎情境使用線性流程即可成立。"
+        }
+      },
       "title": {
         "ja": "漫才",
         "en": "Manzai",
@@ -11,6 +19,14 @@
     },
     {
       "id": "customer-service",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "初級編は直線進行で成立しますが、確認結果や客の反応に応じて対応を変える中級以上では分岐を推奨します。",
+          "en": "Beginner scenarios can stay linear, but branching is recommended at higher levels when verification results or customer reactions change the appropriate response.",
+          "zh": "初級情境可使用線性流程，但中高級內容會因查證結果或顧客反應而改變適當回應，因此建議使用分支。"
+        }
+      },
       "title": {
         "ja": "接客",
         "en": "Customer Service",

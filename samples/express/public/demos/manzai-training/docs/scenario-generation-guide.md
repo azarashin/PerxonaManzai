@@ -21,6 +21,7 @@ scenario schema. Add a new schema only when the runtime data model changes.
 A generation prompt should state:
 
 - the target category ID, or that a new category must be added;
+- the category's `branching.requirement` and how the scenario follows its localized `branching.rationale`;
 - the scenario ID and setting;
 - the learner's role and the avatar's role;
 - the training objective and target audience;
@@ -74,10 +75,12 @@ repository-relative path.
 For a repository-editing task, Codex should:
 
 1. Read both schemas, this guide, the catalog, and at least one existing scenario in the target category.
-2. Create or edit the scenario file.
-3. Update the catalog when registration or category changes are required.
-4. Run `npm run validate:scenarios` and `npm test`.
-5. Return a concise final summary containing:
+2. Read the target category's `branching` guidance. Keep `not-required` scenarios linear, explain why a linear scenario is
+   acceptable for `recommended`, and do not generate a `required` scenario until the runtime schema supports its branches.
+3. Create or edit the scenario file.
+4. Update the catalog when registration or category changes are required.
+5. Run `npm run validate:scenarios` and `npm test`.
+6. Return a concise final summary containing:
    - files created or changed;
    - category, scenario ID, and number of beats;
    - the learning objective and scoring approach;

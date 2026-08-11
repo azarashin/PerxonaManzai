@@ -10,6 +10,16 @@ export function validateScenarioCatalog(catalog) {
     if (!isLocalizedText(category.title)) {
       throw new Error(`Category ${category.id} requires ja, en, and zh titles.`);
     }
+    if (
+      !["not-required", "recommended", "required"].includes(
+        category.branching?.requirement,
+      ) ||
+      !isLocalizedText(category.branching?.rationale)
+    ) {
+      throw new Error(
+        `Category ${category.id} requires valid branching guidance.`,
+      );
+    }
   }
 
   for (const scenario of catalog.scenarios) {
