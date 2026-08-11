@@ -95,9 +95,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "まず気持ちと理由を聞き、守る必要がある境界も落ち着いて伝えます。",
-            "en": "I will hear the feelings and reasons, then calmly state the boundary we must keep.",
-            "zh": "我先了解感受與理由，再冷靜說明必須遵守的界線。"
+            "ja": "「宿題を始める時刻と残っている量」を確かめ、30分だけ延長し、タイマー後に宿題を始める約束を試す。",
+            "en": "Check the concern first; then try a 30-minute extension followed by homework when the timer rings.",
+            "zh": "先確認何時開始作業以及剩餘份量，再試行延長三十分鐘，計時器響後開始作業。"
           },
           "axisScores": {
             "empathy": 20,
@@ -106,47 +106,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「宿題を始める時刻と残っている量」を確かめ、30分だけ延長し、タイマー後に宿題を始める約束を試す。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then try a 30-minute extension followed by homework when the timer rings.",
+            "zh": "這結合了查證、尊重與可行約定：先確認何時開始作業以及剩餘份量，再試行延長三十分鐘，計時器響後開始作業。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に30分だけ延長し、タイマー後に宿題を始める約束を試す。ただし「宿題を始める時刻と残っている量」の確認は後回しです。",
+            "en": "Just try a 30-minute extension followed by homework when the timer rings, without more questions.",
+            "zh": "先試行延長三十分鐘，計時器響後開始作業，但暫不確認何時開始作業以及剩餘份量。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に30分だけ延長し、タイマー後に宿題を始める約束を試す。ただし「宿題を始める時刻と残っている量」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just try a 30-minute extension followed by homework when the timer rings, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先試行延長三十分鐘，計時器響後開始作業，但暫不確認何時開始作業以及剩餘份量。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「宿題を始める時刻と残っている量」は関係ありません。親の判断に従わせます。",
+            "en": "Do not try a 30-minute extension followed by homework when the timer rings; the parent decides.",
+            "zh": "何時開始作業以及剩餘份量並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「宿題を始める時刻と残っている量」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not try a 30-minute extension followed by homework when the timer rings; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：何時開始作業以及剩餘份量並不重要；由父母決定。"
           }
         }
       ]
@@ -154,9 +154,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "大切なのは「友達との対戦が終わる時刻と途中退出の影響」です。どう確かめますか？",
+        "en": "What matters is when the match ends and what leaving early affects. How will you check it?",
+        "zh": "重點是對戰結束時間與中途退出的影響。你會如何確認？"
       },
       "reaction": {
         "description": {
@@ -176,9 +176,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "事実と過去の約束を一緒に確認し、人格を責めません。",
-            "en": "We will review the facts and prior agreement without attacking character.",
-            "zh": "一起確認事實與先前約定，不批評人格。"
+            "ja": "「友達との対戦が終わる時刻と途中退出の影響」を確かめ、一試合で終え、終了五分前の合図を設定する。",
+            "en": "Check the concern first; then end after one match and set a five-minute warning.",
+            "zh": "先確認對戰結束時間與中途退出的影響，再一局後結束並設定五分鐘前提醒。"
           },
           "axisScores": {
             "empathy": 20,
@@ -187,47 +187,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「友達との対戦が終わる時刻と途中退出の影響」を確かめ、一試合で終え、終了五分前の合図を設定する。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then end after one match and set a five-minute warning.",
+            "zh": "這結合了查證、尊重與可行約定：先確認對戰結束時間與中途退出的影響，再一局後結束並設定五分鐘前提醒。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に一試合で終え、終了五分前の合図を設定する。ただし「友達との対戦が終わる時刻と途中退出の影響」の確認は後回しです。",
+            "en": "Just end after one match and set a five-minute warning, without more questions.",
+            "zh": "先一局後結束並設定五分鐘前提醒，但暫不確認對戰結束時間與中途退出的影響。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に一試合で終え、終了五分前の合図を設定する。ただし「友達との対戦が終わる時刻と途中退出の影響」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just end after one match and set a five-minute warning, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先一局後結束並設定五分鐘前提醒，但暫不確認對戰結束時間與中途退出的影響。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「友達との対戦が終わる時刻と途中退出の影響」は関係ありません。親の判断に従わせます。",
+            "en": "Do not end after one match and set a five-minute warning; the parent decides.",
+            "zh": "對戰結束時間與中途退出的影響並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「友達との対戦が終わる時刻と途中退出の影響」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not end after one match and set a five-minute warning; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：對戰結束時間與中途退出的影響並不重要；由父母決定。"
           }
         }
       ]
@@ -235,9 +235,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "次に、今夜の順番を記録し、週末に機能したか親子で見直すことを具体的に決めたいです。",
+        "en": "Can we decide specifically how to write tonight's sequence and review together on the weekend?",
+        "zh": "可以具體決定如何記下今晚順序並在週末親子共同檢討嗎？"
       },
       "reaction": {
         "description": {
@@ -257,9 +257,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "本人が選べる方法を含む、実行可能な約束を一緒に作ります。",
-            "en": "We will make a workable agreement that includes choices for the child.",
-            "zh": "一起制定包含孩子選擇、可執行的約定。"
+            "ja": "「宿題を後回しにした場合の責任と明日の予定」を確かめ、今夜の順番を記録し、週末に機能したか親子で見直す。",
+            "en": "Check the concern first; then write tonight's sequence and review together on the weekend.",
+            "zh": "先確認延後作業的責任與明日行程，再記下今晚順序並在週末親子共同檢討。"
           },
           "axisScores": {
             "empathy": 20,
@@ -268,47 +268,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "確認・尊重・実行可能な合意を統合しています：「宿題を後回しにした場合の責任と明日の予定」を確かめ、今夜の順番を記録し、週末に機能したか親子で見直す。",
+            "en": "This integrates inquiry, respect, and a workable agreement: Check the concern first; then write tonight's sequence and review together on the weekend.",
+            "zh": "這結合了查證、尊重與可行約定：先確認延後作業的責任與明日行程，再記下今晚順序並在週末親子共同檢討。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "先に今夜の順番を記録し、週末に機能したか親子で見直す。ただし「宿題を後回しにした場合の責任と明日の予定」の確認は後回しです。",
+            "en": "Just write tonight's sequence and review together on the weekend, without more questions.",
+            "zh": "先記下今晚順序並在週末親子共同檢討，但暫不確認延後作業的責任與明日行程。"
           },
           "axisScores": {
             "empathy": 13,
-            "boundary-keeping": 11,
+            "boundary-keeping": 14,
             "relationship-impact": 12,
-            "solution-quality": 12
+            "solution-quality": 11
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "行動案はありますが、重要な確認を飛ばしています：先に今夜の順番を記録し、週末に機能したか親子で見直す。ただし「宿題を後回しにした場合の責任と明日の予定」の確認は後回しです。",
+            "en": "This offers action but skips an important check: Just write tonight's sequence and review together on the weekend, without more questions.",
+            "zh": "這提出行動，但略過重要查證：先記下今晚順序並在週末親子共同檢討，但暫不確認延後作業的責任與明日行程。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「宿題を後回しにした場合の責任と明日の予定」は関係ありません。親の判断に従わせます。",
+            "en": "Do not write tonight's sequence and review together on the weekend; the parent decides.",
+            "zh": "延後作業的責任與明日行程並不重要；由父母決定。"
           },
           "axisScores": {
             "empathy": 2,
             "boundary-keeping": 3,
-            "relationship-impact": 2,
-            "solution-quality": 3
+            "relationship-impact": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "理由を退けて従わせるため、信頼と自律を損ないます：「宿題を後回しにした場合の責任と明日の予定」は関係ありません。親の判断に従わせます。",
+            "en": "This dismisses the reason and forces compliance, harming trust and autonomy: Do not write tonight's sequence and review together on the weekend; the parent decides.",
+            "zh": "這否定原因並強迫服從，會傷害信任與自主：延後作業的責任與明日行程並不重要；由父母決定。"
           }
         }
       ]

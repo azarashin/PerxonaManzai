@@ -1169,16 +1169,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "宿題量とゲームを続けたい理由を確認する",
+          "終了合図・宿題開始・見直しを含む共同ルールを試す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Check the homework load and why more gaming matters.",
+          "Test a joint rule covering stop cues, homework start, and review."
         ],
         "zh": [
-          "掌握情境重點，選擇符合親子溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "確認作業量與想繼續遊戲的理由。",
+          "試行包含停止提示、開始作業與檢討的共同規則。"
         ]
       },
       "title": {
@@ -1196,16 +1196,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "嘘の背景にある恐れと未完了部分を、怒りと分けて確認する",
+          "正直な報告、学習支援、相応の結果を組み合わせて信頼を修復する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate anger from checking the fear and unfinished work behind the lie.",
+          "Repair trust through honest reporting, learning support, and proportionate consequences."
         ],
         "zh": [
-          "掌握情境重點，選擇符合親子溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "把怒氣與查明說謊背後的害怕及未完成內容分開。",
+          "結合誠實回報、學習支援與相稱後果來修復信任。"
         ]
       },
       "title": {
@@ -1223,16 +1223,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "親子会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "子どもの志望理由と親の期待・不安を別々に言語化する",
+          "比較情報と試行期間を用い、子ども主体の進路判断を支える"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Parent and Child Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "State the child's reasons separately from parental hopes and fears.",
+          "Use comparative evidence and a trial period to support a child-led decision."
         ],
         "zh": [
-          "掌握情境重點，選擇符合親子溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "分別說明孩子的志向理由與父母的期待和不安。",
+          "運用比較資料與試行期，支持孩子主導的生涯決定。"
         ]
       },
       "title": {
