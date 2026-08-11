@@ -11,6 +11,32 @@
     "en": "Practice giving polite and clear responses to restaurant customers.",
     "zh": "練習以餐廳服務人員的身分，禮貌且清楚地回應顧客。"
   },
+  "evaluationAxes": [
+    {
+      "id": "empathy",
+      "label": { "ja": "共感", "en": "Empathy", "zh": "同理心" },
+      "description": { "ja": "相手の不安や不満を受け止める", "en": "Acknowledge the customer's concern or frustration.", "zh": "接住顧客的不安或不滿。" },
+      "maxPoints": 20
+    },
+    {
+      "id": "fact-checking",
+      "label": { "ja": "事実確認", "en": "Fact checking", "zh": "事實確認" },
+      "description": { "ja": "推測せず必要な事実を確認する", "en": "Verify necessary facts instead of guessing.", "zh": "不憑猜測，確認必要事實。" },
+      "maxPoints": 20
+    },
+    {
+      "id": "solution-quality",
+      "label": { "ja": "代替案・行動", "en": "Solution quality", "zh": "解決方案" },
+      "description": { "ja": "次の行動や代替案を具体的に示す", "en": "Offer a concrete next action or alternative.", "zh": "提出具體的下一步或替代方案。" },
+      "maxPoints": 20
+    },
+    {
+      "id": "boundary-keeping",
+      "label": { "ja": "境界維持", "en": "Boundary keeping", "zh": "界線維持" },
+      "description": { "ja": "確認前に責任や安全を断定しない", "en": "Avoid unsupported commitments or unsafe assurances.", "zh": "避免未經確認的承諾或不安全保證。" },
+      "maxPoints": 20
+    }
+  ],
   "beats": [
     {
       "id": "waiting-time",
@@ -43,7 +69,7 @@
             "en": ["Sorry for the wait, I will check right away"],
             "zh": ["抱歉久等了，我立刻確認"]
           },
-          "contentPoints": 80,
+          "axisScores": { "empathy": 20, "fact-checking": 20, "solution-quality": 20, "boundary-keeping": 20 },
           "feedback": {
             "ja": "お詫びと確認する行動の両方を伝えられています。",
             "en": "You included both an apology and a clear next action.",
@@ -57,7 +83,7 @@
             "en": "I will check right away.",
             "zh": "我馬上為您確認。"
           },
-          "contentPoints": 60,
+          "axisScores": { "empathy": 5, "fact-checking": 20, "solution-quality": 20, "boundary-keeping": 15 },
           "feedback": {
             "ja": "行動は明確です。お待たせしたことへのお詫びも添えると、より丁寧です。",
             "en": "The action is clear. Adding an apology for the wait would be more courteous.",
@@ -97,7 +123,7 @@
             "en": ["I will check with the kitchen, please wait"],
             "zh": ["我會向廚房確認，請稍等"]
           },
-          "contentPoints": 80,
+          "axisScores": { "empathy": 20, "fact-checking": 20, "solution-quality": 20, "boundary-keeping": 20 },
           "feedback": {
             "ja": "断定せず、安全を優先して確認する適切な応対です。",
             "en": "You avoided guessing and appropriately prioritized the customer's safety.",
@@ -111,7 +137,7 @@
             "en": "I don't think it contains eggs.",
             "zh": "我想應該沒有加蛋。"
           },
-          "contentPoints": 15,
+          "axisScores": { "empathy": 5, "fact-checking": 0, "solution-quality": 0, "boundary-keeping": 10 },
           "feedback": {
             "ja": "アレルギー対応では推測を避け、必ず厨房や原材料表示を確認しましょう。",
             "en": "Do not guess about allergens; always check with the kitchen or ingredient information.",

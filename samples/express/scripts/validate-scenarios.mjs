@@ -76,7 +76,7 @@ for (const entry of catalog.scenarios) {
   new ScenarioController(scenario);
   assertOnlyKeys(
     scenario,
-    ["$schema", "id", "title", "description", "beats"],
+    ["$schema", "id", "title", "description", "evaluationAxes", "beats"],
     filename,
   );
   assert.equal(scenario.id, entry.id, `${filename}: catalog ID must match scenario ID`);
@@ -93,6 +93,21 @@ for (const entry of catalog.scenarios) {
   assertId(scenario.id, `${filename} scenario`);
   assertLocalizedText(scenario.title, `${filename} title`);
   assertLocalizedText(scenario.description, `${filename} description`);
+  assertUniqueIds(scenario.evaluationAxes, `${filename} evaluation axis`);
+  assert.equal(
+    scenario.evaluationAxes.reduce((total, axis) => total + axis.maxPoints, 0),
+    80,
+    `${filename}: evaluation axis maximums must total 80`,
+  );
+  const axesById = new Map();
+  for (const axis of scenario.evaluationAxes) {
+    assertOnlyKeys(axis, ["id", "label", "description", "maxPoints"], `${filename} evaluation axis`);
+    assertId(axis.id, `${filename} evaluation axis`);
+    assertLocalizedText(axis.label, `${filename} ${axis.id} label`);
+    assertLocalizedText(axis.description, `${filename} ${axis.id} description`);
+    assert.ok(Number.isInteger(axis.maxPoints) && axis.maxPoints > 0 && axis.maxPoints <= 80);
+    axesById.set(axis.id, axis);
+  }
   assertUniqueIds(scenario.beats, `${filename} beat`);
 
   for (const beat of scenario.beats) {
@@ -113,7 +128,7 @@ for (const entry of catalog.scenarios) {
     for (const choice of beat.choices) {
       assertOnlyKeys(
         choice,
-        ["id", "text", "aliases", "contentPoints", "feedback"],
+        ["id", "text", "aliases", "axisScores", "feedback"],
         `${filename} choice ${choice.id}`,
       );
       assertId(choice.id, `${filename} choice`);
@@ -136,12 +151,18 @@ for (const entry of catalog.scenarios) {
           }
         }
       }
-      assert.ok(
-        Number.isInteger(choice.contentPoints) &&
-          choice.contentPoints >= 0 &&
-          choice.contentPoints <= 80,
-        `${filename}: ${choice.id} contentPoints must be an integer from 0 to 80`,
+      assertOnlyKeys(choice.axisScores, [...axesById.keys()], `${filename} ${choice.id} axisScores`);
+      assert.deepEqual(
+        Object.keys(choice.axisScores).sort(),
+        [...axesById.keys()].sort(),
+        `${filename}: ${choice.id} must score every evaluation axis`,
       );
+      for (const [axisId, score] of Object.entries(choice.axisScores)) {
+        assert.ok(
+          Number.isInteger(score) && score >= 0 && score <= axesById.get(axisId).maxPoints,
+          `${filename}: ${choice.id} ${axisId} score is outside its allowed range`,
+        );
+      }
     }
   }
 }

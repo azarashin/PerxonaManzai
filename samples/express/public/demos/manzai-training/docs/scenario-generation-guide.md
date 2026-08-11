@@ -59,7 +59,9 @@ Requirements:
 - Keep $schema in both JSON files.
 - Use lowercase kebab-case and unique IDs.
 - Include at least two meaningfully different response choices per beat.
-- Use contentPoints from 0 to 80 and explain each score in feedback.
+- Define scenario-specific `evaluationAxes`; their `maxPoints` must total 80.
+- Give every choice an `axisScores` entry for every declared axis. Each score must be an integer from 0 through that axis's `maxPoints`.
+- Use axes that explain the skill being trained (for example empathy, fact checking, or premise recognition), and explain the overall judgment in `feedback`.
 - Prefer portable motionTags over motionId.
 - Do not add fields that are absent from the schema.
 - Run npm run validate:scenarios and npm test.

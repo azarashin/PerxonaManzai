@@ -104,6 +104,12 @@ Scenario titles, jokes, and comeback choices remain visible in all three languag
 
 ```json
 {
+  "evaluationAxes": [{
+    "id": "premise-recognition",
+    "label": { "ja": "ボケの把握", "en": "Premise recognition", "zh": "理解笑點" },
+    "description": { "ja": "矛盾を捉える", "en": "Identify the contradiction.", "zh": "找出矛盾。" },
+    "maxPoints": 80
+  }],
   "boke": { "ja": "...", "en": "...", "zh": "..." },
   "reaction": {
     "motionTags": ["pose:showcase_02", "category:talking"],
@@ -112,7 +118,7 @@ Scenario titles, jokes, and comeback choices remain visible in all three languag
   },
   "choices": [{
     "text": { "ja": "...", "en": "...", "zh": "..." },
-    "contentPoints": 80,
+    "axisScores": { "premise-recognition": 80 },
     "feedback": { "ja": "...", "en": "...", "zh": "..." }
   }]
 }

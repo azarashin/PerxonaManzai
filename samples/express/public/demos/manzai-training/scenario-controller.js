@@ -72,11 +72,30 @@ export class ScenarioController {
 }
 
 function validateScenario(scenario) {
-  if (!isLocalizedText(scenario?.title) || !Array.isArray(scenario.beats)) {
+  if (
+    !isLocalizedText(scenario?.title) ||
+    !Array.isArray(scenario.evaluationAxes) ||
+    !Array.isArray(scenario.beats)
+  ) {
     throw new Error("シナリオの形式が正しくありません。");
   }
   if (scenario.beats.length === 0) {
     throw new Error("シナリオにボケを1件以上登録してください。");
+  }
+  const axes = new Map(scenario.evaluationAxes.map((axis) => [axis.id, axis]));
+  if (
+    axes.size !== scenario.evaluationAxes.length ||
+    scenario.evaluationAxes.some(
+      (axis) =>
+        !axis.id ||
+        !isLocalizedText(axis.label) ||
+        !isLocalizedText(axis.description) ||
+        !Number.isInteger(axis.maxPoints) ||
+        axis.maxPoints <= 0,
+    ) ||
+    scenario.evaluationAxes.reduce((sum, axis) => sum + axis.maxPoints, 0) !== 80
+  ) {
+    throw new Error("Evaluation axes must be unique, valid, and total 80 points.");
   }
 
   for (const [index, beat] of scenario.beats.entries()) {
@@ -94,7 +113,9 @@ function validateScenario(scenario) {
     if (
       beat.choices.some(
         (choice) =>
-          !isLocalizedText(choice.text) || !isLocalizedText(choice.feedback),
+          !isLocalizedText(choice.text) ||
+          !isLocalizedText(choice.feedback) ||
+          !hasValidAxisScores(choice.axisScores, axes),
       )
     ) {
       throw new Error(
@@ -102,6 +123,16 @@ function validateScenario(scenario) {
       );
     }
   }
+}
+
+function hasValidAxisScores(axisScores, axes) {
+  if (!axisScores || Object.keys(axisScores).length !== axes.size) return false;
+  return [...axes].every(
+    ([axisId, axis]) =>
+      Number.isInteger(axisScores[axisId]) &&
+      axisScores[axisId] >= 0 &&
+      axisScores[axisId] <= axis.maxPoints,
+  );
 }
 
 function isReaction(value) {
