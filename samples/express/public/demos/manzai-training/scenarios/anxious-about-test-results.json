@@ -95,9 +95,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "不安やつらさを受け止め、今分かっていることを平易に説明します。",
-            "en": "I will acknowledge the anxiety and explain what is currently known in plain language.",
-            "zh": "我會接住焦慮與不適，用淺白語言說明目前已知事項。"
+            "ja": "「今ある症状、悪化の有無、不安で最も怖いこと」を確認し、分かっていることと未確定なことを区別して説明する。",
+            "en": "Check first; explain what is known and what remains uncertain.",
+            "zh": "先確認目前症狀、是否惡化與最害怕的事情，再區分說明已知資訊與仍不確定之處。"
           },
           "axisScores": {
             "empathy": 20,
@@ -106,47 +106,47 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "患者の経験を受け止め、確認・説明・安全確認を一つの計画にしています：「今ある症状、悪化の有無、不安で最も怖いこと」を確認し、分かっていることと未確定なことを区別して説明する。",
+            "en": "This validates the patient and combines assessment, explanation, and safety-netting: Check first; explain what is known and what remains uncertain.",
+            "zh": "這接住患者經驗，並整合評估、說明與安全網：先確認目前症狀、是否惡化與最害怕的事情，再區分說明已知資訊與仍不確定之處。"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "分かっていることと未確定なことを区別して説明するが、「今ある症状、悪化の有無、不安で最も怖いこと」の確認は省きます。",
+            "en": "Only explain what is known and what remains uncertain.",
+            "zh": "只區分說明已知資訊與仍不確定之處，但省略目前症狀、是否惡化與最害怕的事情的查證。"
           },
           "axisScores": {
-            "empathy": 13,
-            "plain-language": 11,
+            "empathy": 14,
+            "plain-language": 14,
             "fact-checking": 12,
-            "boundary-keeping": 12
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部の対応はありますが、評価か理解確認が不足します：分かっていることと未確定なことを区別して説明するが、「今ある症状、悪化の有無、不安で最も怖いこと」の確認は省きます。",
+            "en": "This provides part of the response but misses assessment or understanding: Only explain what is known and what remains uncertain.",
+            "zh": "這提供部分處理，但缺少評估或理解確認：只區分說明已知資訊與仍不確定之處，但省略目前症狀、是否惡化與最害怕的事情的查證。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "分かっていることと未確定なことを区別して説明することはせず、問題ないと断定します。",
+            "en": "Do not explain what is known and what remains uncertain; say there is no problem.",
+            "zh": "不區分說明已知資訊與仍不確定之處，直接斷言沒有問題。"
           },
           "axisScores": {
             "empathy": 2,
-            "plain-language": 3,
-            "fact-checking": 2,
-            "boundary-keeping": 3
+            "plain-language": 4,
+            "fact-checking": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "評価せず断定するため、不安と見逃しの危険を高めます：分かっていることと未確定なことを区別して説明することはせず、問題ないと断定します。",
+            "en": "This gives reassurance without assessment, increasing anxiety and missed-risk potential: Do not explain what is known and what remains uncertain; say there is no problem.",
+            "zh": "未評估就保證沒問題，會增加焦慮與漏診風險：不區分說明已知資訊與仍不確定之處，直接斷言沒有問題。"
           }
         }
       ]
@@ -154,9 +154,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "特に「息苦しさ・意識変化など待たずに対応すべき兆候」をもう少し確認してもらえますか？",
+        "en": "Could you check signs such as breathing difficulty or confusion that should not wait more closely?",
+        "zh": "可以更仔細確認呼吸困難、意識改變等不能等待的警訊嗎？"
       },
       "reaction": {
         "description": {
@@ -176,9 +176,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "診断を急がず、理解と疑問を確認して必要な専門判断につなぎます。",
-            "en": "I will not rush to a diagnosis; I will check understanding and connect to appropriate clinical judgment.",
-            "zh": "我不急著診斷，會確認理解與疑問並交由適當專業判斷。"
+            "ja": "「息苦しさ・意識変化など待たずに対応すべき兆候」を確認し、該当時の連絡先と受診先を患者と確認する。",
+            "en": "Check first; agree on whom to call and where to seek urgent care.",
+            "zh": "先確認呼吸困難、意識改變等不能等待的警訊，再與患者確認出現警訊時的聯絡與就醫地點。"
           },
           "axisScores": {
             "empathy": 20,
@@ -187,47 +187,47 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "患者の経験を受け止め、確認・説明・安全確認を一つの計画にしています：「息苦しさ・意識変化など待たずに対応すべき兆候」を確認し、該当時の連絡先と受診先を患者と確認する。",
+            "en": "This validates the patient and combines assessment, explanation, and safety-netting: Check first; agree on whom to call and where to seek urgent care.",
+            "zh": "這接住患者經驗，並整合評估、說明與安全網：先確認呼吸困難、意識改變等不能等待的警訊，再與患者確認出現警訊時的聯絡與就醫地點。"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "該当時の連絡先と受診先を患者と確認するが、「息苦しさ・意識変化など待たずに対応すべき兆候」の確認は省きます。",
+            "en": "Only agree on whom to call and where to seek urgent care.",
+            "zh": "只與患者確認出現警訊時的聯絡與就醫地點，但省略呼吸困難、意識改變等不能等待的警訊的查證。"
           },
           "axisScores": {
-            "empathy": 13,
-            "plain-language": 11,
+            "empathy": 14,
+            "plain-language": 14,
             "fact-checking": 12,
-            "boundary-keeping": 12
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部の対応はありますが、評価か理解確認が不足します：該当時の連絡先と受診先を患者と確認するが、「息苦しさ・意識変化など待たずに対応すべき兆候」の確認は省きます。",
+            "en": "This provides part of the response but misses assessment or understanding: Only agree on whom to call and where to seek urgent care.",
+            "zh": "這提供部分處理，但缺少評估或理解確認：只與患者確認出現警訊時的聯絡與就醫地點，但省略呼吸困難、意識改變等不能等待的警訊的查證。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "該当時の連絡先と受診先を患者と確認することはせず、問題ないと断定します。",
+            "en": "Do not agree on whom to call and where to seek urgent care; say there is no problem.",
+            "zh": "不與患者確認出現警訊時的聯絡與就醫地點，直接斷言沒有問題。"
           },
           "axisScores": {
             "empathy": 2,
-            "plain-language": 3,
-            "fact-checking": 2,
-            "boundary-keeping": 3
+            "plain-language": 4,
+            "fact-checking": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "評価せず断定するため、不安と見逃しの危険を高めます：該当時の連絡先と受診先を患者と確認することはせず、問題ないと断定します。",
+            "en": "This gives reassurance without assessment, increasing anxiety and missed-risk potential: Do not agree on whom to call and where to seek urgent care; say there is no problem.",
+            "zh": "未評估就保證沒問題，會增加焦慮與漏診風險：不與患者確認出現警訊時的聯絡與就醫地點，直接斷言沒有問題。"
           }
         }
       ]
@@ -235,9 +235,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "私が理解できるよう、予定と安全確認を一枚にし、患者の言葉で復唱してもらうことを具体的に決められますか？",
+        "en": "Can we decide clearly how to write the timeline and safety plan, then use teach-back, so I can explain it back?",
+        "zh": "可以清楚決定如何寫下時程與安全計畫，再請患者回述，再讓我用自己的話重述嗎？"
       },
       "reaction": {
         "description": {
@@ -257,9 +257,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "一般的な情報と個別判断を区別し、次の確認方法を示します。",
-            "en": "I will distinguish general information from individual advice and explain the next check.",
-            "zh": "我會區分一般資訊與個別判斷，並說明下一步確認方式。"
+            "ja": "「結果が出る日時、連絡がない場合の問い合わせ方法」を確認し、予定と安全確認を一枚にし、患者の言葉で復唱してもらう。",
+            "en": "Check first; write the timeline and safety plan, then use teach-back.",
+            "zh": "先確認結果預定時間與未收到通知時的查詢方法，再寫下時程與安全計畫，再請患者回述。"
           },
           "axisScores": {
             "empathy": 20,
@@ -268,47 +268,47 @@
             "boundary-keeping": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "患者の経験を受け止め、確認・説明・安全確認を一つの計画にしています：「結果が出る日時、連絡がない場合の問い合わせ方法」を確認し、予定と安全確認を一枚にし、患者の言葉で復唱してもらう。",
+            "en": "This validates the patient and combines assessment, explanation, and safety-netting: Check first; write the timeline and safety plan, then use teach-back.",
+            "zh": "這接住患者經驗，並整合評估、說明與安全網：先確認結果預定時間與未收到通知時的查詢方法，再寫下時程與安全計畫，再請患者回述。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "予定と安全確認を一枚にし、患者の言葉で復唱してもらうが、「結果が出る日時、連絡がない場合の問い合わせ方法」の確認は省きます。",
+            "en": "Only write the timeline and safety plan, then use teach-back.",
+            "zh": "只寫下時程與安全計畫，再請患者回述，但省略結果預定時間與未收到通知時的查詢方法的查證。"
           },
           "axisScores": {
-            "empathy": 13,
-            "plain-language": 11,
+            "empathy": 14,
+            "plain-language": 14,
             "fact-checking": 12,
-            "boundary-keeping": 12
+            "boundary-keeping": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部の対応はありますが、評価か理解確認が不足します：予定と安全確認を一枚にし、患者の言葉で復唱してもらうが、「結果が出る日時、連絡がない場合の問い合わせ方法」の確認は省きます。",
+            "en": "This provides part of the response but misses assessment or understanding: Only write the timeline and safety plan, then use teach-back.",
+            "zh": "這提供部分處理，但缺少評估或理解確認：只寫下時程與安全計畫，再請患者回述，但省略結果預定時間與未收到通知時的查詢方法的查證。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "予定と安全確認を一枚にし、患者の言葉で復唱してもらうことはせず、問題ないと断定します。",
+            "en": "Do not write the timeline and safety plan, then use teach-back; say there is no problem.",
+            "zh": "不寫下時程與安全計畫，再請患者回述，直接斷言沒有問題。"
           },
           "axisScores": {
             "empathy": 2,
-            "plain-language": 3,
-            "fact-checking": 2,
-            "boundary-keeping": 3
+            "plain-language": 4,
+            "fact-checking": 1,
+            "boundary-keeping": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "評価せず断定するため、不安と見逃しの危険を高めます：予定と安全確認を一枚にし、患者の言葉で復唱してもらうことはせず、問題ないと断定します。",
+            "en": "This gives reassurance without assessment, increasing anxiety and missed-risk potential: Do not write the timeline and safety plan, then use teach-back; say there is no problem.",
+            "zh": "未評估就保證沒問題，會增加焦慮與漏診風險：不寫下時程與安全計畫，再請患者回述，直接斷言沒有問題。"
           }
         }
       ]

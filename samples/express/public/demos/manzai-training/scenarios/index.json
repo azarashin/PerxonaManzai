@@ -1412,16 +1412,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "検査待ちの不安を受け止め、既知・未知と緊急症状を分ける",
+          "結果時期、連絡方法、悪化時の受診条件をティーチバックで確認する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Clinical Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Validate anxiety while separating known facts, uncertainty, and urgent symptoms.",
+          "Use teach-back for result timing, contact routes, and escalation signs."
         ],
         "zh": [
-          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "接住等待檢查結果的焦慮，區分已知、未知與緊急症狀。",
+          "以回述確認結果時程、聯絡方式與惡化就醫條件。"
         ]
       },
       "title": {
@@ -1439,16 +1439,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "抗菌薬希望の背景と症状・期間・重症化リスクを評価する",
+          "不要な理由だけでなく、症状緩和と再評価条件を具体的に示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Clinical Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Assess symptoms, duration, risk, and the reason antibiotics are expected.",
+          "Pair the reason antibiotics are not indicated with relief and reassessment plans."
         ],
         "zh": [
-          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "評估症狀、病程、重症風險與期待抗菌藥的原因。",
+          "說明不適用原因，同時提出症狀緩解與再評估條件。"
         ]
       },
       "title": {
@@ -1466,16 +1466,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "医療コミュニケーションで状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "正常検査と症状の実在を両立させ、生活への影響を具体的に聞く",
+          "検査の限界、考えられる原因、追跡と安全確認を共同で決める"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Clinical Communication.",
-          "Compare how different responses affect the other person and the next action."
+          "Hold normal tests and real symptoms together, including functional impact.",
+          "Explain test limits and agree on differential, follow-up, and safety-netting."
         ],
         "zh": [
-          "掌握情境重點，選擇符合醫療溝通的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "同時承認檢查正常與症狀真實，具體了解生活影響。",
+          "說明檢查限制，共同決定可能原因、追蹤與安全網。"
         ]
       },
       "title": {
