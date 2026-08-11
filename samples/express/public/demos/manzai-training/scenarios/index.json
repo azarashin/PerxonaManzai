@@ -228,6 +228,33 @@
         "zh": "智慧家庭叛變"
       },
       "path": "./scenarios/smart-home-rebellion.json"
+    },
+    {
+      "id": "time-travel-souvenir",
+      "categoryId": "manzai",
+      "beatCount": 3,
+      "difficulty": "advanced",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "漫才・ツッコミで状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Manzai and Comebacks.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合漫才與吐槽的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "未来からのお土産",
+        "en": "A Souvenir from the Future",
+        "zh": "來自未來的伴手禮"
+      },
+      "path": "./scenarios/time-travel-souvenir.json"
     }
   ]
 }
