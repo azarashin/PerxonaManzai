@@ -112,6 +112,11 @@
         "en": "Our budget was cut twenty percent. Can you preserve the outcome within it?",
         "zh": "預算減少兩成，你能在不改變成果的情況下調整提案嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "よさんが にわり へりました。 せいかは かえずに ていあんを おさめられますか。",
+        "en": "/ˈaʊɚ ˈbʌdʒɪt wɑz kʌt ˈtwɛnti pɚˈsɛnt. kæn ju pɹəˈzɝv ðə ˈaʊtˌkʌm wɪˈðɪn ɪt?/",
+        "zh": "Yù suàn jiǎn shǎo liǎng chéng， nǐ néng zài bù gǎi biàn chéng guǒ de qíng kuàng xià tiáo zhěng tí àn ma？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "二割減の中で守る成果を決めたいです。必須機能、延期できる範囲、社内で担える作業を確認させてください。",
             "en": "Which outcomes and features are essential, what can be delayed, and what can your team handle?",
             "zh": "先確認兩成縮減下必須守住的成果。哪些功能不可少、哪些可延後、哪些工作可由貴方承擔？"
+          },
+          "pronunciationGuide": {
+            "ja": "にわりげんの なかで まもる せいかを きめたいです。 ひっす きのう、 えんき できる はんい、 しゃないで になえる さぎょうを かくにん させて ください。",
+            "en": "/wɪtʃ ˈaʊtˌkʌmz ənd ˈfitʃɚz ɑɹ ɛˈsɛnʃəl, wʌt kæn bi dɪˈleɪd, ənd wʌt kæn jɔɹ tim ˈhændəl?/",
+            "zh": "Xiān què rèn liǎng chéng suō jiǎn xià bì xū shǒu zhù de chéng guǒ。 nǎ xiē gōng néng bù kě shǎo、 nǎ xiē kě yán hòu、 nǎ xiē gōng zuò kě yóu guì fāng chéng dān？"
           },
           "axisScores": {
             "discovery": 20,
@@ -170,6 +180,11 @@
             "en": "Understood. I'll see whether we can discount everything by twenty percent.",
             "zh": "了解，我會確認整體能否降價兩成。"
           },
+          "pronunciationGuide": {
+            "ja": "わかりました。 ぜんたいを にわり ねびき できるか かくにん します。",
+            "en": "/ˌʌndɚˈstʊd. aɪl si ˈwɛðɚ wi kæn dɪˈskaʊnt ˈɛvɹiˌθɪŋ baɪ ˈtwɛnti pɚˈsɛnt./",
+            "zh": "Liǎo jiě， wǒ huì què rèn zhěng tǐ néng fǒu jiàng jià liǎng chéng。"
+          },
           "axisScores": {
             "discovery": 3,
             "value-articulation": 2,
@@ -200,6 +215,11 @@
             "ja": "成果を変えず二割減は無理です。予算を戻してください。",
             "en": "The same outcome for twenty percent less is impossible. Restore the budget.",
             "zh": "成果不變又少兩成不可能，請恢復預算。"
+          },
+          "pronunciationGuide": {
+            "ja": "せいかを かえず にわりげんは むりです。 よさんを もどして ください。",
+            "en": "/ðə seɪm ˈaʊtˌkʌm fɔɹ ˈtwɛnti pɚˈsɛnt lɛs ɪz ˌɪmˈpɑsəbəl. ɹɪˈstɔɹ ðə ˈbʌdʒɪt./",
+            "zh": "Chéng guǒ bú biàn yòu shǎo liǎng chéng bù kě néng， qǐng huī fù yù suàn。"
           },
           "axisScores": {
             "discovery": 1,
@@ -234,6 +254,11 @@
         "en": "Two integrations and monthly reporting are essential; training frequency and launch timing can change.",
         "zh": "兩項整合功能與月報不可少；培訓次數與導入時程可調整。"
       },
+      "pronunciationGuide": {
+        "ja": "ふたつの れんけい きのうと げつじ ほうこくは ひっすです。 けんしゅうの かいすうと どうにゅう じきは ちょうせい できます。",
+        "en": "/tu ˌɪntəˈɡɹeɪʃənz ənd ˈmʌnθli ɹiˈpɔɹtɪŋ ɑɹ ɛˈsɛnʃəl; ˈtɹeɪnɪŋ ˈfɹikwənsi ənd lɔntʃ ˈtaɪmɪŋ kæn tʃeɪndʒ./",
+        "zh": "Liǎng xiàng zhěng hé gōng néng yǔ yuè bào bù kě shǎo； péi xùn cì shù yǔ dǎo rù shí chéng kě tiáo zhěng。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "必須機能と月次報告を第一段階に残し、研修を絞って導入を二期に分けた費用を作ります。",
             "en": "I'll keep the integrations and monthly reporting in phase one, reduce training, and price a two-stage rollout.",
             "zh": "第一階段保留整合與月報，減少培訓並拆成兩期導入後重新報價。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひっす きのうと げつじ ほうこくを だい いち だんかいに のこし、 けんしゅうを しぼって どうにゅうを にきに わけた ひようを つくります。",
+            "en": "/aɪl kip ðə ˌɪntəˈɡɹeɪʃənz ənd ˈmʌnθli ɹiˈpɔɹtɪŋ ɪn feɪz wʌn, ɹəˈdus ˈtɹeɪnɪŋ, ənd pɹaɪs ə tu - steɪdʒ ˈɹoʊˌlaʊt./",
+            "zh": "Dì yī jiē duàn bǎo liú zhěng hé yǔ yuè bào， jiǎn shǎo péi xùn bìng chāi chéng liǎng qī dǎo rù hòu chóng xīn bào jià。"
           },
           "axisScores": {
             "discovery": 20,
@@ -297,6 +327,11 @@
             "en": "Removing all training and post-launch support would get us closer.",
             "zh": "若全部取消培訓與上線後支援，價格會比較接近。"
           },
+          "pronunciationGuide": {
+            "ja": "けんしゅうと どうにゅうご さぽーとを すべて はずせば ちかづけます。",
+            "en": "/ɹiˈmuvɪŋ ɔl ˈtɹeɪnɪŋ ənd poʊst - lɔntʃ səˈpɔɹt wʊd ɡɛt ʌs ˈkloʊsɚ./",
+            "zh": "Ruò quán bù qǔ xiāo péi xùn yǔ shàng xiàn hòu zhī yuán， jià gé huì bǐ jiào jiē jìn。"
+          },
           "axisScores": {
             "discovery": 5,
             "value-articulation": 8,
@@ -327,6 +362,11 @@
             "ja": "その必須条件なら、二割減という要望が現実的ではありません。",
             "en": "With those requirements, the twenty-percent cut is unrealistic.",
             "zh": "在這些必要條件下，削減兩成並不現實。"
+          },
+          "pronunciationGuide": {
+            "ja": "その ひっす じょうけんなら、 にわりげんという ようぼうが げんじつてきでは ありません。",
+            "en": "/wɪð ðoʊz ɹɪkˈwaɪɹmənts, ðə ˈtwɛnti - pɚˈsɛnt kʌt ɪz ənˌɹiˈlɪstɪk./",
+            "zh": "Zài zhè xiē bì yào tiáo jiàn xià， xuē jiǎn liǎng chéng bìng bú xiàn shí。"
           },
           "axisScores": {
             "discovery": 2,
@@ -361,6 +401,11 @@
         "en": "Give us a phased option showing first-year cost and the final outcome.",
         "zh": "請提出分兩期、能看出首年成本與最終成果的方案。"
       },
+      "pronunciationGuide": {
+        "ja": "にき どうにゅうで、 しょねんど よさんと さいしゅう せいかが わかる あんを ください。",
+        "en": "/ɡɪv ʌs ə feɪzd ˈɑpʃən ˈʃoʊɪŋ fɝst - jɪɹ kɑst ənd ðə ˈfaɪnəl ˈaʊtˌkʌm./",
+        "zh": "Qǐng tí chū fēn liǎng qī、 néng kàn chū shǒu nián chéng běn yǔ zuì zhōng chéng guǒ de fāng àn。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "初年度は必須二連携と月次報告、次年度に研修と追加機能を実施します。各期の費用と成果指標を明記します。",
             "en": "Year one covers integrations and reporting; year two adds training and features, with cost and metrics for each.",
             "zh": "首年完成兩項整合與月報，次年加入培訓與追加功能，並列明各期成本與成果指標。"
+          },
+          "pronunciationGuide": {
+            "ja": "しょねんどは ひっす に れんけいと げつじ ほうこく、 じ ねんどに けんしゅうと ついか きのうを じっし します。 かくきの ひようと せいか しひょうを めいき します。",
+            "en": "/jɪɹ wʌn ˈkʌvɚz ˌɪntəˈɡɹeɪʃənz ənd ɹiˈpɔɹtɪŋ; jɪɹ tu ædz ˈtɹeɪnɪŋ ənd ˈfitʃɚz, wɪð kɑst ənd ˈmɛtɹɪks fɔɹ itʃ./",
+            "zh": "Shǒu nián wán chéng liǎng xiàng zhěng hé yǔ yuè bào， cì nián jiā rù péi xùn yǔ zhuī jiā gōng néng， bìng liè míng gè qī chéng běn yǔ chéng guǒ zhǐ biāo。"
           },
           "axisScores": {
             "discovery": 20,
@@ -414,6 +464,11 @@
             "en": "We'll reduce hours to fit the first-year amount.",
             "zh": "我們會減少工時以符合首年金額。"
           },
+          "pronunciationGuide": {
+            "ja": "さぎょう じかんを へらして しょねんどの きんがくを あわせます。",
+            "en": "/wil ɹəˈdus ˈaʊɚz tu fɪt ðə fɝst - jɪɹ əˈmaʊnt./",
+            "zh": "Wǒ men huì jiǎn shǎo gōng shí yǐ fú hé shǒu nián jīn é。"
+          },
           "axisScores": {
             "discovery": 5,
             "value-articulation": 6,
@@ -444,6 +499,11 @@
             "ja": "同じ成果を二割安く必ず実現します。",
             "en": "We guarantee the same result for twenty percent less.",
             "zh": "我們保證以少兩成的價格達成相同成果。"
+          },
+          "pronunciationGuide": {
+            "ja": "おなじ せいかを にわり やすく かならず じつげん します。",
+            "en": "/wi ˌɡɛɹənˈti ðə seɪm ɹɪˈzʌlt fɔɹ ˈtwɛnti pɚˈsɛnt lɛs./",
+            "zh": "Wǒ men bǎo zhèng yǐ shǎo liǎng chéng de jià gé dá chéng xiāng tóng chéng guǒ。"
           },
           "axisScores": {
             "discovery": 1,
@@ -478,6 +538,11 @@
         "en": "You removed features I called essential; it feels as though price matters more than the outcome.",
         "zh": "連我說必要的功能也被刪掉，感覺你只看價格不看成果。"
       },
+      "pronunciationGuide": {
+        "ja": "ひっすだと つたえた きのうまで けずられ、 せいかより ねだんだけを みられて いる きが します。",
+        "en": "/ju ɹiˈmuvd ˈfitʃɚz aɪ kɔld ɛˈsɛnʃəl; ɪt filz æz ðoʊ pɹaɪs ˈmætɚz mɔɹ ðæn ðə ˈaʊtˌkʌm./",
+        "zh": "Lián wǒ shuō bì yào de gōng néng yě bèi shān diào， gǎn jué nǐ zhī kàn jià gé bú kàn chéng guǒ。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "必須範囲を取り違えました。申し訳ありません。二つの連携と月次報告を固定し、研修と時期だけで再設計します。",
             "en": "I misread the must-haves. I'm sorry. I'll lock the integrations and reporting and redesign only training and timing.",
             "zh": "我誤解了必要範圍，很抱歉。我會固定整合與月報，只調整培訓和時程。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひっす はんいを とりちがえました。 もうしわけ ありません。 ふたつの れんけいと げつじ ほうこくを こてい し、 けんしゅうと じきだけで さい せっけい します。",
+            "en": "/aɪ mɪsˈɹid ðə mʌst - hævz. aɪm ˈsɑɹi. aɪl lɑk ðə ˌɪntəˈɡɹeɪʃənz ənd ɹiˈpɔɹtɪŋ ənd ˌɹidɪˈzaɪn ˈoʊnli ˈtɹeɪnɪŋ ənd ˈtaɪmɪŋ./",
+            "zh": "Wǒ wù jiě le bì yào fàn wéi， hěn bào qiàn。 wǒ huì gù dìng zhěng hé yǔ yuè bào， zhī tiáo zhěng péi xùn hé shí chéng。"
           },
           "axisScores": {
             "discovery": 20,
@@ -531,6 +601,11 @@
             "en": "Then I'll restore one integration and adjust elsewhere.",
             "zh": "那我恢復一項整合功能，再從其他地方調整。"
           },
+          "pronunciationGuide": {
+            "ja": "では れんけい きのうを ひとつ もどし、 ほかで ちょうせい します。",
+            "en": "/ðɛn aɪl ɹɪˈstɔɹ wʌn ˌɪntəˈɡɹeɪʃən ənd əˈdʒʌst ˈɛlˌswɛɹ./",
+            "zh": "Nà wǒ huī fù yí xiàng zhěng hé gōng néng， zài cóng qí tā dì fāng tiáo zhěng。"
+          },
           "axisScores": {
             "discovery": 8,
             "value-articulation": 10,
@@ -561,6 +636,11 @@
             "ja": "予算を下げた以上、何かを諦めてもらうしかありません。",
             "en": "With a lower budget, you simply have to give something up.",
             "zh": "既然預算降低，就只能放棄一些東西。"
+          },
+          "pronunciationGuide": {
+            "ja": "よさんを さげた いじょう、 なにかを あきらめて もらうしか ありません。",
+            "en": "/wɪð ə ˈloʊɚ ˈbʌdʒɪt, ju ˈsɪmpli hæv tu ɡɪv ˈsʌmθɪŋ ʌp./",
+            "zh": "Jì rán yù suàn jiàng dī， jiù zhǐ néng fàng qì yì xiē dōng xī。"
           },
           "axisScores": {
             "discovery": 0,

@@ -15,8 +15,16 @@
   "stateVariables": [
     {
       "id": "trust",
-      "label": { "ja": "信頼", "en": "Trust", "zh": "信任" },
-      "description": { "ja": "顧客が対話と提案を信頼している度合い", "en": "How much the customer trusts the dialogue and proposal.", "zh": "顧客對對話與提案的信任程度。" },
+      "label": {
+        "ja": "信頼",
+        "en": "Trust",
+        "zh": "信任"
+      },
+      "description": {
+        "ja": "顧客が対話と提案を信頼している度合い",
+        "en": "How much the customer trusts the dialogue and proposal.",
+        "zh": "顧客對對話與提案的信任程度。"
+      },
       "type": "number",
       "initialValue": 0,
       "minimum": -2,
@@ -24,8 +32,16 @@
     },
     {
       "id": "concession-budget",
-      "label": { "ja": "譲歩余地", "en": "Concession budget", "zh": "讓步空間" },
-      "description": { "ja": "利益を損なわず提示できる残りの譲歩", "en": "Remaining concessions available without undermining the deal.", "zh": "不損害交易前提下仍可使用的讓步空間。" },
+      "label": {
+        "ja": "譲歩余地",
+        "en": "Concession budget",
+        "zh": "讓步空間"
+      },
+      "description": {
+        "ja": "利益を損なわず提示できる残りの譲歩",
+        "en": "Remaining concessions available without undermining the deal.",
+        "zh": "不損害交易前提下仍可使用的讓步空間。"
+      },
       "type": "number",
       "initialValue": 3,
       "minimum": 0,
@@ -33,8 +49,16 @@
     },
     {
       "id": "needs-confirmed",
-      "label": { "ja": "課題確認", "en": "Needs confirmed", "zh": "需求已確認" },
-      "description": { "ja": "価格要求の背景にある決裁条件を確認できたか", "en": "Whether the approval condition behind the price request is known.", "zh": "是否已掌握價格要求背後的決策條件。" },
+      "label": {
+        "ja": "課題確認",
+        "en": "Needs confirmed",
+        "zh": "需求已確認"
+      },
+      "description": {
+        "ja": "価格要求の背景にある決裁条件を確認できたか",
+        "en": "Whether the approval condition behind the price request is known.",
+        "zh": "是否已掌握價格要求背後的決策條件。"
+      },
       "type": "boolean",
       "initialValue": false
     }
@@ -42,26 +66,58 @@
   "evaluationAxes": [
     {
       "id": "discovery",
-      "label": { "ja": "課題発見", "en": "Discovery", "zh": "需求探索" },
-      "description": { "ja": "要求の背景と決裁条件を質問で確認する", "en": "Use questions to uncover context and approval criteria.", "zh": "透過提問確認背景與決策條件。" },
+      "label": {
+        "ja": "課題発見",
+        "en": "Discovery",
+        "zh": "需求探索"
+      },
+      "description": {
+        "ja": "要求の背景と決裁条件を質問で確認する",
+        "en": "Use questions to uncover context and approval criteria.",
+        "zh": "透過提問確認背景與決策條件。"
+      },
       "maxPoints": 20
     },
     {
       "id": "value-articulation",
-      "label": { "ja": "価値提示", "en": "Value articulation", "zh": "價值表達" },
-      "description": { "ja": "顧客の課題に結び付けて価値を説明する", "en": "Connect value to the customer's actual needs.", "zh": "將價值連結到顧客的實際需求。" },
+      "label": {
+        "ja": "価値提示",
+        "en": "Value articulation",
+        "zh": "價值表達"
+      },
+      "description": {
+        "ja": "顧客の課題に結び付けて価値を説明する",
+        "en": "Connect value to the customer's actual needs.",
+        "zh": "將價值連結到顧客的實際需求。"
+      },
       "maxPoints": 20
     },
     {
       "id": "relationship-impact",
-      "label": { "ja": "信頼形成", "en": "Relationship impact", "zh": "信任建立" },
-      "description": { "ja": "対立を避け、率直で協力的な対話を保つ", "en": "Maintain candid, cooperative dialogue without escalation.", "zh": "避免對立，維持坦誠合作的對話。" },
+      "label": {
+        "ja": "信頼形成",
+        "en": "Relationship impact",
+        "zh": "信任建立"
+      },
+      "description": {
+        "ja": "対立を避け、率直で協力的な対話を保つ",
+        "en": "Maintain candid, cooperative dialogue without escalation.",
+        "zh": "避免對立，維持坦誠合作的對話。"
+      },
       "maxPoints": 20
     },
     {
       "id": "commercial-discipline",
-      "label": { "ja": "利益規律", "en": "Commercial discipline", "zh": "商業紀律" },
-      "description": { "ja": "無条件の値下げを避け、交換条件を設ける", "en": "Protect value by making concessions conditional.", "zh": "以有條件的讓步保護交易價值。" },
+      "label": {
+        "ja": "利益規律",
+        "en": "Commercial discipline",
+        "zh": "商業紀律"
+      },
+      "description": {
+        "ja": "無条件の値下げを避け、交換条件を設ける",
+        "en": "Protect value by making concessions conditional.",
+        "zh": "以有條件的讓步保護交易價值。"
+      },
       "maxPoints": 20
     }
   ],
@@ -73,9 +129,21 @@
         "en": "A competitor is 15% cheaper for the same seats. Renewal will be difficult unless you match it.",
         "zh": "競爭對手同樣席次便宜15%。如果你們不能跟價，續約就很困難。"
       },
+      "pronunciationGuide": {
+        "ja": "きょうごうは おなじ にんずうでじ ゅうごぱ ー せんと やすいです。 かかくを あわせられないなら、 こうしんは むずかしいですね。",
+        "en": "/ə kəmˈpɛtətɚ ɪz fɪfˈtin pɚˈsɛnt ˈtʃipɚ fɔɹ ðə seɪm sits. ɹɪˈnuəl wɪl bi ˈdɪfəkəlt ənˈlɛs ju mætʃ ɪt./",
+        "zh": "Jìng zhēng duì shǒu tóng yàng xí cì pián yi 15%。 rú guǒ nǐ men bù néng gēn jià， xù yuē jiù hěn kùn nán。"
+      },
       "reaction": {
-        "description": { "ja": "比較資料を示しながら強く条件を求める", "en": "Press for terms while presenting a comparison", "zh": "展示比較資料並強勢要求條件" },
-        "motionTags": ["pose:talking_02", "category:talking"],
+        "description": {
+          "ja": "比較資料を示しながら強く条件を求める",
+          "en": "Press for terms while presenting a comparison",
+          "zh": "展示比較資料並強勢要求條件"
+        },
+        "motionTags": [
+          "pose:talking_02",
+          "category:talking"
+        ],
         "variant": 0,
         "priority": 1,
         "cue": "start"
@@ -83,40 +151,137 @@
       "choices": [
         {
           "id": "ask-decision-criteria",
-          "text": { "ja": "価格差は重要ですね。15％が必須条件なのか、運用負荷やサポートも含む決裁基準なのか教えていただけますか。", "en": "That price gap matters. Is 15% the requirement, or does approval also weigh support and operating effort?", "zh": "這個價差很重要。決策是只看15%，還是也會考量支援與操作成本呢？" },
-          "aliases": {
-            "ja": ["決裁では価格以外にサポートや運用負荷も評価しますか"],
-            "en": ["Does approval consider support and operating effort as well as price"],
-            "zh": ["決策除了價格，也會考量支援與操作成本嗎"]
+          "text": {
+            "ja": "価格差は重要ですね。15％が必須条件なのか、運用負荷やサポートも含む決裁基準なのか教えていただけますか。",
+            "en": "That price gap matters. Is 15% the requirement, or does approval also weigh support and operating effort?",
+            "zh": "這個價差很重要。決策是只看15%，還是也會考量支援與操作成本呢？"
           },
-          "axisScores": { "discovery": 20, "value-articulation": 13, "relationship-impact": 20, "commercial-discipline": 20 },
+          "pronunciationGuide": {
+            "ja": "かかくさは じゅうようですね。 じゅう ご ぱ ー せんとが ひっす じょうけんな のか、 うんよう ふかや さぽーとも ふくむ けっさい きじゅんな のか おしえて いただけますか。",
+            "en": "/ðæt pɹaɪs ɡæp ˈmætɚz. ɪz fɪfˈtin pɚˈsɛnt ðə ɹɪkˈwaɪɹmənt, ɔɹ dʌz əˈpɹuvəl ˈɔlsoʊ weɪ səˈpɔɹt ənd ˈɑpɚˌeɪtɪŋ ˈɛfɚt?/",
+            "zh": "Zhè ge jià chà hěn zhòng yào。 jué cè shì zhī kàn 15%， hái shì yě huì kǎo liáng zhī yuán yǔ cāo zuò chéng běn ne？"
+          },
+          "aliases": {
+            "ja": [
+              "決裁では価格以外にサポートや運用負荷も評価しますか"
+            ],
+            "en": [
+              "Does approval consider support and operating effort as well as price"
+            ],
+            "zh": [
+              "決策除了價格，也會考量支援與操作成本嗎"
+            ]
+          },
+          "axisScores": {
+            "discovery": 20,
+            "value-articulation": 13,
+            "relationship-impact": 20,
+            "commercial-discipline": 20
+          },
           "stateEffects": [
-            { "stateId": "trust", "operation": "add", "value": 1 },
-            { "stateId": "needs-confirmed", "operation": "set", "value": true }
+            {
+              "stateId": "trust",
+              "operation": "add",
+              "value": 1
+            },
+            {
+              "stateId": "needs-confirmed",
+              "operation": "set",
+              "value": true
+            }
           ],
           "routes": [
-            { "conditions": [{ "stateId": "needs-confirmed", "operator": "equals", "value": true }], "nextBeatId": "approval-priority" },
-            { "nextBeatId": "price-pressure" }
+            {
+              "conditions": [
+                {
+                  "stateId": "needs-confirmed",
+                  "operator": "equals",
+                  "value": true
+                }
+              ],
+              "nextBeatId": "approval-priority"
+            },
+            {
+              "nextBeatId": "price-pressure"
+            }
           ],
-          "feedback": { "ja": "価格を否定せず、比較可能な決裁基準を確認して価値交渉への入口を作りました。", "en": "You acknowledge price and uncover comparable approval criteria before discussing concessions.", "zh": "你沒有否定價格，而是先確認可比較的決策條件，為價值談判建立入口。" }
+          "feedback": {
+            "ja": "価格を否定せず、比較可能な決裁基準を確認して価値交渉への入口を作りました。",
+            "en": "You acknowledge price and uncover comparable approval criteria before discussing concessions.",
+            "zh": "你沒有否定價格，而是先確認可比較的決策條件，為價值談判建立入口。"
+          }
         },
         {
           "id": "offer-immediate-discount",
-          "text": { "ja": "分かりました。まず10％値引きで社内調整します。", "en": "Understood. I'll start by seeking approval for a 10% discount.", "zh": "了解。我先在公司內部爭取10%的折扣。" },
-          "axisScores": { "discovery": 0, "value-articulation": 2, "relationship-impact": 10, "commercial-discipline": 2 },
+          "text": {
+            "ja": "分かりました。まず10％値引きで社内調整します。",
+            "en": "Understood. I'll start by seeking approval for a 10% discount.",
+            "zh": "了解。我先在公司內部爭取10%的折扣。"
+          },
+          "pronunciationGuide": {
+            "ja": "わかりました。 まず じゅっ ぱ ー せんと ねびきで しゃない ちょうせい します。",
+            "en": "/ˌʌndɚˈstʊd. aɪl stɑɹt baɪ ˈsikɪŋ əˈpɹuvəl fɔɹ ə tɛn pɚˈsɛnt dɪˈskaʊnt./",
+            "zh": "Liǎo jiě。 wǒ xiān zài gōng sī nèi bù zhēng qǔ 10% de zhé kòu。"
+          },
+          "axisScores": {
+            "discovery": 0,
+            "value-articulation": 2,
+            "relationship-impact": 10,
+            "commercial-discipline": 2
+          },
           "stateEffects": [
-            { "stateId": "concession-budget", "operation": "add", "value": -2 }
+            {
+              "stateId": "concession-budget",
+              "operation": "add",
+              "value": -2
+            }
           ],
-          "routes": [{ "nextBeatId": "price-pressure" }],
-          "feedback": { "ja": "条件を確認せず値引きを先に出すと、残りの交渉余地を失い、価格だけが争点になります。", "en": "Discounting before discovery consumes leverage and makes price the only issue.", "zh": "未確認條件就先降價，會消耗談判籌碼，讓價格成為唯一焦點。" }
+          "routes": [
+            {
+              "nextBeatId": "price-pressure"
+            }
+          ],
+          "feedback": {
+            "ja": "条件を確認せず値引きを先に出すと、残りの交渉余地を失い、価格だけが争点になります。",
+            "en": "Discounting before discovery consumes leverage and makes price the only issue.",
+            "zh": "未確認條件就先降價，會消耗談判籌碼，讓價格成為唯一焦點。"
+          }
         },
         {
           "id": "attack-competitor",
-          "text": { "ja": "その競合は安いだけで、品質は当社よりかなり低いですよ。", "en": "That competitor is only cheap; its quality is far below ours.", "zh": "那家競爭對手只是便宜，品質遠不如我們。" },
-          "axisScores": { "discovery": 0, "value-articulation": 7, "relationship-impact": 0, "commercial-discipline": 14 },
-          "stateEffects": [{ "stateId": "trust", "operation": "add", "value": -1 }],
-          "routes": [{ "nextBeatId": "price-pressure" }],
-          "feedback": { "ja": "根拠なく競合を下げると、顧客の比較判断まで否定したように聞こえ、信頼を損ないます。", "en": "An unsupported attack on the competitor also dismisses the customer's judgment and damages trust.", "zh": "沒有依據地貶低競爭對手，也像是否定顧客的判斷，會損害信任。" }
+          "text": {
+            "ja": "その競合は安いだけで、品質は当社よりかなり低いですよ。",
+            "en": "That competitor is only cheap; its quality is far below ours.",
+            "zh": "那家競爭對手只是便宜，品質遠不如我們。"
+          },
+          "pronunciationGuide": {
+            "ja": "その きょうごうは やすいだけで、 ひんしつは とうしゃより かなり ひくいですよ。",
+            "en": "/ðæt kəmˈpɛtətɚ ɪz ˈoʊnli tʃip; ɪts ˈkwɑləti ɪz fɑɹ bɪˈloʊ ˈaʊɚz./",
+            "zh": "Nà jiā jìng zhēng duì shǒu zhǐ shì pián yi， pǐn zhì yuǎn bù rú wǒ men。"
+          },
+          "axisScores": {
+            "discovery": 0,
+            "value-articulation": 7,
+            "relationship-impact": 0,
+            "commercial-discipline": 14
+          },
+          "stateEffects": [
+            {
+              "stateId": "trust",
+              "operation": "add",
+              "value": -1
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "price-pressure"
+            }
+          ],
+          "feedback": {
+            "ja": "根拠なく競合を下げると、顧客の比較判断まで否定したように聞こえ、信頼を損ないます。",
+            "en": "An unsupported attack on the competitor also dismisses the customer's judgment and damages trust.",
+            "zh": "沒有依據地貶低競爭對手，也像是否定顧客的判斷，會損害信任。"
+          }
         }
       ]
     },
@@ -127,9 +292,21 @@
         "en": "The executives also care about post-launch support. Your team helped our staff a lot last time.",
         "zh": "其實主管不只在意價格，也很看重上線後的支援。上次你們幫了現場很多。"
       },
+      "pronunciationGuide": {
+        "ja": "じつは やくいんが きに して いる のは かかくだけでなく、 どうにゅうごの といあわせ たいおうです。 ぜんかいは げんばが かなり たすかりました。",
+        "en": "/ðə ɪɡˈzɛkjətɪvz ˈɔlsoʊ kɛɹ əˈbaʊt poʊst - lɔntʃ səˈpɔɹt. jɔɹ tim hɛlpt ˈaʊɚ stæf ə lɑt læst taɪm./",
+        "zh": "Qí shí zhǔ guǎn bù zhī zài yì jià gé， yě hěn kàn zhòng shàng xiàn hòu de zhī yuán。 shàng cì nǐ men bāng le xiàn chǎng hěn duō。"
+      },
       "reaction": {
-        "description": { "ja": "本当の決裁要因を打ち明ける", "en": "Reveal the real approval factor", "zh": "說出真正的決策因素" },
-        "motionTags": ["pose:talking_05", "category:talking"],
+        "description": {
+          "ja": "本当の決裁要因を打ち明ける",
+          "en": "Reveal the real approval factor",
+          "zh": "說出真正的決策因素"
+        },
+        "motionTags": [
+          "pose:talking_05",
+          "category:talking"
+        ],
         "variant": 0,
         "priority": 1,
         "cue": "start"
@@ -137,22 +314,85 @@
       "choices": [
         {
           "id": "quantify-support-value",
-          "text": { "ja": "ありがとうございます。対応実績と現場工数の削減を整理し、価格差と並べて役員向け資料にしましょう。", "en": "Thank you. Let's quantify support results and staff time saved beside the price gap for the executives.", "zh": "謝謝。我們把支援成果與節省的人力量化，和價差並列整理給主管。" },
-          "axisScores": { "discovery": 18, "value-articulation": 20, "relationship-impact": 20, "commercial-discipline": 19 },
-          "stateEffects": [{ "stateId": "trust", "operation": "add", "value": 1 }],
-          "routes": [
-            { "conditions": [{ "stateId": "trust", "operator": "greater-than-or-equal", "value": 2 }], "nextBeatId": "final-terms" },
-            { "nextBeatId": "price-pressure" }
+          "text": {
+            "ja": "ありがとうございます。対応実績と現場工数の削減を整理し、価格差と並べて役員向け資料にしましょう。",
+            "en": "Thank you. Let's quantify support results and staff time saved beside the price gap for the executives.",
+            "zh": "謝謝。我們把支援成果與節省的人力量化，和價差並列整理給主管。"
+          },
+          "pronunciationGuide": {
+            "ja": "ありがとうございます。 たいおう じっせきと げんば こうすうの さくげんを せいり し、 かかくさと なべて やくいんむけ しりょうに しましょう。",
+            "en": "/θæŋk ju. lɛts ˈkwɑntɪˌfaɪ səˈpɔɹt ɹɪˈzʌlts ənd stæf taɪm seɪvd bɪˈsaɪd ðə pɹaɪs ɡæp fɔɹ ðə ɪɡˈzɛkjətɪvz./",
+            "zh": "Xiè xiè。 wǒ men bǎ zhī yuán chéng guǒ yǔ jié shěng de rén lì liàng huà， hé jià chà bìng liè zhěng lǐ gěi zhǔ guǎn。"
+          },
+          "axisScores": {
+            "discovery": 18,
+            "value-articulation": 20,
+            "relationship-impact": 20,
+            "commercial-discipline": 19
+          },
+          "stateEffects": [
+            {
+              "stateId": "trust",
+              "operation": "add",
+              "value": 1
+            }
           ],
-          "feedback": { "ja": "確認した決裁要因を数値化し、価格差と同じ土俵で比較できる共同作業に変えました。", "en": "You turn the discovered criterion into a quantified, collaborative business case.", "zh": "你把已確認的決策因素量化，轉化為共同製作的商業依據。" }
+          "routes": [
+            {
+              "conditions": [
+                {
+                  "stateId": "trust",
+                  "operator": "greater-than-or-equal",
+                  "value": 2
+                }
+              ],
+              "nextBeatId": "final-terms"
+            },
+            {
+              "nextBeatId": "price-pressure"
+            }
+          ],
+          "feedback": {
+            "ja": "確認した決裁要因を数値化し、価格差と同じ土俵で比較できる共同作業に変えました。",
+            "en": "You turn the discovered criterion into a quantified, collaborative business case.",
+            "zh": "你把已確認的決策因素量化，轉化為共同製作的商業依據。"
+          }
         },
         {
           "id": "repeat-feature-list",
-          "text": { "ja": "当社には24時間サポートと専任担当、それに分析機能もあります。", "en": "We offer 24-hour support, a dedicated manager, and analytics features.", "zh": "我們提供24小時支援、專屬窗口和分析功能。" },
-          "axisScores": { "discovery": 8, "value-articulation": 11, "relationship-impact": 12, "commercial-discipline": 16 },
-          "stateEffects": [{ "stateId": "trust", "operation": "add", "value": 0 }],
-          "routes": [{ "nextBeatId": "price-pressure" }],
-          "feedback": { "ja": "機能の列挙だけでなく、顧客が評価した支援実績や工数削減と結び付けましょう。", "en": "Connect features to the support result and workload reduction the customer values.", "zh": "不要只列功能，應連結到顧客重視的支援成果與人力節省。" }
+          "text": {
+            "ja": "当社には24時間サポートと専任担当、それに分析機能もあります。",
+            "en": "We offer 24-hour support, a dedicated manager, and analytics features.",
+            "zh": "我們提供24小時支援、專屬窗口和分析功能。"
+          },
+          "pronunciationGuide": {
+            "ja": "とうしゃには にじ ゅうよじかん さぽーとと せんにん たんとう、それに ぶんせき きのうも あります。",
+            "en": "/wi ˈɔfɚ ˈtwɛnti fɔɹ - ˈaʊɚ səˈpɔɹt, ə ˈdɛdəkeɪtəd ˈmænədʒɚ, ənd ˌænəˈlɪtɪks ˈfitʃɚz./",
+            "zh": "Wǒ men tí gōng 24 xiǎo shí zhī yuán、 zhuān shǔ chuāng kǒu hé fēn xī gōng néng。"
+          },
+          "axisScores": {
+            "discovery": 8,
+            "value-articulation": 11,
+            "relationship-impact": 12,
+            "commercial-discipline": 16
+          },
+          "stateEffects": [
+            {
+              "stateId": "trust",
+              "operation": "add",
+              "value": 0
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "price-pressure"
+            }
+          ],
+          "feedback": {
+            "ja": "機能の列挙だけでなく、顧客が評価した支援実績や工数削減と結び付けましょう。",
+            "en": "Connect features to the support result and workload reduction the customer values.",
+            "zh": "不要只列功能，應連結到顧客重視的支援成果與人力節省。"
+          }
         }
       ]
     },
@@ -163,9 +403,21 @@
         "en": "I see the value, but our budget cap will not move. How far can you lower the price?",
         "zh": "我理解價值，但預算上限不會變。你們到底能降到多少？"
       },
+      "pronunciationGuide": {
+        "ja": "かちは わかりますが、 よさん じょうげんは かわりません。 けっきょく、 どこまで さげられますか。",
+        "en": "/aɪ si ðə ˈvælju, bʌt ˈaʊɚ ˈbʌdʒɪt kæp wɪl nɑt muv. haʊ fɑɹ kæn ju ˈloʊɚ ðə pɹaɪs?/",
+        "zh": "Wǒ lǐ jiě jià zhí， dàn yù suàn shàng xiàn bú huì biàn。 nǐ men dào dǐ néng jiàng dào duō shǎo？"
+      },
       "reaction": {
-        "description": { "ja": "価格の回答を迫る", "en": "Press for a direct price answer", "zh": "要求直接回答價格" },
-        "motionTags": ["pose:talking_03", "category:talking"],
+        "description": {
+          "ja": "価格の回答を迫る",
+          "en": "Press for a direct price answer",
+          "zh": "要求直接回答價格"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
         "variant": 1,
         "priority": 1,
         "cue": "start"
@@ -173,25 +425,90 @@
       "choices": [
         {
           "id": "exchange-scope-for-price",
-          "text": { "ja": "上限に合わせるなら、利用範囲か支援内容の調整が必要です。優先順位を一緒に確認してもよいですか。", "en": "To meet the cap, we need to adjust scope or support. May we rank those priorities together?", "zh": "若要符合上限，就需調整使用範圍或支援內容。我們可以一起排優先順序嗎？" },
-          "axisScores": { "discovery": 19, "value-articulation": 17, "relationship-impact": 19, "commercial-discipline": 20 },
+          "text": {
+            "ja": "上限に合わせるなら、利用範囲か支援内容の調整が必要です。優先順位を一緒に確認してもよいですか。",
+            "en": "To meet the cap, we need to adjust scope or support. May we rank those priorities together?",
+            "zh": "若要符合上限，就需調整使用範圍或支援內容。我們可以一起排優先順序嗎？"
+          },
+          "pronunciationGuide": {
+            "ja": "じょうげんに あわせるなら、 りよう はんいか しえん ないようの ちょうせいが ひつようです。 ゆうせん じゅんいを いっしょに かくにん しても よいですか。",
+            "en": "/tu mit ðə kæp, wi nid tu əˈdʒʌst skoʊp ɔɹ səˈpɔɹt. meɪ wi ɹæŋk ðoʊz pɹaɪˈɔɹətiz təˈɡɛðɚ?/",
+            "zh": "Ruò yào fú hé shàng xiàn， jiù xū tiáo zhěng shǐ yòng fàn wéi huò zhī yuán nèi róng。 wǒ men kě yǐ yì qǐ pái yōu xiān shùn xù ma？"
+          },
+          "axisScores": {
+            "discovery": 19,
+            "value-articulation": 17,
+            "relationship-impact": 19,
+            "commercial-discipline": 20
+          },
           "stateEffects": [
-            { "stateId": "trust", "operation": "add", "value": 1 },
-            { "stateId": "needs-confirmed", "operation": "set", "value": true }
+            {
+              "stateId": "trust",
+              "operation": "add",
+              "value": 1
+            },
+            {
+              "stateId": "needs-confirmed",
+              "operation": "set",
+              "value": true
+            }
           ],
           "routes": [
-            { "conditions": [{ "stateId": "trust", "operator": "greater-than-or-equal", "value": 1 }], "nextBeatId": "final-terms" },
-            { "nextBeatId": "guarded-close" }
+            {
+              "conditions": [
+                {
+                  "stateId": "trust",
+                  "operator": "greater-than-or-equal",
+                  "value": 1
+                }
+              ],
+              "nextBeatId": "final-terms"
+            },
+            {
+              "nextBeatId": "guarded-close"
+            }
           ],
-          "feedback": { "ja": "予算制約を受け止めつつ、価格と範囲を交換条件にして共同検討へ戻しました。", "en": "You accept the constraint while trading price against scope and restoring collaboration.", "zh": "你接受預算限制，同時以價格交換範圍，把談判帶回共同討論。" }
+          "feedback": {
+            "ja": "予算制約を受け止めつつ、価格と範囲を交換条件にして共同検討へ戻しました。",
+            "en": "You accept the constraint while trading price against scope and restoring collaboration.",
+            "zh": "你接受預算限制，同時以價格交換範圍，把談判帶回共同討論。"
+          }
         },
         {
           "id": "use-final-discount",
-          "text": { "ja": "今回だけ特別に、こちらの最終権限で15％下げます。", "en": "For this renewal only, I'll use my final authority to cut 15%.", "zh": "只有這次，我用最終權限降價15%。" },
-          "axisScores": { "discovery": 0, "value-articulation": 1, "relationship-impact": 8, "commercial-discipline": 0 },
-          "stateEffects": [{ "stateId": "concession-budget", "operation": "add", "value": -3 }],
-          "routes": [{ "nextBeatId": "final-terms" }],
-          "feedback": { "ja": "交換条件なしで譲歩余地を使い切ると、最終条件の調整ができず、価値の根拠も弱まります。", "en": "Using all concessions without an exchange leaves no room for final terms and weakens the value case.", "zh": "沒有交換條件就用盡讓步空間，會失去調整最終條款的餘地，也削弱價值依據。" }
+          "text": {
+            "ja": "今回だけ特別に、こちらの最終権限で15％下げます。",
+            "en": "For this renewal only, I'll use my final authority to cut 15%.",
+            "zh": "只有這次，我用最終權限降價15%。"
+          },
+          "pronunciationGuide": {
+            "ja": "こんかいだけ とくべつに、 こちらの さいしゅう けんげんでじ ゅうごぱ ー せんと さげます。",
+            "en": "/fɔɹ ðɪs ɹɪˈnuəl ˈoʊnli, aɪl jus maɪ ˈfaɪnəl əˈθɔɹəti tu kʌt fɪfˈtin pɚˈsɛnt./",
+            "zh": "Zhǐ yǒu zhè cì， wǒ yòng zuì zhōng quán xiàn jiàng jià 15%。"
+          },
+          "axisScores": {
+            "discovery": 0,
+            "value-articulation": 1,
+            "relationship-impact": 8,
+            "commercial-discipline": 0
+          },
+          "stateEffects": [
+            {
+              "stateId": "concession-budget",
+              "operation": "add",
+              "value": -3
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": "final-terms"
+            }
+          ],
+          "feedback": {
+            "ja": "交換条件なしで譲歩余地を使い切ると、最終条件の調整ができず、価値の根拠も弱まります。",
+            "en": "Using all concessions without an exchange leaves no room for final terms and weakens the value case.",
+            "zh": "沒有交換條件就用盡讓步空間，會失去調整最終條款的餘地，也削弱價值依據。"
+          }
         }
       ]
     },
@@ -202,9 +519,21 @@
         "en": "Give me the final package for internal approval. How will you combine price, support, and term?",
         "zh": "請給我能送內部核准的最終方案。價格、支援與合約期間要怎麼組合？"
       },
+      "pronunciationGuide": {
+        "ja": "では、 しゃないを とおす ための さいしゅうあんを ください。 かかくと しえん、 けいやく きかんを どう くみますか。",
+        "en": "/ɡɪv mi ðə ˈfaɪnəl ˈpækədʒ fɔɹ ˌɪnˈtɝnəl əˈpɹuvəl. haʊ wɪl ju ˈkɑmbaɪn pɹaɪs, səˈpɔɹt, ənd tɝm?/",
+        "zh": "Qǐng gěi wǒ néng sòng nèi bù hé zhǔn de zuì zhōng fāng àn。 jià gé、 zhī yuán yǔ hé yuē qī jiān yào zěn me zǔ hé？"
+      },
       "reaction": {
-        "description": { "ja": "最終条件の提示を求める", "en": "Ask for the final commercial package", "zh": "要求提出最終商業方案" },
-        "motionTags": ["pose:talking_02", "category:talking"],
+        "description": {
+          "ja": "最終条件の提示を求める",
+          "en": "Ask for the final commercial package",
+          "zh": "要求提出最終商業方案"
+        },
+        "motionTags": [
+          "pose:talking_02",
+          "category:talking"
+        ],
         "variant": 2,
         "priority": 1,
         "cue": "start"
@@ -212,34 +541,105 @@
       "choices": [
         {
           "id": "conditional-package",
-          "text": { "ja": "3年更新なら5％調整し、現行支援を維持します。削減効果の資料も明日までに共同で仕上げましょう。", "en": "For a three-year renewal, we can adjust 5% and keep support. Let's finish the savings case tomorrow.", "zh": "若續約三年，我們可調整5%並維持支援；明天前一起完成節省效益資料。" },
-          "axisScores": { "discovery": 16, "value-articulation": 20, "relationship-impact": 20, "commercial-discipline": 20 },
+          "text": {
+            "ja": "3年更新なら5％調整し、現行支援を維持します。削減効果の資料も明日までに共同で仕上げましょう。",
+            "en": "For a three-year renewal, we can adjust 5% and keep support. Let's finish the savings case tomorrow.",
+            "zh": "若續約三年，我們可調整5%並維持支援；明天前一起完成節省效益資料。"
+          },
+          "pronunciationGuide": {
+            "ja": "さんねん こうしんなら ご ぱ ー せんと ちょうせい し、 げんこう しえんを いじ します。 さくげん こうかの しりょうも あしたまでに きょうどうで しあげましょう。",
+            "en": "/fɔɹ ə θɹi - jɪɹ ɹɪˈnuəl, wi kæn əˈdʒʌst faɪv pɚˈsɛnt ənd kip səˈpɔɹt. lɛts ˈfɪnɪʃ ðə ˈseɪvɪŋz keɪs təˈmɑˌɹoʊ./",
+            "zh": "Ruò xù yuē sān nián， wǒ men kě tiáo zhěng 5% bìng wéi chí zhī yuán； míng tiān qián yì qǐ wán chéng jié shěng xiào yì zī liào。"
+          },
+          "axisScores": {
+            "discovery": 16,
+            "value-articulation": 20,
+            "relationship-impact": 20,
+            "commercial-discipline": 20
+          },
           "stateEffects": [
-            { "stateId": "trust", "operation": "add", "value": 1 },
-            { "stateId": "concession-budget", "operation": "add", "value": -1 }
+            {
+              "stateId": "trust",
+              "operation": "add",
+              "value": 1
+            },
+            {
+              "stateId": "concession-budget",
+              "operation": "add",
+              "value": -1
+            }
           ],
           "routes": [
             {
               "conditions": [
-                { "stateId": "trust", "operator": "greater-than-or-equal", "value": 2 },
-                { "stateId": "concession-budget", "operator": "greater-than-or-equal", "value": 1 }
+                {
+                  "stateId": "trust",
+                  "operator": "greater-than-or-equal",
+                  "value": 2
+                },
+                {
+                  "stateId": "concession-budget",
+                  "operator": "greater-than-or-equal",
+                  "value": 1
+                }
               ],
               "nextBeatId": "successful-close"
             },
-            { "nextBeatId": "guarded-close" }
+            {
+              "nextBeatId": "guarded-close"
+            }
           ],
-          "feedback": { "ja": "値引きを契約期間と交換し、支援価値と決裁資料も含めた持続可能な提案です。", "en": "You exchange discount for term and preserve support value with an approval-ready business case.", "zh": "你以合約期間交換折扣，保留支援價值，也納入可供核准的商業依據。" }
+          "feedback": {
+            "ja": "値引きを契約期間と交換し、支援価値と決裁資料も含めた持続可能な提案です。",
+            "en": "You exchange discount for term and preserve support value with an approval-ready business case.",
+            "zh": "你以合約期間交換折扣，保留支援價值，也納入可供核准的商業依據。"
+          }
         },
         {
           "id": "unconditional-package",
-          "text": { "ja": "契約期間はそのままで10％下げ、支援もすべて維持します。", "en": "We'll cut 10% with the same term and keep all support unchanged.", "zh": "合約期間不變，降價10%，所有支援也維持不變。" },
-          "axisScores": { "discovery": 2, "value-articulation": 5, "relationship-impact": 12, "commercial-discipline": 1 },
-          "stateEffects": [{ "stateId": "concession-budget", "operation": "add", "value": -2 }],
-          "routes": [
-            { "conditions": [{ "stateId": "concession-budget", "operator": "greater-than-or-equal", "value": 1 }], "nextBeatId": "successful-close" },
-            { "nextBeatId": "guarded-close" }
+          "text": {
+            "ja": "契約期間はそのままで10％下げ、支援もすべて維持します。",
+            "en": "We'll cut 10% with the same term and keep all support unchanged.",
+            "zh": "合約期間不變，降價10%，所有支援也維持不變。"
+          },
+          "pronunciationGuide": {
+            "ja": "けいやく きかんは そのままで じゅっ ぱ ー せんと さげ、 しえんも すべて いじ します。",
+            "en": "/wil kʌt tɛn pɚˈsɛnt wɪð ðə seɪm tɝm ənd kip ɔl səˈpɔɹt ənˈtʃeɪndʒd./",
+            "zh": "Hé yuē qī jiān bú biàn， jiàng jià 10%， suǒ yǒu zhī yuán yě wéi chí bú biàn。"
+          },
+          "axisScores": {
+            "discovery": 2,
+            "value-articulation": 5,
+            "relationship-impact": 12,
+            "commercial-discipline": 1
+          },
+          "stateEffects": [
+            {
+              "stateId": "concession-budget",
+              "operation": "add",
+              "value": -2
+            }
           ],
-          "feedback": { "ja": "顧客には魅力的でも、対価を得ない値下げは採算と将来の更新基準を損ないます。", "en": "Attractive to the customer, but an untraded discount harms margin and future renewal expectations.", "zh": "對顧客雖有吸引力，但沒有交換條件的折扣會損害利潤與未來續約基準。" }
+          "routes": [
+            {
+              "conditions": [
+                {
+                  "stateId": "concession-budget",
+                  "operator": "greater-than-or-equal",
+                  "value": 1
+                }
+              ],
+              "nextBeatId": "successful-close"
+            },
+            {
+              "nextBeatId": "guarded-close"
+            }
+          ],
+          "feedback": {
+            "ja": "顧客には魅力的でも、対価を得ない値下げは採算と将来の更新基準を損ないます。",
+            "en": "Attractive to the customer, but an untraded discount harms margin and future renewal expectations.",
+            "zh": "對顧客雖有吸引力，但沒有交換條件的折扣會損害利潤與未來續約基準。"
+          }
         }
       ]
     },
@@ -250,9 +650,21 @@
         "en": "I can take that to the executives. Let's finish the case and proceed with a three-year renewal.",
         "zh": "這些條件我能向主管說明。我們完成資料，朝三年續約推進吧。"
       },
+      "pronunciationGuide": {
+        "ja": "その じょうけんなら やくいんに せつめい できます。 しりょうを いっしょに しあげて、 さんねん こうしんで すすめましょう。",
+        "en": "/aɪ kæn teɪk ðæt tu ðə ɪɡˈzɛkjətɪvz. lɛts ˈfɪnɪʃ ðə keɪs ənd pɹəˈsid wɪð ə θɹi - jɪɹ ɹɪˈnuəl./",
+        "zh": "Zhè xiē tiáo jiàn wǒ néng xiàng zhǔ guǎn shuō míng。 wǒ men wán chéng zī liào， cháo sān nián xù yuē tuī jìn ba。"
+      },
       "reaction": {
-        "description": { "ja": "合意に向けて前向きに応じる", "en": "Respond positively toward agreement", "zh": "積極回應並走向共識" },
-        "motionTags": ["pose:emotion_04", "category:talking"],
+        "description": {
+          "ja": "合意に向けて前向きに応じる",
+          "en": "Respond positively toward agreement",
+          "zh": "積極回應並走向共識"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
         "variant": 0,
         "priority": 1,
         "cue": "start"
@@ -260,17 +672,61 @@
       "choices": [
         {
           "id": "confirm-next-steps",
-          "text": { "ja": "ありがとうございます。明日正午までに資料案を送り、金曜に最終確認しましょう。", "en": "Thank you. I'll send the draft by noon tomorrow, and we can finalize it Friday.", "zh": "謝謝。我明天中午前寄出資料草案，週五一起做最終確認。" },
-          "axisScores": { "discovery": 15, "value-articulation": 18, "relationship-impact": 20, "commercial-discipline": 20 },
-          "routes": [{ "nextBeatId": null }],
-          "feedback": { "ja": "担当、期限、次の確認を明確にして、合意を実行へ移しました。", "en": "You convert agreement into action with a clear owner, deadline, and review point.", "zh": "你明確了負責人、期限與下一次確認，將共識轉化為行動。" }
+          "text": {
+            "ja": "ありがとうございます。明日正午までに資料案を送り、金曜に最終確認しましょう。",
+            "en": "Thank you. I'll send the draft by noon tomorrow, and we can finalize it Friday.",
+            "zh": "謝謝。我明天中午前寄出資料草案，週五一起做最終確認。"
+          },
+          "pronunciationGuide": {
+            "ja": "ありがとうございます。 あした しょうごまでに しりょうあんを おくり、 きんように さいしゅう かくにん しましょう。",
+            "en": "/θæŋk ju. aɪl sɛnd ðə dɹæft baɪ nun təˈmɑˌɹoʊ, ənd wi kæn ˈfaɪnəˌlaɪz ɪt ˈfɹaɪdi./",
+            "zh": "Xiè xiè。 wǒ míng tiān zhōng wǔ qián jì chū zī liào cǎo àn， zhōu wǔ yī qǐ zuò zuì zhōng què rèn。"
+          },
+          "axisScores": {
+            "discovery": 15,
+            "value-articulation": 18,
+            "relationship-impact": 20,
+            "commercial-discipline": 20
+          },
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ],
+          "feedback": {
+            "ja": "担当、期限、次の確認を明確にして、合意を実行へ移しました。",
+            "en": "You convert agreement into action with a clear owner, deadline, and review point.",
+            "zh": "你明確了負責人、期限與下一次確認，將共識轉化為行動。"
+          }
         },
         {
           "id": "celebrate-only",
-          "text": { "ja": "ありがとうございます。これで契約成立ですね。", "en": "Thank you. Then the deal is done.", "zh": "謝謝，那就成交了。" },
-          "axisScores": { "discovery": 5, "value-articulation": 8, "relationship-impact": 15, "commercial-discipline": 10 },
-          "routes": [{ "nextBeatId": null }],
-          "feedback": { "ja": "前向きですが、まだ資料と役員承認が残っています。次の行動を明確にしましょう。", "en": "Positive, but the case and executive approval remain. Confirm the next actions.", "zh": "態度正面，但資料與主管核准尚未完成；應確認下一步行動。" }
+          "text": {
+            "ja": "ありがとうございます。これで契約成立ですね。",
+            "en": "Thank you. Then the deal is done.",
+            "zh": "謝謝，那就成交了。"
+          },
+          "pronunciationGuide": {
+            "ja": "ありがとうございます。 これで けいやく せいりつですね。",
+            "en": "/θæŋk ju. ðɛn ðə dil ɪz dʌn./",
+            "zh": "Xiè xiè， nà jiù chéng jiāo le。"
+          },
+          "axisScores": {
+            "discovery": 5,
+            "value-articulation": 8,
+            "relationship-impact": 15,
+            "commercial-discipline": 10
+          },
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ],
+          "feedback": {
+            "ja": "前向きですが、まだ資料と役員承認が残っています。次の行動を明確にしましょう。",
+            "en": "Positive, but the case and executive approval remain. Confirm the next actions.",
+            "zh": "態度正面，但資料與主管核准尚未完成；應確認下一步行動。"
+          }
         }
       ]
     },
@@ -281,9 +737,21 @@
         "en": "I can't decide today. We need to review the terms and impact internally before responding.",
         "zh": "今天無法決定。我們要在內部重新確認條件與效益後再回覆。"
       },
+      "pronunciationGuide": {
+        "ja": "きょうは けつろんを だせません。 じょうけんと こうかを しゃないで さい かくにん してから へんとう します。",
+        "en": "/aɪ kænt ˌdɪˈsaɪd təˈdeɪ. wi nid tu ˌɹivˈju ðə tɝmz ənd ˌɪmˈpækt ˌɪnˈtɝnəli bɪˈfɔɹ ɹɪˈspɑndɪŋ./",
+        "zh": "Jīn tiān wú fǎ jué dìng。 wǒ men yào zài nèi bù chóng xīn què rèn tiáo jiàn yǔ xiào yì hòu zài huí fù。"
+      },
       "reaction": {
-        "description": { "ja": "慎重に持ち帰る意向を示す", "en": "Cautiously take the proposal back for review", "zh": "謹慎表示要帶回內部審查" },
-        "motionTags": ["pose:talking_03", "category:talking"],
+        "description": {
+          "ja": "慎重に持ち帰る意向を示す",
+          "en": "Cautiously take the proposal back for review",
+          "zh": "謹慎表示要帶回內部審查"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
         "variant": 2,
         "priority": 1,
         "cue": "start"
@@ -291,18 +759,68 @@
       "choices": [
         {
           "id": "preserve-process",
-          "text": { "ja": "承知しました。確認事項を一覧にして本日送ります。来週火曜に回答状況を伺ってもよいですか。", "en": "Understood. I'll send a review list today. May I check the status next Tuesday?", "zh": "了解。我今天寄出確認清單，下週二可以再詢問進度嗎？" },
-          "axisScores": { "discovery": 18, "value-articulation": 15, "relationship-impact": 20, "commercial-discipline": 19 },
-          "routes": [{ "nextBeatId": null }],
-          "feedback": { "ja": "即決を迫らず、確認材料と次の接点を合意して商談を保全しました。", "en": "You avoid pressure while preserving the deal through review material and an agreed follow-up.", "zh": "你不強迫立即決定，透過確認資料與約定跟進保留商機。" }
+          "text": {
+            "ja": "承知しました。確認事項を一覧にして本日送ります。来週火曜に回答状況を伺ってもよいですか。",
+            "en": "Understood. I'll send a review list today. May I check the status next Tuesday?",
+            "zh": "了解。我今天寄出確認清單，下週二可以再詢問進度嗎？"
+          },
+          "pronunciationGuide": {
+            "ja": "しょうち しました。 かくにん じこうを いちらんに して ほんじつ おくります。 らいしゅう かように かいとう じょうきょうを うかがっても よいですか。",
+            "en": "/ˌʌndɚˈstʊd. aɪl sɛnd ə ˌɹivˈju lɪst təˈdeɪ. meɪ aɪ tʃɛk ðə ˈstætəs nɛkst ˈtuzdi?/",
+            "zh": "Liǎo jiě。 wǒ jīn tiān jì chū què rèn qīng dān， xià zhōu èr kě yǐ zài xún wèn jìn dù ma？"
+          },
+          "axisScores": {
+            "discovery": 18,
+            "value-articulation": 15,
+            "relationship-impact": 20,
+            "commercial-discipline": 19
+          },
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ],
+          "feedback": {
+            "ja": "即決を迫らず、確認材料と次の接点を合意して商談を保全しました。",
+            "en": "You avoid pressure while preserving the deal through review material and an agreed follow-up.",
+            "zh": "你不強迫立即決定，透過確認資料與約定跟進保留商機。"
+          }
         },
         {
           "id": "apply-closing-pressure",
-          "text": { "ja": "この条件は今日限りです。今決めていただけませんか。", "en": "These terms expire today. Can you approve them now?", "zh": "這些條件只到今天，可以現在核准嗎？" },
-          "axisScores": { "discovery": 0, "value-articulation": 3, "relationship-impact": 0, "commercial-discipline": 7 },
-          "stateEffects": [{ "stateId": "trust", "operation": "add", "value": -1 }],
-          "routes": [{ "nextBeatId": null }],
-          "feedback": { "ja": "根拠のない期限で圧力をかけると、慎重な顧客の信頼をさらに損ないます。", "en": "An artificial deadline adds pressure and further damages trust with a cautious customer.", "zh": "用沒有依據的期限施壓，會進一步損害謹慎顧客的信任。" }
+          "text": {
+            "ja": "この条件は今日限りです。今決めていただけませんか。",
+            "en": "These terms expire today. Can you approve them now?",
+            "zh": "這些條件只到今天，可以現在核准嗎？"
+          },
+          "pronunciationGuide": {
+            "ja": "この じょうけんは きょう かぎりです。 いま きめて いただけませんか。",
+            "en": "/ðiz tɝmz ɪkˈspaɪɹ təˈdeɪ. kæn ju əˈpɹuv ðɛm naʊ?/",
+            "zh": "Zhè xiē tiáo jiàn zhī dào jīn tiān， kě yǐ xiàn zài hé zhǔn ma？"
+          },
+          "axisScores": {
+            "discovery": 0,
+            "value-articulation": 3,
+            "relationship-impact": 0,
+            "commercial-discipline": 7
+          },
+          "stateEffects": [
+            {
+              "stateId": "trust",
+              "operation": "add",
+              "value": -1
+            }
+          ],
+          "routes": [
+            {
+              "nextBeatId": null
+            }
+          ],
+          "feedback": {
+            "ja": "根拠のない期限で圧力をかけると、慎重な顧客の信頼をさらに損ないます。",
+            "en": "An artificial deadline adds pressure and further damages trust with a cautious customer.",
+            "zh": "用沒有依據的期限施壓，會進一步損害謹慎顧客的信任。"
+          }
         }
       ]
     }

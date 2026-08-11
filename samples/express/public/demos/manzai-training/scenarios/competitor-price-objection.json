@@ -112,6 +112,11 @@
         "en": "Your competitor is ten percent cheaper on the same terms. Why should we choose you?",
         "zh": "競爭對手在相同條件下便宜一成。我們為什麼要選你們？"
       },
+      "pronunciationGuide": {
+        "ja": "きょうごうは おなじ じょうけんで いちわり やすいです。 おんしゃを えらぶ りゆうは ありますか。",
+        "en": "/jɔɹ kəmˈpɛtətɚ ɪz tɛn pɚˈsɛnt ˈtʃipɚ ɑn ðə seɪm tɝmz. waɪ ʃʊd wi tʃuz ju?/",
+        "zh": "Jìng zhēng duì shǒu zài xiāng tóng tiáo jiàn xià pián yi yì chéng。 wǒ men wèi shén me yào xuǎn nǐ men？"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "一割の差は重要ですね。同じ条件か確認するため、導入支援、対応時間、決裁で重視する点を教えてください。",
             "en": "A ten-percent gap matters. May I compare onboarding, response times, and your approval criteria?",
             "zh": "一成價差很重要。為了同條件比較，請說明導入支援、回應時間及核准標準。"
+          },
+          "pronunciationGuide": {
+            "ja": "いちわりの さは じゅうようですね。 おなじ じょうけんか かくにん する ため、 どうにゅう しえん、 たいおう じかん、 けっさいで じゅうし する てんを おしえて ください。",
+            "en": "/ə tɛn - pɚˈsɛnt ɡæp ˈmætɚz. meɪ aɪ kəmˈpɛɹ ˈɑnˌbɔɹdɪŋ, ɹɪˈspɑns taɪmz, ənd jɔɹ əˈpɹuvəl kɹaɪˈtɪɹiə?/",
+            "zh": "Yì chéng jià chà hěn zhòng yào。 wèi le tóng tiáo jiàn bǐ jiào， qǐng shuō míng dǎo rù zhī yuán、 huí yìng shí jiān jí hé zhǔn biāo zhǔn。"
           },
           "axisScores": {
             "discovery": 20,
@@ -170,6 +180,11 @@
             "en": "Ten percent is difficult, but I can start with a five-percent reduction.",
             "zh": "一成很難，但我可以先降百分之五。"
           },
+          "pronunciationGuide": {
+            "ja": "いちわりは むずかしいですが、 まず ごぱーせんとなら さげられます。",
+            "en": "/tɛn pɚˈsɛnt ɪz ˈdɪfəkəlt, bʌt aɪ kæn stɑɹt wɪð ə faɪv - pɚˈsɛnt ɹəˈdʌkʃən./",
+            "zh": "Yì chéng hěn nán， dàn wǒ kě yǐ xiān jiàng bǎi fēn zhī wǔ。"
+          },
           "axisScores": {
             "discovery": 4,
             "value-articulation": 3,
@@ -200,6 +215,11 @@
             "ja": "安さだけなら競合を選べばよいと思います。",
             "en": "If price is all that matters, you should choose the competitor.",
             "zh": "如果只看價格，那就選競爭對手吧。"
+          },
+          "pronunciationGuide": {
+            "ja": "やすさだけなら きょうごうを えらべば よいと おもいます。",
+            "en": "/ɪf pɹaɪs ɪz ɔl ðæt ˈmætɚz, ju ʃʊd tʃuz ðə kəmˈpɛtətɚ./",
+            "zh": "Rú guǒ zhī kàn jià gé， nà jiù xuǎn jìng zhēng duì shǒu ba。"
           },
           "axisScores": {
             "discovery": 0,
@@ -234,6 +254,11 @@
         "en": "The competitor excludes setup, but executives care most about the annual total.",
         "zh": "競品不含初始設定，但主管最在意年度總額。"
       },
+      "pronunciationGuide": {
+        "ja": "きょうごうには しょき せっていが ふくまれませんが、 やくいんは ねんかん そうがくを もっとも きに して います。",
+        "en": "/ðə kəmˈpɛtətɚ ɪksˈkludz ˈsɛˌtʌp, bʌt ɪɡˈzɛkjətɪvz kɛɹ moʊst əˈbaʊt ðə ˈænjuəl ˈtoʊtəl./",
+        "zh": "Jìng pǐn bù hán chū shǐ shè dìng， dàn zhǔ guǎn zuì zài yì nián dù zǒng é。"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "初期設定を含む年間総額と、稼働までの社内工数を並べて比較しましょう。役員が許容する上限も確認できますか。",
             "en": "Let's compare annual totals including setup and internal effort to launch. Can we also confirm the executives' ceiling?",
             "zh": "我們比較包含設定費與上線內部工時的年度總額，也請確認主管可接受的上限。"
+          },
+          "pronunciationGuide": {
+            "ja": "しょき せっていを ふくむ ねんかん そうがくと、 かどうまでの しゃない こうすうを ならべて ひかく しましょう。 やくいんが きょよう する じょうげんも かくにん できますか。",
+            "en": "/lɛts kəmˈpɛɹ ˈænjuəl ˈtoʊtəlz ˌɪnˈkludɪŋ ˈsɛˌtʌp ənd ˌɪnˈtɝnəl ˈɛfɚt tu lɔntʃ. kæn wi ˈɔlsoʊ kənˈfɝm ðə ɪɡˈzɛkjətɪvz ' ˈsilɪŋ?/",
+            "zh": "Wǒ men bǐ jiào bāo hán shè dìng fèi yǔ shàng xiàn nèi bù gōng shí de nián dù zǒng é， yě qǐng què rèn zhǔ guǎn kě jiē shòu de shàng xiàn。"
           },
           "axisScores": {
             "discovery": 20,
@@ -297,6 +327,11 @@
             "en": "We provide a dedicated manager and analytics features.",
             "zh": "我們提供專任窗口與分析功能。"
           },
+          "pronunciationGuide": {
+            "ja": "とうしゃには せんにん たんとうと ぶんせき きのうが あります。",
+            "en": "/wi pɹəˈvaɪd ə ˈdɛdəkeɪtəd ˈmænədʒɚ ənd ˌænəˈlɪtɪks ˈfitʃɚz./",
+            "zh": "Wǒ men tí gōng zhuān rèn chuāng kǒu yǔ fēn xī gōng néng。"
+          },
           "axisScores": {
             "discovery": 5,
             "value-articulation": 15,
@@ -327,6 +362,11 @@
             "ja": "初期設定が別なら、競合の見積りは比較になりません。",
             "en": "If setup is separate, the competitor quote is not comparable.",
             "zh": "既然設定另計，競品報價就不能比較。"
+          },
+          "pronunciationGuide": {
+            "ja": "しょき せっていが べつなら、 きょうごうの みつもりは ひかくに なりません。",
+            "en": "/ɪf ˈsɛˌtʌp ɪz ˈsɛpɚˌeɪt, ðə kəmˈpɛtətɚ kwoʊt ɪz nɑt ˈkɑmpɚəbəl./",
+            "zh": "Jì rán shè dìng lìng jì， jìng pǐn bào jià jiù bù néng bǐ jiào。"
           },
           "axisScores": {
             "discovery": 4,
@@ -361,6 +401,11 @@
         "en": "If annual cost stays within ten percent, we can consider a three-year term.",
         "zh": "若年度總額能控制在一成差距內，我們可考慮三年合約。"
       },
+      "pronunciationGuide": {
+        "ja": "ねんかん そうがくを いちわり いないに おさめられるなら、 さんねん けいやくも けんとう できます。",
+        "en": "/ɪf ˈænjuəl kɑst steɪz wɪˈðɪn tɛn pɚˈsɛnt, wi kæn kənˈsɪdɚ ə θɹi - jɪɹ tɝm./",
+        "zh": "Ruò nián dù zǒng é néng kòng zhì zài yì chéng chā jù nèi， wǒ men kě kǎo lǜ sān nián hé yuē。"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "三年契約を条件に五％調整し、初期設定を含む総額表を提示します。残る差は運用工数削減で比較しましょう。",
             "en": "For a three-year term, we can adjust five percent, include setup, and compare the rest through labor savings.",
             "zh": "以三年合約為條件可調整百分之五，並提出含設定費的總額表；其餘差距以節省工時比較。"
+          },
+          "pronunciationGuide": {
+            "ja": "さんねん けいやくを じょうけんに ごぱーせんと ちょうせい し、 しょき せっていを ふくむ そうがくひょうを ていじ します。 のこる さは うんよう こうすう さくげんで ひかく しましょう。",
+            "en": "/fɔɹ ə θɹi - jɪɹ tɝm, wi kæn əˈdʒʌst faɪv pɚˈsɛnt, ˌɪnˈklud ˈsɛˌtʌp, ənd kəmˈpɛɹ ðə ɹɛst θɹu ˈleɪbɚ ˈseɪvɪŋz./",
+            "zh": "Yǐ sān nián hé yuē wèi tiáo jiàn kě tiáo zhěng bǎi fēn zhī wǔ， bìng tí chū hán shè dìng fèi de zǒng é biǎo； qí yú chā jù yǐ jié shěng gōng shí bǐ jiào。"
           },
           "axisScores": {
             "discovery": 20,
@@ -414,6 +464,11 @@
             "en": "I'll ask internally about a five-percent discount.",
             "zh": "我會在內部爭取百分之五折扣。"
           },
+          "pronunciationGuide": {
+            "ja": "しゃないに ごぱーせんと ねびきで そうだん して みます。",
+            "en": "/aɪl æsk ˌɪnˈtɝnəli əˈbaʊt ə faɪv - pɚˈsɛnt dɪˈskaʊnt./",
+            "zh": "Wǒ huì zài nèi bù zhēng qǔ bǎi fēn zhī wǔ zhé kòu。"
+          },
           "axisScores": {
             "discovery": 4,
             "value-articulation": 4,
@@ -444,6 +499,11 @@
             "ja": "三年なら一割下げます。今ここで決めてください。",
             "en": "For three years, I'll cut ten percent. Decide now.",
             "zh": "簽三年就降一成，請現在決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "さんねんなら いちわり さげます。 いま ここで きめて ください。",
+            "en": "/fɔɹ θɹi jɪɹz, aɪl kʌt tɛn pɚˈsɛnt. ˌdɪˈsaɪd naʊ./",
+            "zh": "Qiān sān nián jiù jiàng yì chéng， qǐng xiàn zài jué dìng。"
           },
           "axisScores": {
             "discovery": 2,
@@ -478,6 +538,11 @@
         "en": "This feels like discount-or-leave pressure. I need to organize the comparison internally.",
         "zh": "我感覺被逼著在折扣或他家之間選擇，需要先整理內部比較資料。"
       },
+      "pronunciationGuide": {
+        "ja": "ねびきか たしゃかと せまられて いる ように かんじます。 ひかく ざいりょうを しゃないで せいり したいです。",
+        "en": "/ðɪs filz laɪk dɪˈskaʊnt - ɔɹ - liv ˈpɹɛʃɚ. aɪ nid tu ˈɔɹɡəˌnaɪz ðə kəmˈpɛɹəsən ˌɪnˈtɝnəli./",
+        "zh": "Wǒ gǎn jué bèi bī zhe zài zhé kòu huò tā jiā zhī jiān xuǎn zé， xū yào xiān zhěng lǐ nèi bù bǐ jiào zī liào。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "急がせる言い方になり失礼しました。年間総額、支援範囲、社内工数を一枚にまとめ、判断日を相談しましょう。",
             "en": "I'm sorry I created pressure. I'll summarize cost, support, and internal effort, then we can set a decision date.",
             "zh": "很抱歉造成壓力。我會整理年度總額、支援範圍與內部工時，再共同確認決策日期。"
+          },
+          "pronunciationGuide": {
+            "ja": "いそがせる いいかたに なり しつれい しました。 ねんかん そうがく、 しえん はんい、 しゃない こうすうを いちまいに まとめ、 はんだんびを そうだん しましょう。",
+            "en": "/aɪm ˈsɑɹi aɪ kɹiˈeɪtəd ˈpɹɛʃɚ. aɪl ˈsʌmɚˌaɪz kɑst, səˈpɔɹt, ənd ˌɪnˈtɝnəl ˈɛfɚt, ðɛn wi kæn sɛt ə dɪˈsɪʒən deɪt./",
+            "zh": "Hěn bào qiàn zào chéng yā lì。 wǒ huì zhěng lǐ nián dù zǒng é、 zhī yuán fàn wéi yǔ nèi bù gōng shí， zài gòng tóng què rèn jué cè rì qī。"
           },
           "axisScores": {
             "discovery": 20,
@@ -531,6 +601,11 @@
             "en": "Then I'll update the quote and contact you next week.",
             "zh": "那我先更新報價，下週再聯絡。"
           },
+          "pronunciationGuide": {
+            "ja": "では みつもりだけ こうしん して、 らいしゅうまた れんらく します。",
+            "en": "/ðɛn aɪl əpˈdeɪt ðə kwoʊt ənd ˈkɑnˌtækt ju nɛkst wik./",
+            "zh": "Nà wǒ xiān gēng xīn bào jià， xià zhōu zài lián luò。"
+          },
           "axisScores": {
             "discovery": 5,
             "value-articulation": 5,
@@ -561,6 +636,11 @@
             "ja": "この条件で難しいなら、今回は見送るしかありません。",
             "en": "If these terms do not work, we will have to walk away.",
             "zh": "若這些條件不行，這次只能放棄。"
+          },
+          "pronunciationGuide": {
+            "ja": "この じょうけんで むずかしいなら、 こんかいは みおくるしか ありません。",
+            "en": "/ɪf ðiz tɝmz du nɑt wɝk, wi wɪl hæv tu wɔk əˈweɪ./",
+            "zh": "Ruò zhè xiē tiáo jiàn bù xíng， zhè cì zhǐ néng fàng qì。"
           },
           "axisScores": {
             "discovery": 0,
