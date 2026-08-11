@@ -112,6 +112,11 @@
         "en": "A permanent agreement is impossible, but we can consider interim steps to reduce field tensions.",
         "zh": "永久協議雖不可能，但可考慮降低現場緊張的臨時措施。"
       },
+      "pronunciationGuide": {
+        "ja": "こうきゅう ごういは むりでも、 げんばの きんちょうを さげる ざんてい そちなら けんとう できます。",
+        "en": "/ə ˈpɝmənənt əˈɡɹimənt ɪz ˌɪmˈpɑsəbəl, bʌt wi kæn kənˈsɪdɚ ˈɪntɚəm stɛps tu ɹəˈdus fild ˈtɛntʃənz./",
+        "zh": "Yǒng jiǔ xié yì suī bù kě néng， dàn kě kǎo lǜ jiàng dī xiàn chǎng jǐn zhāng de lín shí cuò shī。"
+      },
       "reaction": {
         "description": {
           "ja": "率直に問題を切り出す",
@@ -133,6 +138,11 @@
             "ja": "「恒久線を認めずに減らせる現場の事故リスク」を確認し、部隊間距離と巡回時間を30日だけ相互調整する。",
             "en": "Confirm the constraint; then mutually adjust force distance and patrol times for 30 days.",
             "zh": "先確認不承認永久邊界也能降低的現場事故風險，再先互相調整部隊距離與巡邏時段三十天。"
+          },
+          "pronunciationGuide": {
+            "ja": "「こうきゅうせんを みとめずに へらせる げんばの じこ りすく」を かくにん し、 ぶたいかん きょりと じゅんかい じかんを さんじ ゅうにちだけ そうご ちょうせい する。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn ˈmjutʃuəli əˈdʒʌst fɔɹs ˈdɪstəns ənd pəˈtɹoʊl taɪmz fɔɹ ˈθɝˌdi deɪz./",
+            "zh": "Xiān què rèn bù chéng rèn yǒng jiǔ biān jiè yě néng jiàng dī de xiàn chǎng shì gù fēng xiǎn， zài xiān hù xiāng tiáo zhěng bù duì jù lí yǔ xún luó shí duàn sān shí tiān。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -170,6 +180,11 @@
             "en": "mutually adjust force distance and patrol times for 30 days, without resolving the constraint.",
             "zh": "先互相調整部隊距離與巡邏時段三十天，但未處理不承認永久邊界也能降低的現場事故風險。"
           },
+          "pronunciationGuide": {
+            "ja": "ぶたいかん きょりと じゅんかい じかんを さんじ ゅうにちだけ そうご ちょうせい するが、「こうきゅうせんを みとめずに へらせる げんばの じこ りすく」への はいりょは あいまいです。",
+            "en": "/ˈmjutʃuəli əˈdʒʌst fɔɹs ˈdɪstəns ənd pəˈtɹoʊl taɪmz fɔɹ ˈθɝˌdi deɪz, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Xiān hù xiāng tiáo zhěng bù duì jù lí yǔ xún luó shí duàn sān shí tiān， dàn wèi chǔ lǐ bù chéng rèn yǒng jiǔ biān jiè yě néng jiàng dī de xiàn chǎng shì gù fēng xiǎn。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -200,6 +215,11 @@
             "ja": "「恒久線を認めずに減らせる現場の事故リスク」を退け、自国案への即時同意を求めます。",
             "en": "Ignore field risks that can be reduced without recognizing a permanent line; demand acceptance.",
             "zh": "否定不承認永久邊界也能降低的現場事故風險並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「こうきゅうせんを みとめずに へらせる げんばの じこ りすく」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ fild ɹɪsks ðæt kæn bi ɹəˈdust wɪˈθaʊt ˈɹɛkəɡˌnaɪzɪŋ ə ˈpɝmənənt laɪn; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng bù chéng rèn yǒng jiǔ biān jiè yě néng jiàng dī de xiàn chǎng shì gù fēng xiǎn bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
@@ -234,6 +254,11 @@
         "en": "How much can you share about verification methods and wording that preserves sovereignty claims, which blocks agreement?",
         "zh": "阻礙協議的履約查證方式與不損主權主張的措辭，你能透露到什麼程度？"
       },
+      "pronunciationGuide": {
+        "ja": "ごういを はばむ「りこうを かくにん する しゅだんと、 しゅけん しゅちょうを がいさない もんごん」を、 どこまで きょうゆう できますか？",
+        "en": "/haʊ mʌtʃ kæn ju ʃɛɹ əˈbaʊt ˌvɛɹəfəˈkeɪʃən ˈmɛθədz ənd ˈwɝdɪŋ ðæt pɹəˈzɝvz ˈsɑvɹənti kleɪmz, wɪtʃ blɑks əˈɡɹimənt?/",
+        "zh": "Zǔ ài xié yì de lǚ yuē chá zhèng fāng shì yǔ bù sǔn zhǔ quán zhǔ zhāng de cuò cí， nǐ néng tòu lù dào shén me chéng dù？"
+      },
       "reaction": {
         "description": {
           "ja": "説明や確認を求める",
@@ -255,6 +280,11 @@
             "ja": "「履行を確認する手段と、主権主張を害さない文言」を確認し、共同記録と第三者観察を使い、権利不放棄条項を加える。",
             "en": "Confirm the constraint; then use joint logs and outside observation with a no-waiver clause.",
             "zh": "先確認履約查證方式與不損主權主張的措辭，再採共同紀錄與第三方觀察，加入不放棄權利條款。"
+          },
+          "pronunciationGuide": {
+            "ja": "「りこうを かくにん する しゅだんと、 しゅけん しゅちょうを がいさない もんごん」を かくにん し、 きょうどう きろくと だいさんしゃ かんさつを つかい、 けんり ふ ほうき じょうこうを くわえる。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn jus dʒɔɪnt lɔɡz ənd ˈaʊtˈsaɪd ˌɑbzɚˈveɪʃən wɪð ə noʊ - ˈweɪvɚ klɔz./",
+            "zh": "Xiān què rèn lǚ yuē chá zhèng fāng shì yǔ bù sǔn zhǔ quán zhǔ zhāng de cuò cí， zài cǎi gòng tóng jì lù yǔ dì sān fāng guān chá， jiā rù bú fàng qì quán lì tiáo kuǎn。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -297,6 +327,11 @@
             "en": "use joint logs and outside observation with a no-waiver clause, without resolving the constraint.",
             "zh": "採共同紀錄與第三方觀察，加入不放棄權利條款，但未處理履約查證方式與不損主權主張的措辭。"
           },
+          "pronunciationGuide": {
+            "ja": "きょうどう きろくと だいさんしゃ かんさつを つかい、 けんり ふ ほうき じょうこうを くわえるが、「りこうを かくにん する しゅだんと、 しゅけん しゅちょうを がいさない もんごん」への はいりょは あいまいです。",
+            "en": "/jus dʒɔɪnt lɔɡz ənd ˈaʊtˈsaɪd ˌɑbzɚˈveɪʃən wɪð ə noʊ - ˈweɪvɚ klɔz, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Cǎi gòng tóng jì lù yǔ dì sān fāng guān chá， jiā rù bú fàng qì quán lì tiáo kuǎn， dàn wèi chǔ lǐ lǚ yuē chá zhèng fāng shì yǔ bù sǔn zhǔ quán zhǔ zhāng de cuò cí。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -327,6 +362,11 @@
             "ja": "「履行を確認する手段と、主権主張を害さない文言」を退け、自国案への即時同意を求めます。",
             "en": "Ignore verification methods and wording that preserves sovereignty claims; demand acceptance.",
             "zh": "否定履約查證方式與不損主權主張的措辭並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「りこうを かくにん する しゅだんと、 しゅけん しゅちょうを がいさない もんごん」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ ˌvɛɹəfəˈkeɪʃən ˈmɛθədz ənd ˈwɝdɪŋ ðæt pɹəˈzɝvz ˈsɑvɹənti kleɪmz; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng lǚ yuē chá zhèng fāng shì yǔ bù sǔn zhǔ quán zhǔ zhāng de cuò cí bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
@@ -361,6 +401,11 @@
         "en": "Can we set conditions and timing to set a hotline, a 48-hour review, and joint renewal decisions?",
         "zh": "可以設定條件與期限來設定熱線、四十八小時調查與聯合委員會續期決定嗎？"
       },
+      "pronunciationGuide": {
+        "ja": "ちょくつう れんらく、 よんじ ゅうはちじかん ちょうさ、 きょうどう いいんかいでの えんちょう はんだんを さだめる ための じょうけんと きげんを さだめられますか？",
+        "en": "/kæn wi sɛt kənˈdɪʃənz ənd ˈtaɪmɪŋ tu sɛt ə ˈhɑtˌlaɪn, ə ˈfɔɹti eɪt - ˈaʊɚ ˌɹivˈju, ənd dʒɔɪnt ɹɪˈnuəl dɪˈsɪʒənz?/",
+        "zh": "Kě yǐ shè dìng tiáo jiàn yǔ qī xiàn lái shè dìng rè xiàn、 sì shí bā xiǎo shí diào chá yǔ lián hé wěi yuán huì xù qī jué dìng ma？"
+      },
       "reaction": {
         "description": {
           "ja": "次の行動を確かめる",
@@ -382,6 +427,11 @@
             "ja": "「現場違反時の連絡順序、調査期限、措置停止条件」を確認し、直通連絡、48時間調査、共同委員会での延長判断を定める。",
             "en": "Confirm the constraint; then set a hotline, a 48-hour review, and joint renewal decisions.",
             "zh": "先確認現場違規後的聯絡順序、調查期限與暫停條件，再設定熱線、四十八小時調查與聯合委員會續期決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "「げんば いはんじの れんらく じゅんじょ、 ちょうさ きげん、 そち ていし じょうけん」を かくにん し、 ちょくつう れんらく、 よんじ ゅうはちじかん ちょうさ、 きょうどう いいんかいでの えんちょう はんだんを さだめる。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn sɛt ə ˈhɑtˌlaɪn, ə ˈfɔɹti eɪt - ˈaʊɚ ˌɹivˈju, ənd dʒɔɪnt ɹɪˈnuəl dɪˈsɪʒənz./",
+            "zh": "Xiān què rèn xiàn chǎng wéi guī hòu de lián luò shùn xù、 diào chá qī xiàn yǔ zàn tíng tiáo jiàn， zài shè dìng rè xiàn、 sì shí bā xiǎo shí diào chá yǔ lián hé wěi yuán huì xù qī jué dìng。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -414,6 +464,11 @@
             "en": "set a hotline, a 48-hour review, and joint renewal decisions, without resolving the constraint.",
             "zh": "設定熱線、四十八小時調查與聯合委員會續期決定，但未處理現場違規後的聯絡順序、調查期限與暫停條件。"
           },
+          "pronunciationGuide": {
+            "ja": "ちょくつう れんらく、 よんじ ゅうはちじかん ちょうさ、 きょうどう いいんかいでの えんちょう はんだんを さだめるが、「げんば いはんじの れんらく じゅんじょ、 ちょうさ きげん、 そち ていし じょうけん」への はいりょは あいまいです。",
+            "en": "/sɛt ə ˈhɑtˌlaɪn, ə ˈfɔɹti eɪt - ˈaʊɚ ˌɹivˈju, ənd dʒɔɪnt ɹɪˈnuəl dɪˈsɪʒənz, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Shè dìng rè xiàn、 sì shí bā xiǎo shí diào chá yǔ lián hé wěi yuán huì xù qī jué dìng， dàn wèi chǔ lǐ xiàn chǎng wéi guī hòu de lián luò shùn xù、 diào chá qī xiàn yǔ zàn tíng tiáo jiàn。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -444,6 +499,11 @@
             "ja": "「現場違反時の連絡順序、調査期限、措置停止条件」を退け、自国案への即時同意を求めます。",
             "en": "Ignore contact order, investigation deadline, and suspension triggers after an incident; demand acceptance.",
             "zh": "否定現場違規後的聯絡順序、調查期限與暫停條件並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「げんば いはんじの れんらく じゅんじょ、 ちょうさ きげん、 そち ていし じょうけん」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ ˈkɑnˌtækt ˈɔɹdɚ, ˌɪnˌvɛstəˈɡeɪʃən ˈdɛdˌlaɪn, ənd səˈspɛnʃən ˈtɹɪɡɚz ˈæftɚ æn ˈɪnsədənt; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng xiàn chǎng wéi guī hòu de lián luò shùn xù、 diào chá qī xiàn yǔ zàn tíng tiáo jiàn bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
@@ -478,6 +538,11 @@
         "en": "It is hard to continue after you dismissed how calling interim steps territorial surrender destroyed negotiating room.",
         "zh": "你輕視把暫定措施稱為放棄領土後，談判空間消失的影響，讓談判難以繼續。"
       },
+      "pronunciationGuide": {
+        "ja": "「ざんてい そちを りょうど ほうきと ひょうげん され、 こうしょう よちを うしなった えいきょう」を けいし され、 こうしょうを つづけ にくく なりました。",
+        "en": "/ɪt ɪz hɑɹd tu kənˈtɪnju ˈæftɚ ju dɪˈsmɪst haʊ ˈkɔlɪŋ ˈɪntɚəm stɛps ˌtɛɹɪˈtɔɹiəl sɚˈɛndɚ dɪˈstɹɔɪd nɪˈɡoʊʃiˌeɪtɪŋ ɹum./",
+        "zh": "Nǐ qīng shì bǎ zàn dìng cuò shī chēng wèi fàng qì lǐng tǔ hòu， tán pàn kōng jiān xiāo shī de yǐng xiǎng， ràng tán pàn nán yǐ jì xù。"
+      },
       "reaction": {
         "description": {
           "ja": "対話を続けられるか見極める",
@@ -499,6 +564,11 @@
             "ja": "「暫定措置を領土放棄と表現され、交渉余地を失った影響」を確認し、領土判断ではないと明記し、事故防止だけを議題に戻す。",
             "en": "Confirm the constraint; then state that territory is unaffected and return only to incident prevention.",
             "zh": "先確認把暫定措施稱為放棄領土後，談判空間消失的影響，再明示不影響領土立場，只回到事故預防議題。"
+          },
+          "pronunciationGuide": {
+            "ja": "「ざんてい そちを りょうど ほうきと ひょうげん され、 こうしょう よちを うしなった えいきょう」を かくにん し、 りょうど はんだんでは ないと めいき し、 じこ ぼうしだけを ぎだいに もどす。",
+            "en": "/kənˈfɝm ðə kənˈstɹeɪnt; ðɛn steɪt ðæt ˈtɛɹɪˌtɔɹi ɪz ˌʌnəˈfɛktɪd ənd ɹɪˈtɝn ˈoʊnli tu ˈɪnsədənt pɹiˈvɛnʃən./",
+            "zh": "Xiān què rèn bǎ zàn dìng cuò shī chēng wéi fàng qì lǐng tǔ hòu， tán pàn kōng jiān xiāo shī de yǐng xiǎng， zài míng shì bù yǐng xiǎng lǐng tǔ lì chǎng， zhī huí dào shì gù yù fáng yì tí。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -531,6 +601,11 @@
             "en": "state that territory is unaffected and return only to incident prevention, without resolving the constraint.",
             "zh": "明示不影響領土立場，只回到事故預防議題，但未處理把暫定措施稱為放棄領土後，談判空間消失的影響。"
           },
+          "pronunciationGuide": {
+            "ja": "りょうど はんだんでは ないと めいき し、 じこ ぼうしだけを ぎだいに もどすが、「ざんてい そちを りょうど ほうきと ひょうげん され、 こうしょう よちを うしなった えいきょう」への はいりょは あいまいです。",
+            "en": "/steɪt ðæt ˈtɛɹɪˌtɔɹi ɪz ˌʌnəˈfɛktɪd ənd ɹɪˈtɝn ˈoʊnli tu ˈɪnsədənt pɹiˈvɛnʃən, wɪˈθaʊt ɹiˈzɑlvɪŋ ðə kənˈstɹeɪnt./",
+            "zh": "Míng shì bù yǐng xiǎng lǐng tǔ lì chǎng， zhī huí dào shì gù yù fáng yì tí， dàn wèi chǔ lǐ bǎ zàn dìng cuò shī chēng wéi fàng qì lǐng tǔ hòu， tán pàn kōng jiān xiāo shī de yǐng xiǎng。"
+          },
           "axisScores": {
             "interest-discovery": 13,
             "face-saving": 14,
@@ -561,6 +636,11 @@
             "ja": "「暫定措置を領土放棄と表現され、交渉余地を失った影響」を退け、自国案への即時同意を求めます。",
             "en": "Ignore how calling interim steps territorial surrender destroyed negotiating room; demand acceptance.",
             "zh": "否定把暫定措施稱為放棄領土後，談判空間消失的影響並要求立即接受我方方案。"
+          },
+          "pronunciationGuide": {
+            "ja": "「ざんてい そちを りょうど ほうきと ひょうげん され、 こうしょう よちを うしなった えいきょう」を しりぞけ、 じこくあんへの そくじ どういを もとめます。",
+            "en": "/ˌɪɡˈnɔɹ haʊ ˈkɔlɪŋ ˈɪntɚəm stɛps ˌtɛɹɪˈtɔɹiəl sɚˈɛndɚ dɪˈstɹɔɪd nɪˈɡoʊʃiˌeɪtɪŋ ɹum; dɪˈmænd ækˈsɛptəns./",
+            "zh": "Fǒu dìng bǎ zàn dìng cuò shī chēng wéi fàng qì lǐng tǔ hòu， tán pàn kōng jiān xiāo shī de yǐng xiǎng bìng yāo qiú lì jí jiē shòu wǒ fāng fāng àn。"
           },
           "axisScores": {
             "interest-discovery": 2,
