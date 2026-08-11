@@ -224,6 +224,22 @@
         "en": "Clinical Communication",
         "zh": "醫療溝通"
       }
+    },
+    {
+      "id": "crisis-negotiation",
+      "branching": {
+        "requirement": "required",
+        "rationale": {
+          "ja": "緊張度と協力度に応じて安全な対話経路が変わるため分岐が必要です。実務手順ではなく傾聴を訓練します。",
+          "en": "Branching is required as tension and cooperation change the safe dialogue path. The focus is listening, not operational procedure.",
+          "zh": "緊張與合作程度會改變安全對話路徑，因此必須分支；重點是傾聽而非實務程序。"
+        }
+      },
+      "title": {
+        "ja": "危機場面の対話",
+        "en": "Crisis Communication",
+        "zh": "危機情境溝通"
+      }
     }
   ],
   "scenarios": [
@@ -1468,6 +1484,33 @@
         "zh": "感覺症狀被輕視"
       },
       "path": "./scenarios/symptoms-feel-dismissed.json"
+    },
+    {
+      "id": "distressed-caller",
+      "categoryId": "crisis-negotiation",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "危機場面の対話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Crisis Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合危機情境溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "強く動揺した通話相手",
+        "en": "A Distressed Caller",
+        "zh": "情緒激動的來電者"
+      },
+      "path": "./scenarios/distressed-caller.json"
     }
   ]
 }
