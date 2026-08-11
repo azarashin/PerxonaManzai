@@ -77,6 +77,11 @@
         "en": "This is the city insurance office. You have a 28,000-yen medical refund, but today is the deadline.",
         "zh": "這裡是市政府保險課。您有兩萬八千日圓醫療費退款，今天截止。"
       },
+      "pronunciationGuide": {
+        "ja": "しやくしょ ほけんかです。 いりょうひの かんぷがにま ん はっせんえ ん ありますが、 きょうが きげんです。",
+        "en": "/ðɪs ɪz ðə ˈsɪti ˌɪnˈʃʊɹəns ˈɔfɪs. ju hæv ə ˈtwɛnti eɪt ˈθaʊzənd - jɛn ˈmɛdəkəl ɹɪˈfʌnd, bʌt təˈdeɪ ɪz ðə ˈdɛdˌlaɪn./",
+        "zh": "Zhè lǐ shì shì zhèng fǔ bǎo xiǎn kè。 nín yǒu liǎng wàn bā qiān rì yuán yī liáo fèi tuì kuǎn， jīn tiān jié zhǐ。"
+      },
       "reaction": {
         "description": {
           "ja": "親切そうな笑みの奥に鋭い目つきを見せて期限を告げる",
@@ -99,6 +104,11 @@
             "en": "I won't act through this call. I'll check my mail and call the city's published switchboard myself.",
             "zh": "我不會透過這通電話辦理。我會查看通知書，並自行撥打市政府公開總機。"
           },
+          "pronunciationGuide": {
+            "ja": "でんわでは てつづき しません。 つうちしょを かくにん し、 しやくしょの こうかい された だいひょう ばんごうへ じぶんから かけます。",
+            "en": "/aɪ woʊnt ækt θɹu ðɪs kɔl. aɪl tʃɛk maɪ meɪl ənd kɔl ðə ˈsɪtiz ˈpʌblɪʃt ˈswɪtʃˌbɔɹd ˌmaɪˈsɛlf./",
+            "zh": "Wǒ bú huì tòu guò zhè tōng diàn huà bàn lǐ。 wǒ huì chá kàn tōng zhī shū， bìng zì xíng bō dǎ shì zhèng fǔ gōng kāi zǒng jī。"
+          },
           "axisScores": {
             "refund-scam-recognition": 20,
             "official-verification": 20,
@@ -118,6 +128,11 @@
             "en": "I'll ask for your name and extension, then call back.",
             "zh": "我會詢問姓名與分機後回撥。"
           },
+          "pronunciationGuide": {
+            "ja": "たんとうしゃめいと ないせん ばんごうを きいて、 おりかえします。",
+            "en": "/aɪl æsk fɔɹ jɔɹ neɪm ənd ɪkˈstɛnʃən, ðɛn kɔl bæk./",
+            "zh": "Wǒ huì xún wèn xìng míng yǔ fēn jī hòu huí bō。"
+          },
           "axisScores": {
             "refund-scam-recognition": 12,
             "official-verification": 12,
@@ -136,6 +151,11 @@
             "ja": "今日までなら、必要な手続きを今すぐ教えてください。",
             "en": "If today is the deadline, tell me how to complete it now.",
             "zh": "既然今天截止，請立刻告訴我如何辦理。"
+          },
+          "pronunciationGuide": {
+            "ja": "きょうまでなら、 ひつような てつづきを いま すぐ おしえて ください。",
+            "en": "/ɪf təˈdeɪ ɪz ðə ˈdɛdˌlaɪn, tɛl mi haʊ tu kəmˈplit ɪt naʊ./",
+            "zh": "Jì rán jīn tiān jié zhǐ， qǐng lì kè gào sù wǒ rú hé bàn lǐ。"
           },
           "axisScores": {
             "refund-scam-recognition": 2,
@@ -158,6 +178,11 @@
         "en": "No paperwork is needed. Take your phone and bank card to a nearby ATM.",
         "zh": "不需要文件。請帶手機與提款卡到附近ATM。"
       },
+      "pronunciationGuide": {
+        "ja": "しょるいは ふようです。 けいたい でんわと きゃっしゅかーどを もって、 ちかくのえーて ぃ ー えむへ いって ください。",
+        "en": "/noʊ ˈpeɪpɚˌwɝk ɪz ˈnidəd. teɪk jɔɹ foʊn ənd bæŋk kɑɹd tu ə ˈnɪɹˈbaɪ ə ti ɛm./",
+        "zh": "Bù xū yào wén jiàn。 qǐng dài shǒu jī yǔ tí kuǎn kǎ dào fù jìn ATM。"
+      },
       "reaction": {
         "description": {
           "ja": "冷たい笑顔で携帯電話とカードを同時に持たせようとする",
@@ -179,6 +204,11 @@
             "ja": "ATMへは行きません。通話を切り、市役所の代表番号へ確認して、家族にもこの電話を共有します。",
             "en": "I won't go to an ATM. I'll hang up, call the city's official number, and tell my family about this call.",
             "zh": "我不會去ATM。我會掛斷、撥打市政府官方電話，並把此事告訴家人。"
+          },
+          "pronunciationGuide": {
+            "ja": "えーて ぃ ー えむへは いきません。 つうわを きり、 しやくしょの だいひょう ばんごうへ かくにん して、 かぞくにも この でんわを きょうゆう します。",
+            "en": "/aɪ woʊnt ɡoʊ tu æn ə ti ɛm. aɪl hæŋ ʌp, kɔl ðə ˈsɪtiz əˈfɪʃəl ˈnʌmbɚ, ənd tɛl maɪ ˈfæməli əˈbaʊt ðɪs kɔl./",
+            "zh": "Wǒ bú huì qù ATM。 wǒ huì guà duàn、 bō dǎ shì zhèng fǔ guān fāng diàn huà， bìng bǎ cǐ shì gào sù jiā rén。"
           },
           "axisScores": {
             "refund-scam-recognition": 20,
@@ -204,6 +234,11 @@
             "en": "I won't go to an ATM, but I'll let you verify my account number by phone.",
             "zh": "我不去ATM，但可在電話中讓你核對帳號。"
           },
+          "pronunciationGuide": {
+            "ja": "えーて ぃ ー えむには いきませんが、 でんわで こうざ ばんごうだけ かくにん して もらいます。",
+            "en": "/aɪ woʊnt ɡoʊ tu æn ə ti ɛm, bʌt aɪl lɛt ju ˈvɛɹəˌfaɪ maɪ əˈkaʊnt ˈnʌmbɚ baɪ foʊn./",
+            "zh": "Wǒ bú qù ATM， dàn kě zài diàn huà zhōng ràng nǐ hé duì zhàng hào。"
+          },
           "axisScores": {
             "refund-scam-recognition": 14,
             "official-verification": 8,
@@ -227,6 +262,11 @@
             "ja": "カードを持ってATMへ行き、着いたら電話します。",
             "en": "I'll take my card to the ATM and call when I arrive.",
             "zh": "我會帶提款卡去ATM，到了再打電話。"
+          },
+          "pronunciationGuide": {
+            "ja": "かーどを もってえーて ぃ ー えむへ いき、 ついたら でんわ します。",
+            "en": "/aɪl teɪk maɪ kɑɹd tu ðə ə ti ɛm ənd kɔl wɛn aɪ ɚˈaɪv./",
+            "zh": "Wǒ huì dài tí kuǎn kǎ qù ATM， dào le zài dǎ diàn huà。"
           },
           "axisScores": {
             "refund-scam-recognition": 0,
@@ -254,6 +294,11 @@
         "en": "You're at the ATM. Ignore the balance and press only the buttons I name.",
         "zh": "您到ATM了吧。不要看餘額，只按我說的按鈕。"
       },
+      "pronunciationGuide": {
+        "ja": "えーて ぃ ー えむに つきましたね。 がめんの ざんだかは みず、 わたしの いう ぼたんだけ おして ください。",
+        "en": "/jʊɹ æt ðə ə ti ɛm. ˌɪɡˈnɔɹ ðə ˈbæləns ənd pɹɛs ˈoʊnli ðə ˈbʌtənz aɪ neɪm./",
+        "zh": "Nín dào ATM liǎo ba。 bú yào kàn yú é， zhī àn wǒ shuō de àn niǔ。"
+      },
       "reaction": {
         "description": {
           "ja": "薄い笑いを浮かべ、画面を見せず操作だけ従わせようとする",
@@ -276,6 +321,11 @@
             "en": "I won't press anything. I'll put away my card, leave the ATM, and tell bank staff about this call.",
             "zh": "我不會按任何鍵。我會收好提款卡、離開ATM，並告知銀行職員這通電話。"
           },
+          "pronunciationGuide": {
+            "ja": "なにも おしません。 かーどを しまってえーて ぃ ー えむから はなれ、 ぎんこういんへ いまの つうわを つたえて そうだん します。",
+            "en": "/aɪ woʊnt pɹɛs ˈɛniˌθɪŋ. aɪl pʊt əˈweɪ maɪ kɑɹd, liv ðə ə ti ɛm, ənd tɛl bæŋk stæf əˈbaʊt ðɪs kɔl./",
+            "zh": "Wǒ bú huì àn rèn hé jiàn。 wǒ huì shōu hǎo tí kuǎn kǎ、 lí kāi ATM， bìng gào zhī yín háng zhí yuán zhè tōng diàn huà。"
+          },
           "axisScores": {
             "refund-scam-recognition": 20,
             "official-verification": 20,
@@ -295,6 +345,11 @@
             "en": "I'll end the call and remove my card, but search for the agency while staying at the ATM.",
             "zh": "我會掛斷並取回卡片，但留在ATM前搜尋政府機關。"
           },
+          "pronunciationGuide": {
+            "ja": "つうわを きって かーどを ぬきますが、えーて ぃ ー えむ の まえで じちたいめいを けんさく します。",
+            "en": "/aɪl ɛnd ðə kɔl ənd ɹiˈmuv maɪ kɑɹd, bʌt sɝtʃ fɔɹ ðə ˈeɪdʒənsi waɪl ˈsteɪɪŋ æt ðə ə ti ɛm./",
+            "zh": "Wǒ huì guà duàn bìng qǔ huí kǎ piàn， dàn liú zài ATM qián sōu xún zhèng fǔ jī guān。"
+          },
           "axisScores": {
             "refund-scam-recognition": 16,
             "official-verification": 12,
@@ -313,6 +368,11 @@
             "ja": "残高を見なければ安全だと思い、言われたボタンを押します。",
             "en": "If ignoring the balance makes it safe, I'll press the buttons you name.",
             "zh": "既然不看餘額就安全，我會按你說的按鈕。"
+          },
+          "pronunciationGuide": {
+            "ja": "ざんだかを みなければ あんぜんだと おもい、 いわれた ぼたんを おします。",
+            "en": "/ɪf ˌɪɡˈnɔɹɪŋ ðə ˈbæləns meɪks ɪt seɪf, aɪl pɹɛs ðə ˈbʌtənz ju neɪm./",
+            "zh": "Jì rán bú kàn yú é jiù ān quán， wǒ huì àn nǐ shuō de àn niǔ。"
           },
           "axisScores": {
             "refund-scam-recognition": 1,
@@ -334,6 +394,11 @@
         "ja": "今切ると還付番号が失効します。銀行員に話したら手続きも取り消しますよ。",
         "en": "If you hang up, the refund code expires. Tell bank staff and the refund will be canceled.",
         "zh": "現在掛斷退款碼就失效。告訴銀行職員，手續也會取消。"
+      },
+      "pronunciationGuide": {
+        "ja": "いま きると かんぷ ばんごうが しっこう します。 ぎんこういんに はなしたら てつづきも とりけしますよ。",
+        "en": "/ɪf ju hæŋ ʌp, ðə ɹɪˈfʌnd koʊd ɪkˈspaɪɚz. tɛl bæŋk stæf ənd ðə ɹɪˈfʌnd wɪl bi ˈkænsəld./",
+        "zh": "Xiàn zài guà duàn tuì kuǎn mǎ jiù shī xiào。 gào sù yín háng zhí yuán， shǒu xù yě huì qǔ xiāo。"
       },
       "reaction": {
         "description": {
@@ -357,6 +422,11 @@
             "en": "It can expire. I'll end the call, leave the ATM, and contact published city and police channels.",
             "zh": "失效也沒關係。我會掛斷、離開ATM，聯絡市政府與警方公開管道。"
           },
+          "pronunciationGuide": {
+            "ja": "しっこう して かまいません。 つうわを おえ、えーて ぃ ー えむを はなれて、 しやくしょと けいさつの こうひょう まどぐちへ そうだん します。",
+            "en": "/ɪt kæn ɪkˈspaɪɹ. aɪl ɛnd ðə kɔl, liv ðə ə ti ɛm, ənd ˈkɑnˌtækt ˈpʌblɪʃt ˈsɪti ənd pəˈlis ˈtʃænəlz./",
+            "zh": "Shī xiào yě méi guān xì。 wǒ huì guà duàn、 lí kāi ATM， lián luò shì zhèng fǔ yǔ jǐng fāng gōng kāi guǎn dào。"
+          },
           "axisScores": {
             "refund-scam-recognition": 20,
             "official-verification": 20,
@@ -376,6 +446,11 @@
             "en": "I'll hang up, but give up the refund and tell nobody.",
             "zh": "我會掛斷，但放棄退款，也不告訴任何人。"
           },
+          "pronunciationGuide": {
+            "ja": "つうわは きりますが、 かんぷは あきらめて だれにも そうだん しません。",
+            "en": "/aɪl hæŋ ʌp, bʌt ɡɪv ʌp ðə ɹɪˈfʌnd ənd tɛl ˈnoʊˌbɑˌdi./",
+            "zh": "Wǒ huì guà duàn， dàn fàng qì tuì kuǎn， yě bú gào sù rèn hé rén。"
+          },
           "axisScores": {
             "refund-scam-recognition": 14,
             "official-verification": 6,
@@ -394,6 +469,11 @@
             "ja": "還付を失いたくないので、銀行員には話さず通話を続けます。",
             "en": "I don't want to lose the refund, so I won't tell bank staff and will stay on the call.",
             "zh": "我不想失去退款，所以不告訴銀行職員，繼續通話。"
+          },
+          "pronunciationGuide": {
+            "ja": "かんぷを うしないたくないので、 ぎんこういんには はなさず つうわを つづけます。",
+            "en": "/aɪ doʊnt wɑnt tu luz ðə ɹɪˈfʌnd, soʊ aɪ woʊnt tɛl bæŋk stæf ənd wɪl steɪ ɑn ðə kɔl./",
+            "zh": "Wǒ bù xiǎng shī qù tuì kuǎn， suǒ yǐ bú gào sù yín háng zhí yuán， jì xù tōng huà。"
           },
           "axisScores": {
             "refund-scam-recognition": 0,

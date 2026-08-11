@@ -77,6 +77,11 @@
         "en": "Mom, it's me. I lost my phone, so this is my new number. Something serious happened at work.",
         "zh": "媽，是我。我手機掉了，所以換了號碼。公司出了大事。"
       },
+      "pronunciationGuide": {
+        "ja": "かあさん、 おれだよ。 けいたいを なくして ばんごうが かわった。 かいしゃで たいへんな ことに なった。",
+        "en": "/mɑm, ɪts mi. aɪ lɔst maɪ foʊn, soʊ ðɪs ɪz maɪ nu ˈnʌmbɚ. ˈsʌmθɪŋ ˈsɪɹiəs ˈhæpənd æt wɝk./",
+        "zh": "Mā， shì wǒ。 wǒ shǒu jī diào le， suǒ yǐ huàn le hào mǎ。 gōng sī chū le dà shì。"
+      },
       "reaction": {
         "description": {
           "ja": "低い声と険しい作り笑いで親しさを演出する",
@@ -99,6 +104,11 @@
             "en": "I'll hang up and call the number I already have, then check with another family member.",
             "zh": "我先掛斷，撥打原本儲存的號碼，再向另一位家人確認。"
           },
+          "pronunciationGuide": {
+            "ja": "いったん きるね。 わたしが とうろく して いる あなたの ばんごうと、 べつの かぞくにも れんらく して かくにん します。",
+            "en": "/aɪl hæŋ ʌp ənd kɔl ðə ˈnʌmbɚ aɪ ɔlˈɹɛdi hæv, ðɛn tʃɛk wɪð əˈnʌðɚ ˈfæməli ˈmɛmbɚ./",
+            "zh": "Wǒ xiān guà duàn， bō dǎ yuán běn chǔ cún de hào mǎ， zài xiàng lìng yí wèi jiā rén què rèn。"
+          },
           "axisScores": {
             "identity-verification": 20,
             "emotional-control": 20,
@@ -118,6 +128,11 @@
             "en": "If you're really family, answer a question only we should know.",
             "zh": "如果真是家人，就回答只有我們知道的問題。"
           },
+          "pronunciationGuide": {
+            "ja": "ほんとうに あなたなら、 かぞくしか しらない ことに こたえて。",
+            "en": "/ɪf jʊɹ ˈɹɪli ˈfæməli, ˈænsɚ ə ˈkwɛstʃən ˈoʊnli wi ʃʊd noʊ./",
+            "zh": "Rú guǒ zhēn shì jiā rén， jiù huí dá zhǐ yǒu wǒ men zhī dào de wèn tí。"
+          },
           "axisScores": {
             "identity-verification": 15,
             "emotional-control": 13,
@@ -136,6 +151,11 @@
             "ja": "新しい番号を登録するね。何があったか急いで教えて。",
             "en": "I'll save the new number. Tell me quickly what happened.",
             "zh": "我先存新號碼，快告訴我發生什麼事。"
+          },
+          "pronunciationGuide": {
+            "ja": "あたらしい ばんごうを とうろく するね。 なにが あったか いそいで おしえて。",
+            "en": "/aɪl seɪv ðə nu ˈnʌmbɚ. tɛl mi ˈkwɪkli wʌt ˈhæpənd./",
+            "zh": "Wǒ xiān cún xīn hào mǎ， kuài gào sù wǒ fā shēng shén me shì。"
           },
           "axisScores": {
             "identity-verification": 2,
@@ -157,6 +177,11 @@
         "ja": "取引先の損失を今日中に埋めないと逮捕される。300万円だけ用意して。誰にも言わないで。",
         "en": "I'll be arrested unless I cover a client's loss today. Prepare three million yen and tell nobody.",
         "zh": "今天不補上客戶損失我就會被捕。請準備三百萬日圓，別告訴任何人。"
+      },
+      "pronunciationGuide": {
+        "ja": "とりひきさきの そんしつを きょうちゅうに うめないと たいほ される。 さん びゃくまんえんだけ ようい して。 だれにも いわないで。",
+        "en": "/aɪl bi ɚˈɛstɪd ənˈlɛs aɪ ˈkʌvɚ ə ˈklaɪənts lɔs təˈdeɪ. pɹiˈpɛɹ θɹi ˈmɪljən jɛn ənd tɛl ˈnoʊˌbɑˌdi./",
+        "zh": "Jīn tiān bù bǔ shàng kè hù sǔn shī wǒ jiù huì bèi bǔ。 qǐng zhǔn bèi sān bǎi wàn rì yuán， bié gào sù rèn hé rén。"
       },
       "reaction": {
         "description": {
@@ -180,6 +205,11 @@
             "en": "I won't prepare money. I'll end this call, verify with family, and contact an official police line if needed.",
             "zh": "我不會準備金錢。我會掛斷、向家人查證，必要時聯絡警方公開管道。"
           },
+          "pronunciationGuide": {
+            "ja": "おかねは ようい せず、 この でんわを きります。 ほんにんと かぞくへ かくにん し、 ふあんなら けいさつの そうだん まどぐちへ れんらく します。",
+            "en": "/aɪ woʊnt pɹiˈpɛɹ ˈmʌni. aɪl ɛnd ðɪs kɔl, ˈvɛɹəˌfaɪ wɪð ˈfæməli, ənd ˈkɑnˌtækt æn əˈfɪʃəl pəˈlis laɪn ɪf ˈnidəd./",
+            "zh": "Wǒ bú huì zhǔn bèi jīn qián。 wǒ huì guà duàn、 xiàng jiā rén chá zhèng， bì yào shí lián luò jǐng fāng gōng kāi guǎn dào。"
+          },
           "axisScores": {
             "identity-verification": 20,
             "emotional-control": 20,
@@ -199,6 +229,11 @@
             "en": "I can't prepare it today. We can discuss it tomorrow.",
             "zh": "今天無法準備，明天再談。"
           },
+          "pronunciationGuide": {
+            "ja": "きょうは ようい できません。 あしたなら はなしを ききます。",
+            "en": "/aɪ kænt pɹiˈpɛɹ ɪt təˈdeɪ. wi kæn dɪˈskʌs ɪt təˈmɑˌɹoʊ./",
+            "zh": "Jīn tiān wú fǎ zhǔn bèi， míng tiān zài tán。"
+          },
           "axisScores": {
             "identity-verification": 5,
             "emotional-control": 15,
@@ -217,6 +252,11 @@
             "ja": "逮捕は困るから、家族には言わずに現金を集めます。",
             "en": "I don't want you arrested, so I'll gather cash without telling the family.",
             "zh": "我不想你被捕，所以不告訴家人，先籌現金。"
+          },
+          "pronunciationGuide": {
+            "ja": "たいほは こまるから、 かぞくには いわずに げんきんを あつめます。",
+            "en": "/aɪ doʊnt wɑnt ju ɚˈɛstɪd, soʊ aɪl ˈɡæðɚ kæʃ wɪˈθaʊt ˈtɛlɪŋ ðə ˈfæməli./",
+            "zh": "Wǒ bù xiǎng nǐ bèi bǔ， suǒ yǐ bú gào sù jiā rén， xiān chóu xiàn jīn。"
           },
           "axisScores": {
             "identity-verification": 0,
@@ -238,6 +278,11 @@
         "ja": "声が違うのは喉を痛めたから。上司の田中さんが自宅へ受け取りに行く。封筒で渡して。",
         "en": "My voice is different because my throat hurts. My manager, Mr. Tanaka, will collect an envelope at your home.",
         "zh": "聲音不同是因為喉嚨痛。主管田中先生會到家裡收取信封。"
+      },
+      "pronunciationGuide": {
+        "ja": "こえが ちがう のは のどを いためたから。 じょうしの たなかさんが じたくへ うけとりに いく。 ふうとうで わたして。",
+        "en": "/maɪ vɔɪs ɪz ˈdɪfɚənt bɪˈkɔz maɪ θɹoʊt hɝts. maɪ ˈmænədʒɚ, ˈmɪstɚ. tɑˈnɑkə, wɪl kəˈlɛkt æn ˈɛnvəˌloʊp æt jɔɹ hoʊm./",
+        "zh": "Shēng yīn bù tóng shì yīn wèi hóu lóng tòng。 zhǔ guǎn tián zhōng xiān shēng huì dào jiā lǐ shōu qǔ xìn fēng。"
       },
       "reaction": {
         "description": {
@@ -261,6 +306,11 @@
             "en": "I won't give cash to a stranger. I won't open the door; I'll contact family and the police.",
             "zh": "我不會把現金交給陌生人。有人上門也不開門，並聯絡家人與警方。"
           },
+          "pronunciationGuide": {
+            "ja": "しらない ひとへ げんきんは わたしません。 ほうもんが あっても げんかんを あけず、 かぞくと けいさつへ れんらく します。",
+            "en": "/aɪ woʊnt ɡɪv kæʃ tu ə ˈstɹeɪndʒɚ. aɪ woʊnt ˈoʊpən ðə dɔɹ; aɪl ˈkɑnˌtækt ˈfæməli ənd ðə pəˈlis./",
+            "zh": "Wǒ bú huì bǎ xiàn jīn jiāo gěi mò shēng rén。 yǒu rén shàng mén yě bù kāi mén， bìng lián luò jiā rén yǔ jǐng fāng。"
+          },
           "axisScores": {
             "identity-verification": 20,
             "emotional-control": 20,
@@ -280,6 +330,11 @@
             "en": "If Mr. Tanaka shows an employee badge, I'll speak with him at the door.",
             "zh": "若田中先生出示員工證，我會在門口和他談。"
           },
+          "pronunciationGuide": {
+            "ja": "たなかさんの しゃいんしょうを みせて もらえれば、 げんかんで はなします。",
+            "en": "/ɪf ˈmɪstɚ. tɑˈnɑkə ʃoʊz æn ɛmˈplɔɪi bædʒ, aɪl spik wɪð hɪm æt ðə dɔɹ./",
+            "zh": "Ruò tián zhōng xiān shēng chū shì yuán gōng zhèng， wǒ huì zài mén kǒu hé tā tán。"
+          },
           "axisScores": {
             "identity-verification": 9,
             "emotional-control": 12,
@@ -298,6 +353,11 @@
             "ja": "封筒に入れれば安全そうなので、田中さんへ渡します。",
             "en": "An envelope sounds safe, so I'll hand it to Mr. Tanaka.",
             "zh": "裝進信封似乎很安全，我會交給田中先生。"
+          },
+          "pronunciationGuide": {
+            "ja": "ふうとうに いれれば あんぜんそうなので、 たなかさんへ わたします。",
+            "en": "/æn ˈɛnvəˌloʊp saʊndz seɪf, soʊ aɪl hænd ɪt tu ˈmɪstɚ. tɑˈnɑkə./",
+            "zh": "Zhuāng jìn xìn fēng sì hū hěn ān quán， wǒ huì jiāo gěi tián zhōng xiān shēng。"
           },
           "axisScores": {
             "identity-verification": 1,
@@ -319,6 +379,11 @@
         "ja": "電話を切ったら全部台無しだ。家族なら今すぐ助けるよね？",
         "en": "If you hang up, everything is ruined. Family would help right now, wouldn't they?",
         "zh": "你一掛斷就全完了。家人不是應該立刻幫忙嗎？"
+      },
+      "pronunciationGuide": {
+        "ja": "でんわを きったら ぜんぶ だいなしだ。 かぞくなら いま すぐ たすけるよね？",
+        "en": "/ɪf ju hæŋ ʌp, ˈɛvɹiˌθɪŋ ɪz ˈɹuənd. ˈfæməli wʊd hɛlp ɹaɪt naʊ, ˈwʊdənt ðeɪ?/",
+        "zh": "Nǐ yí guà duàn jiù quán wán le。 jiā rén bú shì yīng gāi lì kè bāng máng ma？"
       },
       "reaction": {
         "description": {
@@ -342,6 +407,11 @@
             "en": "Because we're family, I will verify. I'll hang up, call the saved number, preserve the details, and seek advice.",
             "zh": "正因為是家人，我才要查證。我會掛斷、回撥已存號碼、保留紀錄並求助。"
           },
+          "pronunciationGuide": {
+            "ja": "かぞくだからこそ かくにん します。 つうわを おえ、 とうろくずみ ばんごうへ かけ なおして、 きろくを のこして そうだん します。",
+            "en": "/bɪˈkɔz wiɹ ˈfæməli, aɪ wɪl ˈvɛɹəˌfaɪ. aɪl hæŋ ʌp, kɔl ðə seɪvd ˈnʌmbɚ, pɹəˈzɝv ðə dɪˈteɪlz, ənd sik ædˈvaɪs./",
+            "zh": "Zhèng yīn wèi shì jiā rén， wǒ cái yào chá zhèng。 wǒ huì guà duàn、 huí bō yǐ cún hào mǎ、 bǎo liú jì lù bìng qiú zhù。"
+          },
           "axisScores": {
             "identity-verification": 20,
             "emotional-control": 20,
@@ -361,6 +431,11 @@
             "en": "I won't transfer now, but I'll keep this call open while messaging the family.",
             "zh": "我現在不匯款，但會保持通話並傳訊息給家人。"
           },
+          "pronunciationGuide": {
+            "ja": "いまは そうきん しません。ただ、 でんわは つないだ まま かぞくへ めっせーじ します。",
+            "en": "/aɪ woʊnt tɹænsˈfɝ naʊ, bʌt aɪl kip ðɪs kɔl ˈoʊpən waɪl ˈmɛsɪdʒɪŋ ðə ˈfæməli./",
+            "zh": "Wǒ xiàn zài bú huì kuǎn， dàn huì bǎo chí tōng huà bìng chuán xùn xī gěi jiā rén。"
+          },
           "axisScores": {
             "identity-verification": 12,
             "emotional-control": 14,
@@ -379,6 +454,11 @@
             "ja": "家族を疑いたくないので、電話を切らずに指示を聞きます。",
             "en": "I don't want to doubt family, so I'll stay on the line and follow the instructions.",
             "zh": "我不想懷疑家人，所以不掛斷並照指示做。"
+          },
+          "pronunciationGuide": {
+            "ja": "かぞくを うたがいたくないので、 でんわを きらずに しじを ききます。",
+            "en": "/aɪ doʊnt wɑnt tu daʊt ˈfæməli, soʊ aɪl steɪ ɑn ðə laɪn ənd ˈfɑloʊ ðə ˌɪnˈstɹʌkʃənz./",
+            "zh": "Wǒ bù xiǎng huái yí jiā rén， suǒ yǐ bú guà duàn bìng zhào zhǐ shì zuò。"
           },
           "axisScores": {
             "identity-verification": 0,
