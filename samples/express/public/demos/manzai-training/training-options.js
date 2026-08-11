@@ -9,6 +9,16 @@ export function createOrderedScenario(scenario, order = "normal", random = Math.
   return { ...scenario, beats };
 }
 
+export function randomizeChoiceOrder(scenario, random = Math.random) {
+  return {
+    ...scenario,
+    beats: scenario.beats.map((beat) => ({
+      ...beat,
+      choices: shuffleCopy(beat.choices, random),
+    })),
+  };
+}
+
 export function createReviewScenario(scenario, resultDetails, threshold = 80) {
   let beatIds = resultDetails
     .filter(({ result }) => result.totalScore < threshold)
@@ -45,4 +55,13 @@ export function isBranchingScenario(scenario) {
       beat.choices?.some((choice) => choice.stateEffects?.length || choice.routes?.length),
     ),
   );
+}
+
+function shuffleCopy(items, random) {
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const target = Math.floor(random() * (index + 1));
+    [shuffled[index], shuffled[target]] = [shuffled[target], shuffled[index]];
+  }
+  return shuffled;
 }

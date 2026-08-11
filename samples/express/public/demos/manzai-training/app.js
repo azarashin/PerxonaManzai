@@ -31,6 +31,7 @@ import { SpeechRecognizer } from "./speech-recognizer.js";
 import {
   createOrderedScenario,
   createReviewScenario,
+  randomizeChoiceOrder,
 } from "./training-options.js";
 
 const avatarSelect = document.querySelector("#avatar-select");
@@ -1128,7 +1129,9 @@ function startTraining() {
   setScenarioPickerDisabled(true);
   setPresenterControlsDisabled(true);
   controller = new ScenarioController(
-    createOrderedScenario(selectedScenario, dialogueOrderSelect.value),
+    randomizeChoiceOrder(
+      createOrderedScenario(selectedScenario, dialogueOrderSelect.value),
+    ),
   );
   controller.start();
   startBtn.hidden = true;
@@ -1309,7 +1312,7 @@ function startReviewTraining() {
   completionRecorded = true;
   setScenarioPickerDisabled(true);
   setPresenterControlsDisabled(true);
-  controller = new ScenarioController(reviewScenario);
+  controller = new ScenarioController(randomizeChoiceOrder(reviewScenario));
   controller.start();
   startBtn.hidden = true;
   trainingMenuBtn.hidden = false;

@@ -4,6 +4,7 @@ import test from "node:test";
 import {
   createOrderedScenario,
   createReviewScenario,
+  randomizeChoiceOrder,
 } from "../public/demos/manzai-training/training-options.js";
 
 const scenario = {
@@ -24,6 +25,27 @@ test("random order preserves branching scenario beat order", () => {
   };
   const ordered = createOrderedScenario(branching, "random", () => 0);
   assert.deepEqual(ordered.beats.map(({ id }) => id), ["first", "second", "third"]);
+});
+
+test("choice order is randomized without changing the source scenario", () => {
+  const source = {
+    id: "choices",
+    beats: [{
+      id: "opening",
+      choices: [{ id: "strong" }, { id: "partial" }, { id: "weak" }],
+    }],
+  };
+
+  const randomized = randomizeChoiceOrder(source, () => 0);
+
+  assert.deepEqual(
+    randomized.beats[0].choices.map(({ id }) => id),
+    ["partial", "weak", "strong"],
+  );
+  assert.deepEqual(
+    source.beats[0].choices.map(({ id }) => id),
+    ["strong", "partial", "weak"],
+  );
 });
 
 test("review selects scores below the threshold", () => {
