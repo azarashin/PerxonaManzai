@@ -3,6 +3,14 @@
   "categories": [
     {
       "id": "manzai",
+      "branching": {
+        "requirement": "not-required",
+        "rationale": {
+          "ja": "各発話へのツッコミを独立して採点できるため、基本シナリオは直線進行で成立します。",
+          "en": "Basic scenarios work as a linear sequence because each comeback can be scored independently.",
+          "zh": "每次吐槽都能獨立評分，因此基礎情境使用線性流程即可成立。"
+        }
+      },
       "title": {
         "ja": "漫才",
         "en": "Manzai",
@@ -11,10 +19,50 @@
     },
     {
       "id": "customer-service",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "初級編は直線進行で成立しますが、確認結果や客の反応に応じて対応を変える中級以上では分岐を推奨します。",
+          "en": "Beginner scenarios can stay linear, but branching is recommended at higher levels when verification results or customer reactions change the appropriate response.",
+          "zh": "初級情境可使用線性流程，但中高級內容會因查證結果或顧客反應而改變適當回應，因此建議使用分支。"
+        }
+      },
       "title": {
         "ja": "接客",
         "en": "Customer Service",
         "zh": "顧客服務"
+      }
+    },
+    {
+      "id": "partner-communication",
+      "branching": {
+        "requirement": "recommended",
+        "rationale": {
+          "ja": "短い練習は線形でも成立しますが、過去の発言や感情の変化が後の応答を左右する上級シナリオでは分岐を推奨します。",
+          "en": "Short practice can remain linear, but branching is recommended for advanced scenarios where earlier statements and emotional changes affect later responses.",
+          "zh": "短篇練習可採線性流程；進階情境若先前發言與情緒變化會影響後續回應，則建議使用分支。"
+        }
+      },
+      "title": {
+        "ja": "恋愛・パートナー会話",
+        "en": "Partner Communication",
+        "zh": "伴侶溝通"
+      }
+    },
+    {
+      "id": "negotiation-sales",
+      "branching": {
+        "requirement": "required",
+        "rationale": {
+          "ja": "高度な営業交渉では、確認した課題、信頼、残りの譲歩余地によって有効な提案と着地点が変わるため、状態と分岐が必要です。",
+          "en": "Advanced sales negotiation requires state and branching because confirmed needs, trust, and remaining concessions change the viable proposal and outcome.",
+          "zh": "進階銷售談判中，已確認需求、信任與剩餘讓步空間會改變可行提案與結果，因此必須使用狀態與分支。"
+        }
+      },
+      "title": {
+        "ja": "交渉・営業",
+        "en": "Negotiation and Sales",
+        "zh": "談判與銷售"
       }
     }
   ],
@@ -54,6 +102,42 @@
         "zh": "餐廳顧客服務"
       },
       "path": "./scenarios/restaurant-service.json"
+    },
+    {
+      "id": "late-home-conversation",
+      "categoryId": "partner-communication",
+      "beatCount": 3,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": ["不満の背後にある寂しさや不安を受け止める", "説明だけで終わらず実行可能な予定共有を提案する"],
+        "en": ["Acknowledge the loneliness or concern behind a complaint", "Move beyond explanation and propose a workable way to share plans"],
+        "zh": ["理解抱怨背後的寂寞或不安", "不只解釋原因，也提出可實行的行程共享方式"]
+      },
+      "title": {
+        "ja": "帰宅が遅い夜の話し合い",
+        "en": "Talking About Late Nights",
+        "zh": "談談晚歸的夜晚"
+      },
+      "path": "./scenarios/late-home-conversation.json"
+    },
+    {
+      "id": "enterprise-renewal-negotiation",
+      "categoryId": "negotiation-sales",
+      "beatCount": 6,
+      "difficulty": "advanced",
+      "estimatedMinutes": 10,
+      "learningObjectives": {
+        "ja": ["値下げ要求の背景にある決裁条件を質問で特定する", "信頼と利益を守りながら条件付きの譲歩を組み立てる"],
+        "en": ["Use questions to identify the approval condition behind a discount request", "Build conditional concessions while protecting trust and margin"],
+        "zh": ["透過提問找出折扣要求背後的決策條件", "在維持信任與利潤的同時設計有條件的讓步"]
+      },
+      "title": {
+        "ja": "法人契約の更新交渉",
+        "en": "Enterprise Renewal Negotiation",
+        "zh": "企業續約談判"
+      },
+      "path": "./scenarios/enterprise-renewal-negotiation.json"
     }
   ]
 }

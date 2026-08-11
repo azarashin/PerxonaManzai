@@ -11,6 +11,26 @@
     "en": "Practice spotting the heart of each joke and delivering one of the displayed comebacks out loud.",
     "zh": "練習快速抓住每個笑點的核心，並大聲說出畫面上的吐槽。"
   },
+  "evaluationAxes": [
+    {
+      "id": "premise-recognition",
+      "label": { "ja": "ボケの把握", "en": "Premise recognition", "zh": "理解笑點" },
+      "description": { "ja": "ボケの矛盾や誇張を的確に捉える", "en": "Identify the contradiction or exaggeration in the joke.", "zh": "準確找出笑話中的矛盾或誇張。" },
+      "maxPoints": 40
+    },
+    {
+      "id": "clarity",
+      "label": { "ja": "明確さ", "en": "Clarity", "zh": "清晰度" },
+      "description": { "ja": "短く分かりやすく返す", "en": "Deliver a concise, understandable response.", "zh": "用簡潔易懂的方式回應。" },
+      "maxPoints": 20
+    },
+    {
+      "id": "word-choice",
+      "label": { "ja": "言葉選び", "en": "Word choice", "zh": "措辭" },
+      "description": { "ja": "勢いと面白さのある言葉を選ぶ", "en": "Choose energetic and entertaining wording.", "zh": "選擇有氣勢且有趣的措辭。" },
+      "maxPoints": 20
+    }
+  ],
   "beats": [
     {
       "id": "refrigerator",
@@ -43,7 +63,7 @@
             "zh": "便利商店才不會賣冰箱咧！"
           },
           "aliases": ["コンビニで冷蔵庫売ってないやろ", "それ家電量販店や"],
-          "contentPoints": 80,
+          "axisScores": { "premise-recognition": 40, "clarity": 20, "word-choice": 20 },
           "feedback": {
             "ja": "場所の矛盾をすぐ拾えています。短くて強いツッコミです。",
             "en": "You caught the contradiction in the location immediately. It is a short, strong comeback.",
@@ -58,7 +78,7 @@
             "zh": "你買的東西還真大啊！"
           },
           "aliases": ["大きな買い物やな"],
-          "contentPoints": 52,
+          "axisScores": { "premise-recognition": 20, "clarity": 18, "word-choice": 14 },
           "feedback": {
             "ja": "反応は自然ですが、コンビニというボケの核心を拾うとさらに良くなります。",
             "en": "The response feels natural, but it will be stronger if you target the convenience-store premise.",
@@ -73,7 +93,7 @@
             "zh": "冰箱不錯嘛！"
           },
           "aliases": ["いい冷蔵庫やな"],
-          "contentPoints": 20,
+          "axisScores": { "premise-recognition": 4, "clarity": 12, "word-choice": 4 },
           "feedback": {
             "ja": "ボケを肯定しています。おかしい場所や行動を探してみましょう。",
             "en": "You agreed with the joke. Look for the strange place or action.",
@@ -113,7 +133,7 @@
             "zh": "別把叫你起床的東西吃掉啦！"
           },
           "aliases": ["目覚まし時計は食べ物ちゃうわ", "時計食べるな"],
-          "contentPoints": 80,
+          "axisScores": { "premise-recognition": 40, "clarity": 20, "word-choice": 20 },
           "feedback": {
             "ja": "道具の用途を使って、分かりやすくボケを否定できています。",
             "en": "You clearly rejected the joke by pointing out what the object is actually for.",
@@ -128,7 +148,7 @@
             "zh": "至少只吃一個啦！"
           },
           "aliases": ["一個でええやろ"],
-          "contentPoints": 55,
+          "axisScores": { "premise-recognition": 24, "clarity": 17, "word-choice": 14 },
           "feedback": {
             "ja": "二個という部分は拾えています。食べ物ではない点まで触れると満点です。",
             "en": "You caught the “two” detail. Mentioning that it is not food would earn full points.",
@@ -143,7 +163,7 @@
             "zh": "聽起來很健康嘛！"
           },
           "aliases": ["健康に良さそうやな"],
-          "contentPoints": 15,
+          "axisScores": { "premise-recognition": 2, "clarity": 10, "word-choice": 3 },
           "feedback": {
             "ja": "設定を受け入れてしまっています。常識とのズレを否定してみましょう。",
             "en": "You accepted the premise. Try rejecting its departure from common sense.",
@@ -183,7 +203,7 @@
             "zh": "你的腳到底有多快啊！"
           },
           "aliases": ["電車より速いやないか", "電車を走って追い越せるか"],
-          "contentPoints": 80,
+          "axisScores": { "premise-recognition": 40, "clarity": 20, "word-choice": 20 },
           "feedback": {
             "ja": "あり得ない身体能力を直接指摘できていて、勢いも出しやすいツッコミです。",
             "en": "You directly called out the impossible athletic ability, making this an energetic comeback.",
@@ -198,7 +218,7 @@
             "zh": "趕時間就搭快速列車啦！"
           },
           "aliases": ["快速乗れや"],
-          "contentPoints": 62,
+          "axisScores": { "premise-recognition": 28, "clarity": 18, "word-choice": 16 },
           "feedback": {
             "ja": "状況に合った別角度のツッコミです。ボケの誇張を拾う案も試してみましょう。",
             "en": "This is a valid comeback from another angle. Also try targeting the joke's exaggeration.",
@@ -213,7 +233,7 @@
             "zh": "至少有運動到嘛！"
           },
           "aliases": ["運動になってよかったな"],
-          "contentPoints": 20,
+          "axisScores": { "premise-recognition": 4, "clarity": 12, "word-choice": 4 },
           "feedback": {
             "ja": "会話としては成立しますが、ボケへの否定が弱くなっています。",
             "en": "The conversation works, but the rejection of the joke is too weak.",

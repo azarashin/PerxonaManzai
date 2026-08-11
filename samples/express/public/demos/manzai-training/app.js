@@ -69,6 +69,8 @@ const launchBtn = document.querySelector("#launch-btn");
 const startBtn = document.querySelector("#start-btn");
 const replayBtn = document.querySelector("#replay-btn");
 const nextBtn = document.querySelector("#next-btn");
+const trainingMenuBtn = document.querySelector("#training-menu-btn");
+const trainingRestartBtn = document.querySelector("#training-restart-btn");
 const restartBtn = document.querySelector("#restart-btn");
 const reviewBtn = document.querySelector("#review-btn");
 const micBtn = document.querySelector("#mic-btn");
@@ -380,6 +382,8 @@ function resetTrainingView() {
   bokeCaption.hidden = true;
   replayBtn.hidden = true;
   nextBtn.hidden = true;
+  trainingMenuBtn.hidden = true;
+  trainingRestartBtn.hidden = true;
   restartBtn.hidden = true;
   reviewBtn.hidden = true;
   startBtn.hidden = false;
@@ -757,6 +761,7 @@ function handleFinalTranscript(transcript) {
     transcript,
     reactionSeconds,
     speechLanguageSelect.value,
+    controller.scenario.evaluationAxes,
   );
 
   if (!result.matched) {
@@ -786,6 +791,7 @@ function handleChoiceSelection(choice) {
     answer,
     reactionSeconds,
     speechLanguageSelect.value,
+    controller.scenario.evaluationAxes,
   );
   result.inputMode = "click";
   completeEvaluation(result);
@@ -805,7 +811,7 @@ function completeEvaluation(result) {
   replayBtn.hidden = false;
   nextBtn.hidden = false;
   const nextAction =
-    controller.progress.current === controller.progress.total
+    !controller.hasNext
       ? t("viewResults")
       : t("nextBoke");
   const delaySeconds = AUTO_ADVANCE_DELAY_MS / 1000;
@@ -829,6 +835,7 @@ function showEvaluation(result) {
   scoreLine.className = "score-line";
   scoreLine.append(
     createScoreChip(t("contentScore", { score: result.contentScore })),
+    ...createAxisScoreChips(result.axisScores),
     createScoreChip(t("timingScore", { score: result.timingScore })),
     createScoreChip(
       t("seconds", { seconds: result.reactionSeconds.toFixed(1) }),
@@ -854,6 +861,18 @@ function createScoreChip(text) {
   chip.className = "score-chip";
   chip.textContent = text;
   return chip;
+}
+
+function createAxisScoreChips(axisScores = []) {
+  return axisScores.map((axis) =>
+    createScoreChip(
+      t("axisScore", {
+        label: axis.label,
+        score: axis.score,
+        maximum: axis.maxPoints,
+      }),
+    ),
+  );
 }
 
 function createParagraph(text) {
@@ -931,6 +950,8 @@ function startTraining() {
   );
   controller.start();
   startBtn.hidden = true;
+  trainingMenuBtn.hidden = false;
+  trainingRestartBtn.hidden = false;
   restartBtn.hidden = true;
   void playCurrentBeat();
 }
@@ -957,13 +978,14 @@ function showSummary() {
   summaryElement.hidden = false;
   nextBtn.hidden = true;
   replayBtn.hidden = true;
+  trainingMenuBtn.hidden = false;
+  trainingRestartBtn.hidden = true;
   restartBtn.hidden = false;
   reviewBtn.hidden = reviewRun || controller.resultDetails.length === 0;
   setScenarioPickerDisabled(false);
   setPresenterControlsDisabled(false);
-  progressElement.textContent = `${controller.progress.total} / ${controller.progress.total}`;
-
   const summary = controller.summary;
+  progressElement.textContent = `${summary.completedBeats} / ${summary.completedBeats}`;
   if (!completionRecorded && !reviewRun) {
     recordScenarioCompletion(selectedScenario.id);
     completionRecorded = true;
@@ -1006,6 +1028,7 @@ function renderSummaryBreakdown() {
       scoreLine.className = "score-line";
       scoreLine.append(
         createScoreChip(t("contentScore", { score: result.contentScore })),
+        ...createAxisScoreChips(result.axisScores),
         createScoreChip(t("timingScore", { score: result.timingScore })),
         createScoreChip(
           t("reactionSeconds", {
@@ -1071,6 +1094,8 @@ startBtn.addEventListener("click", startTraining);
 micBtn.addEventListener("click", startRecognition);
 replayBtn.addEventListener("click", () => void playCurrentBeat());
 nextBtn.addEventListener("click", advanceTraining);
+trainingMenuBtn.addEventListener("click", returnToTrainingMenu);
+trainingRestartBtn.addEventListener("click", restartCurrentTraining);
 restartBtn.addEventListener("click", startTraining);
 reviewBtn.addEventListener("click", startReviewTraining);
 
@@ -1089,9 +1114,26 @@ function startReviewTraining() {
   controller = new ScenarioController(reviewScenario);
   controller.start();
   startBtn.hidden = true;
+  trainingMenuBtn.hidden = false;
+  trainingRestartBtn.hidden = false;
   restartBtn.hidden = true;
   reviewBtn.hidden = true;
   void playCurrentBeat();
+}
+
+function returnToTrainingMenu() {
+  resetTrainingView();
+  setScenarioPickerDisabled(false);
+  setPresenterControlsDisabled(false);
+  setAppMessage("");
+}
+
+function restartCurrentTraining() {
+  clearAutoAdvance();
+  recognizer.abort();
+  presenter.setListening?.(false);
+  presenter.interruptPresentation?.();
+  startTraining();
 }
 
 previewBtn.addEventListener("click", () => {
@@ -1138,14 +1180,22 @@ function renderScenarioPreview() {
         const choiceElement = document.createElement("section");
         choiceElement.className = "preview-choice";
         const score = document.createElement("strong");
+        const axisScores = controller.scenario.evaluationAxes.map((axis) => ({
+          label: localizedText(axis.label, playerLanguageSelect.value),
+          score: choice.axisScores[axis.id],
+          maxPoints: axis.maxPoints,
+        }));
         score.textContent = t("previewChoiceScore", {
-          score: choice.contentPoints,
+          score: axisScores.reduce((total, axis) => total + axis.score, 0),
         });
         const text = document.createElement("div");
         renderLocalizedText(text, choice.text);
         const feedback = document.createElement("div");
         renderLocalizedText(feedback, choice.feedback);
-        choiceElement.append(score, text, feedback);
+        const axisLine = document.createElement("div");
+        axisLine.className = "score-line";
+        axisLine.append(...createAxisScoreChips(axisScores));
+        choiceElement.append(score, axisLine, text, feedback);
         card.append(choiceElement);
       }
       return card;

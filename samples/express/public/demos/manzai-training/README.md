@@ -93,7 +93,7 @@ see [`docs/scenario-generation-guide.md`](docs/scenario-generation-guide.md). In
 Scenario files use JSON Schema Draft 2020-12 and declare their schema with `$schema`. Keep that property when generating a
 scenario with Codex so compatible editors can provide completion and diagnostics. The schemas require lowercase kebab-case
 IDs, all three translations (`ja`, `en`, and `zh`), at least one beat, at least two choices per beat, valid reaction metadata,
-and integer `contentPoints` from 0 to 80. Unknown properties are rejected.
+and per-axis integer `axisScores`. The declared evaluation-axis maximums total 80. Unknown properties are rejected.
 
 After adding or editing generated content, run:
 
@@ -139,7 +139,7 @@ from starting.
 ```
 
 Each beat needs a localized `boke` and at least two localized choices. Every localized value requires `ja`, `en`, and `zh`.
-`contentPoints` is capped at 80. A simple `aliases` array is treated as Japanese. For multilingual aliases, use an object with
+The sum of `evaluationAxes[].maxPoints` is fixed at 80, and every choice must score every declared axis without exceeding its maximum. A simple `aliases` array is treated as Japanese. For multilingual aliases, use an object with
 `ja`, `en`, and `zh` arrays:
 
 ```json
@@ -174,7 +174,7 @@ Each beat needs a localized `boke` and at least two localized choices. Every loc
         "en": ["An equivalent English phrase"],
         "zh": ["意思相同的中文說法"]
       },
-      "contentPoints": 80,
+      "axisScores": { "premise-recognition": 40, "clarity": 20, "word-choice": 20 },
       "feedback": {
         "ja": "採点後に表示する説明",
         "en": "Feedback shown after scoring",
@@ -188,6 +188,10 @@ Each beat needs a localized `boke` and at least two localized choices. Every loc
 `motionTags` are checked in order. `variant` chooses among motions sharing the first available tag, `priority` becomes the
 Motion Markup priority, and `cue` places the motion at the start or end of the spoken line. An optional `motionId` can pin an
 exact catalog motion, but tag-based authoring is preferred because Motion IDs vary between Avatars.
+
+Scenarios may also declare typed `stateVariables`, a `startBeatId`, choice-level `stateEffects`, and ordered conditional `routes`. Existing scenarios remain linear when these fields are omitted. See [the scenario generation guide](./docs/scenario-generation-guide.md#state-and-branching) for the branching contract.
+
+For a field-by-field explanation of both schemas, scoring constraints, state updates, branching order, and validation rules, see the [JSON schema reference](./docs/json-schema-reference.md).
 
 The MVP chooses the phrase with the highest normalized Levenshtein similarity. It asks the user to retry when the best score
 is below `0.48`. Content quality is deterministic and authored in the scenario; the MVP does not use an LLM to judge humor or

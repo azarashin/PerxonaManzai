@@ -35,10 +35,21 @@
     "category": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "title"],
+      "required": ["id", "title", "branching"],
       "properties": {
         "id": { "$ref": "#/$defs/id" },
-        "title": { "$ref": "#/$defs/localizedText" }
+        "title": { "$ref": "#/$defs/localizedText" },
+        "branching": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["requirement", "rationale"],
+          "properties": {
+            "requirement": {
+              "enum": ["not-required", "recommended", "required"]
+            },
+            "rationale": { "$ref": "#/$defs/localizedText" }
+          }
+        }
       }
     },
     "scenarioEntry": {

@@ -2,9 +2,11 @@ export function analyzeScenarioQuality(scenario) {
   const warnings = [];
 
   for (const beat of scenario.beats) {
-    const scores = beat.choices.map((choice) => choice.contentPoints);
+    const scores = beat.choices.map((choice) =>
+      Object.values(choice.axisScores).reduce((total, score) => total + score, 0),
+    );
     if (new Set(scores).size === 1) {
-      warnings.push(`${beat.id}: all choices have the same contentPoints`);
+      warnings.push(`${beat.id}: all choices have the same total axis score`);
     }
 
     for (const language of ["ja", "en", "zh"]) {

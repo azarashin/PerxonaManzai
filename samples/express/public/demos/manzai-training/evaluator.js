@@ -7,6 +7,7 @@ export function evaluateResponse(
   transcript,
   reactionSeconds,
   language = "ja",
+  evaluationAxes = [],
 ) {
   const matches = beat.choices.map((choice) => {
     const phrases = [
@@ -30,10 +31,13 @@ export function evaluateResponse(
     };
   }
 
-  const contentScore = Math.max(
-    0,
-    Math.min(80, Number(bestMatch.choice.contentPoints) || 0),
-  );
+  const axisScores = evaluationAxes.map((axis) => ({
+    id: axis.id,
+    label: localizedText(axis.label, language),
+    score: clampScore(bestMatch.choice.axisScores?.[axis.id], axis.maxPoints),
+    maxPoints: axis.maxPoints,
+  }));
+  const contentScore = axisScores.reduce((total, axis) => total + axis.score, 0);
   const timingScore = scoreTiming(reactionSeconds);
 
   return {
@@ -43,11 +47,16 @@ export function evaluateResponse(
     choiceText: localizedText(bestMatch.choice.text, language),
     similarity: bestMatch.similarity,
     contentScore,
+    axisScores,
     timingScore,
     totalScore: contentScore + timingScore,
     reactionSeconds,
     feedback: localizedText(bestMatch.choice.feedback, language),
   };
+}
+
+function clampScore(value, maximum) {
+  return Math.max(0, Math.min(maximum, Number(value) || 0));
 }
 
 function localizedAliases(aliases, language) {

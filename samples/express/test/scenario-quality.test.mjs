@@ -18,7 +18,7 @@ test("quality inspection reports ambiguous choices and flat scores", () => {
   };
 
   const warnings = analyzeScenarioQuality(scenario);
-  assert.ok(warnings.some((warning) => warning.includes("same contentPoints")));
+  assert.ok(warnings.some((warning) => warning.includes("same total axis score")));
   assert.ok(warnings.some((warning) => warning.includes("shared by")));
 });
 
@@ -26,6 +26,6 @@ function choice(id, text, contentPoints) {
   return {
     id,
     text: { ja: text, en: text, zh: text },
-    contentPoints,
+    axisScores: { clarity: contentPoints },
   };
 }

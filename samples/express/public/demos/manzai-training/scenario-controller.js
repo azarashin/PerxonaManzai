@@ -2,69 +2,88 @@ export class ScenarioController {
   constructor(scenario) {
     validateScenario(scenario);
     this.scenario = scenario;
-    this.currentIndex = -1;
+    this.beatsById = new Map(scenario.beats.map((beat) => [beat.id, beat]));
+    this.currentBeatId = null;
+    this.nextBeatId = null;
+    this.state = createInitialState(scenario.stateVariables);
     this.results = [];
   }
 
   start() {
-    this.currentIndex = 0;
+    this.currentBeatId = this.scenario.startBeatId ?? this.scenario.beats[0].id;
+    this.nextBeatId = null;
+    this.state = createInitialState(this.scenario.stateVariables);
     this.results = [];
     return this.currentBeat;
   }
 
   get currentBeat() {
-    return this.scenario.beats[this.currentIndex] ?? null;
+    return this.beatsById.get(this.currentBeatId) ?? null;
   }
 
   get progress() {
     return {
-      current: this.currentIndex + 1,
+      current: this.results.length + (this.currentBeat ? 1 : 0),
       total: this.scenario.beats.length,
     };
   }
 
   recordResult(result) {
-    this.results[this.currentIndex] = result;
+    const beat = this.currentBeat;
+    if (!beat) throw new Error("Cannot record a result without an active beat.");
+    const choice = beat.choices.find(({ id }) => id === result.choiceId);
+    if (!choice) throw new Error(`Choice ${result.choiceId} does not belong to beat ${beat.id}.`);
+
+    applyStateEffects(this.state, choice.stateEffects, this.scenario.stateVariables);
+    this.nextBeatId = resolveNextBeatId(choice.routes, this.state);
+    if (choice.routes === undefined) {
+      const currentIndex = this.scenario.beats.findIndex(({ id }) => id === beat.id);
+      this.nextBeatId = this.scenario.beats[currentIndex + 1]?.id ?? null;
+    }
+    this.results.push({ beat, result, state: { ...this.state } });
   }
 
   advance() {
-    this.currentIndex += 1;
+    this.currentBeatId = this.nextBeatId;
+    this.nextBeatId = null;
     return this.currentBeat;
   }
 
+  get hasNext() {
+    return this.nextBeatId !== null;
+  }
+
   get isComplete() {
-    return this.currentIndex >= this.scenario.beats.length;
+    return this.currentBeat === null;
   }
 
   get resultDetails() {
-    return this.results.flatMap((result, index) =>
-      result
-        ? [
-            {
-              beatNumber: index + 1,
-              beat: this.scenario.beats[index],
-              result,
-            },
-          ]
-        : [],
-    );
+    return this.results.map(({ beat, result, state }, index) => ({
+      beatNumber: index + 1,
+      beat,
+      result,
+      state,
+    }));
   }
 
   get summary() {
-    const totalScore = this.results.reduce(
-      (sum, result) => sum + result.totalScore,
+    const scoreSum = this.results.reduce(
+      (sum, entry) => sum + entry.result.totalScore,
       0,
     );
+    const totalScore = this.results.length
+      ? Math.round(scoreSum / this.results.length)
+      : 0;
     const averageReactionSeconds = this.results.length
       ? this.results.reduce(
-          (sum, result) => sum + result.reactionSeconds,
+          (sum, entry) => sum + entry.result.reactionSeconds,
           0,
         ) / this.results.length
       : 0;
 
     return {
       totalScore,
-      maximumScore: this.scenario.beats.length * 100,
+      maximumScore: 100,
       averageReactionSeconds,
       completedBeats: this.results.length,
     };
@@ -72,11 +91,30 @@ export class ScenarioController {
 }
 
 function validateScenario(scenario) {
-  if (!isLocalizedText(scenario?.title) || !Array.isArray(scenario.beats)) {
+  if (
+    !isLocalizedText(scenario?.title) ||
+    !Array.isArray(scenario.evaluationAxes) ||
+    !Array.isArray(scenario.beats)
+  ) {
     throw new Error("シナリオの形式が正しくありません。");
   }
   if (scenario.beats.length === 0) {
     throw new Error("シナリオにボケを1件以上登録してください。");
+  }
+  const axes = new Map(scenario.evaluationAxes.map((axis) => [axis.id, axis]));
+  if (
+    axes.size !== scenario.evaluationAxes.length ||
+    scenario.evaluationAxes.some(
+      (axis) =>
+        !axis.id ||
+        !isLocalizedText(axis.label) ||
+        !isLocalizedText(axis.description) ||
+        !Number.isInteger(axis.maxPoints) ||
+        axis.maxPoints <= 0,
+    ) ||
+    scenario.evaluationAxes.reduce((sum, axis) => sum + axis.maxPoints, 0) !== 80
+  ) {
+    throw new Error("Evaluation axes must be unique, valid, and total 80 points.");
   }
 
   for (const [index, beat] of scenario.beats.entries()) {
@@ -94,7 +132,9 @@ function validateScenario(scenario) {
     if (
       beat.choices.some(
         (choice) =>
-          !isLocalizedText(choice.text) || !isLocalizedText(choice.feedback),
+          !isLocalizedText(choice.text) ||
+          !isLocalizedText(choice.feedback) ||
+          !hasValidAxisScores(choice.axisScores, axes),
       )
     ) {
       throw new Error(
@@ -102,6 +142,53 @@ function validateScenario(scenario) {
       );
     }
   }
+}
+
+function createInitialState(variables = []) {
+  return Object.fromEntries(variables.map(({ id, initialValue }) => [id, initialValue]));
+}
+
+function applyStateEffects(state, effects = [], variables = []) {
+  const variablesById = new Map(variables.map((variable) => [variable.id, variable]));
+  for (const effect of effects) {
+    const variable = variablesById.get(effect.stateId);
+    const nextValue = effect.operation === "add"
+      ? state[effect.stateId] + effect.value
+      : effect.value;
+    state[effect.stateId] = variable?.type === "number"
+      ? Math.max(variable.minimum ?? -Infinity, Math.min(variable.maximum ?? Infinity, nextValue))
+      : nextValue;
+  }
+}
+
+function resolveNextBeatId(routes, state) {
+  if (routes === undefined) return undefined;
+  return routes.find((route) =>
+    route.conditions === undefined || route.conditions.every((condition) => matchesCondition(condition, state)),
+  )?.nextBeatId ?? null;
+}
+
+function matchesCondition({ stateId, operator, value }, state) {
+  const actual = state[stateId];
+  const comparisons = {
+    equals: () => actual === value,
+    "not-equals": () => actual !== value,
+    "greater-than": () => actual > value,
+    "greater-than-or-equal": () => actual >= value,
+    "less-than": () => actual < value,
+    "less-than-or-equal": () => actual <= value,
+  };
+  return comparisons[operator]?.() ?? false;
+}
+
+function hasValidAxisScores(axisScores, axes) {
+  if (!axisScores || Object.keys(axisScores).length !== axes.size) return false;
+  return [...axes].every(
+    ([axisId, axis]) =>
+      Number.isInteger(axisScores[axisId]) &&
+      axisScores[axisId] >= 0 &&
+      axisScores[axisId] <= axis.maxPoints,
+  );
 }
 
 function isReaction(value) {

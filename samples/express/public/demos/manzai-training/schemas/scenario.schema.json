@@ -4,12 +4,23 @@
   "title": "Perxona scenario",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "title", "description", "beats"],
+  "required": ["id", "title", "description", "evaluationAxes", "beats"],
   "properties": {
     "$schema": { "type": "string" },
     "id": { "$ref": "#/$defs/id" },
     "title": { "$ref": "#/$defs/localizedText" },
     "description": { "$ref": "#/$defs/localizedText" },
+    "startBeatId": { "$ref": "#/$defs/id" },
+    "stateVariables": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/stateVariable" }
+    },
+    "evaluationAxes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/evaluationAxis" }
+    },
     "beats": {
       "type": "array",
       "minItems": 1,
@@ -70,10 +81,82 @@
         "cue": { "enum": ["start", "end"] }
       }
     },
+    "evaluationAxis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "description", "maxPoints"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "$ref": "#/$defs/localizedText" },
+        "description": { "$ref": "#/$defs/localizedText" },
+        "maxPoints": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 80
+        }
+      }
+    },
+    "stateValue": {
+      "type": ["number", "boolean", "string"]
+    },
+    "stateVariable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "description", "type", "initialValue"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "$ref": "#/$defs/localizedText" },
+        "description": { "$ref": "#/$defs/localizedText" },
+        "type": { "enum": ["number", "boolean", "string"] },
+        "initialValue": { "$ref": "#/$defs/stateValue" },
+        "minimum": { "type": "number" },
+        "maximum": { "type": "number" }
+      }
+    },
+    "stateEffect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stateId", "operation", "value"],
+      "properties": {
+        "stateId": { "$ref": "#/$defs/id" },
+        "operation": { "enum": ["set", "add"] },
+        "value": { "$ref": "#/$defs/stateValue" }
+      }
+    },
+    "routeCondition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stateId", "operator", "value"],
+      "properties": {
+        "stateId": { "$ref": "#/$defs/id" },
+        "operator": {
+          "enum": ["equals", "not-equals", "greater-than", "greater-than-or-equal", "less-than", "less-than-or-equal"]
+        },
+        "value": { "$ref": "#/$defs/stateValue" }
+      }
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nextBeatId"],
+      "properties": {
+        "conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/routeCondition" }
+        },
+        "nextBeatId": {
+          "oneOf": [
+            { "$ref": "#/$defs/id" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
     "choice": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "text", "contentPoints", "feedback"],
+      "required": ["id", "text", "axisScores", "feedback"],
       "properties": {
         "id": { "$ref": "#/$defs/id" },
         "text": { "$ref": "#/$defs/localizedText" },
@@ -83,10 +166,25 @@
             { "$ref": "#/$defs/localizedAliases" }
           ]
         },
-        "contentPoints": {
-          "type": "integer",
-          "minimum": 0,
-          "maximum": 80
+        "axisScores": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 80
+          },
+          "propertyNames": { "$ref": "#/$defs/id" }
+        },
+        "stateEffects": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/stateEffect" }
+        },
+        "routes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/route" }
         },
         "feedback": { "$ref": "#/$defs/localizedText" }
       }
