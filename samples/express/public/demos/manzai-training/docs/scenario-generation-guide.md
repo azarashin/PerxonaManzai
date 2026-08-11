@@ -145,8 +145,9 @@ filenames. Do not return fragments, JavaScript object literals, comments inside 
 - Set the catalog entry's `beatCount` to the exact number of items in the scenario's `beats` array.
 - Set `difficulty`, `estimatedMinutes`, and localized `learningObjectives` in every catalog entry.
 - Author translations for meaning and training intent, not word-for-word similarity.
-- Treat `pronunciationGuide` as optional display-only metadata. Add it only to beats and choices, keep all three languages
-  together, and do not use it for speech recognition or scoring.
+- Add display-only `pronunciationGuide` metadata to every bundled beat and choice, keep all three languages together, and do
+  not use it for speech recognition or scoring. The Schema field remains optional only for compatibility with external and
+  older scenarios.
 - Keep spoken choices short and distinct enough for browser speech recognition.
 - Add aliases only for realistic equivalent utterances; do not use aliases to make different answers indistinguishable.
 - Provide at least two choices. Three choices are recommended when a useful best, partial, and weak or unsafe contrast exists.

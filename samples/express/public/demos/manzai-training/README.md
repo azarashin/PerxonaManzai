@@ -90,10 +90,10 @@ see [`docs/scenario-generation-guide.md`](docs/scenario-generation-guide.md). In
 - a new scenario normally requires both a scenario JSON file and an updated `scenarios/index.json`;
 - ask Codex to write complete files, preserve `$schema`, run validation, and return a short change and test summary.
 
-For optional hiragana, IPA, and Pinyin metadata, use the
+For hiragana, IPA, and Pinyin metadata, use the
 [pronunciation guide authoring instructions](docs/pronunciation-guide-authoring.md)
-([日本語](docs/pronunciation-guide-authoring.ja.md)). The field is display-only and remains optional while existing
-scenarios are migrated; `scenarios/convenience-store.json` is the reference pilot.
+([日本語](docs/pronunciation-guide-authoring.ja.md)). Every spoken line in the bundled catalog includes this display-only
+metadata. The Schema keeps the field optional for external and older scenarios, but new bundled scenarios must provide it.
 
 Scenario files use JSON Schema Draft 2020-12 and declare their schema with `$schema`. Keep that property when generating a
 scenario with Codex so compatible editors can provide completion and diagnostics. The schemas require lowercase kebab-case

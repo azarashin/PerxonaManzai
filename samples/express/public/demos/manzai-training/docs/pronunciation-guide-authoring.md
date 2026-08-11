@@ -4,9 +4,10 @@ English | [日本語](pronunciation-guide-authoring.ja.md)
 
 ## Purpose and scope
 
-Pronunciation guides help a learner read the scenario language aloud. They are optional, display-only metadata and never
-change speech recognition, aliases, scoring, feedback, or the text spoken by the avatar. The source `boke` or `text` remains
-the authoritative utterance.
+Pronunciation guides help a learner read the scenario language aloud. They are display-only metadata and never change speech
+recognition, aliases, scoring, feedback, or the text spoken by the avatar. The source `boke` or `text` remains the
+authoritative utterance. Every spoken line in the bundled catalog must provide a guide; the Schema field remains optional for
+compatibility with external and older scenarios.
 
 Add `pronunciationGuide` only to:
 
@@ -84,8 +85,7 @@ Return guide coverage, validation results, and remaining human-review items.
 
 ## Rollout policy
 
-`pronunciationGuide` remains optional while the catalog is migrated. The first reference implementation is
-`convenience-store.json` in the manzai category. Expand in reviewable scenario or category batches after a fluent speaker has
-approved representative notation. Do not make the field Schema-required until all existing scenarios are migrated and the
-product has explicitly accepted that compatibility change.
-
+The bundled catalog migration is complete: all 52 scenarios provide `pronunciationGuide` for every character line and player
+choice. `convenience-store.json` remains the manually curated reference. Catalog tests enforce complete coverage and notation
+shape for bundled scenarios. Keep the Schema field optional for external and older scenarios until the product explicitly
+accepts that compatibility change, and continue fluent-speaker review of pronunciation accuracy.
