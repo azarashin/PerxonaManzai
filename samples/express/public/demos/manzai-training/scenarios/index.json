@@ -444,6 +444,33 @@
         "zh": "競爭對手價格異議"
       },
       "path": "./scenarios/competitor-price-objection.json"
+    },
+    {
+      "id": "budget-cut-proposal",
+      "categoryId": "negotiation-sales",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "予算削減への提案再設計",
+        "en": "Proposal Under a Budget Cut",
+        "zh": "預算削減下的提案"
+      },
+      "path": "./scenarios/budget-cut-proposal.json"
     }
   ]
 }
