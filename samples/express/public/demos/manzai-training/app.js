@@ -1,5 +1,11 @@
 import { evaluateResponse } from "./evaluator.js";
 import { applyTranslations, translate } from "./i18n.js";
+import {
+  assetDisplayName,
+  assetThumbnailUrl,
+  filterAssets,
+  findAsset,
+} from "./asset-picker.js";
 import { buildPresentationContent } from "./reaction-resolver.js";
 import {
   clearProgress,
@@ -29,6 +35,14 @@ import {
 
 const avatarSelect = document.querySelector("#avatar-select");
 const sceneSelect = document.querySelector("#scene-select");
+const avatarPickerBtn = document.querySelector("#avatar-picker-btn");
+const scenePickerBtn = document.querySelector("#scene-picker-btn");
+const avatarThumbnail = document.querySelector("#avatar-thumbnail");
+const sceneThumbnail = document.querySelector("#scene-thumbnail");
+const avatarThumbnailFallback = document.querySelector("#avatar-thumbnail-fallback");
+const sceneThumbnailFallback = document.querySelector("#scene-thumbnail-fallback");
+const avatarSelectionName = document.querySelector("#avatar-selection-name");
+const sceneSelectionName = document.querySelector("#scene-selection-name");
 const voiceSelect = document.querySelector("#voice-select");
 const speechLanguageSelect = document.querySelector("#speech-language-select");
 const playerLanguageSelect = document.querySelector("#player-language-select");
@@ -65,6 +79,14 @@ const privacyCloseBtn = document.querySelector("#privacy-close-btn");
 const privacyDoneBtn = document.querySelector("#privacy-done-btn");
 const clearProgressBtn = document.querySelector("#clear-progress-btn");
 const privacyDialogStatus = document.querySelector("#privacy-dialog-status");
+const assetPickerDialog = document.querySelector("#asset-picker-dialog");
+const assetPickerDialogTitle = document.querySelector("#asset-picker-dialog-title");
+const assetPickerCloseBtn = document.querySelector("#asset-picker-close-btn");
+const assetPickerCancelBtn = document.querySelector("#asset-picker-cancel-btn");
+const assetPickerApplyBtn = document.querySelector("#asset-picker-apply-btn");
+const assetSearchInput = document.querySelector("#asset-search-input");
+const assetPickerGrid = document.querySelector("#asset-picker-grid");
+const assetPickerEmpty = document.querySelector("#asset-picker-empty");
 const launchBtn = document.querySelector("#launch-btn");
 const startBtn = document.querySelector("#start-btn");
 const replayBtn = document.querySelector("#replay-btn");
@@ -123,8 +145,12 @@ let isRefreshingToken = false;
 let availableMotions = [];
 let motionCatalogAvatarId = "";
 let availableVoices = [];
+let availableAvatars = [];
+let availableScenes = [];
 let catalogReady = false;
 let autoAdvanceTimer = null;
+let pickerAssetType = "avatar";
+let pendingAssetId = "";
 
 const AUTO_ADVANCE_DELAY_MS = 5000;
 
@@ -154,6 +180,7 @@ function canStartTraining() {
 
 function applyUiLanguage() {
   applyTranslations(document, playerLanguageSelect.value);
+  renderSelectedAssets();
   updateNativeLanguageToggleVisibility();
   renderScenarioPicker();
   renderStoredProgress();
@@ -239,6 +266,8 @@ function setPresenterControlsDisabled(disabled) {
   playerLanguageSelect.disabled = disabled;
   avatarSelect.disabled = disabled;
   sceneSelect.disabled = disabled;
+  avatarPickerBtn.disabled = disabled;
+  scenePickerBtn.disabled = disabled;
   voiceSelect.disabled = disabled;
 }
 
@@ -507,11 +536,14 @@ async function loadCatalog() {
     ]);
 
   const preferredTarget = config.fixedTarget ?? config.defaults ?? {};
+  availableAvatars = avatars;
+  availableScenes = scenes;
   availableVoices = voices;
   availableMotions = [];
   motionCatalogAvatarId = "";
   fillSelect(avatarSelect, avatars, preferredTarget.avatarId);
   fillSelect(sceneSelect, scenes, preferredTarget.sceneId);
+  renderSelectedAssets();
   updateVoiceOptions(preferredTarget.voiceId);
 
   if (!avatarSelect.value || !sceneSelect.value || !voiceSelect.value) {
@@ -875,6 +907,148 @@ function createAxisScoreChips(axisScores = []) {
   );
 }
 
+function assetPickerConfig(assetType) {
+  return assetType === "avatar"
+    ? {
+        assets: availableAvatars,
+        select: avatarSelect,
+        button: avatarPickerBtn,
+        image: avatarThumbnail,
+        fallback: avatarThumbnailFallback,
+        name: avatarSelectionName,
+        titleKey: "chooseAvatar",
+      }
+    : {
+        assets: availableScenes,
+        select: sceneSelect,
+        button: scenePickerBtn,
+        image: sceneThumbnail,
+        fallback: sceneThumbnailFallback,
+        name: sceneSelectionName,
+        titleKey: "chooseScene",
+      };
+}
+
+function renderSelectedAssets() {
+  renderSelectedAsset("avatar");
+  renderSelectedAsset("scene");
+}
+
+function renderSelectedAsset(assetType) {
+  const { assets, select, button, image, fallback, name } =
+    assetPickerConfig(assetType);
+  const asset = findAsset(assets, select.value);
+  const displayName = assetDisplayName(asset) || "—";
+  const thumbnailUrl = assetThumbnailUrl(asset, assetType);
+
+  name.textContent = displayName;
+  button.setAttribute(
+    "aria-label",
+    t("changeSelectedAsset", {
+      asset: t(assetType),
+      name: displayName,
+    }),
+  );
+  setThumbnail(image, fallback, thumbnailUrl);
+}
+
+function setThumbnail(image, fallback, url) {
+  image.onerror = null;
+  if (!url) {
+    image.hidden = true;
+    image.removeAttribute("src");
+    fallback.hidden = false;
+    return;
+  }
+
+  image.onerror = () => {
+    image.hidden = true;
+    fallback.hidden = false;
+  };
+  image.src = url;
+  image.hidden = false;
+  fallback.hidden = true;
+}
+
+function openAssetPicker(assetType) {
+  pickerAssetType = assetType;
+  const { select, titleKey } = assetPickerConfig(assetType);
+  pendingAssetId = select.value;
+  assetPickerDialogTitle.textContent = t(titleKey);
+  assetPickerGrid.dataset.assetType = assetType;
+  assetPickerGrid.setAttribute("aria-label", t(titleKey));
+  assetSearchInput.value = "";
+  renderAssetChoices();
+  assetPickerDialog.showModal();
+  assetSearchInput.focus();
+}
+
+function renderAssetChoices() {
+  const { assets } = assetPickerConfig(pickerAssetType);
+  const visibleAssets = filterAssets(assets, assetSearchInput.value);
+  assetPickerGrid.replaceChildren(
+    ...visibleAssets.map((asset) => createAssetChoice(asset)),
+  );
+  assetPickerEmpty.hidden = visibleAssets.length > 0;
+  assetPickerApplyBtn.disabled = !findAsset(assets, pendingAssetId);
+}
+
+function createAssetChoice(asset) {
+  const label = document.createElement("label");
+  label.className = "asset-choice";
+
+  const input = document.createElement("input");
+  input.type = "radio";
+  input.name = "asset-picker-choice";
+  input.value = asset.id;
+  input.checked = asset.id === pendingAssetId;
+  input.addEventListener("change", () => {
+    pendingAssetId = asset.id;
+    assetPickerApplyBtn.disabled = false;
+  });
+
+  const media = document.createElement("span");
+  media.className = "asset-choice-media";
+  const fallback = document.createElement("span");
+  fallback.className = "asset-thumbnail-fallback";
+  fallback.setAttribute("aria-hidden", "true");
+  fallback.textContent = pickerAssetType === "avatar" ? "A" : "S";
+  const image = document.createElement("img");
+  image.alt = "";
+  image.loading = "lazy";
+  setThumbnail(
+    image,
+    fallback,
+    assetThumbnailUrl(asset, pickerAssetType),
+  );
+  media.append(image, fallback);
+
+  const name = document.createElement("span");
+  name.className = "asset-choice-name";
+  name.textContent = assetDisplayName(asset);
+  const id = document.createElement("span");
+  id.className = "asset-choice-id";
+  id.textContent = asset.id;
+  label.append(input, media, name, id);
+  return label;
+}
+
+function closeAssetPicker() {
+  assetPickerDialog.close();
+}
+
+function applyAssetSelection() {
+  const { select } = assetPickerConfig(pickerAssetType);
+  if (!pendingAssetId || select.value === pendingAssetId) {
+    closeAssetPicker();
+    return;
+  }
+  select.value = pendingAssetId;
+  renderSelectedAsset(pickerAssetType);
+  closeAssetPicker();
+  select.dispatchEvent(new Event("change", { bubbles: true }));
+}
+
 function createParagraph(text) {
   const paragraph = document.createElement("p");
   paragraph.textContent = text;
@@ -1090,6 +1264,15 @@ presenter.addEventListener("CONNECT_TOKEN_EXPIRED", async () => {
 });
 
 launchBtn.addEventListener("click", initializePresenter);
+avatarPickerBtn.addEventListener("click", () => openAssetPicker("avatar"));
+scenePickerBtn.addEventListener("click", () => openAssetPicker("scene"));
+assetSearchInput.addEventListener("input", renderAssetChoices);
+assetPickerApplyBtn.addEventListener("click", applyAssetSelection);
+assetPickerCloseBtn.addEventListener("click", closeAssetPicker);
+assetPickerCancelBtn.addEventListener("click", closeAssetPicker);
+assetPickerDialog.addEventListener("click", (event) => {
+  if (event.target === assetPickerDialog) closeAssetPicker();
+});
 startBtn.addEventListener("click", startTraining);
 micBtn.addEventListener("click", startRecognition);
 replayBtn.addEventListener("click", () => void playCurrentBeat());
@@ -1349,6 +1532,7 @@ function requirePresenterPreparation() {
 }
 
 avatarSelect.addEventListener("change", () => {
+  renderSelectedAsset("avatar");
   availableMotions = [];
   motionCatalogAvatarId = "";
   requirePresenterPreparation();
@@ -1356,6 +1540,7 @@ avatarSelect.addEventListener("change", () => {
 
 for (const select of [sceneSelect, voiceSelect]) {
   select.addEventListener("change", () => {
+    if (select === sceneSelect) renderSelectedAsset("scene");
     requirePresenterPreparation();
   });
 }
