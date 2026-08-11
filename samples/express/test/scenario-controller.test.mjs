@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 import { ScenarioController } from "../public/demos/manzai-training/scenario-controller.js";
@@ -90,3 +91,34 @@ test("a scenario without routes advances in array order", () => {
   controller.recordResult({ choiceId: "one", totalScore: 80, reactionSeconds: 1 });
   assert.equal(controller.advance().id, "second");
 });
+
+test("the enterprise renewal scenario reaches outcomes from accumulated state", async () => {
+  const url = new URL(
+    "../public/demos/manzai-training/scenarios/enterprise-renewal-negotiation.json",
+    import.meta.url,
+  );
+  const scenario = JSON.parse(await readFile(url, "utf8"));
+
+  const trusted = new ScenarioController(scenario);
+  trusted.start();
+  play(trusted, "ask-decision-criteria");
+  assert.equal(trusted.currentBeat.id, "approval-priority");
+  play(trusted, "quantify-support-value");
+  assert.equal(trusted.currentBeat.id, "final-terms");
+  play(trusted, "conditional-package");
+  assert.equal(trusted.currentBeat.id, "successful-close");
+
+  const overDiscounted = new ScenarioController(scenario);
+  overDiscounted.start();
+  play(overDiscounted, "offer-immediate-discount");
+  assert.equal(overDiscounted.currentBeat.id, "price-pressure");
+  play(overDiscounted, "use-final-discount");
+  assert.equal(overDiscounted.state["concession-budget"], 0);
+  play(overDiscounted, "conditional-package");
+  assert.equal(overDiscounted.currentBeat.id, "guarded-close");
+});
+
+function play(controller, choiceId) {
+  controller.recordResult({ choiceId, totalScore: 80, reactionSeconds: 1 });
+  controller.advance();
+}

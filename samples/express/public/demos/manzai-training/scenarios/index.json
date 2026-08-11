@@ -48,6 +48,22 @@
         "en": "Partner Communication",
         "zh": "伴侶溝通"
       }
+    },
+    {
+      "id": "negotiation-sales",
+      "branching": {
+        "requirement": "required",
+        "rationale": {
+          "ja": "高度な営業交渉では、確認した課題、信頼、残りの譲歩余地によって有効な提案と着地点が変わるため、状態と分岐が必要です。",
+          "en": "Advanced sales negotiation requires state and branching because confirmed needs, trust, and remaining concessions change the viable proposal and outcome.",
+          "zh": "進階銷售談判中，已確認需求、信任與剩餘讓步空間會改變可行提案與結果，因此必須使用狀態與分支。"
+        }
+      },
+      "title": {
+        "ja": "交渉・営業",
+        "en": "Negotiation and Sales",
+        "zh": "談判與銷售"
+      }
     }
   ],
   "scenarios": [
@@ -104,6 +120,24 @@
         "zh": "談談晚歸的夜晚"
       },
       "path": "./scenarios/late-home-conversation.json"
+    },
+    {
+      "id": "enterprise-renewal-negotiation",
+      "categoryId": "negotiation-sales",
+      "beatCount": 6,
+      "difficulty": "advanced",
+      "estimatedMinutes": 10,
+      "learningObjectives": {
+        "ja": ["値下げ要求の背景にある決裁条件を質問で特定する", "信頼と利益を守りながら条件付きの譲歩を組み立てる"],
+        "en": ["Use questions to identify the approval condition behind a discount request", "Build conditional concessions while protecting trust and margin"],
+        "zh": ["透過提問找出折扣要求背後的決策條件", "在維持信任與利潤的同時設計有條件的讓步"]
+      },
+      "title": {
+        "ja": "法人契約の更新交渉",
+        "en": "Enterprise Renewal Negotiation",
+        "zh": "企業續約談判"
+      },
+      "path": "./scenarios/enterprise-renewal-negotiation.json"
     }
   ]
 }
