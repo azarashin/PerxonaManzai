@@ -108,9 +108,9 @@
     {
       "id": "opening",
       "boke": {
-        "ja": "今月だけお金を貸してほしい。理由は聞かずに助けてくれない？",
+        "ja": "今月だけ、理由を聞かずにお金を貸してくれない？",
         "en": "Could you lend me money just this month without asking why?",
-        "zh": "這個月借我一筆錢，可以不要問理由就幫我嗎？"
+        "zh": "這個月可以不要問原因就借我錢嗎？"
       },
       "reaction": {
         "description": {
@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "すぐ助言せず、今は話を聞いてほしいのか一緒に考えたいのか確認します。",
-            "en": "Before advising, I will ask whether you want listening or help thinking it through.",
-            "zh": "我先不急著建議，想確認你需要傾聽還是一起思考。"
+            "ja": "困っていることは心配している。でも貸す判断には、金額・用途・期限を確認させて。",
+            "en": "I care that you're in trouble, but before lending I need to know the amount, purpose, and timing.",
+            "zh": "我很擔心你的處境，但借錢前需要確認金額、用途與期限。"
           },
           "axisScores": {
             "empathy": 20,
@@ -141,9 +141,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "この場面で確認・安心・本人主体の行動を結び付けています：困っていることは心配している。でも貸す判断には、金額・用途・期限を確認させて。",
+            "en": "This connects inquiry, safety, and user-owned action in this situation: I care that you're in trouble, but before lending I need to know the amount, purpose, and timing.",
+            "zh": "這在此情境中連結了查證、安全感與當事人主導的行動：我很擔心你的處境，但借錢前需要確認金額、用途與期限。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "少額なら理由を聞かずに貸してもいいよ。",
+            "en": "If it's a small amount, I can lend it without asking why.",
+            "zh": "若金額不大，我可以不問原因借你。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "boundary-keeping": 12,
-            "solution-quality": 12
+            "empathy": 14,
+            "needs-reading": 12,
+            "boundary-keeping": 13,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部は役立ちますが、重要な確認か次の行動が不足します：少額なら理由を聞かずに貸してもいいよ。",
+            "en": "This helps partly, but misses an important check or next step: If it's a small amount, I can lend it without asking why.",
+            "zh": "這有部分幫助，但缺少重要查證或下一步：若金額不大，我可以不問原因借你。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "理由を言えないなら、何か怪しいことに使うんでしょう。",
+            "en": "If you can't say why, you must be using it for something suspicious.",
+            "zh": "不肯說原因，一定是要拿去做可疑的事。"
           },
           "axisScores": {
             "empathy": 2,
-            "needs-reading": 3,
-            "boundary-keeping": 2,
-            "solution-quality": 3
+            "needs-reading": 4,
+            "boundary-keeping": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや圧力により、情報・信頼・選択の余地を失います：理由を言えないなら、何か怪しいことに使うんでしょう。",
+            "en": "This assumption or pressure loses information, trust, and room to choose: If you can't say why, you must be using it for something suspicious.",
+            "zh": "這種預設或壓力會失去資訊、信任與選擇空間：不肯說原因，一定是要拿去做可疑的事。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "家賃が足りない。来月返せると思うけど、確実とは言えない。",
+        "en": "I'm short on rent. I think I can repay next month, but I can't promise.",
+        "zh": "房租不夠。我想下月能還，但不能保證。"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "本人が大切にしたいことと、今困っている点を聞きます。",
-            "en": "I will ask what matters to you and what is hardest right now.",
-            "zh": "我會問你最重視什麼，以及目前最困難的是什麼。"
+            "ja": "必要額と支払期限、来月の収支を一緒に確認しよう。貸す以外の相談先も調べたい。",
+            "en": "Let's check the amount, due date, and next month's budget, and also look at non-loan assistance.",
+            "zh": "一起確認缺額、期限與下月收支，也找找不靠借款的協助。"
           },
           "axisScores": {
             "empathy": 20,
@@ -263,9 +263,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "この場面で確認・安心・本人主体の行動を結び付けています：必要額と支払期限、来月の収支を一緒に確認しよう。貸す以外の相談先も調べたい。",
+            "en": "This connects inquiry, safety, and user-owned action in this situation: Let's check the amount, due date, and next month's budget, and also look at non-loan assistance.",
+            "zh": "這在此情境中連結了查證、安全感與當事人主導的行動：一起確認缺額、期限與下月收支，也找找不靠借款的協助。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "来月返せそうなら、返済日だけ決めて貸すよ。",
+            "en": "If repayment next month seems likely, I'll lend it once we set a date.",
+            "zh": "若下月可能還，就定個日期後借你。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "boundary-keeping": 12,
-            "solution-quality": 12
+            "empathy": 14,
+            "needs-reading": 12,
+            "boundary-keeping": 13,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部は役立ちますが、重要な確認か次の行動が不足します：来月返せそうなら、返済日だけ決めて貸すよ。",
+            "en": "This helps partly, but misses an important check or next step: If repayment next month seems likely, I'll lend it once we set a date.",
+            "zh": "這有部分幫助，但缺少重要查證或下一步：若下月可能還，就定個日期後借你。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "返せる保証がないなら、友達でも助けられない。",
+            "en": "If repayment isn't guaranteed, I can't help you even as a friend.",
+            "zh": "若不能保證還款，就算朋友我也不幫。"
           },
           "axisScores": {
             "empathy": 2,
-            "needs-reading": 3,
-            "boundary-keeping": 2,
-            "solution-quality": 3
+            "needs-reading": 4,
+            "boundary-keeping": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや圧力により、情報・信頼・選択の余地を失います：返せる保証がないなら、友達でも助けられない。",
+            "en": "This assumption or pressure loses information, trust, and room to choose: If repayment isn't guaranteed, I can't help you even as a friend.",
+            "zh": "這種預設或壓力會失去資訊、信任與選擇空間：若不能保證還款，就算朋友我也不幫。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "貸せない場合でも、今日中にできることを一緒に考えてほしい。",
+        "en": "Even if you can't lend, please help me find something I can do today.",
+        "zh": "即使不能借，也希望你陪我找今天能做的事。"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "決定は本人に残し、必要なら具体的な支援を一つ提案します。",
-            "en": "I will leave the decision with you and offer one concrete form of support.",
-            "zh": "決定權留給你，需要時我會提出一項具體協助。"
+            "ja": "現金は貸さない。でも管理会社への相談、支援窓口、支払計画の三つから一緒に選べる。",
+            "en": "I won't lend cash, but we can choose among contacting the landlord, an aid service, or making a payment plan.",
+            "zh": "我不借現金，但可陪你從聯絡房東、求助機構或付款計畫中選擇。"
           },
           "axisScores": {
             "empathy": 20,
@@ -390,9 +390,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "この場面で確認・安心・本人主体の行動を結び付けています：現金は貸さない。でも管理会社への相談、支援窓口、支払計画の三つから一緒に選べる。",
+            "en": "This connects inquiry, safety, and user-owned action in this situation: I won't lend cash, but we can choose among contacting the landlord, an aid service, or making a payment plan.",
+            "zh": "這在此情境中連結了查證、安全感與當事人主導的行動：我不借現金，但可陪你從聯絡房東、求助機構或付款計畫中選擇。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "今回は家賃を直接払うなら助けられる。",
+            "en": "This time I can help if I pay the rent directly.",
+            "zh": "這次若由我直接付房租，可以幫忙。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "boundary-keeping": 12,
-            "solution-quality": 12
+            "empathy": 14,
+            "needs-reading": 12,
+            "boundary-keeping": 13,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部は役立ちますが、重要な確認か次の行動が不足します：今回は家賃を直接払うなら助けられる。",
+            "en": "This helps partly, but misses an important check or next step: This time I can help if I pay the rent directly.",
+            "zh": "這有部分幫助，但缺少重要查證或下一步：這次若由我直接付房租，可以幫忙。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "お金の話をするなら、しばらく連絡しないで。",
+            "en": "If this is about money, don't contact me for a while.",
+            "zh": "如果是錢的事，暫時別聯絡我。"
           },
           "axisScores": {
             "empathy": 2,
-            "needs-reading": 3,
-            "boundary-keeping": 2,
-            "solution-quality": 3
+            "needs-reading": 4,
+            "boundary-keeping": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや圧力により、情報・信頼・選択の余地を失います：お金の話をするなら、しばらく連絡しないで。",
+            "en": "This assumption or pressure loses information, trust, and room to choose: If this is about money, don't contact me for a while.",
+            "zh": "這種預設或壓力會失去資訊、信任與選擇空間：如果是錢的事，暫時別聯絡我。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "断られるのは分かるけど、疑われたようで話せなくなった。",
+        "en": "I understand a refusal, but feeling suspected made me shut down.",
+        "zh": "我能接受被拒絕，但被懷疑讓我不敢再說。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "決めつけたことを謝り、求めている支えをもう一度聞きます。",
-            "en": "I am sorry I assumed; let me ask again what support you need.",
-            "zh": "抱歉我擅自判斷，請再告訴我你需要什麼支持。"
+            "ja": "疑う言い方になってごめん。貸すかどうかと、あなたの困り事を尊重して聞くことは分けて話し直したい。",
+            "en": "I'm sorry I sounded suspicious. I want to separate whether I lend from respectfully hearing what you need.",
+            "zh": "抱歉我說得像在懷疑你。我想把是否借錢與尊重地了解困難分開重談。"
           },
           "axisScores": {
             "empathy": 20,
@@ -507,9 +507,9 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "この場面で確認・安心・本人主体の行動を結び付けています：疑う言い方になってごめん。貸すかどうかと、あなたの困り事を尊重して聞くことは分けて話し直したい。",
+            "en": "This connects inquiry, safety, and user-owned action in this situation: I'm sorry I sounded suspicious. I want to separate whether I lend from respectfully hearing what you need.",
+            "zh": "這在此情境中連結了查證、安全感與當事人主導的行動：抱歉我說得像在懷疑你。我想把是否借錢與尊重地了解困難分開重談。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "疑ってはいないよ。ただ、お金には慎重なんだ。",
+            "en": "I don't suspect you; I'm just careful with money.",
+            "zh": "我不是懷疑你，只是對錢很謹慎。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "boundary-keeping": 12,
-            "solution-quality": 12
+            "empathy": 14,
+            "needs-reading": 12,
+            "boundary-keeping": 13,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部は役立ちますが、重要な確認か次の行動が不足します：疑ってはいないよ。ただ、お金には慎重なんだ。",
+            "en": "This helps partly, but misses an important check or next step: I don't suspect you; I'm just careful with money.",
+            "zh": "這有部分幫助，但缺少重要查證或下一步：我不是懷疑你，只是對錢很謹慎。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "隠すから疑われるんだよ。",
+            "en": "You get suspected because you hide things.",
+            "zh": "是你隱瞞才會被懷疑。"
           },
           "axisScores": {
             "empathy": 2,
-            "needs-reading": 3,
-            "boundary-keeping": 2,
-            "solution-quality": 3
+            "needs-reading": 4,
+            "boundary-keeping": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや圧力により、情報・信頼・選択の余地を失います：隠すから疑われるんだよ。",
+            "en": "This assumption or pressure loses information, trust, and room to choose: You get suspected because you hide things.",
+            "zh": "這種預設或壓力會失去資訊、信任與選擇空間：是你隱瞞才會被懷疑。"
           },
           "stateEffects": [
             {

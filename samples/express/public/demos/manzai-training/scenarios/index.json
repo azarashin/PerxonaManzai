@@ -1007,16 +1007,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "退職の結論を急がず、友人が求める共感と整理のどちらかを確認する",
+          "負担・選択肢・期限を整理し、本人が決める小さな次の行動を作る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
-          "Compare how different responses affect the other person and the next action."
+          "Ask whether the friend needs listening or decision support before advising resignation.",
+          "Map pressures, options, and timing while keeping the decision with the friend."
         ],
         "zh": [
-          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "先確認朋友需要傾聽還是決策協助，再談離職。",
+          "整理壓力、選項與時程，並把決定權留給朋友。"
         ]
       },
       "title": {
@@ -1034,16 +1034,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "別れの正しさを論じる前に、喪失感と今求めている支援を確認する",
+          "本人のペースを尊重し、今日を乗り切る具体的な支えを合意する"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
-          "Compare how different responses affect the other person and the next action."
+          "Acknowledge grief and ask what support is wanted before judging the breakup.",
+          "Respect the friend's pace and agree on concrete support for the present day."
         ],
         "zh": [
-          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "評斷分手前，先接住失落並確認朋友需要的支持。",
+          "尊重朋友的步調，約定今天可接受的具體陪伴。"
         ]
       },
       "title": {
@@ -1061,16 +1061,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "友人同士の相談で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "友情と貸付判断を分け、用途・返済可能性・緊急性を確認する",
+          "断る場合も関係を傷つけず、貸付以外の支援を本人と選ぶ"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Advice Between Friends.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate care for the friend from the lending decision and check purpose, urgency, and repayment.",
+          "Set a clear boundary while exploring non-loan support the friend can choose."
         ],
         "zh": [
-          "掌握情境重點，選擇符合朋友間的商量的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分友情與借貸決定，確認用途、急迫性與償還能力。",
+          "清楚設下界線，同時提供朋友可選擇的非借款支援。"
         ]
       },
       "title": {

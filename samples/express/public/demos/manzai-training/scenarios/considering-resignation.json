@@ -73,9 +73,9 @@
     {
       "id": "opening",
       "boke": {
-        "ja": "もう仕事を辞めたい。でも今すぐ決めていいのか自分でも分からない。",
+        "ja": "仕事を辞めたい。でも今すぐ決めてよいか分からない。",
         "en": "I want to quit my job, but I don't know if I should decide right now.",
-        "zh": "我想離職，但也不知道是否該現在決定。"
+        "zh": "我想辭職，但不知道是否該現在決定。"
       },
       "reaction": {
         "description": {
@@ -95,9 +95,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "すぐ助言せず、今は話を聞いてほしいのか一緒に考えたいのか確認します。",
-            "en": "Before advising, I will ask whether you want listening or help thinking it through.",
-            "zh": "我先不急著建議，想確認你需要傾聽還是一起思考。"
+            "ja": "今は気持ちを聞いてほしい？それとも辞めるか一緒に整理したい？",
+            "en": "Do you want me to listen first, or help you sort out whether to leave?",
+            "zh": "你現在想先被傾聽，還是一起整理是否離職？"
           },
           "axisScores": {
             "empathy": 20,
@@ -106,47 +106,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "この場面で確認・安心・本人主体の行動を結び付けています：今は気持ちを聞いてほしい？それとも辞めるか一緒に整理したい？",
+            "en": "This connects inquiry, safety, and user-owned action in this situation: Do you want me to listen first, or help you sort out whether to leave?",
+            "zh": "這在此情境中連結了查證、安全感與當事人主導的行動：你現在想先被傾聽，還是一起整理是否離職？"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "つらいなら、少し休んでから考えた方がいいよ。",
+            "en": "If it's this hard, take some time off before deciding.",
+            "zh": "這麼辛苦的話，先休息再決定吧。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "boundary-keeping": 12,
-            "solution-quality": 12
+            "empathy": 14,
+            "needs-reading": 12,
+            "boundary-keeping": 13,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部は役立ちますが、重要な確認か次の行動が不足します：つらいなら、少し休んでから考えた方がいいよ。",
+            "en": "This helps partly, but misses an important check or next step: If it's this hard, take some time off before deciding.",
+            "zh": "這有部分幫助，但缺少重要查證或下一步：這麼辛苦的話，先休息再決定吧。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "そんな会社は今日辞めた方がいい。",
+            "en": "You should quit that company today.",
+            "zh": "那種公司今天就該辭掉。"
           },
           "axisScores": {
             "empathy": 2,
-            "needs-reading": 3,
-            "boundary-keeping": 2,
-            "solution-quality": 3
+            "needs-reading": 4,
+            "boundary-keeping": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや圧力により、情報・信頼・選択の余地を失います：そんな会社は今日辞めた方がいい。",
+            "en": "This assumption or pressure loses information, trust, and room to choose: You should quit that company today.",
+            "zh": "這種預設或壓力會失去資訊、信任與選擇空間：那種公司今天就該辭掉。"
           }
         }
       ]
@@ -154,9 +154,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "上司との関係は厳しいけど、収入が途切れるのも怖い。",
+        "en": "My manager is difficult, but I'm also afraid of losing my income.",
+        "zh": "主管很難相處，但我也怕收入中斷。"
       },
       "reaction": {
         "description": {
@@ -176,9 +176,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "本人が大切にしたいことと、今困っている点を聞きます。",
-            "en": "I will ask what matters to you and what is hardest right now.",
-            "zh": "我會問你最重視什麼，以及目前最困難的是什麼。"
+            "ja": "上司との何が限界で、貯蓄や異動・転職活動にはどれくらい余裕がある？",
+            "en": "What feels intolerable with your manager, and what runway do you have for transfer or job hunting?",
+            "zh": "主管的哪些情況已到極限？你的存款、轉調或求職能支撐多久？"
           },
           "axisScores": {
             "empathy": 20,
@@ -187,47 +187,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "この場面で確認・安心・本人主体の行動を結び付けています：上司との何が限界で、貯蓄や異動・転職活動にはどれくらい余裕がある？",
+            "en": "This connects inquiry, safety, and user-owned action in this situation: What feels intolerable with your manager, and what runway do you have for transfer or job hunting?",
+            "zh": "這在此情境中連結了查證、安全感與當事人主導的行動：主管的哪些情況已到極限？你的存款、轉調或求職能支撐多久？"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "収入が心配なら、次が決まるまでは耐えるしかないかも。",
+            "en": "If income is the concern, you may need to stay until another job is secured.",
+            "zh": "若擔心收入，可能只能撐到找到下一份工作。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "boundary-keeping": 12,
-            "solution-quality": 12
+            "empathy": 14,
+            "needs-reading": 12,
+            "boundary-keeping": 13,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部は役立ちますが、重要な確認か次の行動が不足します：収入が心配なら、次が決まるまでは耐えるしかないかも。",
+            "en": "This helps partly, but misses an important check or next step: If income is the concern, you may need to stay until another job is secured.",
+            "zh": "這有部分幫助，但缺少重要查證或下一步：若擔心收入，可能只能撐到找到下一份工作。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "お金より心が大事。収入のことは後で考えればいい。",
+            "en": "Your feelings matter more than money; deal with income later.",
+            "zh": "心情比錢重要，收入之後再想。"
           },
           "axisScores": {
             "empathy": 2,
-            "needs-reading": 3,
-            "boundary-keeping": 2,
-            "solution-quality": 3
+            "needs-reading": 4,
+            "boundary-keeping": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや圧力により、情報・信頼・選択の余地を失います：お金より心が大事。収入のことは後で考えればいい。",
+            "en": "This assumption or pressure loses information, trust, and room to choose: Your feelings matter more than money; deal with income later.",
+            "zh": "這種預設或壓力會失去資訊、信任與選擇空間：心情比錢重要，收入之後再想。"
           }
         }
       ]
@@ -235,9 +235,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "今日は結論より、何を確認すれば決められるか整理したい。",
+        "en": "Today I want to identify what I need to know, rather than make the final decision.",
+        "zh": "今天不想急著下結論，而想整理需要確認什麼。"
       },
       "reaction": {
         "description": {
@@ -257,9 +257,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "決定は本人に残し、必要なら具体的な支援を一つ提案します。",
-            "en": "I will leave the decision with you and offer one concrete form of support.",
-            "zh": "決定權留給你，需要時我會提出一項具體協助。"
+            "ja": "今週は休暇・異動制度・生活費を確認しよう。来週また話して、決めるのはあなたにしよう。",
+            "en": "This week, check leave, transfer options, and living costs. We can talk next week; the choice stays yours.",
+            "zh": "這週先查休假、轉調與生活費；下週再談，最後由你決定。"
           },
           "axisScores": {
             "empathy": 20,
@@ -268,47 +268,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "この場面で確認・安心・本人主体の行動を結び付けています：今週は休暇・異動制度・生活費を確認しよう。来週また話して、決めるのはあなたにしよう。",
+            "en": "This connects inquiry, safety, and user-owned action in this situation: This week, check leave, transfer options, and living costs. We can talk next week; the choice stays yours.",
+            "zh": "這在此情境中連結了查證、安全感與當事人主導的行動：這週先查休假、轉調與生活費；下週再談，最後由你決定。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "求人サイトを見れば、気持ちも決まりやすくなるよ。",
+            "en": "Looking at job listings may make the decision easier.",
+            "zh": "看看職缺，也許更容易決定。"
           },
           "axisScores": {
-            "empathy": 13,
-            "needs-reading": 11,
-            "boundary-keeping": 12,
-            "solution-quality": 12
+            "empathy": 14,
+            "needs-reading": 12,
+            "boundary-keeping": 13,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "一部は役立ちますが、重要な確認か次の行動が不足します：求人サイトを見れば、気持ちも決まりやすくなるよ。",
+            "en": "This helps partly, but misses an important check or next step: Looking at job listings may make the decision easier.",
+            "zh": "這有部分幫助，但缺少重要查證或下一步：看看職缺，也許更容易決定。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "迷うなら、私が辞める日を決めてあげる。",
+            "en": "If you're unsure, I'll choose your resignation date for you.",
+            "zh": "既然你猶豫，我替你決定辭職日期。"
           },
           "axisScores": {
             "empathy": 2,
-            "needs-reading": 3,
-            "boundary-keeping": 2,
-            "solution-quality": 3
+            "needs-reading": 4,
+            "boundary-keeping": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや圧力により、情報・信頼・選択の余地を失います：迷うなら、私が辞める日を決めてあげる。",
+            "en": "This assumption or pressure loses information, trust, and room to choose: If you're unsure, I'll choose your resignation date for you.",
+            "zh": "這種預設或壓力會失去資訊、信任與選擇空間：既然你猶豫，我替你決定辭職日期。"
           }
         }
       ]
