@@ -1331,16 +1331,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "双方の国内向けレッドラインと、共同声明の実務目的を分けて確認する",
+          "主語・順序・相互性を調整し、どちらも説明可能な文言を作る"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate each side's domestic red lines from the statement's operational purpose.",
+          "Adjust agency, sequence, and reciprocity so both sides can defend the wording."
         ],
         "zh": [
-          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分雙方國內紅線與聯合聲明的實際目的。",
+          "調整主詞、順序與互惠，使雙方都能對內說明。"
         ]
       },
       "title": {
@@ -1358,16 +1358,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "主張する必要量を共通指標と検証可能なデータに置き換える",
+          "最低保障・比例配分・再評価条件を組み合わせる"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
-          "Compare how different responses affect the other person and the next action."
+          "Translate asserted need into shared metrics and verifiable data.",
+          "Combine minimum guarantees, proportional allocation, and review triggers."
         ],
         "zh": [
-          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "把聲稱的需求轉成共同指標與可驗證資料。",
+          "結合最低保障、比例分配與重新評估條件。"
         ]
       },
       "title": {
@@ -1385,16 +1385,16 @@
       "estimatedMinutes": 9,
       "learningObjectives": {
         "ja": [
-          "外交・政治交渉で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "恒久合意と現場の緊張緩和を分け、事故リスクを共有する",
+          "期限付き措置、検証、違反時連絡を組み合わせて段階的に進める"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Diplomatic Negotiation.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate permanent settlement from immediate risk reduction.",
+          "Combine time-limited measures, verification, and incident communication."
         ],
         "zh": [
-          "掌握情境重點，選擇符合外交與政治談判的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分永久協議與眼前降溫，共享事故風險。",
+          "結合限期措施、查證與違規聯絡機制，分階段推進。"
         ]
       },
       "title": {

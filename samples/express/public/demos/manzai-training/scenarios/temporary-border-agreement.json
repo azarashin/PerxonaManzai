@@ -130,9 +130,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "表明された立場の背後にある国内事情と核心的利益を確認します。",
-            "en": "I will clarify the domestic constraints and core interests behind the stated position.",
-            "zh": "我會確認公開立場背後的國內限制與核心利益。"
+            "ja": "「恒久線を認めずに減らせる現場の事故リスク」を確認し、部隊間距離と巡回時間を30日だけ相互調整する。",
+            "en": "Confirm the constraint; then mutually adjust force distance and patrol times for 30 days.",
+            "zh": "先確認不承認永久邊界也能降低的現場事故風險，再先互相調整部隊距離與巡邏時段三十天。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -141,9 +141,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "相手の制約を可視化し、相互に検証できる交換条件へ結び付けています：「恒久線を認めずに減らせる現場の事故リスク」を確認し、部隊間距離と巡回時間を30日だけ相互調整する。",
+            "en": "This makes constraints visible and links them to verifiable exchange: Confirm the constraint; then mutually adjust force distance and patrol times for 30 days.",
+            "zh": "這使限制條件透明，並連結到可驗證的交換：先確認不承認永久邊界也能降低的現場事故風險，再先互相調整部隊距離與巡邏時段三十天。"
           },
           "stateEffects": [
             {
@@ -166,20 +166,20 @@
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "部隊間距離と巡回時間を30日だけ相互調整するが、「恒久線を認めずに減らせる現場の事故リスク」への配慮は曖昧です。",
+            "en": "mutually adjust force distance and patrol times for 30 days, without resolving the constraint.",
+            "zh": "先互相調整部隊距離與巡邏時段三十天，但未處理不承認永久邊界也能降低的現場事故風險。"
           },
           "axisScores": {
             "interest-discovery": 13,
-            "face-saving": 11,
-            "conditionality": 12,
-            "relationship-impact": 12
+            "face-saving": 14,
+            "conditionality": 13,
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "前進案はありますが、相手の制約か検証条件が不足します：部隊間距離と巡回時間を30日だけ相互調整するが、「恒久線を認めずに減らせる現場の事故リスク」への配慮は曖昧です。",
+            "en": "This offers movement but misses a constraint or verification term: mutually adjust force distance and patrol times for 30 days, without resolving the constraint.",
+            "zh": "這有推進方案，但缺少限制或驗證條款：先互相調整部隊距離與巡邏時段三十天，但未處理不承認永久邊界也能降低的現場事故風險。"
           },
           "stateEffects": [
             {
@@ -197,20 +197,20 @@
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「恒久線を認めずに減らせる現場の事故リスク」を退け、自国案への即時同意を求めます。",
+            "en": "Ignore field risks that can be reduced without recognizing a permanent line; demand acceptance.",
+            "zh": "否定不承認永久邊界也能降低的現場事故風險並要求立即接受我方方案。"
           },
           "axisScores": {
             "interest-discovery": 2,
             "face-saving": 3,
             "conditionality": 2,
-            "relationship-impact": 3
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "面子と制約を退けるため、履行可能な合意から遠ざかります：「恒久線を認めずに減らせる現場の事故リスク」を退け、自国案への即時同意を求めます。",
+            "en": "Dismissing face and constraints makes implementation less likely: Ignore field risks that can be reduced without recognizing a permanent line; demand acceptance.",
+            "zh": "否定顏面與限制，會降低協議履行可能：否定不承認永久邊界也能降低的現場事故風險並要求立即接受我方方案。"
           },
           "stateEffects": [
             {
@@ -230,9 +230,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "合意を阻む「履行を確認する手段と、主権主張を害さない文言」を、どこまで共有できますか？",
+        "en": "How much can you share about verification methods and wording that preserves sovereignty claims, which blocks agreement?",
+        "zh": "阻礙協議的履約查證方式與不損主權主張的措辭，你能透露到什麼程度？"
       },
       "reaction": {
         "description": {
@@ -252,9 +252,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "相手の面子を保ちながら、双方が受け入れられない線を整理します。",
-            "en": "While preserving face, I will map each side's non-negotiable limits.",
-            "zh": "在顧全面子的同時，整理雙方不可接受的底線。"
+            "ja": "「履行を確認する手段と、主権主張を害さない文言」を確認し、共同記録と第三者観察を使い、権利不放棄条項を加える。",
+            "en": "Confirm the constraint; then use joint logs and outside observation with a no-waiver clause.",
+            "zh": "先確認履約查證方式與不損主權主張的措辭，再採共同紀錄與第三方觀察，加入不放棄權利條款。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -263,9 +263,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "相手の制約を可視化し、相互に検証できる交換条件へ結び付けています：「履行を確認する手段と、主権主張を害さない文言」を確認し、共同記録と第三者観察を使い、権利不放棄条項を加える。",
+            "en": "This makes constraints visible and links them to verifiable exchange: Confirm the constraint; then use joint logs and outside observation with a no-waiver clause.",
+            "zh": "這使限制條件透明，並連結到可驗證的交換：先確認履約查證方式與不損主權主張的措辭，再採共同紀錄與第三方觀察，加入不放棄權利條款。"
           },
           "stateEffects": [
             {
@@ -293,20 +293,20 @@
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "共同記録と第三者観察を使い、権利不放棄条項を加えるが、「履行を確認する手段と、主権主張を害さない文言」への配慮は曖昧です。",
+            "en": "use joint logs and outside observation with a no-waiver clause, without resolving the constraint.",
+            "zh": "採共同紀錄與第三方觀察，加入不放棄權利條款，但未處理履約查證方式與不損主權主張的措辭。"
           },
           "axisScores": {
             "interest-discovery": 13,
-            "face-saving": 11,
-            "conditionality": 12,
-            "relationship-impact": 12
+            "face-saving": 14,
+            "conditionality": 13,
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "前進案はありますが、相手の制約か検証条件が不足します：共同記録と第三者観察を使い、権利不放棄条項を加えるが、「履行を確認する手段と、主権主張を害さない文言」への配慮は曖昧です。",
+            "en": "This offers movement but misses a constraint or verification term: use joint logs and outside observation with a no-waiver clause, without resolving the constraint.",
+            "zh": "這有推進方案，但缺少限制或驗證條款：採共同紀錄與第三方觀察，加入不放棄權利條款，但未處理履約查證方式與不損主權主張的措辭。"
           },
           "stateEffects": [
             {
@@ -324,20 +324,20 @@
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「履行を確認する手段と、主権主張を害さない文言」を退け、自国案への即時同意を求めます。",
+            "en": "Ignore verification methods and wording that preserves sovereignty claims; demand acceptance.",
+            "zh": "否定履約查證方式與不損主權主張的措辭並要求立即接受我方方案。"
           },
           "axisScores": {
             "interest-discovery": 2,
             "face-saving": 3,
             "conditionality": 2,
-            "relationship-impact": 3
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "面子と制約を退けるため、履行可能な合意から遠ざかります：「履行を確認する手段と、主権主張を害さない文言」を退け、自国案への即時同意を求めます。",
+            "en": "Dismissing face and constraints makes implementation less likely: Ignore verification methods and wording that preserves sovereignty claims; demand acceptance.",
+            "zh": "否定顏面與限制，會降低協議履行可能：否定履約查證方式與不損主權主張的措辭並要求立即接受我方方案。"
           },
           "stateEffects": [
             {
@@ -357,9 +357,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "直通連絡、48時間調査、共同委員会での延長判断を定めるための条件と期限を定められますか？",
+        "en": "Can we set conditions and timing to set a hotline, a 48-hour review, and joint renewal decisions?",
+        "zh": "可以設定條件與期限來設定熱線、四十八小時調查與聯合委員會續期決定嗎？"
       },
       "reaction": {
         "description": {
@@ -379,9 +379,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "譲歩を相互の条件、期限、検証方法と組み合わせます。",
-            "en": "I will pair concessions with reciprocal conditions, timing, and verification.",
-            "zh": "我會把讓步與對等條件、期限及驗證方式結合。"
+            "ja": "「現場違反時の連絡順序、調査期限、措置停止条件」を確認し、直通連絡、48時間調査、共同委員会での延長判断を定める。",
+            "en": "Confirm the constraint; then set a hotline, a 48-hour review, and joint renewal decisions.",
+            "zh": "先確認現場違規後的聯絡順序、調查期限與暫停條件，再設定熱線、四十八小時調查與聯合委員會續期決定。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -390,9 +390,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "相手の制約を可視化し、相互に検証できる交換条件へ結び付けています：「現場違反時の連絡順序、調査期限、措置停止条件」を確認し、直通連絡、48時間調査、共同委員会での延長判断を定める。",
+            "en": "This makes constraints visible and links them to verifiable exchange: Confirm the constraint; then set a hotline, a 48-hour review, and joint renewal decisions.",
+            "zh": "這使限制條件透明，並連結到可驗證的交換：先確認現場違規後的聯絡順序、調查期限與暫停條件，再設定熱線、四十八小時調查與聯合委員會續期決定。"
           },
           "stateEffects": [
             {
@@ -410,20 +410,20 @@
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "直通連絡、48時間調査、共同委員会での延長判断を定めるが、「現場違反時の連絡順序、調査期限、措置停止条件」への配慮は曖昧です。",
+            "en": "set a hotline, a 48-hour review, and joint renewal decisions, without resolving the constraint.",
+            "zh": "設定熱線、四十八小時調查與聯合委員會續期決定，但未處理現場違規後的聯絡順序、調查期限與暫停條件。"
           },
           "axisScores": {
             "interest-discovery": 13,
-            "face-saving": 11,
-            "conditionality": 12,
-            "relationship-impact": 12
+            "face-saving": 14,
+            "conditionality": 13,
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "前進案はありますが、相手の制約か検証条件が不足します：直通連絡、48時間調査、共同委員会での延長判断を定めるが、「現場違反時の連絡順序、調査期限、措置停止条件」への配慮は曖昧です。",
+            "en": "This offers movement but misses a constraint or verification term: set a hotline, a 48-hour review, and joint renewal decisions, without resolving the constraint.",
+            "zh": "這有推進方案，但缺少限制或驗證條款：設定熱線、四十八小時調查與聯合委員會續期決定，但未處理現場違規後的聯絡順序、調查期限與暫停條件。"
           },
           "stateEffects": [
             {
@@ -441,20 +441,20 @@
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「現場違反時の連絡順序、調査期限、措置停止条件」を退け、自国案への即時同意を求めます。",
+            "en": "Ignore contact order, investigation deadline, and suspension triggers after an incident; demand acceptance.",
+            "zh": "否定現場違規後的聯絡順序、調查期限與暫停條件並要求立即接受我方方案。"
           },
           "axisScores": {
             "interest-discovery": 2,
             "face-saving": 3,
             "conditionality": 2,
-            "relationship-impact": 3
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "面子と制約を退けるため、履行可能な合意から遠ざかります：「現場違反時の連絡順序、調査期限、措置停止条件」を退け、自国案への即時同意を求めます。",
+            "en": "Dismissing face and constraints makes implementation less likely: Ignore contact order, investigation deadline, and suspension triggers after an incident; demand acceptance.",
+            "zh": "否定顏面與限制，會降低協議履行可能：否定現場違規後的聯絡順序、調查期限與暫停條件並要求立即接受我方方案。"
           },
           "stateEffects": [
             {
@@ -474,9 +474,9 @@
     {
       "id": "recovery",
       "boke": {
-        "ja": "その言い方では話を続けにくいです。もう一度説明してもらえますか。",
-        "en": "That response makes it hard to continue. Could you explain again?",
-        "zh": "這樣的說法讓人很難繼續談，可以再說明一次嗎？"
+        "ja": "「暫定措置を領土放棄と表現され、交渉余地を失った影響」を軽視され、交渉を続けにくくなりました。",
+        "en": "It is hard to continue after you dismissed how calling interim steps territorial surrender destroyed negotiating room.",
+        "zh": "你輕視把暫定措施稱為放棄領土後，談判空間消失的影響，讓談判難以繼續。"
       },
       "reaction": {
         "description": {
@@ -496,9 +496,9 @@
         {
           "id": "recovery-strong",
           "text": {
-            "ja": "対立的に聞こえた点を修正し、共通利益から協議を再開します。",
-            "en": "I will correct the confrontational framing and restart from the shared interest.",
-            "zh": "我會修正對立式表述，從共同利益重新協商。"
+            "ja": "「暫定措置を領土放棄と表現され、交渉余地を失った影響」を確認し、領土判断ではないと明記し、事故防止だけを議題に戻す。",
+            "en": "Confirm the constraint; then state that territory is unaffected and return only to incident prevention.",
+            "zh": "先確認把暫定措施稱為放棄領土後，談判空間消失的影響，再明示不影響領土立場，只回到事故預防議題。"
           },
           "axisScores": {
             "interest-discovery": 20,
@@ -507,9 +507,9 @@
             "relationship-impact": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "相手の制約を可視化し、相互に検証できる交換条件へ結び付けています：「暫定措置を領土放棄と表現され、交渉余地を失った影響」を確認し、領土判断ではないと明記し、事故防止だけを議題に戻す。",
+            "en": "This makes constraints visible and links them to verifiable exchange: Confirm the constraint; then state that territory is unaffected and return only to incident prevention.",
+            "zh": "這使限制條件透明，並連結到可驗證的交換：先確認把暫定措施稱為放棄領土後，談判空間消失的影響，再明示不影響領土立場，只回到事故預防議題。"
           },
           "stateEffects": [
             {
@@ -527,20 +527,20 @@
         {
           "id": "recovery-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "領土判断ではないと明記し、事故防止だけを議題に戻すが、「暫定措置を領土放棄と表現され、交渉余地を失った影響」への配慮は曖昧です。",
+            "en": "state that territory is unaffected and return only to incident prevention, without resolving the constraint.",
+            "zh": "明示不影響領土立場，只回到事故預防議題，但未處理把暫定措施稱為放棄領土後，談判空間消失的影響。"
           },
           "axisScores": {
             "interest-discovery": 13,
-            "face-saving": 11,
-            "conditionality": 12,
-            "relationship-impact": 12
+            "face-saving": 14,
+            "conditionality": 13,
+            "relationship-impact": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "前進案はありますが、相手の制約か検証条件が不足します：領土判断ではないと明記し、事故防止だけを議題に戻すが、「暫定措置を領土放棄と表現され、交渉余地を失った影響」への配慮は曖昧です。",
+            "en": "This offers movement but misses a constraint or verification term: state that territory is unaffected and return only to incident prevention, without resolving the constraint.",
+            "zh": "這有推進方案，但缺少限制或驗證條款：明示不影響領土立場，只回到事故預防議題，但未處理把暫定措施稱為放棄領土後，談判空間消失的影響。"
           },
           "stateEffects": [
             {
@@ -558,20 +558,20 @@
         {
           "id": "recovery-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "「暫定措置を領土放棄と表現され、交渉余地を失った影響」を退け、自国案への即時同意を求めます。",
+            "en": "Ignore how calling interim steps territorial surrender destroyed negotiating room; demand acceptance.",
+            "zh": "否定把暫定措施稱為放棄領土後，談判空間消失的影響並要求立即接受我方方案。"
           },
           "axisScores": {
             "interest-discovery": 2,
             "face-saving": 3,
             "conditionality": 2,
-            "relationship-impact": 3
+            "relationship-impact": 1
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "面子と制約を退けるため、履行可能な合意から遠ざかります：「暫定措置を領土放棄と表現され、交渉余地を失った影響」を退け、自国案への即時同意を求めます。",
+            "en": "Dismissing face and constraints makes implementation less likely: Ignore how calling interim steps territorial surrender destroyed negotiating room; demand acceptance.",
+            "zh": "否定顏面與限制，會降低協議履行可能：否定把暫定措施稱為放棄領土後，談判空間消失的影響並要求立即接受我方方案。"
           },
           "stateEffects": [
             {
