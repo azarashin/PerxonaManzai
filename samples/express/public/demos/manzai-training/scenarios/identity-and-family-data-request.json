@@ -1,0 +1,434 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "identity-and-family-data-request",
+  "title": {
+    "ja": "身分証と家族情報を要求される求人",
+    "en": "A Job Asking for ID and Family Details",
+    "zh": "要求證件與家人資料的職缺"
+  },
+  "description": {
+    "ja": "選考前の過剰な個人情報要求を断り、記録を残して接触を中断し、第三者へ相談する練習です。",
+    "en": "Practice refusing excessive pre-interview data requests, preserving records, ending contact, and seeking outside support.",
+    "zh": "練習拒絕面試前的過度個資要求、保存紀錄、停止聯絡並向第三方求助。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "personal-data-protection",
+      "label": { "ja": "個人情報保護", "en": "Personal data protection", "zh": "個資保護" },
+      "description": {
+        "ja": "身分証や家族情報を未確認の相手へ渡さない",
+        "en": "Keep identity and family data from unverified parties.",
+        "zh": "不把證件與家人資料交給未查核的對象。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "coercion-recognition",
+      "label": { "ja": "圧力の認識", "en": "Coercion recognition", "zh": "施壓辨識" },
+      "description": {
+        "ja": "選考や秘密を口実にした圧力を見抜く",
+        "en": "Recognize pressure framed as screening or secrecy.",
+        "zh": "辨識以甄選或保密為由的施壓。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "contact-termination",
+      "label": { "ja": "接触中断", "en": "Contact termination", "zh": "中止聯絡" },
+      "description": {
+        "ja": "追加要求へ進まず、安全にやり取りを終える",
+        "en": "End the exchange without moving to further demands.",
+        "zh": "不進入後續要求，安全結束互動。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "outside-support",
+      "label": { "ja": "第三者相談", "en": "Outside support", "zh": "外部求助" },
+      "description": {
+        "ja": "一人で抱えず、信頼できる人や公開窓口へつなぐ",
+        "en": "Involve a trusted person or published support channel.",
+        "zh": "不獨自承受，向可信任者或公開管道求助。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "id-before-interview",
+      "boke": {
+        "ja": "面接枠を確保するため、身分証の表裏と顔写真を今すぐ送ってください。",
+        "en": "To reserve your interview, send both sides of your ID and a face photo now.",
+        "zh": "要保留面試名額，請立刻傳證件正反面和本人照片。"
+      },
+      "pronunciationGuide": {
+        "ja": "めんせつわくを かくほするため、 みぶんしょうの おもてうらと かおじゃしんを いますぐ おくって ください。",
+        "en": "/tu ɹɪˈzɝv jɔɹ ˈɪntɚˌvju, sɛnd boʊθ saɪdz əv jɔɹ aɪˈdi ənd ə feɪs ˈfoʊtoʊ naʊ./",
+        "zh": "Yào bǎo liú miàn shì míng é， qǐng lì kè chuán zhèng jiàn zhèng fǎn miàn hé běn rén zhào piàn。"
+      },
+      "reaction": {
+        "description": { "ja": "選考を理由に急かす", "en": "Rush the applicant in the name of screening", "zh": "以甄選為由催促" },
+        "motionTags": ["pose:emotion_05", "category:talking"],
+        "variant": 1,
+        "priority": 2,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "decline-id-request",
+          "text": {
+            "ja": "確認できていない相手へ身分証や顔写真は送りません。この条件では応募を進めません。",
+            "en": "I will not send ID or a face photo to an unverified party. I will not continue this application.",
+            "zh": "我不會把證件或本人照片傳給未查核的對象，也不會繼續申請。"
+          },
+          "pronunciationGuide": {
+            "ja": "かくにん できていない あいてへ みぶんしょうや かおじゃしんは おくりません。 この じょうけんでは おうぼを すすめません。",
+            "en": "/aɪ wɪl nɑt sɛnd aɪˈdi ɔɹ ə feɪs ˈfoʊtoʊ tu ən ʌnˈvɛɹəˌfaɪd ˈpɑɹti. aɪ wɪl nɑt kənˈtɪnju ðɪs ˌæpləˈkeɪʃən./",
+            "zh": "Wǒ bú huì bǎ zhèng jiàn huò běn rén zhào piàn chuán gěi wèi chá hé de duì xiàng， yě bú huì jì xù shēn qǐng。"
+          },
+          "axisScores": {
+            "personal-data-protection": 20,
+            "coercion-recognition": 20,
+            "contact-termination": 20,
+            "outside-support": 20
+          },
+          "feedback": {
+            "ja": "面接枠を失う不安より情報保護を優先し、身元未確認の募集をその場で進めない安全な判断です。",
+            "en": "You prioritize data safety over fear of losing an interview slot and stop an unverified application immediately.",
+            "zh": "你把個資安全放在面試名額之前，立即停止未經查核的申請。"
+          }
+        },
+        {
+          "id": "request-interview-first",
+          "text": {
+            "ja": "身分証は送りません。まずオンライン面接で説明を聞いてから判断します。",
+            "en": "I will not send ID. I will hear the explanation in an online interview before deciding.",
+            "zh": "我不會傳證件。先在線上面試聽取說明，再作決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "みぶんしょうは おくりません。 まず おんらいん めんせつで せつめいを きいてから はんだん します。",
+            "en": "/aɪ wɪl nɑt sɛnd aɪˈdi. aɪ wɪl hɪɹ ði ˌɛkspləˈneɪʃən ɪn ən ˈɑnˌlaɪn ˈɪntɚˌvju bɪˈfɔɹ dɪˈsaɪdɪŋ./",
+            "zh": "Wǒ bú huì chuán zhèng jiàn。 xiān zài xiàn shàng miàn shì tīng qǔ shuō míng， zài zuò jué dìng。"
+          },
+          "axisScores": {
+            "personal-data-protection": 20,
+            "coercion-recognition": 12,
+            "contact-termination": 4,
+            "outside-support": 4
+          },
+          "feedback": {
+            "ja": "身分証は守れますが、雇用主を独立確認せず未確認の相手との面接を続けるため、離脱と相談が不足します。",
+            "en": "You protect your ID, but continue with an unverified interviewer without independent checking, disengagement, or support.",
+            "zh": "你保護了證件，但沒有獨立查核雇主就繼續面試，仍缺少退出與求助。"
+          }
+        },
+        {
+          "id": "send-all-id",
+          "text": {
+            "ja": "面接枠を逃したくないので、身分証と写真をすぐ送ります。",
+            "en": "I do not want to lose the interview slot, so I will send the ID and photo now.",
+            "zh": "我不想失去面試名額，所以現在就傳證件和照片。"
+          },
+          "pronunciationGuide": {
+            "ja": "めんせつわくを のがしたくないので、 みぶんしょうと しゃしんを すぐ おくります。",
+            "en": "/aɪ du nɑt wɑnt tu luz ði ˈɪntɚˌvju slɑt, soʊ aɪ wɪl sɛnd ði aɪˈdi ənd ˈfoʊtoʊ naʊ./",
+            "zh": "Wǒ bù xiǎng shī qù miàn shì míng é， suǒ yǐ xiàn zài jiù chuán zhèng jiàn hé zhào piàn。"
+          },
+          "axisScores": {
+            "personal-data-protection": 0,
+            "coercion-recognition": 0,
+            "contact-termination": 0,
+            "outside-support": 0
+          },
+          "feedback": {
+            "ja": "選考の急かしに従って強い本人確認資料を渡すため、なりすましや脅迫に使われる危険が高まります。",
+            "en": "You yield to screening pressure and disclose powerful identity material that could be misused for impersonation or coercion.",
+            "zh": "你因甄選壓力而交出重要身分資料，增加被冒用或用來脅迫的風險。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "family-profile",
+      "boke": {
+        "ja": "緊急連絡先として、家族の氏名、勤務先や学校、電話番号も必要です。",
+        "en": "For emergency contacts, we also need your family's names, workplaces or schools, and phone numbers.",
+        "zh": "緊急聯絡資料還需要家人的姓名、工作地點或學校，以及電話號碼。"
+      },
+      "pronunciationGuide": {
+        "ja": "きんきゅう れんらくさきとして、 かぞくの しめい、 きんむさきや がっこう、 でんわ ばんごうも ひつようです。",
+        "en": "/fɔɹ ɪˈmɝdʒənsi ˈkɑnˌtækts, wi ˈɔlsoʊ nid jɔɹ ˈfæməliz neɪmz, ˈwɝkˌpleɪsɪz ɔɹ skulz, ənd foʊn ˈnʌmbɚz./",
+        "zh": "Jǐn jí lián luò zī liào hái xū yào jiā rén de xìng míng、 gōng zuò dì diǎn huò xué xiào， yǐ jí diàn huà hào mǎ。"
+      },
+      "reaction": {
+        "description": { "ja": "家族情報まで範囲を広げる", "en": "Expand the request to family data", "zh": "把要求擴大到家人資料" },
+        "motionTags": ["pose:emotion_07", "category:talking"],
+        "variant": 0,
+        "priority": 2,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "protect-family-data",
+          "text": {
+            "ja": "家族の同意もないので一切送りません。選考前に必要な理由も説明されておらず、応募を中止します。",
+            "en": "I won't send family data without consent. There is no valid pre-interview reason, so I am ending the application.",
+            "zh": "家人沒有同意，我不會提供任何資料。面試前也沒有合理理由，我要停止申請。"
+          },
+          "pronunciationGuide": {
+            "ja": "かぞくの どういも ないので いっさい おくりません。 せんこうまえに ひつような りゆうも せつめいされて おらず、 おうぼを ちゅうし します。",
+            "en": "/aɪ woʊnt sɛnd ˈfæməli ˈdeɪtə wɪˈθaʊt kənˈsɛnt. ðɛɹ ɪz noʊ ˈvælɪd pɹi ˈɪntɚˌvju ˈɹizən, soʊ aɪ æm ˈɛndɪŋ ði ˌæpləˈkeɪʃən./",
+            "zh": "Jiā rén méi yǒu tóng yì， wǒ bú huì tí gōng rèn hé zī liào。 miàn shì qián yě méi yǒu hé lǐ lǐ yóu， wǒ yào tíng zhǐ shēn qǐng。"
+          },
+          "axisScores": {
+            "personal-data-protection": 20,
+            "coercion-recognition": 20,
+            "contact-termination": 20,
+            "outside-support": 20
+          },
+          "feedback": {
+            "ja": "家族を本人の所有情報のように扱わず、同意と目的の欠如を指摘して選考から離れています。",
+            "en": "You do not treat relatives' data as yours to give, and you exit after identifying missing consent and purpose.",
+            "zh": "你沒有把家人資料當成自己能任意提供的資訊，並因缺乏同意與目的而退出。"
+          }
+        },
+        {
+          "id": "ask-purpose-only",
+          "text": {
+            "ja": "家族情報は送りません。必要な理由と取り扱い方針だけ説明してください。",
+            "en": "I will not send family data. Explain why it is needed and how it would be handled.",
+            "zh": "我不會提供家人資料。請只說明需要理由與處理方式。"
+          },
+          "pronunciationGuide": {
+            "ja": "かぞく じょうほうは おくりません。 ひつような りゆうと とりあつかい ほうしんだけ せつめいして ください。",
+            "en": "/aɪ wɪl nɑt sɛnd ˈfæməli ˈdeɪtə. ɪkˈspleɪn waɪ ɪt ɪz ˈnidəd ənd haʊ ɪt wʊd bi ˈhændəld./",
+            "zh": "Wǒ bú huì tí gōng jiā rén zī liào。 qǐng zhǐ shuō míng xū yào lǐ yóu yǔ chǔ lǐ fāng shì。"
+          },
+          "axisScores": {
+            "personal-data-protection": 20,
+            "coercion-recognition": 12,
+            "contact-termination": 4,
+            "outside-support": 4
+          },
+          "feedback": {
+            "ja": "家族情報は守れますが、説明を求めて不審な相手との接触を続け、応募中止や第三者相談には進んでいません。",
+            "en": "You protect family data, but keep engaging the suspicious party instead of ending the application or seeking support.",
+            "zh": "你保護了家人資料，但仍與可疑對象互動，沒有停止申請或尋求第三方協助。"
+          }
+        },
+        {
+          "id": "send-family-profile",
+          "text": {
+            "ja": "採用に必要なら、家族の勤務先と連絡先もまとめて送ります。",
+            "en": "If hiring requires it, I will send my family's workplaces and contacts together.",
+            "zh": "如果錄取需要，我會把家人的工作地點和聯絡方式一起傳送。"
+          },
+          "pronunciationGuide": {
+            "ja": "さいように ひつようなら、 かぞくの きんむさきと れんらくさきも まとめて おくります。",
+            "en": "/ɪf ˈhaɪɚɪŋ ɹɪˈkwaɪɚz ɪt, aɪ wɪl sɛnd maɪ ˈfæməliz ˈwɝkˌpleɪsɪz ənd ˈkɑnˌtækts təˈɡɛðɚ./",
+            "zh": "Rú guǒ lù qǔ xū yào， wǒ huì bǎ jiā rén de gōng zuò dì diǎn hé lián luò fāng shì yì qǐ chuán sòng。"
+          },
+          "axisScores": {
+            "personal-data-protection": 0,
+            "coercion-recognition": 1,
+            "contact-termination": 0,
+            "outside-support": 0
+          },
+          "feedback": {
+            "ja": "必要性を確認せず家族の所在と連絡先をまとめて渡し、自分以外にも危険を広げます。",
+            "en": "You disclose relatives' locations and contacts without verifying necessity, extending risk beyond yourself.",
+            "zh": "你沒有查核必要性就提供家人的所在與聯絡方式，把風險擴及自己以外的人。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "secrecy-pressure",
+      "boke": {
+        "ja": "この採用は非公開です。家族や求人サイトへ相談したら不採用にします。",
+        "en": "This hiring process is confidential. If you consult family or the job site, you will be rejected.",
+        "zh": "這次招募不公開。若向家人或求職網站詢問，就取消錄取資格。"
+      },
+      "pronunciationGuide": {
+        "ja": "この さいようは ひこうかいです。 かぞくや きゅうじん さいとへ そうだんしたら ふさいように します。",
+        "en": "/ðɪs ˈhaɪɚɪŋ ˈpɹɑsɛs ɪz ˌkɑnfəˈdɛnʃəl. ɪf ju kənˈsʌlt ˈfæməli ɔɹ ðə dʒɑb saɪt, ju wɪl bi ɹɪˈdʒɛktɪd./",
+        "zh": "Zhè cì zhāo mù bù gōng kāi。 ruò xiàng jiā rén huò qiú zhí wǎng zhàn xún wèn， jiù qǔ xiāo lù qǔ zī gé。"
+      },
+      "reaction": {
+        "description": { "ja": "相談を禁じて孤立させる", "en": "Forbid consultation to isolate the applicant", "zh": "禁止求助以孤立申請者" },
+        "motionTags": ["pose:emotion_09", "category:talking"],
+        "variant": 2,
+        "priority": 2,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "reject-secrecy",
+          "text": {
+            "ja": "相談を禁じる選考には応じません。会話を保存して連絡を止め、家族と求人サイトへ共有します。",
+            "en": "I reject secrecy. I will save the chat, end contact, and report it to my family and the job site.",
+            "zh": "我不接受禁止求助的甄選。我會保存對話、停止聯絡，並告知家人與求職網站。"
+          },
+          "pronunciationGuide": {
+            "ja": "そうだんを きんじる せんこうには おうじません。 かいわを ほぞんして れんらくを とめ、 かぞくと きゅうじん さいとへ きょうゆう します。",
+            "en": "/aɪ ɹɪˈdʒɛkt ˈsikɹəsi. aɪ wɪl seɪv ðə tʃæt, ɛnd ˈkɑnˌtækt, ənd ɹɪˈpɔɹt ɪt tu maɪ ˈfæməli ənd ðə dʒɑb saɪt./",
+            "zh": "Wǒ bù jiē shòu jìn zhǐ qiú zhù de zhēn xuǎn。 wǒ huì bǎo cún duì huà、 tíng zhǐ lián luò， bìng gào zhī jiā rén yǔ qiú zhí wǎng zhàn。"
+          },
+          "axisScores": {
+            "personal-data-protection": 20,
+            "coercion-recognition": 20,
+            "contact-termination": 20,
+            "outside-support": 20
+          },
+          "feedback": {
+            "ja": "不採用の脅しを孤立化の手段と見抜き、記録保全、接触中断、二つの相談先を順序立てています。",
+            "en": "You identify rejection as an isolation tactic and combine record preservation, disengagement, and two outside supports.",
+            "zh": "你看出取消資格是孤立手段，並依序保存紀錄、停止聯絡及連結兩個外部支援。"
+          }
+        },
+        {
+          "id": "consult-quietly",
+          "text": {
+            "ja": "相手には言わず、まず友人一人にだけ相談してから決めます。",
+            "en": "Without telling the recruiter, I will ask one friend before deciding.",
+            "zh": "我不告訴招募者，先只問一位朋友再決定。"
+          },
+          "pronunciationGuide": {
+            "ja": "あいてには いわず、 まず ゆうじん ひとりにだけ そうだんしてから きめます。",
+            "en": "/wɪˈθaʊt ˈtɛlɪŋ ðə ɹɪˈkɹutɚ, aɪ wɪl æsk wʌn fɹɛnd bɪˈfɔɹ dɪˈsaɪdɪŋ./",
+            "zh": "Wǒ bù gào sù zhāo mù zhě， xiān zhǐ wèn yí wèi péng yǒu zài jué dìng。"
+          },
+          "axisScores": {
+            "personal-data-protection": 16,
+            "coercion-recognition": 14,
+            "contact-termination": 6,
+            "outside-support": 14
+          },
+          "feedback": {
+            "ja": "孤立を破って相談できますが、応募を中止せず、求人サイトへの共有も保留しています。",
+            "en": "You break isolation by consulting a friend, but you have not ended the application or alerted the platform.",
+            "zh": "你透過詢問朋友打破孤立，但尚未停止申請，也沒有通知平台。"
+          }
+        },
+        {
+          "id": "keep-secret",
+          "text": {
+            "ja": "不採用は困るので、誰にも話さず必要な情報を送ります。",
+            "en": "I cannot risk rejection, so I will tell no one and send what is required.",
+            "zh": "我不能失去錄取機會，所以不告訴任何人，並提供要求的資料。"
+          },
+          "pronunciationGuide": {
+            "ja": "ふさいようは こまるので、 だれにも はなさず ひつような じょうほうを おくります。",
+            "en": "/aɪ ˈkænɑt ɹɪsk ɹɪˈdʒɛkʃən, soʊ aɪ wɪl tɛl noʊ wʌn ənd sɛnd wʌt ɪz ɹɪˈkwaɪɚd./",
+            "zh": "Wǒ bù néng shī qù lù qǔ jī huì， suǒ yǐ bù gào sù rèn hé rén， bìng tí gōng yāo qiú de zī liào。"
+          },
+          "axisScores": {
+            "personal-data-protection": 0,
+            "coercion-recognition": 0,
+            "contact-termination": 0,
+            "outside-support": 0
+          },
+          "feedback": {
+            "ja": "不採用への恐れから秘密と追加提供を受け入れ、相手が望む孤立状態に入っています。",
+            "en": "Fear of rejection leads you to accept secrecy and further disclosure, creating the isolation the recruiter wants.",
+            "zh": "你因害怕失去錄取而接受保密與追加提供資料，進入招募者希望的孤立狀態。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "safe-consultation",
+      "boke": {
+        "ja": "今までのメッセージを消せば、特別に応募辞退として処理します。",
+        "en": "Delete every message and I will make an exception and mark you as withdrawn.",
+        "zh": "刪除所有訊息，我可以破例把你登記為退出申請。"
+      },
+      "pronunciationGuide": {
+        "ja": "いままでの めっせーじを けせば、 とくべつに おうぼ じたいとして しょり します。",
+        "en": "/dɪˈlit ˈɛvɹi ˈmɛsɪdʒ ənd aɪ wɪl meɪk ən ɪkˈsɛpʃən ənd mɑɹk ju æz wɪðˈdɹɔn./",
+        "zh": "Shān chú suǒ yǒu xùn xí， wǒ kě yǐ pò lì bǎ nǐ dēng jì wéi tuì chū shēn qǐng。"
+      },
+      "reaction": {
+        "description": { "ja": "証拠削除を条件にする", "en": "Make record deletion a condition", "zh": "以刪除證據為條件" },
+        "motionTags": ["pose:emotion_10", "category:talking"],
+        "variant": 1,
+        "priority": 2,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "preserve-block-report",
+          "text": {
+            "ja": "削除しません。画面を保存してブロックし、求人サイトの通報窓口と信頼できる人へ相談します。",
+            "en": "I will save the screen, block the account, and report it to the job site and someone I trust.",
+            "zh": "我不會刪除。我會保存畫面、封鎖帳號，並聯絡求職網站通報管道與可信任的人。"
+          },
+          "pronunciationGuide": {
+            "ja": "さくじょ しません。 がめんを ほぞんして ぶろっくし、 きゅうじん さいとの つうほう まどぐちと しんらい できる ひとへ そうだん します。",
+            "en": "/aɪ wɪl seɪv ðə skɹin, blɑk ði əˈkaʊnt, ənd ɹɪˈpɔɹt ɪt tu ðə dʒɑb saɪt ənd ˈsʌmwʌn aɪ tɹʌst./",
+            "zh": "Wǒ bú huì shān chú。 wǒ huì bǎo cún huà miàn、 fēng suǒ zhàng hào， bìng lián luò qiú zhí wǎng zhàn tōng bào guǎn dào yǔ kě xìn rèn de rén。"
+          },
+          "axisScores": {
+            "personal-data-protection": 20,
+            "coercion-recognition": 20,
+            "contact-termination": 20,
+            "outside-support": 20
+          },
+          "feedback": {
+            "ja": "相手に辞退処理を委ねず、自分で記録保全、遮断、プラットフォーム通報、身近な相談を実行できます。",
+            "en": "You do not rely on the recruiter to process withdrawal; you preserve, block, report through the platform, and seek support.",
+            "zh": "你不把退出處理交給招募者，而是自行保存、封鎖、向平台通報並尋求支持。"
+          }
+        },
+        {
+          "id": "block-without-report",
+          "text": {
+            "ja": "メッセージは残してブロックしますが、恥ずかしいので誰にも相談しません。",
+            "en": "I will keep the messages and block the account, but I am too embarrassed to consult anyone.",
+            "zh": "我會保留訊息並封鎖帳號，但覺得丟臉，所以不向任何人求助。"
+          },
+          "pronunciationGuide": {
+            "ja": "めっせーじは のこして ぶろっく しますが、 はずかしいので だれにも そうだん しません。",
+            "en": "/aɪ wɪl kip ðə ˈmɛsɪdʒɪz ənd blɑk ði əˈkaʊnt, bʌt aɪ æm tu ɪmˈbɛɹəst tu kənˈsʌlt ˈɛniˌwʌn./",
+            "zh": "Wǒ huì bǎo liú xùn xí bìng fēng suǒ zhàng hào， dàn jué de diū liǎn， suǒ yǐ bù xiàng rèn hé rén qiú zhù。"
+          },
+          "axisScores": {
+            "personal-data-protection": 18,
+            "coercion-recognition": 15,
+            "contact-termination": 20,
+            "outside-support": 2
+          },
+          "feedback": {
+            "ja": "記録と遮断は確保できますが、一人で抱えるため、再接触や既開示情報への対応を相談できません。",
+            "en": "You preserve records and block contact, but isolation leaves no support for renewed contact or previously exposed data.",
+            "zh": "你保存紀錄並封鎖聯絡，但仍獨自承受，無法就再次接觸或已揭露資料取得協助。"
+          }
+        },
+        {
+          "id": "delete-for-withdrawal",
+          "text": {
+            "ja": "辞退できるなら、言われたとおり全部消して確認を待ちます。",
+            "en": "If that lets me withdraw, I will delete everything and wait for confirmation.",
+            "zh": "如果這樣能退出，我會照說的全部刪除並等待確認。"
+          },
+          "pronunciationGuide": {
+            "ja": "じたい できるなら、 いわれた とおり ぜんぶ けして かくにんを まちます。",
+            "en": "/ɪf ðæt lɛts mi wɪðˈdɹɔ, aɪ wɪl dɪˈlit ˈɛvɹiˌθɪŋ ənd weɪt fɔɹ ˌkɑnfɚˈmeɪʃən./",
+            "zh": "Rú guǒ zhè yàng néng tuì chū， wǒ huì zhào shuō de quán bù shān chú bìng děng dài què rèn。"
+          },
+          "axisScores": {
+            "personal-data-protection": 4,
+            "coercion-recognition": 0,
+            "contact-termination": 3,
+            "outside-support": 0
+          },
+          "feedback": {
+            "ja": "証拠を消して相手からの確認を待つため、接触を終えられず、第三者が状況を確認する材料も失います。",
+            "en": "Deleting evidence and waiting on the recruiter keeps contact open and removes material that could help an outside reviewer.",
+            "zh": "刪除證據後等待招募者確認，既沒有真正結束聯絡，也失去讓第三方了解情況的資料。"
+          }
+        }
+      ]
+    }
+  ]
+}

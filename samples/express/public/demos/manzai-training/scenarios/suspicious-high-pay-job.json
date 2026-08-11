@@ -1,0 +1,340 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "suspicious-high-pay-job",
+  "title": {
+    "ja": "怪しい高額求人への問い合わせ",
+    "en": "Questioning a Suspicious High-Pay Job",
+    "zh": "查問可疑高薪職缺"
+  },
+  "description": {
+    "ja": "仕事内容、雇用主、報酬の不自然さを確認し、匿名アプリへの移行を断る練習です。",
+    "en": "Practice checking unclear duties, the employer, and unusual pay, then refusing a move to an anonymous app.",
+    "zh": "練習查核模糊的工作內容、雇主與異常高薪，並拒絕轉往匿名通訊軟體。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "job-transparency",
+      "label": { "ja": "業務透明性", "en": "Job transparency", "zh": "工作透明度" },
+      "description": {
+        "ja": "作業内容、場所、責任を具体的に確認する",
+        "en": "Ask for concrete duties, location, and responsibilities.",
+        "zh": "具體確認工作內容、地點與責任。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "employer-verification",
+      "label": { "ja": "雇用主確認", "en": "Employer verification", "zh": "雇主查核" },
+      "description": {
+        "ja": "相手が示す情報だけに頼らず雇用主を確認する",
+        "en": "Verify the employer without relying only on recruiter-provided details.",
+        "zh": "不只依賴招募者提供的資料來查核雇主。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "data-boundaries",
+      "label": { "ja": "情報の境界", "en": "Data boundaries", "zh": "資料界線" },
+      "description": {
+        "ja": "確認前に個人情報を渡さない",
+        "en": "Do not disclose personal information before verification.",
+        "zh": "查核前不提供個人資料。"
+      },
+      "maxPoints": 20
+    },
+    {
+      "id": "channel-safety",
+      "label": { "ja": "連絡経路の安全", "en": "Channel safety", "zh": "聯絡管道安全" },
+      "description": {
+        "ja": "匿名経路を拒み、安全に連絡を終了する",
+        "en": "Reject anonymous channels and end contact safely.",
+        "zh": "拒絕匿名管道並安全結束聯絡。"
+      },
+      "maxPoints": 20
+    }
+  ],
+  "beats": [
+    {
+      "id": "vague-offer",
+      "boke": {
+        "ja": "荷物を受け取るだけで日給五万円です。詳しい作業は採用後に話します。",
+        "en": "You can earn five hundred dollars a day just receiving packages. Duties come after acceptance.",
+        "zh": "只要代收包裹，每天就有一萬多元。錄取後才會說明詳細工作。"
+      },
+      "pronunciationGuide": {
+        "ja": "にもつを うけとるだけで にっきゅう ごまんえんです。 くわしい さぎょうは さいようごに はなします。",
+        "en": "/ju kən ɝn faɪv ˈhʌndɹəd ˈdɑlɚz ə deɪ dʒʌst ɹɪˈsivɪŋ ˈpækɪdʒɪz. ˈdutiz kʌm ˈæftɚ əkˈsɛptəns./",
+        "zh": "Zhǐ yào dài shōu bāo guǒ， měi tiān jiù yǒu yí wàn duō yuán。 lù qǔ hòu cái huì shuō míng xiáng xì gōng zuò。"
+      },
+      "reaction": {
+        "description": { "ja": "高額報酬を強調する", "en": "Emphasize the high pay", "zh": "強調高額報酬" },
+        "motionTags": ["pose:emotion_06", "category:talking"],
+        "variant": 1,
+        "priority": 2,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "request-written-details",
+          "text": {
+            "ja": "応募前に、具体的な業務、勤務場所、雇用主の正式名、報酬の根拠を文書で示してください。",
+            "en": "Before I apply, provide the duties, workplace, employer's legal name, and pay basis in writing.",
+            "zh": "申請前，請以書面提供具體職務、工作地點、雇主正式名稱與薪酬依據。"
+          },
+          "pronunciationGuide": {
+            "ja": "おうぼまえに、 ぐたいてきな ぎょうむ、 きんむ ばしょ、 こようぬしの せいしきめい、 ほうしゅうの こんきょを ぶんしょで しめして ください。",
+            "en": "/bɪˈfɔɹ aɪ əˈplaɪ, pɹəˈvaɪd ðə ˈdutiz, ˈwɝkˌpleɪs, ɛmˈplɔɪɚz ˈliɡəl neɪm, ənd peɪ ˈbeɪsɪs ɪn ˈɹaɪtɪŋ./",
+            "zh": "Shēn qǐng qián， qǐng yǐ shū miàn tí gōng jù tǐ zhí wù、 gōng zuò dì diǎn、 gù zhǔ zhèng shì míng chēng yǔ xīn chóu yī jù。"
+          },
+          "axisScores": {
+            "job-transparency": 20,
+            "employer-verification": 20,
+            "data-boundaries": 20,
+            "channel-safety": 20
+          },
+          "feedback": {
+            "ja": "高額報酬に反応せず、応募前に仕事と雇用主を文書で具体化させるため、不透明さを見分けられます。",
+            "en": "You resist the high-pay lure and require written job and employer details before applying, exposing the lack of transparency.",
+            "zh": "你沒有被高薪吸引，而是在申請前要求書面列明工作與雇主資料，能看出不透明之處。"
+          }
+        },
+        {
+          "id": "ask-duty-only",
+          "text": {
+            "ja": "まず、荷物の大きさと受け取る時間だけ教えてください。",
+            "en": "First, just tell me the package size and pickup time.",
+            "zh": "先告訴我包裹大小和收取時間就好。"
+          },
+          "pronunciationGuide": {
+            "ja": "まず、 にもつの おおきさと うけとる じかんだけ おしえて ください。",
+            "en": "/fɝst, dʒʌst tɛl mi ðə ˈpækɪdʒ saɪz ənd ˈpɪkˌʌp taɪm./",
+            "zh": "Xiān gào sù wǒ bāo guǒ dà xiǎo hé shōu qǔ shí jiān jiù hǎo。"
+          },
+          "axisScores": {
+            "job-transparency": 12,
+            "employer-verification": 2,
+            "data-boundaries": 18,
+            "channel-safety": 10
+          },
+          "feedback": {
+            "ja": "作業の一部は確認できますが、雇用主、責任範囲、異常な報酬の根拠が未確認のままです。",
+            "en": "You clarify one task detail, but the employer, responsibility, and unusual pay remain unverified.",
+            "zh": "你只確認了一項工作細節，雇主、責任範圍與異常薪酬仍未查核。"
+          }
+        },
+        {
+          "id": "accept-high-pay",
+          "text": {
+            "ja": "簡単で高収入なら、仕事内容は後で構いません。応募します。",
+            "en": "If it is easy and pays that much, the duties can wait. I will apply.",
+            "zh": "工作輕鬆又高薪，內容之後再說也可以。我來申請。"
+          },
+          "pronunciationGuide": {
+            "ja": "かんたんで こうしゅうにゅうなら、 しごと ないようは あとで かまいません。 おうぼ します。",
+            "en": "/ɪf ɪt ɪz ˈizi ənd peɪz ðæt mʌtʃ, ðə ˈdutiz kən weɪt. aɪ wɪl əˈplaɪ./",
+            "zh": "Gōng zuò qīng sōng yòu gāo xīn， nèi róng zhī hòu zài shuō yě kě yǐ。 wǒ lái shēn qǐng。"
+          },
+          "axisScores": {
+            "job-transparency": 0,
+            "employer-verification": 0,
+            "data-boundaries": 5,
+            "channel-safety": 3
+          },
+          "feedback": {
+            "ja": "報酬だけで判断し、業務と雇用主が不明なまま応募するため、危険な募集へ入り込むおそれがあります。",
+            "en": "You decide on pay alone and enter an unknown job with an unverified employer, increasing recruitment risk.",
+            "zh": "你只看薪酬，在工作與雇主不明的情況下申請，容易落入危險招募。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "employer-gap",
+      "boke": {
+        "ja": "会社名は登録した人だけに教えます。先に年齢と住所を送ってください。",
+        "en": "Only registered applicants get the company name. Send your age and address first.",
+        "zh": "只有登記的申請者能知道公司名稱。先傳年齡和地址。"
+      },
+      "pronunciationGuide": {
+        "ja": "かいしゃめいは とうろくした ひとだけに おしえます。 さきに ねんれいと じゅうしょを おくって ください。",
+        "en": "/ˈoʊnli ˈɹɛdʒɪstɚd ˈæplɪkənts ɡɛt ðə ˈkʌmpəni neɪm. sɛnd jɔɹ eɪdʒ ənd əˈdɹɛs fɝst./",
+        "zh": "Zhǐ yǒu dēng jì de shēn qǐng zhě néng zhī dào gōng sī míng chēng。 xiān chuán nián líng hé dì zhǐ。"
+      },
+      "reaction": {
+        "description": { "ja": "情報を先に求める", "en": "Demand information first", "zh": "先索取資料" },
+        "motionTags": ["pose:emotion_03", "category:talking"],
+        "variant": 0,
+        "priority": 2,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "verify-independently",
+          "text": {
+            "ja": "身元不明の相手に個人情報は送りません。求人元の公開情報を自分で確認できなければ辞退します。",
+            "en": "I will not send personal data to an unknown party. If I cannot verify the employer independently, I withdraw.",
+            "zh": "我不會把個資傳給身分不明者。若無法自行查核雇主，我就退出。"
+          },
+          "pronunciationGuide": {
+            "ja": "みもと ふめいの あいてに こじん じょうほうは おくりません。 きゅうじんもとの こうかい じょうほうを じぶんで かくにん できなければ じたい します。",
+            "en": "/aɪ wɪl nɑt sɛnd ˈpɝsɪnəl ˈdeɪtə tu ən ʌnˈnoʊn ˈpɑɹti. ɪf aɪ ˈkænɑt ˈvɛɹəˌfaɪ ði ɛmˈplɔɪɚ ˌɪndəˈpɛndəntli, aɪ wɪðˈdɹɔ./",
+            "zh": "Wǒ bú huì bǎ gè zī chuán gěi shēn fèn bù míng zhě。 ruò wú fǎ zì xíng chá hé gù zhǔ， wǒ jiù tuì chū。"
+          },
+          "axisScores": {
+            "job-transparency": 20,
+            "employer-verification": 20,
+            "data-boundaries": 20,
+            "channel-safety": 20
+          },
+          "feedback": {
+            "ja": "相手の順序に従わず、情報提供を止め、独立確認できない求人から離れる明確な境界を示しています。",
+            "en": "You reject the recruiter's sequence, protect your data, and set a clear exit when independent verification is impossible.",
+            "zh": "你不按對方設定的順序行動，保護個資，並在無法獨立查核時明確退出。"
+          }
+        },
+        {
+          "id": "request-recruiter-website",
+          "text": {
+            "ja": "住所は送りません。確認用の会社サイトを送ってください。",
+            "en": "I will not send my address. Send me the company website to check.",
+            "zh": "我不傳地址。請把公司網站傳給我查。"
+          },
+          "pronunciationGuide": {
+            "ja": "じゅうしょは おくりません。 かくにんようの かいしゃ さいとを おくって ください。",
+            "en": "/aɪ wɪl nɑt sɛnd maɪ əˈdɹɛs. sɛnd mi ðə ˈkʌmpəni ˈwɛbˌsaɪt tu tʃɛk./",
+            "zh": "Wǒ bù chuán dì zhǐ。 qǐng bǎ gōng sī wǎng zhàn chuán gěi wǒ chá。"
+          },
+          "axisScores": {
+            "job-transparency": 8,
+            "employer-verification": 10,
+            "data-boundaries": 20,
+            "channel-safety": 12
+          },
+          "feedback": {
+            "ja": "住所は守れますが、相手が用意したサイトだけでは雇用主を独立して確認できません。",
+            "en": "You protect your address, but a recruiter-supplied website alone is not independent employer verification.",
+            "zh": "你保護了地址，但只看招募者提供的網站，仍不算獨立查核雇主。"
+          }
+        },
+        {
+          "id": "send-basic-profile",
+          "text": {
+            "ja": "登録だけなら大丈夫だと思うので、年齢と住所を送ります。",
+            "en": "Registration seems harmless, so I will send my age and address.",
+            "zh": "只是登記應該沒問題，我會傳年齡和地址。"
+          },
+          "pronunciationGuide": {
+            "ja": "とうろくだけなら だいじょうぶだと おもうので、 ねんれいと じゅうしょを おくります。",
+            "en": "/ˌɹɛdʒɪˈstɹeɪʃən simz ˈhɑɹmləs, soʊ aɪ wɪl sɛnd maɪ eɪdʒ ənd əˈdɹɛs./",
+            "zh": "Zhǐ shì dēng jì yīng gāi méi wèn tí， wǒ huì chuán nián líng hé dì zhǐ。"
+          },
+          "axisScores": {
+            "job-transparency": 1,
+            "employer-verification": 0,
+            "data-boundaries": 0,
+            "channel-safety": 4
+          },
+          "feedback": {
+            "ja": "雇用主を確認する前に住所を渡しており、募集側に接触や圧力の材料を与えます。",
+            "en": "You disclose your address before verifying the employer, giving the recruiter information that can support further pressure.",
+            "zh": "你在查核雇主前就提供地址，讓招募者取得可用來繼續施壓的資料。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "anonymous-channel",
+      "boke": {
+        "ja": "ここでは履歴が残ります。匿名アプリへ移り、元の求人画面は消してください。",
+        "en": "This chat leaves records. Move to an anonymous app and delete the original job listing.",
+        "zh": "這裡會留下紀錄。轉到匿名通訊軟體，並刪除原本的職缺頁面。"
+      },
+      "pronunciationGuide": {
+        "ja": "ここでは りれきが のこります。 とくめい あぷりへ うつり、 もとの きゅうじん がめんは けして ください。",
+        "en": "/ðɪs tʃæt livz ˈɹɛkɚdz. muv tu ən əˈnɑnəməs æp ənd dɪˈlit ði əˈɹɪdʒənəl dʒɑb ˈlɪstɪŋ./",
+        "zh": "Zhè lǐ huì liú xià jì lù。 zhuǎn dào nì míng tōng xùn ruǎn tǐ， bìng shān chú yuán běn de zhí quē yè miàn。"
+      },
+      "reaction": {
+        "description": { "ja": "記録を消すよう迫る", "en": "Pressure the applicant to erase records", "zh": "施壓要求刪除紀錄" },
+        "motionTags": ["pose:emotion_08", "category:talking"],
+        "variant": 2,
+        "priority": 2,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "refuse-and-preserve",
+          "text": {
+            "ja": "匿名アプリへは移りません。求人と会話を保存して連絡を終え、信頼できる人に相談します。",
+            "en": "I will not move to an anonymous app. I will save the listing and chat, end contact, and consult someone I trust.",
+            "zh": "我不會轉到匿名通訊軟體。我會保存職缺與對話、結束聯絡，並找可信任的人商量。"
+          },
+          "pronunciationGuide": {
+            "ja": "とくめい あぷりへは うつりません。 きゅうじんと かいわを ほぞんして れんらくを おえ、 しんらい できる ひとに そうだん します。",
+            "en": "/aɪ wɪl nɑt muv tu ən əˈnɑnəməs æp. aɪ wɪl seɪv ðə ˈlɪstɪŋ ənd tʃæt, ɛnd ˈkɑnˌtækt, ənd kənˈsʌlt ˈsʌmwʌn aɪ tɹʌst./",
+            "zh": "Wǒ bú huì zhuǎn dào nì míng tōng xùn ruǎn tǐ。 wǒ huì bǎo cún zhí quē yǔ duì huà、 jié shù lián luò， bìng zhǎo kě xìn rèn de rén shāng liáng。"
+          },
+          "axisScores": {
+            "job-transparency": 20,
+            "employer-verification": 20,
+            "data-boundaries": 20,
+            "channel-safety": 20
+          },
+          "feedback": {
+            "ja": "記録を消す要求と匿名化を危険信号として扱い、証拠を残して接触を終え、孤立を避けています。",
+            "en": "You treat anonymity and record deletion as warning signs, preserve the exchange, disengage, and avoid isolation.",
+            "zh": "你把匿名聯絡與刪除紀錄視為警訊，保存對話後退出，也避免獨自承受。"
+          }
+        },
+        {
+          "id": "stay-on-platform",
+          "text": {
+            "ja": "匿名アプリは使いません。この求人サイト内なら話を続けます。",
+            "en": "I will not use the anonymous app, but I can keep talking on this job site.",
+            "zh": "我不用匿名通訊軟體，但可以留在這個求職網站繼續談。"
+          },
+          "pronunciationGuide": {
+            "ja": "とくめい あぷりは つかいません。 この きゅうじん さいとないなら はなしを つづけます。",
+            "en": "/aɪ wɪl nɑt juz ði əˈnɑnəməs æp, bʌt aɪ kən kip ˈtɔkɪŋ ɑn ðɪs dʒɑb saɪt./",
+            "zh": "Wǒ bú yòng nì míng tōng xùn ruǎn tǐ， dàn kě yǐ liú zài zhè ge qiú zhí wǎng zhàn jì xù tán。"
+          },
+          "axisScores": {
+            "job-transparency": 8,
+            "employer-verification": 6,
+            "data-boundaries": 18,
+            "channel-safety": 16
+          },
+          "feedback": {
+            "ja": "匿名経路は拒否できますが、不明な相手との接触を続け、保存や第三者相談まで進めていません。",
+            "en": "You reject the anonymous channel, but continue contact with an unknown party without preservation or outside support.",
+            "zh": "你拒絕匿名管道，但仍與不明對象保持聯絡，也沒有保存紀錄或尋求外部協助。"
+          }
+        },
+        {
+          "id": "move-and-delete",
+          "text": {
+            "ja": "履歴が残らない方が安心なので、移動して求人画面も消します。",
+            "en": "No records sounds safer, so I will move and delete the listing.",
+            "zh": "不留紀錄好像更安全，我會轉過去並刪除職缺頁面。"
+          },
+          "pronunciationGuide": {
+            "ja": "りれきが のこらない ほうが あんしんなので、 いどうして きゅうじん がめんも けします。",
+            "en": "/noʊ ˈɹɛkɚdz saʊndz ˈseɪfɚ, soʊ aɪ wɪl muv ənd dɪˈlit ðə ˈlɪstɪŋ./",
+            "zh": "Bù liú jì lù hǎo xiàng gèng ān quán， wǒ huì zhuǎn guò qù bìng shān chú zhí quē yè miàn。"
+          },
+          "axisScores": {
+            "job-transparency": 0,
+            "employer-verification": 0,
+            "data-boundaries": 3,
+            "channel-safety": 0
+          },
+          "feedback": {
+            "ja": "相手が管理しやすい閉じた経路へ移り、判断材料も消すため、孤立と誘導が強まる危険な選択です。",
+            "en": "You enter a closed channel controlled by the recruiter and erase context, increasing isolation and manipulation risk.",
+            "zh": "你進入招募者容易控制的封閉管道，還刪除判斷資料，會加深孤立與操控風險。"
+          }
+        }
+      ]
+    }
+  ]
+}
