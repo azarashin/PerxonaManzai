@@ -54,15 +54,15 @@
       "branching": {
         "requirement": "required",
         "rationale": {
-          "ja": "高度な営業交渉では、確認した課題、信頼、残りの譲歩余地によって有効な提案と着地点が変わるため、状態と分岐が必要です。",
-          "en": "Advanced sales negotiation requires state and branching because confirmed needs, trust, and remaining concessions change the viable proposal and outcome.",
-          "zh": "進階銷售談判中，已確認需求、信任與剩餘讓步空間會改變可行提案與結果，因此必須使用狀態與分支。"
+          "ja": "信頼、確認済みの条件、残りの譲歩幅で提案と結果が変わるため分岐が必要です。",
+          "en": "Branching is required because trust, confirmed conditions, and remaining concessions change viable offers and outcomes.",
+          "zh": "信任、已確認條件與剩餘讓步空間會改變可行方案與結果，因此必須分支。"
         }
       },
       "title": {
-        "ja": "交渉・営業",
+        "ja": "交渉・値切り・営業",
         "en": "Negotiation and Sales",
-        "zh": "談判與銷售"
+        "zh": "談判、議價與銷售"
       }
     }
   ],
@@ -417,6 +417,33 @@
         "zh": "家事分工不均"
       },
       "path": "./scenarios/unequal-housework.json"
+    },
+    {
+      "id": "competitor-price-objection",
+      "categoryId": "negotiation-sales",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 8,
+      "learningObjectives": {
+        "ja": [
+          "交渉・値切り・営業で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Negotiation and Sales.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合談判、議價與銷售的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "競合価格への異議",
+        "en": "Competitor Price Objection",
+        "zh": "競爭對手價格異議"
+      },
+      "path": "./scenarios/competitor-price-objection.json"
     }
   ]
 }
