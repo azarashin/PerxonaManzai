@@ -189,6 +189,8 @@ The sum of `evaluationAxes[].maxPoints` is fixed at 80, and every choice must sc
 Motion Markup priority, and `cue` places the motion at the start or end of the spoken line. An optional `motionId` can pin an
 exact catalog motion, but tag-based authoring is preferred because Motion IDs vary between Avatars.
 
+Scenarios may also declare typed `stateVariables`, a `startBeatId`, choice-level `stateEffects`, and ordered conditional `routes`. Existing scenarios remain linear when these fields are omitted. See [the scenario generation guide](./docs/scenario-generation-guide.md#state-and-branching) for the branching contract.
+
 The MVP chooses the phrase with the highest normalized Levenshtein similarity. It asks the user to retry when the best score
 is below `0.48`. Content quality is deterministic and authored in the scenario; the MVP does not use an LLM to judge humor or
 emotion.

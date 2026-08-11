@@ -62,6 +62,42 @@ Requirements:
 - Define scenario-specific `evaluationAxes`; their `maxPoints` must total 80.
 - Give every choice an `axisScores` entry for every declared axis. Each score must be an integer from 0 through that axis's `maxPoints`.
 - Use axes that explain the skill being trained (for example empathy, fact checking, or premise recognition), and explain the overall judgment in `feedback`.
+
+## State and branching
+
+Keep a scenario linear when earlier choices do not materially change the later conversation. When the catalog marks branching as recommended or required, use these fields:
+
+- `startBeatId`: optional entry beat; otherwise the first beat is used.
+- `stateVariables`: typed `number`, `boolean`, or `string` values with localized labels and descriptions. Number state may declare `minimum` and `maximum`.
+- `stateEffects`: choice-level updates. Use `set` for any matching type and `add` only for numbers.
+- `routes`: ordered choice-level destinations evaluated after state effects. Every route set must end with an unconditional fallback. Use `nextBeatId: null` to finish.
+
+```json
+{
+  "startBeatId": "hear-complaint",
+  "stateVariables": [{
+    "id": "trust",
+    "label": { "ja": "信頼", "en": "Trust", "zh": "信任" },
+    "description": { "ja": "顧客との信頼度", "en": "Customer trust level", "zh": "顧客信任程度" },
+    "type": "number",
+    "initialValue": 0,
+    "minimum": -2,
+    "maximum": 2
+  }],
+  "choice": {
+    "stateEffects": [{ "stateId": "trust", "operation": "add", "value": 1 }],
+    "routes": [
+      {
+        "conditions": [{ "stateId": "trust", "operator": "greater-than-or-equal", "value": 1 }],
+        "nextBeatId": "seek-resolution"
+      },
+      { "nextBeatId": "customer-escalates" }
+    ]
+  }
+}
+```
+
+All referenced state and beat IDs must exist. Conditions within one route are ANDed; routes use the first match. Avoid loops unless repetition is a deliberate training mechanic.
 - Prefer portable motionTags over motionId.
 - Do not add fields that are absent from the schema.
 - Run npm run validate:scenarios and npm test.

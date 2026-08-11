@@ -76,7 +76,7 @@ for (const entry of catalog.scenarios) {
   new ScenarioController(scenario);
   assertOnlyKeys(
     scenario,
-    ["$schema", "id", "title", "description", "evaluationAxes", "beats"],
+    ["$schema", "id", "title", "description", "startBeatId", "stateVariables", "evaluationAxes", "beats"],
     filename,
   );
   assert.equal(scenario.id, entry.id, `${filename}: catalog ID must match scenario ID`);
@@ -93,6 +93,32 @@ for (const entry of catalog.scenarios) {
   assertId(scenario.id, `${filename} scenario`);
   assertLocalizedText(scenario.title, `${filename} title`);
   assertLocalizedText(scenario.description, `${filename} description`);
+  const beatIds = new Set(scenario.beats.map((beat) => beat.id));
+  if (scenario.startBeatId !== undefined) {
+    assertId(scenario.startBeatId, `${filename} start beat`);
+    assert.ok(beatIds.has(scenario.startBeatId), `${filename}: startBeatId must reference a beat`);
+  }
+  const stateVariables = new Map();
+  for (const variable of scenario.stateVariables ?? []) {
+    assertOnlyKeys(variable, ["id", "label", "description", "type", "initialValue", "minimum", "maximum"], `${filename} state variable`);
+    assertId(variable.id, `${filename} state variable`);
+    assert.ok(!stateVariables.has(variable.id), `${filename}: state variable IDs must be unique`);
+    assertLocalizedText(variable.label, `${filename} ${variable.id} label`);
+    assertLocalizedText(variable.description, `${filename} ${variable.id} description`);
+    assert.ok(["number", "boolean", "string"].includes(variable.type), `${filename}: invalid state type`);
+    assertStateValueType(variable.initialValue, variable.type, `${filename} ${variable.id} initialValue`);
+    if (variable.type === "number") {
+      if (variable.minimum !== undefined) assert.equal(typeof variable.minimum, "number");
+      if (variable.maximum !== undefined) assert.equal(typeof variable.maximum, "number");
+      if (variable.minimum !== undefined) assert.ok(variable.initialValue >= variable.minimum);
+      if (variable.maximum !== undefined) assert.ok(variable.initialValue <= variable.maximum);
+      if (variable.minimum !== undefined && variable.maximum !== undefined) assert.ok(variable.minimum <= variable.maximum);
+    } else {
+      assert.equal(variable.minimum, undefined, `${filename}: only number state can define minimum`);
+      assert.equal(variable.maximum, undefined, `${filename}: only number state can define maximum`);
+    }
+    stateVariables.set(variable.id, variable);
+  }
   assertUniqueIds(scenario.evaluationAxes, `${filename} evaluation axis`);
   assert.equal(
     scenario.evaluationAxes.reduce((total, axis) => total + axis.maxPoints, 0),
@@ -128,7 +154,7 @@ for (const entry of catalog.scenarios) {
     for (const choice of beat.choices) {
       assertOnlyKeys(
         choice,
-        ["id", "text", "aliases", "axisScores", "feedback"],
+        ["id", "text", "aliases", "axisScores", "stateEffects", "routes", "feedback"],
         `${filename} choice ${choice.id}`,
       );
       assertId(choice.id, `${filename} choice`);
@@ -163,6 +189,8 @@ for (const entry of catalog.scenarios) {
           `${filename}: ${choice.id} ${axisId} score is outside its allowed range`,
         );
       }
+      validateStateEffects(choice.stateEffects, stateVariables, `${filename} ${choice.id}`);
+      validateRoutes(choice.routes, stateVariables, beatIds, `${filename} ${choice.id}`);
     }
   }
 }
@@ -206,6 +234,53 @@ function assertLocalizedStringLists(value, label) {
   for (const language of ["ja", "en", "zh"]) {
     assertStringList(value[language], `${label}.${language}`);
   }
+}
+
+function assertStateValueType(value, type, label) {
+  assert.equal(typeof value, type, `${label} must be a ${type}`);
+}
+
+function validateStateEffects(effects = [], variables, label) {
+  const affectedIds = new Set();
+  for (const effect of effects) {
+    assertOnlyKeys(effect, ["stateId", "operation", "value"], `${label} state effect`);
+    const variable = variables.get(effect.stateId);
+    assert.ok(variable, `${label}: state effect must reference a declared variable`);
+    assert.ok(!affectedIds.has(effect.stateId), `${label}: a state variable can only be updated once`);
+    assert.ok(["set", "add"].includes(effect.operation), `${label}: invalid state operation`);
+    assertStateValueType(effect.value, variable.type, `${label} ${effect.stateId} effect value`);
+    assert.ok(effect.operation !== "add" || variable.type === "number", `${label}: add requires number state`);
+    affectedIds.add(effect.stateId);
+  }
+}
+
+function validateRoutes(routes = [], variables, beatIds, label) {
+  let fallbackSeen = false;
+  for (const [index, route] of routes.entries()) {
+    assertOnlyKeys(route, ["conditions", "nextBeatId"], `${label} route`);
+    if (route.nextBeatId !== null) {
+      assert.ok(beatIds.has(route.nextBeatId), `${label}: route must reference a beat or null`);
+    }
+    if (route.conditions === undefined) {
+      assert.equal(index, routes.length - 1, `${label}: an unconditional route must be last`);
+      fallbackSeen = true;
+      continue;
+    }
+    assert.ok(!fallbackSeen && route.conditions.length > 0, `${label}: route conditions must not be empty`);
+    for (const condition of route.conditions) {
+      assertOnlyKeys(condition, ["stateId", "operator", "value"], `${label} route condition`);
+      const variable = variables.get(condition.stateId);
+      assert.ok(variable, `${label}: route condition must reference a declared variable`);
+      assertStateValueType(condition.value, variable.type, `${label} ${condition.stateId} condition value`);
+      const ordered = ["greater-than", "greater-than-or-equal", "less-than", "less-than-or-equal"].includes(condition.operator);
+      assert.ok(
+        ["equals", "not-equals", "greater-than", "greater-than-or-equal", "less-than", "less-than-or-equal"].includes(condition.operator),
+        `${label}: invalid route operator`,
+      );
+      assert.ok(!ordered || variable.type === "number", `${label}: ordered comparisons require number state`);
+    }
+  }
+  if (routes.length > 0) assert.ok(fallbackSeen, `${label}: routes require a final unconditional fallback`);
 }
 
 function assertOnlyKeys(value, allowedKeys, label) {

@@ -10,6 +10,12 @@
     "id": { "$ref": "#/$defs/id" },
     "title": { "$ref": "#/$defs/localizedText" },
     "description": { "$ref": "#/$defs/localizedText" },
+    "startBeatId": { "$ref": "#/$defs/id" },
+    "stateVariables": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/stateVariable" }
+    },
     "evaluationAxes": {
       "type": "array",
       "minItems": 1,
@@ -90,6 +96,63 @@
         }
       }
     },
+    "stateValue": {
+      "type": ["number", "boolean", "string"]
+    },
+    "stateVariable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "description", "type", "initialValue"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "$ref": "#/$defs/localizedText" },
+        "description": { "$ref": "#/$defs/localizedText" },
+        "type": { "enum": ["number", "boolean", "string"] },
+        "initialValue": { "$ref": "#/$defs/stateValue" },
+        "minimum": { "type": "number" },
+        "maximum": { "type": "number" }
+      }
+    },
+    "stateEffect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stateId", "operation", "value"],
+      "properties": {
+        "stateId": { "$ref": "#/$defs/id" },
+        "operation": { "enum": ["set", "add"] },
+        "value": { "$ref": "#/$defs/stateValue" }
+      }
+    },
+    "routeCondition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stateId", "operator", "value"],
+      "properties": {
+        "stateId": { "$ref": "#/$defs/id" },
+        "operator": {
+          "enum": ["equals", "not-equals", "greater-than", "greater-than-or-equal", "less-than", "less-than-or-equal"]
+        },
+        "value": { "$ref": "#/$defs/stateValue" }
+      }
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nextBeatId"],
+      "properties": {
+        "conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/routeCondition" }
+        },
+        "nextBeatId": {
+          "oneOf": [
+            { "$ref": "#/$defs/id" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
     "choice": {
       "type": "object",
       "additionalProperties": false,
@@ -112,6 +175,16 @@
             "maximum": 80
           },
           "propertyNames": { "$ref": "#/$defs/id" }
+        },
+        "stateEffects": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/stateEffect" }
+        },
+        "routes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/route" }
         },
         "feedback": { "$ref": "#/$defs/localizedText" }
       }
