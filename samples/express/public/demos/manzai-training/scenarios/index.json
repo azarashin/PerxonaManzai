@@ -1053,6 +1053,33 @@
         "zh": "假冒退款客服"
       },
       "path": "./scenarios/fake-refund-support.json"
+    },
+    {
+      "id": "urgent-account-verification",
+      "categoryId": "scam-awareness",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "詐欺・悪質勧誘への対処で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Scam and Manipulative Sales Awareness.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合詐騙與惡質推銷防範的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "緊急のアカウント確認",
+        "en": "Urgent Account Verification",
+        "zh": "緊急帳號驗證"
+      },
+      "path": "./scenarios/urgent-account-verification.json"
     }
   ]
 }
