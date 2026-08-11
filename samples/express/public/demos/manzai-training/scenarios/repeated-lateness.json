@@ -75,7 +75,7 @@
       "boke": {
         "ja": "遅刻したのは分かっています。でも理由を聞かずに叱らないでください。",
         "en": "I know I was late, but please don't scold me without asking why.",
-        "zh": "我知道自己遲到，但請不要還沒問原因就責罵我。"
+        "zh": "我知道自己遲到了，但請不要還沒問原因就責罵我。"
       },
       "reaction": {
         "description": {
@@ -95,9 +95,9 @@
         {
           "id": "opening-strong",
           "text": {
-            "ja": "決めつけずに本人の事情と受け止めを聞きます。",
-            "en": "I will ask about the student's circumstances without assuming.",
-            "zh": "我不預設立場，先了解學生的情況與感受。"
+            "ja": "理由を聞く前に決めつけてしまった。今日の経緯と最近続いている理由を話してくれる？",
+            "en": "I judged before asking. Could you explain today's delay and why it has been recurring?",
+            "zh": "我還沒詢問就先下判斷了。可以說明今天及近期反覆遲到的原因嗎？"
           },
           "axisScores": {
             "empathy": 20,
@@ -106,47 +106,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：理由を聞く前に決めつけてしまった。今日の経緯と最近続いている理由を話してくれる？",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: I judged before asking. Could you explain today's delay and why it has been recurring?",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：我還沒詢問就先下判斷了。可以說明今天及近期反覆遲到的原因嗎？"
           }
         },
         {
           "id": "opening-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "分かった。今日はまず理由を聞くよ。",
+            "en": "All right. I'll hear your reason today.",
+            "zh": "好，今天我先聽你的理由。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
-            "psychological-safety": 12,
-            "solution-quality": 12
+            "empathy": 14,
+            "fact-checking": 12,
+            "psychological-safety": 13,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：分かった。今日はまず理由を聞くよ。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: All right. I'll hear your reason today.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：好，今天我先聽你的理由。"
           }
         },
         {
           "id": "opening-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "理由があっても、遅刻は遅刻です。",
+            "en": "A reason does not change the fact that you were late.",
+            "zh": "就算有理由，遲到還是遲到。"
           },
           "axisScores": {
             "empathy": 2,
-            "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "fact-checking": 4,
+            "psychological-safety": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：理由があっても、遅刻は遅刻です。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: A reason does not change the fact that you were late.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：就算有理由，遲到還是遲到。"
           }
         }
       ]
@@ -154,9 +154,9 @@
     {
       "id": "clarify",
       "boke": {
-        "ja": "まだ大切な点が伝わっていない気がします。何を確認しますか。",
-        "en": "I don't think the key point is clear yet. What will you check?",
-        "zh": "我覺得重點還沒說清楚。你要確認什麼？"
+        "ja": "朝、弟を保育園へ送る日だけ遅れます。家では私しか頼めません。",
+        "en": "I'm late only when I must take my brother to daycare; no one else at home can.",
+        "zh": "只有要送弟弟去幼兒園的早上會遲到，家裡沒有其他人能幫忙。"
       },
       "reaction": {
         "description": {
@@ -176,9 +176,9 @@
         {
           "id": "clarify-strong",
           "text": {
-            "ja": "観察した事実と心配している理由を分けて伝えます。",
-            "en": "I will separate observed facts from why I am concerned.",
-            "zh": "我會分開說明觀察到的事實與擔心原因。"
+            "ja": "送迎の曜日と到着時刻を一緒に確認しよう。学校で調整できることも担任と相談していい？",
+            "en": "Let's map the daycare days and arrival times. May I discuss school accommodations with your adviser?",
+            "zh": "一起確認接送日期與到校時間，也可以和導師討論校方能調整的方式嗎？"
           },
           "axisScores": {
             "empathy": 20,
@@ -187,47 +187,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：送迎の曜日と到着時刻を一緒に確認しよう。学校で調整できることも担任と相談していい？",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: Let's map the daycare days and arrival times. May I discuss school accommodations with your adviser?",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：一起確認接送日期與到校時間，也可以和導師討論校方能調整的方式嗎？"
           }
         },
         {
           "id": "clarify-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "事情は分かった。遅れる日は先に連絡して。",
+            "en": "I understand. Contact us in advance on days you will be late.",
+            "zh": "我了解了，會遲到的日子請先聯絡。"
           },
           "axisScores": {
             "empathy": 13,
-            "fact-checking": 11,
-            "psychological-safety": 12,
-            "solution-quality": 12
+            "fact-checking": 13,
+            "psychological-safety": 14,
+            "solution-quality": 10
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：事情は分かった。遅れる日は先に連絡して。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: I understand. Contact us in advance on days you will be late.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：我了解了，會遲到的日子請先聯絡。"
           }
         },
         {
           "id": "clarify-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "家庭のことは学校へ持ち込まず、もっと早く起きてください。",
+            "en": "Keep family matters out of school and wake up earlier.",
+            "zh": "家庭問題不要帶到學校，請更早起床。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "empathy": 0,
+            "fact-checking": 2,
+            "psychological-safety": 0,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：家庭のことは学校へ持ち込まず、もっと早く起きてください。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: Keep family matters out of school and wake up earlier.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：家庭問題不要帶到學校，請更早起床。"
           }
         }
       ]
@@ -235,9 +235,9 @@
     {
       "id": "constructive-close",
       "boke": {
-        "ja": "分かりました。では、次にどう進めるか具体的に決められますか。",
-        "en": "Understood. Can we decide specifically what happens next?",
-        "zh": "了解。那麼可以具體決定下一步嗎？"
+        "ja": "送迎日は週二回です。遅刻を減らし、授業にも遅れない方法を一緒に決めたいです。",
+        "en": "Daycare is twice a week. I want a plan that reduces lateness without missing class.",
+        "zh": "每週有兩天要接送。我想一起決定既能減少遲到又不錯過課程的方法。"
       },
       "reaction": {
         "description": {
@@ -257,9 +257,9 @@
         {
           "id": "constructive-close-strong",
           "text": {
-            "ja": "本人が選べる小さな次の行動と支援を一緒に決めます。",
-            "en": "We will choose a small next step and support the student can accept.",
-            "zh": "一起決定學生能接受的小步驟與支援。"
+            "ja": "送迎日は始業前に連絡し、到着後すぐ教材を受け取れるよう担任と二週間試そう。",
+            "en": "On daycare days, contact us before class; we'll arrange immediate materials and review after two weeks.",
+            "zh": "接送日上課前聯絡，到校後立刻領取教材，與導師試行兩週後檢討。"
           },
           "axisScores": {
             "empathy": 20,
@@ -268,47 +268,47 @@
             "solution-quality": 20
           },
           "feedback": {
-            "ja": "相手の要点を受け止め、確認と次の行動を短く結び付けた応答です。",
-            "en": "This response acknowledges the key point and links verification to a clear next action.",
-            "zh": "這個回應接住重點，並把確認與明確的下一步連結起來。"
+            "ja": "事実確認・心理的安全性・次の行動を場面に即して統合しています：送迎日は始業前に連絡し、到着後すぐ教材を受け取れるよう担任と二週間試そう。",
+            "en": "This integrates fact-finding, psychological safety, and a concrete next step: On daycare days, contact us before class; we'll arrange immediate materials and review after two weeks.",
+            "zh": "這個回應結合事實確認、心理安全與具體下一步：接送日上課前聯絡，到校後立刻領取教材，與導師試行兩週後檢討。"
           }
         },
         {
           "id": "constructive-close-partial",
           "text": {
-            "ja": "分かりました。少し考えさせてください。",
-            "en": "I understand. Let me think about it.",
-            "zh": "我明白了，請讓我想一下。"
+            "ja": "遅れる日は必ず連絡する約束にしよう。",
+            "en": "Promise to contact us whenever you'll be late.",
+            "zh": "約定每次會遲到都先聯絡。"
           },
           "axisScores": {
-            "empathy": 13,
-            "fact-checking": 11,
+            "empathy": 12,
+            "fact-checking": 12,
             "psychological-safety": 12,
             "solution-quality": 12
           },
           "feedback": {
-            "ja": "対話は保てますが、確認事項か次の行動を具体化するとさらに有効です。",
-            "en": "This keeps the dialogue open, but it should specify either what to verify or what happens next.",
-            "zh": "這能維持對話，但若能具體說明要確認什麼或下一步會更有效。"
+            "ja": "対話は続けられますが、確認か支援の一部が不足しています：遅れる日は必ず連絡する約束にしよう。",
+            "en": "This keeps dialogue open, but part of the inquiry or support is missing: Promise to contact us whenever you'll be late.",
+            "zh": "這能維持對話，但仍缺少部分查證或支援：約定每次會遲到都先聯絡。"
           }
         },
         {
           "id": "constructive-close-weak",
           "text": {
-            "ja": "それは私の問題ではありません。",
-            "en": "That is not my problem.",
-            "zh": "那不是我的問題。"
+            "ja": "次に遅れたら、理由に関係なく保護者を呼びます。",
+            "en": "Next time, I'll call your guardian regardless of the reason.",
+            "zh": "下次再遲到，不論原因都通知家長。"
           },
           "axisScores": {
-            "empathy": 2,
-            "fact-checking": 3,
-            "psychological-safety": 2,
-            "solution-quality": 3
+            "empathy": 1,
+            "fact-checking": 2,
+            "psychological-safety": 1,
+            "solution-quality": 2
           },
           "feedback": {
-            "ja": "相手の要点を退けるだけでは情報と信頼を失います。断定せず、まず確認しましょう。",
-            "en": "Dismissing the issue loses information and trust. Avoid assumptions and verify first.",
-            "zh": "只是否定問題會失去資訊與信任；應避免武斷並先確認。"
+            "ja": "決めつけや一律対応により、信頼と解決の可能性を損ないます：次に遅れたら、理由に関係なく保護者を呼びます。",
+            "en": "This assumption or blanket response harms trust and the chance of resolution: Next time, I'll call your guardian regardless of the reason.",
+            "zh": "這種預設或一律處理會損害信任與解決機會：下次再遲到，不論原因都通知家長。"
           }
         }
       ]

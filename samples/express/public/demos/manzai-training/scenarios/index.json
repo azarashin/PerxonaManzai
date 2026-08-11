@@ -926,16 +926,16 @@
       "estimatedMinutes": 5,
       "learningObjectives": {
         "ja": [
-          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "遅刻の事実と背景事情を分け、決めつけずに確認する",
+          "連絡方法・授業参加・見直し時期を含む支援策を本人と決める"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Teacher and Student.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate lateness from its circumstances and investigate without assumptions.",
+          "Agree on communication, class access, and a review date with the student."
         ],
         "zh": [
-          "掌握情境重點，選擇符合教師與學生的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分遲到事實與背景處境，不預設地查明原因。",
+          "和學生約定聯絡方式、課程支援與檢討日期。"
         ]
       },
       "title": {
@@ -953,16 +953,16 @@
       "estimatedMinutes": 7,
       "learningObjectives": {
         "ja": [
-          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "類似答案を不正の結論とせず、観察事実と本人の説明を分ける",
+          "学校手順に従い、説明機会・期限・異議申立てを公平に示す"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Teacher and Student.",
-          "Compare how different responses affect the other person and the next action."
+          "Treat similar answers as evidence to examine, not proof of cheating.",
+          "Use a fair process with explanation, timing, and appeal options."
         ],
         "zh": [
-          "掌握情境重點，選擇符合教師與學生的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "把相似答案視為待查證的事實，而非作弊結論。",
+          "依公平程序提供說明機會、期限與申訴方式。"
         ]
       },
       "title": {
@@ -980,16 +980,16 @@
       "estimatedMinutes": 8,
       "learningObjectives": {
         "ja": [
-          "教師・生徒で状況の要点を捉え、相手に応じた短い返答を選ぶ",
-          "応答の違いが相手と次の行動に与える影響を比較する"
+          "本人の希望と保護者の懸念を分け、進路選択の主体を守る",
+          "費用・進路実績・作品を整理し、本人主導の家族対話を支える"
         ],
         "en": [
-          "Identify the key issue and choose a concise response suited to Teacher and Student.",
-          "Compare how different responses affect the other person and the next action."
+          "Separate the student's goal from parental concerns while protecting agency.",
+          "Prepare evidence on costs, pathways, and work for a student-led family discussion."
         ],
         "zh": [
-          "掌握情境重點，選擇符合教師與學生的簡短回應。",
-          "比較不同回應對對方與下一步行動的影響。"
+          "區分學生志向與父母顧慮，保障學生的選擇主體性。",
+          "整理費用、出路與作品，支援由學生主導的家庭對話。"
         ]
       },
       "title": {
