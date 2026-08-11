@@ -363,6 +363,33 @@
         "zh": "被忘記的紀念日"
       },
       "path": "./scenarios/forgotten-anniversary.json"
+    },
+    {
+      "id": "work-or-me",
+      "categoryId": "partner-communication",
+      "beatCount": 4,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 7,
+      "learningObjectives": {
+        "ja": [
+          "恋愛・夫婦・パートナー会話で状況の要点を捉え、相手に応じた短い返答を選ぶ",
+          "応答の違いが相手と次の行動に与える影響を比較する"
+        ],
+        "en": [
+          "Identify the key issue and choose a concise response suited to Partner Communication.",
+          "Compare how different responses affect the other person and the next action."
+        ],
+        "zh": [
+          "掌握情境重點，選擇符合伴侶溝通的簡短回應。",
+          "比較不同回應對對方與下一步行動的影響。"
+        ]
+      },
+      "title": {
+        "ja": "仕事と関係の優先順位",
+        "en": "Work or Me",
+        "zh": "工作還是我"
+      },
+      "path": "./scenarios/work-or-me.json"
     }
   ]
 }
