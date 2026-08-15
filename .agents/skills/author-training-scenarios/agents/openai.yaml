@@ -1,0 +1,8 @@
+interface:
+  display_name: "Scenario Authoring"
+  short_description: "Create and validate multilingual training scenarios"
+  default_prompt: "Use $author-training-scenarios to design, implement, and validate a new training scenario."
+
+policy:
+  allow_implicit_invocation: true
+
