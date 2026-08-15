@@ -42,8 +42,8 @@ test("bundled catalog contains valid categories and loadable scenarios", async (
     "criminal-recruitment-prevention": 3,
   };
 
-  assert.equal(catalog.categories.length, 17);
-  assert.equal(catalog.scenarios.length, 55);
+  assert.equal(catalog.categories.length, 18);
+  assert.equal(catalog.scenarios.length, 60);
   for (const [categoryId, expectedCount] of Object.entries(
     expectedScenarioCounts,
   )) {
@@ -96,7 +96,7 @@ test("every bundled spoken line provides valid pronunciation guides", async () =
     }
   }
 
-  assert.equal(utteranceCount, 805);
+  assert.equal(utteranceCount, 865);
 });
 
 test("special fraud scenarios prioritize expressive avatar motions", async () => {

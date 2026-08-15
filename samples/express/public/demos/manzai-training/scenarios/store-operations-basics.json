@@ -1,0 +1,331 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "store-operations-basics",
+  "title": {
+    "ja": "店舗運営の基本",
+    "en": "Store Operations Basics",
+    "zh": "門市營運基礎"
+  },
+  "description": {
+    "ja": "作業計画、陳列、ロス対策を判断する販売士クイズです。",
+    "en": "A Retail Sales quiz on work planning, displays, and loss prevention.",
+    "zh": "判斷作業規劃、陳列與損耗對策的販賣士測驗。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "concept-understanding",
+      "label": {
+        "ja": "概念理解",
+        "en": "Concept understanding",
+        "zh": "概念理解"
+      },
+      "description": {
+        "ja": "用語と基本関係を正しく理解する",
+        "en": "Understand the term and its basic relationship.",
+        "zh": "正確理解用語與基本關係。"
+      },
+      "maxPoints": 40
+    },
+    {
+      "id": "situational-application",
+      "label": {
+        "ja": "状況適用",
+        "en": "Situational application",
+        "zh": "情境應用"
+      },
+      "description": {
+        "ja": "設問の条件へ概念を正しく当てはめる",
+        "en": "Apply the concept correctly to the stated conditions.",
+        "zh": "將概念正確套用到題目條件。"
+      },
+      "maxPoints": 40
+    }
+  ],
+  "beats": [
+    {
+      "id": "staffing",
+      "boke": {
+        "ja": "昼休みに来店が集中する店で、作業割当を決める根拠は何ですか？",
+        "en": "What should guide task assignments when customer traffic peaks at lunch?",
+        "zh": "午餐時段來客集中時，應依什麼安排工作？"
+      },
+      "pronunciationGuide": {
+        "ja": "ひるやすみに らいてんが しゅうちゅうする みせで、 さぎょうわりあてを きめる こんきょは なんですか？",
+        "en": "/wʌt ʃʊd ɡaɪd tæsk əˈsaɪnmənts wɛn ˈkʌstəmɚ ˈtɹæfɪk piks æt lʌntʃ/",
+        "zh": "Wǔ cān shí duàn lái kè jí zhōng shí， yīng yī shén me ān pái gōng zuò？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:thinking",
+          "category:idle"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "staffing-correct",
+          "text": {
+            "ja": "時間帯別の客数と作業量です。",
+            "en": "Use customer counts and workload by time period.",
+            "zh": "依各時段客數與工作量。"
+          },
+          "pronunciationGuide": {
+            "ja": "じかんたいべつの きゃくすうと さぎょうりょうです。",
+            "en": "/juz ˈkʌstəmɚ kaʊnts ənd ˈwɝkˌloʊd baɪ taɪm ˈpɪɹiəd/",
+            "zh": "Yī gè shí duàn kè shù yǔ gōng zuò liàng。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「時間帯別の客数と作業量です。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Use customer counts and workload by time period.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「依各時段客數與工作量。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "staffing-plausible",
+          "text": {
+            "ja": "全員を一日中同じ作業へ固定します。",
+            "en": "Keep everyone on one task all day.",
+            "zh": "讓所有人整天固定做同一項工作。"
+          },
+          "pronunciationGuide": {
+            "ja": "ぜんいんを いちにちじゅう おなじ さぎょうへ こていします。",
+            "en": "/kip ˈɛvɹiˌwʌn ɑn wʌn tæsk ɔl deɪ/",
+            "zh": "Ràng suǒ yǒu rén zhěng tiān gù dìng zuò tóng yí xiàng gōng zuò。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「全員を一日中同じ作業へ固定します。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Keep everyone on one task all day.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「讓所有人整天固定做同一項工作。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "staffing-incorrect",
+          "text": {
+            "ja": "売場の広さだけで人数を決めます。",
+            "en": "Set staffing only from floor size.",
+            "zh": "只依賣場面積決定人數。"
+          },
+          "pronunciationGuide": {
+            "ja": "うりばの ひろさだけで にんずうを きめます。",
+            "en": "/sɛt ˈstæfɪŋ ˈoʊnli fɹəm flɔɹ saɪz/",
+            "zh": "Zhǐ yī mài chǎng miàn jī jué dìng rén shù。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「売場の広さだけで人数を決めます。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Set staffing only from floor size.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「只依賣場面積決定人數。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "display",
+      "boke": {
+        "ja": "関連商品を近くに置く関連陳列の主な狙いは何ですか？",
+        "en": "What is the main aim of placing related products together?",
+        "zh": "把關聯商品放在一起陳列，主要目的是什麼？"
+      },
+      "pronunciationGuide": {
+        "ja": "かんれんしょうひんを ちかくに おく かんれんちんれつの おもな ねらいは なんですか？",
+        "en": "/wʌt ɪz ðə meɪn eɪm əv ˈpleɪsɪŋ ɹɪˈleɪtəd ˈpɹɑdəkts təˈɡɛðɚ/",
+        "zh": "Bǎ guān lián shāng pǐn fàng zài yì qǐ chén liè， zhǔ yào mù dì shì shén me？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "display-correct",
+          "text": {
+            "ja": "使用場面を示し、併買を促すことです。",
+            "en": "It suggests a use occasion and encourages combined purchases.",
+            "zh": "提示使用情境並促進搭配購買。"
+          },
+          "pronunciationGuide": {
+            "ja": "しようばめんを しめし、 へいばいを うながすことです。",
+            "en": "/ɪt səɡˈdʒɛsts ə jus əˈkeɪʒən ənd ɛnˈkɝɪdʒəz kəmˈbaɪnd ˈpɝtʃəsəz/",
+            "zh": "Tí shì shǐ yòng qíng jìng bìng cù jìn dā pèi gòu mǎi。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「使用場面を示し、併買を促すことです。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“It suggests a use occasion and encourages combined purchases.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「提示使用情境並促進搭配購買。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "display-plausible",
+          "text": {
+            "ja": "商品分類を完全になくすことです。",
+            "en": "It eliminates all product categories.",
+            "zh": "是完全取消商品分類。"
+          },
+          "pronunciationGuide": {
+            "ja": "しょうひんぶんるいを かんぜんに なくすことです。",
+            "en": "/ɪt ɪˈlɪməˌneɪts ɔl ˈpɹɑdəkt ˈkætəˌɡɔɹiz/",
+            "zh": "Shì wán quán qǔ xiāo shāng pǐn fēn lèi。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「商品分類を完全になくすことです。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“It eliminates all product categories.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「是完全取消商品分類。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "display-incorrect",
+          "text": {
+            "ja": "売れ筋を見えない場所へ移すことです。",
+            "en": "It moves popular items out of sight.",
+            "zh": "是把暢銷商品移到看不見的地方。"
+          },
+          "pronunciationGuide": {
+            "ja": "うれすじを みえない ばしょへ うつすことです。",
+            "en": "/ɪt muvz ˈpɑpjəlɚ ˈaɪtəmz aʊt əv saɪt/",
+            "zh": "Shì bǎ chàng xiāo shāng pǐn yí dào kàn bú jiàn de dì fāng。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「売れ筋を見えない場所へ移すことです。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“It moves popular items out of sight.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「是把暢銷商品移到看不見的地方。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "loss-control",
+      "boke": {
+        "ja": "棚卸差異が増えたとき、最初に行う改善はどれですか？",
+        "en": "What is the first improvement when inventory discrepancies increase?",
+        "zh": "盤點差異增加時，首先應做哪項改善？"
+      },
+      "pronunciationGuide": {
+        "ja": "たなおろしさいが ふえたとき、 さいしょに おこなう かいぜんは どれですか？",
+        "en": "/wʌt ɪz ðə fɝst ɪmˈpɹuvmənt wɛn ˈɪnvənˌtɔɹi ˈdɪskɹəpənsiz ɪnˈkɹis/",
+        "zh": "Pán diǎn chā yì zēng jiā shí， shǒu xiān yīng zuò nǎ xiàng gǎi shàn？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "loss-control-correct",
+          "text": {
+            "ja": "入荷、移動、廃棄、販売の記録手順を点検します。",
+            "en": "Review recording procedures for receiving, transfers, disposal, and sales.",
+            "zh": "檢查進貨、移轉、報廢與銷售的記錄流程。"
+          },
+          "pronunciationGuide": {
+            "ja": "にゅうか、 いどう、 はいき、 はんばいの きろくてじゅんを てんけんします。",
+            "en": "/ɹɪˈvju ɹɪˈkɔɹdɪŋ pɹəˈsidʒɚz fɔɹ ɹɪˈsivɪŋ, ˈtɹænsfɚz, dɪˈspoʊzəl, ənd seɪlz/",
+            "zh": "Jiǎn chá jìn huò、 yí zhuǎn、 bào fèi yǔ xiāo shòu de jì lù liú chéng。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「入荷、移動、廃棄、販売の記録手順を点検します。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Review recording procedures for receiving, transfers, disposal, and sales.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「檢查進貨、移轉、報廢與銷售的記錄流程。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "loss-control-plausible",
+          "text": {
+            "ja": "原因を調べず全商品を値上げします。",
+            "en": "Raise every price without investigating the cause.",
+            "zh": "不查原因就把全部商品漲價。"
+          },
+          "pronunciationGuide": {
+            "ja": "げんいんを しらべず ぜんしょうひんを ねあげします。",
+            "en": "/ɹeɪz ˈɛvɹi pɹaɪs wɪˈðaʊt ɪnˈvɛstəˌɡeɪtɪŋ ðə kɔz/",
+            "zh": "Bù chá yuán yīn jiù bǎ quán bù shāng pǐn zhǎng jià。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「原因を調べず全商品を値上げします。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Raise every price without investigating the cause.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「不查原因就把全部商品漲價。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "loss-control-incorrect",
+          "text": {
+            "ja": "帳簿在庫を実在庫へ無条件で合わせます。",
+            "en": "Match book inventory to physical stock without review.",
+            "zh": "不經查核就把帳面庫存改成實際庫存。"
+          },
+          "pronunciationGuide": {
+            "ja": "ちょうぼざいこを じつざいこへ むじょうけんで あわせます。",
+            "en": "/mætʃ bʊk ˈɪnvənˌtɔɹi tu ˈfɪzɪkəl stɑk wɪˈðaʊt ɹɪˈvju/",
+            "zh": "Bù jīng chá hé jiù bǎ zhàng miàn kù cún gǎi chéng shí jì kù cún。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「帳簿在庫を実在庫へ無条件で合わせます。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Match book inventory to physical stock without review.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「不經查核就把帳面庫存改成實際庫存。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    }
+  ]
+}

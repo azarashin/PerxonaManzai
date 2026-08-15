@@ -272,6 +272,22 @@
         "en": "Criminal Recruitment Prevention",
         "zh": "犯罪招募與加害防範"
       }
+    },
+    {
+      "id": "retail-sales-qualification-quiz",
+      "branching": {
+        "requirement": "not-required",
+        "rationale": {
+          "ja": "各設問を独立して採点でき、前問の正誤で次問の内容を変える必要がないため、直線型で成立します。",
+          "en": "Each item can be scored independently; prior correctness need not alter the next concept tested.",
+          "zh": "每題可獨立評分，前題正誤不必改變下一題所測概念，因此適合線性流程。"
+        }
+      },
+      "title": {
+        "ja": "販売士資格クイズ",
+        "en": "Retail Sales Qualification Quiz",
+        "zh": "販賣士資格測驗"
+      }
     }
   ],
   "scenarios": [
@@ -1759,6 +1775,141 @@
         "zh": "申請後遭個資脅迫"
       },
       "path": "./scenarios/coerced-after-application.json"
+    },
+    {
+      "id": "retail-format-basics",
+      "categoryId": "retail-sales-qualification-quiz",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "業種と業態を区別する",
+          "チェーン形態と店舗機能を場面に適用する"
+        ],
+        "en": [
+          "Distinguish merchandise-based classifications from retail formats.",
+          "Apply chain and store concepts to concrete cases."
+        ],
+        "zh": [
+          "區分依商品與依經營方式的分類。",
+          "將連鎖形態與門市功能套用到具體情境。"
+        ]
+      },
+      "title": {
+        "ja": "小売業態の基本",
+        "en": "Retail Format Basics",
+        "zh": "零售業態基礎"
+      },
+      "path": "./scenarios/retail-format-basics.json"
+    },
+    {
+      "id": "merchandising-decisions",
+      "categoryId": "retail-sales-qualification-quiz",
+      "beatCount": 3,
+      "difficulty": "beginner",
+      "estimatedMinutes": 5,
+      "learningObjectives": {
+        "ja": [
+          "品ぞろえと在庫指標の意味を理解する",
+          "売上高と売上原価から粗利益を判断する"
+        ],
+        "en": [
+          "Understand assortment and inventory indicators.",
+          "Reason about gross profit from sales and cost of goods sold."
+        ],
+        "zh": [
+          "理解商品組合與庫存指標。",
+          "由銷售額與銷貨成本判斷毛利。"
+        ]
+      },
+      "title": {
+        "ja": "商品計画の基本",
+        "en": "Merchandising Decisions",
+        "zh": "商品計畫基礎"
+      },
+      "path": "./scenarios/merchandising-decisions.json"
+    },
+    {
+      "id": "store-operations-basics",
+      "categoryId": "retail-sales-qualification-quiz",
+      "beatCount": 3,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "店舗作業を需要に合わせて計画する",
+          "陳列とロス対策を目的に結び付ける"
+        ],
+        "en": [
+          "Plan store work around demand.",
+          "Connect display and loss controls to their purposes."
+        ],
+        "zh": [
+          "依需求規劃門市作業。",
+          "把陳列與損耗對策連結到目的。"
+        ]
+      },
+      "title": {
+        "ja": "店舗運営の基本",
+        "en": "Store Operations Basics",
+        "zh": "門市營運基礎"
+      },
+      "path": "./scenarios/store-operations-basics.json"
+    },
+    {
+      "id": "retail-marketing-basics",
+      "categoryId": "retail-sales-qualification-quiz",
+      "beatCount": 3,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "標的顧客と施策を結び付ける",
+          "施策の効果を適切な指標で評価する"
+        ],
+        "en": [
+          "Connect target customers with appropriate tactics.",
+          "Evaluate tactics with suitable measures."
+        ],
+        "zh": [
+          "連結目標顧客與合適策略。",
+          "用適當指標評估策略成效。"
+        ]
+      },
+      "title": {
+        "ja": "小売マーケティングの基本",
+        "en": "Retail Marketing Basics",
+        "zh": "零售行銷基礎"
+      },
+      "path": "./scenarios/retail-marketing-basics.json"
+    },
+    {
+      "id": "retail-management-basics",
+      "categoryId": "retail-sales-qualification-quiz",
+      "beatCount": 3,
+      "difficulty": "intermediate",
+      "estimatedMinutes": 6,
+      "learningObjectives": {
+        "ja": [
+          "計画と実績の差から改善を考える",
+          "費用構造と情報管理を安全に判断する"
+        ],
+        "en": [
+          "Use plan-versus-actual gaps to improve operations.",
+          "Reason safely about cost structure and information handling."
+        ],
+        "zh": [
+          "由計畫與實績差異思考改善。",
+          "安全判斷成本結構與資訊管理。"
+        ]
+      },
+      "title": {
+        "ja": "販売・経営管理の基本",
+        "en": "Retail Management Basics",
+        "zh": "銷售與經營管理基礎"
+      },
+      "path": "./scenarios/retail-management-basics.json"
     }
   ]
 }
