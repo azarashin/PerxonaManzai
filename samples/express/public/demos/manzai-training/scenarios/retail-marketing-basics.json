@@ -1,0 +1,331 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "retail-marketing-basics",
+  "title": {
+    "ja": "小売マーケティングの基本",
+    "en": "Retail Marketing Basics",
+    "zh": "零售行銷基礎"
+  },
+  "description": {
+    "ja": "市場細分化、販売促進、顧客維持の判断を確認する販売士クイズです。",
+    "en": "A Retail Sales quiz on segmentation, promotion, and customer retention.",
+    "zh": "確認市場區隔、促銷與顧客維繫的販賣士測驗。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "concept-understanding",
+      "label": {
+        "ja": "概念理解",
+        "en": "Concept understanding",
+        "zh": "概念理解"
+      },
+      "description": {
+        "ja": "用語と基本関係を正しく理解する",
+        "en": "Understand the term and its basic relationship.",
+        "zh": "正確理解用語與基本關係。"
+      },
+      "maxPoints": 40
+    },
+    {
+      "id": "situational-application",
+      "label": {
+        "ja": "状況適用",
+        "en": "Situational application",
+        "zh": "情境應用"
+      },
+      "description": {
+        "ja": "設問の条件へ概念を正しく当てはめる",
+        "en": "Apply the concept correctly to the stated conditions.",
+        "zh": "將概念正確套用到題目條件。"
+      },
+      "maxPoints": 40
+    }
+  ],
+  "beats": [
+    {
+      "id": "segment",
+      "boke": {
+        "ja": "全顧客へ同じ提案をせず、市場を分ける主な目的は何ですか？",
+        "en": "Why divide a market instead of making the same offer to every customer?",
+        "zh": "不對所有顧客提出相同方案，而將市場區隔的主要目的是什麼？"
+      },
+      "pronunciationGuide": {
+        "ja": "ぜんこきゃくへ おなじ ていあんを せず、 しじょうを わける おもな もくてきは なんですか？",
+        "en": "/waɪ dɪˈvaɪd ə ˈmɑɹkət ɪnˈstɛd əv ˈmeɪkɪŋ ðə seɪm ˈɔfɚ tu ˈɛvɹi ˈkʌstəmɚ/",
+        "zh": "Bù duì suǒ yǒu gù kè tí chū xiāng tóng fāng àn， ér jiāng shì chǎng qū gé de zhǔ yào mù dì shì shén me？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:thinking",
+          "category:idle"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "segment-correct",
+          "text": {
+            "ja": "似たニーズの集団ごとに施策を合わせるためです。",
+            "en": "To tailor tactics to groups with similar needs.",
+            "zh": "為相似需求的群體調整策略。"
+          },
+          "pronunciationGuide": {
+            "ja": "にた にーずの しゅうだんごとに しさくを あわせるためです。",
+            "en": "/tu ˈteɪlɚ ˈtæktɪks tu ɡɹups wɪð ˈsɪməlɚ nidz/",
+            "zh": "Wèi xiāng sì xū qiú de qún tǐ tiáo zhěng cè lüè。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「似たニーズの集団ごとに施策を合わせるためです。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“To tailor tactics to groups with similar needs.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「為相似需求的群體調整策略。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "segment-plausible",
+          "text": {
+            "ja": "顧客ごとの違いを無視するためです。",
+            "en": "To ignore differences among customers.",
+            "zh": "為了忽略顧客之間的差異。"
+          },
+          "pronunciationGuide": {
+            "ja": "こきゃくごとの ちがいを むしするためです。",
+            "en": "/tu ɪɡˈnɔɹ ˈdɪfɚənsəz əˈmʌŋ ˈkʌstəmɚz/",
+            "zh": "Wèi le hū lüè gù kè zhī jiān de chā yì。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「顧客ごとの違いを無視するためです。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“To ignore differences among customers.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「為了忽略顧客之間的差異。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "segment-incorrect",
+          "text": {
+            "ja": "商品の原価を決めるためだけです。",
+            "en": "Only to determine product cost.",
+            "zh": "只為了決定商品成本。"
+          },
+          "pronunciationGuide": {
+            "ja": "しょうひんの げんかを きめるためだけです。",
+            "en": "/ˈoʊnli tu dɪˈtɝmən ˈpɹɑdəkt kɑst/",
+            "zh": "Zhǐ wèi le jué dìng shāng pǐn chéng běn。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「商品の原価を決めるためだけです。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Only to determine product cost.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「只為了決定商品成本。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "promotion-measure",
+      "boke": {
+        "ja": "クーポン施策が来店を増やしたか確かめるには、何を比較しますか？",
+        "en": "What comparison tests whether a coupon increased store visits?",
+        "zh": "要確認優惠券是否增加來店，應比較什麼？"
+      },
+      "pronunciationGuide": {
+        "ja": "くーぽんしさくが らいてんを ふやしたか たしかめるには、 なにを ひかくしますか？",
+        "en": "/wʌt kəmˈpɛɹəsən tɛsts ˈwɛðɚ ə ˈkuˌpɑn ɪnˈkɹist stɔɹ ˈvɪzəts/",
+        "zh": "Yào què rèn yōu huì quàn shì fǒu zēng jiā lái diàn， yīng bǐ jiào shén me？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "promotion-measure-correct",
+          "text": {
+            "ja": "配布前後や対象群の来店率を比較します。",
+            "en": "Compare visit rates before and after, or against a control group.",
+            "zh": "比較發放前後或目標組與對照組的來店率。"
+          },
+          "pronunciationGuide": {
+            "ja": "はいふぜんごや たいしょうぐんの らいてんりつを ひかくします。",
+            "en": "/kəmˈpɛɹ ˈvɪzət ɹeɪts bɪˈfɔɹ ənd ˈæftɚ, ɔɹ əˈɡɛnst ə kənˈtɹoʊl ɡɹup/",
+            "zh": "Bǐ jiào fā fàng qián hòu huò mù biāo zǔ yǔ duì zhào zǔ de lái diàn lǜ。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「配布前後や対象群の来店率を比較します。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Compare visit rates before and after, or against a control group.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「比較發放前後或目標組與對照組的來店率。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "promotion-measure-plausible",
+          "text": {
+            "ja": "配布枚数だけを成果とします。",
+            "en": "Treat the number distributed as the result.",
+            "zh": "只把發放張數當作成果。"
+          },
+          "pronunciationGuide": {
+            "ja": "はいふまいすうだけを せいかとします。",
+            "en": "/tɹit ðə ˈnʌmbɚ dɪˈstɹɪbjətəd æz ðə ɹɪˈzʌlt/",
+            "zh": "Zhǐ bǎ fā fàng zhāng shù dàng zuò chéng guǒ。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「配布枚数だけを成果とします。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Treat the number distributed as the result.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「只把發放張數當作成果。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "promotion-measure-incorrect",
+          "text": {
+            "ja": "店員の印象だけで判断します。",
+            "en": "Judge only from staff impressions.",
+            "zh": "只憑店員印象判斷。"
+          },
+          "pronunciationGuide": {
+            "ja": "てんいんの いんしょうだけで はんだんします。",
+            "en": "/dʒʌdʒ ˈoʊnli fɹəm stæf ɪmˈpɹɛʃənz/",
+            "zh": "Zhǐ píng diàn yuán yìn xiàng pàn duàn。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「店員の印象だけで判断します。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Judge only from staff impressions.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「只憑店員印象判斷。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "retention",
+      "boke": {
+        "ja": "既存顧客の再来店を増やす施策として、最も筋が通るものはどれですか？",
+        "en": "Which tactic most logically supports repeat visits by existing customers?",
+        "zh": "哪項策略最合理地支持既有顧客再次來店？"
+      },
+      "pronunciationGuide": {
+        "ja": "きぞんこきゃくの さいらいてんを ふやす しさくとして、 もっとも すじが とおるものは どれですか？",
+        "en": "/wɪtʃ ˈtæktɪk moʊst ˈlɑdʒɪkli səˈpɔɹts ɹɪˈpit ˈvɪzəts baɪ ɪɡˈzɪstɪŋ ˈkʌstəmɚz/",
+        "zh": "Nǎ xiàng cè lüè zuì hé lǐ de zhī chí jì yǒu gù kè zài cì lái diàn？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "retention-correct",
+          "text": {
+            "ja": "購買履歴に沿った案内と再来店特典を設計します。",
+            "en": "Use purchase history for relevant messages and return-visit benefits.",
+            "zh": "依購買紀錄提供相關資訊與回訪優惠。"
+          },
+          "pronunciationGuide": {
+            "ja": "こうばいりれきに そった あんないと さいらいてんとくてんを せっけいします。",
+            "en": "/juz ˈpɝtʃəs ˈhɪstɚi fɔɹ ˈɹɛləvənt ˈmɛsɪdʒəz ənd ɹɪˈtɝn ˈvɪzət ˈbɛnəfɪts/",
+            "zh": "Yī gòu mǎi jì lù tí gōng xiāng guān zī xùn yǔ huí fǎng yōu huì。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「購買履歴に沿った案内と再来店特典を設計します。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Use purchase history for relevant messages and return-visit benefits.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「依購買紀錄提供相關資訊與回訪優惠。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "retention-plausible",
+          "text": {
+            "ja": "全員へ毎日同じ大量広告を送ります。",
+            "en": "Send everyone the same high-volume ad every day.",
+            "zh": "每天向所有人發送相同的大量廣告。"
+          },
+          "pronunciationGuide": {
+            "ja": "ぜんいんへ まいにち おなじ たいりょうこうこくを おくります。",
+            "en": "/sɛnd ˈɛvɹiˌwʌn ðə seɪm haɪ ˈvɑljum æd ˈɛvɹi deɪ/",
+            "zh": "Měi tiān xiàng suǒ yǒu rén fā sòng xiāng tóng de dà liàng guǎng gào。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「全員へ毎日同じ大量広告を送ります。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Send everyone the same high-volume ad every day.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「每天向所有人發送相同的大量廣告。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "retention-incorrect",
+          "text": {
+            "ja": "新規客だけを対象にして既存客を除きます。",
+            "en": "Target only new customers and exclude existing ones.",
+            "zh": "只鎖定新顧客並排除既有顧客。"
+          },
+          "pronunciationGuide": {
+            "ja": "しんききゃくだけを たいしょうにして きぞんきゃくを のぞきます。",
+            "en": "/ˈtɑɹɡət ˈoʊnli nu ˈkʌstəmɚz ənd ɪkˈsklud ɪɡˈzɪstɪŋ wʌnz/",
+            "zh": "Zhǐ suǒ dìng xīn gù kè bìng pái chú jì yǒu gù kè。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「新規客だけを対象にして既存客を除きます。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Target only new customers and exclude existing ones.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「只鎖定新顧客並排除既有顧客。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    }
+  ]
+}

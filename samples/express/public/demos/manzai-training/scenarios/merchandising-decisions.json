@@ -1,0 +1,331 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "merchandising-decisions",
+  "title": {
+    "ja": "商品計画の基本",
+    "en": "Merchandising Decisions",
+    "zh": "商品計畫基礎"
+  },
+  "description": {
+    "ja": "品ぞろえ、在庫、粗利益の基本的な判断を確認する販売士クイズです。",
+    "en": "A Retail Sales quiz on assortment, inventory, and gross-margin decisions.",
+    "zh": "確認商品組合、庫存與毛利判斷的販賣士測驗。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "concept-understanding",
+      "label": {
+        "ja": "概念理解",
+        "en": "Concept understanding",
+        "zh": "概念理解"
+      },
+      "description": {
+        "ja": "用語と基本関係を正しく理解する",
+        "en": "Understand the term and its basic relationship.",
+        "zh": "正確理解用語與基本關係。"
+      },
+      "maxPoints": 40
+    },
+    {
+      "id": "situational-application",
+      "label": {
+        "ja": "状況適用",
+        "en": "Situational application",
+        "zh": "情境應用"
+      },
+      "description": {
+        "ja": "設問の条件へ概念を正しく当てはめる",
+        "en": "Apply the concept correctly to the stated conditions.",
+        "zh": "將概念正確套用到題目條件。"
+      },
+      "maxPoints": 40
+    }
+  ],
+  "beats": [
+    {
+      "id": "assortment",
+      "boke": {
+        "ja": "客層に合う品ぞろえを決めるとき、最初に何を確かめますか？",
+        "en": "What should be checked first when planning an assortment for target customers?",
+        "zh": "為目標顧客規劃商品組合時，首先應確認什麼？"
+      },
+      "pronunciationGuide": {
+        "ja": "きゃくそうに あう しなぞろえを きめるとき、 さいしょに なにを たしかめますか？",
+        "en": "/wʌt ʃʊd bi tʃɛkt fɝst wɛn ˈplænɪŋ ən əˈsɔɹtmənt fɔɹ ˈtɑɹɡət ˈkʌstəmɚz/",
+        "zh": "Wèi mù biāo gù kè guī huà shāng pǐn zǔ hé shí， shǒu xiān yīng què rèn shén me？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:thinking",
+          "category:idle"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "assortment-correct",
+          "text": {
+            "ja": "顧客ニーズと購買データを確かめます。",
+            "en": "Check customer needs and purchase data.",
+            "zh": "確認顧客需求與購買資料。"
+          },
+          "pronunciationGuide": {
+            "ja": "こきゃくにーずと こうばいでーたを たしかめます。",
+            "en": "/tʃɛk ˈkʌstəmɚ nidz ənd ˈpɝtʃəs ˈdeɪtə/",
+            "zh": "Què rèn gù kè xū qiú yǔ gòu mǎi zī liào。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「顧客ニーズと購買データを確かめます。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Check customer needs and purchase data.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「確認顧客需求與購買資料。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "assortment-plausible",
+          "text": {
+            "ja": "仕入先が勧める商品だけを並べます。",
+            "en": "Stock only what suppliers recommend.",
+            "zh": "只陳列供應商推薦的商品。"
+          },
+          "pronunciationGuide": {
+            "ja": "しいれさきが すすめる しょうひんだけを ならべます。",
+            "en": "/stɑk ˈoʊnli wʌt səˈplaɪɚz ˌɹɛkəˈmɛnd/",
+            "zh": "Zhǐ chén liè gōng yìng shāng tuī jiàn de shāng pǐn。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「仕入先が勧める商品だけを並べます。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Stock only what suppliers recommend.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「只陳列供應商推薦的商品。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "assortment-incorrect",
+          "text": {
+            "ja": "売場面積を見ずに品目数を最大化します。",
+            "en": "Maximize item count without considering space.",
+            "zh": "不考慮賣場面積，將品項數量最大化。"
+          },
+          "pronunciationGuide": {
+            "ja": "うりばめんせきを みずに ひんもくすうを さいだいかします。",
+            "en": "/ˈmæksəˌmaɪz ˈaɪtəm kaʊnt wɪˈðaʊt kənˈsɪdɚɪŋ speɪs/",
+            "zh": "Bù kǎo lǜ mài chǎng miàn jī， jiāng pǐn xiàng shù liàng zuì dà huà。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「売場面積を見ずに品目数を最大化します。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Maximize item count without considering space.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「不考慮賣場面積，將品項數量最大化。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inventory-turnover",
+      "boke": {
+        "ja": "平均在庫が同じまま年間売上原価が増えたら、在庫回転率はどうなりますか？",
+        "en": "If average inventory stays constant while annual cost of goods sold rises, what happens to turnover?",
+        "zh": "平均庫存不變而全年銷貨成本增加時，庫存週轉率如何變化？"
+      },
+      "pronunciationGuide": {
+        "ja": "へいきんざいこが おなじまま ねんかん うりあげげんかが ふえたら、 ざいこかいてんりつは どうなりますか？",
+        "en": "/ɪf ˈævɚɪdʒ ˈɪnvənˌtɔɹi steɪz ˈkɑnstənt waɪl ˈænjuəl kɑst əv ɡʊdz soʊld ɹaɪzəz, wʌt ˈhæpənz tu ˈtɝnˌoʊvɚ/",
+        "zh": "Píng jūn kù cún bú biàn ér quán nián xiāo huò chéng běn zēng jiā shí， kù cún zhōu zhuǎn lǜ rú hé biàn huà？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "inventory-turnover-correct",
+          "text": {
+            "ja": "在庫回転率は上がります。",
+            "en": "Inventory turnover rises.",
+            "zh": "庫存週轉率上升。"
+          },
+          "pronunciationGuide": {
+            "ja": "ざいこかいてんりつは あがります。",
+            "en": "/ˈɪnvənˌtɔɹi ˈtɝnˌoʊvɚ ɹaɪzəz/",
+            "zh": "Kù cún zhōu zhuǎn lǜ shàng shēng。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「在庫回転率は上がります。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Inventory turnover rises.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「庫存週轉率上升。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "inventory-turnover-plausible",
+          "text": {
+            "ja": "在庫回転率は変わりません。",
+            "en": "Inventory turnover is unchanged.",
+            "zh": "庫存週轉率不變。"
+          },
+          "pronunciationGuide": {
+            "ja": "ざいこかいてんりつは かわりません。",
+            "en": "/ˈɪnvənˌtɔɹi ˈtɝnˌoʊvɚ ɪz ʌnˈtʃeɪndʒd/",
+            "zh": "Kù cún zhōu zhuǎn lǜ bú biàn。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「在庫回転率は変わりません。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Inventory turnover is unchanged.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「庫存週轉率不變。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "inventory-turnover-incorrect",
+          "text": {
+            "ja": "在庫回転率は必ず下がります。",
+            "en": "Inventory turnover must fall.",
+            "zh": "庫存週轉率一定下降。"
+          },
+          "pronunciationGuide": {
+            "ja": "ざいこかいてんりつは かならず さがります。",
+            "en": "/ˈɪnvənˌtɔɹi ˈtɝnˌoʊvɚ mʌst fɔl/",
+            "zh": "Kù cún zhōu zhuǎn lǜ yí dìng xià jiàng。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「在庫回転率は必ず下がります。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Inventory turnover must fall.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「庫存週轉率一定下降。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gross-profit",
+      "boke": {
+        "ja": "売上高百万円、売上原価六十万円なら、粗利益はいくらですか？",
+        "en": "Sales are one million yen and cost of goods sold is six hundred thousand yen. What is gross profit?",
+        "zh": "銷售額一百萬日圓，銷貨成本六十萬日圓，毛利是多少？"
+      },
+      "pronunciationGuide": {
+        "ja": "うりあげだか ひゃくまんえん、 うりあげげんか ろくじゅうまんえんなら、 あらりえきは いくらですか？",
+        "en": "/seɪlz ɑɹ wʌn ˈmɪljən jɛn ənd kɑst əv ɡʊdz soʊld ɪz sɪks ˈhʌndɹəd ˈθaʊzənd jɛn. wʌt ɪz ɡɹoʊs ˈpɹɑfət/",
+        "zh": "Xiāo shòu é yì bǎi wàn Rì yuán， xiāo huò chéng běn liù shí wàn Rì yuán， máo lì shì duō shǎo？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "gross-profit-correct",
+          "text": {
+            "ja": "四十万円です。",
+            "en": "It is four hundred thousand yen.",
+            "zh": "是四十萬日圓。"
+          },
+          "pronunciationGuide": {
+            "ja": "よんじゅうまんえんです。",
+            "en": "/ɪt ɪz fɔɹ ˈhʌndɹəd ˈθaʊzənd jɛn/",
+            "zh": "Shì sì shí wàn Rì yuán。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「四十万円です。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“It is four hundred thousand yen.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「是四十萬日圓。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "gross-profit-plausible",
+          "text": {
+            "ja": "六十万円です。",
+            "en": "It is six hundred thousand yen.",
+            "zh": "是六十萬日圓。"
+          },
+          "pronunciationGuide": {
+            "ja": "ろくじゅうまんえんです。",
+            "en": "/ɪt ɪz sɪks ˈhʌndɹəd ˈθaʊzənd jɛn/",
+            "zh": "Shì liù shí wàn Rì yuán。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「六十万円です。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“It is six hundred thousand yen.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「是六十萬日圓。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "gross-profit-incorrect",
+          "text": {
+            "ja": "百六十万円です。",
+            "en": "It is one million six hundred thousand yen.",
+            "zh": "是一百六十萬日圓。"
+          },
+          "pronunciationGuide": {
+            "ja": "ひゃくろくじゅうまんえんです。",
+            "en": "/ɪt ɪz wʌn ˈmɪljən sɪks ˈhʌndɹəd ˈθaʊzənd jɛn/",
+            "zh": "Shì yì bǎi liù shí wàn Rì yuán。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「百六十万円です。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“It is one million six hundred thousand yen.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「是一百六十萬日圓。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    }
+  ]
+}

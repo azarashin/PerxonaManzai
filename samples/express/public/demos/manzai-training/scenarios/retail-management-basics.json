@@ -1,0 +1,331 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "retail-management-basics",
+  "title": {
+    "ja": "販売・経営管理の基本",
+    "en": "Retail Management Basics",
+    "zh": "銷售與經營管理基礎"
+  },
+  "description": {
+    "ja": "計画管理、損益分岐、個人情報の取扱いを確認する販売士クイズです。",
+    "en": "A Retail Sales quiz on planning, break-even thinking, and personal-data handling.",
+    "zh": "確認計畫管理、損益兩平與個資處理的販賣士測驗。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "concept-understanding",
+      "label": {
+        "ja": "概念理解",
+        "en": "Concept understanding",
+        "zh": "概念理解"
+      },
+      "description": {
+        "ja": "用語と基本関係を正しく理解する",
+        "en": "Understand the term and its basic relationship.",
+        "zh": "正確理解用語與基本關係。"
+      },
+      "maxPoints": 40
+    },
+    {
+      "id": "situational-application",
+      "label": {
+        "ja": "状況適用",
+        "en": "Situational application",
+        "zh": "情境應用"
+      },
+      "description": {
+        "ja": "設問の条件へ概念を正しく当てはめる",
+        "en": "Apply the concept correctly to the stated conditions.",
+        "zh": "將概念正確套用到題目條件。"
+      },
+      "maxPoints": 40
+    }
+  ],
+  "beats": [
+    {
+      "id": "plan-do-check",
+      "boke": {
+        "ja": "売上計画に届かなかった月の管理として、最初に何をしますか？",
+        "en": "What is the first management step after monthly sales miss the plan?",
+        "zh": "月銷售未達計畫時，管理上首先要做什麼？"
+      },
+      "pronunciationGuide": {
+        "ja": "うりあげけいかくに とどかなかった つきの かんりとして、 さいしょに なにをしますか？",
+        "en": "/wʌt ɪz ðə fɝst ˈmænɪdʒmənt stɛp ˈæftɚ ˈmʌnθli seɪlz mɪs ðə plæn/",
+        "zh": "Yuè xiāo shòu wèi dá jì huà shí， guǎn lǐ shàng shǒu xiān yào zuò shén me？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:thinking",
+          "category:idle"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "plan-do-check-correct",
+          "text": {
+            "ja": "商品、客数、客単価などの差異要因を確認します。",
+            "en": "Analyze gaps in merchandise, traffic, and average transaction value.",
+            "zh": "分析商品、客數與平均客單價等差異原因。"
+          },
+          "pronunciationGuide": {
+            "ja": "しょうひん、 きゃくすう、 きゃくたんかなどの さいよういんを かくにんします。",
+            "en": "/ˈænəˌlaɪz ɡæps ɪn ˈmɝtʃənˌdaɪz, ˈtɹæfɪk, ənd ˈævɚɪdʒ tɹænˈzækʃən ˈvælju/",
+            "zh": "Fēn xī shāng pǐn、 kè shù yǔ píng jūn kè dān jià děng chā yì yuán yīn。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「商品、客数、客単価などの差異要因を確認します。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Analyze gaps in merchandise, traffic, and average transaction value.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「分析商品、客數與平均客單價等差異原因。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "plan-do-check-plausible",
+          "text": {
+            "ja": "理由を見ず翌月の目標だけ上げます。",
+            "en": "Raise next month’s target without examining causes.",
+            "zh": "不看原因，只提高下月目標。"
+          },
+          "pronunciationGuide": {
+            "ja": "りゆうを みず よくげつの もくひょうだけ あげます。",
+            "en": "/ɹeɪz nɛkst mʌnθs ˈtɑɹɡət wɪˈðaʊt ɪɡˈzæmənɪŋ ˈkɔzəz/",
+            "zh": "Bú kàn yuán yīn， zhǐ tí gāo xià yuè mù biāo。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「理由を見ず翌月の目標だけ上げます。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Raise next month’s target without examining causes.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「不看原因，只提高下月目標。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "plan-do-check-incorrect",
+          "text": {
+            "ja": "計画値を実績値へ書き換えます。",
+            "en": "Rewrite the plan to match the actual result.",
+            "zh": "把計畫值改寫成實績值。"
+          },
+          "pronunciationGuide": {
+            "ja": "けいかくちを じっせきちへ かきかえます。",
+            "en": "/ˌɹiˈɹaɪt ðə plæn tu mætʃ ði ˈæktʃuəl ɹɪˈzʌlt/",
+            "zh": "Bǎ jì huà zhí gǎi xiě chéng shí jì zhí。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「計画値を実績値へ書き換えます。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Rewrite the plan to match the actual result.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「把計畫值改寫成實績值。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "break-even",
+      "boke": {
+        "ja": "固定費が増え、他の条件が同じなら、損益分岐点売上高はどうなりますか？",
+        "en": "If fixed costs rise and all else is unchanged, what happens to break-even sales?",
+        "zh": "固定成本增加而其他條件不變時，損益兩平銷售額如何變化？"
+      },
+      "pronunciationGuide": {
+        "ja": "こていひが ふえ、 ほかの じょうけんが おなじなら、 そんえきぶんきてんうりあげだかは どうなりますか？",
+        "en": "/ɪf fɪkst kɑsts ɹaɪz ənd ɔl ɛls ɪz ʌnˈtʃeɪndʒd, wʌt ˈhæpənz tu ˈbɹeɪkˌivən seɪlz/",
+        "zh": "Gù dìng chéng běn zēng jiā ér qí tā tiáo jiàn bú biàn shí， sǔn yì liǎng píng xiāo shòu é rú hé biàn huà？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "break-even-correct",
+          "text": {
+            "ja": "損益分岐点売上高は上がります。",
+            "en": "Break-even sales rise.",
+            "zh": "損益兩平銷售額上升。"
+          },
+          "pronunciationGuide": {
+            "ja": "そんえきぶんきてんうりあげだかは あがります。",
+            "en": "/ˈbɹeɪkˌivən seɪlz ɹaɪz/",
+            "zh": "Sǔn yì liǎng píng xiāo shòu é shàng shēng。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「損益分岐点売上高は上がります。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Break-even sales rise.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「損益兩平銷售額上升。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "break-even-plausible",
+          "text": {
+            "ja": "損益分岐点売上高は変わりません。",
+            "en": "Break-even sales stay unchanged.",
+            "zh": "損益兩平銷售額不變。"
+          },
+          "pronunciationGuide": {
+            "ja": "そんえきぶんきてんうりあげだかは かわりません。",
+            "en": "/ˈbɹeɪkˌivən seɪlz steɪ ʌnˈtʃeɪndʒd/",
+            "zh": "Sǔn yì liǎng píng xiāo shòu é bú biàn。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「損益分岐点売上高は変わりません。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Break-even sales stay unchanged.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「損益兩平銷售額不變。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "break-even-incorrect",
+          "text": {
+            "ja": "損益分岐点売上高は必ず下がります。",
+            "en": "Break-even sales must fall.",
+            "zh": "損益兩平銷售額一定下降。"
+          },
+          "pronunciationGuide": {
+            "ja": "そんえきぶんきてんうりあげだかは かならず さがります。",
+            "en": "/ˈbɹeɪkˌivən seɪlz mʌst fɔl/",
+            "zh": "Sǔn yì liǎng píng xiāo shòu é yí dìng xià jiàng。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「損益分岐点売上高は必ず下がります。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Break-even sales must fall.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「損益兩平銷售額一定下降。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "customer-data",
+      "boke": {
+        "ja": "会員情報を販促に使う前に、最も重要な確認は何ですか？",
+        "en": "What is most important before using member data for promotions?",
+        "zh": "將會員資料用於促銷前，最重要的確認是什麼？"
+      },
+      "pronunciationGuide": {
+        "ja": "かいいんじょうほうを はんそくに つかう まえに、 もっとも じゅうような かくにんは なんですか？",
+        "en": "/wʌt ɪz moʊst ɪmˈpɔɹtənt bɪˈfɔɹ ˈjuzɪŋ ˈmɛmbɚ ˈdeɪtə fɔɹ pɹəˈmoʊʃənz/",
+        "zh": "Jiāng huì yuán zī liào yòng yú cù xiāo qián， zuì zhòng yào de què rèn shì shén me？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "customer-data-correct",
+          "text": {
+            "ja": "示した利用目的と社内ルールの範囲内か確認します。",
+            "en": "Confirm the use fits the stated purpose and internal rules.",
+            "zh": "確認使用符合已告知目的與內部規範。"
+          },
+          "pronunciationGuide": {
+            "ja": "しめした りようもくてきと しゃないるーるの はんいないか かくにんします。",
+            "en": "/kənˈfɝm ðə jus fɪts ðə ˈsteɪtəd ˈpɝpəs ənd ɪnˈtɝnəl ɹulz/",
+            "zh": "Què rèn shǐ yòng fú hé yǐ gào zhī mù dì yǔ nèi bù guī fàn。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「示した利用目的と社内ルールの範囲内か確認します。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Confirm the use fits the stated purpose and internal rules.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「確認使用符合已告知目的與內部規範。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "customer-data-plausible",
+          "text": {
+            "ja": "売上が増えそうなら目的外でも使います。",
+            "en": "Use it beyond the stated purpose if sales may rise.",
+            "zh": "只要可能增加銷售，就可超出告知目的使用。"
+          },
+          "pronunciationGuide": {
+            "ja": "うりあげが ふえそうなら もくてきがいでも つかいます。",
+            "en": "/juz ɪt bɪˈjɑnd ðə ˈsteɪtəd ˈpɝpəs ɪf seɪlz meɪ ɹaɪz/",
+            "zh": "Zhǐ yào kě néng zēng jiā xiāo shòu， jiù kě chāo chū gào zhī mù dì shǐ yòng。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「売上が増えそうなら目的外でも使います。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Use it beyond the stated purpose if sales may rise.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「只要可能增加銷售，就可超出告知目的使用。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "customer-data-incorrect",
+          "text": {
+            "ja": "担当者の判断だけで外部へ渡します。",
+            "en": "Share it externally based only on one employee’s judgment.",
+            "zh": "只憑承辦人判斷就提供給外部。"
+          },
+          "pronunciationGuide": {
+            "ja": "たんとうしゃの はんだんだけで がいぶへ わたします。",
+            "en": "/ʃɛɹ ɪt ɪkˈstɝnəli beɪst ˈoʊnli ɑn wʌn ɛmˈplɔɪiz ˈdʒʌdʒmənt/",
+            "zh": "Zhǐ píng chéng bàn rén pàn duàn jiù tí gōng gěi wài bù。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「担当者の判断だけで外部へ渡します。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Share it externally based only on one employee’s judgment.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「只憑承辦人判斷就提供給外部。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    }
+  ]
+}

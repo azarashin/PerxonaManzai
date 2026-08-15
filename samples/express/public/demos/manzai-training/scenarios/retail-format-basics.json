@@ -1,0 +1,331 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "retail-format-basics",
+  "title": {
+    "ja": "小売業態の基本",
+    "en": "Retail Format Basics",
+    "zh": "零售業態基礎"
+  },
+  "description": {
+    "ja": "販売士の「小売業の類型」について、業種と業態、チェーン形態、店舗の役割を確認するクイズです。",
+    "en": "A quiz on retail formats, chain structures, and store roles for the Retail Sales qualification.",
+    "zh": "針對販賣士資格，確認零售業種、業態、連鎖形態與門市角色的測驗。"
+  },
+  "evaluationAxes": [
+    {
+      "id": "concept-understanding",
+      "label": {
+        "ja": "概念理解",
+        "en": "Concept understanding",
+        "zh": "概念理解"
+      },
+      "description": {
+        "ja": "用語と基本関係を正しく理解する",
+        "en": "Understand the term and its basic relationship.",
+        "zh": "正確理解用語與基本關係。"
+      },
+      "maxPoints": 40
+    },
+    {
+      "id": "situational-application",
+      "label": {
+        "ja": "状況適用",
+        "en": "Situational application",
+        "zh": "情境應用"
+      },
+      "description": {
+        "ja": "設問の条件へ概念を正しく当てはめる",
+        "en": "Apply the concept correctly to the stated conditions.",
+        "zh": "將概念正確套用到題目條件。"
+      },
+      "maxPoints": 40
+    }
+  ],
+  "beats": [
+    {
+      "id": "classify-store",
+      "boke": {
+        "ja": "同じ食品を扱う店でも、営業時間や売り方で分類するとき、何に注目しますか？",
+        "en": "Two stores sell similar food. What classifies them by hours and selling method?",
+        "zh": "兩家店販售相似食品。依營業時間與銷售方式分類時，要看什麼？"
+      },
+      "pronunciationGuide": {
+        "ja": "おなじ しょくひんを あつかう みせでも、 えいぎょうじかんや うりかたで ぶんるいするとき、 なにに ちゅうもくしますか？",
+        "en": "/tu stɔɹz sɛl ˈsɪməlɚ fud. wʌt ˈklæsəˌfaɪz ðɛm baɪ ˈaʊɚz ənd ˈsɛlɪŋ ˈmɛθəd/",
+        "zh": "Liǎng jiā diàn fàn shòu xiāng sì shí pǐn。 yī yíng yè shí jiān yǔ xiāo shòu fāng shì fēn lèi shí， yào kàn shén me？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:thinking",
+          "category:idle"
+        ],
+        "variant": 0,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "classify-store-correct",
+          "text": {
+            "ja": "品ぞろえや営業時間などの業態に注目します。",
+            "en": "Focus on the retail format, such as assortment and opening hours.",
+            "zh": "看商品組合與營業時間等業態。"
+          },
+          "pronunciationGuide": {
+            "ja": "しなぞろえや えいぎょうじかんなどの ぎょうたいに ちゅうもくします。",
+            "en": "/ˈfoʊkəs ɑn ðə ˈɹiˌteɪl ˈfɔɹˌmæt, sʌtʃ æz əˈsɔɹtmənt ənd ˈoʊpənɪŋ ˈaʊɚz/",
+            "zh": "Kàn shāng pǐn zǔ hé yǔ yíng yè shí jiān děng yè tài。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「品ぞろえや営業時間などの業態に注目します。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“Focus on the retail format, such as assortment and opening hours.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「看商品組合與營業時間等業態。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "classify-store-plausible",
+          "text": {
+            "ja": "食品という取扱商品だけに注目します。",
+            "en": "Focus only on food as the merchandise handled.",
+            "zh": "只看食品這項經營商品。"
+          },
+          "pronunciationGuide": {
+            "ja": "しょくひんという とりあつかい しょうひんだけに ちゅうもくします。",
+            "en": "/ˈfoʊkəs ˈoʊnli ɑn fud æz ðə ˈmɝtʃənˌdaɪz ˈhændəld/",
+            "zh": "Zhǐ kàn shí pǐn zhè xiàng jīng yíng shāng pǐn。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「食品という取扱商品だけに注目します。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“Focus only on food as the merchandise handled.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「只看食品這項經營商品。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "classify-store-incorrect",
+          "text": {
+            "ja": "店の所在地だけで分類します。",
+            "en": "Classify them only by store location.",
+            "zh": "只按照門市所在地分類。"
+          },
+          "pronunciationGuide": {
+            "ja": "みせの しょざいちだけで ぶんるいします。",
+            "en": "/ˈklæsəˌfaɪ ðɛm ˈoʊnli baɪ stɔɹ loʊˈkeɪʃən/",
+            "zh": "Zhǐ àn zhào mén shì suǒ zài dì fēn lèi。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「店の所在地だけで分類します。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“Classify them only by store location.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「只按照門市所在地分類。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chain-control",
+      "boke": {
+        "ja": "本部が仕入れや運営方針を統一し、直営店を管理する形態はどれですか？",
+        "en": "Which chain has headquarters own stores and unify purchasing and operations?",
+        "zh": "哪種連鎖由總部直接擁有門市並統一採購與營運？"
+      },
+      "pronunciationGuide": {
+        "ja": "ほんぶが しいれや うんえいほうしんを とういつし、 ちょくえいてんを かんりする けいたいは どれですか？",
+        "en": "/wɪtʃ tʃeɪn hæz ˈhɛdˌkwɔɹtɚz oʊn stɔɹz ənd ˈjunəˌfaɪ ˈpɝtʃəsɪŋ ənd ˌɑpəˈɹeɪʃənz/",
+        "zh": "Nǎ zhǒng lián suǒ yóu zǒng bù zhí jiē yǒng yǒu mén shì bìng tǒng yī cǎi gòu yǔ yíng yùn？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:talking_03",
+          "category:talking"
+        ],
+        "variant": 1,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "chain-control-correct",
+          "text": {
+            "ja": "レギュラーチェーンです。",
+            "en": "It is a corporate chain.",
+            "zh": "是正規連鎖，也就是直營連鎖。"
+          },
+          "pronunciationGuide": {
+            "ja": "れぎゅらーちぇーんです。",
+            "en": "/ɪt ɪz ə ˈkɔɹpɚət tʃeɪn/",
+            "zh": "Shì zhèng guī lián suǒ， yě jiù shì zhí yíng lián suǒ。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「レギュラーチェーンです。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“It is a corporate chain.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「是正規連鎖，也就是直營連鎖。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "chain-control-plausible",
+          "text": {
+            "ja": "本部との契約で独立店が加盟するフランチャイズです。",
+            "en": "It is a franchise of independently owned member stores.",
+            "zh": "是獨立門市依契約加盟的特許連鎖。"
+          },
+          "pronunciationGuide": {
+            "ja": "ほんぶとの けいやくで どくりつてんが かめいする ふらんちゃいずです。",
+            "en": "/ɪt ɪz ə ˈfɹænˌtʃaɪz əv ˌɪndəˈpɛndəntli oʊnd ˈmɛmbɚ stɔɹz/",
+            "zh": "Shì dú lì mén shì yī qì yuē jiā méng de tè xǔ lián suǒ。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「本部との契約で独立店が加盟するフランチャイズです。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“It is a franchise of independently owned member stores.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「是獨立門市依契約加盟的特許連鎖。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "chain-control-incorrect",
+          "text": {
+            "ja": "共同仕入れだけを行う商店街です。",
+            "en": "It is merely a shopping district that buys jointly.",
+            "zh": "只是共同採購的商店街。"
+          },
+          "pronunciationGuide": {
+            "ja": "きょうどう しいれだけを おこなう しょうてんがいです。",
+            "en": "/ɪt ɪz ˈmɪɹli ə ˈʃɑpɪŋ ˈdɪstɹɪkt ðæt baɪz ˈdʒɔɪntli/",
+            "zh": "Zhǐ shì gòng tóng cǎi gòu de shāng diàn jiē。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「共同仕入れだけを行う商店街です。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“It is merely a shopping district that buys jointly.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「只是共同採購的商店街。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "store-role",
+      "boke": {
+        "ja": "実店舗で商品を確かめ、オンラインでも購入できる設計の狙いは何ですか？",
+        "en": "What is the aim of letting customers inspect in-store and buy online?",
+        "zh": "讓顧客在實體店確認商品，也能在線上購買，目的是什麼？"
+      },
+      "pronunciationGuide": {
+        "ja": "じつてんぽで しょうひんを たしかめ、 おんらいんでも こうにゅうできる せっけいの ねらいは なんですか？",
+        "en": "/wʌt ɪz ði eɪm əv ˈlɛtɪŋ ˈkʌstəmɚz ɪnˈspɛkt ɪn stɔɹ ənd baɪ ˈɑnˌlaɪn/",
+        "zh": "Ràng gù kè zài shí tǐ diàn què rèn shāng pǐn， yě néng zài xiàn shàng gòu mǎi， mù dì shì shén me？"
+      },
+      "reaction": {
+        "description": {
+          "ja": "問題を提示する",
+          "en": "Present the question",
+          "zh": "提出問題"
+        },
+        "motionTags": [
+          "pose:emotion_04",
+          "category:talking"
+        ],
+        "variant": 2,
+        "priority": 1,
+        "cue": "start"
+      },
+      "choices": [
+        {
+          "id": "store-role-correct",
+          "text": {
+            "ja": "チャネルを連携し、買いやすさを高めることです。",
+            "en": "It integrates channels to improve shopping convenience.",
+            "zh": "整合通路以提高購物便利性。"
+          },
+          "pronunciationGuide": {
+            "ja": "ちゃねるを れんけいし、 かいやすさを たかめることです。",
+            "en": "/ɪt ˈɪntəˌɡɹeɪts ˈtʃænəlz tu ɪmˈpɹuv ˈʃɑpɪŋ kənˈvinjəns/",
+            "zh": "Zhěng hé tōng lù yǐ tí gāo gòu wù biàn lì xìng。"
+          },
+          "axisScores": {
+            "concept-understanding": 40,
+            "situational-application": 40
+          },
+          "feedback": {
+            "ja": "「チャネルを連携し、買いやすさを高めることです。」は、設問で示された条件に正しい概念と因果関係を当てはめています。",
+            "en": "“It integrates channels to improve shopping convenience.” applies the correct concept and causal relationship to the stated conditions.",
+            "zh": "「整合通路以提高購物便利性。」把正確概念與因果關係套用到題目條件。"
+          }
+        },
+        {
+          "id": "store-role-plausible",
+          "text": {
+            "ja": "実店舗の在庫を必ずゼロにすることです。",
+            "en": "It is to eliminate all store inventory.",
+            "zh": "是把實體店庫存一定降為零。"
+          },
+          "pronunciationGuide": {
+            "ja": "じつてんぽの ざいこを かならず ぜろにすることです。",
+            "en": "/ɪt ɪz tu ɪˈlɪməˌneɪt ɔl stɔɹ ˈɪnvənˌtɔɹi/",
+            "zh": "Shì bǎ shí tǐ diàn kù cún yí dìng jiàng wéi líng。"
+          },
+          "axisScores": {
+            "concept-understanding": 18,
+            "situational-application": 12
+          },
+          "feedback": {
+            "ja": "「実店舗の在庫を必ずゼロにすることです。」は関連する内容ですが、この設問が問う分類基準または変化の方向とは一致しません。",
+            "en": "“It is to eliminate all store inventory.” is related, but it does not match the classification basis or direction of change being tested.",
+            "zh": "「是把實體店庫存一定降為零。」雖然相關，但不符合本題所測的分類基準或變化方向。"
+          }
+        },
+        {
+          "id": "store-role-incorrect",
+          "text": {
+            "ja": "販売員との接点をなくすことです。",
+            "en": "It is to remove every contact with sales staff.",
+            "zh": "是完全取消與銷售人員的接觸。"
+          },
+          "pronunciationGuide": {
+            "ja": "はんばいいんとの せってんを なくすことです。",
+            "en": "/ɪt ɪz tu ɹɪˈmuv ˈɛvɹi ˈkɑnˌtækt wɪð seɪlz stæf/",
+            "zh": "Shì wán quán qǔ xiāo yǔ xiāo shòu rén yuán de jiē chù。"
+          },
+          "axisScores": {
+            "concept-understanding": 4,
+            "situational-application": 2
+          },
+          "feedback": {
+            "ja": "「販売員との接点をなくすことです。」は設問の条件から導けず、対象概念の判断根拠にはなりません。",
+            "en": "“It is to remove every contact with sales staff.” does not follow from the conditions and is not a valid basis for the concept being tested.",
+            "zh": "「是完全取消與銷售人員的接觸。」無法由題目條件推導，不能作為判斷該概念的依據。"
+          }
+        }
+      ]
+    }
+  ]
+}
